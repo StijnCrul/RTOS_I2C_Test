@@ -1,0 +1,4055 @@
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"LSM303DLHC.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.initAccel,"ax",%progbits
+  21              		.align	2
+  22              		.global	initAccel
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	initAccel, %function
+  26              	initAccel:
+  27              	.LFB560:
+  28              		.file 1 "LSM303DLHC.c"
+   1:LSM303DLHC.c  **** /*  ____  ____      _    __  __  ____ ___
+   2:LSM303DLHC.c  ****  * |  _ \|  _ \    / \  |  \/  |/ ___/ _ \
+   3:LSM303DLHC.c  ****  * | | | | |_) |  / _ \ | |\/| | |  | | | |
+   4:LSM303DLHC.c  ****  * | |_| |  _ <  / ___ \| |  | | |__| |_| |
+   5:LSM303DLHC.c  ****  * |____/|_| \_\/_/   \_\_|  |_|\____\___/
+   6:LSM303DLHC.c  ****  *                           research group
+   7:LSM303DLHC.c  ****  *                             dramco.be/
+   8:LSM303DLHC.c  ****  *
+   9:LSM303DLHC.c  ****  *  KU Leuven - Technology Campus Gent,
+  10:LSM303DLHC.c  ****  *  Gebroeders De Smetstraat 1,
+  11:LSM303DLHC.c  ****  *  B-9000 Gent, Belgium
+  12:LSM303DLHC.c  ****  *
+  13:LSM303DLHC.c  ****  *         File: LSM303DLHC.h
+  14:LSM303DLHC.c  ****  *      Created: 2019-04-11
+  15:LSM303DLHC.c  ****  *       Author: Stijn Crul
+  16:LSM303DLHC.c  ****  *      Version: 0.1
+  17:LSM303DLHC.c  ****  *
+  18:LSM303DLHC.c  ****  *  Description: LSM303DLHC library for PSOC6
+  19:LSM303DLHC.c  ****  */
+  20:LSM303DLHC.c  **** 
+  21:LSM303DLHC.c  **** #include "project.h"
+  22:LSM303DLHC.c  **** #include "LSM303DLHC.h"
+  23:LSM303DLHC.c  **** #include "i2c.h"
+  24:LSM303DLHC.c  **** #include "FreeRTOS.h"
+  25:LSM303DLHC.c  **** #include "task.h"
+  26:LSM303DLHC.c  **** 
+  27:LSM303DLHC.c  **** /* 
+  28:LSM303DLHC.c  **** *   Function: setupAccel 
+  29:LSM303DLHC.c  **** *  
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 2
+
+
+  30:LSM303DLHC.c  **** *   Description: Setup up the accelerometer by writing to CTRL_REG1_A
+  31:LSM303DLHC.c  **** *
+  32:LSM303DLHC.c  **** *   Arguments:
+  33:LSM303DLHC.c  **** *   masterTransferCfg = psoc I2C settings
+  34:LSM303DLHC.c  **** *   mask = bits for the control register of the lsm303dlhc. Page 24 of datasheet
+  35:LSM303DLHC.c  **** */
+  36:LSM303DLHC.c  **** uint8_t initAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg, uint8_t mask){
+  29              		.loc 1 36 0
+  30              		.cfi_startproc
+  31              		@ args = 4, pretend = 0, frame = 24
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33              	.LVL0:
+  34 0000 10B5     		push	{r4, lr}
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  38 0002 8AB0     		sub	sp, sp, #40
+  39              		.cfi_def_cfa_offset 48
+  40 0004 04AC     		add	r4, sp, #16
+  41 0006 84E80F00 		stmia	r4, {r0, r1, r2, r3}
+  42              	.LVL1:
+  37:LSM303DLHC.c  ****     uint8_t status = TRANSFER_ERROR; 
+  38:LSM303DLHC.c  ****     uint8_t msg[WRITE_PACKET_SIZE] = {LSM303_REGISTER_ACCEL_CTRL_REG1_A, mask};
+  43              		.loc 1 38 0
+  44 000a 2023     		movs	r3, #32
+  45 000c 8DF82430 		strb	r3, [sp, #36]
+  46 0010 9DF83030 		ldrb	r3, [sp, #48]	@ zero_extendqisi2
+  47 0014 8DF82530 		strb	r3, [sp, #37]
+  39:LSM303DLHC.c  ****     
+  40:LSM303DLHC.c  ****     status = WriteCommandPacketToI2C(masterTransferCfg, LSM303_ADDRESS_ACCEL, msg, 2);
+  48              		.loc 1 40 0
+  49 0018 0223     		movs	r3, #2
+  50 001a 0293     		str	r3, [sp, #8]
+  51 001c 09AB     		add	r3, sp, #36
+  52 001e 0193     		str	r3, [sp, #4]
+  53 0020 1923     		movs	r3, #25
+  54 0022 0093     		str	r3, [sp]
+  55 0024 94E80F00 		ldmia	r4, {r0, r1, r2, r3}
+  56 0028 FFF7FEFF 		bl	WriteCommandPacketToI2C
+  57              	.LVL2:
+  41:LSM303DLHC.c  ****     
+  42:LSM303DLHC.c  ****     return status;
+  43:LSM303DLHC.c  **** }
+  58              		.loc 1 43 0
+  59 002c 0AB0     		add	sp, sp, #40
+  60              		.cfi_def_cfa_offset 8
+  61              		@ sp needed
+  62 002e 10BD     		pop	{r4, pc}
+  63              		.cfi_endproc
+  64              	.LFE560:
+  65              		.size	initAccel, .-initAccel
+  66              		.section	.text.readAccel,"ax",%progbits
+  67              		.align	2
+  68              		.global	readAccel
+  69              		.thumb
+  70              		.thumb_func
+  71              		.type	readAccel, %function
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 3
+
+
+  72              	readAccel:
+  73              	.LFB561:
+  44:LSM303DLHC.c  **** 
+  45:LSM303DLHC.c  **** /* 
+  46:LSM303DLHC.c  **** *   Function: readAccel 
+  47:LSM303DLHC.c  **** *  
+  48:LSM303DLHC.c  **** *   Description: Read values from accelerometer after it has been setup
+  49:LSM303DLHC.c  **** *
+  50:LSM303DLHC.c  **** *   Arguments:
+  51:LSM303DLHC.c  **** *   masterTransferCfg = psoc I2C settings
+  52:LSM303DLHC.c  **** */
+  53:LSM303DLHC.c  **** uint8_t readAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg){
+  74              		.loc 1 53 0
+  75              		.cfi_startproc
+  76              		@ args = 0, pretend = 0, frame = 24
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78 0000 10B5     		push	{r4, lr}
+  79              		.cfi_def_cfa_offset 8
+  80              		.cfi_offset 4, -8
+  81              		.cfi_offset 14, -4
+  82 0002 8AB0     		sub	sp, sp, #40
+  83              		.cfi_def_cfa_offset 48
+  84 0004 04AC     		add	r4, sp, #16
+  85 0006 84E80F00 		stmia	r4, {r0, r1, r2, r3}
+  86              	.LVL3:
+  54:LSM303DLHC.c  ****     uint8_t status = TRANSFER_ERROR;
+  55:LSM303DLHC.c  ****     uint8_t msg[WRITE_PACKET_SIZE];
+  56:LSM303DLHC.c  ****     msg[0] = (LSM303_REGISTER_ACCEL_OUT_X_L_A | (1 << 7));
+  87              		.loc 1 56 0
+  88 000a 0AAB     		add	r3, sp, #40
+  89 000c A822     		movs	r2, #168
+  90 000e 03F8042D 		strb	r2, [r3, #-4]!
+  57:LSM303DLHC.c  ****     
+  58:LSM303DLHC.c  ****     if(TRANSFER_CMPLT == WriteCommandPacketToI2C(masterTransferCfg, LSM303_ADDRESS_ACCEL, msg, 1)){
+  91              		.loc 1 58 0
+  92 0012 0122     		movs	r2, #1
+  93 0014 0292     		str	r2, [sp, #8]
+  94 0016 0193     		str	r3, [sp, #4]
+  95 0018 1923     		movs	r3, #25
+  96 001a 0093     		str	r3, [sp]
+  97 001c 94E80F00 		ldmia	r4, {r0, r1, r2, r3}
+  98 0020 FFF7FEFF 		bl	WriteCommandPacketToI2C
+  99              	.LVL4:
+ 100 0024 40B9     		cbnz	r0, .L5
+  59:LSM303DLHC.c  ****         status = ReadStatusPacketFromI2C(masterTransferCfg, LSM303_ADDRESS_ACCEL, 6);
+ 101              		.loc 1 59 0
+ 102 0026 0623     		movs	r3, #6
+ 103 0028 0193     		str	r3, [sp, #4]
+ 104 002a 1923     		movs	r3, #25
+ 105 002c 0093     		str	r3, [sp]
+ 106 002e 04AB     		add	r3, sp, #16
+ 107 0030 0FCB     		ldmia	r3, {r0, r1, r2, r3}
+ 108 0032 FFF7FEFF 		bl	ReadStatusPacketFromI2C
+ 109              	.LVL5:
+ 110 0036 00E0     		b	.L4
+ 111              	.LVL6:
+ 112              	.L5:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 4
+
+
+  54:LSM303DLHC.c  ****     uint8_t status = TRANSFER_ERROR;
+ 113              		.loc 1 54 0
+ 114 0038 FF20     		movs	r0, #255
+ 115              	.LVL7:
+ 116              	.L4:
+  60:LSM303DLHC.c  ****         // todo: Do something with read data
+  61:LSM303DLHC.c  ****     }
+  62:LSM303DLHC.c  ****     
+  63:LSM303DLHC.c  ****     return status;
+  64:LSM303DLHC.c  **** }
+ 117              		.loc 1 64 0
+ 118 003a 0AB0     		add	sp, sp, #40
+ 119              		.cfi_def_cfa_offset 8
+ 120              		@ sp needed
+ 121 003c 10BD     		pop	{r4, pc}
+ 122              		.cfi_endproc
+ 123              	.LFE561:
+ 124              		.size	readAccel, .-readAccel
+ 125 003e 00BF     		.section	.text.acceleroTask,"ax",%progbits
+ 126              		.align	2
+ 127              		.global	acceleroTask
+ 128              		.thumb
+ 129              		.thumb_func
+ 130              		.type	acceleroTask, %function
+ 131              	acceleroTask:
+ 132              	.LFB562:
+  65:LSM303DLHC.c  **** 
+  66:LSM303DLHC.c  **** void acceleroTask(void *masterTransfer){
+ 133              		.loc 1 66 0
+ 134              		.cfi_startproc
+ 135              		@ args = 0, pretend = 0, frame = 24
+ 136              		@ frame_needed = 0, uses_anonymous_args = 0
+ 137              	.LVL8:
+ 138 0000 10B5     		push	{r4, lr}
+ 139              		.cfi_def_cfa_offset 8
+ 140              		.cfi_offset 4, -8
+ 141              		.cfi_offset 14, -4
+ 142 0002 88B0     		sub	sp, sp, #32
+ 143              		.cfi_def_cfa_offset 40
+  67:LSM303DLHC.c  ****     
+  68:LSM303DLHC.c  ****     cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg;
+  69:LSM303DLHC.c  ****     
+  70:LSM303DLHC.c  ****     masterTransferCfg = *(cy_stc_scb_i2c_master_xfer_config_t *) masterTransfer;
+ 144              		.loc 1 70 0
+ 145 0004 04AC     		add	r4, sp, #16
+ 146 0006 0FC8     		ldmia	r0, {r0, r1, r2, r3}
+ 147              	.LVL9:
+ 148 0008 84E80F00 		stmia	r4, {r0, r1, r2, r3}
+ 149              	.LVL10:
+  71:LSM303DLHC.c  ****     
+  72:LSM303DLHC.c  ****     TickType_t xLastWakeTime;
+  73:LSM303DLHC.c  ****     const TickType_t xFrequency = 1000;
+  74:LSM303DLHC.c  ****       
+  75:LSM303DLHC.c  ****     xLastWakeTime = xTaskGetTickCount();    
+ 150              		.loc 1 75 0
+ 151 000c FFF7FEFF 		bl	xTaskGetTickCount
+ 152              	.LVL11:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 5
+
+
+ 153 0010 0390     		str	r0, [sp, #12]
+  76:LSM303DLHC.c  ****     
+  77:LSM303DLHC.c  ****     if (TRANSFER_CMPLT == initAccel(masterTransferCfg, 0x97)){
+ 154              		.loc 1 77 0
+ 155 0012 9723     		movs	r3, #151
+ 156 0014 0093     		str	r3, [sp]
+ 157 0016 94E80F00 		ldmia	r4, {r0, r1, r2, r3}
+ 158 001a FFF7FEFF 		bl	initAccel
+ 159              	.LVL12:
+ 160 001e 50B9     		cbnz	r0, .L7
+ 161              	.L9:
+  78:LSM303DLHC.c  ****         for(;;){
+  79:LSM303DLHC.c  ****             vTaskDelayUntil(&xLastWakeTime, xFrequency);
+ 162              		.loc 1 79 0
+ 163 0020 4FF47A71 		mov	r1, #1000
+ 164 0024 03A8     		add	r0, sp, #12
+ 165 0026 FFF7FEFF 		bl	vTaskDelayUntil
+ 166              	.LVL13:
+  80:LSM303DLHC.c  ****             if(TRANSFER_CMPLT == readAccel(masterTransferCfg)){
+ 167              		.loc 1 80 0
+ 168 002a 08AB     		add	r3, sp, #32
+ 169 002c 13E90F00 		ldmdb	r3, {r0, r1, r2, r3}
+ 170 0030 FFF7FEFF 		bl	readAccel
+ 171              	.LVL14:
+ 172 0034 F4E7     		b	.L9
+ 173              	.L7:
+  81:LSM303DLHC.c  ****                 //Todo do something with accelerometer data
+  82:LSM303DLHC.c  ****                 //accelData.x = (float)((int16_t)((masterTransferCfg.buffer[1] << 8) | masterTransf
+  83:LSM303DLHC.c  ****                 //accelData.y = (float)((int16_t)((masterTransferCfg.buffer[3] << 8) | masterTransf
+  84:LSM303DLHC.c  ****                 //accelData.z = (float)((int16_t)((masterTransferCfg.buffer[5] << 8) | masterTransf
+  85:LSM303DLHC.c  ****             }
+  86:LSM303DLHC.c  ****         }
+  87:LSM303DLHC.c  ****     }
+  88:LSM303DLHC.c  **** }...
+ 174              		.loc 1 88 0
+ 175 0036 08B0     		add	sp, sp, #32
+ 176              		.cfi_def_cfa_offset 8
+ 177              		@ sp needed
+ 178 0038 10BD     		pop	{r4, pc}
+ 179              		.cfi_endproc
+ 180              	.LFE562:
+ 181              		.size	acceleroTask, .-acceleroTask
+ 182              		.comm	readBuffer,6,4
+ 183              		.comm	writebuffer,2,4
+ 184              		.comm	magData,6,4
+ 185              		.comm	accelData,16,4
+ 186 003a 00BF     		.text
+ 187              	.Letext0:
+ 188              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 189              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 190              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+ 191              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/sar/cy_sar.h"
+ 192              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_i2c.h"
+ 193              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
+ 194              		.file 8 "Generated_Source\\PSoC6/ADC.h"
+ 195              		.file 9 "LSM303DLHC.h"
+ 196              		.file 10 "Generated_Source\\PSoC6\\pdl\\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 6
+
+
+ 197              		.file 11 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 198              		.file 12 "Generated_Source\\PSoC6/UART.h"
+ 199              		.file 13 "Generated_Source\\PSoC6/mI2C.h"
+ 200              		.file 14 "i2c.h"
+ 201              		.file 15 "Generated_Source\\PSoC6\\pdl\\rtos/FreeRTOS/10.0.1/Source/include/task.h"
+ 202              		.section	.debug_info,"",%progbits
+ 203              	.Ldebug_info0:
+ 204 0000 230D0000 		.4byte	0xd23
+ 205 0004 0400     		.2byte	0x4
+ 206 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 207 000a 04       		.byte	0x4
+ 208 000b 01       		.uleb128 0x1
+ 209 000c 1D030000 		.4byte	.LASF247
+ 210 0010 0C       		.byte	0xc
+ 211 0011 D4040000 		.4byte	.LASF248
+ 212 0015 59000000 		.4byte	.LASF249
+ 213 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 214 001d 00000000 		.4byte	0
+ 215 0021 00000000 		.4byte	.Ldebug_line0
+ 216 0025 02       		.uleb128 0x2
+ 217 0026 02       		.byte	0x2
+ 218 0027 05       		.byte	0x5
+ 219 0028 4A0D0000 		.4byte	.LASF0
+ 220 002c 02       		.uleb128 0x2
+ 221 002d 01       		.byte	0x1
+ 222 002e 06       		.byte	0x6
+ 223 002f E30F0000 		.4byte	.LASF1
+ 224 0033 03       		.uleb128 0x3
+ 225 0034 060E0000 		.4byte	.LASF3
+ 226 0038 02       		.byte	0x2
+ 227 0039 1D       		.byte	0x1d
+ 228 003a 3E000000 		.4byte	0x3e
+ 229 003e 02       		.uleb128 0x2
+ 230 003f 01       		.byte	0x1
+ 231 0040 08       		.byte	0x8
+ 232 0041 060F0000 		.4byte	.LASF2
+ 233 0045 03       		.uleb128 0x3
+ 234 0046 250A0000 		.4byte	.LASF4
+ 235 004a 02       		.byte	0x2
+ 236 004b 29       		.byte	0x29
+ 237 004c 25000000 		.4byte	0x25
+ 238 0050 03       		.uleb128 0x3
+ 239 0051 35080000 		.4byte	.LASF5
+ 240 0055 02       		.byte	0x2
+ 241 0056 2B       		.byte	0x2b
+ 242 0057 5B000000 		.4byte	0x5b
+ 243 005b 02       		.uleb128 0x2
+ 244 005c 02       		.byte	0x2
+ 245 005d 07       		.byte	0x7
+ 246 005e AA0B0000 		.4byte	.LASF6
+ 247 0062 03       		.uleb128 0x3
+ 248 0063 A1010000 		.4byte	.LASF7
+ 249 0067 02       		.byte	0x2
+ 250 0068 3F       		.byte	0x3f
+ 251 0069 6D000000 		.4byte	0x6d
+ 252 006d 02       		.uleb128 0x2
+ 253 006e 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 7
+
+
+ 254 006f 05       		.byte	0x5
+ 255 0070 630D0000 		.4byte	.LASF8
+ 256 0074 03       		.uleb128 0x3
+ 257 0075 140F0000 		.4byte	.LASF9
+ 258 0079 02       		.byte	0x2
+ 259 007a 41       		.byte	0x41
+ 260 007b 7F000000 		.4byte	0x7f
+ 261 007f 02       		.uleb128 0x2
+ 262 0080 04       		.byte	0x4
+ 263 0081 07       		.byte	0x7
+ 264 0082 C90E0000 		.4byte	.LASF10
+ 265 0086 02       		.uleb128 0x2
+ 266 0087 08       		.byte	0x8
+ 267 0088 05       		.byte	0x5
+ 268 0089 D9090000 		.4byte	.LASF11
+ 269 008d 02       		.uleb128 0x2
+ 270 008e 08       		.byte	0x8
+ 271 008f 07       		.byte	0x7
+ 272 0090 A5050000 		.4byte	.LASF12
+ 273 0094 04       		.uleb128 0x4
+ 274 0095 04       		.byte	0x4
+ 275 0096 05       		.byte	0x5
+ 276 0097 696E7400 		.ascii	"int\000"
+ 277 009b 02       		.uleb128 0x2
+ 278 009c 04       		.byte	0x4
+ 279 009d 07       		.byte	0x7
+ 280 009e 07010000 		.4byte	.LASF13
+ 281 00a2 03       		.uleb128 0x3
+ 282 00a3 25090000 		.4byte	.LASF14
+ 283 00a7 03       		.byte	0x3
+ 284 00a8 18       		.byte	0x18
+ 285 00a9 33000000 		.4byte	0x33
+ 286 00ad 03       		.uleb128 0x3
+ 287 00ae 4C050000 		.4byte	.LASF15
+ 288 00b2 03       		.byte	0x3
+ 289 00b3 20       		.byte	0x20
+ 290 00b4 45000000 		.4byte	0x45
+ 291 00b8 03       		.uleb128 0x3
+ 292 00b9 F50B0000 		.4byte	.LASF16
+ 293 00bd 03       		.byte	0x3
+ 294 00be 24       		.byte	0x24
+ 295 00bf 50000000 		.4byte	0x50
+ 296 00c3 03       		.uleb128 0x3
+ 297 00c4 E70E0000 		.4byte	.LASF17
+ 298 00c8 03       		.byte	0x3
+ 299 00c9 2C       		.byte	0x2c
+ 300 00ca 62000000 		.4byte	0x62
+ 301 00ce 03       		.uleb128 0x3
+ 302 00cf 7D040000 		.4byte	.LASF18
+ 303 00d3 03       		.byte	0x3
+ 304 00d4 30       		.byte	0x30
+ 305 00d5 74000000 		.4byte	0x74
+ 306 00d9 02       		.uleb128 0x2
+ 307 00da 04       		.byte	0x4
+ 308 00db 07       		.byte	0x7
+ 309 00dc E40C0000 		.4byte	.LASF19
+ 310 00e0 05       		.uleb128 0x5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 8
+
+
+ 311 00e1 CE000000 		.4byte	0xce
+ 312 00e5 06       		.uleb128 0x6
+ 313 00e6 A2000000 		.4byte	0xa2
+ 314 00ea F5000000 		.4byte	0xf5
+ 315 00ee 07       		.uleb128 0x7
+ 316 00ef D9000000 		.4byte	0xd9
+ 317 00f3 01       		.byte	0x1
+ 318 00f4 00       		.byte	0
+ 319 00f5 02       		.uleb128 0x2
+ 320 00f6 08       		.byte	0x8
+ 321 00f7 04       		.byte	0x4
+ 322 00f8 E90B0000 		.4byte	.LASF20
+ 323 00fc 08       		.uleb128 0x8
+ 324 00fd B8       		.byte	0xb8
+ 325 00fe 04       		.byte	0x4
+ 326 00ff 34       		.byte	0x34
+ 327 0100 0D050000 		.4byte	0x50d
+ 328 0104 09       		.uleb128 0x9
+ 329 0105 BA010000 		.4byte	.LASF21
+ 330 0109 04       		.byte	0x4
+ 331 010a 37       		.byte	0x37
+ 332 010b CE000000 		.4byte	0xce
+ 333 010f 00       		.byte	0
+ 334 0110 09       		.uleb128 0x9
+ 335 0111 41050000 		.4byte	.LASF22
+ 336 0115 04       		.byte	0x4
+ 337 0116 38       		.byte	0x38
+ 338 0117 CE000000 		.4byte	0xce
+ 339 011b 04       		.byte	0x4
+ 340 011c 09       		.uleb128 0x9
+ 341 011d B2000000 		.4byte	.LASF23
+ 342 0121 04       		.byte	0x4
+ 343 0122 39       		.byte	0x39
+ 344 0123 CE000000 		.4byte	0xce
+ 345 0127 08       		.byte	0x8
+ 346 0128 09       		.uleb128 0x9
+ 347 0129 43060000 		.4byte	.LASF24
+ 348 012d 04       		.byte	0x4
+ 349 012e 3A       		.byte	0x3a
+ 350 012f CE000000 		.4byte	0xce
+ 351 0133 0C       		.byte	0xc
+ 352 0134 09       		.uleb128 0x9
+ 353 0135 FE0B0000 		.4byte	.LASF25
+ 354 0139 04       		.byte	0x4
+ 355 013a 3B       		.byte	0x3b
+ 356 013b CE000000 		.4byte	0xce
+ 357 013f 10       		.byte	0x10
+ 358 0140 09       		.uleb128 0x9
+ 359 0141 2F0A0000 		.4byte	.LASF26
+ 360 0145 04       		.byte	0x4
+ 361 0146 3C       		.byte	0x3c
+ 362 0147 CE000000 		.4byte	0xce
+ 363 014b 14       		.byte	0x14
+ 364 014c 09       		.uleb128 0x9
+ 365 014d AE070000 		.4byte	.LASF27
+ 366 0151 04       		.byte	0x4
+ 367 0152 3D       		.byte	0x3d
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 9
+
+
+ 368 0153 CE000000 		.4byte	0xce
+ 369 0157 18       		.byte	0x18
+ 370 0158 09       		.uleb128 0x9
+ 371 0159 68100000 		.4byte	.LASF28
+ 372 015d 04       		.byte	0x4
+ 373 015e 3E       		.byte	0x3e
+ 374 015f CE000000 		.4byte	0xce
+ 375 0163 1C       		.byte	0x1c
+ 376 0164 09       		.uleb128 0x9
+ 377 0165 E7090000 		.4byte	.LASF29
+ 378 0169 04       		.byte	0x4
+ 379 016a 3F       		.byte	0x3f
+ 380 016b CE000000 		.4byte	0xce
+ 381 016f 20       		.byte	0x20
+ 382 0170 09       		.uleb128 0x9
+ 383 0171 FE090000 		.4byte	.LASF30
+ 384 0175 04       		.byte	0x4
+ 385 0176 40       		.byte	0x40
+ 386 0177 CE000000 		.4byte	0xce
+ 387 017b 24       		.byte	0x24
+ 388 017c 09       		.uleb128 0x9
+ 389 017d 6C0D0000 		.4byte	.LASF31
+ 390 0181 04       		.byte	0x4
+ 391 0182 43       		.byte	0x43
+ 392 0183 A2000000 		.4byte	0xa2
+ 393 0187 28       		.byte	0x28
+ 394 0188 09       		.uleb128 0x9
+ 395 0189 C6040000 		.4byte	.LASF32
+ 396 018d 04       		.byte	0x4
+ 397 018e 44       		.byte	0x44
+ 398 018f A2000000 		.4byte	0xa2
+ 399 0193 29       		.byte	0x29
+ 400 0194 09       		.uleb128 0x9
+ 401 0195 F9070000 		.4byte	.LASF33
+ 402 0199 04       		.byte	0x4
+ 403 019a 45       		.byte	0x45
+ 404 019b A2000000 		.4byte	0xa2
+ 405 019f 2A       		.byte	0x2a
+ 406 01a0 09       		.uleb128 0x9
+ 407 01a1 920D0000 		.4byte	.LASF34
+ 408 01a5 04       		.byte	0x4
+ 409 01a6 46       		.byte	0x46
+ 410 01a7 A2000000 		.4byte	0xa2
+ 411 01ab 2B       		.byte	0x2b
+ 412 01ac 09       		.uleb128 0x9
+ 413 01ad 860D0000 		.4byte	.LASF35
+ 414 01b1 04       		.byte	0x4
+ 415 01b2 47       		.byte	0x47
+ 416 01b3 A2000000 		.4byte	0xa2
+ 417 01b7 2C       		.byte	0x2c
+ 418 01b8 09       		.uleb128 0x9
+ 419 01b9 BC0E0000 		.4byte	.LASF36
+ 420 01bd 04       		.byte	0x4
+ 421 01be 48       		.byte	0x48
+ 422 01bf A2000000 		.4byte	0xa2
+ 423 01c3 2D       		.byte	0x2d
+ 424 01c4 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 10
+
+
+ 425 01c5 7A0C0000 		.4byte	.LASF37
+ 426 01c9 04       		.byte	0x4
+ 427 01ca 49       		.byte	0x49
+ 428 01cb A2000000 		.4byte	0xa2
+ 429 01cf 2E       		.byte	0x2e
+ 430 01d0 09       		.uleb128 0x9
+ 431 01d1 4E100000 		.4byte	.LASF38
+ 432 01d5 04       		.byte	0x4
+ 433 01d6 4A       		.byte	0x4a
+ 434 01d7 A2000000 		.4byte	0xa2
+ 435 01db 2F       		.byte	0x2f
+ 436 01dc 09       		.uleb128 0x9
+ 437 01dd 520E0000 		.4byte	.LASF39
+ 438 01e1 04       		.byte	0x4
+ 439 01e2 4B       		.byte	0x4b
+ 440 01e3 A2000000 		.4byte	0xa2
+ 441 01e7 30       		.byte	0x30
+ 442 01e8 09       		.uleb128 0x9
+ 443 01e9 020B0000 		.4byte	.LASF40
+ 444 01ed 04       		.byte	0x4
+ 445 01ee 4E       		.byte	0x4e
+ 446 01ef A2000000 		.4byte	0xa2
+ 447 01f3 31       		.byte	0x31
+ 448 01f4 09       		.uleb128 0x9
+ 449 01f5 FA0F0000 		.4byte	.LASF41
+ 450 01f9 04       		.byte	0x4
+ 451 01fa 4F       		.byte	0x4f
+ 452 01fb A2000000 		.4byte	0xa2
+ 453 01ff 32       		.byte	0x32
+ 454 0200 09       		.uleb128 0x9
+ 455 0201 770A0000 		.4byte	.LASF42
+ 456 0205 04       		.byte	0x4
+ 457 0206 50       		.byte	0x50
+ 458 0207 A2000000 		.4byte	0xa2
+ 459 020b 33       		.byte	0x33
+ 460 020c 09       		.uleb128 0x9
+ 461 020d 71080000 		.4byte	.LASF43
+ 462 0211 04       		.byte	0x4
+ 463 0212 51       		.byte	0x51
+ 464 0213 A2000000 		.4byte	0xa2
+ 465 0217 34       		.byte	0x34
+ 466 0218 09       		.uleb128 0x9
+ 467 0219 E5050000 		.4byte	.LASF44
+ 468 021d 04       		.byte	0x4
+ 469 021e 52       		.byte	0x52
+ 470 021f AD000000 		.4byte	0xad
+ 471 0223 36       		.byte	0x36
+ 472 0224 09       		.uleb128 0x9
+ 473 0225 FF010000 		.4byte	.LASF45
+ 474 0229 04       		.byte	0x4
+ 475 022a 53       		.byte	0x53
+ 476 022b AD000000 		.4byte	0xad
+ 477 022f 38       		.byte	0x38
+ 478 0230 09       		.uleb128 0x9
+ 479 0231 540A0000 		.4byte	.LASF46
+ 480 0235 04       		.byte	0x4
+ 481 0236 54       		.byte	0x54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 11
+
+
+ 482 0237 AD000000 		.4byte	0xad
+ 483 023b 3A       		.byte	0x3a
+ 484 023c 09       		.uleb128 0x9
+ 485 023d AB010000 		.4byte	.LASF47
+ 486 0241 04       		.byte	0x4
+ 487 0242 55       		.byte	0x55
+ 488 0243 A2000000 		.4byte	0xa2
+ 489 0247 3C       		.byte	0x3c
+ 490 0248 09       		.uleb128 0x9
+ 491 0249 F5060000 		.4byte	.LASF48
+ 492 024d 04       		.byte	0x4
+ 493 024e 56       		.byte	0x56
+ 494 024f A2000000 		.4byte	0xa2
+ 495 0253 3D       		.byte	0x3d
+ 496 0254 09       		.uleb128 0x9
+ 497 0255 4B0C0000 		.4byte	.LASF49
+ 498 0259 04       		.byte	0x4
+ 499 025a 57       		.byte	0x57
+ 500 025b A2000000 		.4byte	0xa2
+ 501 025f 3E       		.byte	0x3e
+ 502 0260 09       		.uleb128 0x9
+ 503 0261 40000000 		.4byte	.LASF50
+ 504 0265 04       		.byte	0x4
+ 505 0266 58       		.byte	0x58
+ 506 0267 A2000000 		.4byte	0xa2
+ 507 026b 3F       		.byte	0x3f
+ 508 026c 09       		.uleb128 0x9
+ 509 026d 42010000 		.4byte	.LASF51
+ 510 0271 04       		.byte	0x4
+ 511 0272 59       		.byte	0x59
+ 512 0273 A2000000 		.4byte	0xa2
+ 513 0277 40       		.byte	0x40
+ 514 0278 09       		.uleb128 0x9
+ 515 0279 270B0000 		.4byte	.LASF52
+ 516 027d 04       		.byte	0x4
+ 517 027e 5A       		.byte	0x5a
+ 518 027f A2000000 		.4byte	0xa2
+ 519 0283 41       		.byte	0x41
+ 520 0284 09       		.uleb128 0x9
+ 521 0285 FB040000 		.4byte	.LASF53
+ 522 0289 04       		.byte	0x4
+ 523 028a 5B       		.byte	0x5b
+ 524 028b A2000000 		.4byte	0xa2
+ 525 028f 42       		.byte	0x42
+ 526 0290 09       		.uleb128 0x9
+ 527 0291 19080000 		.4byte	.LASF54
+ 528 0295 04       		.byte	0x4
+ 529 0296 5C       		.byte	0x5c
+ 530 0297 A2000000 		.4byte	0xa2
+ 531 029b 43       		.byte	0x43
+ 532 029c 09       		.uleb128 0x9
+ 533 029d D6080000 		.4byte	.LASF55
+ 534 02a1 04       		.byte	0x4
+ 535 02a2 5D       		.byte	0x5d
+ 536 02a3 A2000000 		.4byte	0xa2
+ 537 02a7 44       		.byte	0x44
+ 538 02a8 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 12
+
+
+ 539 02a9 A00D0000 		.4byte	.LASF56
+ 540 02ad 04       		.byte	0x4
+ 541 02ae 5E       		.byte	0x5e
+ 542 02af CE000000 		.4byte	0xce
+ 543 02b3 48       		.byte	0x48
+ 544 02b4 09       		.uleb128 0x9
+ 545 02b5 98020000 		.4byte	.LASF57
+ 546 02b9 04       		.byte	0x4
+ 547 02ba 5F       		.byte	0x5f
+ 548 02bb CE000000 		.4byte	0xce
+ 549 02bf 4C       		.byte	0x4c
+ 550 02c0 09       		.uleb128 0x9
+ 551 02c1 B40F0000 		.4byte	.LASF58
+ 552 02c5 04       		.byte	0x4
+ 553 02c6 60       		.byte	0x60
+ 554 02c7 A2000000 		.4byte	0xa2
+ 555 02cb 50       		.byte	0x50
+ 556 02cc 09       		.uleb128 0x9
+ 557 02cd 46070000 		.4byte	.LASF59
+ 558 02d1 04       		.byte	0x4
+ 559 02d2 61       		.byte	0x61
+ 560 02d3 A2000000 		.4byte	0xa2
+ 561 02d7 51       		.byte	0x51
+ 562 02d8 09       		.uleb128 0x9
+ 563 02d9 73050000 		.4byte	.LASF60
+ 564 02dd 04       		.byte	0x4
+ 565 02de 62       		.byte	0x62
+ 566 02df A2000000 		.4byte	0xa2
+ 567 02e3 52       		.byte	0x52
+ 568 02e4 09       		.uleb128 0x9
+ 569 02e5 730B0000 		.4byte	.LASF61
+ 570 02e9 04       		.byte	0x4
+ 571 02ea 63       		.byte	0x63
+ 572 02eb A2000000 		.4byte	0xa2
+ 573 02ef 53       		.byte	0x53
+ 574 02f0 09       		.uleb128 0x9
+ 575 02f1 5B0F0000 		.4byte	.LASF62
+ 576 02f5 04       		.byte	0x4
+ 577 02f6 64       		.byte	0x64
+ 578 02f7 A2000000 		.4byte	0xa2
+ 579 02fb 54       		.byte	0x54
+ 580 02fc 09       		.uleb128 0x9
+ 581 02fd 90070000 		.4byte	.LASF63
+ 582 0301 04       		.byte	0x4
+ 583 0302 65       		.byte	0x65
+ 584 0303 A2000000 		.4byte	0xa2
+ 585 0307 55       		.byte	0x55
+ 586 0308 09       		.uleb128 0x9
+ 587 0309 00000000 		.4byte	.LASF64
+ 588 030d 04       		.byte	0x4
+ 589 030e 66       		.byte	0x66
+ 590 030f A2000000 		.4byte	0xa2
+ 591 0313 56       		.byte	0x56
+ 592 0314 09       		.uleb128 0x9
+ 593 0315 8F0C0000 		.4byte	.LASF65
+ 594 0319 04       		.byte	0x4
+ 595 031a 67       		.byte	0x67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 13
+
+
+ 596 031b A2000000 		.4byte	0xa2
+ 597 031f 57       		.byte	0x57
+ 598 0320 09       		.uleb128 0x9
+ 599 0321 E1060000 		.4byte	.LASF66
+ 600 0325 04       		.byte	0x4
+ 601 0326 68       		.byte	0x68
+ 602 0327 A2000000 		.4byte	0xa2
+ 603 032b 58       		.byte	0x58
+ 604 032c 09       		.uleb128 0x9
+ 605 032d C6100000 		.4byte	.LASF67
+ 606 0331 04       		.byte	0x4
+ 607 0332 69       		.byte	0x69
+ 608 0333 A2000000 		.4byte	0xa2
+ 609 0337 59       		.byte	0x59
+ 610 0338 09       		.uleb128 0x9
+ 611 0339 EF0F0000 		.4byte	.LASF68
+ 612 033d 04       		.byte	0x4
+ 613 033e 6E       		.byte	0x6e
+ 614 033f B8000000 		.4byte	0xb8
+ 615 0343 5A       		.byte	0x5a
+ 616 0344 09       		.uleb128 0x9
+ 617 0345 D2000000 		.4byte	.LASF69
+ 618 0349 04       		.byte	0x4
+ 619 034a 6F       		.byte	0x6f
+ 620 034b B8000000 		.4byte	0xb8
+ 621 034f 5C       		.byte	0x5c
+ 622 0350 09       		.uleb128 0x9
+ 623 0351 EF090000 		.4byte	.LASF70
+ 624 0355 04       		.byte	0x4
+ 625 0356 70       		.byte	0x70
+ 626 0357 A2000000 		.4byte	0xa2
+ 627 035b 5E       		.byte	0x5e
+ 628 035c 09       		.uleb128 0x9
+ 629 035d 590C0000 		.4byte	.LASF71
+ 630 0361 04       		.byte	0x4
+ 631 0362 71       		.byte	0x71
+ 632 0363 A2000000 		.4byte	0xa2
+ 633 0367 5F       		.byte	0x5f
+ 634 0368 09       		.uleb128 0x9
+ 635 0369 24080000 		.4byte	.LASF72
+ 636 036d 04       		.byte	0x4
+ 637 036e 72       		.byte	0x72
+ 638 036f A2000000 		.4byte	0xa2
+ 639 0373 60       		.byte	0x60
+ 640 0374 09       		.uleb128 0x9
+ 641 0375 14090000 		.4byte	.LASF73
+ 642 0379 04       		.byte	0x4
+ 643 037a 73       		.byte	0x73
+ 644 037b CE000000 		.4byte	0xce
+ 645 037f 64       		.byte	0x64
+ 646 0380 09       		.uleb128 0x9
+ 647 0381 63110000 		.4byte	.LASF74
+ 648 0385 04       		.byte	0x4
+ 649 0386 76       		.byte	0x76
+ 650 0387 B8000000 		.4byte	0xb8
+ 651 038b 68       		.byte	0x68
+ 652 038c 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 14
+
+
+ 653 038d 070C0000 		.4byte	.LASF75
+ 654 0391 04       		.byte	0x4
+ 655 0392 77       		.byte	0x77
+ 656 0393 B8000000 		.4byte	0xb8
+ 657 0397 6A       		.byte	0x6a
+ 658 0398 09       		.uleb128 0x9
+ 659 0399 450A0000 		.4byte	.LASF76
+ 660 039d 04       		.byte	0x4
+ 661 039e 78       		.byte	0x78
+ 662 039f B8000000 		.4byte	0xb8
+ 663 03a3 6C       		.byte	0x6c
+ 664 03a4 09       		.uleb128 0x9
+ 665 03a5 52020000 		.4byte	.LASF77
+ 666 03a9 04       		.byte	0x4
+ 667 03aa 79       		.byte	0x79
+ 668 03ab B8000000 		.4byte	0xb8
+ 669 03af 6E       		.byte	0x6e
+ 670 03b0 09       		.uleb128 0x9
+ 671 03b1 45090000 		.4byte	.LASF78
+ 672 03b5 04       		.byte	0x4
+ 673 03b6 7B       		.byte	0x7b
+ 674 03b7 A2000000 		.4byte	0xa2
+ 675 03bb 70       		.byte	0x70
+ 676 03bc 09       		.uleb128 0x9
+ 677 03bd 21040000 		.4byte	.LASF79
+ 678 03c1 04       		.byte	0x4
+ 679 03c2 7C       		.byte	0x7c
+ 680 03c3 A2000000 		.4byte	0xa2
+ 681 03c7 71       		.byte	0x71
+ 682 03c8 09       		.uleb128 0x9
+ 683 03c9 82020000 		.4byte	.LASF80
+ 684 03cd 04       		.byte	0x4
+ 685 03ce 7D       		.byte	0x7d
+ 686 03cf A2000000 		.4byte	0xa2
+ 687 03d3 72       		.byte	0x72
+ 688 03d4 09       		.uleb128 0x9
+ 689 03d5 69010000 		.4byte	.LASF81
+ 690 03d9 04       		.byte	0x4
+ 691 03da 7E       		.byte	0x7e
+ 692 03db A2000000 		.4byte	0xa2
+ 693 03df 73       		.byte	0x73
+ 694 03e0 09       		.uleb128 0x9
+ 695 03e1 170D0000 		.4byte	.LASF82
+ 696 03e5 04       		.byte	0x4
+ 697 03e6 80       		.byte	0x80
+ 698 03e7 B8000000 		.4byte	0xb8
+ 699 03eb 74       		.byte	0x74
+ 700 03ec 09       		.uleb128 0x9
+ 701 03ed 850B0000 		.4byte	.LASF83
+ 702 03f1 04       		.byte	0x4
+ 703 03f2 81       		.byte	0x81
+ 704 03f3 B8000000 		.4byte	0xb8
+ 705 03f7 76       		.byte	0x76
+ 706 03f8 09       		.uleb128 0x9
+ 707 03f9 C1080000 		.4byte	.LASF84
+ 708 03fd 04       		.byte	0x4
+ 709 03fe 82       		.byte	0x82
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 15
+
+
+ 710 03ff B8000000 		.4byte	0xb8
+ 711 0403 78       		.byte	0x78
+ 712 0404 09       		.uleb128 0x9
+ 713 0405 BC050000 		.4byte	.LASF85
+ 714 0409 04       		.byte	0x4
+ 715 040a 83       		.byte	0x83
+ 716 040b B8000000 		.4byte	0xb8
+ 717 040f 7A       		.byte	0x7a
+ 718 0410 09       		.uleb128 0x9
+ 719 0411 6B090000 		.4byte	.LASF86
+ 720 0415 04       		.byte	0x4
+ 721 0416 86       		.byte	0x86
+ 722 0417 A2000000 		.4byte	0xa2
+ 723 041b 7C       		.byte	0x7c
+ 724 041c 09       		.uleb128 0x9
+ 725 041d C50F0000 		.4byte	.LASF87
+ 726 0421 04       		.byte	0x4
+ 727 0422 87       		.byte	0x87
+ 728 0423 A2000000 		.4byte	0xa2
+ 729 0427 7D       		.byte	0x7d
+ 730 0428 09       		.uleb128 0x9
+ 731 0429 54050000 		.4byte	.LASF88
+ 732 042d 04       		.byte	0x4
+ 733 042e 88       		.byte	0x88
+ 734 042f A2000000 		.4byte	0xa2
+ 735 0433 7E       		.byte	0x7e
+ 736 0434 09       		.uleb128 0x9
+ 737 0435 AC040000 		.4byte	.LASF89
+ 738 0439 04       		.byte	0x4
+ 739 043a 89       		.byte	0x89
+ 740 043b A2000000 		.4byte	0xa2
+ 741 043f 7F       		.byte	0x7f
+ 742 0440 09       		.uleb128 0x9
+ 743 0441 D1050000 		.4byte	.LASF90
+ 744 0445 04       		.byte	0x4
+ 745 0446 8A       		.byte	0x8a
+ 746 0447 A2000000 		.4byte	0xa2
+ 747 044b 80       		.byte	0x80
+ 748 044c 09       		.uleb128 0x9
+ 749 044d 29000000 		.4byte	.LASF91
+ 750 0451 04       		.byte	0x4
+ 751 0452 8D       		.byte	0x8d
+ 752 0453 CE000000 		.4byte	0xce
+ 753 0457 84       		.byte	0x84
+ 754 0458 09       		.uleb128 0x9
+ 755 0459 5E0E0000 		.4byte	.LASF92
+ 756 045d 04       		.byte	0x4
+ 757 045e 8E       		.byte	0x8e
+ 758 045f CE000000 		.4byte	0xce
+ 759 0463 88       		.byte	0x88
+ 760 0464 09       		.uleb128 0x9
+ 761 0465 0D0B0000 		.4byte	.LASF93
+ 762 0469 04       		.byte	0x4
+ 763 046a 8F       		.byte	0x8f
+ 764 046b CE000000 		.4byte	0xce
+ 765 046f 8C       		.byte	0x8c
+ 766 0470 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 16
+
+
+ 767 0471 020D0000 		.4byte	.LASF94
+ 768 0475 04       		.byte	0x4
+ 769 0476 90       		.byte	0x90
+ 770 0477 CE000000 		.4byte	0xce
+ 771 047b 90       		.byte	0x90
+ 772 047c 09       		.uleb128 0x9
+ 773 047d F10D0000 		.4byte	.LASF95
+ 774 0481 04       		.byte	0x4
+ 775 0482 91       		.byte	0x91
+ 776 0483 CE000000 		.4byte	0xce
+ 777 0487 94       		.byte	0x94
+ 778 0488 09       		.uleb128 0x9
+ 779 0489 36040000 		.4byte	.LASF96
+ 780 048d 04       		.byte	0x4
+ 781 048e 92       		.byte	0x92
+ 782 048f CE000000 		.4byte	0xce
+ 783 0493 98       		.byte	0x98
+ 784 0494 09       		.uleb128 0x9
+ 785 0495 750E0000 		.4byte	.LASF97
+ 786 0499 04       		.byte	0x4
+ 787 049a 93       		.byte	0x93
+ 788 049b CE000000 		.4byte	0xce
+ 789 049f 9C       		.byte	0x9c
+ 790 04a0 09       		.uleb128 0x9
+ 791 04a1 03080000 		.4byte	.LASF98
+ 792 04a5 04       		.byte	0x4
+ 793 04a6 94       		.byte	0x94
+ 794 04a7 CE000000 		.4byte	0xce
+ 795 04ab A0       		.byte	0xa0
+ 796 04ac 09       		.uleb128 0x9
+ 797 04ad 3D0E0000 		.4byte	.LASF99
+ 798 04b1 04       		.byte	0x4
+ 799 04b2 95       		.byte	0x95
+ 800 04b3 B8000000 		.4byte	0xb8
+ 801 04b7 A4       		.byte	0xa4
+ 802 04b8 09       		.uleb128 0x9
+ 803 04b9 ED0C0000 		.4byte	.LASF100
+ 804 04bd 04       		.byte	0x4
+ 805 04be 96       		.byte	0x96
+ 806 04bf B8000000 		.4byte	0xb8
+ 807 04c3 A6       		.byte	0xa6
+ 808 04c4 09       		.uleb128 0x9
+ 809 04c5 DB0E0000 		.4byte	.LASF101
+ 810 04c9 04       		.byte	0x4
+ 811 04ca 97       		.byte	0x97
+ 812 04cb B8000000 		.4byte	0xb8
+ 813 04cf A8       		.byte	0xa8
+ 814 04d0 09       		.uleb128 0x9
+ 815 04d1 CB090000 		.4byte	.LASF102
+ 816 04d5 04       		.byte	0x4
+ 817 04d6 98       		.byte	0x98
+ 818 04d7 B8000000 		.4byte	0xb8
+ 819 04db AA       		.byte	0xaa
+ 820 04dc 09       		.uleb128 0x9
+ 821 04dd B2020000 		.4byte	.LASF103
+ 822 04e1 04       		.byte	0x4
+ 823 04e2 99       		.byte	0x99
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 17
+
+
+ 824 04e3 B8000000 		.4byte	0xb8
+ 825 04e7 AC       		.byte	0xac
+ 826 04e8 09       		.uleb128 0x9
+ 827 04e9 480B0000 		.4byte	.LASF104
+ 828 04ed 04       		.byte	0x4
+ 829 04ee 9A       		.byte	0x9a
+ 830 04ef B8000000 		.4byte	0xb8
+ 831 04f3 AE       		.byte	0xae
+ 832 04f4 09       		.uleb128 0x9
+ 833 04f5 C0020000 		.4byte	.LASF105
+ 834 04f9 04       		.byte	0x4
+ 835 04fa 9D       		.byte	0x9d
+ 836 04fb B8000000 		.4byte	0xb8
+ 837 04ff B0       		.byte	0xb0
+ 838 0500 09       		.uleb128 0x9
+ 839 0501 1F0F0000 		.4byte	.LASF106
+ 840 0505 04       		.byte	0x4
+ 841 0506 9E       		.byte	0x9e
+ 842 0507 CE000000 		.4byte	0xce
+ 843 050b B4       		.byte	0xb4
+ 844 050c 00       		.byte	0
+ 845 050d 03       		.uleb128 0x3
+ 846 050e 2B100000 		.4byte	.LASF107
+ 847 0512 04       		.byte	0x4
+ 848 0513 9F       		.byte	0x9f
+ 849 0514 FC000000 		.4byte	0xfc
+ 850 0518 02       		.uleb128 0x2
+ 851 0519 01       		.byte	0x1
+ 852 051a 08       		.byte	0x8
+ 853 051b 9A080000 		.4byte	.LASF108
+ 854 051f 02       		.uleb128 0x2
+ 855 0520 04       		.byte	0x4
+ 856 0521 04       		.byte	0x4
+ 857 0522 C0040000 		.4byte	.LASF109
+ 858 0526 02       		.uleb128 0x2
+ 859 0527 08       		.byte	0x8
+ 860 0528 04       		.byte	0x4
+ 861 0529 61070000 		.4byte	.LASF110
+ 862 052d 0A       		.uleb128 0xa
+ 863 052e 04       		.byte	0x4
+ 864 052f 02       		.uleb128 0x2
+ 865 0530 01       		.byte	0x1
+ 866 0531 02       		.byte	0x2
+ 867 0532 68070000 		.4byte	.LASF111
+ 868 0536 0B       		.uleb128 0xb
+ 869 0537 01       		.byte	0x1
+ 870 0538 3E000000 		.4byte	0x3e
+ 871 053c 05       		.byte	0x5
+ 872 053d 1304     		.2byte	0x413
+ 873 053f 5C050000 		.4byte	0x55c
+ 874 0543 0C       		.uleb128 0xc
+ 875 0544 09040000 		.4byte	.LASF112
+ 876 0548 00       		.byte	0
+ 877 0549 0C       		.uleb128 0xc
+ 878 054a 5D060000 		.4byte	.LASF113
+ 879 054e 01       		.byte	0x1
+ 880 054f 0C       		.uleb128 0xc
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 18
+
+
+ 881 0550 82080000 		.4byte	.LASF114
+ 882 0554 02       		.byte	0x2
+ 883 0555 0C       		.uleb128 0xc
+ 884 0556 4F010000 		.4byte	.LASF115
+ 885 055a 03       		.byte	0x3
+ 886 055b 00       		.byte	0
+ 887 055c 0D       		.uleb128 0xd
+ 888 055d 08110000 		.4byte	.LASF116
+ 889 0561 05       		.byte	0x5
+ 890 0562 1804     		.2byte	0x418
+ 891 0564 36050000 		.4byte	0x536
+ 892 0568 0E       		.uleb128 0xe
+ 893 0569 78       		.byte	0x78
+ 894 056a 05       		.byte	0x5
+ 895 056b 0205     		.2byte	0x502
+ 896 056d 35060000 		.4byte	0x635
+ 897 0571 0F       		.uleb128 0xf
+ 898 0572 9A060000 		.4byte	.LASF117
+ 899 0576 05       		.byte	0x5
+ 900 0577 0405     		.2byte	0x504
+ 901 0579 CE000000 		.4byte	0xce
+ 902 057d 00       		.byte	0
+ 903 057e 0F       		.uleb128 0xf
+ 904 057f EF0E0000 		.4byte	.LASF118
+ 905 0583 05       		.byte	0x5
+ 906 0584 0505     		.2byte	0x505
+ 907 0586 CE000000 		.4byte	0xce
+ 908 058a 04       		.byte	0x4
+ 909 058b 0F       		.uleb128 0xf
+ 910 058c 260C0000 		.4byte	.LASF119
+ 911 0590 05       		.byte	0x5
+ 912 0591 0605     		.2byte	0x506
+ 913 0593 CE000000 		.4byte	0xce
+ 914 0597 08       		.byte	0x8
+ 915 0598 0F       		.uleb128 0xf
+ 916 0599 8B0E0000 		.4byte	.LASF120
+ 917 059d 05       		.byte	0x5
+ 918 059e 0705     		.2byte	0x507
+ 919 05a0 CE000000 		.4byte	0xce
+ 920 05a4 0C       		.byte	0xc
+ 921 05a5 0F       		.uleb128 0xf
+ 922 05a6 38060000 		.4byte	.LASF121
+ 923 05aa 05       		.byte	0x5
+ 924 05ab 0805     		.2byte	0x508
+ 925 05ad CE000000 		.4byte	0xce
+ 926 05b1 10       		.byte	0x10
+ 927 05b2 0F       		.uleb128 0xf
+ 928 05b3 C1090000 		.4byte	.LASF122
+ 929 05b7 05       		.byte	0x5
+ 930 05b8 0905     		.2byte	0x509
+ 931 05ba 5C050000 		.4byte	0x55c
+ 932 05be 14       		.byte	0x14
+ 933 05bf 0F       		.uleb128 0xf
+ 934 05c0 9F080000 		.4byte	.LASF123
+ 935 05c4 05       		.byte	0x5
+ 936 05c5 0A05     		.2byte	0x50a
+ 937 05c7 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 19
+
+
+ 938 05cb 18       		.byte	0x18
+ 939 05cc 0F       		.uleb128 0xf
+ 940 05cd A50A0000 		.4byte	.LASF124
+ 941 05d1 05       		.byte	0x5
+ 942 05d2 0B05     		.2byte	0x50b
+ 943 05d4 35060000 		.4byte	0x635
+ 944 05d8 1C       		.byte	0x1c
+ 945 05d9 0F       		.uleb128 0xf
+ 946 05da 5A110000 		.4byte	.LASF125
+ 947 05de 05       		.byte	0x5
+ 948 05df 0C05     		.2byte	0x50c
+ 949 05e1 CE000000 		.4byte	0xce
+ 950 05e5 5C       		.byte	0x5c
+ 951 05e6 0F       		.uleb128 0xf
+ 952 05e7 A6020000 		.4byte	.LASF126
+ 953 05eb 05       		.byte	0x5
+ 954 05ec 0D05     		.2byte	0x50d
+ 955 05ee CE000000 		.4byte	0xce
+ 956 05f2 60       		.byte	0x60
+ 957 05f3 0F       		.uleb128 0xf
+ 958 05f4 DA100000 		.4byte	.LASF127
+ 959 05f8 05       		.byte	0x5
+ 960 05f9 0E05     		.2byte	0x50e
+ 961 05fb CE000000 		.4byte	0xce
+ 962 05ff 64       		.byte	0x64
+ 963 0600 0F       		.uleb128 0xf
+ 964 0601 850C0000 		.4byte	.LASF128
+ 965 0605 05       		.byte	0x5
+ 966 0606 0F05     		.2byte	0x50f
+ 967 0608 CE000000 		.4byte	0xce
+ 968 060c 68       		.byte	0x68
+ 969 060d 0F       		.uleb128 0xf
+ 970 060e 80090000 		.4byte	.LASF129
+ 971 0612 05       		.byte	0x5
+ 972 0613 1005     		.2byte	0x510
+ 973 0615 CE000000 		.4byte	0xce
+ 974 0619 6C       		.byte	0x6c
+ 975 061a 0F       		.uleb128 0xf
+ 976 061b 5A100000 		.4byte	.LASF130
+ 977 061f 05       		.byte	0x5
+ 978 0620 1105     		.2byte	0x511
+ 979 0622 2F050000 		.4byte	0x52f
+ 980 0626 70       		.byte	0x70
+ 981 0627 0F       		.uleb128 0xf
+ 982 0628 40080000 		.4byte	.LASF131
+ 983 062c 05       		.byte	0x5
+ 984 062d 1205     		.2byte	0x512
+ 985 062f CE000000 		.4byte	0xce
+ 986 0633 74       		.byte	0x74
+ 987 0634 00       		.byte	0
+ 988 0635 06       		.uleb128 0x6
+ 989 0636 CE000000 		.4byte	0xce
+ 990 063a 45060000 		.4byte	0x645
+ 991 063e 07       		.uleb128 0x7
+ 992 063f D9000000 		.4byte	0xd9
+ 993 0643 0F       		.byte	0xf
+ 994 0644 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 20
+
+
+ 995 0645 0D       		.uleb128 0xd
+ 996 0646 86060000 		.4byte	.LASF132
+ 997 064a 05       		.byte	0x5
+ 998 064b 1305     		.2byte	0x513
+ 999 064d 68050000 		.4byte	0x568
+ 1000 0651 0B       		.uleb128 0xb
+ 1001 0652 01       		.byte	0x1
+ 1002 0653 3E000000 		.4byte	0x3e
+ 1003 0657 06       		.byte	0x6
+ 1004 0658 2402     		.2byte	0x224
+ 1005 065a 6B060000 		.4byte	0x66b
+ 1006 065e 0C       		.uleb128 0xc
+ 1007 065f 1D020000 		.4byte	.LASF133
+ 1008 0663 00       		.byte	0
+ 1009 0664 0C       		.uleb128 0xc
+ 1010 0665 CE020000 		.4byte	.LASF134
+ 1011 0669 01       		.byte	0x1
+ 1012 066a 00       		.byte	0
+ 1013 066b 0D       		.uleb128 0xd
+ 1014 066c 3A020000 		.4byte	.LASF135
+ 1015 0670 06       		.byte	0x6
+ 1016 0671 2702     		.2byte	0x227
+ 1017 0673 51060000 		.4byte	0x651
+ 1018 0677 0D       		.uleb128 0xd
+ 1019 0678 14010000 		.4byte	.LASF136
+ 1020 067c 06       		.byte	0x6
+ 1021 067d 3902     		.2byte	0x239
+ 1022 067f 83060000 		.4byte	0x683
+ 1023 0683 10       		.uleb128 0x10
+ 1024 0684 04       		.byte	0x4
+ 1025 0685 89060000 		.4byte	0x689
+ 1026 0689 11       		.uleb128 0x11
+ 1027 068a 94060000 		.4byte	0x694
+ 1028 068e 12       		.uleb128 0x12
+ 1029 068f CE000000 		.4byte	0xce
+ 1030 0693 00       		.byte	0
+ 1031 0694 0D       		.uleb128 0xd
+ 1032 0695 DD020000 		.4byte	.LASF137
+ 1033 0699 06       		.byte	0x6
+ 1034 069a 4402     		.2byte	0x244
+ 1035 069c A0060000 		.4byte	0x6a0
+ 1036 06a0 10       		.uleb128 0x10
+ 1037 06a1 04       		.byte	0x4
+ 1038 06a2 A6060000 		.4byte	0x6a6
+ 1039 06a6 13       		.uleb128 0x13
+ 1040 06a7 6B060000 		.4byte	0x66b
+ 1041 06ab B5060000 		.4byte	0x6b5
+ 1042 06af 12       		.uleb128 0x12
+ 1043 06b0 CE000000 		.4byte	0xce
+ 1044 06b4 00       		.byte	0
+ 1045 06b5 14       		.uleb128 0x14
+ 1046 06b6 F2030000 		.4byte	.LASF160
+ 1047 06ba 4C       		.byte	0x4c
+ 1048 06bb 06       		.byte	0x6
+ 1049 06bc C302     		.2byte	0x2c3
+ 1050 06be D4070000 		.4byte	0x7d4
+ 1051 06c2 0F       		.uleb128 0xf
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 21
+
+
+ 1052 06c3 A4070000 		.4byte	.LASF138
+ 1053 06c7 06       		.byte	0x6
+ 1054 06c8 C602     		.2byte	0x2c6
+ 1055 06ca 2F050000 		.4byte	0x52f
+ 1056 06ce 00       		.byte	0
+ 1057 06cf 0F       		.uleb128 0xf
+ 1058 06d0 1B0A0000 		.4byte	.LASF139
+ 1059 06d4 06       		.byte	0x6
+ 1060 06d5 C702     		.2byte	0x2c7
+ 1061 06d7 2F050000 		.4byte	0x52f
+ 1062 06db 01       		.byte	0x1
+ 1063 06dc 0F       		.uleb128 0xf
+ 1064 06dd 760F0000 		.4byte	.LASF140
+ 1065 06e1 06       		.byte	0x6
+ 1066 06e2 C902     		.2byte	0x2c9
+ 1067 06e4 E0000000 		.4byte	0xe0
+ 1068 06e8 04       		.byte	0x4
+ 1069 06e9 0F       		.uleb128 0xf
+ 1070 06ea 4C000000 		.4byte	.LASF141
+ 1071 06ee 06       		.byte	0x6
+ 1072 06ef CB02     		.2byte	0x2cb
+ 1073 06f1 E0000000 		.4byte	0xe0
+ 1074 06f5 08       		.byte	0x8
+ 1075 06f6 0F       		.uleb128 0xf
+ 1076 06f7 560B0000 		.4byte	.LASF142
+ 1077 06fb 06       		.byte	0x6
+ 1078 06fc CC02     		.2byte	0x2cc
+ 1079 06fe 2F050000 		.4byte	0x52f
+ 1080 0702 0C       		.byte	0xc
+ 1081 0703 0F       		.uleb128 0xf
+ 1082 0704 390A0000 		.4byte	.LASF143
+ 1083 0708 06       		.byte	0x6
+ 1084 0709 CD02     		.2byte	0x2cd
+ 1085 070b 2F050000 		.4byte	0x52f
+ 1086 070f 0D       		.byte	0xd
+ 1087 0710 0F       		.uleb128 0xf
+ 1088 0711 190C0000 		.4byte	.LASF144
+ 1089 0715 06       		.byte	0x6
+ 1090 0716 CF02     		.2byte	0x2cf
+ 1091 0718 D4070000 		.4byte	0x7d4
+ 1092 071c 10       		.byte	0x10
+ 1093 071d 0F       		.uleb128 0xf
+ 1094 071e E7080000 		.4byte	.LASF145
+ 1095 0722 06       		.byte	0x6
+ 1096 0723 D002     		.2byte	0x2d0
+ 1097 0725 CE000000 		.4byte	0xce
+ 1098 0729 14       		.byte	0x14
+ 1099 072a 0F       		.uleb128 0xf
+ 1100 072b 32010000 		.4byte	.LASF146
+ 1101 072f 06       		.byte	0x6
+ 1102 0730 D102     		.2byte	0x2d1
+ 1103 0732 E0000000 		.4byte	0xe0
+ 1104 0736 18       		.byte	0x18
+ 1105 0737 0F       		.uleb128 0xf
+ 1106 0738 58080000 		.4byte	.LASF147
+ 1107 073c 06       		.byte	0x6
+ 1108 073d D202     		.2byte	0x2d2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 22
+
+
+ 1109 073f E0000000 		.4byte	0xe0
+ 1110 0743 1C       		.byte	0x1c
+ 1111 0744 0F       		.uleb128 0xf
+ 1112 0745 DB000000 		.4byte	.LASF148
+ 1113 0749 06       		.byte	0x6
+ 1114 074a D402     		.2byte	0x2d4
+ 1115 074c E0000000 		.4byte	0xe0
+ 1116 0750 20       		.byte	0x20
+ 1117 0751 0F       		.uleb128 0xf
+ 1118 0752 76060000 		.4byte	.LASF149
+ 1119 0756 06       		.byte	0x6
+ 1120 0757 D502     		.2byte	0x2d5
+ 1121 0759 DA070000 		.4byte	0x7da
+ 1122 075d 24       		.byte	0x24
+ 1123 075e 0F       		.uleb128 0xf
+ 1124 075f 4C040000 		.4byte	.LASF150
+ 1125 0763 06       		.byte	0x6
+ 1126 0764 D702     		.2byte	0x2d7
+ 1127 0766 D4070000 		.4byte	0x7d4
+ 1128 076a 28       		.byte	0x28
+ 1129 076b 0F       		.uleb128 0xf
+ 1130 076c 4B060000 		.4byte	.LASF151
+ 1131 0770 06       		.byte	0x6
+ 1132 0771 D802     		.2byte	0x2d8
+ 1133 0773 CE000000 		.4byte	0xce
+ 1134 0777 2C       		.byte	0x2c
+ 1135 0778 0F       		.uleb128 0xf
+ 1136 0779 5A040000 		.4byte	.LASF152
+ 1137 077d 06       		.byte	0x6
+ 1138 077e D902     		.2byte	0x2d9
+ 1139 0780 E0000000 		.4byte	0xe0
+ 1140 0784 30       		.byte	0x30
+ 1141 0785 0F       		.uleb128 0xf
+ 1142 0786 34090000 		.4byte	.LASF153
+ 1143 078a 06       		.byte	0x6
+ 1144 078b DA02     		.2byte	0x2da
+ 1145 078d E0000000 		.4byte	0xe0
+ 1146 0791 34       		.byte	0x34
+ 1147 0792 0F       		.uleb128 0xf
+ 1148 0793 D0010000 		.4byte	.LASF154
+ 1149 0797 06       		.byte	0x6
+ 1150 0798 DC02     		.2byte	0x2dc
+ 1151 079a D4070000 		.4byte	0x7d4
+ 1152 079e 38       		.byte	0x38
+ 1153 079f 0F       		.uleb128 0xf
+ 1154 07a0 980B0000 		.4byte	.LASF155
+ 1155 07a4 06       		.byte	0x6
+ 1156 07a5 DD02     		.2byte	0x2dd
+ 1157 07a7 CE000000 		.4byte	0xce
+ 1158 07ab 3C       		.byte	0x3c
+ 1159 07ac 0F       		.uleb128 0xf
+ 1160 07ad 370B0000 		.4byte	.LASF156
+ 1161 07b1 06       		.byte	0x6
+ 1162 07b2 DE02     		.2byte	0x2de
+ 1163 07b4 E0000000 		.4byte	0xe0
+ 1164 07b8 40       		.byte	0x40
+ 1165 07b9 0F       		.uleb128 0xf
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 23
+
+
+ 1166 07ba 58070000 		.4byte	.LASF157
+ 1167 07be 06       		.byte	0x6
+ 1168 07bf E402     		.2byte	0x2e4
+ 1169 07c1 77060000 		.4byte	0x677
+ 1170 07c5 44       		.byte	0x44
+ 1171 07c6 0F       		.uleb128 0xf
+ 1172 07c7 16020000 		.4byte	.LASF158
+ 1173 07cb 06       		.byte	0x6
+ 1174 07cc EB02     		.2byte	0x2eb
+ 1175 07ce 94060000 		.4byte	0x694
+ 1176 07d2 48       		.byte	0x48
+ 1177 07d3 00       		.byte	0
+ 1178 07d4 10       		.uleb128 0x10
+ 1179 07d5 04       		.byte	0x4
+ 1180 07d6 A2000000 		.4byte	0xa2
+ 1181 07da 05       		.uleb128 0x5
+ 1182 07db 2F050000 		.4byte	0x52f
+ 1183 07df 0D       		.uleb128 0xd
+ 1184 07e0 A3100000 		.4byte	.LASF159
+ 1185 07e4 06       		.byte	0x6
+ 1186 07e5 EE02     		.2byte	0x2ee
+ 1187 07e7 B5060000 		.4byte	0x6b5
+ 1188 07eb 14       		.uleb128 0x14
+ 1189 07ec 2B110000 		.4byte	.LASF161
+ 1190 07f0 10       		.byte	0x10
+ 1191 07f1 06       		.byte	0x6
+ 1192 07f2 F102     		.2byte	0x2f1
+ 1193 07f4 2D080000 		.4byte	0x82d
+ 1194 07f8 0F       		.uleb128 0xf
+ 1195 07f9 4D110000 		.4byte	.LASF162
+ 1196 07fd 06       		.byte	0x6
+ 1197 07fe F402     		.2byte	0x2f4
+ 1198 0800 A2000000 		.4byte	0xa2
+ 1199 0804 00       		.byte	0
+ 1200 0805 0F       		.uleb128 0xf
+ 1201 0806 CB000000 		.4byte	.LASF163
+ 1202 080a 06       		.byte	0x6
+ 1203 080b FA02     		.2byte	0x2fa
+ 1204 080d D4070000 		.4byte	0x7d4
+ 1205 0811 04       		.byte	0x4
+ 1206 0812 0F       		.uleb128 0xf
+ 1207 0813 1E000000 		.4byte	.LASF164
+ 1208 0817 06       		.byte	0x6
+ 1209 0818 FD02     		.2byte	0x2fd
+ 1210 081a CE000000 		.4byte	0xce
+ 1211 081e 08       		.byte	0x8
+ 1212 081f 0F       		.uleb128 0xf
+ 1213 0820 FA0E0000 		.4byte	.LASF165
+ 1214 0824 06       		.byte	0x6
+ 1215 0825 0D03     		.2byte	0x30d
+ 1216 0827 2F050000 		.4byte	0x52f
+ 1217 082b 0C       		.byte	0xc
+ 1218 082c 00       		.byte	0
+ 1219 082d 0D       		.uleb128 0xd
+ 1220 082e 980E0000 		.4byte	.LASF166
+ 1221 0832 06       		.byte	0x6
+ 1222 0833 0E03     		.2byte	0x30e
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 24
+
+
+ 1223 0835 EB070000 		.4byte	0x7eb
+ 1224 0839 0D       		.uleb128 0xd
+ 1225 083a A2090000 		.4byte	.LASF167
+ 1226 083e 07       		.byte	0x7
+ 1227 083f D901     		.2byte	0x1d9
+ 1228 0841 83060000 		.4byte	0x683
+ 1229 0845 14       		.uleb128 0x14
+ 1230 0846 29050000 		.4byte	.LASF168
+ 1231 084a 38       		.byte	0x38
+ 1232 084b 07       		.byte	0x7
+ 1233 084c 7502     		.2byte	0x275
+ 1234 084e 09090000 		.4byte	0x909
+ 1235 0852 0F       		.uleb128 0xf
+ 1236 0853 A9000000 		.4byte	.LASF169
+ 1237 0857 07       		.byte	0x7
+ 1238 0858 7802     		.2byte	0x278
+ 1239 085a E0000000 		.4byte	0xe0
+ 1240 085e 00       		.byte	0
+ 1241 085f 0F       		.uleb128 0xf
+ 1242 0860 D2060000 		.4byte	.LASF170
+ 1243 0864 07       		.byte	0x7
+ 1244 0865 7902     		.2byte	0x279
+ 1245 0867 E0000000 		.4byte	0xe0
+ 1246 086b 04       		.byte	0x4
+ 1247 086c 0F       		.uleb128 0xf
+ 1248 086d DF0B0000 		.4byte	.LASF171
+ 1249 0871 07       		.byte	0x7
+ 1250 0872 7B02     		.2byte	0x27b
+ 1251 0874 2D050000 		.4byte	0x52d
+ 1252 0878 08       		.byte	0x8
+ 1253 0879 0F       		.uleb128 0xf
+ 1254 087a 2C020000 		.4byte	.LASF172
+ 1255 087e 07       		.byte	0x7
+ 1256 087f 7C02     		.2byte	0x27c
+ 1257 0881 CE000000 		.4byte	0xce
+ 1258 0885 0C       		.byte	0xc
+ 1259 0886 0F       		.uleb128 0xf
+ 1260 0887 690A0000 		.4byte	.LASF173
+ 1261 088b 07       		.byte	0x7
+ 1262 088c 7D02     		.2byte	0x27d
+ 1263 088e E0000000 		.4byte	0xe0
+ 1264 0892 10       		.byte	0x10
+ 1265 0893 0F       		.uleb128 0xf
+ 1266 0894 B3080000 		.4byte	.LASF174
+ 1267 0898 07       		.byte	0x7
+ 1268 0899 7E02     		.2byte	0x27e
+ 1269 089b E0000000 		.4byte	0xe0
+ 1270 089f 14       		.byte	0x14
+ 1271 08a0 0F       		.uleb128 0xf
+ 1272 08a1 DB060000 		.4byte	.LASF175
+ 1273 08a5 07       		.byte	0x7
+ 1274 08a6 8002     		.2byte	0x280
+ 1275 08a8 2D050000 		.4byte	0x52d
+ 1276 08ac 18       		.byte	0x18
+ 1277 08ad 0F       		.uleb128 0xf
+ 1278 08ae 73110000 		.4byte	.LASF176
+ 1279 08b2 07       		.byte	0x7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 25
+
+
+ 1280 08b3 8102     		.2byte	0x281
+ 1281 08b5 CE000000 		.4byte	0xce
+ 1282 08b9 1C       		.byte	0x1c
+ 1283 08ba 0F       		.uleb128 0xf
+ 1284 08bb F8080000 		.4byte	.LASF177
+ 1285 08bf 07       		.byte	0x7
+ 1286 08c0 8202     		.2byte	0x282
+ 1287 08c2 E0000000 		.4byte	0xe0
+ 1288 08c6 20       		.byte	0x20
+ 1289 08c7 0F       		.uleb128 0xf
+ 1290 08c8 620B0000 		.4byte	.LASF178
+ 1291 08cc 07       		.byte	0x7
+ 1292 08cd 8402     		.2byte	0x284
+ 1293 08cf 2D050000 		.4byte	0x52d
+ 1294 08d3 24       		.byte	0x24
+ 1295 08d4 0F       		.uleb128 0xf
+ 1296 08d5 F80A0000 		.4byte	.LASF179
+ 1297 08d9 07       		.byte	0x7
+ 1298 08da 8502     		.2byte	0x285
+ 1299 08dc CE000000 		.4byte	0xce
+ 1300 08e0 28       		.byte	0x28
+ 1301 08e1 0F       		.uleb128 0xf
+ 1302 08e2 E00D0000 		.4byte	.LASF180
+ 1303 08e6 07       		.byte	0x7
+ 1304 08e7 8602     		.2byte	0x286
+ 1305 08e9 E0000000 		.4byte	0xe0
+ 1306 08ed 2C       		.byte	0x2c
+ 1307 08ee 0F       		.uleb128 0xf
+ 1308 08ef 58070000 		.4byte	.LASF157
+ 1309 08f3 07       		.byte	0x7
+ 1310 08f4 8B02     		.2byte	0x28b
+ 1311 08f6 39080000 		.4byte	0x839
+ 1312 08fa 30       		.byte	0x30
+ 1313 08fb 0F       		.uleb128 0xf
+ 1314 08fc 0C090000 		.4byte	.LASF181
+ 1315 0900 07       		.byte	0x7
+ 1316 0901 8E02     		.2byte	0x28e
+ 1317 0903 CE000000 		.4byte	0xce
+ 1318 0907 34       		.byte	0x34
+ 1319 0908 00       		.byte	0
+ 1320 0909 0D       		.uleb128 0xd
+ 1321 090a E1040000 		.4byte	.LASF182
+ 1322 090e 07       		.byte	0x7
+ 1323 090f 9102     		.2byte	0x291
+ 1324 0911 45080000 		.4byte	0x845
+ 1325 0915 08       		.uleb128 0x8
+ 1326 0916 14       		.byte	0x14
+ 1327 0917 08       		.byte	0x8
+ 1328 0918 3B       		.byte	0x3b
+ 1329 0919 5A090000 		.4byte	0x95a
+ 1330 091d 09       		.uleb128 0x9
+ 1331 091e C4010000 		.4byte	.LASF183
+ 1332 0922 08       		.byte	0x8
+ 1333 0923 3D       		.byte	0x3d
+ 1334 0924 CE000000 		.4byte	0xce
+ 1335 0928 00       		.byte	0
+ 1336 0929 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 26
+
+
+ 1337 092a 67050000 		.4byte	.LASF184
+ 1338 092e 08       		.byte	0x8
+ 1339 092f 3E       		.byte	0x3e
+ 1340 0930 CE000000 		.4byte	0xce
+ 1341 0934 04       		.byte	0x4
+ 1342 0935 09       		.uleb128 0x9
+ 1343 0936 0A020000 		.4byte	.LASF185
+ 1344 093a 08       		.byte	0x8
+ 1345 093b 3F       		.byte	0x3f
+ 1346 093c 5A090000 		.4byte	0x95a
+ 1347 0940 08       		.byte	0x8
+ 1348 0941 09       		.uleb128 0x9
+ 1349 0942 100E0000 		.4byte	.LASF186
+ 1350 0946 08       		.byte	0x8
+ 1351 0947 40       		.byte	0x40
+ 1352 0948 CE000000 		.4byte	0xce
+ 1353 094c 0C       		.byte	0xc
+ 1354 094d 09       		.uleb128 0x9
+ 1355 094e 6B0F0000 		.4byte	.LASF187
+ 1356 0952 08       		.byte	0x8
+ 1357 0953 45       		.byte	0x45
+ 1358 0954 CE000000 		.4byte	0xce
+ 1359 0958 10       		.byte	0x10
+ 1360 0959 00       		.byte	0
+ 1361 095a 10       		.uleb128 0x10
+ 1362 095b 04       		.byte	0x4
+ 1363 095c 60090000 		.4byte	0x960
+ 1364 0960 15       		.uleb128 0x15
+ 1365 0961 45060000 		.4byte	0x645
+ 1366 0965 03       		.uleb128 0x3
+ 1367 0966 59090000 		.4byte	.LASF188
+ 1368 096a 08       		.byte	0x8
+ 1369 096b 48       		.byte	0x48
+ 1370 096c 15090000 		.4byte	0x915
+ 1371 0970 16       		.uleb128 0x16
+ 1372 0971 01       		.byte	0x1
+ 1373 0972 3E000000 		.4byte	0x3e
+ 1374 0976 09       		.byte	0x9
+ 1375 0977 37       		.byte	0x37
+ 1376 0978 310A0000 		.4byte	0xa31
+ 1377 097c 0C       		.uleb128 0xc
+ 1378 097d B7070000 		.4byte	.LASF189
+ 1379 0981 20       		.byte	0x20
+ 1380 0982 0C       		.uleb128 0xc
+ 1381 0983 1B0E0000 		.4byte	.LASF190
+ 1382 0987 21       		.byte	0x21
+ 1383 0988 0C       		.uleb128 0xc
+ 1384 0989 D0030000 		.4byte	.LASF191
+ 1385 098d 22       		.byte	0x22
+ 1386 098e 0C       		.uleb128 0xc
+ 1387 098f 830A0000 		.4byte	.LASF192
+ 1388 0993 23       		.byte	0x23
+ 1389 0994 0C       		.uleb128 0xc
+ 1390 0995 71100000 		.4byte	.LASF193
+ 1391 0999 24       		.byte	0x24
+ 1392 099a 0C       		.uleb128 0xc
+ 1393 099b 6E070000 		.4byte	.LASF194
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 27
+
+
+ 1394 099f 25       		.byte	0x25
+ 1395 09a0 0C       		.uleb128 0xc
+ 1396 09a1 BD0B0000 		.4byte	.LASF195
+ 1397 09a5 26       		.byte	0x26
+ 1398 09a6 0C       		.uleb128 0xc
+ 1399 09a7 08100000 		.4byte	.LASF196
+ 1400 09ab 27       		.byte	0x27
+ 1401 09ac 0C       		.uleb128 0xc
+ 1402 09ad C40C0000 		.4byte	.LASF197
+ 1403 09b1 28       		.byte	0x28
+ 1404 09b2 0C       		.uleb128 0xc
+ 1405 09b3 E7000000 		.4byte	.LASF198
+ 1406 09b7 29       		.byte	0x29
+ 1407 09b8 0C       		.uleb128 0xc
+ 1408 09b9 00070000 		.4byte	.LASF199
+ 1409 09bd 2A       		.byte	0x2a
+ 1410 09be 0C       		.uleb128 0xc
+ 1411 09bf C00D0000 		.4byte	.LASF200
+ 1412 09c3 2B       		.byte	0x2b
+ 1413 09c4 0C       		.uleb128 0xc
+ 1414 09c5 E8100000 		.4byte	.LASF201
+ 1415 09c9 2C       		.byte	0x2c
+ 1416 09ca 0C       		.uleb128 0xc
+ 1417 09cb D9070000 		.4byte	.LASF202
+ 1418 09cf 2D       		.byte	0x2d
+ 1419 09d0 0C       		.uleb128 0xc
+ 1420 09d1 20070000 		.4byte	.LASF203
+ 1421 09d5 2E       		.byte	0x2e
+ 1422 09d6 0C       		.uleb128 0xc
+ 1423 09d7 9F060000 		.4byte	.LASF204
+ 1424 09db 2F       		.byte	0x2f
+ 1425 09dc 0C       		.uleb128 0xc
+ 1426 09dd DE010000 		.4byte	.LASF205
+ 1427 09e1 30       		.byte	0x30
+ 1428 09e2 0C       		.uleb128 0xc
+ 1429 09e3 F9020000 		.4byte	.LASF206
+ 1430 09e7 31       		.byte	0x31
+ 1431 09e8 0C       		.uleb128 0xc
+ 1432 09e9 80010000 		.4byte	.LASF207
+ 1433 09ed 32       		.byte	0x32
+ 1434 09ee 0C       		.uleb128 0xc
+ 1435 09ef 7C0F0000 		.4byte	.LASF208
+ 1436 09f3 33       		.byte	0x33
+ 1437 09f4 0C       		.uleb128 0xc
+ 1438 09f5 290D0000 		.4byte	.LASF209
+ 1439 09f9 34       		.byte	0x34
+ 1440 09fa 0C       		.uleb128 0xc
+ 1441 09fb B00A0000 		.4byte	.LASF210
+ 1442 09ff 35       		.byte	0x35
+ 1443 0a00 0C       		.uleb128 0xc
+ 1444 0a01 A30C0000 		.4byte	.LASF211
+ 1445 0a05 36       		.byte	0x36
+ 1446 0a06 0C       		.uleb128 0xc
+ 1447 0a07 86040000 		.4byte	.LASF212
+ 1448 0a0b 37       		.byte	0x37
+ 1449 0a0c 0C       		.uleb128 0xc
+ 1450 0a0d 83050000 		.4byte	.LASF213
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 28
+
+
+ 1451 0a11 38       		.byte	0x38
+ 1452 0a12 0C       		.uleb128 0xc
+ 1453 0a13 7D110000 		.4byte	.LASF214
+ 1454 0a17 39       		.byte	0x39
+ 1455 0a18 0C       		.uleb128 0xc
+ 1456 0a19 07050000 		.4byte	.LASF215
+ 1457 0a1d 3A       		.byte	0x3a
+ 1458 0a1e 0C       		.uleb128 0xc
+ 1459 0a1f 5F020000 		.4byte	.LASF216
+ 1460 0a23 3B       		.byte	0x3b
+ 1461 0a24 0C       		.uleb128 0xc
+ 1462 0a25 13060000 		.4byte	.LASF217
+ 1463 0a29 3C       		.byte	0x3c
+ 1464 0a2a 0C       		.uleb128 0xc
+ 1465 0a2b D40A0000 		.4byte	.LASF218
+ 1466 0a2f 3D       		.byte	0x3d
+ 1467 0a30 00       		.byte	0
+ 1468 0a31 17       		.uleb128 0x17
+ 1469 0a32 BB000000 		.4byte	.LASF219
+ 1470 0a36 06       		.byte	0x6
+ 1471 0a37 09       		.byte	0x9
+ 1472 0a38 84       		.byte	0x84
+ 1473 0a39 5C0A0000 		.4byte	0xa5c
+ 1474 0a3d 18       		.uleb128 0x18
+ 1475 0a3e 7800     		.ascii	"x\000"
+ 1476 0a40 09       		.byte	0x9
+ 1477 0a41 86       		.byte	0x86
+ 1478 0a42 AD000000 		.4byte	0xad
+ 1479 0a46 00       		.byte	0
+ 1480 0a47 18       		.uleb128 0x18
+ 1481 0a48 7900     		.ascii	"y\000"
+ 1482 0a4a 09       		.byte	0x9
+ 1483 0a4b 87       		.byte	0x87
+ 1484 0a4c AD000000 		.4byte	0xad
+ 1485 0a50 02       		.byte	0x2
+ 1486 0a51 18       		.uleb128 0x18
+ 1487 0a52 7A00     		.ascii	"z\000"
+ 1488 0a54 09       		.byte	0x9
+ 1489 0a55 88       		.byte	0x88
+ 1490 0a56 AD000000 		.4byte	0xad
+ 1491 0a5a 04       		.byte	0x4
+ 1492 0a5b 00       		.byte	0
+ 1493 0a5c 03       		.uleb128 0x3
+ 1494 0a5d C4060000 		.4byte	.LASF220
+ 1495 0a61 09       		.byte	0x9
+ 1496 0a62 89       		.byte	0x89
+ 1497 0a63 310A0000 		.4byte	0xa31
+ 1498 0a67 17       		.uleb128 0x17
+ 1499 0a68 6B040000 		.4byte	.LASF221
+ 1500 0a6c 10       		.byte	0x10
+ 1501 0a6d 09       		.byte	0x9
+ 1502 0a6e 8C       		.byte	0x8c
+ 1503 0a6f 9E0A0000 		.4byte	0xa9e
+ 1504 0a73 18       		.uleb128 0x18
+ 1505 0a74 7800     		.ascii	"x\000"
+ 1506 0a76 09       		.byte	0x9
+ 1507 0a77 8E       		.byte	0x8e
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 29
+
+
+ 1508 0a78 1F050000 		.4byte	0x51f
+ 1509 0a7c 00       		.byte	0
+ 1510 0a7d 18       		.uleb128 0x18
+ 1511 0a7e 7900     		.ascii	"y\000"
+ 1512 0a80 09       		.byte	0x9
+ 1513 0a81 8F       		.byte	0x8f
+ 1514 0a82 1F050000 		.4byte	0x51f
+ 1515 0a86 04       		.byte	0x4
+ 1516 0a87 18       		.uleb128 0x18
+ 1517 0a88 7A00     		.ascii	"z\000"
+ 1518 0a8a 09       		.byte	0x9
+ 1519 0a8b 90       		.byte	0x90
+ 1520 0a8c 1F050000 		.4byte	0x51f
+ 1521 0a90 08       		.byte	0x8
+ 1522 0a91 09       		.uleb128 0x9
+ 1523 0a92 48100000 		.4byte	.LASF222
+ 1524 0a96 09       		.byte	0x9
+ 1525 0a97 91       		.byte	0x91
+ 1526 0a98 1F050000 		.4byte	0x51f
+ 1527 0a9c 0C       		.byte	0xc
+ 1528 0a9d 00       		.byte	0
+ 1529 0a9e 03       		.uleb128 0x3
+ 1530 0a9f 93100000 		.4byte	.LASF223
+ 1531 0aa3 09       		.byte	0x9
+ 1532 0aa4 92       		.byte	0x92
+ 1533 0aa5 670A0000 		.4byte	0xa67
+ 1534 0aa9 03       		.uleb128 0x3
+ 1535 0aaa 680B0000 		.4byte	.LASF224
+ 1536 0aae 0A       		.byte	0xa
+ 1537 0aaf 3F       		.byte	0x3f
+ 1538 0ab0 CE000000 		.4byte	0xce
+ 1539 0ab4 19       		.uleb128 0x19
+ 1540 0ab5 67080000 		.4byte	.LASF228
+ 1541 0ab9 01       		.byte	0x1
+ 1542 0aba 24       		.byte	0x24
+ 1543 0abb A2000000 		.4byte	0xa2
+ 1544 0abf 00000000 		.4byte	.LFB560
+ 1545 0ac3 30000000 		.4byte	.LFE560-.LFB560
+ 1546 0ac7 01       		.uleb128 0x1
+ 1547 0ac8 9C       		.byte	0x9c
+ 1548 0ac9 240B0000 		.4byte	0xb24
+ 1549 0acd 1A       		.uleb128 0x1a
+ 1550 0ace 01060000 		.4byte	.LASF225
+ 1551 0ad2 01       		.byte	0x1
+ 1552 0ad3 24       		.byte	0x24
+ 1553 0ad4 2D080000 		.4byte	0x82d
+ 1554 0ad8 02       		.uleb128 0x2
+ 1555 0ad9 91       		.byte	0x91
+ 1556 0ada 60       		.sleb128 -32
+ 1557 0adb 1A       		.uleb128 0x1a
+ 1558 0adc 220B0000 		.4byte	.LASF226
+ 1559 0ae0 01       		.byte	0x1
+ 1560 0ae1 24       		.byte	0x24
+ 1561 0ae2 A2000000 		.4byte	0xa2
+ 1562 0ae6 02       		.uleb128 0x2
+ 1563 0ae7 91       		.byte	0x91
+ 1564 0ae8 00       		.sleb128 0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 30
+
+
+ 1565 0ae9 1B       		.uleb128 0x1b
+ 1566 0aea 2D090000 		.4byte	.LASF227
+ 1567 0aee 01       		.byte	0x1
+ 1568 0aef 25       		.byte	0x25
+ 1569 0af0 A2000000 		.4byte	0xa2
+ 1570 0af4 00000000 		.4byte	.LLST0
+ 1571 0af8 1C       		.uleb128 0x1c
+ 1572 0af9 6D736700 		.ascii	"msg\000"
+ 1573 0afd 01       		.byte	0x1
+ 1574 0afe 26       		.byte	0x26
+ 1575 0aff E5000000 		.4byte	0xe5
+ 1576 0b03 02       		.uleb128 0x2
+ 1577 0b04 91       		.byte	0x91
+ 1578 0b05 74       		.sleb128 -12
+ 1579 0b06 1D       		.uleb128 0x1d
+ 1580 0b07 2C000000 		.4byte	.LVL2
+ 1581 0b0b F80C0000 		.4byte	0xcf8
+ 1582 0b0f 1E       		.uleb128 0x1e
+ 1583 0b10 02       		.uleb128 0x2
+ 1584 0b11 7D       		.byte	0x7d
+ 1585 0b12 00       		.sleb128 0
+ 1586 0b13 01       		.uleb128 0x1
+ 1587 0b14 49       		.byte	0x49
+ 1588 0b15 1E       		.uleb128 0x1e
+ 1589 0b16 02       		.uleb128 0x2
+ 1590 0b17 7D       		.byte	0x7d
+ 1591 0b18 04       		.sleb128 4
+ 1592 0b19 02       		.uleb128 0x2
+ 1593 0b1a 91       		.byte	0x91
+ 1594 0b1b 74       		.sleb128 -12
+ 1595 0b1c 1E       		.uleb128 0x1e
+ 1596 0b1d 02       		.uleb128 0x2
+ 1597 0b1e 7D       		.byte	0x7d
+ 1598 0b1f 08       		.sleb128 8
+ 1599 0b20 01       		.uleb128 0x1
+ 1600 0b21 32       		.byte	0x32
+ 1601 0b22 00       		.byte	0
+ 1602 0b23 00       		.byte	0
+ 1603 0b24 19       		.uleb128 0x19
+ 1604 0b25 090A0000 		.4byte	.LASF229
+ 1605 0b29 01       		.byte	0x1
+ 1606 0b2a 35       		.byte	0x35
+ 1607 0b2b A2000000 		.4byte	0xa2
+ 1608 0b2f 00000000 		.4byte	.LFB561
+ 1609 0b33 3E000000 		.4byte	.LFE561-.LFB561
+ 1610 0b37 01       		.uleb128 0x1
+ 1611 0b38 9C       		.byte	0x9c
+ 1612 0b39 A00B0000 		.4byte	0xba0
+ 1613 0b3d 1A       		.uleb128 0x1a
+ 1614 0b3e 01060000 		.4byte	.LASF225
+ 1615 0b42 01       		.byte	0x1
+ 1616 0b43 35       		.byte	0x35
+ 1617 0b44 2D080000 		.4byte	0x82d
+ 1618 0b48 02       		.uleb128 0x2
+ 1619 0b49 91       		.byte	0x91
+ 1620 0b4a 60       		.sleb128 -32
+ 1621 0b4b 1B       		.uleb128 0x1b
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 31
+
+
+ 1622 0b4c 2D090000 		.4byte	.LASF227
+ 1623 0b50 01       		.byte	0x1
+ 1624 0b51 36       		.byte	0x36
+ 1625 0b52 A2000000 		.4byte	0xa2
+ 1626 0b56 20000000 		.4byte	.LLST1
+ 1627 0b5a 1C       		.uleb128 0x1c
+ 1628 0b5b 6D736700 		.ascii	"msg\000"
+ 1629 0b5f 01       		.byte	0x1
+ 1630 0b60 37       		.byte	0x37
+ 1631 0b61 E5000000 		.4byte	0xe5
+ 1632 0b65 02       		.uleb128 0x2
+ 1633 0b66 91       		.byte	0x91
+ 1634 0b67 74       		.sleb128 -12
+ 1635 0b68 1F       		.uleb128 0x1f
+ 1636 0b69 24000000 		.4byte	.LVL4
+ 1637 0b6d F80C0000 		.4byte	0xcf8
+ 1638 0b71 890B0000 		.4byte	0xb89
+ 1639 0b75 1E       		.uleb128 0x1e
+ 1640 0b76 02       		.uleb128 0x2
+ 1641 0b77 7D       		.byte	0x7d
+ 1642 0b78 00       		.sleb128 0
+ 1643 0b79 01       		.uleb128 0x1
+ 1644 0b7a 49       		.byte	0x49
+ 1645 0b7b 1E       		.uleb128 0x1e
+ 1646 0b7c 02       		.uleb128 0x2
+ 1647 0b7d 7D       		.byte	0x7d
+ 1648 0b7e 04       		.sleb128 4
+ 1649 0b7f 02       		.uleb128 0x2
+ 1650 0b80 91       		.byte	0x91
+ 1651 0b81 74       		.sleb128 -12
+ 1652 0b82 1E       		.uleb128 0x1e
+ 1653 0b83 02       		.uleb128 0x2
+ 1654 0b84 7D       		.byte	0x7d
+ 1655 0b85 08       		.sleb128 8
+ 1656 0b86 01       		.uleb128 0x1
+ 1657 0b87 31       		.byte	0x31
+ 1658 0b88 00       		.byte	0
+ 1659 0b89 1D       		.uleb128 0x1d
+ 1660 0b8a 36000000 		.4byte	.LVL5
+ 1661 0b8e 030D0000 		.4byte	0xd03
+ 1662 0b92 1E       		.uleb128 0x1e
+ 1663 0b93 02       		.uleb128 0x2
+ 1664 0b94 7D       		.byte	0x7d
+ 1665 0b95 00       		.sleb128 0
+ 1666 0b96 01       		.uleb128 0x1
+ 1667 0b97 49       		.byte	0x49
+ 1668 0b98 1E       		.uleb128 0x1e
+ 1669 0b99 02       		.uleb128 0x2
+ 1670 0b9a 7D       		.byte	0x7d
+ 1671 0b9b 04       		.sleb128 4
+ 1672 0b9c 01       		.uleb128 0x1
+ 1673 0b9d 36       		.byte	0x36
+ 1674 0b9e 00       		.byte	0
+ 1675 0b9f 00       		.byte	0
+ 1676 0ba0 20       		.uleb128 0x20
+ 1677 0ba1 3B100000 		.4byte	.LASF250
+ 1678 0ba5 01       		.byte	0x1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 32
+
+
+ 1679 0ba6 42       		.byte	0x42
+ 1680 0ba7 00000000 		.4byte	.LFB562
+ 1681 0bab 3A000000 		.4byte	.LFE562-.LFB562
+ 1682 0baf 01       		.uleb128 0x1
+ 1683 0bb0 9C       		.byte	0x9c
+ 1684 0bb1 300C0000 		.4byte	0xc30
+ 1685 0bb5 21       		.uleb128 0x21
+ 1686 0bb6 F2050000 		.4byte	.LASF230
+ 1687 0bba 01       		.byte	0x1
+ 1688 0bbb 42       		.byte	0x42
+ 1689 0bbc 2D050000 		.4byte	0x52d
+ 1690 0bc0 58000000 		.4byte	.LLST2
+ 1691 0bc4 22       		.uleb128 0x22
+ 1692 0bc5 01060000 		.4byte	.LASF225
+ 1693 0bc9 01       		.byte	0x1
+ 1694 0bca 44       		.byte	0x44
+ 1695 0bcb 2D080000 		.4byte	0x82d
+ 1696 0bcf 02       		.uleb128 0x2
+ 1697 0bd0 91       		.byte	0x91
+ 1698 0bd1 68       		.sleb128 -24
+ 1699 0bd2 22       		.uleb128 0x22
+ 1700 0bd3 B20D0000 		.4byte	.LASF231
+ 1701 0bd7 01       		.byte	0x1
+ 1702 0bd8 48       		.byte	0x48
+ 1703 0bd9 A90A0000 		.4byte	0xaa9
+ 1704 0bdd 02       		.uleb128 0x2
+ 1705 0bde 91       		.byte	0x91
+ 1706 0bdf 64       		.sleb128 -28
+ 1707 0be0 23       		.uleb128 0x23
+ 1708 0be1 6F0C0000 		.4byte	.LASF232
+ 1709 0be5 01       		.byte	0x1
+ 1710 0be6 49       		.byte	0x49
+ 1711 0be7 300C0000 		.4byte	0xc30
+ 1712 0beb E803     		.2byte	0x3e8
+ 1713 0bed 24       		.uleb128 0x24
+ 1714 0bee 10000000 		.4byte	.LVL11
+ 1715 0bf2 0E0D0000 		.4byte	0xd0e
+ 1716 0bf6 1F       		.uleb128 0x1f
+ 1717 0bf7 1E000000 		.4byte	.LVL12
+ 1718 0bfb B40A0000 		.4byte	0xab4
+ 1719 0bff 0B0C0000 		.4byte	0xc0b
+ 1720 0c03 1E       		.uleb128 0x1e
+ 1721 0c04 02       		.uleb128 0x2
+ 1722 0c05 7D       		.byte	0x7d
+ 1723 0c06 00       		.sleb128 0
+ 1724 0c07 02       		.uleb128 0x2
+ 1725 0c08 09       		.byte	0x9
+ 1726 0c09 97       		.byte	0x97
+ 1727 0c0a 00       		.byte	0
+ 1728 0c0b 1F       		.uleb128 0x1f
+ 1729 0c0c 2A000000 		.4byte	.LVL13
+ 1730 0c10 1A0D0000 		.4byte	0xd1a
+ 1731 0c14 260C0000 		.4byte	0xc26
+ 1732 0c18 1E       		.uleb128 0x1e
+ 1733 0c19 01       		.uleb128 0x1
+ 1734 0c1a 50       		.byte	0x50
+ 1735 0c1b 02       		.uleb128 0x2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 33
+
+
+ 1736 0c1c 91       		.byte	0x91
+ 1737 0c1d 64       		.sleb128 -28
+ 1738 0c1e 1E       		.uleb128 0x1e
+ 1739 0c1f 01       		.uleb128 0x1
+ 1740 0c20 51       		.byte	0x51
+ 1741 0c21 03       		.uleb128 0x3
+ 1742 0c22 0A       		.byte	0xa
+ 1743 0c23 E803     		.2byte	0x3e8
+ 1744 0c25 00       		.byte	0
+ 1745 0c26 24       		.uleb128 0x24
+ 1746 0c27 34000000 		.4byte	.LVL14
+ 1747 0c2b 240B0000 		.4byte	0xb24
+ 1748 0c2f 00       		.byte	0
+ 1749 0c30 15       		.uleb128 0x15
+ 1750 0c31 A90A0000 		.4byte	0xaa9
+ 1751 0c35 25       		.uleb128 0x25
+ 1752 0c36 790D0000 		.4byte	.LASF233
+ 1753 0c3a 0B       		.byte	0xb
+ 1754 0c3b F907     		.2byte	0x7f9
+ 1755 0c3d 410C0000 		.4byte	0xc41
+ 1756 0c41 05       		.uleb128 0x5
+ 1757 0c42 C3000000 		.4byte	0xc3
+ 1758 0c46 26       		.uleb128 0x26
+ 1759 0c47 14000000 		.4byte	.LASF234
+ 1760 0c4b 04       		.byte	0x4
+ 1761 0c4c A7       		.byte	0xa7
+ 1762 0c4d 510C0000 		.4byte	0xc51
+ 1763 0c51 10       		.uleb128 0x10
+ 1764 0c52 04       		.byte	0x4
+ 1765 0c53 570C0000 		.4byte	0xc57
+ 1766 0c57 15       		.uleb128 0x15
+ 1767 0c58 0D050000 		.4byte	0x50d
+ 1768 0c5c 26       		.uleb128 0x26
+ 1769 0c5d D60F0000 		.4byte	.LASF235
+ 1770 0c61 0C       		.byte	0xc
+ 1771 0c62 87       		.byte	0x87
+ 1772 0c63 09090000 		.4byte	0x909
+ 1773 0c67 25       		.uleb128 0x25
+ 1774 0c68 A20F0000 		.4byte	.LASF236
+ 1775 0c6c 08       		.byte	0x8
+ 1776 0c6d 6001     		.2byte	0x160
+ 1777 0c6f CE000000 		.4byte	0xce
+ 1778 0c73 06       		.uleb128 0x6
+ 1779 0c74 830C0000 		.4byte	0xc83
+ 1780 0c78 830C0000 		.4byte	0xc83
+ 1781 0c7c 07       		.uleb128 0x7
+ 1782 0c7d D9000000 		.4byte	0xd9
+ 1783 0c81 00       		.byte	0
+ 1784 0c82 00       		.byte	0
+ 1785 0c83 15       		.uleb128 0x15
+ 1786 0c84 65090000 		.4byte	0x965
+ 1787 0c88 25       		.uleb128 0x25
+ 1788 0c89 540D0000 		.4byte	.LASF237
+ 1789 0c8d 08       		.byte	0x8
+ 1790 0c8e 6401     		.2byte	0x164
+ 1791 0c90 940C0000 		.4byte	0xc94
+ 1792 0c94 15       		.uleb128 0x15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 34
+
+
+ 1793 0c95 730C0000 		.4byte	0xc73
+ 1794 0c99 26       		.uleb128 0x26
+ 1795 0c9a A6080000 		.4byte	.LASF238
+ 1796 0c9e 0D       		.byte	0xd
+ 1797 0c9f 7F       		.byte	0x7f
+ 1798 0ca0 DF070000 		.4byte	0x7df
+ 1799 0ca4 27       		.uleb128 0x27
+ 1800 0ca5 BC100000 		.4byte	.LASF239
+ 1801 0ca9 09       		.byte	0x9
+ 1802 0caa 95       		.byte	0x95
+ 1803 0cab 9E0A0000 		.4byte	0xa9e
+ 1804 0caf 05       		.uleb128 0x5
+ 1805 0cb0 03       		.byte	0x3
+ 1806 0cb1 00000000 		.4byte	accelData
+ 1807 0cb5 27       		.uleb128 0x27
+ 1808 0cb6 130A0000 		.4byte	.LASF240
+ 1809 0cba 09       		.byte	0x9
+ 1810 0cbb 96       		.byte	0x96
+ 1811 0cbc 5C0A0000 		.4byte	0xa5c
+ 1812 0cc0 05       		.uleb128 0x5
+ 1813 0cc1 03       		.byte	0x3
+ 1814 0cc2 00000000 		.4byte	magData
+ 1815 0cc6 27       		.uleb128 0x27
+ 1816 0cc7 4C080000 		.4byte	.LASF241
+ 1817 0ccb 0E       		.byte	0xe
+ 1818 0ccc 2D       		.byte	0x2d
+ 1819 0ccd E5000000 		.4byte	0xe5
+ 1820 0cd1 05       		.uleb128 0x5
+ 1821 0cd2 03       		.byte	0x3
+ 1822 0cd3 00000000 		.4byte	writebuffer
+ 1823 0cd7 06       		.uleb128 0x6
+ 1824 0cd8 A2000000 		.4byte	0xa2
+ 1825 0cdc E70C0000 		.4byte	0xce7
+ 1826 0ce0 07       		.uleb128 0x7
+ 1827 0ce1 D9000000 		.4byte	0xd9
+ 1828 0ce5 05       		.byte	0x5
+ 1829 0ce6 00       		.byte	0
+ 1830 0ce7 27       		.uleb128 0x27
+ 1831 0ce8 01090000 		.4byte	.LASF242
+ 1832 0cec 0E       		.byte	0xe
+ 1833 0ced 2E       		.byte	0x2e
+ 1834 0cee D70C0000 		.4byte	0xcd7
+ 1835 0cf2 05       		.uleb128 0x5
+ 1836 0cf3 03       		.byte	0x3
+ 1837 0cf4 00000000 		.4byte	readBuffer
+ 1838 0cf8 28       		.uleb128 0x28
+ 1839 0cf9 430F0000 		.4byte	.LASF243
+ 1840 0cfd 430F0000 		.4byte	.LASF243
+ 1841 0d01 0E       		.byte	0xe
+ 1842 0d02 33       		.byte	0x33
+ 1843 0d03 28       		.uleb128 0x28
+ 1844 0d04 330C0000 		.4byte	.LASF244
+ 1845 0d08 330C0000 		.4byte	.LASF244
+ 1846 0d0c 0E       		.byte	0xe
+ 1847 0d0d 34       		.byte	0x34
+ 1848 0d0e 29       		.uleb128 0x29
+ 1849 0d0f 90090000 		.4byte	.LASF245
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 35
+
+
+ 1850 0d13 90090000 		.4byte	.LASF245
+ 1851 0d17 0F       		.byte	0xf
+ 1852 0d18 3E05     		.2byte	0x53e
+ 1853 0d1a 29       		.uleb128 0x29
+ 1854 0d1b 330F0000 		.4byte	.LASF246
+ 1855 0d1f 330F0000 		.4byte	.LASF246
+ 1856 0d23 0F       		.byte	0xf
+ 1857 0d24 2803     		.2byte	0x328
+ 1858 0d26 00       		.byte	0
+ 1859              		.section	.debug_abbrev,"",%progbits
+ 1860              	.Ldebug_abbrev0:
+ 1861 0000 01       		.uleb128 0x1
+ 1862 0001 11       		.uleb128 0x11
+ 1863 0002 01       		.byte	0x1
+ 1864 0003 25       		.uleb128 0x25
+ 1865 0004 0E       		.uleb128 0xe
+ 1866 0005 13       		.uleb128 0x13
+ 1867 0006 0B       		.uleb128 0xb
+ 1868 0007 03       		.uleb128 0x3
+ 1869 0008 0E       		.uleb128 0xe
+ 1870 0009 1B       		.uleb128 0x1b
+ 1871 000a 0E       		.uleb128 0xe
+ 1872 000b 55       		.uleb128 0x55
+ 1873 000c 17       		.uleb128 0x17
+ 1874 000d 11       		.uleb128 0x11
+ 1875 000e 01       		.uleb128 0x1
+ 1876 000f 10       		.uleb128 0x10
+ 1877 0010 17       		.uleb128 0x17
+ 1878 0011 00       		.byte	0
+ 1879 0012 00       		.byte	0
+ 1880 0013 02       		.uleb128 0x2
+ 1881 0014 24       		.uleb128 0x24
+ 1882 0015 00       		.byte	0
+ 1883 0016 0B       		.uleb128 0xb
+ 1884 0017 0B       		.uleb128 0xb
+ 1885 0018 3E       		.uleb128 0x3e
+ 1886 0019 0B       		.uleb128 0xb
+ 1887 001a 03       		.uleb128 0x3
+ 1888 001b 0E       		.uleb128 0xe
+ 1889 001c 00       		.byte	0
+ 1890 001d 00       		.byte	0
+ 1891 001e 03       		.uleb128 0x3
+ 1892 001f 16       		.uleb128 0x16
+ 1893 0020 00       		.byte	0
+ 1894 0021 03       		.uleb128 0x3
+ 1895 0022 0E       		.uleb128 0xe
+ 1896 0023 3A       		.uleb128 0x3a
+ 1897 0024 0B       		.uleb128 0xb
+ 1898 0025 3B       		.uleb128 0x3b
+ 1899 0026 0B       		.uleb128 0xb
+ 1900 0027 49       		.uleb128 0x49
+ 1901 0028 13       		.uleb128 0x13
+ 1902 0029 00       		.byte	0
+ 1903 002a 00       		.byte	0
+ 1904 002b 04       		.uleb128 0x4
+ 1905 002c 24       		.uleb128 0x24
+ 1906 002d 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 36
+
+
+ 1907 002e 0B       		.uleb128 0xb
+ 1908 002f 0B       		.uleb128 0xb
+ 1909 0030 3E       		.uleb128 0x3e
+ 1910 0031 0B       		.uleb128 0xb
+ 1911 0032 03       		.uleb128 0x3
+ 1912 0033 08       		.uleb128 0x8
+ 1913 0034 00       		.byte	0
+ 1914 0035 00       		.byte	0
+ 1915 0036 05       		.uleb128 0x5
+ 1916 0037 35       		.uleb128 0x35
+ 1917 0038 00       		.byte	0
+ 1918 0039 49       		.uleb128 0x49
+ 1919 003a 13       		.uleb128 0x13
+ 1920 003b 00       		.byte	0
+ 1921 003c 00       		.byte	0
+ 1922 003d 06       		.uleb128 0x6
+ 1923 003e 01       		.uleb128 0x1
+ 1924 003f 01       		.byte	0x1
+ 1925 0040 49       		.uleb128 0x49
+ 1926 0041 13       		.uleb128 0x13
+ 1927 0042 01       		.uleb128 0x1
+ 1928 0043 13       		.uleb128 0x13
+ 1929 0044 00       		.byte	0
+ 1930 0045 00       		.byte	0
+ 1931 0046 07       		.uleb128 0x7
+ 1932 0047 21       		.uleb128 0x21
+ 1933 0048 00       		.byte	0
+ 1934 0049 49       		.uleb128 0x49
+ 1935 004a 13       		.uleb128 0x13
+ 1936 004b 2F       		.uleb128 0x2f
+ 1937 004c 0B       		.uleb128 0xb
+ 1938 004d 00       		.byte	0
+ 1939 004e 00       		.byte	0
+ 1940 004f 08       		.uleb128 0x8
+ 1941 0050 13       		.uleb128 0x13
+ 1942 0051 01       		.byte	0x1
+ 1943 0052 0B       		.uleb128 0xb
+ 1944 0053 0B       		.uleb128 0xb
+ 1945 0054 3A       		.uleb128 0x3a
+ 1946 0055 0B       		.uleb128 0xb
+ 1947 0056 3B       		.uleb128 0x3b
+ 1948 0057 0B       		.uleb128 0xb
+ 1949 0058 01       		.uleb128 0x1
+ 1950 0059 13       		.uleb128 0x13
+ 1951 005a 00       		.byte	0
+ 1952 005b 00       		.byte	0
+ 1953 005c 09       		.uleb128 0x9
+ 1954 005d 0D       		.uleb128 0xd
+ 1955 005e 00       		.byte	0
+ 1956 005f 03       		.uleb128 0x3
+ 1957 0060 0E       		.uleb128 0xe
+ 1958 0061 3A       		.uleb128 0x3a
+ 1959 0062 0B       		.uleb128 0xb
+ 1960 0063 3B       		.uleb128 0x3b
+ 1961 0064 0B       		.uleb128 0xb
+ 1962 0065 49       		.uleb128 0x49
+ 1963 0066 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 37
+
+
+ 1964 0067 38       		.uleb128 0x38
+ 1965 0068 0B       		.uleb128 0xb
+ 1966 0069 00       		.byte	0
+ 1967 006a 00       		.byte	0
+ 1968 006b 0A       		.uleb128 0xa
+ 1969 006c 0F       		.uleb128 0xf
+ 1970 006d 00       		.byte	0
+ 1971 006e 0B       		.uleb128 0xb
+ 1972 006f 0B       		.uleb128 0xb
+ 1973 0070 00       		.byte	0
+ 1974 0071 00       		.byte	0
+ 1975 0072 0B       		.uleb128 0xb
+ 1976 0073 04       		.uleb128 0x4
+ 1977 0074 01       		.byte	0x1
+ 1978 0075 0B       		.uleb128 0xb
+ 1979 0076 0B       		.uleb128 0xb
+ 1980 0077 49       		.uleb128 0x49
+ 1981 0078 13       		.uleb128 0x13
+ 1982 0079 3A       		.uleb128 0x3a
+ 1983 007a 0B       		.uleb128 0xb
+ 1984 007b 3B       		.uleb128 0x3b
+ 1985 007c 05       		.uleb128 0x5
+ 1986 007d 01       		.uleb128 0x1
+ 1987 007e 13       		.uleb128 0x13
+ 1988 007f 00       		.byte	0
+ 1989 0080 00       		.byte	0
+ 1990 0081 0C       		.uleb128 0xc
+ 1991 0082 28       		.uleb128 0x28
+ 1992 0083 00       		.byte	0
+ 1993 0084 03       		.uleb128 0x3
+ 1994 0085 0E       		.uleb128 0xe
+ 1995 0086 1C       		.uleb128 0x1c
+ 1996 0087 0B       		.uleb128 0xb
+ 1997 0088 00       		.byte	0
+ 1998 0089 00       		.byte	0
+ 1999 008a 0D       		.uleb128 0xd
+ 2000 008b 16       		.uleb128 0x16
+ 2001 008c 00       		.byte	0
+ 2002 008d 03       		.uleb128 0x3
+ 2003 008e 0E       		.uleb128 0xe
+ 2004 008f 3A       		.uleb128 0x3a
+ 2005 0090 0B       		.uleb128 0xb
+ 2006 0091 3B       		.uleb128 0x3b
+ 2007 0092 05       		.uleb128 0x5
+ 2008 0093 49       		.uleb128 0x49
+ 2009 0094 13       		.uleb128 0x13
+ 2010 0095 00       		.byte	0
+ 2011 0096 00       		.byte	0
+ 2012 0097 0E       		.uleb128 0xe
+ 2013 0098 13       		.uleb128 0x13
+ 2014 0099 01       		.byte	0x1
+ 2015 009a 0B       		.uleb128 0xb
+ 2016 009b 0B       		.uleb128 0xb
+ 2017 009c 3A       		.uleb128 0x3a
+ 2018 009d 0B       		.uleb128 0xb
+ 2019 009e 3B       		.uleb128 0x3b
+ 2020 009f 05       		.uleb128 0x5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 38
+
+
+ 2021 00a0 01       		.uleb128 0x1
+ 2022 00a1 13       		.uleb128 0x13
+ 2023 00a2 00       		.byte	0
+ 2024 00a3 00       		.byte	0
+ 2025 00a4 0F       		.uleb128 0xf
+ 2026 00a5 0D       		.uleb128 0xd
+ 2027 00a6 00       		.byte	0
+ 2028 00a7 03       		.uleb128 0x3
+ 2029 00a8 0E       		.uleb128 0xe
+ 2030 00a9 3A       		.uleb128 0x3a
+ 2031 00aa 0B       		.uleb128 0xb
+ 2032 00ab 3B       		.uleb128 0x3b
+ 2033 00ac 05       		.uleb128 0x5
+ 2034 00ad 49       		.uleb128 0x49
+ 2035 00ae 13       		.uleb128 0x13
+ 2036 00af 38       		.uleb128 0x38
+ 2037 00b0 0B       		.uleb128 0xb
+ 2038 00b1 00       		.byte	0
+ 2039 00b2 00       		.byte	0
+ 2040 00b3 10       		.uleb128 0x10
+ 2041 00b4 0F       		.uleb128 0xf
+ 2042 00b5 00       		.byte	0
+ 2043 00b6 0B       		.uleb128 0xb
+ 2044 00b7 0B       		.uleb128 0xb
+ 2045 00b8 49       		.uleb128 0x49
+ 2046 00b9 13       		.uleb128 0x13
+ 2047 00ba 00       		.byte	0
+ 2048 00bb 00       		.byte	0
+ 2049 00bc 11       		.uleb128 0x11
+ 2050 00bd 15       		.uleb128 0x15
+ 2051 00be 01       		.byte	0x1
+ 2052 00bf 27       		.uleb128 0x27
+ 2053 00c0 19       		.uleb128 0x19
+ 2054 00c1 01       		.uleb128 0x1
+ 2055 00c2 13       		.uleb128 0x13
+ 2056 00c3 00       		.byte	0
+ 2057 00c4 00       		.byte	0
+ 2058 00c5 12       		.uleb128 0x12
+ 2059 00c6 05       		.uleb128 0x5
+ 2060 00c7 00       		.byte	0
+ 2061 00c8 49       		.uleb128 0x49
+ 2062 00c9 13       		.uleb128 0x13
+ 2063 00ca 00       		.byte	0
+ 2064 00cb 00       		.byte	0
+ 2065 00cc 13       		.uleb128 0x13
+ 2066 00cd 15       		.uleb128 0x15
+ 2067 00ce 01       		.byte	0x1
+ 2068 00cf 27       		.uleb128 0x27
+ 2069 00d0 19       		.uleb128 0x19
+ 2070 00d1 49       		.uleb128 0x49
+ 2071 00d2 13       		.uleb128 0x13
+ 2072 00d3 01       		.uleb128 0x1
+ 2073 00d4 13       		.uleb128 0x13
+ 2074 00d5 00       		.byte	0
+ 2075 00d6 00       		.byte	0
+ 2076 00d7 14       		.uleb128 0x14
+ 2077 00d8 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 39
+
+
+ 2078 00d9 01       		.byte	0x1
+ 2079 00da 03       		.uleb128 0x3
+ 2080 00db 0E       		.uleb128 0xe
+ 2081 00dc 0B       		.uleb128 0xb
+ 2082 00dd 0B       		.uleb128 0xb
+ 2083 00de 3A       		.uleb128 0x3a
+ 2084 00df 0B       		.uleb128 0xb
+ 2085 00e0 3B       		.uleb128 0x3b
+ 2086 00e1 05       		.uleb128 0x5
+ 2087 00e2 01       		.uleb128 0x1
+ 2088 00e3 13       		.uleb128 0x13
+ 2089 00e4 00       		.byte	0
+ 2090 00e5 00       		.byte	0
+ 2091 00e6 15       		.uleb128 0x15
+ 2092 00e7 26       		.uleb128 0x26
+ 2093 00e8 00       		.byte	0
+ 2094 00e9 49       		.uleb128 0x49
+ 2095 00ea 13       		.uleb128 0x13
+ 2096 00eb 00       		.byte	0
+ 2097 00ec 00       		.byte	0
+ 2098 00ed 16       		.uleb128 0x16
+ 2099 00ee 04       		.uleb128 0x4
+ 2100 00ef 01       		.byte	0x1
+ 2101 00f0 0B       		.uleb128 0xb
+ 2102 00f1 0B       		.uleb128 0xb
+ 2103 00f2 49       		.uleb128 0x49
+ 2104 00f3 13       		.uleb128 0x13
+ 2105 00f4 3A       		.uleb128 0x3a
+ 2106 00f5 0B       		.uleb128 0xb
+ 2107 00f6 3B       		.uleb128 0x3b
+ 2108 00f7 0B       		.uleb128 0xb
+ 2109 00f8 01       		.uleb128 0x1
+ 2110 00f9 13       		.uleb128 0x13
+ 2111 00fa 00       		.byte	0
+ 2112 00fb 00       		.byte	0
+ 2113 00fc 17       		.uleb128 0x17
+ 2114 00fd 13       		.uleb128 0x13
+ 2115 00fe 01       		.byte	0x1
+ 2116 00ff 03       		.uleb128 0x3
+ 2117 0100 0E       		.uleb128 0xe
+ 2118 0101 0B       		.uleb128 0xb
+ 2119 0102 0B       		.uleb128 0xb
+ 2120 0103 3A       		.uleb128 0x3a
+ 2121 0104 0B       		.uleb128 0xb
+ 2122 0105 3B       		.uleb128 0x3b
+ 2123 0106 0B       		.uleb128 0xb
+ 2124 0107 01       		.uleb128 0x1
+ 2125 0108 13       		.uleb128 0x13
+ 2126 0109 00       		.byte	0
+ 2127 010a 00       		.byte	0
+ 2128 010b 18       		.uleb128 0x18
+ 2129 010c 0D       		.uleb128 0xd
+ 2130 010d 00       		.byte	0
+ 2131 010e 03       		.uleb128 0x3
+ 2132 010f 08       		.uleb128 0x8
+ 2133 0110 3A       		.uleb128 0x3a
+ 2134 0111 0B       		.uleb128 0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 40
+
+
+ 2135 0112 3B       		.uleb128 0x3b
+ 2136 0113 0B       		.uleb128 0xb
+ 2137 0114 49       		.uleb128 0x49
+ 2138 0115 13       		.uleb128 0x13
+ 2139 0116 38       		.uleb128 0x38
+ 2140 0117 0B       		.uleb128 0xb
+ 2141 0118 00       		.byte	0
+ 2142 0119 00       		.byte	0
+ 2143 011a 19       		.uleb128 0x19
+ 2144 011b 2E       		.uleb128 0x2e
+ 2145 011c 01       		.byte	0x1
+ 2146 011d 3F       		.uleb128 0x3f
+ 2147 011e 19       		.uleb128 0x19
+ 2148 011f 03       		.uleb128 0x3
+ 2149 0120 0E       		.uleb128 0xe
+ 2150 0121 3A       		.uleb128 0x3a
+ 2151 0122 0B       		.uleb128 0xb
+ 2152 0123 3B       		.uleb128 0x3b
+ 2153 0124 0B       		.uleb128 0xb
+ 2154 0125 27       		.uleb128 0x27
+ 2155 0126 19       		.uleb128 0x19
+ 2156 0127 49       		.uleb128 0x49
+ 2157 0128 13       		.uleb128 0x13
+ 2158 0129 11       		.uleb128 0x11
+ 2159 012a 01       		.uleb128 0x1
+ 2160 012b 12       		.uleb128 0x12
+ 2161 012c 06       		.uleb128 0x6
+ 2162 012d 40       		.uleb128 0x40
+ 2163 012e 18       		.uleb128 0x18
+ 2164 012f 9742     		.uleb128 0x2117
+ 2165 0131 19       		.uleb128 0x19
+ 2166 0132 01       		.uleb128 0x1
+ 2167 0133 13       		.uleb128 0x13
+ 2168 0134 00       		.byte	0
+ 2169 0135 00       		.byte	0
+ 2170 0136 1A       		.uleb128 0x1a
+ 2171 0137 05       		.uleb128 0x5
+ 2172 0138 00       		.byte	0
+ 2173 0139 03       		.uleb128 0x3
+ 2174 013a 0E       		.uleb128 0xe
+ 2175 013b 3A       		.uleb128 0x3a
+ 2176 013c 0B       		.uleb128 0xb
+ 2177 013d 3B       		.uleb128 0x3b
+ 2178 013e 0B       		.uleb128 0xb
+ 2179 013f 49       		.uleb128 0x49
+ 2180 0140 13       		.uleb128 0x13
+ 2181 0141 02       		.uleb128 0x2
+ 2182 0142 18       		.uleb128 0x18
+ 2183 0143 00       		.byte	0
+ 2184 0144 00       		.byte	0
+ 2185 0145 1B       		.uleb128 0x1b
+ 2186 0146 34       		.uleb128 0x34
+ 2187 0147 00       		.byte	0
+ 2188 0148 03       		.uleb128 0x3
+ 2189 0149 0E       		.uleb128 0xe
+ 2190 014a 3A       		.uleb128 0x3a
+ 2191 014b 0B       		.uleb128 0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 41
+
+
+ 2192 014c 3B       		.uleb128 0x3b
+ 2193 014d 0B       		.uleb128 0xb
+ 2194 014e 49       		.uleb128 0x49
+ 2195 014f 13       		.uleb128 0x13
+ 2196 0150 02       		.uleb128 0x2
+ 2197 0151 17       		.uleb128 0x17
+ 2198 0152 00       		.byte	0
+ 2199 0153 00       		.byte	0
+ 2200 0154 1C       		.uleb128 0x1c
+ 2201 0155 34       		.uleb128 0x34
+ 2202 0156 00       		.byte	0
+ 2203 0157 03       		.uleb128 0x3
+ 2204 0158 08       		.uleb128 0x8
+ 2205 0159 3A       		.uleb128 0x3a
+ 2206 015a 0B       		.uleb128 0xb
+ 2207 015b 3B       		.uleb128 0x3b
+ 2208 015c 0B       		.uleb128 0xb
+ 2209 015d 49       		.uleb128 0x49
+ 2210 015e 13       		.uleb128 0x13
+ 2211 015f 02       		.uleb128 0x2
+ 2212 0160 18       		.uleb128 0x18
+ 2213 0161 00       		.byte	0
+ 2214 0162 00       		.byte	0
+ 2215 0163 1D       		.uleb128 0x1d
+ 2216 0164 898201   		.uleb128 0x4109
+ 2217 0167 01       		.byte	0x1
+ 2218 0168 11       		.uleb128 0x11
+ 2219 0169 01       		.uleb128 0x1
+ 2220 016a 31       		.uleb128 0x31
+ 2221 016b 13       		.uleb128 0x13
+ 2222 016c 00       		.byte	0
+ 2223 016d 00       		.byte	0
+ 2224 016e 1E       		.uleb128 0x1e
+ 2225 016f 8A8201   		.uleb128 0x410a
+ 2226 0172 00       		.byte	0
+ 2227 0173 02       		.uleb128 0x2
+ 2228 0174 18       		.uleb128 0x18
+ 2229 0175 9142     		.uleb128 0x2111
+ 2230 0177 18       		.uleb128 0x18
+ 2231 0178 00       		.byte	0
+ 2232 0179 00       		.byte	0
+ 2233 017a 1F       		.uleb128 0x1f
+ 2234 017b 898201   		.uleb128 0x4109
+ 2235 017e 01       		.byte	0x1
+ 2236 017f 11       		.uleb128 0x11
+ 2237 0180 01       		.uleb128 0x1
+ 2238 0181 31       		.uleb128 0x31
+ 2239 0182 13       		.uleb128 0x13
+ 2240 0183 01       		.uleb128 0x1
+ 2241 0184 13       		.uleb128 0x13
+ 2242 0185 00       		.byte	0
+ 2243 0186 00       		.byte	0
+ 2244 0187 20       		.uleb128 0x20
+ 2245 0188 2E       		.uleb128 0x2e
+ 2246 0189 01       		.byte	0x1
+ 2247 018a 3F       		.uleb128 0x3f
+ 2248 018b 19       		.uleb128 0x19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 42
+
+
+ 2249 018c 03       		.uleb128 0x3
+ 2250 018d 0E       		.uleb128 0xe
+ 2251 018e 3A       		.uleb128 0x3a
+ 2252 018f 0B       		.uleb128 0xb
+ 2253 0190 3B       		.uleb128 0x3b
+ 2254 0191 0B       		.uleb128 0xb
+ 2255 0192 27       		.uleb128 0x27
+ 2256 0193 19       		.uleb128 0x19
+ 2257 0194 11       		.uleb128 0x11
+ 2258 0195 01       		.uleb128 0x1
+ 2259 0196 12       		.uleb128 0x12
+ 2260 0197 06       		.uleb128 0x6
+ 2261 0198 40       		.uleb128 0x40
+ 2262 0199 18       		.uleb128 0x18
+ 2263 019a 9742     		.uleb128 0x2117
+ 2264 019c 19       		.uleb128 0x19
+ 2265 019d 01       		.uleb128 0x1
+ 2266 019e 13       		.uleb128 0x13
+ 2267 019f 00       		.byte	0
+ 2268 01a0 00       		.byte	0
+ 2269 01a1 21       		.uleb128 0x21
+ 2270 01a2 05       		.uleb128 0x5
+ 2271 01a3 00       		.byte	0
+ 2272 01a4 03       		.uleb128 0x3
+ 2273 01a5 0E       		.uleb128 0xe
+ 2274 01a6 3A       		.uleb128 0x3a
+ 2275 01a7 0B       		.uleb128 0xb
+ 2276 01a8 3B       		.uleb128 0x3b
+ 2277 01a9 0B       		.uleb128 0xb
+ 2278 01aa 49       		.uleb128 0x49
+ 2279 01ab 13       		.uleb128 0x13
+ 2280 01ac 02       		.uleb128 0x2
+ 2281 01ad 17       		.uleb128 0x17
+ 2282 01ae 00       		.byte	0
+ 2283 01af 00       		.byte	0
+ 2284 01b0 22       		.uleb128 0x22
+ 2285 01b1 34       		.uleb128 0x34
+ 2286 01b2 00       		.byte	0
+ 2287 01b3 03       		.uleb128 0x3
+ 2288 01b4 0E       		.uleb128 0xe
+ 2289 01b5 3A       		.uleb128 0x3a
+ 2290 01b6 0B       		.uleb128 0xb
+ 2291 01b7 3B       		.uleb128 0x3b
+ 2292 01b8 0B       		.uleb128 0xb
+ 2293 01b9 49       		.uleb128 0x49
+ 2294 01ba 13       		.uleb128 0x13
+ 2295 01bb 02       		.uleb128 0x2
+ 2296 01bc 18       		.uleb128 0x18
+ 2297 01bd 00       		.byte	0
+ 2298 01be 00       		.byte	0
+ 2299 01bf 23       		.uleb128 0x23
+ 2300 01c0 34       		.uleb128 0x34
+ 2301 01c1 00       		.byte	0
+ 2302 01c2 03       		.uleb128 0x3
+ 2303 01c3 0E       		.uleb128 0xe
+ 2304 01c4 3A       		.uleb128 0x3a
+ 2305 01c5 0B       		.uleb128 0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 43
+
+
+ 2306 01c6 3B       		.uleb128 0x3b
+ 2307 01c7 0B       		.uleb128 0xb
+ 2308 01c8 49       		.uleb128 0x49
+ 2309 01c9 13       		.uleb128 0x13
+ 2310 01ca 1C       		.uleb128 0x1c
+ 2311 01cb 05       		.uleb128 0x5
+ 2312 01cc 00       		.byte	0
+ 2313 01cd 00       		.byte	0
+ 2314 01ce 24       		.uleb128 0x24
+ 2315 01cf 898201   		.uleb128 0x4109
+ 2316 01d2 00       		.byte	0
+ 2317 01d3 11       		.uleb128 0x11
+ 2318 01d4 01       		.uleb128 0x1
+ 2319 01d5 31       		.uleb128 0x31
+ 2320 01d6 13       		.uleb128 0x13
+ 2321 01d7 00       		.byte	0
+ 2322 01d8 00       		.byte	0
+ 2323 01d9 25       		.uleb128 0x25
+ 2324 01da 34       		.uleb128 0x34
+ 2325 01db 00       		.byte	0
+ 2326 01dc 03       		.uleb128 0x3
+ 2327 01dd 0E       		.uleb128 0xe
+ 2328 01de 3A       		.uleb128 0x3a
+ 2329 01df 0B       		.uleb128 0xb
+ 2330 01e0 3B       		.uleb128 0x3b
+ 2331 01e1 05       		.uleb128 0x5
+ 2332 01e2 49       		.uleb128 0x49
+ 2333 01e3 13       		.uleb128 0x13
+ 2334 01e4 3F       		.uleb128 0x3f
+ 2335 01e5 19       		.uleb128 0x19
+ 2336 01e6 3C       		.uleb128 0x3c
+ 2337 01e7 19       		.uleb128 0x19
+ 2338 01e8 00       		.byte	0
+ 2339 01e9 00       		.byte	0
+ 2340 01ea 26       		.uleb128 0x26
+ 2341 01eb 34       		.uleb128 0x34
+ 2342 01ec 00       		.byte	0
+ 2343 01ed 03       		.uleb128 0x3
+ 2344 01ee 0E       		.uleb128 0xe
+ 2345 01ef 3A       		.uleb128 0x3a
+ 2346 01f0 0B       		.uleb128 0xb
+ 2347 01f1 3B       		.uleb128 0x3b
+ 2348 01f2 0B       		.uleb128 0xb
+ 2349 01f3 49       		.uleb128 0x49
+ 2350 01f4 13       		.uleb128 0x13
+ 2351 01f5 3F       		.uleb128 0x3f
+ 2352 01f6 19       		.uleb128 0x19
+ 2353 01f7 3C       		.uleb128 0x3c
+ 2354 01f8 19       		.uleb128 0x19
+ 2355 01f9 00       		.byte	0
+ 2356 01fa 00       		.byte	0
+ 2357 01fb 27       		.uleb128 0x27
+ 2358 01fc 34       		.uleb128 0x34
+ 2359 01fd 00       		.byte	0
+ 2360 01fe 03       		.uleb128 0x3
+ 2361 01ff 0E       		.uleb128 0xe
+ 2362 0200 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 44
+
+
+ 2363 0201 0B       		.uleb128 0xb
+ 2364 0202 3B       		.uleb128 0x3b
+ 2365 0203 0B       		.uleb128 0xb
+ 2366 0204 49       		.uleb128 0x49
+ 2367 0205 13       		.uleb128 0x13
+ 2368 0206 3F       		.uleb128 0x3f
+ 2369 0207 19       		.uleb128 0x19
+ 2370 0208 02       		.uleb128 0x2
+ 2371 0209 18       		.uleb128 0x18
+ 2372 020a 00       		.byte	0
+ 2373 020b 00       		.byte	0
+ 2374 020c 28       		.uleb128 0x28
+ 2375 020d 2E       		.uleb128 0x2e
+ 2376 020e 00       		.byte	0
+ 2377 020f 3F       		.uleb128 0x3f
+ 2378 0210 19       		.uleb128 0x19
+ 2379 0211 3C       		.uleb128 0x3c
+ 2380 0212 19       		.uleb128 0x19
+ 2381 0213 6E       		.uleb128 0x6e
+ 2382 0214 0E       		.uleb128 0xe
+ 2383 0215 03       		.uleb128 0x3
+ 2384 0216 0E       		.uleb128 0xe
+ 2385 0217 3A       		.uleb128 0x3a
+ 2386 0218 0B       		.uleb128 0xb
+ 2387 0219 3B       		.uleb128 0x3b
+ 2388 021a 0B       		.uleb128 0xb
+ 2389 021b 00       		.byte	0
+ 2390 021c 00       		.byte	0
+ 2391 021d 29       		.uleb128 0x29
+ 2392 021e 2E       		.uleb128 0x2e
+ 2393 021f 00       		.byte	0
+ 2394 0220 3F       		.uleb128 0x3f
+ 2395 0221 19       		.uleb128 0x19
+ 2396 0222 3C       		.uleb128 0x3c
+ 2397 0223 19       		.uleb128 0x19
+ 2398 0224 6E       		.uleb128 0x6e
+ 2399 0225 0E       		.uleb128 0xe
+ 2400 0226 03       		.uleb128 0x3
+ 2401 0227 0E       		.uleb128 0xe
+ 2402 0228 3A       		.uleb128 0x3a
+ 2403 0229 0B       		.uleb128 0xb
+ 2404 022a 3B       		.uleb128 0x3b
+ 2405 022b 05       		.uleb128 0x5
+ 2406 022c 00       		.byte	0
+ 2407 022d 00       		.byte	0
+ 2408 022e 00       		.byte	0
+ 2409              		.section	.debug_loc,"",%progbits
+ 2410              	.Ldebug_loc0:
+ 2411              	.LLST0:
+ 2412 0000 0A000000 		.4byte	.LVL1
+ 2413 0004 2C000000 		.4byte	.LVL2
+ 2414 0008 0300     		.2byte	0x3
+ 2415 000a 09       		.byte	0x9
+ 2416 000b FF       		.byte	0xff
+ 2417 000c 9F       		.byte	0x9f
+ 2418 000d 2C000000 		.4byte	.LVL2
+ 2419 0011 30000000 		.4byte	.LFE560
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 45
+
+
+ 2420 0015 0100     		.2byte	0x1
+ 2421 0017 50       		.byte	0x50
+ 2422 0018 00000000 		.4byte	0
+ 2423 001c 00000000 		.4byte	0
+ 2424              	.LLST1:
+ 2425 0020 0A000000 		.4byte	.LVL3
+ 2426 0024 36000000 		.4byte	.LVL5
+ 2427 0028 0300     		.2byte	0x3
+ 2428 002a 09       		.byte	0x9
+ 2429 002b FF       		.byte	0xff
+ 2430 002c 9F       		.byte	0x9f
+ 2431 002d 36000000 		.4byte	.LVL5
+ 2432 0031 38000000 		.4byte	.LVL6
+ 2433 0035 0100     		.2byte	0x1
+ 2434 0037 50       		.byte	0x50
+ 2435 0038 38000000 		.4byte	.LVL6
+ 2436 003c 3A000000 		.4byte	.LVL7
+ 2437 0040 0300     		.2byte	0x3
+ 2438 0042 09       		.byte	0x9
+ 2439 0043 FF       		.byte	0xff
+ 2440 0044 9F       		.byte	0x9f
+ 2441 0045 3A000000 		.4byte	.LVL7
+ 2442 0049 3E000000 		.4byte	.LFE561
+ 2443 004d 0100     		.2byte	0x1
+ 2444 004f 50       		.byte	0x50
+ 2445 0050 00000000 		.4byte	0
+ 2446 0054 00000000 		.4byte	0
+ 2447              	.LLST2:
+ 2448 0058 00000000 		.4byte	.LVL8
+ 2449 005c 08000000 		.4byte	.LVL9
+ 2450 0060 0100     		.2byte	0x1
+ 2451 0062 50       		.byte	0x50
+ 2452 0063 08000000 		.4byte	.LVL9
+ 2453 0067 3A000000 		.4byte	.LFE562
+ 2454 006b 0400     		.2byte	0x4
+ 2455 006d F3       		.byte	0xf3
+ 2456 006e 01       		.uleb128 0x1
+ 2457 006f 50       		.byte	0x50
+ 2458 0070 9F       		.byte	0x9f
+ 2459 0071 00000000 		.4byte	0
+ 2460 0075 00000000 		.4byte	0
+ 2461              		.section	.debug_aranges,"",%progbits
+ 2462 0000 2C000000 		.4byte	0x2c
+ 2463 0004 0200     		.2byte	0x2
+ 2464 0006 00000000 		.4byte	.Ldebug_info0
+ 2465 000a 04       		.byte	0x4
+ 2466 000b 00       		.byte	0
+ 2467 000c 0000     		.2byte	0
+ 2468 000e 0000     		.2byte	0
+ 2469 0010 00000000 		.4byte	.LFB560
+ 2470 0014 30000000 		.4byte	.LFE560-.LFB560
+ 2471 0018 00000000 		.4byte	.LFB561
+ 2472 001c 3E000000 		.4byte	.LFE561-.LFB561
+ 2473 0020 00000000 		.4byte	.LFB562
+ 2474 0024 3A000000 		.4byte	.LFE562-.LFB562
+ 2475 0028 00000000 		.4byte	0
+ 2476 002c 00000000 		.4byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 46
+
+
+ 2477              		.section	.debug_ranges,"",%progbits
+ 2478              	.Ldebug_ranges0:
+ 2479 0000 00000000 		.4byte	.LFB560
+ 2480 0004 30000000 		.4byte	.LFE560
+ 2481 0008 00000000 		.4byte	.LFB561
+ 2482 000c 3E000000 		.4byte	.LFE561
+ 2483 0010 00000000 		.4byte	.LFB562
+ 2484 0014 3A000000 		.4byte	.LFE562
+ 2485 0018 00000000 		.4byte	0
+ 2486 001c 00000000 		.4byte	0
+ 2487              		.section	.debug_line,"",%progbits
+ 2488              	.Ldebug_line0:
+ 2489 0000 5E030000 		.section	.debug_str,"MS",%progbits,1
+ 2489      02001A03 
+ 2489      00000201 
+ 2489      FB0E0D00 
+ 2489      01010101 
+ 2490              	.LASF64:
+ 2491 0000 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 2491      6843746C 
+ 2491      4D61696E 
+ 2491      57733146 
+ 2491      72657100 
+ 2492              	.LASF234:
+ 2493 0014 63795F64 		.ascii	"cy_device\000"
+ 2493      65766963 
+ 2493      6500
+ 2494              	.LASF164:
+ 2495 001e 62756666 		.ascii	"bufferSize\000"
+ 2495      65725369 
+ 2495      7A6500
+ 2496              	.LASF91:
+ 2497 0029 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 2497      73436D30 
+ 2497      436C6F63 
+ 2497      6B43746C 
+ 2497      4F666673 
+ 2498              	.LASF50:
+ 2499 0040 70657269 		.ascii	"periClockNr\000"
+ 2499      436C6F63 
+ 2499      6B4E7200 
+ 2500              	.LASF141:
+ 2501 004c 6D617374 		.ascii	"masterStatus\000"
+ 2501      65725374 
+ 2501      61747573 
+ 2501      00
+ 2502              	.LASF249:
+ 2503 0059 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
+ 2503      73657273 
+ 2503      5C737469 
+ 2503      6A6E5C4F 
+ 2503      6E654472 
+ 2504 0087 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
+ 2504      43204B6C 
+ 2504      6F646465 
+ 2504      6E5C5254 
+ 2504      4F535F49 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 47
+
+
+ 2505              	.LASF169:
+ 2506 00a9 74785374 		.ascii	"txStatus\000"
+ 2506      61747573 
+ 2506      00
+ 2507              	.LASF23:
+ 2508 00b2 70657269 		.ascii	"periBase\000"
+ 2508      42617365 
+ 2508      00
+ 2509              	.LASF219:
+ 2510 00bb 6C736D33 		.ascii	"lsm303MagData_s\000"
+ 2510      30334D61 
+ 2510      67446174 
+ 2510      615F7300 
+ 2511              	.LASF163:
+ 2512 00cb 62756666 		.ascii	"buffer\000"
+ 2512      657200
+ 2513              	.LASF69:
+ 2514 00d2 64774368 		.ascii	"dwChSize\000"
+ 2514      53697A65 
+ 2514      00
+ 2515              	.LASF148:
+ 2516 00db 736C6176 		.ascii	"slaveStatus\000"
+ 2516      65537461 
+ 2516      74757300 
+ 2517              	.LASF198:
+ 2518 00e7 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_X_H_A\000"
+ 2518      30335F52 
+ 2518      45474953 
+ 2518      5445525F 
+ 2518      41434345 
+ 2519              	.LASF13:
+ 2520 0107 756E7369 		.ascii	"unsigned int\000"
+ 2520      676E6564 
+ 2520      20696E74 
+ 2520      00
+ 2521              	.LASF136:
+ 2522 0114 63795F63 		.ascii	"cy_cb_scb_i2c_handle_events_t\000"
+ 2522      625F7363 
+ 2522      625F6932 
+ 2522      635F6861 
+ 2522      6E646C65 
+ 2523              	.LASF146:
+ 2524 0132 6D617374 		.ascii	"masterBufferIdx\000"
+ 2524      65724275 
+ 2524      66666572 
+ 2524      49647800 
+ 2525              	.LASF51:
+ 2526 0142 736D6966 		.ascii	"smifDeviceNr\000"
+ 2526      44657669 
+ 2526      63654E72 
+ 2526      00
+ 2527              	.LASF115:
+ 2528 014f 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
+ 2528      41525F52 
+ 2528      414E4745 
+ 2528      5F434F4E 
+ 2528      445F4F55 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 48
+
+
+ 2529              	.LASF81:
+ 2530 0169 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 2530      44697643 
+ 2530      6D645061 
+ 2530      54797065 
+ 2530      53656C50 
+ 2531              	.LASF207:
+ 2532 0180 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT1_THS_A\000"
+ 2532      30335F52 
+ 2532      45474953 
+ 2532      5445525F 
+ 2532      41434345 
+ 2533              	.LASF7:
+ 2534 01a1 5F5F696E 		.ascii	"__int32_t\000"
+ 2534      7433325F 
+ 2534      7400
+ 2535              	.LASF47:
+ 2536 01ab 73727373 		.ascii	"srssNumClkpath\000"
+ 2536      4E756D43 
+ 2536      6C6B7061 
+ 2536      746800
+ 2537              	.LASF21:
+ 2538 01ba 63707573 		.ascii	"cpussBase\000"
+ 2538      73426173 
+ 2538      6500
+ 2539              	.LASF183:
+ 2540 01c4 6368616E 		.ascii	"channelBase\000"
+ 2540      6E656C42 
+ 2540      61736500 
+ 2541              	.LASF154:
+ 2542 01d0 736C6176 		.ascii	"slaveRxBuffer\000"
+ 2542      65527842 
+ 2542      75666665 
+ 2542      7200
+ 2543              	.LASF205:
+ 2544 01de 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT1_CFG_A\000"
+ 2544      30335F52 
+ 2544      45474953 
+ 2544      5445525F 
+ 2544      41434345 
+ 2545              	.LASF45:
+ 2546 01ff 63707573 		.ascii	"cpussFmIrq\000"
+ 2546      73466D49 
+ 2546      727100
+ 2547              	.LASF185:
+ 2548 020a 6877436F 		.ascii	"hwConfigStc\000"
+ 2548      6E666967 
+ 2548      53746300 
+ 2549              	.LASF158:
+ 2550 0216 63624164 		.ascii	"cbAddr\000"
+ 2550      647200
+ 2551              	.LASF133:
+ 2552 021d 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
+ 2552      43425F49 
+ 2552      32435F41 
+ 2552      434B00
+ 2553              	.LASF172:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 49
+
+
+ 2554 022c 72785269 		.ascii	"rxRingBufSize\000"
+ 2554      6E674275 
+ 2554      6653697A 
+ 2554      6500
+ 2555              	.LASF135:
+ 2556 023a 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
+ 2556      6E5F7363 
+ 2556      625F6932 
+ 2556      635F636F 
+ 2556      6D6D616E 
+ 2557              	.LASF77:
+ 2558 0252 70657269 		.ascii	"periTrGrSize\000"
+ 2558      54724772 
+ 2558      53697A65 
+ 2558      00
+ 2559              	.LASF216:
+ 2560 025f 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_TIME_LIMIT_A\000"
+ 2560      30335F52 
+ 2560      45474953 
+ 2560      5445525F 
+ 2560      41434345 
+ 2561              	.LASF80:
+ 2562 0282 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 2562      44697643 
+ 2562      6D645061 
+ 2562      44697653 
+ 2562      656C506F 
+ 2563              	.LASF57:
+ 2564 0298 63727970 		.ascii	"cryptoMemSize\000"
+ 2564      746F4D65 
+ 2564      6D53697A 
+ 2564      6500
+ 2565              	.LASF126:
+ 2566 02a6 73617449 		.ascii	"satIntrMask\000"
+ 2566      6E74724D 
+ 2566      61736B00 
+ 2567              	.LASF103:
+ 2568 02b2 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 2568      7352616D 
+ 2568      3143746C 
+ 2568      3000
+ 2569              	.LASF105:
+ 2570 02c0 69706353 		.ascii	"ipcStructSize\000"
+ 2570      74727563 
+ 2570      7453697A 
+ 2570      6500
+ 2571              	.LASF134:
+ 2572 02ce 43595F53 		.ascii	"CY_SCB_I2C_NAK\000"
+ 2572      43425F49 
+ 2572      32435F4E 
+ 2572      414B00
+ 2573              	.LASF137:
+ 2574 02dd 63795F63 		.ascii	"cy_cb_scb_i2c_handle_addr_t\000"
+ 2574      625F7363 
+ 2574      625F6932 
+ 2574      635F6861 
+ 2574      6E646C65 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 50
+
+
+ 2575              	.LASF206:
+ 2576 02f9 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT1_SOURCE_A\000"
+ 2576      30335F52 
+ 2576      45474953 
+ 2576      5445525F 
+ 2576      41434345 
+ 2577              	.LASF247:
+ 2578 031d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2578      43313120 
+ 2578      352E342E 
+ 2578      31203230 
+ 2578      31363036 
+ 2579 0350 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 2579      20726576 
+ 2579      6973696F 
+ 2579      6E203233 
+ 2579      37373135 
+ 2580 0383 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 2580      70202D6D 
+ 2580      6670753D 
+ 2580      66707634 
+ 2580      2D73702D 
+ 2581 03b6 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 2581      6F6E7320 
+ 2581      2D666661 
+ 2581      742D6C74 
+ 2581      6F2D6F62 
+ 2582              	.LASF191:
+ 2583 03d0 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG3_A\000"
+ 2583      30335F52 
+ 2583      45474953 
+ 2583      5445525F 
+ 2583      41434345 
+ 2584              	.LASF160:
+ 2585 03f2 63795F73 		.ascii	"cy_stc_scb_i2c_context\000"
+ 2585      74635F73 
+ 2585      63625F69 
+ 2585      32635F63 
+ 2585      6F6E7465 
+ 2586              	.LASF112:
+ 2587 0409 43595F53 		.ascii	"CY_SAR_RANGE_COND_BELOW\000"
+ 2587      41525F52 
+ 2587      414E4745 
+ 2587      5F434F4E 
+ 2587      445F4245 
+ 2588              	.LASF79:
+ 2589 0421 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 2589      44697643 
+ 2589      6D645479 
+ 2589      70655365 
+ 2589      6C506F73 
+ 2590              	.LASF96:
+ 2591 0436 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 2591      73547269 
+ 2591      6D52616D 
+ 2591      43746C4F 
+ 2591      66667365 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 51
+
+
+ 2592              	.LASF150:
+ 2593 044c 736C6176 		.ascii	"slaveTxBuffer\000"
+ 2593      65547842 
+ 2593      75666665 
+ 2593      7200
+ 2594              	.LASF152:
+ 2595 045a 736C6176 		.ascii	"slaveTxBufferIdx\000"
+ 2595      65547842 
+ 2595      75666665 
+ 2595      72496478 
+ 2595      00
+ 2596              	.LASF221:
+ 2597 046b 6C736D33 		.ascii	"lsm303AccelData_s\000"
+ 2597      30334163 
+ 2597      63656C44 
+ 2597      6174615F 
+ 2597      7300
+ 2598              	.LASF18:
+ 2599 047d 75696E74 		.ascii	"uint32_t\000"
+ 2599      33325F74 
+ 2599      00
+ 2600              	.LASF212:
+ 2601 0486 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT2_DURATION_A\000"
+ 2601      30335F52 
+ 2601      45474953 
+ 2601      5445525F 
+ 2601      41434345 
+ 2602              	.LASF89:
+ 2603 04ac 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 2603      50727443 
+ 2603      66674F75 
+ 2603      744F6666 
+ 2603      73657400 
+ 2604              	.LASF109:
+ 2605 04c0 666C6F61 		.ascii	"float\000"
+ 2605      7400
+ 2606              	.LASF32:
+ 2607 04c6 63727970 		.ascii	"cryptoVersion\000"
+ 2607      746F5665 
+ 2607      7273696F 
+ 2607      6E00
+ 2608              	.LASF248:
+ 2609 04d4 4C534D33 		.ascii	"LSM303DLHC.c\000"
+ 2609      3033444C 
+ 2609      48432E63 
+ 2609      00
+ 2610              	.LASF182:
+ 2611 04e1 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ 2611      74635F73 
+ 2611      63625F75 
+ 2611      6172745F 
+ 2611      636F6E74 
+ 2612              	.LASF53:
+ 2613 04fb 65704D6F 		.ascii	"epMonitorNr\000"
+ 2613      6E69746F 
+ 2613      724E7200 
+ 2614              	.LASF215:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 52
+
+
+ 2615 0507 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CLICK_THS_A\000"
+ 2615      30335F52 
+ 2615      45474953 
+ 2615      5445525F 
+ 2615      41434345 
+ 2616              	.LASF168:
+ 2617 0529 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 2617      74635F73 
+ 2617      63625F75 
+ 2617      6172745F 
+ 2617      636F6E74 
+ 2618              	.LASF22:
+ 2619 0541 666C6173 		.ascii	"flashcBase\000"
+ 2619      68634261 
+ 2619      736500
+ 2620              	.LASF15:
+ 2621 054c 696E7431 		.ascii	"int16_t\000"
+ 2621      365F7400 
+ 2622              	.LASF88:
+ 2623 0554 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 2623      50727443 
+ 2623      6667496E 
+ 2623      4F666673 
+ 2623      657400
+ 2624              	.LASF184:
+ 2625 0567 6E756D43 		.ascii	"numChannels\000"
+ 2625      68616E6E 
+ 2625      656C7300 
+ 2626              	.LASF60:
+ 2627 0573 666C6173 		.ascii	"flashWriteDelay\000"
+ 2627      68577269 
+ 2627      74654465 
+ 2627      6C617900 
+ 2628              	.LASF213:
+ 2629 0583 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CLICK_CFG_A\000"
+ 2629      30335F52 
+ 2629      45474953 
+ 2629      5445525F 
+ 2629      41434345 
+ 2630              	.LASF12:
+ 2631 05a5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2631      206C6F6E 
+ 2631      6720756E 
+ 2631      7369676E 
+ 2631      65642069 
+ 2632              	.LASF85:
+ 2633 05bc 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 2633      44697632 
+ 2633      345F3543 
+ 2633      746C4F66 
+ 2633      66736574 
+ 2634              	.LASF90:
+ 2635 05d1 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 2635      50727443 
+ 2635      66675369 
+ 2635      6F4F6666 
+ 2635      73657400 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 53
+
+
+ 2636              	.LASF44:
+ 2637 05e5 63707573 		.ascii	"cpussIpc0Irq\000"
+ 2637      73497063 
+ 2637      30497271 
+ 2637      00
+ 2638              	.LASF230:
+ 2639 05f2 6D617374 		.ascii	"masterTransfer\000"
+ 2639      65725472 
+ 2639      616E7366 
+ 2639      657200
+ 2640              	.LASF225:
+ 2641 0601 6D617374 		.ascii	"masterTransferCfg\000"
+ 2641      65725472 
+ 2641      616E7366 
+ 2641      65724366 
+ 2641      6700
+ 2642              	.LASF217:
+ 2643 0613 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_TIME_LATENCY_A\000"
+ 2643      30335F52 
+ 2643      45474953 
+ 2643      5445525F 
+ 2643      41434345 
+ 2644              	.LASF121:
+ 2645 0638 72616E67 		.ascii	"rangeThres\000"
+ 2645      65546872 
+ 2645      657300
+ 2646              	.LASF24:
+ 2647 0643 75646242 		.ascii	"udbBase\000"
+ 2647      61736500 
+ 2648              	.LASF151:
+ 2649 064b 736C6176 		.ascii	"slaveTxBufferSize\000"
+ 2649      65547842 
+ 2649      75666665 
+ 2649      7253697A 
+ 2649      6500
+ 2650              	.LASF113:
+ 2651 065d 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
+ 2651      41525F52 
+ 2651      414E4745 
+ 2651      5F434F4E 
+ 2651      445F494E 
+ 2652              	.LASF149:
+ 2653 0676 736C6176 		.ascii	"slaveRdBufEmpty\000"
+ 2653      65526442 
+ 2653      7566456D 
+ 2653      70747900 
+ 2654              	.LASF132:
+ 2655 0686 63795F73 		.ascii	"cy_stc_sar_config_t\000"
+ 2655      74635F73 
+ 2655      61725F63 
+ 2655      6F6E6669 
+ 2655      675F7400 
+ 2656              	.LASF117:
+ 2657 069a 6374726C 		.ascii	"ctrl\000"
+ 2657      00
+ 2658              	.LASF204:
+ 2659 069f 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_FIFO_SRC_REG_A\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 54
+
+
+ 2659      30335F52 
+ 2659      45474953 
+ 2659      5445525F 
+ 2659      41434345 
+ 2660              	.LASF220:
+ 2661 06c4 6C736D33 		.ascii	"lsm303MagData\000"
+ 2661      30334D61 
+ 2661      67446174 
+ 2661      6100
+ 2662              	.LASF170:
+ 2663 06d2 72785374 		.ascii	"rxStatus\000"
+ 2663      61747573 
+ 2663      00
+ 2664              	.LASF175:
+ 2665 06db 72784275 		.ascii	"rxBuf\000"
+ 2665      6600
+ 2666              	.LASF66:
+ 2667 06e1 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 2667      6843746C 
+ 2667      4D61696E 
+ 2667      57733346 
+ 2667      72657100 
+ 2668              	.LASF48:
+ 2669 06f5 73727373 		.ascii	"srssNumPll\000"
+ 2669      4E756D50 
+ 2669      6C6C00
+ 2670              	.LASF199:
+ 2671 0700 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_Y_L_A\000"
+ 2671      30335F52 
+ 2671      45474953 
+ 2671      5445525F 
+ 2671      41434345 
+ 2672              	.LASF203:
+ 2673 0720 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_FIFO_CTRL_REG_A\000"
+ 2673      30335F52 
+ 2673      45474953 
+ 2673      5445525F 
+ 2673      41434345 
+ 2674              	.LASF59:
+ 2675 0746 666C6173 		.ascii	"flashPipeRequired\000"
+ 2675      68506970 
+ 2675      65526571 
+ 2675      75697265 
+ 2675      6400
+ 2676              	.LASF157:
+ 2677 0758 63624576 		.ascii	"cbEvents\000"
+ 2677      656E7473 
+ 2677      00
+ 2678              	.LASF110:
+ 2679 0761 646F7562 		.ascii	"double\000"
+ 2679      6C6500
+ 2680              	.LASF111:
+ 2681 0768 5F426F6F 		.ascii	"_Bool\000"
+ 2681      6C00
+ 2682              	.LASF194:
+ 2683 076e 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG6_A\000"
+ 2683      30335F52 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 55
+
+
+ 2683      45474953 
+ 2683      5445525F 
+ 2683      41434345 
+ 2684              	.LASF63:
+ 2685 0790 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 2685      6843746C 
+ 2685      4D61696E 
+ 2685      57733046 
+ 2685      72657100 
+ 2686              	.LASF138:
+ 2687 07a4 75736552 		.ascii	"useRxFifo\000"
+ 2687      78466966 
+ 2687      6F00
+ 2688              	.LASF27:
+ 2689 07ae 6770696F 		.ascii	"gpioBase\000"
+ 2689      42617365 
+ 2689      00
+ 2690              	.LASF189:
+ 2691 07b7 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG1_A\000"
+ 2691      30335F52 
+ 2691      45474953 
+ 2691      5445525F 
+ 2691      41434345 
+ 2692              	.LASF202:
+ 2693 07d9 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_Z_H_A\000"
+ 2693      30335F52 
+ 2693      45474953 
+ 2693      5445525F 
+ 2693      41434345 
+ 2694              	.LASF33:
+ 2695 07f9 64775665 		.ascii	"dwVersion\000"
+ 2695      7273696F 
+ 2695      6E00
+ 2696              	.LASF98:
+ 2697 0803 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 2697      73537973 
+ 2697      5469636B 
+ 2697      43746C4F 
+ 2697      66667365 
+ 2698              	.LASF54:
+ 2699 0819 75646250 		.ascii	"udbPresent\000"
+ 2699      72657365 
+ 2699      6E7400
+ 2700              	.LASF72:
+ 2701 0824 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 2701      61747573 
+ 2701      43684964 
+ 2701      78506F73 
+ 2701      00
+ 2702              	.LASF5:
+ 2703 0835 5F5F7569 		.ascii	"__uint16_t\000"
+ 2703      6E743136 
+ 2703      5F7400
+ 2704              	.LASF131:
+ 2705 0840 76726566 		.ascii	"vrefMvValue\000"
+ 2705      4D765661 
+ 2705      6C756500 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 56
+
+
+ 2706              	.LASF241:
+ 2707 084c 77726974 		.ascii	"writebuffer\000"
+ 2707      65627566 
+ 2707      66657200 
+ 2708              	.LASF147:
+ 2709 0858 6D617374 		.ascii	"masterNumBytes\000"
+ 2709      65724E75 
+ 2709      6D427974 
+ 2709      657300
+ 2710              	.LASF228:
+ 2711 0867 696E6974 		.ascii	"initAccel\000"
+ 2711      41636365 
+ 2711      6C00
+ 2712              	.LASF43:
+ 2713 0871 63707573 		.ascii	"cpussFlashPaSize\000"
+ 2713      73466C61 
+ 2713      73685061 
+ 2713      53697A65 
+ 2713      00
+ 2714              	.LASF114:
+ 2715 0882 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
+ 2715      41525F52 
+ 2715      414E4745 
+ 2715      5F434F4E 
+ 2715      445F4142 
+ 2716              	.LASF108:
+ 2717 089a 63686172 		.ascii	"char\000"
+ 2717      00
+ 2718              	.LASF123:
+ 2719 089f 6368616E 		.ascii	"chanEn\000"
+ 2719      456E00
+ 2720              	.LASF238:
+ 2721 08a6 6D493243 		.ascii	"mI2C_context\000"
+ 2721      5F636F6E 
+ 2721      74657874 
+ 2721      00
+ 2722              	.LASF174:
+ 2723 08b3 72785269 		.ascii	"rxRingBufTail\000"
+ 2723      6E674275 
+ 2723      66546169 
+ 2723      6C00
+ 2724              	.LASF84:
+ 2725 08c1 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 2725      44697631 
+ 2725      365F3543 
+ 2725      746C4F66 
+ 2725      66736574 
+ 2726              	.LASF55:
+ 2727 08d6 73797350 		.ascii	"sysPmSimoPresent\000"
+ 2727      6D53696D 
+ 2727      6F507265 
+ 2727      73656E74 
+ 2727      00
+ 2728              	.LASF145:
+ 2729 08e7 6D617374 		.ascii	"masterBufferSize\000"
+ 2729      65724275 
+ 2729      66666572 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 57
+
+
+ 2729      53697A65 
+ 2729      00
+ 2730              	.LASF177:
+ 2731 08f8 72784275 		.ascii	"rxBufIdx\000"
+ 2731      66496478 
+ 2731      00
+ 2732              	.LASF242:
+ 2733 0901 72656164 		.ascii	"readBuffer\000"
+ 2733      42756666 
+ 2733      657200
+ 2734              	.LASF181:
+ 2735 090c 696E6974 		.ascii	"initKey\000"
+ 2735      4B657900 
+ 2736              	.LASF73:
+ 2737 0914 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 2737      61747573 
+ 2737      43684964 
+ 2737      784D736B 
+ 2737      00
+ 2738              	.LASF14:
+ 2739 0925 75696E74 		.ascii	"uint8_t\000"
+ 2739      385F7400 
+ 2740              	.LASF227:
+ 2741 092d 73746174 		.ascii	"status\000"
+ 2741      757300
+ 2742              	.LASF153:
+ 2743 0934 736C6176 		.ascii	"slaveTxBufferCnt\000"
+ 2743      65547842 
+ 2743      75666665 
+ 2743      72436E74 
+ 2743      00
+ 2744              	.LASF78:
+ 2745 0945 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 2745      44697643 
+ 2745      6D644469 
+ 2745      7653656C 
+ 2745      4D736B00 
+ 2746              	.LASF188:
+ 2747 0959 4144435F 		.ascii	"ADC_CONFIG_STRUCT\000"
+ 2747      434F4E46 
+ 2747      49475F53 
+ 2747      54525543 
+ 2747      5400
+ 2748              	.LASF86:
+ 2749 096b 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 2749      50727449 
+ 2749      6E747243 
+ 2749      66674F66 
+ 2749      66736574 
+ 2750              	.LASF129:
+ 2751 0980 6D757853 		.ascii	"muxSwitchSqCtrl\000"
+ 2751      77697463 
+ 2751      68537143 
+ 2751      74726C00 
+ 2752              	.LASF245:
+ 2753 0990 78546173 		.ascii	"xTaskGetTickCount\000"
+ 2753      6B476574 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 58
+
+
+ 2753      5469636B 
+ 2753      436F756E 
+ 2753      7400
+ 2754              	.LASF167:
+ 2755 09a2 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 2755      625F7363 
+ 2755      625F7561 
+ 2755      72745F68 
+ 2755      616E646C 
+ 2756              	.LASF122:
+ 2757 09c1 72616E67 		.ascii	"rangeCond\000"
+ 2757      65436F6E 
+ 2757      6400
+ 2758              	.LASF102:
+ 2759 09cb 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 2759      7352616D 
+ 2759      3043746C 
+ 2759      3000
+ 2760              	.LASF11:
+ 2761 09d9 6C6F6E67 		.ascii	"long long int\000"
+ 2761      206C6F6E 
+ 2761      6720696E 
+ 2761      7400
+ 2762              	.LASF29:
+ 2763 09e7 69706342 		.ascii	"ipcBase\000"
+ 2763      61736500 
+ 2764              	.LASF70:
+ 2765 09ef 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 2765      43746C50 
+ 2765      72696F50 
+ 2765      6F7300
+ 2766              	.LASF30:
+ 2767 09fe 63727970 		.ascii	"cryptoBase\000"
+ 2767      746F4261 
+ 2767      736500
+ 2768              	.LASF229:
+ 2769 0a09 72656164 		.ascii	"readAccel\000"
+ 2769      41636365 
+ 2769      6C00
+ 2770              	.LASF240:
+ 2771 0a13 6D616744 		.ascii	"magData\000"
+ 2771      61746100 
+ 2772              	.LASF139:
+ 2773 0a1b 75736554 		.ascii	"useTxFifo\000"
+ 2773      78466966 
+ 2773      6F00
+ 2774              	.LASF4:
+ 2775 0a25 5F5F696E 		.ascii	"__int16_t\000"
+ 2775      7431365F 
+ 2775      7400
+ 2776              	.LASF26:
+ 2777 0a2f 6873696F 		.ascii	"hsiomBase\000"
+ 2777      6D426173 
+ 2777      6500
+ 2778              	.LASF143:
+ 2779 0a39 6D617374 		.ascii	"masterRdDir\000"
+ 2779      65725264 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 59
+
+
+ 2779      44697200 
+ 2780              	.LASF76:
+ 2781 0a45 70657269 		.ascii	"periTrGrOffset\000"
+ 2781      54724772 
+ 2781      4F666673 
+ 2781      657400
+ 2782              	.LASF46:
+ 2783 0a54 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 2783      734E6F74 
+ 2783      436F6E6E 
+ 2783      65637465 
+ 2783      64497271 
+ 2784              	.LASF173:
+ 2785 0a69 72785269 		.ascii	"rxRingBufHead\000"
+ 2785      6E674275 
+ 2785      66486561 
+ 2785      6400
+ 2786              	.LASF42:
+ 2787 0a77 63707573 		.ascii	"cpussDwChNr\000"
+ 2787      73447743 
+ 2787      684E7200 
+ 2788              	.LASF192:
+ 2789 0a83 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG4_A\000"
+ 2789      30335F52 
+ 2789      45474953 
+ 2789      5445525F 
+ 2789      41434345 
+ 2790              	.LASF124:
+ 2791 0aa5 6368616E 		.ascii	"chanConfig\000"
+ 2791      436F6E66 
+ 2791      696700
+ 2792              	.LASF210:
+ 2793 0ab0 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT2_SOURCE_A\000"
+ 2793      30335F52 
+ 2793      45474953 
+ 2793      5445525F 
+ 2793      41434345 
+ 2794              	.LASF218:
+ 2795 0ad4 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_TIME_WINDOW_A\000"
+ 2795      30335F52 
+ 2795      45474953 
+ 2795      5445525F 
+ 2795      41434345 
+ 2796              	.LASF179:
+ 2797 0af8 74784275 		.ascii	"txBufSize\000"
+ 2797      6653697A 
+ 2797      6500
+ 2798              	.LASF40:
+ 2799 0b02 63707573 		.ascii	"cpussIpcNr\000"
+ 2799      73497063 
+ 2799      4E7200
+ 2800              	.LASF93:
+ 2801 0b0d 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 2801      73436D34 
+ 2801      53746174 
+ 2801      75734F66 
+ 2801      66736574 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 60
+
+
+ 2802              	.LASF226:
+ 2803 0b22 6D61736B 		.ascii	"mask\000"
+ 2803      00
+ 2804              	.LASF52:
+ 2805 0b27 70617373 		.ascii	"passSarChannels\000"
+ 2805      53617243 
+ 2805      68616E6E 
+ 2805      656C7300 
+ 2806              	.LASF156:
+ 2807 0b37 736C6176 		.ascii	"slaveRxBufferIdx\000"
+ 2807      65527842 
+ 2807      75666665 
+ 2807      72496478 
+ 2807      00
+ 2808              	.LASF104:
+ 2809 0b48 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 2809      7352616D 
+ 2809      3243746C 
+ 2809      3000
+ 2810              	.LASF142:
+ 2811 0b56 6D617374 		.ascii	"masterPause\000"
+ 2811      65725061 
+ 2811      75736500 
+ 2812              	.LASF178:
+ 2813 0b62 74784275 		.ascii	"txBuf\000"
+ 2813      6600
+ 2814              	.LASF224:
+ 2815 0b68 5469636B 		.ascii	"TickType_t\000"
+ 2815      54797065 
+ 2815      5F7400
+ 2816              	.LASF61:
+ 2817 0b73 666C6173 		.ascii	"flashProgramDelay\000"
+ 2817      6850726F 
+ 2817      6772616D 
+ 2817      44656C61 
+ 2817      7900
+ 2818              	.LASF83:
+ 2819 0b85 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 2819      44697631 
+ 2819      3643746C 
+ 2819      4F666673 
+ 2819      657400
+ 2820              	.LASF155:
+ 2821 0b98 736C6176 		.ascii	"slaveRxBufferSize\000"
+ 2821      65527842 
+ 2821      75666665 
+ 2821      7253697A 
+ 2821      6500
+ 2822              	.LASF6:
+ 2823 0baa 73686F72 		.ascii	"short unsigned int\000"
+ 2823      7420756E 
+ 2823      7369676E 
+ 2823      65642069 
+ 2823      6E7400
+ 2824              	.LASF195:
+ 2825 0bbd 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_REFERENCE_A\000"
+ 2825      30335F52 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 61
+
+
+ 2825      45474953 
+ 2825      5445525F 
+ 2825      41434345 
+ 2826              	.LASF171:
+ 2827 0bdf 72785269 		.ascii	"rxRingBuf\000"
+ 2827      6E674275 
+ 2827      6600
+ 2828              	.LASF20:
+ 2829 0be9 6C6F6E67 		.ascii	"long double\000"
+ 2829      20646F75 
+ 2829      626C6500 
+ 2830              	.LASF16:
+ 2831 0bf5 75696E74 		.ascii	"uint16_t\000"
+ 2831      31365F74 
+ 2831      00
+ 2832              	.LASF25:
+ 2833 0bfe 70726F74 		.ascii	"protBase\000"
+ 2833      42617365 
+ 2833      00
+ 2834              	.LASF75:
+ 2835 0c07 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 2835      5472436D 
+ 2835      64477253 
+ 2835      656C4D73 
+ 2835      6B00
+ 2836              	.LASF144:
+ 2837 0c19 6D617374 		.ascii	"masterBuffer\000"
+ 2837      65724275 
+ 2837      66666572 
+ 2837      00
+ 2838              	.LASF119:
+ 2839 0c26 73616D70 		.ascii	"sampleTime01\000"
+ 2839      6C655469 
+ 2839      6D653031 
+ 2839      00
+ 2840              	.LASF244:
+ 2841 0c33 52656164 		.ascii	"ReadStatusPacketFromI2C\000"
+ 2841      53746174 
+ 2841      75735061 
+ 2841      636B6574 
+ 2841      46726F6D 
+ 2842              	.LASF49:
+ 2843 0c4b 73727373 		.ascii	"srssNumHfroot\000"
+ 2843      4E756D48 
+ 2843      66726F6F 
+ 2843      7400
+ 2844              	.LASF71:
+ 2845 0c59 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 2845      43746C50 
+ 2845      7265656D 
+ 2845      70746162 
+ 2845      6C65506F 
+ 2846              	.LASF232:
+ 2847 0c6f 78467265 		.ascii	"xFrequency\000"
+ 2847      7175656E 
+ 2847      637900
+ 2848              	.LASF37:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 62
+
+
+ 2849 0c7a 69706356 		.ascii	"ipcVersion\000"
+ 2849      65727369 
+ 2849      6F6E00
+ 2850              	.LASF128:
+ 2851 0c85 6D757853 		.ascii	"muxSwitch\000"
+ 2851      77697463 
+ 2851      6800
+ 2852              	.LASF65:
+ 2853 0c8f 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 2853      6843746C 
+ 2853      4D61696E 
+ 2853      57733246 
+ 2853      72657100 
+ 2854              	.LASF211:
+ 2855 0ca3 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT2_THS_A\000"
+ 2855      30335F52 
+ 2855      45474953 
+ 2855      5445525F 
+ 2855      41434345 
+ 2856              	.LASF197:
+ 2857 0cc4 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_X_L_A\000"
+ 2857      30335F52 
+ 2857      45474953 
+ 2857      5445525F 
+ 2857      41434345 
+ 2858              	.LASF19:
+ 2859 0ce4 73697A65 		.ascii	"sizetype\000"
+ 2859      74797065 
+ 2859      00
+ 2860              	.LASF100:
+ 2861 0ced 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 2861      73436D34 
+ 2861      4E6D6943 
+ 2861      746C4F66 
+ 2861      66736574 
+ 2862              	.LASF94:
+ 2863 0d02 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 2863      73436D30 
+ 2863      53746174 
+ 2863      75734F66 
+ 2863      66736574 
+ 2864              	.LASF82:
+ 2865 0d17 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 2865      44697638 
+ 2865      43746C4F 
+ 2865      66667365 
+ 2865      7400
+ 2866              	.LASF209:
+ 2867 0d29 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT2_CFG_A\000"
+ 2867      30335F52 
+ 2867      45474953 
+ 2867      5445525F 
+ 2867      41434345 
+ 2868              	.LASF0:
+ 2869 0d4a 73686F72 		.ascii	"short int\000"
+ 2869      7420696E 
+ 2869      7400
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 63
+
+
+ 2870              	.LASF237:
+ 2871 0d54 4144435F 		.ascii	"ADC_allConfigs\000"
+ 2871      616C6C43 
+ 2871      6F6E6669 
+ 2871      677300
+ 2872              	.LASF8:
+ 2873 0d63 6C6F6E67 		.ascii	"long int\000"
+ 2873      20696E74 
+ 2873      00
+ 2874              	.LASF31:
+ 2875 0d6c 63707573 		.ascii	"cpussVersion\000"
+ 2875      73566572 
+ 2875      73696F6E 
+ 2875      00
+ 2876              	.LASF233:
+ 2877 0d79 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2877      52784275 
+ 2877      66666572 
+ 2877      00
+ 2878              	.LASF35:
+ 2879 0d86 6770696F 		.ascii	"gpioVersion\000"
+ 2879      56657273 
+ 2879      696F6E00 
+ 2880              	.LASF34:
+ 2881 0d92 666C6173 		.ascii	"flashcVersion\000"
+ 2881      68635665 
+ 2881      7273696F 
+ 2881      6E00
+ 2882              	.LASF56:
+ 2883 0da0 70726F74 		.ascii	"protBusMasterMask\000"
+ 2883      4275734D 
+ 2883      61737465 
+ 2883      724D6173 
+ 2883      6B00
+ 2884              	.LASF231:
+ 2885 0db2 784C6173 		.ascii	"xLastWakeTime\000"
+ 2885      7457616B 
+ 2885      6554696D 
+ 2885      6500
+ 2886              	.LASF200:
+ 2887 0dc0 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_Y_H_A\000"
+ 2887      30335F52 
+ 2887      45474953 
+ 2887      5445525F 
+ 2887      41434345 
+ 2888              	.LASF180:
+ 2889 0de0 74784C65 		.ascii	"txLeftToTransmit\000"
+ 2889      6674546F 
+ 2889      5472616E 
+ 2889      736D6974 
+ 2889      00
+ 2890              	.LASF95:
+ 2891 0df1 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 2891      73436D34 
+ 2891      50777243 
+ 2891      746C4F66 
+ 2891      66736574 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 64
+
+
+ 2892              	.LASF3:
+ 2893 0e06 5F5F7569 		.ascii	"__uint8_t\000"
+ 2893      6E74385F 
+ 2893      7400
+ 2894              	.LASF186:
+ 2895 0e10 6D697363 		.ascii	"miscConfig\000"
+ 2895      436F6E66 
+ 2895      696700
+ 2896              	.LASF190:
+ 2897 0e1b 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG2_A\000"
+ 2897      30335F52 
+ 2897      45474953 
+ 2897      5445525F 
+ 2897      41434345 
+ 2898              	.LASF99:
+ 2899 0e3d 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 2899      73436D30 
+ 2899      4E6D6943 
+ 2899      746C4F66 
+ 2899      66736574 
+ 2900              	.LASF39:
+ 2901 0e52 70726F74 		.ascii	"protVersion\000"
+ 2901      56657273 
+ 2901      696F6E00 
+ 2902              	.LASF92:
+ 2903 0e5e 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 2903      73436D34 
+ 2903      436C6F63 
+ 2903      6B43746C 
+ 2903      4F666673 
+ 2904              	.LASF97:
+ 2905 0e75 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 2905      73547269 
+ 2905      6D526F6D 
+ 2905      43746C4F 
+ 2905      66667365 
+ 2906              	.LASF120:
+ 2907 0e8b 73616D70 		.ascii	"sampleTime23\000"
+ 2907      6C655469 
+ 2907      6D653233 
+ 2907      00
+ 2908              	.LASF166:
+ 2909 0e98 63795F73 		.ascii	"cy_stc_scb_i2c_master_xfer_config_t\000"
+ 2909      74635F73 
+ 2909      63625F69 
+ 2909      32635F6D 
+ 2909      61737465 
+ 2910              	.LASF36:
+ 2911 0ebc 6873696F 		.ascii	"hsiomVersion\000"
+ 2911      6D566572 
+ 2911      73696F6E 
+ 2911      00
+ 2912              	.LASF10:
+ 2913 0ec9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2913      20756E73 
+ 2913      69676E65 
+ 2913      6420696E 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 65
+
+
+ 2913      7400
+ 2914              	.LASF101:
+ 2915 0edb 63707573 		.ascii	"cpussRomCtl\000"
+ 2915      73526F6D 
+ 2915      43746C00 
+ 2916              	.LASF17:
+ 2917 0ee7 696E7433 		.ascii	"int32_t\000"
+ 2917      325F7400 
+ 2918              	.LASF118:
+ 2919 0eef 73616D70 		.ascii	"sampleCtrl\000"
+ 2919      6C654374 
+ 2919      726C00
+ 2920              	.LASF165:
+ 2921 0efa 78666572 		.ascii	"xferPending\000"
+ 2921      50656E64 
+ 2921      696E6700 
+ 2922              	.LASF2:
+ 2923 0f06 756E7369 		.ascii	"unsigned char\000"
+ 2923      676E6564 
+ 2923      20636861 
+ 2923      7200
+ 2924              	.LASF9:
+ 2925 0f14 5F5F7569 		.ascii	"__uint32_t\000"
+ 2925      6E743332 
+ 2925      5F7400
+ 2926              	.LASF106:
+ 2927 0f1f 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 2927      6F636B53 
+ 2927      74617475 
+ 2927      734F6666 
+ 2927      73657400 
+ 2928              	.LASF246:
+ 2929 0f33 76546173 		.ascii	"vTaskDelayUntil\000"
+ 2929      6B44656C 
+ 2929      6179556E 
+ 2929      74696C00 
+ 2930              	.LASF243:
+ 2931 0f43 57726974 		.ascii	"WriteCommandPacketToI2C\000"
+ 2931      65436F6D 
+ 2931      6D616E64 
+ 2931      5061636B 
+ 2931      6574546F 
+ 2932              	.LASF62:
+ 2933 0f5b 666C6173 		.ascii	"flashEraseDelay\000"
+ 2933      68457261 
+ 2933      73654465 
+ 2933      6C617900 
+ 2934              	.LASF187:
+ 2935 0f6b 636C6B44 		.ascii	"clkDivider\000"
+ 2935      69766964 
+ 2935      657200
+ 2936              	.LASF140:
+ 2937 0f76 73746174 		.ascii	"state\000"
+ 2937      6500
+ 2938              	.LASF208:
+ 2939 0f7c 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT1_DURATION_A\000"
+ 2939      30335F52 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 66
+
+
+ 2939      45474953 
+ 2939      5445525F 
+ 2939      41434345 
+ 2940              	.LASF236:
+ 2941 0fa2 4144435F 		.ascii	"ADC_currentConfig\000"
+ 2941      63757272 
+ 2941      656E7443 
+ 2941      6F6E6669 
+ 2941      6700
+ 2942              	.LASF58:
+ 2943 0fb4 666C6173 		.ascii	"flashRwwRequired\000"
+ 2943      68527777 
+ 2943      52657175 
+ 2943      69726564 
+ 2943      00
+ 2944              	.LASF87:
+ 2945 0fc5 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 2945      50727443 
+ 2945      66674F66 
+ 2945      66736574 
+ 2945      00
+ 2946              	.LASF235:
+ 2947 0fd6 55415254 		.ascii	"UART_context\000"
+ 2947      5F636F6E 
+ 2947      74657874 
+ 2947      00
+ 2948              	.LASF1:
+ 2949 0fe3 7369676E 		.ascii	"signed char\000"
+ 2949      65642063 
+ 2949      68617200 
+ 2950              	.LASF68:
+ 2951 0fef 64774368 		.ascii	"dwChOffset\000"
+ 2951      4F666673 
+ 2951      657400
+ 2952              	.LASF41:
+ 2953 0ffa 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 2953      73497063 
+ 2953      4972714E 
+ 2953      7200
+ 2954              	.LASF196:
+ 2955 1008 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_STATUS_REG_A\000"
+ 2955      30335F52 
+ 2955      45474953 
+ 2955      5445525F 
+ 2955      41434345 
+ 2956              	.LASF107:
+ 2957 102b 63795F73 		.ascii	"cy_stc_device_t\000"
+ 2957      74635F64 
+ 2957      65766963 
+ 2957      655F7400 
+ 2958              	.LASF250:
+ 2959 103b 61636365 		.ascii	"acceleroTask\000"
+ 2959      6C65726F 
+ 2959      5461736B 
+ 2959      00
+ 2960              	.LASF222:
+ 2961 1048 746F7461 		.ascii	"total\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 67
+
+
+ 2961      6C00
+ 2962              	.LASF38:
+ 2963 104e 70657269 		.ascii	"periVersion\000"
+ 2963      56657273 
+ 2963      696F6E00 
+ 2964              	.LASF130:
+ 2965 105a 636F6E66 		.ascii	"configRouting\000"
+ 2965      6967526F 
+ 2965      7574696E 
+ 2965      6700
+ 2966              	.LASF28:
+ 2967 1068 70617373 		.ascii	"passBase\000"
+ 2967      42617365 
+ 2967      00
+ 2968              	.LASF193:
+ 2969 1071 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG5_A\000"
+ 2969      30335F52 
+ 2969      45474953 
+ 2969      5445525F 
+ 2969      41434345 
+ 2970              	.LASF223:
+ 2971 1093 6C736D33 		.ascii	"lsm303AccelData\000"
+ 2971      30334163 
+ 2971      63656C44 
+ 2971      61746100 
+ 2972              	.LASF159:
+ 2973 10a3 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
+ 2973      74635F73 
+ 2973      63625F69 
+ 2973      32635F63 
+ 2973      6F6E7465 
+ 2974              	.LASF239:
+ 2975 10bc 61636365 		.ascii	"accelData\000"
+ 2975      6C446174 
+ 2975      6100
+ 2976              	.LASF67:
+ 2977 10c6 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 2977      6843746C 
+ 2977      4D61696E 
+ 2977      57733446 
+ 2977      72657100 
+ 2978              	.LASF127:
+ 2979 10da 72616E67 		.ascii	"rangeIntrMask\000"
+ 2979      65496E74 
+ 2979      724D6173 
+ 2979      6B00
+ 2980              	.LASF201:
+ 2981 10e8 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_OUT_Z_L_A\000"
+ 2981      30335F52 
+ 2981      45474953 
+ 2981      5445525F 
+ 2981      41434345 
+ 2982              	.LASF116:
+ 2983 1108 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
+ 2983      6E5F7361 
+ 2983      725F7261 
+ 2983      6E67655F 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 68
+
+
+ 2983      64657465 
+ 2984              	.LASF161:
+ 2985 112b 63795F73 		.ascii	"cy_stc_scb_i2c_master_xfer_config\000"
+ 2985      74635F73 
+ 2985      63625F69 
+ 2985      32635F6D 
+ 2985      61737465 
+ 2986              	.LASF162:
+ 2987 114d 736C6176 		.ascii	"slaveAddress\000"
+ 2987      65416464 
+ 2987      72657373 
+ 2987      00
+ 2988              	.LASF125:
+ 2989 115a 696E7472 		.ascii	"intrMask\000"
+ 2989      4D61736B 
+ 2989      00
+ 2990              	.LASF74:
+ 2991 1163 70657269 		.ascii	"periTrCmdOffset\000"
+ 2991      5472436D 
+ 2991      644F6666 
+ 2991      73657400 
+ 2992              	.LASF176:
+ 2993 1173 72784275 		.ascii	"rxBufSize\000"
+ 2993      6653697A 
+ 2993      6500
+ 2994              	.LASF214:
+ 2995 117d 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CLICK_SRC_A\000"
+ 2995      30335F52 
+ 2995      45474953 
+ 2995      5445525F 
+ 2995      41434345 
+ 2996              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

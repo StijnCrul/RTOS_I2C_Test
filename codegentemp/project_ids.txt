@@ -1,0 +1,13 @@
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\Test_01.cydsn\Test_01.cyprj|6ed8500f-1df0-434c-bb6c-892dbb022d0e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|207dede8-881c-401d-bc5c-5b24932d22c1
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|6bca0a95-4c95-4c97-98f9-3ae951e34cb4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|02a3431a-da48-4b33-a463-f0f7511a3779
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d5b9f33a-9416-4eaa-ac24-a9f47f63f529
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|23af42ae-b52a-4a98-a4df-63a7664e2c3b
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\CE220974_MultiConfig_Scan_ADC_DieTemp01.cydsn\CE220974_MultiConfig_Scan_ADC_DieTemp01.cyprj|f8fe2fda-aa65-499c-8a95-861b1032717e
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\4.2\Devices\psoc6\PSoC6AnalogDevice\PSoC6AnalogDevice.cydsn\PSoC6AnalogDevice.cyprj|c821ba50-c9f7-42f3-b7d5-65f2ad29c8c0
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_TFT_ADC.cydsn\RTOS_TFT_ADC.cyprj|1775d9ee-b82b-41be-af18-169e98f15ef8
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\CE220818_I2C_Master_EzI2C_Slave01.cydsn\CE220818_I2C_Master_EzI2C_Slave01.cyprj|dd90e8f4-9aab-430b-80ac-0a953ed34bc8
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\UART_Low_Level_DMA01.cydsn\UART_Low_Level_DMA01.cyprj|a8f4d389-c02d-464f-9de5-ec568fc5d0b8
+C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\RTOS_I2C_Test.cyprj|33f9aad4-adb1-4a88-b671-bfbf020e0d85
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|f1b19005-80fb-4afe-a6e0-b0e77603e318
