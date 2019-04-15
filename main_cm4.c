@@ -29,7 +29,6 @@
 #include "analog.h"
 #include "serial.h"
 
-
 // Structure for master transfer configuration
 cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg =
 {
