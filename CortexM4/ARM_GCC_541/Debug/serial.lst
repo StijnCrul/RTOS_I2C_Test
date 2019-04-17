@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 1
 
 
    1              		.syntax unified
@@ -29,7 +29,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
   26              	UARTTask:
   27              	.LFB560:
   28              		.file 1 "serial.c"
-   1:serial.c      **** /*  ____  ____      _    __  __  ____ ___
+   1:serial.c      ****  /*  ____  ____      _    __  __  ____ ___
    2:serial.c      ****  * |  _ \|  _ \    / \  |  \/  |/ ___/ _ \
    3:serial.c      ****  * | | | | |_) |  / _ \ | |\/| | |  | | | |
    4:serial.c      ****  * | |_| |  _ <  / ___ \| |  | | |__| |_| |
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
   30              		.cfi_startproc
   31              		@ args = 0, pretend = 0, frame = 8
   32              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 2
 
 
   33 0000 00B5     		push	{lr}
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
   78              		.file 11 "Generated_Source\\PSoC6/UART.h"
   79              		.file 12 "Generated_Source\\PSoC6/mI2C.h"
   80              		.file 13 "Generated_Source\\PSoC6\\pdl\\rtos/FreeRTOS/10.0.1/Source/include/task.h"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 3
 
 
   81              		.file 14 "<built-in>"
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  135 0070 D5020000 		.4byte	.LASF8
  136 0074 03       		.uleb128 0x3
  137 0075 C6030000 		.4byte	.LASF9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 4
 
 
  138 0079 02       		.byte	0x2
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  192 00e5 02       		.uleb128 0x2
  193 00e6 08       		.byte	0x8
  194 00e7 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 5
 
 
  195 00e8 C8090000 		.4byte	.LASF20
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  249 0154 07       		.uleb128 0x7
  250 0155 EA0B0000 		.4byte	.LASF29
  251 0159 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 6
 
 
  252 015a 3F       		.byte	0x3f
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  306 01c6 4A       		.byte	0x4a
  307 01c7 A2000000 		.4byte	0xa2
  308 01cb 2F       		.byte	0x2f
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 7
 
 
  309 01cc 07       		.uleb128 0x7
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  363 0238 07       		.uleb128 0x7
  364 0239 5E030000 		.4byte	.LASF48
  365 023d 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 8
 
 
  366 023e 56       		.byte	0x56
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  420 02aa 5F       		.byte	0x5f
  421 02ab CE000000 		.4byte	0xce
  422 02af 4C       		.byte	0x4c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 9
 
 
  423 02b0 07       		.uleb128 0x7
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  477 031c 07       		.uleb128 0x7
  478 031d 91080000 		.4byte	.LASF67
  479 0321 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 10
 
 
  480 0322 69       		.byte	0x69
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  534 038e 78       		.byte	0x78
  535 038f B8000000 		.4byte	0xb8
  536 0393 6C       		.byte	0x6c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 11
 
 
  537 0394 07       		.uleb128 0x7
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  591 0400 07       		.uleb128 0x7
  592 0401 750B0000 		.4byte	.LASF86
  593 0405 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 12
 
 
  594 0406 86       		.byte	0x86
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  648 0472 91       		.byte	0x91
  649 0473 CE000000 		.4byte	0xce
  650 0477 94       		.byte	0x94
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 13
 
 
  651 0478 07       		.uleb128 0x7
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  705 04e4 07       		.uleb128 0x7
  706 04e5 850A0000 		.4byte	.LASF105
  707 04e9 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 14
 
 
  708 04ea 9D       		.byte	0x9d
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  762 0551 05       		.byte	0x5
  763 0552 1804     		.2byte	0x418
  764 0554 26050000 		.4byte	0x526
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 15
 
 
  765 0558 0C       		.uleb128 0xc
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  819 05ca EF080000 		.4byte	.LASF125
  820 05ce 05       		.byte	0x5
  821 05cf 0C05     		.2byte	0x50c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 16
 
 
  822 05d1 CE000000 		.4byte	0xce
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  876 0647 06       		.byte	0x6
  877 0648 2402     		.2byte	0x224
  878 064a 5B060000 		.4byte	0x65b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 17
 
 
  879 064e 0A       		.uleb128 0xa
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  933 06c5 C702     		.2byte	0x2c7
  934 06c7 1F050000 		.4byte	0x51f
  935 06cb 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 18
 
 
  936 06cc 0D       		.uleb128 0xd
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  990 0741 0D       		.uleb128 0xd
  991 0742 C7040000 		.4byte	.LASF149
  992 0746 06       		.byte	0x6
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 19
 
 
  993 0747 D502     		.2byte	0x2d5
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1047 07bc EB02     		.2byte	0x2eb
  1048 07be 84060000 		.4byte	0x684
  1049 07c2 48       		.byte	0x48
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 20
 
 
  1050 07c3 00       		.byte	0
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1104 083a 07       		.byte	0x7
  1105 083b 7E02     		.2byte	0x27e
  1106 083d E0000000 		.4byte	0xe0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 21
 
 
  1107 0841 14       		.byte	0x14
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1161 08b3 E7070000 		.4byte	0x7e7
  1162 08b7 06       		.uleb128 0x6
  1163 08b8 14       		.byte	0x14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 22
 
 
  1164 08b9 08       		.byte	0x8
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1218 0928 16       		.uleb128 0x16
  1219 0929 BE0B0000 		.4byte	.LASF198
  1220 092d 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 23
 
 
  1221 092e 19       		.byte	0x19
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1275 099f 1D       		.uleb128 0x1d
  1276 09a0 01       		.uleb128 0x1
  1277 09a1 50       		.byte	0x50
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 24
 
 
  1278 09a2 05       		.uleb128 0x5
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1332 0a1d 21       		.uleb128 0x21
  1333 0a1e 09050000 		.4byte	.LASF191
  1334 0a22 0C       		.byte	0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 25
 
 
  1335 0a23 7F       		.byte	0x7f
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1389 0022 0E       		.uleb128 0xe
  1390 0023 3A       		.uleb128 0x3a
  1391 0024 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 26
 
 
  1392 0025 3B       		.uleb128 0x3b
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1446 005b 00       		.byte	0
  1447 005c 0B       		.uleb128 0xb
  1448 005d 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 27
 
 
  1449 005e 00       		.byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1503 0094 00       		.byte	0
  1504 0095 03       		.uleb128 0x3
  1505 0096 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 28
 
 
  1506 0097 3A       		.uleb128 0x3a
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1560 00cd 15       		.uleb128 0x15
  1561 00ce 01       		.byte	0x1
  1562 00cf 27       		.uleb128 0x27
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 29
 
 
  1563 00d0 19       		.uleb128 0x19
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1617 0108 17       		.uleb128 0x17
  1618 0109 34       		.uleb128 0x34
  1619 010a 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 30
 
 
  1620 010b 03       		.uleb128 0x3
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1674 0141 19       		.uleb128 0x19
  1675 0142 01       		.uleb128 0x1
  1676 0143 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 31
 
 
  1677 0144 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1731 0183 49       		.uleb128 0x49
  1732 0184 13       		.uleb128 0x13
  1733 0185 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 32
 
 
  1734 0186 19       		.uleb128 0x19
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1788 01bc 00       		.byte	0
  1789 01bd 00       		.byte	0
  1790 01be 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 33
 
 
  1791              		.section	.debug_aranges,"",%progbits
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1823      72496478 
  1823      00
  1824              	.LASF144:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 34
 
 
  1825 005b 6D617374 		.ascii	"masterBuffer\000"
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1847      6500
  1848              	.LASF70:
  1849 00fa 64774368 		.ascii	"dwChCtlPrioPos\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 35
 
 
  1849      43746C50 
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1870              	.LASF161:
  1871 01a5 63795F73 		.ascii	"cy_stc_scb_i2c_context\000"
  1871      74635F73 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 36
 
 
  1871      63625F69 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1893 0269 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
  1893      44697643 
  1893      6D645061 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 37
 
 
  1893      54797065 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1916              	.LASF114:
  1917 0321 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
  1917      41525F52 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 38
 
 
  1917      414E4745 
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1939      5F7400
  1940              	.LASF197:
  1941 03d1 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 39
 
 
  1941      73657273 
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1962      20696E74 
  1962      00
  1963              	.LASF152:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 40
 
 
  1964 04aa 736C6176 		.ascii	"slaveTxBufferIdx\000"
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  1984      684E7200 
  1985              	.LASF65:
  1986 0559 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 41
 
 
  1986      6843746C 
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2009              	.LASF124:
  2010 05f7 6368616E 		.ascii	"chanConfig\000"
  2010      436F6E66 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 42
 
 
  2010      696700
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2032      00
  2033              	.LASF183:
  2034 06a8 5469636B 		.ascii	"TickType_t\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 43
 
 
  2034      54797065 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2055      6E203233 
  2055      37373135 
  2056 0790 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 44
 
 
  2056      70202D6D 
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2079 085c 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
  2079      41525F52 
  2079      414E4745 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 45
 
 
  2079      5F434F4E 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2102              	.LASF145:
  2103 090e 6D617374 		.ascii	"masterBufferSize\000"
  2103      65724275 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 46
 
 
  2103      66666572 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2124              	.LASF20:
  2125 09c8 6C6F6E67 		.ascii	"long double\000"
  2125      20646F75 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 47
 
 
  2125      626C6500 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2147      6653697A 
  2147      6500
  2148              	.LASF180:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 48
 
 
  2149 0a71 6D697363 		.ascii	"miscConfig\000"
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2173 0b09 72616E67 		.ascii	"rangeCond\000"
  2173      65436F6E 
  2173      6400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 49
 
 
  2174              	.LASF46:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 1
  2195      00
  2196              	.LASF163:
  2197 0bc7 74785374 		.ascii	"txStatus\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccCa85hz.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPlr5D.s 			page 50
 
 
  2197      61747573 

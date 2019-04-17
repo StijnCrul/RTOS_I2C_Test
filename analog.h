@@ -21,14 +21,27 @@
 #define __ANALOG__
     
 #include "project.h"
-
+#include "FreeRTOS.h"
+#include "task.h"
+    
+    // Struct for passing measurment variables to the RTOS task.
+    typedef struct {
+        GPIO_PRT_Type* port;
+        unsigned int pin;
+        TickType_t timing;
+        uint8_t channel;
+    } CH;
+    
     // VARIABLES
     static int16_t result;
     static uint8_t dataReady;
     
     // PROTOTYPING
+    void initADC();
     void ADCTask();
+    void ADCSampleTask(void * pvPin);
     void ADC_ISR_Callback(void);
+    
     
 #endif
     

@@ -1,0 +1,969 @@
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 1
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"AMuxSeq.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.AMuxSeq_Start,"ax",%progbits
+  21              		.align	2
+  22              		.global	AMuxSeq_Start
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	AMuxSeq_Start, %function
+  26              	AMuxSeq_Start:
+  27              	.LFB132:
+  28              		.file 1 "Generated_Source\\PSoC6\\AMuxSeq.c"
+   1:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+   2:Generated_Source\PSoC6/AMuxSeq.c **** * File Name: AMuxSeq.c
+   3:Generated_Source\PSoC6/AMuxSeq.c **** * Version 1.80
+   4:Generated_Source\PSoC6/AMuxSeq.c **** *
+   5:Generated_Source\PSoC6/AMuxSeq.c **** *  Description:
+   6:Generated_Source\PSoC6/AMuxSeq.c **** *    This file contains functions for the AMuxSeq.
+   7:Generated_Source\PSoC6/AMuxSeq.c **** *
+   8:Generated_Source\PSoC6/AMuxSeq.c **** *   Note:
+   9:Generated_Source\PSoC6/AMuxSeq.c **** *
+  10:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************
+  11:Generated_Source\PSoC6/AMuxSeq.c **** * Copyright 2008-2010, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC6/AMuxSeq.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC6/AMuxSeq.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC6/AMuxSeq.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************/
+  16:Generated_Source\PSoC6/AMuxSeq.c **** 
+  17:Generated_Source\PSoC6/AMuxSeq.c **** #include "AMuxSeq.h"
+  18:Generated_Source\PSoC6/AMuxSeq.c **** 
+  19:Generated_Source\PSoC6/AMuxSeq.c **** uint8 AMuxSeq_initVar = 0u;
+  20:Generated_Source\PSoC6/AMuxSeq.c **** 
+  21:Generated_Source\PSoC6/AMuxSeq.c **** 
+  22:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+  23:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_Start
+  24:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+  25:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+  26:Generated_Source\PSoC6/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  27:Generated_Source\PSoC6/AMuxSeq.c **** *  connected.
+  28:Generated_Source\PSoC6/AMuxSeq.c **** *
+  29:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 2
+
+
+  30:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  31:Generated_Source\PSoC6/AMuxSeq.c **** *
+  32:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+  33:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  34:Generated_Source\PSoC6/AMuxSeq.c **** *
+  35:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+  36:Generated_Source\PSoC6/AMuxSeq.c **** void AMuxSeq_Start(void)
+  37:Generated_Source\PSoC6/AMuxSeq.c **** {
+  29              		.loc 1 37 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 08B5     		push	{r3, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 3, -8
+  36              		.cfi_offset 14, -4
+  38:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  37              		.loc 1 38 0
+  38 0002 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+  39              	.LVL0:
+  39:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_initVar = 1u;
+  40              		.loc 1 39 0
+  41 0006 0122     		movs	r2, #1
+  42 0008 014B     		ldr	r3, .L3
+  43 000a 1A70     		strb	r2, [r3]
+  44 000c 08BD     		pop	{r3, pc}
+  45              	.L4:
+  46 000e 00BF     		.align	2
+  47              	.L3:
+  48 0010 00000000 		.word	.LANCHOR0
+  49              		.cfi_endproc
+  50              	.LFE132:
+  51              		.size	AMuxSeq_Start, .-AMuxSeq_Start
+  52              		.section	.text.AMuxSeq_Init,"ax",%progbits
+  53              		.align	2
+  54              		.global	AMuxSeq_Init
+  55              		.thumb
+  56              		.thumb_func
+  57              		.type	AMuxSeq_Init, %function
+  58              	AMuxSeq_Init:
+  59              	.LFB133:
+  40:Generated_Source\PSoC6/AMuxSeq.c **** }
+  41:Generated_Source\PSoC6/AMuxSeq.c **** 
+  42:Generated_Source\PSoC6/AMuxSeq.c **** 
+  43:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+  44:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_Init
+  45:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+  46:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+  47:Generated_Source\PSoC6/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  48:Generated_Source\PSoC6/AMuxSeq.c **** *  connected.
+  49:Generated_Source\PSoC6/AMuxSeq.c **** *
+  50:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+  51:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  52:Generated_Source\PSoC6/AMuxSeq.c **** *
+  53:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+  54:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  55:Generated_Source\PSoC6/AMuxSeq.c **** *
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 3
+
+
+  56:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+  57:Generated_Source\PSoC6/AMuxSeq.c **** void AMuxSeq_Init(void)
+  58:Generated_Source\PSoC6/AMuxSeq.c **** {
+  60              		.loc 1 58 0
+  61              		.cfi_startproc
+  62              		@ args = 0, pretend = 0, frame = 0
+  63              		@ frame_needed = 0, uses_anonymous_args = 0
+  64 0000 08B5     		push	{r3, lr}
+  65              		.cfi_def_cfa_offset 8
+  66              		.cfi_offset 3, -8
+  67              		.cfi_offset 14, -4
+  59:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  68              		.loc 1 59 0
+  69 0002 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+  70              	.LVL1:
+  71 0006 08BD     		pop	{r3, pc}
+  72              		.cfi_endproc
+  73              	.LFE133:
+  74              		.size	AMuxSeq_Init, .-AMuxSeq_Init
+  75              		.section	.text.AMuxSeq_Stop,"ax",%progbits
+  76              		.align	2
+  77              		.global	AMuxSeq_Stop
+  78              		.thumb
+  79              		.thumb_func
+  80              		.type	AMuxSeq_Stop, %function
+  81              	AMuxSeq_Stop:
+  82              	.LFB134:
+  60:Generated_Source\PSoC6/AMuxSeq.c **** }
+  61:Generated_Source\PSoC6/AMuxSeq.c **** 
+  62:Generated_Source\PSoC6/AMuxSeq.c **** 
+  63:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+  64:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_Stop
+  65:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+  66:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+  67:Generated_Source\PSoC6/AMuxSeq.c **** *  Disconnect all channels. The next time Next is called, channel 0 will be
+  68:Generated_Source\PSoC6/AMuxSeq.c **** *  connected.
+  69:Generated_Source\PSoC6/AMuxSeq.c **** *
+  70:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+  71:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  72:Generated_Source\PSoC6/AMuxSeq.c **** *
+  73:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+  74:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  75:Generated_Source\PSoC6/AMuxSeq.c **** *
+  76:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+  77:Generated_Source\PSoC6/AMuxSeq.c **** void AMuxSeq_Stop(void)
+  78:Generated_Source\PSoC6/AMuxSeq.c **** {
+  83              		.loc 1 78 0
+  84              		.cfi_startproc
+  85              		@ args = 0, pretend = 0, frame = 0
+  86              		@ frame_needed = 0, uses_anonymous_args = 0
+  87 0000 08B5     		push	{r3, lr}
+  88              		.cfi_def_cfa_offset 8
+  89              		.cfi_offset 3, -8
+  90              		.cfi_offset 14, -4
+  79:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_DisconnectAll();
+  91              		.loc 1 79 0
+  92 0002 FFF7FEFF 		bl	AMuxSeq_DisconnectAll
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 4
+
+
+  93              	.LVL2:
+  94 0006 08BD     		pop	{r3, pc}
+  95              		.cfi_endproc
+  96              	.LFE134:
+  97              		.size	AMuxSeq_Stop, .-AMuxSeq_Stop
+  98              		.section	.text.AMuxSeq_GetChannel,"ax",%progbits
+  99              		.align	2
+ 100              		.global	AMuxSeq_GetChannel
+ 101              		.thumb
+ 102              		.thumb_func
+ 103              		.type	AMuxSeq_GetChannel, %function
+ 104              	AMuxSeq_GetChannel:
+ 105              	.LFB135:
+  80:Generated_Source\PSoC6/AMuxSeq.c **** }
+  81:Generated_Source\PSoC6/AMuxSeq.c **** 
+  82:Generated_Source\PSoC6/AMuxSeq.c **** #if (AMuxSeq_MUXTYPE == AMuxSeq_MUX_DIFF)
+  83:Generated_Source\PSoC6/AMuxSeq.c **** 
+  84:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+  85:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_Next
+  86:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+  87:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+  88:Generated_Source\PSoC6/AMuxSeq.c **** *  Disconnects the previous channel and connects the next one in the sequence.
+  89:Generated_Source\PSoC6/AMuxSeq.c **** *  When Next is called for the first time after Init, Start, Enable, Stop, or
+  90:Generated_Source\PSoC6/AMuxSeq.c **** *  DisconnectAll, it connects channel 0.
+  91:Generated_Source\PSoC6/AMuxSeq.c **** *
+  92:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+  93:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  94:Generated_Source\PSoC6/AMuxSeq.c **** *
+  95:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+  96:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+  97:Generated_Source\PSoC6/AMuxSeq.c **** *
+  98:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+  99:Generated_Source\PSoC6/AMuxSeq.c **** void AMuxSeq_Next(void)
+ 100:Generated_Source\PSoC6/AMuxSeq.c **** {
+ 101:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_A_Next();
+ 102:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_B_Next();
+ 103:Generated_Source\PSoC6/AMuxSeq.c **** }
+ 104:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 105:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 106:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+ 107:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_DisconnectAll
+ 108:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+ 109:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+ 110:Generated_Source\PSoC6/AMuxSeq.c **** *  This function disconnects all channels. The next time Next is called, channel
+ 111:Generated_Source\PSoC6/AMuxSeq.c **** *  0 will be connected.
+ 112:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 113:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+ 114:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+ 115:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 116:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+ 117:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+ 118:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 119:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+ 120:Generated_Source\PSoC6/AMuxSeq.c **** void AMuxSeq_DisconnectAll(void)
+ 121:Generated_Source\PSoC6/AMuxSeq.c **** {
+ 122:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_A_DisconnectAll();
+ 123:Generated_Source\PSoC6/AMuxSeq.c ****     AMuxSeq_CYAMUXSIDE_B_DisconnectAll();
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 5
+
+
+ 124:Generated_Source\PSoC6/AMuxSeq.c **** }
+ 125:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 126:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 127:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+ 128:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_GetChannel
+ 129:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+ 130:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+ 131:Generated_Source\PSoC6/AMuxSeq.c **** *  The currently connected channel is retuned. If no channel is connected
+ 132:Generated_Source\PSoC6/AMuxSeq.c **** *  returns -1.
+ 133:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 134:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+ 135:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+ 136:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 137:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+ 138:Generated_Source\PSoC6/AMuxSeq.c **** *  The current channel or -1.
+ 139:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 140:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+ 141:Generated_Source\PSoC6/AMuxSeq.c **** int8 AMuxSeq_GetChannel(void)
+ 142:Generated_Source\PSoC6/AMuxSeq.c **** {
+ 143:Generated_Source\PSoC6/AMuxSeq.c ****     return AMuxSeq_CYAMUXSIDE_A_curChannel;
+ 144:Generated_Source\PSoC6/AMuxSeq.c **** }
+ 145:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 146:Generated_Source\PSoC6/AMuxSeq.c **** #else
+ 147:Generated_Source\PSoC6/AMuxSeq.c **** 
+ 148:Generated_Source\PSoC6/AMuxSeq.c **** /*******************************************************************************
+ 149:Generated_Source\PSoC6/AMuxSeq.c **** * Function Name: AMuxSeq_GetChannel
+ 150:Generated_Source\PSoC6/AMuxSeq.c **** ********************************************************************************
+ 151:Generated_Source\PSoC6/AMuxSeq.c **** * Summary:
+ 152:Generated_Source\PSoC6/AMuxSeq.c **** *  The currently connected channel is retuned. If no channel is connected
+ 153:Generated_Source\PSoC6/AMuxSeq.c **** *  returns -1.
+ 154:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 155:Generated_Source\PSoC6/AMuxSeq.c **** * Parameters:
+ 156:Generated_Source\PSoC6/AMuxSeq.c **** *  void
+ 157:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 158:Generated_Source\PSoC6/AMuxSeq.c **** * Return:
+ 159:Generated_Source\PSoC6/AMuxSeq.c **** *  The current channel or -1.
+ 160:Generated_Source\PSoC6/AMuxSeq.c **** *
+ 161:Generated_Source\PSoC6/AMuxSeq.c **** *******************************************************************************/
+ 162:Generated_Source\PSoC6/AMuxSeq.c **** int8 AMuxSeq_GetChannel(void)
+ 163:Generated_Source\PSoC6/AMuxSeq.c **** {
+ 106              		.loc 1 163 0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 0
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110              		@ link register save eliminated.
+ 164:Generated_Source\PSoC6/AMuxSeq.c ****     return AMuxSeq_curChannel;
+ 165:Generated_Source\PSoC6/AMuxSeq.c **** }
+ 111              		.loc 1 165 0
+ 112 0000 014B     		ldr	r3, .L10
+ 113 0002 93F90000 		ldrsb	r0, [r3]
+ 114 0006 7047     		bx	lr
+ 115              	.L11:
+ 116              		.align	2
+ 117              	.L10:
+ 118 0008 00000000 		.word	AMuxSeq_curChannel
+ 119              		.cfi_endproc
+ 120              	.LFE135:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 6
+
+
+ 121              		.size	AMuxSeq_GetChannel, .-AMuxSeq_GetChannel
+ 122              		.global	AMuxSeq_initVar
+ 123              		.bss
+ 124              		.set	.LANCHOR0,. + 0
+ 125              		.type	AMuxSeq_initVar, %object
+ 126              		.size	AMuxSeq_initVar, 1
+ 127              	AMuxSeq_initVar:
+ 128 0000 00       		.space	1
+ 129              		.text
+ 130              	.Letext0:
+ 131              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 132              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 133              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 134              		.file 5 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 135              		.file 6 "Generated_Source\\PSoC6\\cyfitter_cfg.h"
+ 136              		.section	.debug_info,"",%progbits
+ 137              	.Ldebug_info0:
+ 138 0000 A5010000 		.4byte	0x1a5
+ 139 0004 0400     		.2byte	0x4
+ 140 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 141 000a 04       		.byte	0x4
+ 142 000b 01       		.uleb128 0x1
+ 143 000c 5A010000 		.4byte	.LASF30
+ 144 0010 0C       		.byte	0xc
+ 145 0011 13000000 		.4byte	.LASF31
+ 146 0015 0A010000 		.4byte	.LASF32
+ 147 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 148 001d 00000000 		.4byte	0
+ 149 0021 00000000 		.4byte	.Ldebug_line0
+ 150 0025 02       		.uleb128 0x2
+ 151 0026 02       		.byte	0x2
+ 152 0027 05       		.byte	0x5
+ 153 0028 52020000 		.4byte	.LASF0
+ 154 002c 03       		.uleb128 0x3
+ 155 002d 00000000 		.4byte	.LASF2
+ 156 0031 02       		.byte	0x2
+ 157 0032 1B       		.byte	0x1b
+ 158 0033 37000000 		.4byte	0x37
+ 159 0037 02       		.uleb128 0x2
+ 160 0038 01       		.byte	0x1
+ 161 0039 06       		.byte	0x6
+ 162 003a 87020000 		.4byte	.LASF1
+ 163 003e 03       		.uleb128 0x3
+ 164 003f 09000000 		.4byte	.LASF3
+ 165 0043 02       		.byte	0x2
+ 166 0044 1D       		.byte	0x1d
+ 167 0045 49000000 		.4byte	0x49
+ 168 0049 02       		.uleb128 0x2
+ 169 004a 01       		.byte	0x1
+ 170 004b 08       		.byte	0x8
+ 171 004c 87000000 		.4byte	.LASF4
+ 172 0050 02       		.uleb128 0x2
+ 173 0051 02       		.byte	0x2
+ 174 0052 07       		.byte	0x7
+ 175 0053 51000000 		.4byte	.LASF5
+ 176 0057 03       		.uleb128 0x3
+ 177 0058 47000000 		.4byte	.LASF6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 7
+
+
+ 178 005c 02       		.byte	0x2
+ 179 005d 3F       		.byte	0x3f
+ 180 005e 62000000 		.4byte	0x62
+ 181 0062 02       		.uleb128 0x2
+ 182 0063 04       		.byte	0x4
+ 183 0064 05       		.byte	0x5
+ 184 0065 72020000 		.4byte	.LASF7
+ 185 0069 03       		.uleb128 0x3
+ 186 006a C6000000 		.4byte	.LASF8
+ 187 006e 02       		.byte	0x2
+ 188 006f 41       		.byte	0x41
+ 189 0070 74000000 		.4byte	0x74
+ 190 0074 02       		.uleb128 0x2
+ 191 0075 04       		.byte	0x4
+ 192 0076 07       		.byte	0x7
+ 193 0077 95000000 		.4byte	.LASF9
+ 194 007b 02       		.uleb128 0x2
+ 195 007c 08       		.byte	0x8
+ 196 007d 05       		.byte	0x5
+ 197 007e 3F020000 		.4byte	.LASF10
+ 198 0082 02       		.uleb128 0x2
+ 199 0083 08       		.byte	0x8
+ 200 0084 07       		.byte	0x7
+ 201 0085 EB000000 		.4byte	.LASF11
+ 202 0089 04       		.uleb128 0x4
+ 203 008a 04       		.byte	0x4
+ 204 008b 05       		.byte	0x5
+ 205 008c 696E7400 		.ascii	"int\000"
+ 206 0090 02       		.uleb128 0x2
+ 207 0091 04       		.byte	0x4
+ 208 0092 07       		.byte	0x7
+ 209 0093 DE000000 		.4byte	.LASF12
+ 210 0097 03       		.uleb128 0x3
+ 211 0098 7A000000 		.4byte	.LASF13
+ 212 009c 03       		.byte	0x3
+ 213 009d 14       		.byte	0x14
+ 214 009e 2C000000 		.4byte	0x2c
+ 215 00a2 03       		.uleb128 0x3
+ 216 00a3 02010000 		.4byte	.LASF14
+ 217 00a7 03       		.byte	0x3
+ 218 00a8 18       		.byte	0x18
+ 219 00a9 3E000000 		.4byte	0x3e
+ 220 00ad 03       		.uleb128 0x3
+ 221 00ae 2E020000 		.4byte	.LASF15
+ 222 00b2 03       		.byte	0x3
+ 223 00b3 2C       		.byte	0x2c
+ 224 00b4 57000000 		.4byte	0x57
+ 225 00b8 03       		.uleb128 0x3
+ 226 00b9 69020000 		.4byte	.LASF16
+ 227 00bd 03       		.byte	0x3
+ 228 00be 30       		.byte	0x30
+ 229 00bf 69000000 		.4byte	0x69
+ 230 00c3 02       		.uleb128 0x2
+ 231 00c4 04       		.byte	0x4
+ 232 00c5 07       		.byte	0x7
+ 233 00c6 36020000 		.4byte	.LASF17
+ 234 00ca 02       		.uleb128 0x2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 8
+
+
+ 235 00cb 08       		.byte	0x8
+ 236 00cc 04       		.byte	0x4
+ 237 00cd 7B020000 		.4byte	.LASF18
+ 238 00d1 02       		.uleb128 0x2
+ 239 00d2 01       		.byte	0x1
+ 240 00d3 08       		.byte	0x8
+ 241 00d4 4D020000 		.4byte	.LASF19
+ 242 00d8 02       		.uleb128 0x2
+ 243 00d9 04       		.byte	0x4
+ 244 00da 04       		.byte	0x4
+ 245 00db 81000000 		.4byte	.LASF20
+ 246 00df 02       		.uleb128 0x2
+ 247 00e0 08       		.byte	0x8
+ 248 00e1 04       		.byte	0x4
+ 249 00e2 BA000000 		.4byte	.LASF21
+ 250 00e6 05       		.uleb128 0x5
+ 251 00e7 A7000000 		.4byte	.LASF22
+ 252 00eb 04       		.byte	0x4
+ 253 00ec EA03     		.2byte	0x3ea
+ 254 00ee A2000000 		.4byte	0xa2
+ 255 00f2 05       		.uleb128 0x5
+ 256 00f3 C1000000 		.4byte	.LASF23
+ 257 00f7 04       		.byte	0x4
+ 258 00f8 ED03     		.2byte	0x3ed
+ 259 00fa 97000000 		.4byte	0x97
+ 260 00fe 06       		.uleb128 0x6
+ 261 00ff 20020000 		.4byte	.LASF24
+ 262 0103 01       		.byte	0x1
+ 263 0104 24       		.byte	0x24
+ 264 0105 00000000 		.4byte	.LFB132
+ 265 0109 14000000 		.4byte	.LFE132-.LFB132
+ 266 010d 01       		.uleb128 0x1
+ 267 010e 9C       		.byte	0x9c
+ 268 010f 1D010000 		.4byte	0x11d
+ 269 0113 07       		.uleb128 0x7
+ 270 0114 06000000 		.4byte	.LVL0
+ 271 0118 9D010000 		.4byte	0x19d
+ 272 011c 00       		.byte	0
+ 273 011d 06       		.uleb128 0x6
+ 274 011e D1000000 		.4byte	.LASF25
+ 275 0122 01       		.byte	0x1
+ 276 0123 39       		.byte	0x39
+ 277 0124 00000000 		.4byte	.LFB133
+ 278 0128 08000000 		.4byte	.LFE133-.LFB133
+ 279 012c 01       		.uleb128 0x1
+ 280 012d 9C       		.byte	0x9c
+ 281 012e 3C010000 		.4byte	0x13c
+ 282 0132 07       		.uleb128 0x7
+ 283 0133 06000000 		.4byte	.LVL1
+ 284 0137 9D010000 		.4byte	0x19d
+ 285 013b 00       		.byte	0
+ 286 013c 06       		.uleb128 0x6
+ 287 013d 5C020000 		.4byte	.LASF26
+ 288 0141 01       		.byte	0x1
+ 289 0142 4D       		.byte	0x4d
+ 290 0143 00000000 		.4byte	.LFB134
+ 291 0147 08000000 		.4byte	.LFE134-.LFB134
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 9
+
+
+ 292 014b 01       		.uleb128 0x1
+ 293 014c 9C       		.byte	0x9c
+ 294 014d 5B010000 		.4byte	0x15b
+ 295 0151 07       		.uleb128 0x7
+ 296 0152 06000000 		.4byte	.LVL2
+ 297 0156 9D010000 		.4byte	0x19d
+ 298 015a 00       		.byte	0
+ 299 015b 08       		.uleb128 0x8
+ 300 015c 34000000 		.4byte	.LASF33
+ 301 0160 01       		.byte	0x1
+ 302 0161 A2       		.byte	0xa2
+ 303 0162 F2000000 		.4byte	0xf2
+ 304 0166 00000000 		.4byte	.LFB135
+ 305 016a 0C000000 		.4byte	.LFE135-.LFB135
+ 306 016e 01       		.uleb128 0x1
+ 307 016f 9C       		.byte	0x9c
+ 308 0170 09       		.uleb128 0x9
+ 309 0171 AD000000 		.4byte	.LASF27
+ 310 0175 05       		.byte	0x5
+ 311 0176 F907     		.2byte	0x7f9
+ 312 0178 7C010000 		.4byte	0x17c
+ 313 017c 0A       		.uleb128 0xa
+ 314 017d AD000000 		.4byte	0xad
+ 315 0181 0B       		.uleb128 0xb
+ 316 0182 0D020000 		.4byte	.LASF28
+ 317 0186 06       		.byte	0x6
+ 318 0187 1A       		.byte	0x1a
+ 319 0188 F2000000 		.4byte	0xf2
+ 320 018c 0C       		.uleb128 0xc
+ 321 018d 93020000 		.4byte	.LASF29
+ 322 0191 01       		.byte	0x1
+ 323 0192 13       		.byte	0x13
+ 324 0193 E6000000 		.4byte	0xe6
+ 325 0197 05       		.uleb128 0x5
+ 326 0198 03       		.byte	0x3
+ 327 0199 00000000 		.4byte	AMuxSeq_initVar
+ 328 019d 0D       		.uleb128 0xd
+ 329 019e 64000000 		.4byte	.LASF34
+ 330 01a2 64000000 		.4byte	.LASF34
+ 331 01a6 06       		.byte	0x6
+ 332 01a7 19       		.byte	0x19
+ 333 01a8 00       		.byte	0
+ 334              		.section	.debug_abbrev,"",%progbits
+ 335              	.Ldebug_abbrev0:
+ 336 0000 01       		.uleb128 0x1
+ 337 0001 11       		.uleb128 0x11
+ 338 0002 01       		.byte	0x1
+ 339 0003 25       		.uleb128 0x25
+ 340 0004 0E       		.uleb128 0xe
+ 341 0005 13       		.uleb128 0x13
+ 342 0006 0B       		.uleb128 0xb
+ 343 0007 03       		.uleb128 0x3
+ 344 0008 0E       		.uleb128 0xe
+ 345 0009 1B       		.uleb128 0x1b
+ 346 000a 0E       		.uleb128 0xe
+ 347 000b 55       		.uleb128 0x55
+ 348 000c 17       		.uleb128 0x17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 10
+
+
+ 349 000d 11       		.uleb128 0x11
+ 350 000e 01       		.uleb128 0x1
+ 351 000f 10       		.uleb128 0x10
+ 352 0010 17       		.uleb128 0x17
+ 353 0011 00       		.byte	0
+ 354 0012 00       		.byte	0
+ 355 0013 02       		.uleb128 0x2
+ 356 0014 24       		.uleb128 0x24
+ 357 0015 00       		.byte	0
+ 358 0016 0B       		.uleb128 0xb
+ 359 0017 0B       		.uleb128 0xb
+ 360 0018 3E       		.uleb128 0x3e
+ 361 0019 0B       		.uleb128 0xb
+ 362 001a 03       		.uleb128 0x3
+ 363 001b 0E       		.uleb128 0xe
+ 364 001c 00       		.byte	0
+ 365 001d 00       		.byte	0
+ 366 001e 03       		.uleb128 0x3
+ 367 001f 16       		.uleb128 0x16
+ 368 0020 00       		.byte	0
+ 369 0021 03       		.uleb128 0x3
+ 370 0022 0E       		.uleb128 0xe
+ 371 0023 3A       		.uleb128 0x3a
+ 372 0024 0B       		.uleb128 0xb
+ 373 0025 3B       		.uleb128 0x3b
+ 374 0026 0B       		.uleb128 0xb
+ 375 0027 49       		.uleb128 0x49
+ 376 0028 13       		.uleb128 0x13
+ 377 0029 00       		.byte	0
+ 378 002a 00       		.byte	0
+ 379 002b 04       		.uleb128 0x4
+ 380 002c 24       		.uleb128 0x24
+ 381 002d 00       		.byte	0
+ 382 002e 0B       		.uleb128 0xb
+ 383 002f 0B       		.uleb128 0xb
+ 384 0030 3E       		.uleb128 0x3e
+ 385 0031 0B       		.uleb128 0xb
+ 386 0032 03       		.uleb128 0x3
+ 387 0033 08       		.uleb128 0x8
+ 388 0034 00       		.byte	0
+ 389 0035 00       		.byte	0
+ 390 0036 05       		.uleb128 0x5
+ 391 0037 16       		.uleb128 0x16
+ 392 0038 00       		.byte	0
+ 393 0039 03       		.uleb128 0x3
+ 394 003a 0E       		.uleb128 0xe
+ 395 003b 3A       		.uleb128 0x3a
+ 396 003c 0B       		.uleb128 0xb
+ 397 003d 3B       		.uleb128 0x3b
+ 398 003e 05       		.uleb128 0x5
+ 399 003f 49       		.uleb128 0x49
+ 400 0040 13       		.uleb128 0x13
+ 401 0041 00       		.byte	0
+ 402 0042 00       		.byte	0
+ 403 0043 06       		.uleb128 0x6
+ 404 0044 2E       		.uleb128 0x2e
+ 405 0045 01       		.byte	0x1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 11
+
+
+ 406 0046 3F       		.uleb128 0x3f
+ 407 0047 19       		.uleb128 0x19
+ 408 0048 03       		.uleb128 0x3
+ 409 0049 0E       		.uleb128 0xe
+ 410 004a 3A       		.uleb128 0x3a
+ 411 004b 0B       		.uleb128 0xb
+ 412 004c 3B       		.uleb128 0x3b
+ 413 004d 0B       		.uleb128 0xb
+ 414 004e 27       		.uleb128 0x27
+ 415 004f 19       		.uleb128 0x19
+ 416 0050 11       		.uleb128 0x11
+ 417 0051 01       		.uleb128 0x1
+ 418 0052 12       		.uleb128 0x12
+ 419 0053 06       		.uleb128 0x6
+ 420 0054 40       		.uleb128 0x40
+ 421 0055 18       		.uleb128 0x18
+ 422 0056 9742     		.uleb128 0x2117
+ 423 0058 19       		.uleb128 0x19
+ 424 0059 01       		.uleb128 0x1
+ 425 005a 13       		.uleb128 0x13
+ 426 005b 00       		.byte	0
+ 427 005c 00       		.byte	0
+ 428 005d 07       		.uleb128 0x7
+ 429 005e 898201   		.uleb128 0x4109
+ 430 0061 00       		.byte	0
+ 431 0062 11       		.uleb128 0x11
+ 432 0063 01       		.uleb128 0x1
+ 433 0064 31       		.uleb128 0x31
+ 434 0065 13       		.uleb128 0x13
+ 435 0066 00       		.byte	0
+ 436 0067 00       		.byte	0
+ 437 0068 08       		.uleb128 0x8
+ 438 0069 2E       		.uleb128 0x2e
+ 439 006a 00       		.byte	0
+ 440 006b 3F       		.uleb128 0x3f
+ 441 006c 19       		.uleb128 0x19
+ 442 006d 03       		.uleb128 0x3
+ 443 006e 0E       		.uleb128 0xe
+ 444 006f 3A       		.uleb128 0x3a
+ 445 0070 0B       		.uleb128 0xb
+ 446 0071 3B       		.uleb128 0x3b
+ 447 0072 0B       		.uleb128 0xb
+ 448 0073 27       		.uleb128 0x27
+ 449 0074 19       		.uleb128 0x19
+ 450 0075 49       		.uleb128 0x49
+ 451 0076 13       		.uleb128 0x13
+ 452 0077 11       		.uleb128 0x11
+ 453 0078 01       		.uleb128 0x1
+ 454 0079 12       		.uleb128 0x12
+ 455 007a 06       		.uleb128 0x6
+ 456 007b 40       		.uleb128 0x40
+ 457 007c 18       		.uleb128 0x18
+ 458 007d 9742     		.uleb128 0x2117
+ 459 007f 19       		.uleb128 0x19
+ 460 0080 00       		.byte	0
+ 461 0081 00       		.byte	0
+ 462 0082 09       		.uleb128 0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 12
+
+
+ 463 0083 34       		.uleb128 0x34
+ 464 0084 00       		.byte	0
+ 465 0085 03       		.uleb128 0x3
+ 466 0086 0E       		.uleb128 0xe
+ 467 0087 3A       		.uleb128 0x3a
+ 468 0088 0B       		.uleb128 0xb
+ 469 0089 3B       		.uleb128 0x3b
+ 470 008a 05       		.uleb128 0x5
+ 471 008b 49       		.uleb128 0x49
+ 472 008c 13       		.uleb128 0x13
+ 473 008d 3F       		.uleb128 0x3f
+ 474 008e 19       		.uleb128 0x19
+ 475 008f 3C       		.uleb128 0x3c
+ 476 0090 19       		.uleb128 0x19
+ 477 0091 00       		.byte	0
+ 478 0092 00       		.byte	0
+ 479 0093 0A       		.uleb128 0xa
+ 480 0094 35       		.uleb128 0x35
+ 481 0095 00       		.byte	0
+ 482 0096 49       		.uleb128 0x49
+ 483 0097 13       		.uleb128 0x13
+ 484 0098 00       		.byte	0
+ 485 0099 00       		.byte	0
+ 486 009a 0B       		.uleb128 0xb
+ 487 009b 34       		.uleb128 0x34
+ 488 009c 00       		.byte	0
+ 489 009d 03       		.uleb128 0x3
+ 490 009e 0E       		.uleb128 0xe
+ 491 009f 3A       		.uleb128 0x3a
+ 492 00a0 0B       		.uleb128 0xb
+ 493 00a1 3B       		.uleb128 0x3b
+ 494 00a2 0B       		.uleb128 0xb
+ 495 00a3 49       		.uleb128 0x49
+ 496 00a4 13       		.uleb128 0x13
+ 497 00a5 3F       		.uleb128 0x3f
+ 498 00a6 19       		.uleb128 0x19
+ 499 00a7 3C       		.uleb128 0x3c
+ 500 00a8 19       		.uleb128 0x19
+ 501 00a9 00       		.byte	0
+ 502 00aa 00       		.byte	0
+ 503 00ab 0C       		.uleb128 0xc
+ 504 00ac 34       		.uleb128 0x34
+ 505 00ad 00       		.byte	0
+ 506 00ae 03       		.uleb128 0x3
+ 507 00af 0E       		.uleb128 0xe
+ 508 00b0 3A       		.uleb128 0x3a
+ 509 00b1 0B       		.uleb128 0xb
+ 510 00b2 3B       		.uleb128 0x3b
+ 511 00b3 0B       		.uleb128 0xb
+ 512 00b4 49       		.uleb128 0x49
+ 513 00b5 13       		.uleb128 0x13
+ 514 00b6 3F       		.uleb128 0x3f
+ 515 00b7 19       		.uleb128 0x19
+ 516 00b8 02       		.uleb128 0x2
+ 517 00b9 18       		.uleb128 0x18
+ 518 00ba 00       		.byte	0
+ 519 00bb 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 13
+
+
+ 520 00bc 0D       		.uleb128 0xd
+ 521 00bd 2E       		.uleb128 0x2e
+ 522 00be 00       		.byte	0
+ 523 00bf 3F       		.uleb128 0x3f
+ 524 00c0 19       		.uleb128 0x19
+ 525 00c1 3C       		.uleb128 0x3c
+ 526 00c2 19       		.uleb128 0x19
+ 527 00c3 6E       		.uleb128 0x6e
+ 528 00c4 0E       		.uleb128 0xe
+ 529 00c5 03       		.uleb128 0x3
+ 530 00c6 0E       		.uleb128 0xe
+ 531 00c7 3A       		.uleb128 0x3a
+ 532 00c8 0B       		.uleb128 0xb
+ 533 00c9 3B       		.uleb128 0x3b
+ 534 00ca 0B       		.uleb128 0xb
+ 535 00cb 00       		.byte	0
+ 536 00cc 00       		.byte	0
+ 537 00cd 00       		.byte	0
+ 538              		.section	.debug_aranges,"",%progbits
+ 539 0000 34000000 		.4byte	0x34
+ 540 0004 0200     		.2byte	0x2
+ 541 0006 00000000 		.4byte	.Ldebug_info0
+ 542 000a 04       		.byte	0x4
+ 543 000b 00       		.byte	0
+ 544 000c 0000     		.2byte	0
+ 545 000e 0000     		.2byte	0
+ 546 0010 00000000 		.4byte	.LFB132
+ 547 0014 14000000 		.4byte	.LFE132-.LFB132
+ 548 0018 00000000 		.4byte	.LFB133
+ 549 001c 08000000 		.4byte	.LFE133-.LFB133
+ 550 0020 00000000 		.4byte	.LFB134
+ 551 0024 08000000 		.4byte	.LFE134-.LFB134
+ 552 0028 00000000 		.4byte	.LFB135
+ 553 002c 0C000000 		.4byte	.LFE135-.LFB135
+ 554 0030 00000000 		.4byte	0
+ 555 0034 00000000 		.4byte	0
+ 556              		.section	.debug_ranges,"",%progbits
+ 557              	.Ldebug_ranges0:
+ 558 0000 00000000 		.4byte	.LFB132
+ 559 0004 14000000 		.4byte	.LFE132
+ 560 0008 00000000 		.4byte	.LFB133
+ 561 000c 08000000 		.4byte	.LFE133
+ 562 0010 00000000 		.4byte	.LFB134
+ 563 0014 08000000 		.4byte	.LFE134
+ 564 0018 00000000 		.4byte	.LFB135
+ 565 001c 0C000000 		.4byte	.LFE135
+ 566 0020 00000000 		.4byte	0
+ 567 0024 00000000 		.4byte	0
+ 568              		.section	.debug_line,"",%progbits
+ 569              	.Ldebug_line0:
+ 570 0000 0A020000 		.section	.debug_str,"MS",%progbits,1
+ 570      0200C101 
+ 570      00000201 
+ 570      FB0E0D00 
+ 570      01010101 
+ 571              	.LASF2:
+ 572 0000 5F5F696E 		.ascii	"__int8_t\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 14
+
+
+ 572      74385F74 
+ 572      00
+ 573              	.LASF3:
+ 574 0009 5F5F7569 		.ascii	"__uint8_t\000"
+ 574      6E74385F 
+ 574      7400
+ 575              	.LASF31:
+ 576 0013 47656E65 		.ascii	"Generated_Source\\PSoC6\\AMuxSeq.c\000"
+ 576      72617465 
+ 576      645F536F 
+ 576      75726365 
+ 576      5C50536F 
+ 577              	.LASF33:
+ 578 0034 414D7578 		.ascii	"AMuxSeq_GetChannel\000"
+ 578      5365715F 
+ 578      47657443 
+ 578      68616E6E 
+ 578      656C00
+ 579              	.LASF6:
+ 580 0047 5F5F696E 		.ascii	"__int32_t\000"
+ 580      7433325F 
+ 580      7400
+ 581              	.LASF5:
+ 582 0051 73686F72 		.ascii	"short unsigned int\000"
+ 582      7420756E 
+ 582      7369676E 
+ 582      65642069 
+ 582      6E7400
+ 583              	.LASF34:
+ 584 0064 414D7578 		.ascii	"AMuxSeq_DisconnectAll\000"
+ 584      5365715F 
+ 584      44697363 
+ 584      6F6E6E65 
+ 584      6374416C 
+ 585              	.LASF13:
+ 586 007a 696E7438 		.ascii	"int8_t\000"
+ 586      5F7400
+ 587              	.LASF20:
+ 588 0081 666C6F61 		.ascii	"float\000"
+ 588      7400
+ 589              	.LASF4:
+ 590 0087 756E7369 		.ascii	"unsigned char\000"
+ 590      676E6564 
+ 590      20636861 
+ 590      7200
+ 591              	.LASF9:
+ 592 0095 6C6F6E67 		.ascii	"long unsigned int\000"
+ 592      20756E73 
+ 592      69676E65 
+ 592      6420696E 
+ 592      7400
+ 593              	.LASF22:
+ 594 00a7 75696E74 		.ascii	"uint8\000"
+ 594      3800
+ 595              	.LASF27:
+ 596 00ad 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 596      52784275 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 15
+
+
+ 596      66666572 
+ 596      00
+ 597              	.LASF21:
+ 598 00ba 646F7562 		.ascii	"double\000"
+ 598      6C6500
+ 599              	.LASF23:
+ 600 00c1 696E7438 		.ascii	"int8\000"
+ 600      00
+ 601              	.LASF8:
+ 602 00c6 5F5F7569 		.ascii	"__uint32_t\000"
+ 602      6E743332 
+ 602      5F7400
+ 603              	.LASF25:
+ 604 00d1 414D7578 		.ascii	"AMuxSeq_Init\000"
+ 604      5365715F 
+ 604      496E6974 
+ 604      00
+ 605              	.LASF12:
+ 606 00de 756E7369 		.ascii	"unsigned int\000"
+ 606      676E6564 
+ 606      20696E74 
+ 606      00
+ 607              	.LASF11:
+ 608 00eb 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 608      206C6F6E 
+ 608      6720756E 
+ 608      7369676E 
+ 608      65642069 
+ 609              	.LASF14:
+ 610 0102 75696E74 		.ascii	"uint8_t\000"
+ 610      385F7400 
+ 611              	.LASF32:
+ 612 010a 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
+ 612      73657273 
+ 612      5C737469 
+ 612      6A6E5C4F 
+ 612      6E654472 
+ 613 0138 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
+ 613      43204B6C 
+ 613      6F646465 
+ 613      6E5C5254 
+ 613      4F535F49 
+ 614              	.LASF30:
+ 615 015a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 615      43313120 
+ 615      352E342E 
+ 615      31203230 
+ 615      31363036 
+ 616 018d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 616      20726576 
+ 616      6973696F 
+ 616      6E203233 
+ 616      37373135 
+ 617 01c0 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
+ 617      70202D6D 
+ 617      6670753D 
+ 617      66707634 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 16
+
+
+ 617      2D73702D 
+ 618 01f3 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 618      6F6E7320 
+ 618      2D666661 
+ 618      742D6C74 
+ 618      6F2D6F62 
+ 619              	.LASF28:
+ 620 020d 414D7578 		.ascii	"AMuxSeq_curChannel\000"
+ 620      5365715F 
+ 620      63757243 
+ 620      68616E6E 
+ 620      656C00
+ 621              	.LASF24:
+ 622 0220 414D7578 		.ascii	"AMuxSeq_Start\000"
+ 622      5365715F 
+ 622      53746172 
+ 622      7400
+ 623              	.LASF15:
+ 624 022e 696E7433 		.ascii	"int32_t\000"
+ 624      325F7400 
+ 625              	.LASF17:
+ 626 0236 73697A65 		.ascii	"sizetype\000"
+ 626      74797065 
+ 626      00
+ 627              	.LASF10:
+ 628 023f 6C6F6E67 		.ascii	"long long int\000"
+ 628      206C6F6E 
+ 628      6720696E 
+ 628      7400
+ 629              	.LASF19:
+ 630 024d 63686172 		.ascii	"char\000"
+ 630      00
+ 631              	.LASF0:
+ 632 0252 73686F72 		.ascii	"short int\000"
+ 632      7420696E 
+ 632      7400
+ 633              	.LASF26:
+ 634 025c 414D7578 		.ascii	"AMuxSeq_Stop\000"
+ 634      5365715F 
+ 634      53746F70 
+ 634      00
+ 635              	.LASF16:
+ 636 0269 75696E74 		.ascii	"uint32_t\000"
+ 636      33325F74 
+ 636      00
+ 637              	.LASF7:
+ 638 0272 6C6F6E67 		.ascii	"long int\000"
+ 638      20696E74 
+ 638      00
+ 639              	.LASF18:
+ 640 027b 6C6F6E67 		.ascii	"long double\000"
+ 640      20646F75 
+ 640      626C6500 
+ 641              	.LASF1:
+ 642 0287 7369676E 		.ascii	"signed char\000"
+ 642      65642063 
+ 642      68617200 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccD67Zpt.s 			page 17
+
+
+ 643              	.LASF29:
+ 644 0293 414D7578 		.ascii	"AMuxSeq_initVar\000"
+ 644      5365715F 
+ 644      696E6974 
+ 644      56617200 
+ 645              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

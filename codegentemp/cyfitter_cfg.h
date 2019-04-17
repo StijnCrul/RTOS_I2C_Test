@@ -22,6 +22,9 @@
 extern void Cy_SystemInit(void);
 
 /* Analog Set/Unset methods */
+extern void AMuxSeq_DisconnectAll(void);
+extern int8 AMuxSeq_curChannel;
+extern void AMuxSeq_Next(void);
 
 
 #endif /* CYFITTER_CFG_H */

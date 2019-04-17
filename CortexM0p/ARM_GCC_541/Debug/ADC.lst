@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   28:Generated_Source\PSoC6/ADC.c **** * PARTICULAR PURPOSE. Cypress reserves the right to make
   29:Generated_Source\PSoC6/ADC.c **** * changes to the Software without notice. Cypress does not assume any
   30:Generated_Source\PSoC6/ADC.c **** * liability arising out of the application or use of the Software or any
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 2
 
 
   31:Generated_Source\PSoC6/ADC.c **** * product or circuit described in the Software. Cypress does not
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   85:Generated_Source\PSoC6/ADC.c **** * datasheet for more information on the Cy_SysInt_Init() function.
   86:Generated_Source\PSoC6/ADC.c **** *
   87:Generated_Source\PSoC6/ADC.c **** * \param address This is the address of a user defined function for the ISR.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 3
 
 
   88:Generated_Source\PSoC6/ADC.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   40              	.LVL1:
   41              	.LBB38:
   42              	.LBB39:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 4
 
 
   43              	.LBB40:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   53:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * attempting to use these functions.
   54:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
   55:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * LPActive and LPSleep power modes limit the maximum clock frequency allowed
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 5
 
 
   56:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * on the device. Refer to the SysPm driver and the TRM for details.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  110:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   <tr>
  111:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *     <td>Updated \ref Cy_SysClk_FllLocked function description</td>
  112:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *     <td>The SRSS_ver1 HW details clarification</td>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 6
 
 
  113:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   </tr>
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  167:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   <tr>
  168:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *     <td>1.0</td>
  169:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *     <td>Initial version</td>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 7
 
 
  170:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *     <td></td>
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  224:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_path_src_enums     Enumerated Types
  225:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \}
  226:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \defgroup group_sysclk_fll             Frequency Locked Loop (FLL)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 8
 
 
  227:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \{
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  281:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_pll_funcs       Functions
  282:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_pll_structs     Data Structures
  283:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 9
 
 
  284:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \defgroup group_sysclk_ilo             Internal Low-Speed Oscillator (ILO)
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  338:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_calclk_funcs    Functions
  339:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_calclk_enums    Enumerated Types
  340:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 10
 
 
  341:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \defgroup group_sysclk_trim            Clock Trim (ILO, PILO)
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  395:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_wco_funcs       Functions
  396:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_wco_structs     Data Structures
  397:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \defgroup group_sysclk_wco_enums       Enumerated Types
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 11
 
 
  398:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \}
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  452:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   can be used to further divide the CLK_HF[0] to a desired clock speed for the peripherals.
  453:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
  454:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   ![](sysclk_peri.png)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 12
 
 
  455:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  509:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   The low-frequency clock is the source clock for the \ref group_mcwdt
  510:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   and can be the source clock for \ref group_sysclk_clk_bak, which drives the
  511:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   \ref group_rtc.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 13
 
 
  512:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *   
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  566:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** #include "cy_syslib.h"
  567:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** #include "cy_syspm.h"
  568:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 14
 
 
  569:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  623:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_AMPLITUDE  0UL /**< \brief ECO does not have sufficient amplitude */
  624:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_INACCURATE 1UL /**< \brief ECO may not be meeting accuracy and duty cycle
  625:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** #define CY_SYSCLK_ECOSTAT_STABLE     2UL /**< \brief ECO has fully stabilized */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 15
 
 
  626:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /** \} */
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  680:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /* ========================================================================== */
  681:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /* ====================    INPUT MULTIPLEXER SECTION    ===================== */
  682:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /* ========================================================================== */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 16
 
 
  683:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  737:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_FLLPLL_OUTPUT_OUTPUT = 3U  /**< Output FLL/PLL output regardless of lock status. This
  738:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** } cy_en_fll_pll_output_mode_t;
  739:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 17
 
 
  740:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /** FLL current-controlled oscillator (CCO) frequency ranges.
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  794:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * true = locked
  795:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
  796:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \note
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 18
 
 
  797:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * The unlock occurrence may appear during FLL normal operation, so this function 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  851:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     uint32_t                    inputFreq;  /**< frequency of PLL source, in Hz */
  852:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     uint32_t                    outputFreq; /**< frequency of PLL output, in Hz */
  853:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     bool                        lfMode;     /**< CLK_PLL_CONFIG register, PLL_LF_MODE bit */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 19
 
 
  854:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     cy_en_fll_pll_output_mode_t outputMode; /**< CLK_PLL_CONFIG register, BYPASS_SEL bits */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  908:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Reports whether or not the selected PLL lost its lock since the last time this
  909:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * function was called. Clears the lost lock indicator.
  910:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 20
 
 
  911:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \param clkPath Selects which PLL to check. 1 is the first PLL; 0 is invalid.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  965:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         /* First bypass PLL */
  966:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         CY_REG32_CLR_SET(SRSS_CLK_PLL_CONFIG[clkPath], SRSS_CLK_PLL_CONFIG_BYPASS_SEL, CY_SYSCLK_FL
  967:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         /* Wait at least 6 PLL clock cycles */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 21
 
 
  968:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         Cy_SysLib_DelayUs(1U);
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1022:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 1023:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *******************************************************************************/
 1024:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** __STATIC_INLINE cy_en_sysclk_status_t Cy_SysClk_IloDisable(void)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 22
 
 
 1025:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** {
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1079:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 1080:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \funcusage
 1081:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \snippet sysclk/1.20/snippet/main.c snippet_Cy_SysClk_PiloEnable
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 23
 
 
 1082:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1136:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 1137:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *******************************************************************************/
 1138:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** __STATIC_INLINE uint32_t Cy_SysClk_PiloGetTrim(void)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 24
 
 
 1139:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** {
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1193:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF7 =        0x607U,
 1194:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF8 =        0x608U,
 1195:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF9 =        0x609U,
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 25
 
 
 1196:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_MEAS_CLK_CLKHF10 =       0x60AU,
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1250:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /* ========================================================================== */
 1251:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /**
 1252:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_pm_funcs
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 26
 
 
 1253:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \{
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1307:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** } cy_en_csv_error_actions_t;
 1308:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /** \} group_sysclk_wco_enums */
 1309:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 27
 
 
 1310:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /**
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1364:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         Cy_SysLib_DelayUs(1U);
 1365:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     }
 1366:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     if (0UL != timeoutus)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 28
 
 
 1367:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1421:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** __STATIC_INLINE void Cy_SysClk_WcoBypass(cy_en_wco_bypass_modes_t bypass)
 1422:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** {
 1423:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_REG32_CLR_SET(BACKUP_CTL, BACKUP_CTL_WCO_BYPASS, bypass);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 29
 
 
 1424:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** }
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1478:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_IMO   = 0U,  /**< Supervising clock is the IMO. */
 1479:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_EXT   = 1U,  /**< Supervising clock is the external clock */
 1480:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     CY_SYSCLK_CLKHF_CSV_SUPERVISOR_ALTHF = 2U   /**< Supervising clock is clk_althf */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 30
 
 
 1481:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** } cy_en_clkhf_csv_supervisor_clock_t;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1535:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     {
 1536:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         SRSS_CLK_ROOT_SELECT[clkHf] |= SRSS_CLK_ROOT_SELECT_ENABLE_Msk;
 1537:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         retVal = CY_SYSCLK_SUCCESS;
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 31
 
 
 1538:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     }
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1592:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * CLK_HF0 frequency is decreasing.
 1593:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 1594:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \funcusage
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 32
 
 
 1595:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \snippet sysclk/1.20/snippet/main.c snippet_Cy_SysClk_ClkHfSetSource
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1649:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * CLK_HF0 frequency is increasing.
 1650:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 1651:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \note
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 33
 
 
 1652:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Call \ref Cy_SysLib_SetWaitStates after calling this function if
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1706:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Sets the clock divider for the fast clock, which sources the main processor.
 1707:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * The source of this divider is clkHf[0].
 1708:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 34
 
 
 1709:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \param divider divider value between 0 and 255.
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1763:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Function Name: Cy_SysClk_ClkPeriSetDivider
 1764:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** ****************************************************************************//**
 1765:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 35
 
 
 1766:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Sets the clock divider for the peripheral clock tree. All peripheral clock
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1820:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /** \} group_sysclk_clk_peripheral_enums */
 1821:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
 1822:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /**
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 36
 
 
 1823:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \addtogroup group_sysclk_clk_peripheral_funcs
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1877:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****     {
 1878:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         if ((dividerNum < PERI_DIV_16_NR) &&
 1879:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****             (dividerValue <= (PERI_DIV_16_CTL_INT16_DIV_Msk >> PERI_DIV_16_CTL_INT16_DIV_Pos)))
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 37
 
 
 1880:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****         {
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1934:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Sets one of the programmable clock dividers. This function should only be used
 1935:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * for fractional clock dividers.
 1936:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 38
 
 
 1937:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \pre If the specified clock divider is already enabled - it should be disabled
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1991:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** 
 1992:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** /*******************************************************************************
 1993:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * Function Name: Cy_SysClk_PeriphGetFracDivider
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 39
 
 
 1994:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** ****************************************************************************//**
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 2048:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
 2049:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *******************************************************************************/
 2050:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** __STATIC_INLINE cy_en_sysclk_status_t
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 40
 
 
 2051:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****                 Cy_SysClk_PeriphAssignDivider(en_clk_dst_t ipBlock,
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 2105:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \funcusage
 2106:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** * \snippet sysclk/1.20/snippet/main.c snippet_Cy_SysClk_PeriphEnableDivider
 2107:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 41
 
 
 2108:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h **** *******************************************************************************/
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   47 0006 1A68     		ldr	r2, [r3]
 2160:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****              _VAL2FLD(CY_PERI_DIV_CMD_TYPE_SEL, dividerType) |
 2161:Generated_Source\PSoC6\pdl\drivers/peripheral/sysclk/cy_sysclk.h ****              _VAL2FLD(CY_PERI_DIV_CMD_DIV_SEL,  dividerNum);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 42
 
 
   48              		.loc 2 2161 0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   92              	.LBE42:
   93              	.LBE41:
   94              	.LBB44:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 43
 
 
   95              	.LBB45:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  136 006e 0021     		movs	r1, #0
  137 0070 2800     		movs	r0, r5
  138 0072 FFF7FEFF 		bl	Cy_SAR_DeInit
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 44
 
 
  139              	.LVL8:
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  168:Generated_Source\PSoC6/ADC.c **** *
  169:Generated_Source\PSoC6/ADC.c **** *******************************************************************************/
  170:Generated_Source\PSoC6/ADC.c **** void ADC_SelectConfig(uint32_t config, uint32_t restart)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 45
 
 
  171:Generated_Source\PSoC6/ADC.c **** {
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  225:Generated_Source\PSoC6/ADC.c **** *
  226:Generated_Source\PSoC6/ADC.c **** *******************************************************************************/
  227:Generated_Source\PSoC6/ADC.c **** void ADC_StartConvert(void)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 46
 
 
  228:Generated_Source\PSoC6/ADC.c **** {
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  238:Generated_Source\PSoC6/ADC.c **** 
  239:Generated_Source\PSoC6/ADC.c **** /*******************************************************************************
  240:Generated_Source\PSoC6/ADC.c **** * Function Name: ADC_SetConvertMode
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 47
 
 
  241:Generated_Source\PSoC6/ADC.c **** ****************************************************************************//**
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  238 001c 7047     		bx	lr
  239              	.L16:
  240 001e C046     		.align	2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 48
 
 
  241              	.L15:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  266 0002 C046     		.section	.text.ADC_IRQ_Disable,"ax",%progbits
  267              		.align	2
  268              		.global	ADC_IRQ_Disable
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 49
 
 
  269              		.code	16
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  326:Generated_Source\PSoC6/ADC.c **** * Function Name: ADC_SetEosMask
  327:Generated_Source\PSoC6/ADC.c **** ****************************************************************************//**
  328:Generated_Source\PSoC6/ADC.c **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 50
 
 
  329:Generated_Source\PSoC6/ADC.c **** * \brief Sets or clears the End of Scan (EOS) interrupt mask.
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   23:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
   24:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * This SAR ADC subsystem is comprised of:
   25:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - a 12-bit SAR converter (SARADC)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 51
 
 
   26:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - an embedded reference block (SARREF)
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   80:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - \ref cy_en_sar_ctrl_comp_pwr_t
   81:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - \ref cy_en_sar_ctrl_sarmux_deep_sleep_t
   82:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - \ref cy_en_sar_ctrl_sarseq_routing_switches_t
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 52
 
 
   83:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  137:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * \snippet sar_sut_01.cydsn/main_cm0p.c SNIPPET_SAR_RANGE_THRES
  138:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
  139:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * \subsection group_sar_init_struct_rangeCond cy_en_sar_range_detect_condition_t rangeCond
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 53
 
 
  140:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  194:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * This field configures which channels will cause a saturation interrupt.
  195:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
  196:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * The SARSEQ has a saturation detect that is always applied to every conversion.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 54
 
 
  197:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * This feature detects whether a channel's sample value is equal to the minimum or maximum values.
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  251:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <th>Mode</th>
  252:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <th>Description</th>
  253:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <th>Usage</th>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 55
 
 
  254:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   </tr>
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  308:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   - Range detection: when the channel result meets the programmed upper or lower threshold values
  309:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
  310:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * The SAR interrupt to the NVIC is raised any time the intersection (logic and) of the interrupt
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 56
 
 
  311:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * flags and the corresponding interrupt masks are non-zero.
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  365:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * \subsection group_sar_channel_sample_time Channel Sample Time
  366:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
  367:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * The sample time for a channel is the time required to acquire the analog signal
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 57
 
 
  368:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * and convert it to a digital code.
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  422:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <td>\ref CY_SAR_POS_PORT_ADDR_SARMUX</td>
  423:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <td>\ref CY_SAR_CHAN_POS_PIN_ADDR_0 through \ref CY_SAR_CHAN_POS_PIN_ADDR_7</td>
  424:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   </tr>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 58
 
 
  425:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   <tr>
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  479:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * \image html sar_sarmux_ctb.png
  480:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
  481:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * \snippet sar_sut_02.cydsn/main_cm4.c SNIPPET_SAR_SARMUX_CTB
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 59
 
 
  482:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  536:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * <table class="doxtable">
  537:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   <tr><th>Version</th><th>Changes</th><th>Reason for Change</th></tr>
  538:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   <tr>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 60
 
 
  539:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *     <td rowspan="2">1.20</td>
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  593:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *       \defgroup group_sar_mux_switch_register_enums   SARMUX Switch Control Register Enums
  594:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   \}
  595:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 61
 
 
  596:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  650:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****                                         | SAR_CTRL_VREF_BYP_CAP_EN_Msk \
  651:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****                                         | SAR_CTRL_NEG_SEL_Msk \
  652:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****                                         | SAR_CTRL_SAR_HW_CTRL_NEGVREF_Msk \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 62
 
 
  653:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****                                         | SAR_CTRL_COMP_DLY_Msk \
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  707:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** #define CY_SAR_RETURN(mode)             (((mode) == CY_SAR_RETURN_STATUS) || ((mode) == CY_SAR_WAIT
  708:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** #define CY_SAR_STARTCONVERT(mode)       (((mode) == CY_SAR_START_CONVERT_SINGLE_SHOT) || ((mode) ==
  709:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** #define CY_SAR_RANGE_LIMIT(limit)       ((limit) <= CY_SAR_RANGE_LIMIT_MAX)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 63
 
 
  710:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** #define CY_SAR_SWITCHSELECT(select)     ((select) == CY_SAR_MUX_SWITCH0)
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  764:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** The SAR status/error code definitions */
  765:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** typedef enum
  766:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 64
 
 
  767:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_SUCCESS    = 0x00uL,                                      /**< Success */
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  821:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_VREF_PWR_10      = 7uL << SAR_CTRL_PWR_CTRL_VREF_Pos,      /**< 10% power */
  822:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** }cy_en_sar_ctrl_pwr_ctrl_vref_t;
  823:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 65
 
 
  824:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** Reference voltage selection definitions */
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  878:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_CTRL_COMP_DLY_12     = 3uL << SAR_CTRL_COMP_DLY_Pos     /**< 12 ns delay, use for SAR co
  879:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** }cy_en_sar_ctrl_comp_delay_t;
  880:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 66
 
 
  881:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** Configure the comparator power mode */
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  935:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** }cy_en_sar_sample_ctrl_single_ended_format_t;
  936:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
  937:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** Configure format, signed or unsigned, of differential channels */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 67
 
 
  938:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** typedef enum
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  992:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * Additionally, hardware triggering can be enabled with the option to be
  993:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * edge or level sensitive.
  994:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 68
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 68
 
 
  995:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** typedef enum
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1049:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /* \} */
 1050:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
 1051:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** \addtogroup group_sar_chan_config_register_enums
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 69
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 69
 
 
 1052:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * This set of enumerations aids in configuring the SAR CHAN_CONFIG register
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1106:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_POS_PORT_ADDR_SARMUX_VIRT    = 7uL << SAR_CHAN_CONFIG_POS_PORT_ADDR_Pos,  /**< SARMUX vi
 1107:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** }cy_en_sar_chan_config_pos_port_addr_t;
 1108:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 70
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 70
 
 
 1109:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** Enable or disable averaging for the channel */
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1163:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * - End of scan (EOS): occurs after completing a scan of all enabled channels
 1164:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * - Overflow: occurs when hardware sets a new EOS interrupt while the previous interrupt
 1165:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *   has not be cleared by the firmware
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 71
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 71
 
 
 1166:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * - Firmware collision: occurs when firmware attempts to start one-shot
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1220:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_MUX_FW_AMUXBUSB_VPLUS   = SAR_MUX_SWITCH0_MUX_FW_AMUXBUSB_VPLUS_Msk,     /**< Switch bet
 1221:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_MUX_FW_AMUXBUSA_VMINUS  = SAR_MUX_SWITCH0_MUX_FW_AMUXBUSA_VMINUS_Msk,    /**< Switch bet
 1222:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h ****     CY_SAR_MUX_FW_AMUXBUSB_VMINUS  = SAR_MUX_SWITCH0_MUX_FW_AMUXBUSB_VMINUS_Msk,    /**< Switch bet
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 72
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 72
 
 
 1223:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1277:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * A set of enumerations is provided in this
 1278:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * driver to help with configuring this structure.
 1279:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 73
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 73
 
 
 1280:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * See the \ref group_sar_initialization section for guidance.
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1334:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** int16_t Cy_SAR_GetResult16(const SAR_Type *base, uint32_t chan);
 1335:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** int32_t Cy_SAR_GetResult32(const SAR_Type *base, uint32_t chan);
 1336:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** __STATIC_INLINE uint32_t Cy_SAR_GetChanResultUpdated(const SAR_Type *base);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 74
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 74
 
 
 1337:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /** \} */
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1391:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** __STATIC_INLINE uint32_t Cy_SAR_GetInterruptMask(const SAR_Type *base);
 1392:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** __STATIC_INLINE uint32_t Cy_SAR_GetInterruptStatusMasked(const SAR_Type *base);
 1393:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 75
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 75
 
 
 1394:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** __STATIC_INLINE uint32_t Cy_SAR_GetRangeInterruptStatus(const SAR_Type *base);
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1448:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * Return whether the RESULT register has been updated or not.
 1449:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * If the bit is high, the corresponding channel RESULT register was updated,
 1450:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * i.e. was sampled during the previous scan and, in case of Interleaved averaging,
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 76
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 76
 
 
 1451:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * reached the averaging count.
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1505:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
 1506:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
 1507:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /*******************************************************************************
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 77
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 77
 
 
 1508:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * Function Name: Cy_SAR_SetRangeCond
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1562:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** ****************************************************************************//**
 1563:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** *
 1564:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * Clear the interrupt.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 78
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 78
 
 
 1565:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * The interrupt must be cleared with this function so that the hardware
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
 1619:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
 1620:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
 1621:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** /*******************************************************************************
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 79
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 79
 
 
 1622:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** * Function Name: Cy_SAR_SetInterruptMask
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  334 0020 6F060000 		.word	1647
  335 0024 00000000 		.word	.LC1
  336 0028 00001D41 		.word	1092419584
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 80
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 80
 
 
  337              		.cfi_endproc
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  372              	.LVL22:
  373              	.LBB49:
  374              	.LBB50:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 81
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 81
 
 
 1501:Generated_Source\PSoC6\pdl\drivers/peripheral/sar/cy_sar.h **** 
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  377:Generated_Source\PSoC6/ADC.c **** *
  378:Generated_Source\PSoC6/ADC.c **** * \param retMode Check conversion return mode.
  379:Generated_Source\PSoC6/ADC.c **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 82
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 82
 
 
  380:Generated_Source\PSoC6/ADC.c **** * \return uint32_t: If a nonzero value is returned, the last conversion is complete.
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  448 0016 C046     		.align	2
  449              	.L30:
  450 0018 00001D41 		.word	1092419584
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 83
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 83
 
 
  451              		.cfi_endproc
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  429:Generated_Source\PSoC6/ADC.c ****         #if (CY_CPU_CORTEX_M0P)
  430:Generated_Source\PSoC6/ADC.c ****             (void)Cy_SysInt_Init(&ADC_IRQ_cfg, &ADC_ISR);
  431:Generated_Source\PSoC6/ADC.c ****         #endif
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 84
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 84
 
 
  432:Generated_Source\PSoC6/ADC.c ****         #endif
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  508              	.LFB186:
   66:Generated_Source\PSoC6/ADC.c ****     if (ADC_INIT_VAR_INIT_FLAG != (ADC_INIT_VAR_INIT_FLAG & ADC_initVar))
  509              		.loc 1 66 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 85
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 85
 
 
  510              		.cfi_startproc
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   27:Generated_Source\PSoC6/ADC.h **** * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
   28:Generated_Source\PSoC6/ADC.h **** * PARTICULAR PURPOSE. Cypress reserves the right to make
   29:Generated_Source\PSoC6/ADC.h **** * changes to the Software without notice. Cypress does not assume any
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 86
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 86
 
 
   30:Generated_Source\PSoC6/ADC.h **** * liability arising out of the application or use of the Software or any
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
   84:Generated_Source\PSoC6/ADC.h **** * \addtogroup group_general
   85:Generated_Source\PSoC6/ADC.h **** * @{
   86:Generated_Source\PSoC6/ADC.h **** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 87
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 87
 
 
   87:Generated_Source\PSoC6/ADC.h **** void ADC_Start(void);
@@ -5218,12 +5218,12 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  141:Generated_Source\PSoC6/ADC.h **** 
  142:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_SAMPLE_RATE             (10)
  143:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_CHANNEL_BASE            (0u)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 88
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 88
 
 
  144:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_CHANNEL_COUNT           (1u)
- 145:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_SEL_MASK           (0xc0u)
- 146:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_NOMINAL_CLOCK_FREQ      (1724137u)
+ 145:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_SEL_MASK           (0xf0u)
+ 146:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_NOMINAL_CLOCK_FREQ      (16666666u)
  147:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_CHANNEL_EN              (0x1u)
  148:Generated_Source\PSoC6/ADC.h **** 
  149:Generated_Source\PSoC6/ADC.h **** /* Sample Control Register */
@@ -5234,19 +5234,19 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  154:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_SATURATE_INTR_MASK      (0x0u)
  155:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VNEG_INPUT_SEL          (7)
  156:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_SINGLE_PRESENT          (1)
- 157:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_MV_VALUE           (1200)
- 158:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_APERTURE_TIME0          (1023uL)
+ 157:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_MV_VALUE           (3300)
+ 158:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_APERTURE_TIME0          (4uL)
  159:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_APERTURE_TIME1          (2uL)
  160:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_APERTURE_TIME2          (2uL)
  161:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_APERTURE_TIME3          (2uL)
- 162:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_FREERUNNING             (1u)
+ 162:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_FREERUNNING             (0u)
  163:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_AVGERAGING_MODE         (1uL)
  164:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_LOW_LIMIT               (512u)
  165:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_HIGH_LIMIT              (3584u)
- 166:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_RANGE_COND              (0uL)
+ 166:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_RANGE_COND              (3uL)
  167:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_USE_SOC                 (0uL)
- 168:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_PWR                (6uL)
- 169:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_COMP_PWR                (6uL)
+ 168:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_PWR                (3uL)
+ 169:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_COMP_PWR                (3uL)
  170:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_COMP_DLY                (3uL)
  171:Generated_Source\PSoC6/ADC.h **** 
  172:Generated_Source\PSoC6/ADC.h **** /* Clock parameters*/
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  198:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_SATURATE_INTR_MASK      (u)
  199:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_VNEG_INPUT_SEL          ()
  200:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_SINGLE_PRESENT          ()
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 89
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 89
 
 
  201:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_VREF_MV_VALUE           ()
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  255:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_RANGE_COND              (uL)
  256:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_USE_SOC                 (0uL)
  257:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_VREF_PWR                (uL)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 90
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 90
 
 
  258:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_COMP_PWR                (uL)
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  312:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
  313:Generated_Source\PSoC6/ADC.h **** /* End configuration 3 customizer defines                                     */
  314:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 91
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 91
 
 
  315:Generated_Source\PSoC6/ADC.h **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  369:Generated_Source\PSoC6/ADC.h **** #if(ADC_CFG0_VNEG_INPUT_SEL == ADC_NEG_SEL_VSSA_KELVIN)
  370:Generated_Source\PSoC6/ADC.h ****     /* Do not connect VSSA to VMINUS when one channel in differential mode used */
  371:Generated_Source\PSoC6/ADC.h ****     #if((ADC_TOTAL_CHANNELS_NUM == 1u) && (ADC_CFG0_SINGLE_PRESENT == 0u))
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 92
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 92
 
 
  372:Generated_Source\PSoC6/ADC.h ****         #define ADC_MUX_SWITCH0_INIT      0u
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  426:Generated_Source\PSoC6/ADC.h **** #endif /* ADC_CFG0_VNEG_INPUT_SEL == ADC_NEG_SEL_VSSA_KELVIN */
  427:Generated_Source\PSoC6/ADC.h **** 
  428:Generated_Source\PSoC6/ADC.h **** #if(ADC_TOTAL_CHANNELS_NUM > 1u)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 93
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 93
 
 
  429:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG0_NEG_OTHER                 (uint16)((uint16)ADC_SARMUX__VNEG0 << SAR_CTRL_NEG_S
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  483:Generated_Source\PSoC6/ADC.h ****         | ADC_CFG0_COMP_DLY_INIT \
  484:Generated_Source\PSoC6/ADC.h ****         | SAR_CTRL_REFBUF_EN_Msk \
  485:Generated_Source\PSoC6/ADC.h ****         | ADC_CFG0_COMP_PWR_INIT \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 94
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 94
 
 
  486:Generated_Source\PSoC6/ADC.h ****         | SAR_CTRL_DSI_SYNC_CONFIG_Msk  \
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  540:Generated_Source\PSoC6/ADC.h ****     /* Set soc operation to edge or level based on sample mode */
  541:Generated_Source\PSoC6/ADC.h ****     #if(ADC_CFG1_FREERUNNING == ADC_FREERUNNING)
  542:Generated_Source\PSoC6/ADC.h ****         #define ADC_CFG1_DSI_TRIGGER_LEVEL_INIT    (SAR_SAMPLE_CTRL_DSI_TRIGGER_LEVEL_Msk)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 95
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 95
 
 
  543:Generated_Source\PSoC6/ADC.h ****     #else /* Edge trigger */
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  597:Generated_Source\PSoC6/ADC.h **** 
  598:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_COMP_DLY_INIT  \
  599:Generated_Source\PSoC6/ADC.h ****             (ADC_CFG1_COMP_DLY \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 96
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 96
 
 
  600:Generated_Source\PSoC6/ADC.h ****             << SAR_CTRL_COMP_DLY_Pos)
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  654:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_SAMPLE_TIME23_INIT \
  655:Generated_Source\PSoC6/ADC.h ****             ((ADC_CFG2_APERTURE_TIME2 \
  656:Generated_Source\PSoC6/ADC.h ****             << SAR_SAMPLE_TIME23_SAMPLE_TIME2_Pos) \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 97
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 97
 
 
  657:Generated_Source\PSoC6/ADC.h ****             | (ADC_CFG2_APERTURE_TIME3 \
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  711:Generated_Source\PSoC6/ADC.h ****             << SAR_SAMPLE_CTRL_AVG_SHIFT_Pos)
  712:Generated_Source\PSoC6/ADC.h **** 
  713:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_TRIGGER_OUT_INIT      (0u)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 98
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 98
 
 
  714:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG2_UAB_SCAN_MODE_INIT    (0u)
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  768:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
  769:Generated_Source\PSoC6/ADC.h **** /* End configuration 2 calculated defines                                     */
  770:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 99
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 99
 
 
  771:Generated_Source\PSoC6/ADC.h **** 
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  825:Generated_Source\PSoC6/ADC.h ****             (ADC_CFG3_SINGLE_ENDED_FORMAT \
  826:Generated_Source\PSoC6/ADC.h ****             << SAR_SAMPLE_CTRL_SINGLE_ENDED_SIGNED_Pos)
  827:Generated_Source\PSoC6/ADC.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 100
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 100
 
 
  828:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG3_DIFF_RESULT_FORMAT_INIT \
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  882:Generated_Source\PSoC6/ADC.h ****             (ADC_CFG3_LOW_LIMIT \
  883:Generated_Source\PSoC6/ADC.h ****             | (uint32)((uint32)ADC_CFG3_HIGH_LIMIT \
  884:Generated_Source\PSoC6/ADC.h ****             << SAR_RANGE_THRES_RANGE_HIGH_Pos))
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 101
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 101
 
 
  885:Generated_Source\PSoC6/ADC.h **** 
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  556              		.thumb_func
  557              		.type	ADC_StartEx, %function
  558              	ADC_StartEx:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 102
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 102
 
 
  559              	.LFB187:
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  607 000a 114A     		ldr	r2, .L44
  608 000c 1368     		ldr	r3, [r2]
  609 000e 5B00     		lsls	r3, r3, #1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 103
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 103
 
 
  610 0010 5B08     		lsrs	r3, r3, #1
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  206:Generated_Source\PSoC6/ADC.c **** 
  655              		.loc 1 206 0
  656              		@ sp needed
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 104
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 104
 
 
  657              	.LVL47:
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  705 0004 0400     		.2byte	0x4
  706 0006 00000000 		.4byte	.Ldebug_abbrev0
  707 000a 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 105
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 105
 
 
  708 000b 01       		.uleb128 0x1
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  762 007d 05       		.byte	0x5
  763 007e 0F080000 		.4byte	.LASF10
  764 0082 02       		.uleb128 0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 106
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 106
 
 
  765 0083 08       		.byte	0x8
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  819 00f5 CA000000 		.4byte	0xca
  820 00f9 04010000 		.4byte	0x104
  821 00fd 08       		.uleb128 0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 107
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 107
 
 
  822 00fe C3000000 		.4byte	0xc3
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  876 016d C3000000 		.4byte	0xc3
  877 0171 05       		.byte	0x5
  878 0172 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 108
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 108
 
 
  879 0173 05       		.uleb128 0x5
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  933 01e0 3D       		.byte	0x3d
  934 01e1 CF000000 		.4byte	0xcf
  935 01e5 20       		.byte	0x20
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 109
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 109
 
 
  936 01e6 0A       		.uleb128 0xa
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  990 0255 20       		.byte	0x20
  991 0256 0A       		.uleb128 0xa
  992 0257 FC100000 		.4byte	.LASF29
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 110
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 110
 
 
  993 025b 07       		.byte	0x7
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1047 02ca 56060000 		.4byte	.LASF34
  1048 02ce 07       		.byte	0x7
  1049 02cf 6E       		.byte	0x6e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 111
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 111
 
 
  1050 02d0 A5030000 		.4byte	0x3a5
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1104 0345 0E040000 		.4byte	0x40e
  1105 0349 0040     		.2byte	0x4000
  1106 034b 0D       		.uleb128 0xd
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 112
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 112
 
 
  1107 034c 7C0C0000 		.4byte	.LASF42
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1161 03c9 07       		.uleb128 0x7
  1162 03ca CF000000 		.4byte	0xcf
  1163 03ce D9030000 		.4byte	0x3d9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 113
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 113
 
 
  1164 03d2 08       		.uleb128 0x8
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1218 044f 7B       		.byte	0x7b
  1219 0450 8E020000 		.4byte	0x28e
  1220 0454 07       		.uleb128 0x7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 114
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 114
 
 
  1221 0455 CF000000 		.4byte	0xcf
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1275 04c8 14       		.byte	0x14
  1276 04c9 0A       		.uleb128 0xa
  1277 04ca 6C0D0000 		.4byte	.LASF49
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 115
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 115
 
 
  1278 04ce 08       		.byte	0x8
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1332 053c 08       		.byte	0x8
  1333 053d 30       		.byte	0x30
  1334 053e 58070000 		.4byte	0x758
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 116
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 116
 
 
  1335 0542 8001     		.2byte	0x180
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1389 05b7 1C02     		.2byte	0x21c
  1390 05b9 0D       		.uleb128 0xd
  1391 05ba 5B020000 		.4byte	.LASF64
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 117
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 117
 
 
  1392 05be 08       		.byte	0x8
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1446 0633 08       		.byte	0x8
  1447 0634 43       		.byte	0x43
  1448 0635 6C070000 		.4byte	0x76c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 118
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 118
 
 
  1449 0639 4402     		.2byte	0x244
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1503 06ae 0403     		.2byte	0x304
  1504 06b0 0D       		.uleb128 0xd
  1505 06b1 B30C0000 		.4byte	.LASF83
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 119
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 119
 
 
  1506 06b5 08       		.byte	0x8
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1560 072b 06       		.uleb128 0x6
  1561 072c 26070000 		.4byte	0x726
  1562 0730 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 120
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 120
 
 
  1563 0731 F4000000 		.4byte	0xf4
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1617 07b9 00       		.byte	0
  1618 07ba 05       		.uleb128 0x5
  1619 07bb A9070000 		.4byte	0x7a9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 121
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 121
 
 
  1620 07bf 06       		.uleb128 0x6
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1674 082c 3C       		.byte	0x3c
  1675 082d B8000000 		.4byte	0xb8
  1676 0831 14       		.byte	0x14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 122
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 122
 
 
  1677 0832 0A       		.uleb128 0xa
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1731 089e 0A       		.uleb128 0xa
  1732 089f 590E0000 		.4byte	.LASF108
  1733 08a3 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 123
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 123
 
 
  1734 08a4 48       		.byte	0x48
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1788 0910 53       		.byte	0x53
  1789 0911 A2000000 		.4byte	0xa2
  1790 0915 38       		.byte	0x38
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 124
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 124
 
 
  1791 0916 0A       		.uleb128 0xa
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1845 0982 0A       		.uleb128 0xa
  1846 0983 4C070000 		.4byte	.LASF127
  1847 0987 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 125
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 125
 
 
  1848 0988 5D       		.byte	0x5d
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1902 09f4 66       		.byte	0x66
  1903 09f5 97000000 		.4byte	0x97
  1904 09f9 56       		.byte	0x56
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 126
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 126
 
 
  1905 09fa 0A       		.uleb128 0xa
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  1959 0a66 0A       		.uleb128 0xa
  1960 0a67 EA110000 		.4byte	.LASF146
  1961 0a6b 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 127
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 127
 
 
  1962 0a6c 76       		.byte	0x76
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2016 0ad8 81       		.byte	0x81
  2017 0ad9 AD000000 		.4byte	0xad
  2018 0add 76       		.byte	0x76
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 128
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 128
 
 
  2019 0ade 0A       		.uleb128 0xa
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2073 0b4a 0A       		.uleb128 0xa
  2074 0b4b 88100000 		.4byte	.LASF165
  2075 0b4f 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 129
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 129
 
 
  2076 0b50 8F       		.byte	0x8f
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2130 0bbc 98       		.byte	0x98
  2131 0bbd AD000000 		.4byte	0xad
  2132 0bc1 AA       		.byte	0xaa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 130
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 130
 
 
  2133 0bc2 0A       		.uleb128 0xa
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2187 0c2d 04       		.byte	0x4
  2188 0c2e A80D0000 		.4byte	.LASF184
  2189 0c32 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 131
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 131
 
 
  2190 0c33 710A0000 		.4byte	.LASF185
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2244 0cb1 00       		.byte	0
  2245 0cb2 13       		.uleb128 0x13
  2246 0cb3 77020000 		.4byte	.LASF195
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 132
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 132
 
 
  2247 0cb7 01       		.byte	0x1
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2301 0d24 03       		.byte	0x3
  2302 0d25 1804     		.2byte	0x418
  2303 0d27 F90C0000 		.4byte	0xcf9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 133
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 133
 
 
  2304 0d2b 12       		.uleb128 0x12
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2358 0d9b 16       		.uleb128 0x16
  2359 0d9c F7070000 		.4byte	.LASF215
  2360 0da0 03       		.byte	0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 134
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 134
 
 
  2361 0da1 0905     		.2byte	0x509
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2415 0e16 1205     		.2byte	0x512
  2416 0e18 B8000000 		.4byte	0xb8
  2417 0e1c 74       		.byte	0x74
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 135
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 135
 
 
  2418 0e1d 00       		.byte	0
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2472 0e96 E40A0000 		.4byte	.LASF234
  2473 0e9a 02       		.byte	0x2
  2474 0e9b 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 136
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 136
 
 
  2475 0e9c 390F0000 		.4byte	.LASF235
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2529 0f09 17       		.uleb128 0x17
  2530 0f0a 68000000 		.4byte	.LASF245
  2531 0f0e 02       		.byte	0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 137
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 137
 
 
  2532 0f0f 6408     		.2byte	0x864
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2586 0f8e 18       		.uleb128 0x18
  2587 0f8f EB030000 		.4byte	.LASF249
  2588 0f93 03       		.byte	0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 138
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 138
 
 
  2589 0f94 9E05     		.2byte	0x59e
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2643 1002 DB05     		.2byte	0x5db
  2644 1004 9B0F0000 		.4byte	0xf9b
  2645 1008 18       		.uleb128 0x18
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 139
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 139
 
 
  2646 1009 6B060000 		.4byte	.LASF256
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2700 1082 D2100000 		.4byte	.LASF269
  2701 1086 01       		.byte	0x1
  2702 1087 82       		.byte	0x82
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 140
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 140
 
 
  2703 1088 2E0E0000 		.4byte	0xe2e
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2757 1118 9F000000 		.4byte	.LLST7
  2758 111c 25       		.uleb128 0x25
  2759 111d 20000000 		.4byte	.LBB43
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 141
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 141
 
 
  2760 1121 1A000000 		.4byte	.LBE43-.LBB43
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2814 119c 28       		.uleb128 0x28
  2815 119d 01       		.uleb128 0x1
  2816 119e 50       		.byte	0x50
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 142
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 142
 
 
  2817 119f 02       		.uleb128 0x2
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2871 11ff FE       		.byte	0xfe
  2872 1200 00000000 		.4byte	.LFB191
  2873 1204 28000000 		.4byte	.LFE191-.LFB191
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 143
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 143
 
 
  2874 1208 01       		.uleb128 0x1
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2928 1286 24       		.uleb128 0x24
  2929 1287 E20F0000 		.4byte	0xfe2
  2930 128b 4E010000 		.4byte	.LLST14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 144
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 144
 
 
  2931 128f 24       		.uleb128 0x24
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  2985 130c 29       		.uleb128 0x29
  2986 130d 28000000 		.4byte	.LVL24
  2987 1311 3B150000 		.4byte	0x153b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 145
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 145
 
 
  2988 1315 28       		.uleb128 0x28
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3042 1386 2C       		.uleb128 0x2c
  3043 1387 9B040000 		.4byte	.LASF276
  3044 138b 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 146
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 146
 
 
  3045 138c 9F01     		.2byte	0x19f
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3099 1409 9C       		.byte	0x9c
  3100 140a 27140000 		.4byte	0x1427
  3101 140e 20       		.uleb128 0x20
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 147
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 147
 
 
  3102 140f 5A0A0000 		.4byte	.LASF280
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3156 149a 32       		.uleb128 0x32
  3157 149b 48000000 		.4byte	.LVL45
  3158 149f B3130000 		.4byte	0x13b3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 148
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 148
 
 
  3159 14a3 32       		.uleb128 0x32
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3213 151c 68050000 		.4byte	.LASF288
  3214 1520 03       		.byte	0x3
  3215 1521 3005     		.2byte	0x530
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 149
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 149
 
 
  3216 1523 36       		.uleb128 0x36
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3270 001a 03       		.uleb128 0x3
  3271 001b 0E       		.uleb128 0xe
  3272 001c 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 150
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 150
 
 
  3273 001d 00       		.byte	0
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3327 0053 0B       		.uleb128 0xb
  3328 0054 00       		.byte	0
  3329 0055 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 151
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 151
 
 
  3330 0056 09       		.uleb128 0x9
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3384 008c 00       		.byte	0
  3385 008d 00       		.byte	0
  3386 008e 0D       		.uleb128 0xd
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 152
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 152
 
 
  3387 008f 0D       		.uleb128 0xd
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3441 00c5 01       		.byte	0x1
  3442 00c6 0B       		.uleb128 0xb
  3443 00c7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 153
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 153
 
 
  3444 00c8 49       		.uleb128 0x49
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3498 00fe 00       		.byte	0
  3499 00ff 00       		.byte	0
  3500 0100 17       		.uleb128 0x17
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 154
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 154
 
 
  3501 0101 2E       		.uleb128 0x2e
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3555 0137 19       		.uleb128 0x19
  3556 0138 20       		.uleb128 0x20
  3557 0139 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 155
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 155
 
 
  3558 013a 01       		.uleb128 0x1
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3612 0170 3A       		.uleb128 0x3a
  3613 0171 0B       		.uleb128 0xb
  3614 0172 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 156
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 156
 
 
  3615 0173 05       		.uleb128 0x5
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3669 01aa 3B       		.uleb128 0x3b
  3670 01ab 0B       		.uleb128 0xb
  3671 01ac 49       		.uleb128 0x49
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 157
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 157
 
 
  3672 01ad 13       		.uleb128 0x13
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3726 01e3 00       		.byte	0
  3727 01e4 26       		.uleb128 0x26
  3728 01e5 34       		.uleb128 0x34
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 158
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 158
 
 
  3729 01e6 00       		.byte	0
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3783 0223 3F       		.uleb128 0x3f
  3784 0224 19       		.uleb128 0x19
  3785 0225 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 159
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 159
 
 
  3786 0226 0E       		.uleb128 0xe
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3840 025e 17       		.uleb128 0x17
  3841 025f 00       		.byte	0
  3842 0260 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 160
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 160
 
 
  3843 0261 2E       		.uleb128 0x2e
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3897 0298 13       		.uleb128 0x13
  3898 0299 00       		.byte	0
  3899 029a 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 161
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 161
 
 
  3900 029b 31       		.uleb128 0x31
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  3954 02d3 02       		.uleb128 0x2
  3955 02d4 18       		.uleb128 0x18
  3956 02d5 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 162
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 162
 
 
  3957 02d6 00       		.byte	0
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4011 0024 00000000 		.4byte	0
  4012 0028 00000000 		.4byte	0
  4013              	.LLST1:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 163
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 163
 
 
  4014 002c 04000000 		.4byte	.LVL1
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4068 00b7 3A000000 		.4byte	.LVL6
  4069 00bb 0600     		.2byte	0x6
  4070 00bd 0C       		.byte	0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 164
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 164
 
 
  4071 00be 01004A00 		.4byte	0x4a0001
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4125 0144 00       		.sleb128 0
  4126 0145 22       		.byte	0x22
  4127 0146 00000000 		.4byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 165
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 165
 
 
  4128 014a 00000000 		.4byte	0
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4182 01d9 2C000000 		.4byte	.LVL25
  4183 01dd 0600     		.2byte	0x6
  4184 01df 0C       		.byte	0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 166
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 166
 
 
  4185 01e0 00001D41 		.4byte	0x411d0000
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4239 0268 00000000 		.4byte	0
  4240              	.LLST24:
  4241 026c 00000000 		.4byte	.LVL40
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 167
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 167
 
 
  4242 0270 23000000 		.4byte	.LVL43-1
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4296 001c 24000000 		.4byte	.LFE190-.LFB190
  4297 0020 00000000 		.4byte	.LFB191
  4298 0024 28000000 		.4byte	.LFE191-.LFB191
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 168
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 168
 
 
  4299 0028 00000000 		.4byte	.LFB192
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4349      01010101 
  4350              	.LASF136:
  4351 0000 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 169
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 169
 
 
  4351      6843746C 
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4371      385F4354 
  4371      4C00
  4372              	.LASF96:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 170
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 170
 
 
  4373 00be 75646242 		.ascii	"udbBase\000"
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4396      63654E72 
  4396      00
  4397              	.LASF204:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 171
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 171
 
 
  4398 0189 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4420 0230 6877436F 		.ascii	"hwConfigStc\000"
  4420      6E666967 
  4420      53746300 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 172
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 172
 
 
  4421              	.LASF118:
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4444      6E5F7361 
  4444      725F7374 
  4444      6172745F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 173
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 173
 
 
  4444      636F6E76 
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4465              	.LASF16:
  4466 03a3 75696E74 		.ascii	"uint32_t\000"
  4466      33325F74 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 174
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 174
 
 
  4466      00
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4492      7369676E 
  4492      65642069 
  4493              	.LASF157:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 175
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 175
 
 
  4494 0447 70657269 		.ascii	"periDiv24_5CtlOffset\000"
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4515              	.LASF226:
  4516 04f1 63795F73 		.ascii	"cy_stc_sar_config_t\000"
  4516      74635F73 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 176
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 176
 
 
  4516      61725F63 
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4538      6E7400
  4539              	.LASF131:
  4540 059f 666C6173 		.ascii	"flashPipeRequired\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 177
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 177
 
 
  4540      68506970 
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4562 063d 4144435F 		.ascii	"ADC_InitConfig\000"
  4562      496E6974 
  4562      436F6E66 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 178
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 178
 
 
  4562      696700
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4586      5F494E54 
  4586      525F5345 
  4586      5400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 179
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 179
 
 
  4587              	.LASF40:
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4611              	.LASF190:
  4612 0790 63795F65 		.ascii	"cy_en_sar_status_t\000"
  4612      6E5F7361 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 180
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 180
 
 
  4612      725F7374 
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4634      746F4261 
  4634      736500
  4635              	.LASF208:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 181
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 181
 
 
  4636 083f 43595F53 		.ascii	"CY_SAR_INTR_OVERFLOW_MASK\000"
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4654      6172436C 
  4654      6F636B5F 
  4654      44697361 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 182
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 182
 
 
  4655              	.LASF265:
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4677              	.LASF252:
  4678 0a12 4144435F 		.ascii	"ADC_intSarClock_Enable\000"
  4678      696E7453 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 183
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 183
 
 
  4678      6172436C 
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4702      54415254 
  4702      5F434F4E 
  4702      56455254 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 184
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 184
 
 
  4703              	.LASF52:
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4725              	.LASF212:
  4726 0b7f 73616D70 		.ascii	"sampleTime01\000"
  4726      6C655469 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 185
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 185
 
 
  4726      6D653031 
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4748      73436D34 
  4748      4E6D6943 
  4748      746C4F66 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 186
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 186
 
 
  4748      66736574 
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4772      54797065 
  4772      00
  4773              	.LASF85:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 187
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 187
 
 
  4774 0cd9 4D55585F 		.ascii	"MUX_SWITCH_SQ_CTRL\000"
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4796      4F4E5645 
  4796      5253494F 
  4796      4E5F4E4F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 188
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 188
 
 
  4797              	.LASF54:
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4819              	.LASF293:
  4820 0e4b 43795F53 		.ascii	"Cy_SAR_Enable\000"
  4820      41525F45 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 189
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 189
 
 
  4820      6E61626C 
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4843              	.LASF88:
  4844 0ef9 414E415F 		.ascii	"ANA_TRIM0\000"
  4844      5452494D 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 190
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 190
 
 
  4844      3000
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4867              	.LASF254:
  4868 0fa7 43795F53 		.ascii	"Cy_SAR_SetInterruptMask\000"
  4868      41525F53 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 191
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 191
 
 
  4868      6574496E 
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4890 105f 64774368 		.ascii	"dwChCtlPreemptablePos\000"
  4890      43746C50 
  4890      7265656D 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 192
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 192
 
 
  4890      70746162 
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4915              	.LASF22:
  4916 1101 52455345 		.ascii	"RESERVED1\000"
  4916      52564544 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 193
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 193
 
 
  4916      3100
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 1
  4938      5F47525F 
  4938      56315F54 
  4938      79706500 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccxr6mmh.s 			page 194
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cctk2Nyd.s 			page 194
 
 
  4939              	.LASF109:

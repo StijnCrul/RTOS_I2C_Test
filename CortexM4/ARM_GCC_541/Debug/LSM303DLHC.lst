@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
   27:LSM303DLHC.c  **** /* 
   28:LSM303DLHC.c  **** *   Function: setupAccel 
   29:LSM303DLHC.c  **** *  
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 2
 
 
   30:LSM303DLHC.c  **** *   Description: Setup up the accelerometer by writing to CTRL_REG1_A
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
   69              		.thumb
   70              		.thumb_func
   71              		.type	readAccel, %function
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 3
 
 
   72              	readAccel:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  110 0036 00E0     		b	.L4
  111              	.LVL6:
  112              	.L5:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 4
 
 
   54:LSM303DLHC.c  ****     uint8_t status = TRANSFER_ERROR;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  150              		.loc 1 75 0
  151 000c FFF7FEFF 		bl	xTaskGetTickCount
  152              	.LVL11:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 5
 
 
  153 0010 0390     		str	r0, [sp, #12]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  194              		.file 8 "Generated_Source\\PSoC6/ADC.h"
  195              		.file 9 "LSM303DLHC.h"
  196              		.file 10 "Generated_Source\\PSoC6\\pdl\\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 6
 
 
  197              		.file 11 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  251 0069 6D000000 		.4byte	0x6d
  252 006d 02       		.uleb128 0x2
  253 006e 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 7
 
 
  254 006f 05       		.byte	0x5
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  308 00db 07       		.byte	0x7
  309 00dc E40C0000 		.4byte	.LASF19
  310 00e0 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 8
 
 
  311 00e1 CE000000 		.4byte	0xce
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  365 014d AE070000 		.4byte	.LASF27
  366 0151 04       		.byte	0x4
  367 0152 3D       		.byte	0x3d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 9
 
 
  368 0153 CE000000 		.4byte	0xce
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  422 01bf A2000000 		.4byte	0xa2
  423 01c3 2D       		.byte	0x2d
  424 01c4 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 10
 
 
  425 01c5 7A0C0000 		.4byte	.LASF37
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  479 0231 540A0000 		.4byte	.LASF46
  480 0235 04       		.byte	0x4
  481 0236 54       		.byte	0x54
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 11
 
 
  482 0237 AD000000 		.4byte	0xad
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  536 02a3 A2000000 		.4byte	0xa2
  537 02a7 44       		.byte	0x44
  538 02a8 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 12
 
 
  539 02a9 A00D0000 		.4byte	.LASF56
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  593 0315 8F0C0000 		.4byte	.LASF65
  594 0319 04       		.byte	0x4
  595 031a 67       		.byte	0x67
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 13
 
 
  596 031b A2000000 		.4byte	0xa2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  650 0387 B8000000 		.4byte	0xb8
  651 038b 68       		.byte	0x68
  652 038c 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 14
 
 
  653 038d 070C0000 		.4byte	.LASF75
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  707 03f9 C1080000 		.4byte	.LASF84
  708 03fd 04       		.byte	0x4
  709 03fe 82       		.byte	0x82
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 15
 
 
  710 03ff B8000000 		.4byte	0xb8
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  764 046b CE000000 		.4byte	0xce
  765 046f 8C       		.byte	0x8c
  766 0470 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 16
 
 
  767 0471 020D0000 		.4byte	.LASF94
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  821 04dd B2020000 		.4byte	.LASF103
  822 04e1 04       		.byte	0x4
  823 04e2 99       		.byte	0x99
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 17
 
 
  824 04e3 B8000000 		.4byte	0xb8
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  878 054a 5D060000 		.4byte	.LASF113
  879 054e 01       		.byte	0x1
  880 054f 0C       		.uleb128 0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 18
 
 
  881 0550 82080000 		.4byte	.LASF114
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  935 05c4 05       		.byte	0x5
  936 05c5 0A05     		.2byte	0x50a
  937 05c7 CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 19
 
 
  938 05cb 18       		.byte	0x18
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  992 063f D9000000 		.4byte	0xd9
  993 0643 0F       		.byte	0xf
  994 0644 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 20
 
 
  995 0645 0D       		.uleb128 0xd
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1049 06bc C302     		.2byte	0x2c3
  1050 06be D4070000 		.4byte	0x7d4
  1051 06c2 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 21
 
 
  1052 06c3 A4070000 		.4byte	.LASF138
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1106 0738 58080000 		.4byte	.LASF147
  1107 073c 06       		.byte	0x6
  1108 073d D202     		.2byte	0x2d2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 22
 
 
  1109 073f E0000000 		.4byte	0xe0
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1163 07b4 E0000000 		.4byte	0xe0
  1164 07b8 40       		.byte	0x40
  1165 07b9 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 23
 
 
  1166 07ba 58070000 		.4byte	.LASF157
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1220 082e 980E0000 		.4byte	.LASF166
  1221 0832 06       		.byte	0x6
  1222 0833 0E03     		.2byte	0x30e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 24
 
 
  1223 0835 EB070000 		.4byte	0x7eb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1277 08ad 0F       		.uleb128 0xf
  1278 08ae 73110000 		.4byte	.LASF176
  1279 08b2 07       		.byte	0x7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 25
 
 
  1280 08b3 8102     		.2byte	0x281
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1334 0924 CE000000 		.4byte	0xce
  1335 0928 00       		.byte	0
  1336 0929 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 26
 
 
  1337 092a 67050000 		.4byte	.LASF184
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1391 0999 24       		.byte	0x24
  1392 099a 0C       		.uleb128 0xc
  1393 099b 6E070000 		.4byte	.LASF194
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 27
 
 
  1394 099f 25       		.byte	0x25
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1448 0a0b 37       		.byte	0x37
  1449 0a0c 0C       		.uleb128 0xc
  1450 0a0d 83050000 		.4byte	.LASF213
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 28
 
 
  1451 0a11 38       		.byte	0x38
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1505 0a74 7800     		.ascii	"x\000"
  1506 0a76 09       		.byte	0x9
  1507 0a77 8E       		.byte	0x8e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 29
 
 
  1508 0a78 1F050000 		.4byte	0x51f
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1562 0ae6 02       		.uleb128 0x2
  1563 0ae7 91       		.byte	0x91
  1564 0ae8 00       		.sleb128 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 30
 
 
  1565 0ae9 1B       		.uleb128 0x1b
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1619 0b49 91       		.byte	0x91
  1620 0b4a 60       		.sleb128 -32
  1621 0b4b 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 31
 
 
  1622 0b4c 2D090000 		.4byte	.LASF227
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1676 0ba0 20       		.uleb128 0x20
  1677 0ba1 3B100000 		.4byte	.LASF250
  1678 0ba5 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 32
 
 
  1679 0ba6 42       		.byte	0x42
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1733 0c19 01       		.uleb128 0x1
  1734 0c1a 50       		.byte	0x50
  1735 0c1b 02       		.uleb128 0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 33
 
 
  1736 0c1c 91       		.byte	0x91
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1790 0c8e 6401     		.2byte	0x164
  1791 0c90 940C0000 		.4byte	0xc94
  1792 0c94 15       		.uleb128 0x15
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 34
 
 
  1793 0c95 730C0000 		.4byte	0xc73
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1847 0d0d 34       		.byte	0x34
  1848 0d0e 29       		.uleb128 0x29
  1849 0d0f 90090000 		.4byte	.LASF245
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 35
 
 
  1850 0d13 90090000 		.4byte	.LASF245
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1904 002b 04       		.uleb128 0x4
  1905 002c 24       		.uleb128 0x24
  1906 002d 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 36
 
 
  1907 002e 0B       		.uleb128 0xb
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  1961 0064 0B       		.uleb128 0xb
  1962 0065 49       		.uleb128 0x49
  1963 0066 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 37
 
 
  1964 0067 38       		.uleb128 0x38
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2018 009d 0B       		.uleb128 0xb
  2019 009e 3B       		.uleb128 0x3b
  2020 009f 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 38
 
 
  2021 00a0 01       		.uleb128 0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2075 00d6 00       		.byte	0
  2076 00d7 14       		.uleb128 0x14
  2077 00d8 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 39
 
 
  2078 00d9 01       		.byte	0x1
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2132 010f 08       		.uleb128 0x8
  2133 0110 3A       		.uleb128 0x3a
  2134 0111 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 40
 
 
  2135 0112 3B       		.uleb128 0x3b
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2189 0149 0E       		.uleb128 0xe
  2190 014a 3A       		.uleb128 0x3a
  2191 014b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 41
 
 
  2192 014c 3B       		.uleb128 0x3b
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2246 0189 01       		.byte	0x1
  2247 018a 3F       		.uleb128 0x3f
  2248 018b 19       		.uleb128 0x19
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 42
 
 
  2249 018c 03       		.uleb128 0x3
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2303 01c3 0E       		.uleb128 0xe
  2304 01c4 3A       		.uleb128 0x3a
  2305 01c5 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 43
 
 
  2306 01c6 3B       		.uleb128 0x3b
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2360 01fe 03       		.uleb128 0x3
  2361 01ff 0E       		.uleb128 0xe
  2362 0200 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 44
 
 
  2363 0201 0B       		.uleb128 0xb
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2417 000c 9F       		.byte	0x9f
  2418 000d 2C000000 		.4byte	.LVL2
  2419 0011 30000000 		.4byte	.LFE560
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 45
 
 
  2420 0015 0100     		.2byte	0x1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2474 0024 3A000000 		.4byte	.LFE562-.LFB562
  2475 0028 00000000 		.4byte	0
  2476 002c 00000000 		.4byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 46
 
 
  2477              		.section	.debug_ranges,"",%progbits
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2504      6F646465 
  2504      6E5C5254 
  2504      4F535F49 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 47
 
 
  2505              	.LASF169:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2528      414E4745 
  2528      5F434F4E 
  2528      445F4F55 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 48
 
 
  2529              	.LASF81:
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2552      32435F41 
  2552      434B00
  2553              	.LASF172:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 49
 
 
  2554 022c 72785269 		.ascii	"rxRingBufSize\000"
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2574      625F6932 
  2574      635F6861 
  2574      6E646C65 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 50
 
 
  2575              	.LASF206:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2591      6D52616D 
  2591      43746C4F 
  2591      66667365 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 51
 
 
  2592              	.LASF150:
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2613      6E69746F 
  2613      724E7200 
  2614              	.LASF215:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 52
 
 
  2615 0507 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CLICK_THS_A\000"
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2635      66675369 
  2635      6F4F6666 
  2635      73657400 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 53
 
 
  2636              	.LASF44:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2657      00
  2658              	.LASF204:
  2659 069f 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_FIFO_SRC_REG_A\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 54
 
 
  2659      30335F52 
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2682              	.LASF194:
  2683 076e 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CTRL_REG6_A\000"
  2683      30335F52 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 55
 
 
  2683      45474953 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2705 0840 76726566 		.ascii	"vrefMvValue\000"
  2705      4D765661 
  2705      6C756500 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 56
 
 
  2706              	.LASF241:
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2729 08e7 6D617374 		.ascii	"masterBufferSize\000"
  2729      65724275 
  2729      66666572 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 57
 
 
  2729      53697A65 
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2752              	.LASF245:
  2753 0990 78546173 		.ascii	"xTaskGetTickCount\000"
  2753      6B476574 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 58
 
 
  2753      5469636B 
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2778              	.LASF143:
  2779 0a39 6D617374 		.ascii	"masterRdDir\000"
  2779      65725264 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 59
 
 
  2779      44697200 
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2801      53746174 
  2801      75734F66 
  2801      66736574 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 60
 
 
  2802              	.LASF226:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2824              	.LASF195:
  2825 0bbd 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_REFERENCE_A\000"
  2825      30335F52 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 61
 
 
  2825      45474953 
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2847      7175656E 
  2847      637900
  2848              	.LASF37:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 62
 
 
  2849 0c7a 69706356 		.ascii	"ipcVersion\000"
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2869 0d4a 73686F72 		.ascii	"short int\000"
  2869      7420696E 
  2869      7400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 63
 
 
  2870              	.LASF237:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2891      50777243 
  2891      746C4F66 
  2891      66736574 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 64
 
 
  2892              	.LASF3:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2913      20756E73 
  2913      69676E65 
  2913      6420696E 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 65
 
 
  2913      7400
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2938              	.LASF208:
  2939 0f7c 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_INT1_DURATION_A\000"
  2939      30335F52 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 66
 
 
  2939      45474953 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2959      00
  2960              	.LASF222:
  2961 1048 746F7461 		.ascii	"total\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 67
 
 
  2961      6C00
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 1
  2983      6E5F7361 
  2983      725F7261 
  2983      6E67655F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccilyJFa.s 			page 68
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccnvpAfj.s 			page 68
 
 
  2983      64657465 

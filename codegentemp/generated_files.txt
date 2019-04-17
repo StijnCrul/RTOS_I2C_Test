@@ -4,6 +4,7 @@
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cyfitter_cfg.h" value="HEADER;;;;;" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cyfitter_sysint_cfg.h" value="HEADER;;;;;Pins and Interrupts" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cyfitter_sysint_cfg.c" value="SOURCE_C;CortexM0p,CortexM4;;;;Pins and Interrupts" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cyfitter_amux.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cyfitter_cfg.c" value="SOURCE_C;CortexM0p;;;;" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cymetadata.c" value="SOURCE_C;CortexM0p,CortexM4;;;;" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\cydevice_trm.h" value="HEADER;;;;;" />
@@ -23,6 +24,8 @@
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADC_PM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADC" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\mI2C.c" value="SOURCE_C;CortexM0p,CortexM4;;;;mI2C" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\mI2C.h" value="HEADER;;;;;mI2C" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\AMuxSeq.c" value="SOURCE_C;CortexM0p,CortexM4;;;;AMuxSeq" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\AMuxSeq.h" value="HEADER;;;;;AMuxSeq" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\UART_SCBCLK.h" value="HEADER;;;;;UART_SCBCLK" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADC_intSarClock.h" value="HEADER;;;;;ADC_intSarClock" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\mI2C_SCBCLK.h" value="HEADER;;;;;mI2C_SCBCLK" />

@@ -30,32 +30,47 @@
 #include "serial.h"
 
 // Structure for master transfer configuration
-cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg =
-{
+cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg ={
     .slaveAddress = LSM303_ADDRESS_ACCEL,
     .buffer       = NULL,
     .bufferSize   = 0U,
     .xferPending  = false
 };
 
-int main(void)
-{
+int main(void){
     // Enable global interrupts
     __enable_irq(); 
     
     // Configure communication interfaces
     UART_Start();
     initI2C();
+    initADC();
     
-    // Initialization of all RTOS tasks
-    static PIN pin = {TEST_PIN_PORT, TEST_PIN_NUM, 10000};
-    static PIN pin2 = {TEST2_PIN_PORT, TEST2_PIN_NUM, 25000};
-    static PIN pin3 = {TEST3_PIN_PORT, TEST3_PIN_NUM, 50000};
-    xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin, 1, NULL);
-    xTaskCreate(BlinkTask, "BlinkTask2", 100, (void*) &pin2, 1, NULL);
-    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin3, 1, NULL);
-    xTaskCreate(ADCTask, "ADCTask", 100, NULL, 2, NULL);
+    // Initialization of all RTOS tasks and variables
+    // Structs for is alive blink
+    static PIN pin0 = {RED_PIN_PORT, RED_PIN_NUM, 10000};
+    static PIN pin1 = {BLUE_PIN_PORT, BLUE_PIN_NUM, 25000};
+    static PIN pin2 = {GREEN_PIN_PORT, GREEN_PIN_NUM, 50000};
+    
+    // Structs for different ADC channels
+    static CH channel0 = {O_0_PORT, O_0_NUM, 10, 0};
+    static CH channel1 = {O_1_PORT, O_1_NUM, 20, 1};
+    static CH channel2 = {O_2_PORT, O_2_NUM, 30, 2};
+    static CH channel3 = {O_3_PORT, O_3_NUM, 40, 3};
+    
+    xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
+    xTaskCreate(BlinkTask, "BlinkTask2", 100, (void*) &pin1, 0, NULL);
+    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);
+    
+    xTaskCreate(ADCTask, "ADCTask", 100, NULL, 2, NULL);  
     xTaskCreate(UARTTask, "UARTTask", 100, NULL, 5, NULL);
+    
+    //Reduce priority for lower speeds
+    xTaskCreate(ADCSampleTask, "ADCSampleTask", 100, (void*) &channel0, 5, NULL);
+    xTaskCreate(ADCSampleTask, "ADCSampleTask", 100, (void*) &channel1, 4, NULL);
+    xTaskCreate(ADCSampleTask, "ADCSampleTask", 100, (void*) &channel2, 3, NULL);
+    xTaskCreate(ADCSampleTask, "ADCSampleTask", 100, (void*) &channel3, 2, NULL);
+    
     xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
     vTaskStartScheduler(); 
     

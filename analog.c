@@ -22,6 +22,15 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+/*
+* Initialize ADC things
+*/
+void initADC(){
+    ADC_Start();
+    ADC_IRQ_Enable();
+    AMuxSeq_Init();
+}
+
 /* 
 * create a task where the data from the ADC (in free running mode) is processed 
 */
@@ -32,21 +41,52 @@ void ADCTask(){
     
     int16_t newReading = 0;
 
-    ADC_Start();
-    ADC_IRQ_Enable();
     ADC_StartConvert();
 
     xLastWakeTime = xTaskGetTickCount();    
     for(;;){
         // Wait for the next cycle determined by xFrequency
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
-        //printf("ADC TASK\r\n");
         if(dataReady != 0){
             dataReady = 0;
             newReading = result;
-            // printf("%d\r\n", newReading);
-            /* Process newReading */
+            // todo: Process newReading
         }
+    }
+}
+
+/* 
+* create a task where the data from the ADC is sampled by the RTOS, set timing and a pin for measurements
+*/
+void ADCSampleTask(void * pvChannel){
+    CH *pxChannel = (CH*) pvChannel;
+    
+    // Variables for creating a periodic function using delayUntil
+    TickType_t xLastWakeTime ;
+    const TickType_t xFrequency = pxChannel->timing;
+    
+    int16_t newReading = 0;
+    int16_t newReading1 = 0;
+    int16_t newReading2 = 0;
+    int16_t newReading3 = 0;
+
+    xLastWakeTime = xTaskGetTickCount();    
+    for(;;){
+        // Wait for the next cycle determined by xFrequency
+        vTaskDelayUntil(&xLastWakeTime, xFrequency);
+        
+        //set a pin high
+        //set channel
+        //do a convert
+        //get result
+        //set a pin low
+        Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 1);
+        while(AMuxSeq_GetChannel() != pxChannel->channel){
+            AMuxSeq_Next();
+        }
+        ADC_StartConvert();
+        Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 0);
+        newReading = ADC_GetResult16(0);
     }
 }
 

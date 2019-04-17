@@ -105,6 +105,7 @@
 #include "UART.h"
 #include "ADC.h"
 #include "mI2C.h"
+#include "AMuxSeq.h"
 #include "UART_SCBCLK.h"
 #include "ADC_intSarClock.h"
 #include "mI2C_SCBCLK.h"
