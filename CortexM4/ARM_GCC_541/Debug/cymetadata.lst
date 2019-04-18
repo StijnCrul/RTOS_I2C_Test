@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 1
 
 
    1              		.syntax unified
@@ -11,7 +11,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
    8              		.eabi_attribute 24, 1
    9              		.eabi_attribute 25, 1
   10              		.eabi_attribute 26, 1
-  11              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 30, 6
   12              		.eabi_attribute 34, 1
   13              		.eabi_attribute 18, 4
   14              		.thumb
@@ -50,15 +50,15 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
   47 0006 00000000 		.4byte	.Ldebug_abbrev0
   48 000a 04       		.byte	0x4
   49 000b 01       		.uleb128 0x1
-  50 000c E9000000 		.4byte	.LASF12
+  50 000c 49000000 		.4byte	.LASF12
   51 0010 0C       		.byte	0xc
-  52 0011 49000000 		.4byte	.LASF13
-  53 0015 99000000 		.4byte	.LASF14
+  52 0011 FC000000 		.4byte	.LASF13
+  53 0015 4C010000 		.4byte	.LASF14
   54 0019 00000000 		.4byte	.Ldebug_line0
   55 001d 02       		.uleb128 0x2
   56 001e 01       		.byte	0x1
   57 001f 06       		.byte	0x6
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 2
 
 
   58 0020 C6010000 		.4byte	.LASF0
@@ -94,7 +94,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
   88 0059 02       		.uleb128 0x2
   89 005a 08       		.byte	0x8
   90 005b 07       		.byte	0x7
-  91 005c 7A000000 		.4byte	.LASF7
+  91 005c 2D010000 		.4byte	.LASF7
   92 0060 04       		.uleb128 0x4
   93 0061 04       		.byte	0x4
   94 0062 05       		.byte	0x5
@@ -102,9 +102,9 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
   96 0067 02       		.uleb128 0x2
   97 0068 04       		.byte	0x4
   98 0069 07       		.byte	0x7
-  99 006a 6D000000 		.4byte	.LASF8
+  99 006a 20010000 		.4byte	.LASF8
  100 006e 03       		.uleb128 0x3
- 101 006f 91000000 		.4byte	.LASF10
+ 101 006f 44010000 		.4byte	.LASF10
  102 0073 02       		.byte	0x2
  103 0074 18       		.byte	0x18
  104 0075 24000000 		.4byte	0x24
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
  112 0089 02       		.uleb128 0x2
  113 008a 04       		.byte	0x4
  114 008b 07       		.byte	0x7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 3
 
 
  115 008c 9C010000 		.4byte	.LASF11
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
  169 0026 00       		.byte	0
  170 0027 04       		.uleb128 0x4
  171 0028 24       		.uleb128 0x24
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 4
 
 
  172 0029 00       		.byte	0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
  226 0004 0200     		.2byte	0x2
  227 0006 00000000 		.4byte	.Ldebug_info0
  228 000a 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 5
 
 
  229 000b 00       		.byte	0
@@ -278,61 +278,61 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 1
  246      7369676E 
  246      65642069 
  246      6E7400
- 247              	.LASF13:
- 248 0049 47656E65 		.ascii	"Generated_Source\\PSoC6\\cymetadata.c\000"
- 248      72617465 
- 248      645F536F 
- 248      75726365 
- 248      5C50536F 
- 249              	.LASF8:
- 250 006d 756E7369 		.ascii	"unsigned int\000"
- 250      676E6564 
- 250      20696E74 
- 250      00
- 251              	.LASF7:
- 252 007a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 252      206C6F6E 
- 252      6720756E 
- 252      7369676E 
- 252      65642069 
- 253              	.LASF10:
- 254 0091 75696E74 		.ascii	"uint8_t\000"
- 254      385F7400 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccf62fxf.s 			page 6
+ 247              	.LASF12:
+ 248 0049 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 248      43313120 
+ 248      352E342E 
+ 248      31203230 
+ 248      31363036 
+ 249 007c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 249      20726576 
+ 249      6973696F 
+ 249      6E203233 
+ 249      37373135 
+ 250 00af 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -O0 -ffunction-s"
+ 250      70202D6D 
+ 250      6670753D 
+ 250      66707634 
+ 250      2D73702D 
+ 251 00e2 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 251      6F6E7320 
+ 251      2D666661 
+ 251      742D6C74 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccgzJSuL.s 			page 6
 
 
- 255              	.LASF14:
- 256 0099 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
- 256      73657273 
- 256      5C737469 
- 256      6A6E5C4F 
- 256      6E654472 
- 257 00c7 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
- 257      43204B6C 
- 257      6F646465 
- 257      6E5C5254 
- 257      4F535F49 
- 258              	.LASF12:
- 259 00e9 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 259      43313120 
- 259      352E342E 
- 259      31203230 
- 259      31363036 
- 260 011c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 260      20726576 
- 260      6973696F 
- 260      6E203233 
- 260      37373135 
- 261 014f 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -Og -ffunction-s"
- 261      70202D6D 
- 261      6670753D 
- 261      66707634 
- 261      2D73702D 
- 262 0182 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 262      6F6E7320 
- 262      2D666661 
- 262      742D6C74 
- 262      6F2D6F62 
+ 251      6F2D6F62 
+ 252              	.LASF13:
+ 253 00fc 47656E65 		.ascii	"Generated_Source\\PSoC6\\cymetadata.c\000"
+ 253      72617465 
+ 253      645F536F 
+ 253      75726365 
+ 253      5C50536F 
+ 254              	.LASF8:
+ 255 0120 756E7369 		.ascii	"unsigned int\000"
+ 255      676E6564 
+ 255      20696E74 
+ 255      00
+ 256              	.LASF7:
+ 257 012d 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 257      206C6F6E 
+ 257      6720756E 
+ 257      7369676E 
+ 257      65642069 
+ 258              	.LASF10:
+ 259 0144 75696E74 		.ascii	"uint8_t\000"
+ 259      385F7400 
+ 260              	.LASF14:
+ 261 014c 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
+ 261      73657273 
+ 261      5C737469 
+ 261      6A6E5C4F 
+ 261      6E654472 
+ 262 017a 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
+ 262      43204B6C 
+ 262      6F646465 
+ 262      6E5C5254 
+ 262      4F535F49 
  263              	.LASF11:
  264 019c 73697A65 		.ascii	"sizetype\000"
  264      74797065 

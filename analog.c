@@ -28,7 +28,6 @@
 void initADC(){
     ADC_Start();
     ADC_IRQ_Enable();
-    AMuxSeq_Init();
 }
 
 /* 
@@ -66,27 +65,18 @@ void ADCSampleTask(void * pvChannel){
     const TickType_t xFrequency = pxChannel->timing;
     
     int16_t newReading = 0;
-    int16_t newReading1 = 0;
-    int16_t newReading2 = 0;
-    int16_t newReading3 = 0;
 
     xLastWakeTime = xTaskGetTickCount();    
     for(;;){
         // Wait for the next cycle determined by xFrequency
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
         
-        //set a pin high
-        //set channel
-        //do a convert
-        //get result
-        //set a pin low
         Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 1);
-        while(AMuxSeq_GetChannel() != pxChannel->channel){
-            AMuxSeq_Next();
-        }
+        AMuxCtrl_Write(pxChannel->channel);
         ADC_StartConvert();
         Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 0);
         newReading = ADC_GetResult16(0);
+        
     }
 }
 

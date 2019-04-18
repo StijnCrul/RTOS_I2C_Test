@@ -539,7 +539,7 @@ function getElementsByClass(rootNode, elemName, className)
 <tr> <td class="prop"> Project :</td>
 <td class="proptext"> RTOS_I2C_Test</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 04/17/19 15:34:57</td></tr>
+<td class="proptext"> 04/18/19 13:33:32</td></tr>
 <tr> <td class="prop"> Device :</td>
 <td class="proptext"> CY8C6247BZI-D54</td></tr>
 <tr> <td class="prop"> Temperature :</td>
@@ -700,8 +700,1091 @@ Clock Summary Section</span>
  <td class = "number"> N/A </td>
  <td class = "text_info"> </td>
 </tr>
+<tr> 
+ <td class = "text_info">AMuxClk_App</td>
+ <td class = "text_info">CyPeriClk_App</td>
+ <td class = "number">12.500&nbsp;MHz</td>
+ <td class = "number">12.500&nbsp;MHz</td>
+ <td class = "number">257.400&nbsp;MHz</td>
+ <td class = "text_info"></td>
+</tr>
 </tbody>
  </table> 
+</div>
+</div>
+<div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Register to Register Section</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Setup Subsection</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Source Clock : AMuxClk_App : Positive edge(Required Frequency 12.5&nbsp;MHz)</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Destination Clock : AMuxClk_App : Positive edge(Required Frequency 12.5&nbsp;MHz)</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec_desc">Path Delay Requirement : 80ns(12.5&nbsp;MHz)</div>
+<table class="sta_tscs">
+ <thead> 
+<tr> 
+<th>Source</th>
+<th>Destination</th>
+<th>FMax</th>
+<th>Delay (ns)</th>
+<th>Slack (ns)</th>
+<th>Violation</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_0</td>
+ <td class = "number">257.400&nbsp;MHz</td>
+ <td class = "number">3.885</td>
+ <td class = "number">76.115</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.390</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_0</td>
+ <td class = "number">1.235</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell3</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">2.260</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_0</td>
+ <td class = "number">257.400&nbsp;MHz</td>
+ <td class = "number">3.885</td>
+ <td class = "number">76.115</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.390</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_0</td>
+ <td class = "number">1.235</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell4</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">2.260</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_2</td>
+ <td class = "number">291.036&nbsp;MHz</td>
+ <td class = "number">3.436</td>
+ <td class = "number">76.564</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.400</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_2</td>
+ <td class = "number">1.196</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell3</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.840</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_2</td>
+ <td class = "number">291.036&nbsp;MHz</td>
+ <td class = "number">3.436</td>
+ <td class = "number">76.564</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.400</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_2</td>
+ <td class = "number">1.196</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell4</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.840</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_2</td>
+ <td class = "number">316.156&nbsp;MHz</td>
+ <td class = "number">3.163</td>
+ <td class = "number">76.837</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.400</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_2</td>
+ <td class = "number">1.123</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.640</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_2</td>
+ <td class = "number">316.156&nbsp;MHz</td>
+ <td class = "number">3.163</td>
+ <td class = "number">76.837</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.400</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_2</td>
+ <td class = "number">1.123</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.640</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_0</td>
+ <td class = "number">340.948&nbsp;MHz</td>
+ <td class = "number">2.933</td>
+ <td class = "number">77.067</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.390</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_0</td>
+ <td class = "number">1.203</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_0</td>
+ <td class = "number">340.948&nbsp;MHz</td>
+ <td class = "number">2.933</td>
+ <td class = "number">77.067</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.390</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_0</td>
+ <td class = "number">1.203</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">1.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+</tbody>
+ </table> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Hold Subsection</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Source Clock : AMuxClk_App : Positive edge</span>
+</a>
+</div><div class="sta_secbody"><div class="sta_sec" >
+<div>
+<a href="#" style="text-decoration: none; color: inherit;">
+<span class="sec_head"><span style="font-family: monospace;">+</span>
+Destination Clock : AMuxClk_App : Positive edge</span>
+</a>
+</div><div class="sta_secbody"><table class="sta_tscs">
+ <thead> 
+<tr> 
+<th>Source</th>
+<th>Destination</th>
+<th>Slack (ns)</th>
+<th>Violation</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_2</td>
+ <td class = "number">1.463</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_2</td>
+ <td class = "number">1.123</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_2</td>
+ <td class = "number">1.463</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_2</td>
+ <td class = "number">1.123</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_0</td>
+ <td class = "number">1.523</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.320</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_0</td>
+ <td class = "number">1.203</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_2</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_0</td>
+ <td class = "number">1.523</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.320</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_0</td>
+ <td class = "number">1.203</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell6</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_3</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_2</td>
+ <td class = "number">1.536</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_2</td>
+ <td class = "number">1.196</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell3</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_2</td>
+ <td class = "number">1.536</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell2</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_2</td>
+ <td class = "number">1.196</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell4</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_0</td>
+ <td class = "number">1.555</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.320</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_0</td>
+ <td class = "number">1.235</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell3</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_0</td>
+ <td class = "number">1.555</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="4">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">macrocell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "number">0.320</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"></td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_0</td>
+ <td class = "number">1.235</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell4</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info">HOLD</td>
+ <td class = "number">0.000</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+</tbody>
+ </table> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </body>

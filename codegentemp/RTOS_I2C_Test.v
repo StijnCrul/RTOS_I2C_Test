@@ -1,6 +1,6 @@
 // ======================================================================
 // RTOS_I2C_Test.v generated from TopDesign.cysch
-// 04/17/2019 at 15:34
+// 04/18/2019 at 13:33
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1888,22 +1888,46 @@ module SCB_I2C_PDL_v2_0_2 (
 
 endmodule
 
-// Component: AMuxSeq_v1_80
+// Component: AMuxHw_v1_50
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
 `endif
 
 `ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80\AMuxSeq_v1_80.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v"
 `else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxSeq_v1_80\AMuxSeq_v1_80.v"
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v"
+`endif
+
+// Component: CyControlReg_v1_80
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v"
 `endif
 
 // top
 module top ;
 
+          wire  Net_664;
+          wire  Net_663;
+          wire  Net_662;
+          wire  Net_661;
+          wire  Net_660;
+          wire  Net_659;
+          wire  Net_658;
+          wire  Net_657;
+          wire  Net_656;
+          wire  Net_655;
+          wire  Net_654;
           wire  Net_141;
           wire  Net_147;
           wire  Net_139;
@@ -1928,11 +1952,13 @@ module top ;
           wire  Net_127;
           wire  Net_126;
           wire  Net_125;
-    electrical  Net_145;
-    electrical  Net_609;
-    electrical  Net_608;
-    electrical  Net_607;
-    electrical  Net_606;
+          wire [1:0] Net_665;
+          wire  Net_652;
+    electrical  Net_643;
+    electrical  Net_642;
+    electrical  Net_641;
+    electrical  Net_640;
+    electrical  Net_639;
     electrical  Net_599;
     electrical  Net_597;
     electrical  Net_595;
@@ -2038,7 +2064,7 @@ module top ;
         .t_fvalid(Net_578),
         .t_fvinternal(Net_579[1:0]),
         .vagnd(Net_580),
-        .vinPlus_0(Net_145));
+        .vinPlus_0(Net_639));
 
 	wire [0:0] tmpFB_0__A0_net;
 	wire [0:0] tmpIO_0__A0_net;
@@ -2072,7 +2098,7 @@ module top ;
 		 (.oe({1'b1}),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__A0_net[0:0]}),
-		  .analog({Net_606}),
+		  .analog({Net_640}),
 		  .io({tmpIO_0__A0_net[0:0]}),
 		  .siovref(tmpSIOVREF__A0_net));
 
@@ -2152,7 +2178,7 @@ module top ;
 		 (.oe({1'b1}),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__A1_net[0:0]}),
-		  .analog({Net_607}),
+		  .analog({Net_641}),
 		  .io({tmpIO_0__A1_net[0:0]}),
 		  .siovref(tmpSIOVREF__A1_net));
 
@@ -2189,7 +2215,7 @@ module top ;
 		 (.oe({1'b1}),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__A2_net[0:0]}),
-		  .analog({Net_608}),
+		  .analog({Net_642}),
 		  .io({tmpIO_0__A2_net[0:0]}),
 		  .siovref(tmpSIOVREF__A2_net));
 
@@ -2226,7 +2252,7 @@ module top ;
 		 (.oe({1'b1}),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__A3_net[0:0]}),
-		  .analog({Net_609}),
+		  .analog({Net_643}),
 		  .io({tmpIO_0__A3_net[0:0]}),
 		  .siovref(tmpSIOVREF__A3_net));
 
@@ -2336,27 +2362,6 @@ module top ;
 		  .siovref(tmpSIOVREF__O_0_net));
 
 
-    // -- AMux AMuxSeq start -- ***
-    // -- Mux A --
-    
-    cy_psoc3_amux_v1_0 AMuxSeq(
-        .muxin({
-            Net_609,
-            Net_608,
-            Net_607,
-            Net_606
-            }),
-        .vout(Net_145)
-        );
-    
-    defparam AMuxSeq.muxin_width = 4;
-    defparam AMuxSeq.init_mux_sel = 4'h0;
-    defparam AMuxSeq.api_type = 1'b1;
-    defparam AMuxSeq.one_active = 1;
-    defparam AMuxSeq.connect_mode = 2;
-    
-    // -- AMux AMuxSeq end --
-
 	wire [0:0] tmpFB_0__O_1_net;
 	wire [0:0] tmpIO_0__O_1_net;
 	electrical [0:0] tmpSIOVREF__O_1_net;
@@ -2464,6 +2469,96 @@ module top ;
 		  .io({tmpIO_0__O_3_net[0:0]}),
 		  .siovref(tmpSIOVREF__O_3_net));
 
+
+    // -- AMuxHw AMuxHw start -- ***
+    
+    // -- AMuxHw Decoder Start--
+    
+    reg [3:0] AMuxHw_Decoder_one_hot;
+    reg [1:0] AMuxHw_Decoder_old_id;
+    wire  AMuxHw_Decoder_is_active;
+    wire  AMuxHw_Decoder_enable;
+    
+    assign AMuxHw_Decoder_enable = 1'b1;
+    
+    genvar AMuxHw_Decoder_i;
+    
+    assign AMuxHw_Decoder_is_active = (Net_665[1:0] == AMuxHw_Decoder_old_id) && AMuxHw_Decoder_enable;
+    
+    always @(posedge Net_652)
+    begin
+        AMuxHw_Decoder_old_id = Net_665[1:0];
+    end
+    
+    generate
+        for (AMuxHw_Decoder_i = 0; AMuxHw_Decoder_i < 4; AMuxHw_Decoder_i = AMuxHw_Decoder_i + 1 )
+        begin : AMuxHw_OutBit
+            always @(posedge Net_652)
+            begin
+                AMuxHw_Decoder_one_hot[AMuxHw_Decoder_i] <= (AMuxHw_Decoder_old_id == AMuxHw_Decoder_i) && AMuxHw_Decoder_is_active;
+            end
+        end
+    endgenerate
+    
+    // -- AMuxHw Decoder End--
+    
+    // -- AMuxHw Primitive A --
+    
+    cy_psoc3_amux_v1_0 #(
+        .muxin_width(4),
+        .hw_control(1),
+        .one_active(1),
+        .init_mux_sel(4'h0),
+        .api_type(2'b10))
+        AMuxHw(
+        .muxin({
+            Net_643,
+            Net_642,
+            Net_641,
+            Net_640
+            }),
+        .hw_ctrl_en(AMuxHw_Decoder_one_hot[3:0]),
+        .vout(Net_639)
+        );
+    
+    // -- AMuxHw AMuxHw end -- ***
+
+
+	cy_clock_v1_0
+		#(.id("5592dc49-7e96-4671-ad36-0105dfe9f22d"),
+		  .source_clock_id("2FB4EC85-8328-4C5A-9ED9-8B63060178EB"),
+		  .divisor(0),
+		  .period("80000000"),
+		  .is_direct(0),
+		  .is_digital(0))
+		AMuxClk
+		 (.clock_out(Net_652));
+
+
+    CyControlReg_v1_80 AMuxCtrl (
+        .control_1(Net_655),
+        .control_2(Net_656),
+        .control_3(Net_657),
+        .control_0(Net_658),
+        .control_4(Net_659),
+        .control_5(Net_660),
+        .control_6(Net_661),
+        .control_7(Net_662),
+        .clock(1'b0),
+        .reset(1'b0),
+        .control_bus(Net_665[1:0]));
+    defparam AMuxCtrl.Bit0Mode = 0;
+    defparam AMuxCtrl.Bit1Mode = 0;
+    defparam AMuxCtrl.Bit2Mode = 0;
+    defparam AMuxCtrl.Bit3Mode = 0;
+    defparam AMuxCtrl.Bit4Mode = 0;
+    defparam AMuxCtrl.Bit5Mode = 0;
+    defparam AMuxCtrl.Bit6Mode = 0;
+    defparam AMuxCtrl.Bit7Mode = 0;
+    defparam AMuxCtrl.BitValue = 0;
+    defparam AMuxCtrl.BusDisplay = 1;
+    defparam AMuxCtrl.ExtrReset = 0;
+    defparam AMuxCtrl.NumOutputs = 2;
 
 
 

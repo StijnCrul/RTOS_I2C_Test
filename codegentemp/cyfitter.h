@@ -21,8 +21,8 @@
 #include "cyfitter_sysint.h"
 
 /* ADC */
-#define ADC_intSarClock__DIV_IDX 2
-#define ADC_intSarClock__DIV_NUM 2
+#define ADC_intSarClock__DIV_IDX 3
+#define ADC_intSarClock__DIV_NUM 3
 #define ADC_intSarClock__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 #define ADC_SAR__HW SAR
 #define ADC_SAR__IDX 0
@@ -35,8 +35,8 @@
 #define UART_SCB__SS1_POSITION 1u
 #define UART_SCB__SS2_POSITION 2u
 #define UART_SCB__SS3_POSITION 3u
-#define UART_SCBCLK__DIV_IDX 1
-#define UART_SCBCLK__DIV_NUM 1
+#define UART_SCBCLK__DIV_IDX 2
+#define UART_SCBCLK__DIV_NUM 2
 #define UART_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
 /* mI2C */
@@ -46,9 +46,46 @@
 #define mI2C_SCB__SS1_POSITION 1u
 #define mI2C_SCB__SS2_POSITION 2u
 #define mI2C_SCB__SS3_POSITION 3u
-#define mI2C_SCBCLK__DIV_IDX 0
-#define mI2C_SCBCLK__DIV_NUM 0
+#define mI2C_SCBCLK__DIV_IDX 1
+#define mI2C_SCBCLK__DIV_NUM 1
 #define mI2C_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* AMuxClk */
+#define AMuxClk__DIV_IDX 0
+#define AMuxClk__DIV_NUM 0
+#define AMuxClk__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* AMuxCtrl */
+#define AMuxCtrl_Sync_ctrl_reg__0__MASK 0x01u
+#define AMuxCtrl_Sync_ctrl_reg__0__POS 0
+#define AMuxCtrl_Sync_ctrl_reg__1__MASK 0x02u
+#define AMuxCtrl_Sync_ctrl_reg__1__POS 1
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_CONTROL_AUX_CTL_REG 0x4034191Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_CONTROL_CONTROL_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_CONTROL_COUNT_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_COUNT_CONTROL_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_COUNT_COUNT_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_MASK_MASK_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_MASK_PERIOD_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_PERIOD_MASK_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__16BIT_PERIOD_PERIOD_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__32BIT_CONTROL_AUX_CTL_REG 0x4034191Cu
+#define AMuxCtrl_Sync_ctrl_reg__32BIT_CONTROL_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__32BIT_COUNT_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__32BIT_PERIOD_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__CONTROL_AUX_CTL_REG 0x4034191Cu
+#define AMuxCtrl_Sync_ctrl_reg__CONTROL_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__CONTROL_ST_REG 0x4034031Cu
+#define AMuxCtrl_Sync_ctrl_reg__COUNT_REG 0x4034171Cu
+#define AMuxCtrl_Sync_ctrl_reg__COUNT_ST_REG 0x4034031Cu
+#define AMuxCtrl_Sync_ctrl_reg__MASK 0x03u
+#define AMuxCtrl_Sync_ctrl_reg__MASK_CTL_AUX_CTL_REG 0x4034041Cu
+#define AMuxCtrl_Sync_ctrl_reg__PER_CTL_AUX_CTL_REG 0x4034041Cu
+#define AMuxCtrl_Sync_ctrl_reg__PERIOD_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__RC_CFG0 0x403426DCu
+#define AMuxCtrl_Sync_ctrl_reg__RC_CFG1 0x403426E0u
+#define AMuxCtrl_Sync_ctrl_reg__SC_CFG0 0x403426D4u
+#define AMuxCtrl_Sync_ctrl_reg__SC_CFG1 0x403426D8u
 
 /* Miscellaneous */
 #define CPUSS__CTI_TR_IN_0 TRIG5_OUT_CPUSS_CTI_TR_IN0
