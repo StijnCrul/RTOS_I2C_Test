@@ -9,22 +9,27 @@
       <Data key="0f29494a-c63e-4158-a298-0050fca8ff03" value="nwr" />
       <Data key="4ec783c4-13f1-469d-a904-6518fb1603df" value="O_2" />
       <Data key="5f722662-09eb-484c-8282-7daba1a78235" value="d_c" />
+      <Data key="6e23469b-0e3e-4572-8d0d-63b4d19b75aa" value="O_6" />
       <Data key="7d947bd7-f2d6-44a7-b97d-3584241cb2d0" value="A2" />
+      <Data key="8a5209dd-92cd-43fd-b50a-21294a142428" value="O_8" />
       <Data key="8fd549b5-ff71-4d6a-941c-7406bae0c12d" value="A5" />
       <Data key="59f93500-1c57-4bfb-9710-637911f7d334" value="O_3" />
       <Data key="75fb289b-33c0-4f24-9ee4-71af7efc77d4/2aab8a93-e7dd-4bd4-8210-42652cd079c5" value="EZI2C_sda" />
       <Data key="75fb289b-33c0-4f24-9ee4-71af7efc77d4/69c3b5e8-b094-4d65-b96b-9f4f3a9a8641" value="EZI2C_scl" />
       <Data key="98c1f1ba-03fe-4cf5-8459-f08b887c0d1c" value="O_1" />
       <Data key="122d9389-0083-4701-afa6-d5a418aa7bf2" value="SW2" />
+      <Data key="540ecf57-fd02-4021-a9b2-b2839e05d3bf" value="O_7" />
       <Data key="576ebb4b-3d23-41b4-b134-9b64b4e485fa" value="A4" />
       <Data key="600c5e9b-9cf3-4b68-9226-ad70057a197f" value="O_0" />
       <Data key="0654abd4-8013-44c2-931a-887ce094a48a" value="nrd" />
       <Data key="670d5443-461e-4675-ad60-5cfda58c15f2" value="A7" />
+      <Data key="791d40ad-aa2f-40fc-92c9-3873f4b2cadf" value="O_5" />
       <Data key="50041db4-519d-4312-82a3-295ed2d3195b" value="A1" />
       <Data key="61584da3-6bcb-4d7a-bd15-7f91744ceff5/2aab8a93-e7dd-4bd4-8210-42652cd079c5" value="mI2C_sda" />
       <Data key="61584da3-6bcb-4d7a-bd15-7f91744ceff5/69c3b5e8-b094-4d65-b96b-9f4f3a9a8641" value="mI2C_scl" />
       <Data key="111584c1-1dc3-4f30-a10b-68015a1cfc46" value="GREEN_PIN" />
       <Data key="0113321b-4a37-46f6-8407-2f8646c68756" value="A0" />
+      <Data key="a55d9e59-accd-4121-94d4-4cd9786ca70c" value="O_4" />
       <Data key="a5026c52-2af3-42ec-95ca-a2016f0d4957/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_tx" />
       <Data key="a5026c52-2af3-42ec-95ca-a2016f0d4957/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_rx" />
       <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="BLUE_PIN" />
@@ -633,9 +638,22 @@
         <Data key="Port Format" value="12,1" />
       </Group>
     </Group>
+    <Group key="6e23469b-0e3e-4572-8d0d-63b4d19b75aa">
+      <Group key="0">
+        <Data key="Port Format" value="10,5" />
+      </Group>
+      <Group key="1">
+        <Data key="Port Format" value="10,6" />
+      </Group>
+    </Group>
     <Group key="7d947bd7-f2d6-44a7-b97d-3584241cb2d0">
       <Group key="0">
         <Data key="Port Format" value="10,2" />
+      </Group>
+    </Group>
+    <Group key="8a5209dd-92cd-43fd-b50a-21294a142428">
+      <Group key="0">
+        <Data key="Port Format" value="9,5" />
       </Group>
     </Group>
     <Group key="8fd549b5-ff71-4d6a-941c-7406bae0c12d">
@@ -668,6 +686,11 @@
         <Data key="Port Format" value="0,4" />
       </Group>
     </Group>
+    <Group key="540ecf57-fd02-4021-a9b2-b2839e05d3bf">
+      <Group key="0">
+        <Data key="Port Format" value="10,4" />
+      </Group>
+    </Group>
     <Group key="576ebb4b-3d23-41b4-b134-9b64b4e485fa">
       <Group key="0">
         <Data key="Port Format" value="10,2" />
@@ -686,6 +709,11 @@
     <Group key="670d5443-461e-4675-ad60-5cfda58c15f2">
       <Group key="0">
         <Data key="Port Format" value="10,7" />
+      </Group>
+    </Group>
+    <Group key="791d40ad-aa2f-40fc-92c9-3873f4b2cadf">
+      <Group key="0">
+        <Data key="Port Format" value="6,2" />
       </Group>
     </Group>
     <Group key="50041db4-519d-4312-82a3-295ed2d3195b">
@@ -711,6 +739,11 @@
     <Group key="0113321b-4a37-46f6-8407-2f8646c68756">
       <Group key="0">
         <Data key="Port Format" value="10,0" />
+      </Group>
+    </Group>
+    <Group key="a55d9e59-accd-4121-94d4-4cd9786ca70c">
+      <Group key="0">
+        <Data key="Port Format" value="9,6" />
       </Group>
     </Group>
     <Group key="a5026c52-2af3-42ec-95ca-a2016f0d4957/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f">

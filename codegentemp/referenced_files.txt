@@ -6,6 +6,7 @@
     <Dir fileName="devices/psoc6/include/ip/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/device/" buildType="OTHER;;;;" />
+    <Dir fileName="drivers/peripheral/dma/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/efuse/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/flash/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/gpio/" buildType="OTHER;;;;" />
@@ -21,6 +22,7 @@
     <Dir fileName="drivers/peripheral/syslib/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/syspm/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/systick/" buildType="OTHER;;;;" />
+    <Dir fileName="drivers/peripheral/tcpwm/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/trigmux/" buildType="OTHER;;;;" />
     <Dir fileName="drivers/peripheral/wdt/" buildType="OTHER;;;;" />
     <Dir fileName="rtos/FreeRTOS/10.0.1/Source/include/" buildType="OTHER;;;;" />
@@ -71,6 +73,10 @@
       </folder>
       <folder folderName="drivers">
         <folder folderName="peripheral">
+          <folder folderName="dma">
+            <file fileName="cy_dma.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\dma\cy_dma.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_dma.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\dma\cy_dma.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+          </folder>
           <folder folderName="efuse">
             <file fileName="cy_efuse.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\efuse\cy_efuse.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
             <file fileName="cy_efuse.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\efuse\cy_efuse.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
@@ -151,6 +157,15 @@
           <folder folderName="systick">
             <file fileName="cy_systick.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\systick\cy_systick.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
             <file fileName="cy_systick.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\systick\cy_systick.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+          </folder>
+          <folder folderName="tcpwm">
+            <file fileName="cy_tcpwm.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_counter.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_counter.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_counter.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_counter.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_pwm.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_pwm.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_pwm.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_pwm.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_quaddec.h" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_quaddec.h" buildType="HEADER;;;;" copyLocal="True" isTemplate="False" />
+            <file fileName="cy_tcpwm_quaddec.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\tcpwm\cy_tcpwm_quaddec.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />
           </folder>
           <folder folderName="trigmux">
             <file fileName="cy_trigmux.c" physicalFilePath="C:\Program Files (x86)\Cypress\PDL\3.1.0\drivers\peripheral\trigmux\cy_trigmux.c" buildType="SOURCE_C;;;;" copyLocal="True" isTemplate="False" />

@@ -40,6 +40,7 @@
     void initADC();
     void ADCTask();
     void ADCSampleTask(void * pvPin);
+    void ADCDMAInit(void);
     void ADC_ISR_Callback(void);
     
     

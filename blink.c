@@ -41,11 +41,11 @@ void BlinkTask(void * pvPin){
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
         
         // Toggle the led and measure execution time
-        xTime1 = xTaskGetTickCount();
+        //xTime1 = xTaskGetTickCount();
         value ^= 1;
         Cy_GPIO_Write(pxPin->port, pxPin->pin, value);
-        xTime2 = xTaskGetTickCount();
-        xExecutionTime = xTime2 - xTime1;
+        //xTime2 = xTaskGetTickCount();
+        //xExecutionTime = xTime2 - xTime1;
         //ShowTicks(xExecutionTime);
     }
 }

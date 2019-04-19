@@ -1,9 +1,9 @@
 /***************************************************************************//**
-* \file     AMuxClk.h
+* \file     Clock_1.h
 * \version  1.0
 *
 * \brief
-* Provides the source code to the API for the AMuxClk Component.
+* Provides the source code to the API for the Clock_1 Component.
 *
 ********************************************************************************
 * \copyright
@@ -13,8 +13,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_AMuxClk_NAME_AMuxClk_H)
-#define CY_AMuxClk_NAME_AMuxClk_H
+#if !defined(CY_Clock_1_NAME_Clock_1_H)
+#define CY_Clock_1_NAME_Clock_1_H
 
 /* For _DIV_TYPE and _DIV_NUM #defines */
 #include "cyfitter.h"
@@ -32,9 +32,9 @@
 * @{
 */
 /** The peripheral clock divider number */
-#define AMuxClk_DIV_NUM ((uint32_t)AMuxClk__DIV_NUM)
+#define Clock_1_DIV_NUM ((uint32_t)Clock_1__DIV_NUM)
 /** The peripheral clock divider type */
-#define AMuxClk_DIV_TYPE ((cy_en_divider_types_t)AMuxClk__DIV_TYPE)
+#define Clock_1_DIV_TYPE ((cy_en_divider_types_t)Clock_1__DIV_TYPE)
 /** @} group_macros */
 
 /***************************************
@@ -47,7 +47,7 @@
 */
 
 /*******************************************************************************
-* Function Name: AMuxClk_Enable
+* Function Name: Clock_1_Enable
 ****************************************************************************//**
 *
 * Enables the programmable clock divider assigned to this Component.
@@ -57,13 +57,13 @@
 * \return None
 *
 *******************************************************************************/
-__STATIC_INLINE void AMuxClk_Enable(void)
+__STATIC_INLINE void Clock_1_Enable(void)
 {
-    (void)Cy_SysClk_PeriphEnableDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM);
+    (void)Cy_SysClk_PeriphEnableDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM);
 }
 
 /*******************************************************************************
-* Function Name: AMuxClk_Disable
+* Function Name: Clock_1_Disable
 ****************************************************************************//**
 *
 * Disables the programmable clock divider assigned to this Component.
@@ -73,17 +73,17 @@ __STATIC_INLINE void AMuxClk_Enable(void)
 * \return None
 *
 *******************************************************************************/
-__STATIC_INLINE void AMuxClk_Disable(void)
+__STATIC_INLINE void Clock_1_Disable(void)
 {
-    (void)Cy_SysClk_PeriphDisableDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM);
+    (void)Cy_SysClk_PeriphDisableDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM);
 }
 
 /*******************************************************************************
-* Function Name: AMuxClk_SetDivider
+* Function Name: Clock_1_SetDivider
 ****************************************************************************//**
 *
 * Sets the value of a programmable clock divider assigned to this Component.
-* This is only used for integer dividers. Use AMuxClk_SetFracDivider()
+* This is only used for integer dividers. Use Clock_1_SetFracDivider()
 * for setting factional dividers.
 *
 * \param dividerValue
@@ -95,18 +95,18 @@ __STATIC_INLINE void AMuxClk_Disable(void)
 * \return None
 *
 *******************************************************************************/
-__STATIC_INLINE void AMuxClk_SetDivider(uint32_t dividerValue)
+__STATIC_INLINE void Clock_1_SetDivider(uint32_t dividerValue)
 {
-    (void)Cy_SysClk_PeriphSetDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM, dividerValue);
+    (void)Cy_SysClk_PeriphSetDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM, dividerValue);
 }
 
 /*******************************************************************************
-* Function Name: AMuxClk_GetDivider
+* Function Name: Clock_1_GetDivider
 ****************************************************************************//**
 *
 * Returns the integer divider value for the programmable clock divider assigned
 * to this Component. This is only used for integer dividers.
-* Use AMuxClk_GetFracDivider() with a fractional divider.
+* Use Clock_1_GetFracDivider() with a fractional divider.
 *
 * \param None
 *
@@ -116,17 +116,17 @@ __STATIC_INLINE void AMuxClk_SetDivider(uint32_t dividerValue)
 * or division by 1 to 256 (8-bit divider) or 1 to 65536 (16-bit divider).
 *
 *******************************************************************************/
-__STATIC_INLINE uint32_t AMuxClk_GetDivider(void)
+__STATIC_INLINE uint32_t Clock_1_GetDivider(void)
 {
-    return Cy_SysClk_PeriphGetDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM);
+    return Cy_SysClk_PeriphGetDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM);
 }
 
 /*******************************************************************************
-* Function Name: AMuxClk_SetFracDivider
+* Function Name: Clock_1_SetFracDivider
 ****************************************************************************//**
 *
 * Sets the values of a programmable clock divider assigned to this Component.
-* This is only used for fractional dividers. Use AMuxClk_SetDivider()
+* This is only used for fractional dividers. Use Clock_1_SetDivider()
 * for setting integer dividers.
 *
 * \param dividerIntValue
@@ -143,18 +143,18 @@ __STATIC_INLINE uint32_t AMuxClk_GetDivider(void)
 * \return None
 *
 *******************************************************************************/
-__STATIC_INLINE void AMuxClk_SetFracDivider(uint32_t dividerIntValue, uint32_t dividerFracValue)
+__STATIC_INLINE void Clock_1_SetFracDivider(uint32_t dividerIntValue, uint32_t dividerFracValue)
 {
-    (void)Cy_SysClk_PeriphSetFracDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM, dividerIntValue, dividerFracValue);
+    (void)Cy_SysClk_PeriphSetFracDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM, dividerIntValue, dividerFracValue);
 }
 
 /*******************************************************************************
-* Function Name: AMuxClk_GetFracDivider
+* Function Name: Clock_1_GetFracDivider
 ****************************************************************************//**
 *
 * Returns the divider values for the programmable clock divider assigned to this
 * Component. This is only used for fractional dividers.
-* Use AMuxClk_GetDivider() with an integer divider.
+* Use Clock_1_GetDivider() with an integer divider.
 *
 * \param *dividerIntValue
 * pointer to return integer divider value
@@ -165,13 +165,13 @@ __STATIC_INLINE void AMuxClk_SetFracDivider(uint32_t dividerIntValue, uint32_t d
 * \return None. Loads pointed-to variables.
 *
 *******************************************************************************/
-__STATIC_INLINE void AMuxClk_GetFracDivider(uint32_t *dividerIntValue, uint32_t *dividerFracValue)
+__STATIC_INLINE void Clock_1_GetFracDivider(uint32_t *dividerIntValue, uint32_t *dividerFracValue)
 {
-    Cy_SysClk_PeriphGetFracDivider(AMuxClk_DIV_TYPE, AMuxClk_DIV_NUM, dividerIntValue, dividerFracValue);
+    Cy_SysClk_PeriphGetFracDivider(Clock_1_DIV_TYPE, Clock_1_DIV_NUM, dividerIntValue, dividerFracValue);
 }
 
 /** @} general */
 
-#endif /* CY_CLOCK_AMuxClk_H */
+#endif /* CY_CLOCK_Clock_1_H */
 
 /* [] END OF FILE */

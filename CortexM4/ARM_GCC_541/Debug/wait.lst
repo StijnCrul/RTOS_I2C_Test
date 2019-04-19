@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 1
 
 
    1              		.syntax unified
@@ -27,7 +27,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
   24              		.thumb_func
   25              		.type	WaitOneUnit, %function
   26              	WaitOneUnit:
-  27              	.LFB562:
+  27              	.LFB736:
   28              		.file 1 "wait.c"
    1:wait.c        **** /*  ____  ____      _    __  __  ____ ___
    2:wait.c        ****  * |  _ \|  _ \    / \  |  \/  |/ ___/ _ \
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
   31              		@ args = 0, pretend = 0, frame = 16
   32              		@ frame_needed = 1, uses_anonymous_args = 0
   33 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 2
 
 
   34              		.cfi_def_cfa_offset 8
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
   75              		.loc 1 37 0
   76 003c 1846     		mov	r0, r3
   77 003e 1037     		adds	r7, r7, #16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 3
 
 
   78              		.cfi_def_cfa_offset 8
@@ -127,7 +127,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
   81              		@ sp needed
   82 0042 80BD     		pop	{r7, pc}
   83              		.cfi_endproc
-  84              	.LFE562:
+  84              	.LFE736:
   85              		.size	WaitOneUnit, .-WaitOneUnit
   86              		.text
   87              	.Letext0:
@@ -137,2664 +137,2936 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 1
   91              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/sar/cy_sar.h"
   92              		.file 6 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_i2c.h"
   93              		.file 7 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/scb/cy_scb_uart.h"
-  94              		.file 8 "Generated_Source\\PSoC6/ADC.h"
-  95              		.file 9 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
-  96              		.file 10 "Generated_Source\\PSoC6/UART.h"
-  97              		.file 11 "Generated_Source\\PSoC6/mI2C.h"
-  98              		.section	.debug_info,"",%progbits
-  99              	.Ldebug_info0:
- 100 0000 BA090000 		.4byte	0x9ba
- 101 0004 0400     		.2byte	0x4
- 102 0006 00000000 		.4byte	.Ldebug_abbrev0
- 103 000a 04       		.byte	0x4
- 104 000b 01       		.uleb128 0x1
- 105 000c 12000000 		.4byte	.LASF189
- 106 0010 0C       		.byte	0xc
- 107 0011 B6060000 		.4byte	.LASF190
- 108 0015 5B040000 		.4byte	.LASF191
- 109 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 110 001d 00000000 		.4byte	0
- 111 0021 00000000 		.4byte	.Ldebug_line0
- 112 0025 02       		.uleb128 0x2
- 113 0026 01       		.byte	0x1
- 114 0027 06       		.byte	0x6
- 115 0028 9B020000 		.4byte	.LASF0
- 116 002c 03       		.uleb128 0x3
- 117 002d 53010000 		.4byte	.LASF2
- 118 0031 02       		.byte	0x2
- 119 0032 1D       		.byte	0x1d
- 120 0033 37000000 		.4byte	0x37
- 121 0037 02       		.uleb128 0x2
- 122 0038 01       		.byte	0x1
- 123 0039 08       		.byte	0x8
- 124 003a 5A080000 		.4byte	.LASF1
- 125 003e 03       		.uleb128 0x3
- 126 003f C7040000 		.4byte	.LASF3
- 127 0043 02       		.byte	0x2
- 128 0044 29       		.byte	0x29
- 129 0045 49000000 		.4byte	0x49
- 130 0049 02       		.uleb128 0x2
- 131 004a 02       		.byte	0x2
- 132 004b 05       		.byte	0x5
- 133 004c B2080000 		.4byte	.LASF4
- 134 0050 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 4
-
-
- 135 0051 D3090000 		.4byte	.LASF5
- 136 0055 02       		.byte	0x2
- 137 0056 2B       		.byte	0x2b
- 138 0057 5B000000 		.4byte	0x5b
- 139 005b 02       		.uleb128 0x2
- 140 005c 02       		.byte	0x2
- 141 005d 07       		.byte	0x7
- 142 005e 17040000 		.4byte	.LASF6
- 143 0062 03       		.uleb128 0x3
- 144 0063 F1090000 		.4byte	.LASF7
- 145 0067 02       		.byte	0x2
- 146 0068 3F       		.byte	0x3f
- 147 0069 6D000000 		.4byte	0x6d
- 148 006d 02       		.uleb128 0x2
- 149 006e 04       		.byte	0x4
- 150 006f 05       		.byte	0x5
- 151 0070 5F030000 		.4byte	.LASF8
- 152 0074 03       		.uleb128 0x3
- 153 0075 50040000 		.4byte	.LASF9
- 154 0079 02       		.byte	0x2
- 155 007a 41       		.byte	0x41
- 156 007b 7F000000 		.4byte	0x7f
- 157 007f 02       		.uleb128 0x2
- 158 0080 04       		.byte	0x4
- 159 0081 07       		.byte	0x7
- 160 0082 8D050000 		.4byte	.LASF10
- 161 0086 02       		.uleb128 0x2
- 162 0087 08       		.byte	0x8
- 163 0088 05       		.byte	0x5
- 164 0089 8D020000 		.4byte	.LASF11
- 165 008d 02       		.uleb128 0x2
- 166 008e 08       		.byte	0x8
- 167 008f 07       		.byte	0x7
- 168 0090 C8010000 		.4byte	.LASF12
- 169 0094 04       		.uleb128 0x4
- 170 0095 04       		.byte	0x4
- 171 0096 05       		.byte	0x5
- 172 0097 696E7400 		.ascii	"int\000"
- 173 009b 02       		.uleb128 0x2
- 174 009c 04       		.byte	0x4
- 175 009d 07       		.byte	0x7
- 176 009e 35050000 		.4byte	.LASF13
- 177 00a2 03       		.uleb128 0x3
- 178 00a3 240B0000 		.4byte	.LASF14
- 179 00a7 03       		.byte	0x3
- 180 00a8 18       		.byte	0x18
- 181 00a9 2C000000 		.4byte	0x2c
- 182 00ad 03       		.uleb128 0x3
- 183 00ae 71020000 		.4byte	.LASF15
- 184 00b2 03       		.byte	0x3
- 185 00b3 20       		.byte	0x20
- 186 00b4 3E000000 		.4byte	0x3e
- 187 00b8 03       		.uleb128 0x3
- 188 00b9 C3030000 		.4byte	.LASF16
- 189 00bd 03       		.byte	0x3
- 190 00be 24       		.byte	0x24
- 191 00bf 50000000 		.4byte	0x50
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 5
-
-
- 192 00c3 03       		.uleb128 0x3
- 193 00c4 52080000 		.4byte	.LASF17
- 194 00c8 03       		.byte	0x3
- 195 00c9 2C       		.byte	0x2c
- 196 00ca 62000000 		.4byte	0x62
- 197 00ce 03       		.uleb128 0x3
- 198 00cf F00B0000 		.4byte	.LASF18
- 199 00d3 03       		.byte	0x3
- 200 00d4 30       		.byte	0x30
- 201 00d5 74000000 		.4byte	0x74
- 202 00d9 02       		.uleb128 0x2
- 203 00da 04       		.byte	0x4
- 204 00db 07       		.byte	0x7
- 205 00dc F7060000 		.4byte	.LASF19
- 206 00e0 05       		.uleb128 0x5
- 207 00e1 CE000000 		.4byte	0xce
- 208 00e5 02       		.uleb128 0x2
- 209 00e6 08       		.byte	0x8
- 210 00e7 04       		.byte	0x4
- 211 00e8 9F090000 		.4byte	.LASF20
- 212 00ec 06       		.uleb128 0x6
- 213 00ed B8       		.byte	0xb8
- 214 00ee 04       		.byte	0x4
- 215 00ef 34       		.byte	0x34
- 216 00f0 FD040000 		.4byte	0x4fd
- 217 00f4 07       		.uleb128 0x7
- 218 00f5 91010000 		.4byte	.LASF21
- 219 00f9 04       		.byte	0x4
- 220 00fa 37       		.byte	0x37
- 221 00fb CE000000 		.4byte	0xce
- 222 00ff 00       		.byte	0
- 223 0100 07       		.uleb128 0x7
- 224 0101 45040000 		.4byte	.LASF22
- 225 0105 04       		.byte	0x4
- 226 0106 38       		.byte	0x38
- 227 0107 CE000000 		.4byte	0xce
- 228 010b 04       		.byte	0x4
- 229 010c 07       		.uleb128 0x7
- 230 010d 91030000 		.4byte	.LASF23
- 231 0111 04       		.byte	0x4
- 232 0112 39       		.byte	0x39
- 233 0113 CE000000 		.4byte	0xce
- 234 0117 08       		.byte	0x8
- 235 0118 07       		.uleb128 0x7
- 236 0119 2B080000 		.4byte	.LASF24
- 237 011d 04       		.byte	0x4
- 238 011e 3A       		.byte	0x3a
- 239 011f CE000000 		.4byte	0xce
- 240 0123 0C       		.byte	0xc
- 241 0124 07       		.uleb128 0x7
- 242 0125 97060000 		.4byte	.LASF25
- 243 0129 04       		.byte	0x4
- 244 012a 3B       		.byte	0x3b
- 245 012b CE000000 		.4byte	0xce
- 246 012f 10       		.byte	0x10
- 247 0130 07       		.uleb128 0x7
- 248 0131 19030000 		.4byte	.LASF26
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 6
-
-
- 249 0135 04       		.byte	0x4
- 250 0136 3C       		.byte	0x3c
- 251 0137 CE000000 		.4byte	0xce
- 252 013b 14       		.byte	0x14
- 253 013c 07       		.uleb128 0x7
- 254 013d 6F0A0000 		.4byte	.LASF27
- 255 0141 04       		.byte	0x4
- 256 0142 3D       		.byte	0x3d
- 257 0143 CE000000 		.4byte	0xce
- 258 0147 18       		.byte	0x18
- 259 0148 07       		.uleb128 0x7
- 260 0149 2E010000 		.4byte	.LASF28
- 261 014d 04       		.byte	0x4
- 262 014e 3E       		.byte	0x3e
- 263 014f CE000000 		.4byte	0xce
- 264 0153 1C       		.byte	0x1c
- 265 0154 07       		.uleb128 0x7
- 266 0155 AD0B0000 		.4byte	.LASF29
- 267 0159 04       		.byte	0x4
- 268 015a 3F       		.byte	0x3f
- 269 015b CE000000 		.4byte	0xce
- 270 015f 20       		.byte	0x20
- 271 0160 07       		.uleb128 0x7
- 272 0161 D4060000 		.4byte	.LASF30
- 273 0165 04       		.byte	0x4
- 274 0166 40       		.byte	0x40
- 275 0167 CE000000 		.4byte	0xce
- 276 016b 24       		.byte	0x24
- 277 016c 07       		.uleb128 0x7
- 278 016d E30B0000 		.4byte	.LASF31
- 279 0171 04       		.byte	0x4
- 280 0172 43       		.byte	0x43
- 281 0173 A2000000 		.4byte	0xa2
- 282 0177 28       		.byte	0x28
- 283 0178 07       		.uleb128 0x7
- 284 0179 14010000 		.4byte	.LASF32
- 285 017d 04       		.byte	0x4
- 286 017e 44       		.byte	0x44
- 287 017f A2000000 		.4byte	0xa2
- 288 0183 29       		.byte	0x29
- 289 0184 07       		.uleb128 0x7
- 290 0185 A30B0000 		.4byte	.LASF33
- 291 0189 04       		.byte	0x4
- 292 018a 45       		.byte	0x45
- 293 018b A2000000 		.4byte	0xa2
- 294 018f 2A       		.byte	0x2a
- 295 0190 07       		.uleb128 0x7
- 296 0191 8D070000 		.4byte	.LASF34
- 297 0195 04       		.byte	0x4
- 298 0196 46       		.byte	0x46
- 299 0197 A2000000 		.4byte	0xa2
- 300 019b 2B       		.byte	0x2b
- 301 019c 07       		.uleb128 0x7
- 302 019d 64060000 		.4byte	.LASF35
- 303 01a1 04       		.byte	0x4
- 304 01a2 47       		.byte	0x47
- 305 01a3 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 7
-
-
- 306 01a7 2C       		.byte	0x2c
- 307 01a8 07       		.uleb128 0x7
- 308 01a9 FB090000 		.4byte	.LASF36
- 309 01ad 04       		.byte	0x4
- 310 01ae 48       		.byte	0x48
- 311 01af A2000000 		.4byte	0xa2
- 312 01b3 2D       		.byte	0x2d
- 313 01b4 07       		.uleb128 0x7
- 314 01b5 EA020000 		.4byte	.LASF37
- 315 01b9 04       		.byte	0x4
- 316 01ba 49       		.byte	0x49
- 317 01bb A2000000 		.4byte	0xa2
- 318 01bf 2E       		.byte	0x2e
- 319 01c0 07       		.uleb128 0x7
- 320 01c1 C4070000 		.4byte	.LASF38
- 321 01c5 04       		.byte	0x4
- 322 01c6 4A       		.byte	0x4a
- 323 01c7 A2000000 		.4byte	0xa2
- 324 01cb 2F       		.byte	0x2f
- 325 01cc 07       		.uleb128 0x7
- 326 01cd 5F050000 		.4byte	.LASF39
- 327 01d1 04       		.byte	0x4
- 328 01d2 4B       		.byte	0x4b
- 329 01d3 A2000000 		.4byte	0xa2
- 330 01d7 30       		.byte	0x30
- 331 01d8 07       		.uleb128 0x7
- 332 01d9 E0050000 		.4byte	.LASF40
- 333 01dd 04       		.byte	0x4
- 334 01de 4E       		.byte	0x4e
- 335 01df A2000000 		.4byte	0xa2
- 336 01e3 31       		.byte	0x31
- 337 01e4 07       		.uleb128 0x7
- 338 01e5 45010000 		.4byte	.LASF41
- 339 01e9 04       		.byte	0x4
- 340 01ea 4F       		.byte	0x4f
- 341 01eb A2000000 		.4byte	0xa2
- 342 01ef 32       		.byte	0x32
- 343 01f0 07       		.uleb128 0x7
- 344 01f1 EB050000 		.4byte	.LASF42
- 345 01f5 04       		.byte	0x4
- 346 01f6 50       		.byte	0x50
- 347 01f7 A2000000 		.4byte	0xa2
- 348 01fb 33       		.byte	0x33
- 349 01fc 07       		.uleb128 0x7
- 350 01fd 69010000 		.4byte	.LASF43
- 351 0201 04       		.byte	0x4
- 352 0202 51       		.byte	0x51
- 353 0203 A2000000 		.4byte	0xa2
- 354 0207 34       		.byte	0x34
- 355 0208 07       		.uleb128 0x7
- 356 0209 620A0000 		.4byte	.LASF44
- 357 020d 04       		.byte	0x4
- 358 020e 52       		.byte	0x52
- 359 020f AD000000 		.4byte	0xad
- 360 0213 36       		.byte	0x36
- 361 0214 07       		.uleb128 0x7
- 362 0215 62090000 		.4byte	.LASF45
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 8
-
-
- 363 0219 04       		.byte	0x4
- 364 021a 53       		.byte	0x53
- 365 021b AD000000 		.4byte	0xad
- 366 021f 38       		.byte	0x38
- 367 0220 07       		.uleb128 0x7
- 368 0221 DF0A0000 		.4byte	.LASF46
- 369 0225 04       		.byte	0x4
- 370 0226 54       		.byte	0x54
- 371 0227 AD000000 		.4byte	0xad
- 372 022b 3A       		.byte	0x3a
- 373 022c 07       		.uleb128 0x7
- 374 022d 0A030000 		.4byte	.LASF47
- 375 0231 04       		.byte	0x4
- 376 0232 55       		.byte	0x55
- 377 0233 A2000000 		.4byte	0xa2
- 378 0237 3C       		.byte	0x3c
- 379 0238 07       		.uleb128 0x7
- 380 0239 E8030000 		.4byte	.LASF48
- 381 023d 04       		.byte	0x4
- 382 023e 56       		.byte	0x56
- 383 023f A2000000 		.4byte	0xa2
- 384 0243 3D       		.byte	0x3d
- 385 0244 07       		.uleb128 0x7
- 386 0245 C00A0000 		.4byte	.LASF49
- 387 0249 04       		.byte	0x4
- 388 024a 57       		.byte	0x57
- 389 024b A2000000 		.4byte	0xa2
- 390 024f 3E       		.byte	0x3e
- 391 0250 07       		.uleb128 0x7
- 392 0251 22010000 		.4byte	.LASF50
- 393 0255 04       		.byte	0x4
- 394 0256 58       		.byte	0x58
- 395 0257 A2000000 		.4byte	0xa2
- 396 025b 3F       		.byte	0x3f
- 397 025c 07       		.uleb128 0x7
- 398 025d 9B070000 		.4byte	.LASF51
- 399 0261 04       		.byte	0x4
- 400 0262 59       		.byte	0x59
- 401 0263 A2000000 		.4byte	0xa2
- 402 0267 40       		.byte	0x40
- 403 0268 07       		.uleb128 0x7
- 404 0269 AB040000 		.4byte	.LASF52
- 405 026d 04       		.byte	0x4
- 406 026e 5A       		.byte	0x5a
- 407 026f A2000000 		.4byte	0xa2
- 408 0273 41       		.byte	0x41
- 409 0274 07       		.uleb128 0x7
- 410 0275 3F070000 		.4byte	.LASF53
- 411 0279 04       		.byte	0x4
- 412 027a 5B       		.byte	0x5b
- 413 027b A2000000 		.4byte	0xa2
- 414 027f 42       		.byte	0x42
- 415 0280 07       		.uleb128 0x7
- 416 0281 79070000 		.4byte	.LASF54
- 417 0285 04       		.byte	0x4
- 418 0286 5C       		.byte	0x5c
- 419 0287 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 9
-
-
- 420 028b 43       		.byte	0x43
- 421 028c 07       		.uleb128 0x7
- 422 028d 9A030000 		.4byte	.LASF55
- 423 0291 04       		.byte	0x4
- 424 0292 5D       		.byte	0x5d
- 425 0293 A2000000 		.4byte	0xa2
- 426 0297 44       		.byte	0x44
- 427 0298 07       		.uleb128 0x7
- 428 0299 00000000 		.4byte	.LASF56
- 429 029d 04       		.byte	0x4
- 430 029e 5E       		.byte	0x5e
- 431 029f CE000000 		.4byte	0xce
- 432 02a3 48       		.byte	0x48
- 433 02a4 07       		.uleb128 0x7
- 434 02a5 83030000 		.4byte	.LASF57
- 435 02a9 04       		.byte	0x4
- 436 02aa 5F       		.byte	0x5f
- 437 02ab CE000000 		.4byte	0xce
- 438 02af 4C       		.byte	0x4c
- 439 02b0 07       		.uleb128 0x7
- 440 02b1 F90B0000 		.4byte	.LASF58
- 441 02b5 04       		.byte	0x4
- 442 02b6 60       		.byte	0x60
- 443 02b7 A2000000 		.4byte	0xa2
- 444 02bb 50       		.byte	0x50
- 445 02bc 07       		.uleb128 0x7
- 446 02bd 22020000 		.4byte	.LASF59
- 447 02c1 04       		.byte	0x4
- 448 02c2 61       		.byte	0x61
- 449 02c3 A2000000 		.4byte	0xa2
- 450 02c7 51       		.byte	0x51
- 451 02c8 07       		.uleb128 0x7
- 452 02c9 090B0000 		.4byte	.LASF60
- 453 02cd 04       		.byte	0x4
- 454 02ce 62       		.byte	0x62
- 455 02cf A2000000 		.4byte	0xa2
- 456 02d3 52       		.byte	0x52
- 457 02d4 07       		.uleb128 0x7
- 458 02d5 080A0000 		.4byte	.LASF61
- 459 02d9 04       		.byte	0x4
- 460 02da 63       		.byte	0x63
- 461 02db A2000000 		.4byte	0xa2
- 462 02df 53       		.byte	0x53
- 463 02e0 07       		.uleb128 0x7
- 464 02e1 52090000 		.4byte	.LASF62
- 465 02e5 04       		.byte	0x4
- 466 02e6 64       		.byte	0x64
- 467 02e7 A2000000 		.4byte	0xa2
- 468 02eb 54       		.byte	0x54
- 469 02ec 07       		.uleb128 0x7
- 470 02ed 5D020000 		.4byte	.LASF63
- 471 02f1 04       		.byte	0x4
- 472 02f2 65       		.byte	0x65
- 473 02f3 A2000000 		.4byte	0xa2
- 474 02f7 55       		.byte	0x55
- 475 02f8 07       		.uleb128 0x7
- 476 02f9 B0090000 		.4byte	.LASF64
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 10
-
-
- 477 02fd 04       		.byte	0x4
- 478 02fe 66       		.byte	0x66
- 479 02ff A2000000 		.4byte	0xa2
- 480 0303 56       		.byte	0x56
- 481 0304 07       		.uleb128 0x7
- 482 0305 F7050000 		.4byte	.LASF65
- 483 0309 04       		.byte	0x4
- 484 030a 67       		.byte	0x67
- 485 030b A2000000 		.4byte	0xa2
- 486 030f 57       		.byte	0x57
- 487 0310 07       		.uleb128 0x7
- 488 0311 CF000000 		.4byte	.LASF66
- 489 0315 04       		.byte	0x4
- 490 0316 68       		.byte	0x68
- 491 0317 A2000000 		.4byte	0xa2
- 492 031b 58       		.byte	0x58
- 493 031c 07       		.uleb128 0x7
- 494 031d 68080000 		.4byte	.LASF67
- 495 0321 04       		.byte	0x4
- 496 0322 69       		.byte	0x69
- 497 0323 A2000000 		.4byte	0xa2
- 498 0327 59       		.byte	0x59
- 499 0328 07       		.uleb128 0x7
- 500 0329 00070000 		.4byte	.LASF68
- 501 032d 04       		.byte	0x4
- 502 032e 6E       		.byte	0x6e
- 503 032f B8000000 		.4byte	0xb8
- 504 0333 5A       		.byte	0x5a
- 505 0334 07       		.uleb128 0x7
- 506 0335 410A0000 		.4byte	.LASF69
- 507 0339 04       		.byte	0x4
- 508 033a 6F       		.byte	0x6f
- 509 033b B8000000 		.4byte	0xb8
- 510 033f 5C       		.byte	0x5c
- 511 0340 07       		.uleb128 0x7
- 512 0341 9B010000 		.4byte	.LASF70
- 513 0345 04       		.byte	0x4
- 514 0346 70       		.byte	0x70
- 515 0347 A2000000 		.4byte	0xa2
- 516 034b 5E       		.byte	0x5e
- 517 034c 07       		.uleb128 0x7
- 518 034d FD070000 		.4byte	.LASF71
- 519 0351 04       		.byte	0x4
- 520 0352 71       		.byte	0x71
- 521 0353 A2000000 		.4byte	0xa2
- 522 0357 5F       		.byte	0x5f
- 523 0358 07       		.uleb128 0x7
- 524 0359 68070000 		.4byte	.LASF72
- 525 035d 04       		.byte	0x4
- 526 035e 72       		.byte	0x72
- 527 035f A2000000 		.4byte	0xa2
- 528 0363 60       		.byte	0x60
- 529 0364 07       		.uleb128 0x7
- 530 0365 D6070000 		.4byte	.LASF73
- 531 0369 04       		.byte	0x4
- 532 036a 73       		.byte	0x73
- 533 036b CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 11
-
-
- 534 036f 64       		.byte	0x64
- 535 0370 07       		.uleb128 0x7
- 536 0371 DF010000 		.4byte	.LASF74
- 537 0375 04       		.byte	0x4
- 538 0376 76       		.byte	0x76
- 539 0377 B8000000 		.4byte	0xb8
- 540 037b 68       		.byte	0x68
- 541 037c 07       		.uleb128 0x7
- 542 037d 7B050000 		.4byte	.LASF75
- 543 0381 04       		.byte	0x4
- 544 0382 77       		.byte	0x77
- 545 0383 B8000000 		.4byte	0xb8
- 546 0387 6A       		.byte	0x6a
- 547 0388 07       		.uleb128 0x7
- 548 0389 22060000 		.4byte	.LASF76
- 549 038d 04       		.byte	0x4
- 550 038e 78       		.byte	0x78
- 551 038f B8000000 		.4byte	0xb8
- 552 0393 6C       		.byte	0x6c
- 553 0394 07       		.uleb128 0x7
- 554 0395 6D090000 		.4byte	.LASF77
- 555 0399 04       		.byte	0x4
- 556 039a 79       		.byte	0x79
- 557 039b B8000000 		.4byte	0xb8
- 558 039f 6E       		.byte	0x6e
- 559 03a0 07       		.uleb128 0x7
- 560 03a1 F6080000 		.4byte	.LASF78
- 561 03a5 04       		.byte	0x4
- 562 03a6 7B       		.byte	0x7b
- 563 03a7 A2000000 		.4byte	0xa2
- 564 03ab 70       		.byte	0x70
- 565 03ac 07       		.uleb128 0x7
- 566 03ad A7020000 		.4byte	.LASF79
- 567 03b1 04       		.byte	0x4
- 568 03b2 7C       		.byte	0x7c
- 569 03b3 A2000000 		.4byte	0xa2
- 570 03b7 71       		.byte	0x71
- 571 03b8 07       		.uleb128 0x7
- 572 03b9 B50B0000 		.4byte	.LASF80
- 573 03bd 04       		.byte	0x4
- 574 03be 7D       		.byte	0x7d
- 575 03bf A2000000 		.4byte	0xa2
- 576 03c3 72       		.byte	0x72
- 577 03c4 07       		.uleb128 0x7
- 578 03c5 28070000 		.4byte	.LASF81
- 579 03c9 04       		.byte	0x4
- 580 03ca 7E       		.byte	0x7e
- 581 03cb A2000000 		.4byte	0xa2
- 582 03cf 73       		.byte	0x73
- 583 03d0 07       		.uleb128 0x7
- 584 03d1 05040000 		.4byte	.LASF82
- 585 03d5 04       		.byte	0x4
- 586 03d6 80       		.byte	0x80
- 587 03d7 B8000000 		.4byte	0xb8
- 588 03db 74       		.byte	0x74
- 589 03dc 07       		.uleb128 0x7
- 590 03dd DE090000 		.4byte	.LASF83
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 12
-
-
- 591 03e1 04       		.byte	0x4
- 592 03e2 81       		.byte	0x81
- 593 03e3 B8000000 		.4byte	0xb8
- 594 03e7 76       		.byte	0x76
- 595 03e8 07       		.uleb128 0x7
- 596 03e9 D3030000 		.4byte	.LASF84
- 597 03ed 04       		.byte	0x4
- 598 03ee 82       		.byte	0x82
- 599 03ef B8000000 		.4byte	0xb8
- 600 03f3 78       		.byte	0x78
- 601 03f4 07       		.uleb128 0x7
- 602 03f5 9D080000 		.4byte	.LASF85
- 603 03f9 04       		.byte	0x4
- 604 03fa 83       		.byte	0x83
- 605 03fb B8000000 		.4byte	0xb8
- 606 03ff 7A       		.byte	0x7a
- 607 0400 07       		.uleb128 0x7
- 608 0401 410B0000 		.4byte	.LASF86
- 609 0405 04       		.byte	0x4
- 610 0406 86       		.byte	0x86
- 611 0407 A2000000 		.4byte	0xa2
- 612 040b 7C       		.byte	0x7c
- 613 040c 07       		.uleb128 0x7
- 614 040d 53060000 		.4byte	.LASF87
- 615 0411 04       		.byte	0x4
- 616 0412 87       		.byte	0x87
- 617 0413 A2000000 		.4byte	0xa2
- 618 0417 7D       		.byte	0x7d
- 619 0418 07       		.uleb128 0x7
- 620 0419 E3000000 		.4byte	.LASF88
- 621 041d 04       		.byte	0x4
- 622 041e 88       		.byte	0x88
- 623 041f A2000000 		.4byte	0xa2
- 624 0423 7E       		.byte	0x7e
- 625 0424 07       		.uleb128 0x7
- 626 0425 2A040000 		.4byte	.LASF89
- 627 0429 04       		.byte	0x4
- 628 042a 89       		.byte	0x89
- 629 042b A2000000 		.4byte	0xa2
- 630 042f 7F       		.byte	0x7f
- 631 0430 07       		.uleb128 0x7
- 632 0431 0C050000 		.4byte	.LASF90
- 633 0435 04       		.byte	0x4
- 634 0436 8A       		.byte	0x8a
- 635 0437 A2000000 		.4byte	0xa2
- 636 043b 80       		.byte	0x80
- 637 043c 07       		.uleb128 0x7
- 638 043d BD060000 		.4byte	.LASF91
- 639 0441 04       		.byte	0x4
- 640 0442 8D       		.byte	0x8d
- 641 0443 CE000000 		.4byte	0xce
- 642 0447 84       		.byte	0x84
- 643 0448 07       		.uleb128 0x7
- 644 0449 7A010000 		.4byte	.LASF92
- 645 044d 04       		.byte	0x4
- 646 044e 8E       		.byte	0x8e
- 647 044f CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 13
-
-
- 648 0453 88       		.byte	0x88
- 649 0454 07       		.uleb128 0x7
- 650 0455 2C0B0000 		.4byte	.LASF93
- 651 0459 04       		.byte	0x4
- 652 045a 8F       		.byte	0x8f
- 653 045b CE000000 		.4byte	0xce
- 654 045f 8C       		.byte	0x8c
- 655 0460 07       		.uleb128 0x7
- 656 0461 20050000 		.4byte	.LASF94
- 657 0465 04       		.byte	0x4
- 658 0466 90       		.byte	0x90
- 659 0467 CE000000 		.4byte	0xce
- 660 046b 90       		.byte	0x90
- 661 046c 07       		.uleb128 0x7
- 662 046d DF040000 		.4byte	.LASF95
- 663 0471 04       		.byte	0x4
- 664 0472 91       		.byte	0x91
- 665 0473 CE000000 		.4byte	0xce
- 666 0477 94       		.byte	0x94
- 667 0478 07       		.uleb128 0x7
- 668 0479 A0060000 		.4byte	.LASF96
- 669 047d 04       		.byte	0x4
- 670 047e 92       		.byte	0x92
- 671 047f CE000000 		.4byte	0xce
- 672 0483 98       		.byte	0x98
- 673 0484 07       		.uleb128 0x7
- 674 0485 CF080000 		.4byte	.LASF97
- 675 0489 04       		.byte	0x4
- 676 048a 93       		.byte	0x93
- 677 048b CE000000 		.4byte	0xce
- 678 048f 9C       		.byte	0x9c
- 679 0490 07       		.uleb128 0x7
- 680 0491 F9010000 		.4byte	.LASF98
- 681 0495 04       		.byte	0x4
- 682 0496 94       		.byte	0x94
- 683 0497 CE000000 		.4byte	0xce
- 684 049b A0       		.byte	0xa0
- 685 049c 07       		.uleb128 0x7
- 686 049d F5020000 		.4byte	.LASF99
- 687 04a1 04       		.byte	0x4
- 688 04a2 95       		.byte	0x95
- 689 04a3 B8000000 		.4byte	0xb8
- 690 04a7 A4       		.byte	0xa4
- 691 04a8 07       		.uleb128 0x7
- 692 04a9 F40A0000 		.4byte	.LASF100
- 693 04ad 04       		.byte	0x4
- 694 04ae 96       		.byte	0x96
- 695 04af B8000000 		.4byte	0xb8
- 696 04b3 A6       		.byte	0xa6
- 697 04b4 07       		.uleb128 0x7
- 698 04b5 F1070000 		.4byte	.LASF101
- 699 04b9 04       		.byte	0x4
- 700 04ba 97       		.byte	0x97
- 701 04bb B8000000 		.4byte	0xb8
- 702 04bf A8       		.byte	0xa8
- 703 04c0 07       		.uleb128 0x7
- 704 04c1 B6070000 		.4byte	.LASF102
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 14
-
-
- 705 04c5 04       		.byte	0x4
- 706 04c6 98       		.byte	0x98
- 707 04c7 B8000000 		.4byte	0xb8
- 708 04cb AA       		.byte	0xaa
- 709 04cc 07       		.uleb128 0x7
- 710 04cd 31060000 		.4byte	.LASF103
- 711 04d1 04       		.byte	0x4
- 712 04d2 99       		.byte	0x99
- 713 04d3 B8000000 		.4byte	0xb8
- 714 04d7 AC       		.byte	0xac
- 715 04d8 07       		.uleb128 0x7
- 716 04d9 37010000 		.4byte	.LASF104
- 717 04dd 04       		.byte	0x4
- 718 04de 9A       		.byte	0x9a
- 719 04df B8000000 		.4byte	0xb8
- 720 04e3 AE       		.byte	0xae
- 721 04e4 07       		.uleb128 0x7
- 722 04e5 4A0A0000 		.4byte	.LASF105
- 723 04e9 04       		.byte	0x4
- 724 04ea 9D       		.byte	0x9d
- 725 04eb B8000000 		.4byte	0xb8
- 726 04ef B0       		.byte	0xb0
- 727 04f0 07       		.uleb128 0x7
- 728 04f1 89080000 		.4byte	.LASF106
- 729 04f5 04       		.byte	0x4
- 730 04f6 9E       		.byte	0x9e
- 731 04f7 CE000000 		.4byte	0xce
- 732 04fb B4       		.byte	0xb4
- 733 04fc 00       		.byte	0
- 734 04fd 03       		.uleb128 0x3
- 735 04fe 7C060000 		.4byte	.LASF107
- 736 0502 04       		.byte	0x4
- 737 0503 9F       		.byte	0x9f
- 738 0504 EC000000 		.4byte	0xec
- 739 0508 02       		.uleb128 0x2
- 740 0509 01       		.byte	0x1
- 741 050a 08       		.byte	0x8
- 742 050b AB090000 		.4byte	.LASF108
- 743 050f 02       		.uleb128 0x2
- 744 0510 04       		.byte	0x4
- 745 0511 04       		.byte	0x4
- 746 0512 D0070000 		.4byte	.LASF109
- 747 0516 02       		.uleb128 0x2
- 748 0517 08       		.byte	0x8
- 749 0518 04       		.byte	0x4
- 750 0519 CC030000 		.4byte	.LASF110
- 751 051d 08       		.uleb128 0x8
- 752 051e 04       		.byte	0x4
- 753 051f CE000000 		.4byte	0xce
- 754 0523 09       		.uleb128 0x9
- 755 0524 04       		.byte	0x4
- 756 0525 02       		.uleb128 0x2
- 757 0526 01       		.byte	0x1
- 758 0527 02       		.byte	0x2
- 759 0528 4C080000 		.4byte	.LASF111
- 760 052c 0A       		.uleb128 0xa
- 761 052d 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 15
-
-
- 762 052e 37000000 		.4byte	0x37
- 763 0532 05       		.byte	0x5
- 764 0533 1304     		.2byte	0x413
- 765 0535 52050000 		.4byte	0x552
- 766 0539 0B       		.uleb128 0xb
- 767 053a 23030000 		.4byte	.LASF112
- 768 053e 00       		.byte	0
- 769 053f 0B       		.uleb128 0xb
- 770 0540 33080000 		.4byte	.LASF113
- 771 0544 01       		.byte	0x1
- 772 0545 0B       		.uleb128 0xb
- 773 0546 AB030000 		.4byte	.LASF114
- 774 054a 02       		.byte	0x2
- 775 054b 0B       		.uleb128 0xb
- 776 054c 560B0000 		.4byte	.LASF115
- 777 0550 03       		.byte	0x3
- 778 0551 00       		.byte	0
- 779 0552 0C       		.uleb128 0xc
- 780 0553 BC020000 		.4byte	.LASF116
- 781 0557 05       		.byte	0x5
- 782 0558 1804     		.2byte	0x418
- 783 055a 2C050000 		.4byte	0x52c
- 784 055e 0D       		.uleb128 0xd
- 785 055f 78       		.byte	0x78
- 786 0560 05       		.byte	0x5
- 787 0561 0205     		.2byte	0x502
- 788 0563 2B060000 		.4byte	0x62b
- 789 0567 0E       		.uleb128 0xe
- 790 0568 DA040000 		.4byte	.LASF117
- 791 056c 05       		.byte	0x5
- 792 056d 0405     		.2byte	0x504
- 793 056f CE000000 		.4byte	0xce
- 794 0573 00       		.byte	0
- 795 0574 0E       		.uleb128 0xe
- 796 0575 190B0000 		.4byte	.LASF118
- 797 0579 05       		.byte	0x5
- 798 057a 0505     		.2byte	0x505
- 799 057c CE000000 		.4byte	0xce
- 800 0580 04       		.byte	0x4
- 801 0581 0E       		.uleb128 0xe
- 802 0582 15060000 		.4byte	.LASF119
- 803 0586 05       		.byte	0x5
- 804 0587 0605     		.2byte	0x506
- 805 0589 CE000000 		.4byte	0xce
- 806 058d 08       		.byte	0x8
- 807 058e 0E       		.uleb128 0xe
- 808 058f 1B070000 		.4byte	.LASF120
- 809 0593 05       		.byte	0x5
- 810 0594 0705     		.2byte	0x507
- 811 0596 CE000000 		.4byte	0xce
- 812 059a 0C       		.byte	0xc
- 813 059b 0E       		.uleb128 0xe
- 814 059c 3F060000 		.4byte	.LASF121
- 815 05a0 05       		.byte	0x5
- 816 05a1 0805     		.2byte	0x508
- 817 05a3 CE000000 		.4byte	0xce
- 818 05a7 10       		.byte	0x10
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 16
-
-
- 819 05a8 0E       		.uleb128 0xe
- 820 05a9 CE0A0000 		.4byte	.LASF122
- 821 05ad 05       		.byte	0x5
- 822 05ae 0905     		.2byte	0x509
- 823 05b0 52050000 		.4byte	0x552
- 824 05b4 14       		.byte	0x14
- 825 05b5 0E       		.uleb128 0xe
- 826 05b6 24080000 		.4byte	.LASF123
- 827 05ba 05       		.byte	0x5
- 828 05bb 0A05     		.2byte	0x50a
- 829 05bd CE000000 		.4byte	0xce
- 830 05c1 18       		.byte	0x18
- 831 05c2 0E       		.uleb128 0xe
- 832 05c3 8C060000 		.4byte	.LASF124
- 833 05c7 05       		.byte	0x5
- 834 05c8 0B05     		.2byte	0x50b
- 835 05ca 2B060000 		.4byte	0x62b
- 836 05ce 1C       		.byte	0x1c
- 837 05cf 0E       		.uleb128 0xe
- 838 05d0 C6080000 		.4byte	.LASF125
- 839 05d4 05       		.byte	0x5
- 840 05d5 0C05     		.2byte	0x50c
- 841 05d7 CE000000 		.4byte	0xce
- 842 05db 5C       		.byte	0x5c
- 843 05dc 0E       		.uleb128 0xe
- 844 05dd AA010000 		.4byte	.LASF126
- 845 05e1 05       		.byte	0x5
- 846 05e2 0D05     		.2byte	0x50d
- 847 05e4 CE000000 		.4byte	0xce
- 848 05e8 60       		.byte	0x60
- 849 05e9 0E       		.uleb128 0xe
- 850 05ea A8070000 		.4byte	.LASF127
- 851 05ee 05       		.byte	0x5
- 852 05ef 0E05     		.2byte	0x50e
- 853 05f1 CE000000 		.4byte	0xce
- 854 05f5 64       		.byte	0x64
- 855 05f6 0E       		.uleb128 0xe
- 856 05f7 BC080000 		.4byte	.LASF128
- 857 05fb 05       		.byte	0x5
- 858 05fc 0F05     		.2byte	0x50f
- 859 05fe CE000000 		.4byte	0xce
- 860 0602 68       		.byte	0x68
- 861 0603 0E       		.uleb128 0xe
- 862 0604 930B0000 		.4byte	.LASF129
- 863 0608 05       		.byte	0x5
- 864 0609 1005     		.2byte	0x510
- 865 060b CE000000 		.4byte	0xce
- 866 060f 6C       		.byte	0x6c
- 867 0610 0E       		.uleb128 0xe
- 868 0611 4B070000 		.4byte	.LASF130
- 869 0615 05       		.byte	0x5
- 870 0616 1105     		.2byte	0x511
- 871 0618 25050000 		.4byte	0x525
- 872 061c 70       		.byte	0x70
- 873 061d 0E       		.uleb128 0xe
- 874 061e 93090000 		.4byte	.LASF131
- 875 0622 05       		.byte	0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 17
-
-
- 876 0623 1205     		.2byte	0x512
- 877 0625 CE000000 		.4byte	0xce
- 878 0629 74       		.byte	0x74
- 879 062a 00       		.byte	0
- 880 062b 0F       		.uleb128 0xf
- 881 062c CE000000 		.4byte	0xce
- 882 0630 3B060000 		.4byte	0x63b
- 883 0634 10       		.uleb128 0x10
- 884 0635 D9000000 		.4byte	0xd9
- 885 0639 0F       		.byte	0xf
- 886 063a 00       		.byte	0
- 887 063b 0C       		.uleb128 0xc
- 888 063c 79020000 		.4byte	.LASF132
- 889 0640 05       		.byte	0x5
- 890 0641 1305     		.2byte	0x513
- 891 0643 5E050000 		.4byte	0x55e
- 892 0647 0A       		.uleb128 0xa
- 893 0648 01       		.byte	0x1
- 894 0649 37000000 		.4byte	0x37
- 895 064d 06       		.byte	0x6
- 896 064e 2402     		.2byte	0x224
- 897 0650 61060000 		.4byte	0x661
- 898 0654 0B       		.uleb128 0xb
- 899 0655 59070000 		.4byte	.LASF133
- 900 0659 00       		.byte	0
- 901 065a 0B       		.uleb128 0xb
- 902 065b 74030000 		.4byte	.LASF134
- 903 065f 01       		.byte	0x1
- 904 0660 00       		.byte	0
- 905 0661 0C       		.uleb128 0xc
- 906 0662 DF060000 		.4byte	.LASF135
- 907 0666 06       		.byte	0x6
- 908 0667 2702     		.2byte	0x227
- 909 0669 47060000 		.4byte	0x647
- 910 066d 0C       		.uleb128 0xc
- 911 066e 41030000 		.4byte	.LASF136
- 912 0672 06       		.byte	0x6
- 913 0673 3902     		.2byte	0x239
- 914 0675 79060000 		.4byte	0x679
- 915 0679 08       		.uleb128 0x8
- 916 067a 04       		.byte	0x4
- 917 067b 7F060000 		.4byte	0x67f
- 918 067f 11       		.uleb128 0x11
- 919 0680 8A060000 		.4byte	0x68a
- 920 0684 12       		.uleb128 0x12
- 921 0685 CE000000 		.4byte	0xce
- 922 0689 00       		.byte	0
- 923 068a 0C       		.uleb128 0xc
- 924 068b 16090000 		.4byte	.LASF137
- 925 068f 06       		.byte	0x6
- 926 0690 4402     		.2byte	0x244
- 927 0692 96060000 		.4byte	0x696
- 928 0696 08       		.uleb128 0x8
- 929 0697 04       		.byte	0x4
- 930 0698 9C060000 		.4byte	0x69c
- 931 069c 13       		.uleb128 0x13
- 932 069d 61060000 		.4byte	0x661
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 18
-
-
- 933 06a1 AB060000 		.4byte	0x6ab
- 934 06a5 12       		.uleb128 0x12
- 935 06a6 CE000000 		.4byte	0xce
- 936 06aa 00       		.byte	0
- 937 06ab 14       		.uleb128 0x14
- 938 06ac 46020000 		.4byte	.LASF161
- 939 06b0 4C       		.byte	0x4c
- 940 06b1 06       		.byte	0x6
- 941 06b2 C302     		.2byte	0x2c3
- 942 06b4 CA070000 		.4byte	0x7ca
- 943 06b8 0E       		.uleb128 0xe
- 944 06b9 580A0000 		.4byte	.LASF138
- 945 06bd 06       		.byte	0x6
- 946 06be C602     		.2byte	0x2c6
- 947 06c0 25050000 		.4byte	0x525
- 948 06c4 00       		.byte	0
- 949 06c5 0E       		.uleb128 0xe
- 950 06c6 0B060000 		.4byte	.LASF139
- 951 06ca 06       		.byte	0x6
- 952 06cb C702     		.2byte	0x2c7
- 953 06cd 25050000 		.4byte	0x525
- 954 06d1 01       		.byte	0x1
- 955 06d2 0E       		.uleb128 0xe
- 956 06d3 3B030000 		.4byte	.LASF140
- 957 06d7 06       		.byte	0x6
- 958 06d8 C902     		.2byte	0x2c9
- 959 06da E0000000 		.4byte	0xe0
- 960 06de 04       		.byte	0x4
- 961 06df 0E       		.uleb128 0xe
- 962 06e0 0F020000 		.4byte	.LASF141
- 963 06e4 06       		.byte	0x6
- 964 06e5 CB02     		.2byte	0x2cb
- 965 06e7 E0000000 		.4byte	0xe0
- 966 06eb 08       		.byte	0x8
- 967 06ec 0E       		.uleb128 0xe
- 968 06ed 0A090000 		.4byte	.LASF142
- 969 06f1 06       		.byte	0x6
- 970 06f2 CC02     		.2byte	0x2cc
- 971 06f4 25050000 		.4byte	0x525
- 972 06f8 0C       		.byte	0xc
- 973 06f9 0E       		.uleb128 0xe
- 974 06fa 68030000 		.4byte	.LASF143
- 975 06fe 06       		.byte	0x6
- 976 06ff CD02     		.2byte	0x2cd
- 977 0701 25050000 		.4byte	0x525
- 978 0705 0D       		.byte	0xd
- 979 0706 0E       		.uleb128 0xe
- 980 0707 07010000 		.4byte	.LASF144
- 981 070b 06       		.byte	0x6
- 982 070c CF02     		.2byte	0x2cf
- 983 070e CA070000 		.4byte	0x7ca
- 984 0712 10       		.byte	0x10
- 985 0713 0E       		.uleb128 0xe
- 986 0714 E5080000 		.4byte	.LASF145
- 987 0718 06       		.byte	0x6
- 988 0719 D002     		.2byte	0x2d0
- 989 071b CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 19
-
-
- 990 071f 14       		.byte	0x14
- 991 0720 0E       		.uleb128 0xe
- 992 0721 0B070000 		.4byte	.LASF146
- 993 0725 06       		.byte	0x6
- 994 0726 D102     		.2byte	0x2d1
- 995 0728 E0000000 		.4byte	0xe0
- 996 072c 18       		.byte	0x18
- 997 072d 0E       		.uleb128 0xe
- 998 072e 32090000 		.4byte	.LASF147
- 999 0732 06       		.byte	0x6
- 1000 0733 D202     		.2byte	0x2d2
- 1001 0735 E0000000 		.4byte	0xe0
- 1002 0739 1C       		.byte	0x1c
- 1003 073a 0E       		.uleb128 0xe
- 1004 073b 5D010000 		.4byte	.LASF148
- 1005 073f 06       		.byte	0x6
- 1006 0740 D402     		.2byte	0x2d4
- 1007 0742 E0000000 		.4byte	0xe0
- 1008 0746 20       		.byte	0x20
- 1009 0747 0E       		.uleb128 0xe
- 1010 0748 6B050000 		.4byte	.LASF149
- 1011 074c 06       		.byte	0x6
- 1012 074d D502     		.2byte	0x2d5
- 1013 074f D0070000 		.4byte	0x7d0
- 1014 0753 24       		.byte	0x24
- 1015 0754 0E       		.uleb128 0xe
- 1016 0755 860A0000 		.4byte	.LASF150
- 1017 0759 06       		.byte	0x6
- 1018 075a D702     		.2byte	0x2d7
- 1019 075c CA070000 		.4byte	0x7ca
- 1020 0760 28       		.byte	0x28
- 1021 0761 0E       		.uleb128 0xe
- 1022 0762 940A0000 		.4byte	.LASF151
- 1023 0766 06       		.byte	0x6
- 1024 0767 D802     		.2byte	0x2d8
- 1025 0769 CE000000 		.4byte	0xce
- 1026 076d 2C       		.byte	0x2c
- 1027 076e 0E       		.uleb128 0xe
- 1028 076f 4E050000 		.4byte	.LASF152
- 1029 0773 06       		.byte	0x6
- 1030 0774 D902     		.2byte	0x2d9
- 1031 0776 E0000000 		.4byte	0xe0
- 1032 077a 30       		.byte	0x30
- 1033 077b 0E       		.uleb128 0xe
- 1034 077c 41090000 		.4byte	.LASF153
- 1035 0780 06       		.byte	0x6
- 1036 0781 DA02     		.2byte	0x2da
- 1037 0783 E0000000 		.4byte	0xe0
- 1038 0787 34       		.byte	0x34
- 1039 0788 0E       		.uleb128 0xe
- 1040 0789 FE040000 		.4byte	.LASF154
- 1041 078d 06       		.byte	0x6
- 1042 078e DC02     		.2byte	0x2dc
- 1043 0790 CA070000 		.4byte	0x7ca
- 1044 0794 38       		.byte	0x38
- 1045 0795 0E       		.uleb128 0xe
- 1046 0796 34020000 		.4byte	.LASF155
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 20
-
-
- 1047 079a 06       		.byte	0x6
- 1048 079b DD02     		.2byte	0x2dd
- 1049 079d CE000000 		.4byte	0xce
- 1050 07a1 3C       		.byte	0x3c
- 1051 07a2 0E       		.uleb128 0xe
- 1052 07a3 F6000000 		.4byte	.LASF156
- 1053 07a7 06       		.byte	0x6
- 1054 07a8 DE02     		.2byte	0x2de
- 1055 07aa E0000000 		.4byte	0xe0
- 1056 07ae 40       		.byte	0x40
- 1057 07af 0E       		.uleb128 0xe
- 1058 07b0 4A060000 		.4byte	.LASF157
- 1059 07b4 06       		.byte	0x6
- 1060 07b5 E402     		.2byte	0x2e4
- 1061 07b7 6D060000 		.4byte	0x66d
- 1062 07bb 44       		.byte	0x44
- 1063 07bc 0E       		.uleb128 0xe
- 1064 07bd 3E040000 		.4byte	.LASF158
- 1065 07c1 06       		.byte	0x6
- 1066 07c2 EB02     		.2byte	0x2eb
- 1067 07c4 8A060000 		.4byte	0x68a
- 1068 07c8 48       		.byte	0x48
- 1069 07c9 00       		.byte	0
- 1070 07ca 08       		.uleb128 0x8
- 1071 07cb 04       		.byte	0x4
- 1072 07cc A2000000 		.4byte	0xa2
- 1073 07d0 05       		.uleb128 0x5
- 1074 07d1 25050000 		.4byte	0x525
- 1075 07d5 0C       		.uleb128 0xc
- 1076 07d6 7A090000 		.4byte	.LASF159
- 1077 07da 06       		.byte	0x6
- 1078 07db EE02     		.2byte	0x2ee
- 1079 07dd AB060000 		.4byte	0x6ab
- 1080 07e1 0C       		.uleb128 0xc
- 1081 07e2 AC050000 		.4byte	.LASF160
- 1082 07e6 07       		.byte	0x7
- 1083 07e7 D901     		.2byte	0x1d9
- 1084 07e9 79060000 		.4byte	0x679
- 1085 07ed 14       		.uleb128 0x14
- 1086 07ee CB0B0000 		.4byte	.LASF162
- 1087 07f2 38       		.byte	0x38
- 1088 07f3 07       		.byte	0x7
- 1089 07f4 7502     		.2byte	0x275
- 1090 07f6 B1080000 		.4byte	0x8b1
- 1091 07fa 0E       		.uleb128 0xe
- 1092 07fb 8A0B0000 		.4byte	.LASF163
- 1093 07ff 07       		.byte	0x7
- 1094 0800 7802     		.2byte	0x278
- 1095 0802 E0000000 		.4byte	0xe0
- 1096 0806 00       		.byte	0
- 1097 0807 0E       		.uleb128 0xe
- 1098 0808 84070000 		.4byte	.LASF164
- 1099 080c 07       		.byte	0x7
- 1100 080d 7902     		.2byte	0x279
- 1101 080f E0000000 		.4byte	0xe0
- 1102 0813 04       		.byte	0x4
- 1103 0814 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 21
-
-
- 1104 0815 EF010000 		.4byte	.LASF165
- 1105 0819 07       		.byte	0x7
- 1106 081a 7B02     		.2byte	0x27b
- 1107 081c 23050000 		.4byte	0x523
- 1108 0820 08       		.byte	0x8
- 1109 0821 0E       		.uleb128 0xe
- 1110 0822 280A0000 		.4byte	.LASF166
- 1111 0826 07       		.byte	0x7
- 1112 0827 7C02     		.2byte	0x27c
- 1113 0829 CE000000 		.4byte	0xce
- 1114 082d 0C       		.byte	0xc
- 1115 082e 0E       		.uleb128 0xe
- 1116 082f 1A0A0000 		.4byte	.LASF167
- 1117 0833 07       		.byte	0x7
- 1118 0834 7D02     		.2byte	0x27d
- 1119 0836 E0000000 		.4byte	0xe0
- 1120 083a 10       		.byte	0x10
- 1121 083b 0E       		.uleb128 0xe
- 1122 083c 700B0000 		.4byte	.LASF168
- 1123 0840 07       		.byte	0x7
- 1124 0841 7E02     		.2byte	0x27e
- 1125 0843 E0000000 		.4byte	0xe0
- 1126 0847 14       		.byte	0x14
- 1127 0848 0E       		.uleb128 0xe
- 1128 0849 800A0000 		.4byte	.LASF169
- 1129 084d 07       		.byte	0x7
- 1130 084e 8002     		.2byte	0x280
- 1131 0850 23050000 		.4byte	0x523
- 1132 0854 18       		.byte	0x18
- 1133 0855 0E       		.uleb128 0xe
- 1134 0856 C5000000 		.4byte	.LASF170
- 1135 085a 07       		.byte	0x7
- 1136 085b 8102     		.2byte	0x281
- 1137 085d CE000000 		.4byte	0xce
- 1138 0861 1C       		.byte	0x1c
- 1139 0862 0E       		.uleb128 0xe
- 1140 0863 D1040000 		.4byte	.LASF171
- 1141 0867 07       		.byte	0x7
- 1142 0868 8202     		.2byte	0x282
- 1143 086a E0000000 		.4byte	0xe0
- 1144 086e 20       		.byte	0x20
- 1145 086f 0E       		.uleb128 0xe
- 1146 0870 1C020000 		.4byte	.LASF172
- 1147 0874 07       		.byte	0x7
- 1148 0875 8402     		.2byte	0x284
- 1149 0877 23050000 		.4byte	0x523
- 1150 087b 24       		.byte	0x24
- 1151 087c 0E       		.uleb128 0xe
- 1152 087d F4040000 		.4byte	.LASF173
- 1153 0881 07       		.byte	0x7
- 1154 0882 8502     		.2byte	0x285
- 1155 0884 CE000000 		.4byte	0xce
- 1156 0888 28       		.byte	0x28
- 1157 0889 0E       		.uleb128 0xe
- 1158 088a 13080000 		.4byte	.LASF174
- 1159 088e 07       		.byte	0x7
- 1160 088f 8602     		.2byte	0x286
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 22
-
-
- 1161 0891 E0000000 		.4byte	0xe0
- 1162 0895 2C       		.byte	0x2c
- 1163 0896 0E       		.uleb128 0xe
- 1164 0897 4A060000 		.4byte	.LASF157
- 1165 089b 07       		.byte	0x7
- 1166 089c 8B02     		.2byte	0x28b
- 1167 089e E1070000 		.4byte	0x7e1
- 1168 08a2 30       		.byte	0x30
- 1169 08a3 0E       		.uleb128 0xe
- 1170 08a4 780A0000 		.4byte	.LASF175
- 1171 08a8 07       		.byte	0x7
- 1172 08a9 8E02     		.2byte	0x28e
- 1173 08ab CE000000 		.4byte	0xce
- 1174 08af 34       		.byte	0x34
- 1175 08b0 00       		.byte	0
- 1176 08b1 0C       		.uleb128 0xc
- 1177 08b2 A60A0000 		.4byte	.LASF176
- 1178 08b6 07       		.byte	0x7
- 1179 08b7 9102     		.2byte	0x291
- 1180 08b9 ED070000 		.4byte	0x7ed
- 1181 08bd 06       		.uleb128 0x6
- 1182 08be 14       		.byte	0x14
- 1183 08bf 08       		.byte	0x8
- 1184 08c0 3B       		.byte	0x3b
- 1185 08c1 02090000 		.4byte	0x902
- 1186 08c5 07       		.uleb128 0x7
- 1187 08c6 7E0B0000 		.4byte	.LASF177
- 1188 08ca 08       		.byte	0x8
- 1189 08cb 3D       		.byte	0x3d
- 1190 08cc CE000000 		.4byte	0xce
- 1191 08d0 00       		.byte	0
- 1192 08d1 07       		.uleb128 0x7
- 1193 08d2 70060000 		.4byte	.LASF178
- 1194 08d6 08       		.byte	0x8
- 1195 08d7 3E       		.byte	0x3e
- 1196 08d8 CE000000 		.4byte	0xce
- 1197 08dc 04       		.byte	0x4
- 1198 08dd 07       		.uleb128 0x7
- 1199 08de BB040000 		.4byte	.LASF179
- 1200 08e2 08       		.byte	0x8
- 1201 08e3 3F       		.byte	0x3f
- 1202 08e4 02090000 		.4byte	0x902
- 1203 08e8 08       		.byte	0x8
- 1204 08e9 07       		.uleb128 0x7
- 1205 08ea 360A0000 		.4byte	.LASF180
- 1206 08ee 08       		.byte	0x8
- 1207 08ef 40       		.byte	0x40
- 1208 08f0 CE000000 		.4byte	0xce
- 1209 08f4 0C       		.byte	0xc
- 1210 08f5 07       		.uleb128 0x7
- 1211 08f6 DF020000 		.4byte	.LASF181
- 1212 08fa 08       		.byte	0x8
- 1213 08fb 45       		.byte	0x45
- 1214 08fc CE000000 		.4byte	0xce
- 1215 0900 10       		.byte	0x10
- 1216 0901 00       		.byte	0
- 1217 0902 08       		.uleb128 0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 23
-
-
- 1218 0903 04       		.byte	0x4
- 1219 0904 08090000 		.4byte	0x908
- 1220 0908 15       		.uleb128 0x15
- 1221 0909 3B060000 		.4byte	0x63b
- 1222 090d 03       		.uleb128 0x3
- 1223 090e F3030000 		.4byte	.LASF182
- 1224 0912 08       		.byte	0x8
- 1225 0913 48       		.byte	0x48
- 1226 0914 BD080000 		.4byte	0x8bd
- 1227 0918 16       		.uleb128 0x16
- 1228 0919 42050000 		.4byte	.LASF192
- 1229 091d 01       		.byte	0x1
- 1230 091e 18       		.byte	0x18
- 1231 091f 25050000 		.4byte	0x525
- 1232 0923 00000000 		.4byte	.LFB562
- 1233 0927 44000000 		.4byte	.LFE562-.LFB562
- 1234 092b 01       		.uleb128 0x1
- 1235 092c 9C       		.byte	0x9c
- 1236 092d 4E090000 		.4byte	0x94e
- 1237 0931 17       		.uleb128 0x17
- 1238 0932 CB050000 		.4byte	.LASF193
- 1239 0936 01       		.byte	0x1
- 1240 0937 18       		.byte	0x18
- 1241 0938 1D050000 		.4byte	0x51d
- 1242 093c 02       		.uleb128 0x2
- 1243 093d 91       		.byte	0x91
- 1244 093e 6C       		.sleb128 -20
- 1245 093f 18       		.uleb128 0x18
- 1246 0940 D80A0000 		.4byte	.LASF194
- 1247 0944 01       		.byte	0x1
- 1248 0945 19       		.byte	0x19
- 1249 0946 CE000000 		.4byte	0xce
- 1250 094a 02       		.uleb128 0x2
- 1251 094b 91       		.byte	0x91
- 1252 094c 74       		.sleb128 -12
- 1253 094d 00       		.byte	0
- 1254 094e 19       		.uleb128 0x19
- 1255 094f 7C080000 		.4byte	.LASF183
- 1256 0953 09       		.byte	0x9
- 1257 0954 F907     		.2byte	0x7f9
- 1258 0956 5A090000 		.4byte	0x95a
- 1259 095a 05       		.uleb128 0x5
- 1260 095b C3000000 		.4byte	0xc3
- 1261 095f 1A       		.uleb128 0x1a
- 1262 0960 E7070000 		.4byte	.LASF184
- 1263 0964 04       		.byte	0x4
- 1264 0965 A7       		.byte	0xa7
- 1265 0966 6A090000 		.4byte	0x96a
- 1266 096a 08       		.uleb128 0x8
- 1267 096b 04       		.byte	0x4
- 1268 096c 70090000 		.4byte	0x970
- 1269 0970 15       		.uleb128 0x15
- 1270 0971 FD040000 		.4byte	0x4fd
- 1271 0975 1A       		.uleb128 0x1a
- 1272 0976 D3050000 		.4byte	.LASF185
- 1273 097a 0A       		.byte	0xa
- 1274 097b 87       		.byte	0x87
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 24
-
-
- 1275 097c B1080000 		.4byte	0x8b1
- 1276 0980 19       		.uleb128 0x19
- 1277 0981 B6010000 		.4byte	.LASF186
- 1278 0985 08       		.byte	0x8
- 1279 0986 6001     		.2byte	0x160
- 1280 0988 CE000000 		.4byte	0xce
- 1281 098c 0F       		.uleb128 0xf
- 1282 098d 9C090000 		.4byte	0x99c
- 1283 0991 9C090000 		.4byte	0x99c
- 1284 0995 10       		.uleb128 0x10
- 1285 0996 D9000000 		.4byte	0xd9
- 1286 099a 00       		.byte	0
- 1287 099b 00       		.byte	0
- 1288 099c 15       		.uleb128 0x15
- 1289 099d 0D090000 		.4byte	0x90d
- 1290 09a1 19       		.uleb128 0x19
- 1291 09a2 C4090000 		.4byte	.LASF187
- 1292 09a6 08       		.byte	0x8
- 1293 09a7 6401     		.2byte	0x164
- 1294 09a9 AD090000 		.4byte	0x9ad
- 1295 09ad 15       		.uleb128 0x15
- 1296 09ae 8C090000 		.4byte	0x98c
- 1297 09b2 1A       		.uleb128 0x1a
- 1298 09b3 9F050000 		.4byte	.LASF188
- 1299 09b7 0B       		.byte	0xb
- 1300 09b8 7F       		.byte	0x7f
- 1301 09b9 D5070000 		.4byte	0x7d5
- 1302 09bd 00       		.byte	0
- 1303              		.section	.debug_abbrev,"",%progbits
- 1304              	.Ldebug_abbrev0:
- 1305 0000 01       		.uleb128 0x1
- 1306 0001 11       		.uleb128 0x11
- 1307 0002 01       		.byte	0x1
- 1308 0003 25       		.uleb128 0x25
- 1309 0004 0E       		.uleb128 0xe
- 1310 0005 13       		.uleb128 0x13
- 1311 0006 0B       		.uleb128 0xb
- 1312 0007 03       		.uleb128 0x3
- 1313 0008 0E       		.uleb128 0xe
- 1314 0009 1B       		.uleb128 0x1b
- 1315 000a 0E       		.uleb128 0xe
- 1316 000b 55       		.uleb128 0x55
- 1317 000c 17       		.uleb128 0x17
- 1318 000d 11       		.uleb128 0x11
- 1319 000e 01       		.uleb128 0x1
- 1320 000f 10       		.uleb128 0x10
- 1321 0010 17       		.uleb128 0x17
- 1322 0011 00       		.byte	0
- 1323 0012 00       		.byte	0
- 1324 0013 02       		.uleb128 0x2
- 1325 0014 24       		.uleb128 0x24
- 1326 0015 00       		.byte	0
- 1327 0016 0B       		.uleb128 0xb
- 1328 0017 0B       		.uleb128 0xb
- 1329 0018 3E       		.uleb128 0x3e
- 1330 0019 0B       		.uleb128 0xb
- 1331 001a 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 25
-
-
- 1332 001b 0E       		.uleb128 0xe
- 1333 001c 00       		.byte	0
- 1334 001d 00       		.byte	0
- 1335 001e 03       		.uleb128 0x3
- 1336 001f 16       		.uleb128 0x16
- 1337 0020 00       		.byte	0
- 1338 0021 03       		.uleb128 0x3
- 1339 0022 0E       		.uleb128 0xe
- 1340 0023 3A       		.uleb128 0x3a
- 1341 0024 0B       		.uleb128 0xb
- 1342 0025 3B       		.uleb128 0x3b
- 1343 0026 0B       		.uleb128 0xb
- 1344 0027 49       		.uleb128 0x49
- 1345 0028 13       		.uleb128 0x13
- 1346 0029 00       		.byte	0
- 1347 002a 00       		.byte	0
- 1348 002b 04       		.uleb128 0x4
- 1349 002c 24       		.uleb128 0x24
- 1350 002d 00       		.byte	0
- 1351 002e 0B       		.uleb128 0xb
- 1352 002f 0B       		.uleb128 0xb
- 1353 0030 3E       		.uleb128 0x3e
- 1354 0031 0B       		.uleb128 0xb
- 1355 0032 03       		.uleb128 0x3
- 1356 0033 08       		.uleb128 0x8
- 1357 0034 00       		.byte	0
- 1358 0035 00       		.byte	0
- 1359 0036 05       		.uleb128 0x5
- 1360 0037 35       		.uleb128 0x35
- 1361 0038 00       		.byte	0
- 1362 0039 49       		.uleb128 0x49
- 1363 003a 13       		.uleb128 0x13
- 1364 003b 00       		.byte	0
- 1365 003c 00       		.byte	0
- 1366 003d 06       		.uleb128 0x6
- 1367 003e 13       		.uleb128 0x13
- 1368 003f 01       		.byte	0x1
- 1369 0040 0B       		.uleb128 0xb
- 1370 0041 0B       		.uleb128 0xb
- 1371 0042 3A       		.uleb128 0x3a
- 1372 0043 0B       		.uleb128 0xb
- 1373 0044 3B       		.uleb128 0x3b
- 1374 0045 0B       		.uleb128 0xb
- 1375 0046 01       		.uleb128 0x1
- 1376 0047 13       		.uleb128 0x13
- 1377 0048 00       		.byte	0
- 1378 0049 00       		.byte	0
- 1379 004a 07       		.uleb128 0x7
- 1380 004b 0D       		.uleb128 0xd
- 1381 004c 00       		.byte	0
- 1382 004d 03       		.uleb128 0x3
- 1383 004e 0E       		.uleb128 0xe
- 1384 004f 3A       		.uleb128 0x3a
- 1385 0050 0B       		.uleb128 0xb
- 1386 0051 3B       		.uleb128 0x3b
- 1387 0052 0B       		.uleb128 0xb
- 1388 0053 49       		.uleb128 0x49
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 26
-
-
- 1389 0054 13       		.uleb128 0x13
- 1390 0055 38       		.uleb128 0x38
- 1391 0056 0B       		.uleb128 0xb
- 1392 0057 00       		.byte	0
- 1393 0058 00       		.byte	0
- 1394 0059 08       		.uleb128 0x8
- 1395 005a 0F       		.uleb128 0xf
- 1396 005b 00       		.byte	0
- 1397 005c 0B       		.uleb128 0xb
- 1398 005d 0B       		.uleb128 0xb
- 1399 005e 49       		.uleb128 0x49
- 1400 005f 13       		.uleb128 0x13
- 1401 0060 00       		.byte	0
- 1402 0061 00       		.byte	0
- 1403 0062 09       		.uleb128 0x9
- 1404 0063 0F       		.uleb128 0xf
- 1405 0064 00       		.byte	0
- 1406 0065 0B       		.uleb128 0xb
- 1407 0066 0B       		.uleb128 0xb
- 1408 0067 00       		.byte	0
- 1409 0068 00       		.byte	0
- 1410 0069 0A       		.uleb128 0xa
- 1411 006a 04       		.uleb128 0x4
- 1412 006b 01       		.byte	0x1
- 1413 006c 0B       		.uleb128 0xb
- 1414 006d 0B       		.uleb128 0xb
- 1415 006e 49       		.uleb128 0x49
- 1416 006f 13       		.uleb128 0x13
- 1417 0070 3A       		.uleb128 0x3a
- 1418 0071 0B       		.uleb128 0xb
- 1419 0072 3B       		.uleb128 0x3b
- 1420 0073 05       		.uleb128 0x5
- 1421 0074 01       		.uleb128 0x1
- 1422 0075 13       		.uleb128 0x13
- 1423 0076 00       		.byte	0
- 1424 0077 00       		.byte	0
- 1425 0078 0B       		.uleb128 0xb
- 1426 0079 28       		.uleb128 0x28
- 1427 007a 00       		.byte	0
- 1428 007b 03       		.uleb128 0x3
- 1429 007c 0E       		.uleb128 0xe
- 1430 007d 1C       		.uleb128 0x1c
- 1431 007e 0B       		.uleb128 0xb
- 1432 007f 00       		.byte	0
- 1433 0080 00       		.byte	0
- 1434 0081 0C       		.uleb128 0xc
- 1435 0082 16       		.uleb128 0x16
- 1436 0083 00       		.byte	0
- 1437 0084 03       		.uleb128 0x3
- 1438 0085 0E       		.uleb128 0xe
- 1439 0086 3A       		.uleb128 0x3a
- 1440 0087 0B       		.uleb128 0xb
- 1441 0088 3B       		.uleb128 0x3b
- 1442 0089 05       		.uleb128 0x5
- 1443 008a 49       		.uleb128 0x49
- 1444 008b 13       		.uleb128 0x13
- 1445 008c 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 27
-
-
- 1446 008d 00       		.byte	0
- 1447 008e 0D       		.uleb128 0xd
- 1448 008f 13       		.uleb128 0x13
- 1449 0090 01       		.byte	0x1
- 1450 0091 0B       		.uleb128 0xb
- 1451 0092 0B       		.uleb128 0xb
- 1452 0093 3A       		.uleb128 0x3a
- 1453 0094 0B       		.uleb128 0xb
- 1454 0095 3B       		.uleb128 0x3b
- 1455 0096 05       		.uleb128 0x5
- 1456 0097 01       		.uleb128 0x1
- 1457 0098 13       		.uleb128 0x13
- 1458 0099 00       		.byte	0
- 1459 009a 00       		.byte	0
- 1460 009b 0E       		.uleb128 0xe
- 1461 009c 0D       		.uleb128 0xd
- 1462 009d 00       		.byte	0
- 1463 009e 03       		.uleb128 0x3
- 1464 009f 0E       		.uleb128 0xe
- 1465 00a0 3A       		.uleb128 0x3a
- 1466 00a1 0B       		.uleb128 0xb
- 1467 00a2 3B       		.uleb128 0x3b
- 1468 00a3 05       		.uleb128 0x5
- 1469 00a4 49       		.uleb128 0x49
- 1470 00a5 13       		.uleb128 0x13
- 1471 00a6 38       		.uleb128 0x38
- 1472 00a7 0B       		.uleb128 0xb
- 1473 00a8 00       		.byte	0
- 1474 00a9 00       		.byte	0
- 1475 00aa 0F       		.uleb128 0xf
- 1476 00ab 01       		.uleb128 0x1
- 1477 00ac 01       		.byte	0x1
- 1478 00ad 49       		.uleb128 0x49
- 1479 00ae 13       		.uleb128 0x13
- 1480 00af 01       		.uleb128 0x1
- 1481 00b0 13       		.uleb128 0x13
- 1482 00b1 00       		.byte	0
- 1483 00b2 00       		.byte	0
- 1484 00b3 10       		.uleb128 0x10
- 1485 00b4 21       		.uleb128 0x21
- 1486 00b5 00       		.byte	0
- 1487 00b6 49       		.uleb128 0x49
- 1488 00b7 13       		.uleb128 0x13
- 1489 00b8 2F       		.uleb128 0x2f
- 1490 00b9 0B       		.uleb128 0xb
- 1491 00ba 00       		.byte	0
- 1492 00bb 00       		.byte	0
- 1493 00bc 11       		.uleb128 0x11
- 1494 00bd 15       		.uleb128 0x15
- 1495 00be 01       		.byte	0x1
- 1496 00bf 27       		.uleb128 0x27
- 1497 00c0 19       		.uleb128 0x19
- 1498 00c1 01       		.uleb128 0x1
- 1499 00c2 13       		.uleb128 0x13
- 1500 00c3 00       		.byte	0
- 1501 00c4 00       		.byte	0
- 1502 00c5 12       		.uleb128 0x12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 28
-
-
- 1503 00c6 05       		.uleb128 0x5
- 1504 00c7 00       		.byte	0
- 1505 00c8 49       		.uleb128 0x49
- 1506 00c9 13       		.uleb128 0x13
- 1507 00ca 00       		.byte	0
- 1508 00cb 00       		.byte	0
- 1509 00cc 13       		.uleb128 0x13
- 1510 00cd 15       		.uleb128 0x15
- 1511 00ce 01       		.byte	0x1
- 1512 00cf 27       		.uleb128 0x27
- 1513 00d0 19       		.uleb128 0x19
- 1514 00d1 49       		.uleb128 0x49
- 1515 00d2 13       		.uleb128 0x13
- 1516 00d3 01       		.uleb128 0x1
- 1517 00d4 13       		.uleb128 0x13
- 1518 00d5 00       		.byte	0
- 1519 00d6 00       		.byte	0
- 1520 00d7 14       		.uleb128 0x14
- 1521 00d8 13       		.uleb128 0x13
- 1522 00d9 01       		.byte	0x1
- 1523 00da 03       		.uleb128 0x3
- 1524 00db 0E       		.uleb128 0xe
- 1525 00dc 0B       		.uleb128 0xb
- 1526 00dd 0B       		.uleb128 0xb
- 1527 00de 3A       		.uleb128 0x3a
- 1528 00df 0B       		.uleb128 0xb
- 1529 00e0 3B       		.uleb128 0x3b
- 1530 00e1 05       		.uleb128 0x5
- 1531 00e2 01       		.uleb128 0x1
- 1532 00e3 13       		.uleb128 0x13
- 1533 00e4 00       		.byte	0
- 1534 00e5 00       		.byte	0
- 1535 00e6 15       		.uleb128 0x15
- 1536 00e7 26       		.uleb128 0x26
- 1537 00e8 00       		.byte	0
- 1538 00e9 49       		.uleb128 0x49
- 1539 00ea 13       		.uleb128 0x13
- 1540 00eb 00       		.byte	0
- 1541 00ec 00       		.byte	0
- 1542 00ed 16       		.uleb128 0x16
- 1543 00ee 2E       		.uleb128 0x2e
- 1544 00ef 01       		.byte	0x1
- 1545 00f0 3F       		.uleb128 0x3f
- 1546 00f1 19       		.uleb128 0x19
- 1547 00f2 03       		.uleb128 0x3
- 1548 00f3 0E       		.uleb128 0xe
- 1549 00f4 3A       		.uleb128 0x3a
- 1550 00f5 0B       		.uleb128 0xb
- 1551 00f6 3B       		.uleb128 0x3b
- 1552 00f7 0B       		.uleb128 0xb
- 1553 00f8 27       		.uleb128 0x27
- 1554 00f9 19       		.uleb128 0x19
- 1555 00fa 49       		.uleb128 0x49
- 1556 00fb 13       		.uleb128 0x13
- 1557 00fc 11       		.uleb128 0x11
- 1558 00fd 01       		.uleb128 0x1
- 1559 00fe 12       		.uleb128 0x12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 29
-
-
- 1560 00ff 06       		.uleb128 0x6
- 1561 0100 40       		.uleb128 0x40
- 1562 0101 18       		.uleb128 0x18
- 1563 0102 9642     		.uleb128 0x2116
- 1564 0104 19       		.uleb128 0x19
- 1565 0105 01       		.uleb128 0x1
- 1566 0106 13       		.uleb128 0x13
- 1567 0107 00       		.byte	0
- 1568 0108 00       		.byte	0
- 1569 0109 17       		.uleb128 0x17
- 1570 010a 05       		.uleb128 0x5
- 1571 010b 00       		.byte	0
- 1572 010c 03       		.uleb128 0x3
- 1573 010d 0E       		.uleb128 0xe
- 1574 010e 3A       		.uleb128 0x3a
- 1575 010f 0B       		.uleb128 0xb
- 1576 0110 3B       		.uleb128 0x3b
- 1577 0111 0B       		.uleb128 0xb
- 1578 0112 49       		.uleb128 0x49
- 1579 0113 13       		.uleb128 0x13
- 1580 0114 02       		.uleb128 0x2
- 1581 0115 18       		.uleb128 0x18
- 1582 0116 00       		.byte	0
- 1583 0117 00       		.byte	0
- 1584 0118 18       		.uleb128 0x18
- 1585 0119 34       		.uleb128 0x34
- 1586 011a 00       		.byte	0
- 1587 011b 03       		.uleb128 0x3
- 1588 011c 0E       		.uleb128 0xe
- 1589 011d 3A       		.uleb128 0x3a
- 1590 011e 0B       		.uleb128 0xb
- 1591 011f 3B       		.uleb128 0x3b
- 1592 0120 0B       		.uleb128 0xb
- 1593 0121 49       		.uleb128 0x49
- 1594 0122 13       		.uleb128 0x13
- 1595 0123 02       		.uleb128 0x2
- 1596 0124 18       		.uleb128 0x18
- 1597 0125 00       		.byte	0
- 1598 0126 00       		.byte	0
- 1599 0127 19       		.uleb128 0x19
- 1600 0128 34       		.uleb128 0x34
- 1601 0129 00       		.byte	0
- 1602 012a 03       		.uleb128 0x3
- 1603 012b 0E       		.uleb128 0xe
- 1604 012c 3A       		.uleb128 0x3a
- 1605 012d 0B       		.uleb128 0xb
- 1606 012e 3B       		.uleb128 0x3b
- 1607 012f 05       		.uleb128 0x5
- 1608 0130 49       		.uleb128 0x49
- 1609 0131 13       		.uleb128 0x13
- 1610 0132 3F       		.uleb128 0x3f
- 1611 0133 19       		.uleb128 0x19
- 1612 0134 3C       		.uleb128 0x3c
- 1613 0135 19       		.uleb128 0x19
- 1614 0136 00       		.byte	0
- 1615 0137 00       		.byte	0
- 1616 0138 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 30
-
-
- 1617 0139 34       		.uleb128 0x34
- 1618 013a 00       		.byte	0
- 1619 013b 03       		.uleb128 0x3
- 1620 013c 0E       		.uleb128 0xe
- 1621 013d 3A       		.uleb128 0x3a
- 1622 013e 0B       		.uleb128 0xb
- 1623 013f 3B       		.uleb128 0x3b
- 1624 0140 0B       		.uleb128 0xb
- 1625 0141 49       		.uleb128 0x49
- 1626 0142 13       		.uleb128 0x13
- 1627 0143 3F       		.uleb128 0x3f
- 1628 0144 19       		.uleb128 0x19
- 1629 0145 3C       		.uleb128 0x3c
- 1630 0146 19       		.uleb128 0x19
- 1631 0147 00       		.byte	0
- 1632 0148 00       		.byte	0
- 1633 0149 00       		.byte	0
- 1634              		.section	.debug_aranges,"",%progbits
- 1635 0000 1C000000 		.4byte	0x1c
- 1636 0004 0200     		.2byte	0x2
- 1637 0006 00000000 		.4byte	.Ldebug_info0
- 1638 000a 04       		.byte	0x4
- 1639 000b 00       		.byte	0
- 1640 000c 0000     		.2byte	0
- 1641 000e 0000     		.2byte	0
- 1642 0010 00000000 		.4byte	.LFB562
- 1643 0014 44000000 		.4byte	.LFE562-.LFB562
- 1644 0018 00000000 		.4byte	0
- 1645 001c 00000000 		.4byte	0
- 1646              		.section	.debug_ranges,"",%progbits
- 1647              	.Ldebug_ranges0:
- 1648 0000 00000000 		.4byte	.LFB562
- 1649 0004 44000000 		.4byte	.LFE562
- 1650 0008 00000000 		.4byte	0
- 1651 000c 00000000 		.4byte	0
- 1652              		.section	.debug_line,"",%progbits
- 1653              	.Ldebug_line0:
- 1654 0000 77020000 		.section	.debug_str,"MS",%progbits,1
- 1654      02005A02 
- 1654      00000201 
- 1654      FB0E0D00 
- 1654      01010101 
- 1655              	.LASF56:
- 1656 0000 70726F74 		.ascii	"protBusMasterMask\000"
- 1656      4275734D 
- 1656      61737465 
- 1656      724D6173 
- 1656      6B00
- 1657              	.LASF189:
- 1658 0012 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1658      43313120 
- 1658      352E342E 
- 1658      31203230 
- 1658      31363036 
- 1659 0045 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
- 1659      20726576 
- 1659      6973696F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 31
-
-
- 1659      6E203233 
- 1659      37373135 
- 1660 0078 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -O0 -ffunction-s"
- 1660      70202D6D 
- 1660      6670753D 
- 1660      66707634 
- 1660      2D73702D 
- 1661 00ab 65637469 		.ascii	"ections -ffat-lto-objects\000"
- 1661      6F6E7320 
- 1661      2D666661 
- 1661      742D6C74 
- 1661      6F2D6F62 
- 1662              	.LASF170:
- 1663 00c5 72784275 		.ascii	"rxBufSize\000"
- 1663      6653697A 
- 1663      6500
- 1664              	.LASF66:
- 1665 00cf 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
- 1665      6843746C 
- 1665      4D61696E 
- 1665      57733346 
- 1665      72657100 
- 1666              	.LASF88:
- 1667 00e3 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
- 1667      50727443 
- 1667      6667496E 
- 1667      4F666673 
- 1667      657400
- 1668              	.LASF156:
- 1669 00f6 736C6176 		.ascii	"slaveRxBufferIdx\000"
- 1669      65527842 
- 1669      75666665 
- 1669      72496478 
- 1669      00
- 1670              	.LASF144:
- 1671 0107 6D617374 		.ascii	"masterBuffer\000"
- 1671      65724275 
- 1671      66666572 
- 1671      00
- 1672              	.LASF32:
- 1673 0114 63727970 		.ascii	"cryptoVersion\000"
- 1673      746F5665 
- 1673      7273696F 
- 1673      6E00
- 1674              	.LASF50:
- 1675 0122 70657269 		.ascii	"periClockNr\000"
- 1675      436C6F63 
- 1675      6B4E7200 
- 1676              	.LASF28:
- 1677 012e 70617373 		.ascii	"passBase\000"
- 1677      42617365 
- 1677      00
- 1678              	.LASF104:
- 1679 0137 63707573 		.ascii	"cpussRam2Ctl0\000"
- 1679      7352616D 
- 1679      3243746C 
- 1679      3000
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 32
-
-
- 1680              	.LASF41:
- 1681 0145 63707573 		.ascii	"cpussIpcIrqNr\000"
- 1681      73497063 
- 1681      4972714E 
- 1681      7200
- 1682              	.LASF2:
- 1683 0153 5F5F7569 		.ascii	"__uint8_t\000"
- 1683      6E74385F 
- 1683      7400
- 1684              	.LASF148:
- 1685 015d 736C6176 		.ascii	"slaveStatus\000"
- 1685      65537461 
- 1685      74757300 
- 1686              	.LASF43:
- 1687 0169 63707573 		.ascii	"cpussFlashPaSize\000"
- 1687      73466C61 
- 1687      73685061 
- 1687      53697A65 
- 1687      00
- 1688              	.LASF92:
- 1689 017a 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
- 1689      73436D34 
- 1689      436C6F63 
- 1689      6B43746C 
- 1689      4F666673 
- 1690              	.LASF21:
- 1691 0191 63707573 		.ascii	"cpussBase\000"
- 1691      73426173 
- 1691      6500
- 1692              	.LASF70:
- 1693 019b 64774368 		.ascii	"dwChCtlPrioPos\000"
- 1693      43746C50 
- 1693      72696F50 
- 1693      6F7300
- 1694              	.LASF126:
- 1695 01aa 73617449 		.ascii	"satIntrMask\000"
- 1695      6E74724D 
- 1695      61736B00 
- 1696              	.LASF186:
- 1697 01b6 4144435F 		.ascii	"ADC_currentConfig\000"
- 1697      63757272 
- 1697      656E7443 
- 1697      6F6E6669 
- 1697      6700
- 1698              	.LASF12:
- 1699 01c8 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1699      206C6F6E 
- 1699      6720756E 
- 1699      7369676E 
- 1699      65642069 
- 1700              	.LASF74:
- 1701 01df 70657269 		.ascii	"periTrCmdOffset\000"
- 1701      5472436D 
- 1701      644F6666 
- 1701      73657400 
- 1702              	.LASF165:
- 1703 01ef 72785269 		.ascii	"rxRingBuf\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 33
-
-
- 1703      6E674275 
- 1703      6600
- 1704              	.LASF98:
- 1705 01f9 63707573 		.ascii	"cpussSysTickCtlOffset\000"
- 1705      73537973 
- 1705      5469636B 
- 1705      43746C4F 
- 1705      66667365 
- 1706              	.LASF141:
- 1707 020f 6D617374 		.ascii	"masterStatus\000"
- 1707      65725374 
- 1707      61747573 
- 1707      00
- 1708              	.LASF172:
- 1709 021c 74784275 		.ascii	"txBuf\000"
- 1709      6600
- 1710              	.LASF59:
- 1711 0222 666C6173 		.ascii	"flashPipeRequired\000"
- 1711      68506970 
- 1711      65526571 
- 1711      75697265 
- 1711      6400
- 1712              	.LASF155:
- 1713 0234 736C6176 		.ascii	"slaveRxBufferSize\000"
- 1713      65527842 
- 1713      75666665 
- 1713      7253697A 
- 1713      6500
- 1714              	.LASF161:
- 1715 0246 63795F73 		.ascii	"cy_stc_scb_i2c_context\000"
- 1715      74635F73 
- 1715      63625F69 
- 1715      32635F63 
- 1715      6F6E7465 
- 1716              	.LASF63:
- 1717 025d 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
- 1717      6843746C 
- 1717      4D61696E 
- 1717      57733046 
- 1717      72657100 
- 1718              	.LASF15:
- 1719 0271 696E7431 		.ascii	"int16_t\000"
- 1719      365F7400 
- 1720              	.LASF132:
- 1721 0279 63795F73 		.ascii	"cy_stc_sar_config_t\000"
- 1721      74635F73 
- 1721      61725F63 
- 1721      6F6E6669 
- 1721      675F7400 
- 1722              	.LASF11:
- 1723 028d 6C6F6E67 		.ascii	"long long int\000"
- 1723      206C6F6E 
- 1723      6720696E 
- 1723      7400
- 1724              	.LASF0:
- 1725 029b 7369676E 		.ascii	"signed char\000"
- 1725      65642063 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 34
-
-
- 1725      68617200 
- 1726              	.LASF79:
- 1727 02a7 70657269 		.ascii	"periDivCmdTypeSelPos\000"
- 1727      44697643 
- 1727      6D645479 
- 1727      70655365 
- 1727      6C506F73 
- 1728              	.LASF116:
- 1729 02bc 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
- 1729      6E5F7361 
- 1729      725F7261 
- 1729      6E67655F 
- 1729      64657465 
- 1730              	.LASF181:
- 1731 02df 636C6B44 		.ascii	"clkDivider\000"
- 1731      69766964 
- 1731      657200
- 1732              	.LASF37:
- 1733 02ea 69706356 		.ascii	"ipcVersion\000"
- 1733      65727369 
- 1733      6F6E00
- 1734              	.LASF99:
- 1735 02f5 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
- 1735      73436D30 
- 1735      4E6D6943 
- 1735      746C4F66 
- 1735      66736574 
- 1736              	.LASF47:
- 1737 030a 73727373 		.ascii	"srssNumClkpath\000"
- 1737      4E756D43 
- 1737      6C6B7061 
- 1737      746800
- 1738              	.LASF26:
- 1739 0319 6873696F 		.ascii	"hsiomBase\000"
- 1739      6D426173 
- 1739      6500
- 1740              	.LASF112:
- 1741 0323 43595F53 		.ascii	"CY_SAR_RANGE_COND_BELOW\000"
- 1741      41525F52 
- 1741      414E4745 
- 1741      5F434F4E 
- 1741      445F4245 
- 1742              	.LASF140:
- 1743 033b 73746174 		.ascii	"state\000"
- 1743      6500
- 1744              	.LASF136:
- 1745 0341 63795F63 		.ascii	"cy_cb_scb_i2c_handle_events_t\000"
- 1745      625F7363 
- 1745      625F6932 
- 1745      635F6861 
- 1745      6E646C65 
- 1746              	.LASF8:
- 1747 035f 6C6F6E67 		.ascii	"long int\000"
- 1747      20696E74 
- 1747      00
- 1748              	.LASF143:
- 1749 0368 6D617374 		.ascii	"masterRdDir\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 35
-
-
- 1749      65725264 
- 1749      44697200 
- 1750              	.LASF134:
- 1751 0374 43595F53 		.ascii	"CY_SCB_I2C_NAK\000"
- 1751      43425F49 
- 1751      32435F4E 
- 1751      414B00
- 1752              	.LASF57:
- 1753 0383 63727970 		.ascii	"cryptoMemSize\000"
- 1753      746F4D65 
- 1753      6D53697A 
- 1753      6500
- 1754              	.LASF23:
- 1755 0391 70657269 		.ascii	"periBase\000"
- 1755      42617365 
- 1755      00
- 1756              	.LASF55:
- 1757 039a 73797350 		.ascii	"sysPmSimoPresent\000"
- 1757      6D53696D 
- 1757      6F507265 
- 1757      73656E74 
- 1757      00
- 1758              	.LASF114:
- 1759 03ab 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
- 1759      41525F52 
- 1759      414E4745 
- 1759      5F434F4E 
- 1759      445F4142 
- 1760              	.LASF16:
- 1761 03c3 75696E74 		.ascii	"uint16_t\000"
- 1761      31365F74 
- 1761      00
- 1762              	.LASF110:
- 1763 03cc 646F7562 		.ascii	"double\000"
- 1763      6C6500
- 1764              	.LASF84:
- 1765 03d3 70657269 		.ascii	"periDiv16_5CtlOffset\000"
- 1765      44697631 
- 1765      365F3543 
- 1765      746C4F66 
- 1765      66736574 
- 1766              	.LASF48:
- 1767 03e8 73727373 		.ascii	"srssNumPll\000"
- 1767      4E756D50 
- 1767      6C6C00
- 1768              	.LASF182:
- 1769 03f3 4144435F 		.ascii	"ADC_CONFIG_STRUCT\000"
- 1769      434F4E46 
- 1769      49475F53 
- 1769      54525543 
- 1769      5400
- 1770              	.LASF82:
- 1771 0405 70657269 		.ascii	"periDiv8CtlOffset\000"
- 1771      44697638 
- 1771      43746C4F 
- 1771      66667365 
- 1771      7400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 36
-
-
- 1772              	.LASF6:
- 1773 0417 73686F72 		.ascii	"short unsigned int\000"
- 1773      7420756E 
- 1773      7369676E 
- 1773      65642069 
- 1773      6E7400
- 1774              	.LASF89:
- 1775 042a 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
- 1775      50727443 
- 1775      66674F75 
- 1775      744F6666 
- 1775      73657400 
- 1776              	.LASF158:
- 1777 043e 63624164 		.ascii	"cbAddr\000"
- 1777      647200
- 1778              	.LASF22:
- 1779 0445 666C6173 		.ascii	"flashcBase\000"
- 1779      68634261 
- 1779      736500
- 1780              	.LASF9:
- 1781 0450 5F5F7569 		.ascii	"__uint32_t\000"
- 1781      6E743332 
- 1781      5F7400
- 1782              	.LASF191:
- 1783 045b 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
- 1783      73657273 
- 1783      5C737469 
- 1783      6A6E5C4F 
- 1783      6E654472 
- 1784 0489 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
- 1784      43204B6C 
- 1784      6F646465 
- 1784      6E5C5254 
- 1784      4F535F49 
- 1785              	.LASF52:
- 1786 04ab 70617373 		.ascii	"passSarChannels\000"
- 1786      53617243 
- 1786      68616E6E 
- 1786      656C7300 
- 1787              	.LASF179:
- 1788 04bb 6877436F 		.ascii	"hwConfigStc\000"
- 1788      6E666967 
- 1788      53746300 
- 1789              	.LASF3:
- 1790 04c7 5F5F696E 		.ascii	"__int16_t\000"
- 1790      7431365F 
- 1790      7400
- 1791              	.LASF171:
- 1792 04d1 72784275 		.ascii	"rxBufIdx\000"
- 1792      66496478 
- 1792      00
- 1793              	.LASF117:
- 1794 04da 6374726C 		.ascii	"ctrl\000"
- 1794      00
- 1795              	.LASF95:
- 1796 04df 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
- 1796      73436D34 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 37
-
-
- 1796      50777243 
- 1796      746C4F66 
- 1796      66736574 
- 1797              	.LASF173:
- 1798 04f4 74784275 		.ascii	"txBufSize\000"
- 1798      6653697A 
- 1798      6500
- 1799              	.LASF154:
- 1800 04fe 736C6176 		.ascii	"slaveRxBuffer\000"
- 1800      65527842 
- 1800      75666665 
- 1800      7200
- 1801              	.LASF90:
- 1802 050c 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
- 1802      50727443 
- 1802      66675369 
- 1802      6F4F6666 
- 1802      73657400 
- 1803              	.LASF94:
- 1804 0520 63707573 		.ascii	"cpussCm0StatusOffset\000"
- 1804      73436D30 
- 1804      53746174 
- 1804      75734F66 
- 1804      66736574 
- 1805              	.LASF13:
- 1806 0535 756E7369 		.ascii	"unsigned int\000"
- 1806      676E6564 
- 1806      20696E74 
- 1806      00
- 1807              	.LASF192:
- 1808 0542 57616974 		.ascii	"WaitOneUnit\000"
- 1808      4F6E6555 
- 1808      6E697400 
- 1809              	.LASF152:
- 1810 054e 736C6176 		.ascii	"slaveTxBufferIdx\000"
- 1810      65547842 
- 1810      75666665 
- 1810      72496478 
- 1810      00
- 1811              	.LASF39:
- 1812 055f 70726F74 		.ascii	"protVersion\000"
- 1812      56657273 
- 1812      696F6E00 
- 1813              	.LASF149:
- 1814 056b 736C6176 		.ascii	"slaveRdBufEmpty\000"
- 1814      65526442 
- 1814      7566456D 
- 1814      70747900 
- 1815              	.LASF75:
- 1816 057b 70657269 		.ascii	"periTrCmdGrSelMsk\000"
- 1816      5472436D 
- 1816      64477253 
- 1816      656C4D73 
- 1816      6B00
- 1817              	.LASF10:
- 1818 058d 6C6F6E67 		.ascii	"long unsigned int\000"
- 1818      20756E73 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 38
-
-
- 1818      69676E65 
- 1818      6420696E 
- 1818      7400
- 1819              	.LASF188:
- 1820 059f 6D493243 		.ascii	"mI2C_context\000"
- 1820      5F636F6E 
- 1820      74657874 
- 1820      00
- 1821              	.LASF160:
- 1822 05ac 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
- 1822      625F7363 
- 1822      625F7561 
- 1822      72745F68 
- 1822      616E646C 
- 1823              	.LASF193:
- 1824 05cb 74696D65 		.ascii	"timeout\000"
- 1824      6F757400 
- 1825              	.LASF185:
- 1826 05d3 55415254 		.ascii	"UART_context\000"
- 1826      5F636F6E 
- 1826      74657874 
- 1826      00
- 1827              	.LASF40:
- 1828 05e0 63707573 		.ascii	"cpussIpcNr\000"
+  94              		.file 8 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/tcpwm/cy_tcpwm_counter.h"
+  95              		.file 9 "Generated_Source\\PSoC6/ADC.h"
+  96              		.file 10 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+  97              		.file 11 "Generated_Source\\PSoC6/UART.h"
+  98              		.file 12 "Generated_Source\\PSoC6/mI2C.h"
+  99              		.file 13 "Generated_Source\\PSoC6/ADCSOCCounter.h"
+ 100              		.section	.debug_info,"",%progbits
+ 101              	.Ldebug_info0:
+ 102 0000 C60A0000 		.4byte	0xac6
+ 103 0004 0400     		.2byte	0x4
+ 104 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 105 000a 04       		.byte	0x4
+ 106 000b 01       		.uleb128 0x1
+ 107 000c D2000000 		.4byte	.LASF211
+ 108 0010 0C       		.byte	0xc
+ 109 0011 5D070000 		.4byte	.LASF212
+ 110 0015 F1040000 		.4byte	.LASF213
+ 111 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 112 001d 00000000 		.4byte	0
+ 113 0021 00000000 		.4byte	.Ldebug_line0
+ 114 0025 02       		.uleb128 0x2
+ 115 0026 01       		.byte	0x1
+ 116 0027 06       		.byte	0x6
+ 117 0028 D80C0000 		.4byte	.LASF0
+ 118 002c 03       		.uleb128 0x3
+ 119 002d AB000000 		.4byte	.LASF2
+ 120 0031 02       		.byte	0x2
+ 121 0032 1D       		.byte	0x1d
+ 122 0033 37000000 		.4byte	0x37
+ 123 0037 02       		.uleb128 0x2
+ 124 0038 01       		.byte	0x1
+ 125 0039 08       		.byte	0x8
+ 126 003a 32090000 		.4byte	.LASF1
+ 127 003e 03       		.uleb128 0x3
+ 128 003f 5D050000 		.4byte	.LASF3
+ 129 0043 02       		.byte	0x2
+ 130 0044 29       		.byte	0x29
+ 131 0045 49000000 		.4byte	0x49
+ 132 0049 02       		.uleb128 0x2
+ 133 004a 02       		.byte	0x2
+ 134 004b 05       		.byte	0x5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 4
+
+
+ 135 004c 3B070000 		.4byte	.LASF4
+ 136 0050 03       		.uleb128 0x3
+ 137 0051 D50A0000 		.4byte	.LASF5
+ 138 0055 02       		.byte	0x2
+ 139 0056 2B       		.byte	0x2b
+ 140 0057 5B000000 		.4byte	0x5b
+ 141 005b 02       		.uleb128 0x2
+ 142 005c 02       		.byte	0x2
+ 143 005d 07       		.byte	0x7
+ 144 005e A4040000 		.4byte	.LASF6
+ 145 0062 03       		.uleb128 0x3
+ 146 0063 F30A0000 		.4byte	.LASF7
+ 147 0067 02       		.byte	0x2
+ 148 0068 3F       		.byte	0x3f
+ 149 0069 6D000000 		.4byte	0x6d
+ 150 006d 02       		.uleb128 0x2
+ 151 006e 04       		.byte	0x4
+ 152 006f 05       		.byte	0x5
+ 153 0070 CF030000 		.4byte	.LASF8
+ 154 0074 03       		.uleb128 0x3
+ 155 0075 E6040000 		.4byte	.LASF9
+ 156 0079 02       		.byte	0x2
+ 157 007a 41       		.byte	0x41
+ 158 007b 7F000000 		.4byte	0x7f
+ 159 007f 02       		.uleb128 0x2
+ 160 0080 04       		.byte	0x4
+ 161 0081 07       		.byte	0x7
+ 162 0082 31060000 		.4byte	.LASF10
+ 163 0086 02       		.uleb128 0x2
+ 164 0087 08       		.byte	0x8
+ 165 0088 05       		.byte	0x5
+ 166 0089 D5020000 		.4byte	.LASF11
+ 167 008d 02       		.uleb128 0x2
+ 168 008e 08       		.byte	0x8
+ 169 008f 07       		.byte	0x7
+ 170 0090 F5010000 		.4byte	.LASF12
+ 171 0094 04       		.uleb128 0x4
+ 172 0095 04       		.byte	0x4
+ 173 0096 05       		.byte	0x5
+ 174 0097 696E7400 		.ascii	"int\000"
+ 175 009b 02       		.uleb128 0x2
+ 176 009c 04       		.byte	0x4
+ 177 009d 07       		.byte	0x7
+ 178 009e CB050000 		.4byte	.LASF13
+ 179 00a2 03       		.uleb128 0x3
+ 180 00a3 490C0000 		.4byte	.LASF14
+ 181 00a7 03       		.byte	0x3
+ 182 00a8 18       		.byte	0x18
+ 183 00a9 2C000000 		.4byte	0x2c
+ 184 00ad 03       		.uleb128 0x3
+ 185 00ae B9020000 		.4byte	.LASF15
+ 186 00b2 03       		.byte	0x3
+ 187 00b3 20       		.byte	0x20
+ 188 00b4 3E000000 		.4byte	0x3e
+ 189 00b8 03       		.uleb128 0x3
+ 190 00b9 3F040000 		.4byte	.LASF16
+ 191 00bd 03       		.byte	0x3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 5
+
+
+ 192 00be 24       		.byte	0x24
+ 193 00bf 50000000 		.4byte	0x50
+ 194 00c3 03       		.uleb128 0x3
+ 195 00c4 2A090000 		.4byte	.LASF17
+ 196 00c8 03       		.byte	0x3
+ 197 00c9 2C       		.byte	0x2c
+ 198 00ca 62000000 		.4byte	0x62
+ 199 00ce 03       		.uleb128 0x3
+ 200 00cf 2D0D0000 		.4byte	.LASF18
+ 201 00d3 03       		.byte	0x3
+ 202 00d4 30       		.byte	0x30
+ 203 00d5 74000000 		.4byte	0x74
+ 204 00d9 02       		.uleb128 0x2
+ 205 00da 04       		.byte	0x4
+ 206 00db 07       		.byte	0x7
+ 207 00dc BA070000 		.4byte	.LASF19
+ 208 00e0 05       		.uleb128 0x5
+ 209 00e1 CE000000 		.4byte	0xce
+ 210 00e5 02       		.uleb128 0x2
+ 211 00e6 08       		.byte	0x8
+ 212 00e7 04       		.byte	0x4
+ 213 00e8 CE070000 		.4byte	.LASF20
+ 214 00ec 06       		.uleb128 0x6
+ 215 00ed B8       		.byte	0xb8
+ 216 00ee 04       		.byte	0x4
+ 217 00ef 34       		.byte	0x34
+ 218 00f0 FD040000 		.4byte	0x4fd
+ 219 00f4 07       		.uleb128 0x7
+ 220 00f5 B9010000 		.4byte	.LASF21
+ 221 00f9 04       		.byte	0x4
+ 222 00fa 37       		.byte	0x37
+ 223 00fb CE000000 		.4byte	0xce
+ 224 00ff 00       		.byte	0
+ 225 0100 07       		.uleb128 0x7
+ 226 0101 D2040000 		.4byte	.LASF22
+ 227 0105 04       		.byte	0x4
+ 228 0106 38       		.byte	0x38
+ 229 0107 CE000000 		.4byte	0xce
+ 230 010b 04       		.byte	0x4
+ 231 010c 07       		.uleb128 0x7
+ 232 010d DD040000 		.4byte	.LASF23
+ 233 0111 04       		.byte	0x4
+ 234 0112 39       		.byte	0x39
+ 235 0113 CE000000 		.4byte	0xce
+ 236 0117 08       		.byte	0x8
+ 237 0118 07       		.uleb128 0x7
+ 238 0119 FA080000 		.4byte	.LASF24
+ 239 011d 04       		.byte	0x4
+ 240 011e 3A       		.byte	0x3a
+ 241 011f CE000000 		.4byte	0xce
+ 242 0123 0C       		.byte	0xc
+ 243 0124 07       		.uleb128 0x7
+ 244 0125 45070000 		.4byte	.LASF25
+ 245 0129 04       		.byte	0x4
+ 246 012a 3B       		.byte	0x3b
+ 247 012b CE000000 		.4byte	0xce
+ 248 012f 10       		.byte	0x10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 6
+
+
+ 249 0130 07       		.uleb128 0x7
+ 250 0131 89030000 		.4byte	.LASF26
+ 251 0135 04       		.byte	0x4
+ 252 0136 3C       		.byte	0x3c
+ 253 0137 CE000000 		.4byte	0xce
+ 254 013b 14       		.byte	0x14
+ 255 013c 07       		.uleb128 0x7
+ 256 013d 940B0000 		.4byte	.LASF27
+ 257 0141 04       		.byte	0x4
+ 258 0142 3D       		.byte	0x3d
+ 259 0143 CE000000 		.4byte	0xce
+ 260 0147 18       		.byte	0x18
+ 261 0148 07       		.uleb128 0x7
+ 262 0149 86000000 		.4byte	.LASF28
+ 263 014d 04       		.byte	0x4
+ 264 014e 3E       		.byte	0x3e
+ 265 014f CE000000 		.4byte	0xce
+ 266 0153 1C       		.byte	0x1c
+ 267 0154 07       		.uleb128 0x7
+ 268 0155 E40C0000 		.4byte	.LASF29
+ 269 0159 04       		.byte	0x4
+ 270 015a 3F       		.byte	0x3f
+ 271 015b CE000000 		.4byte	0xce
+ 272 015f 20       		.byte	0x20
+ 273 0160 07       		.uleb128 0x7
+ 274 0161 7B070000 		.4byte	.LASF30
+ 275 0165 04       		.byte	0x4
+ 276 0166 40       		.byte	0x40
+ 277 0167 CE000000 		.4byte	0xce
+ 278 016b 24       		.byte	0x24
+ 279 016c 07       		.uleb128 0x7
+ 280 016d 200D0000 		.4byte	.LASF31
+ 281 0171 04       		.byte	0x4
+ 282 0172 43       		.byte	0x43
+ 283 0173 A2000000 		.4byte	0xa2
+ 284 0177 28       		.byte	0x28
+ 285 0178 07       		.uleb128 0x7
+ 286 0179 69000000 		.4byte	.LASF32
+ 287 017d 04       		.byte	0x4
+ 288 017e 44       		.byte	0x44
+ 289 017f A2000000 		.4byte	0xa2
+ 290 0183 29       		.byte	0x29
+ 291 0184 07       		.uleb128 0x7
+ 292 0185 FD0A0000 		.4byte	.LASF33
+ 293 0189 04       		.byte	0x4
+ 294 018a 45       		.byte	0x45
+ 295 018b A2000000 		.4byte	0xa2
+ 296 018f 2A       		.byte	0x2a
+ 297 0190 07       		.uleb128 0x7
+ 298 0191 5C080000 		.4byte	.LASF34
+ 299 0195 04       		.byte	0x4
+ 300 0196 46       		.byte	0x46
+ 301 0197 A2000000 		.4byte	0xa2
+ 302 019b 2B       		.byte	0x2b
+ 303 019c 07       		.uleb128 0x7
+ 304 019d 08070000 		.4byte	.LASF35
+ 305 01a1 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 7
+
+
+ 306 01a2 47       		.byte	0x47
+ 307 01a3 A2000000 		.4byte	0xa2
+ 308 01a7 2C       		.byte	0x2c
+ 309 01a8 07       		.uleb128 0x7
+ 310 01a9 070B0000 		.4byte	.LASF36
+ 311 01ad 04       		.byte	0x4
+ 312 01ae 48       		.byte	0x48
+ 313 01af A2000000 		.4byte	0xa2
+ 314 01b3 2D       		.byte	0x2d
+ 315 01b4 07       		.uleb128 0x7
+ 316 01b5 5A030000 		.4byte	.LASF37
+ 317 01b9 04       		.byte	0x4
+ 318 01ba 49       		.byte	0x49
+ 319 01bb A2000000 		.4byte	0xa2
+ 320 01bf 2E       		.byte	0x2e
+ 321 01c0 07       		.uleb128 0x7
+ 322 01c1 93080000 		.4byte	.LASF38
+ 323 01c5 04       		.byte	0x4
+ 324 01c6 4A       		.byte	0x4a
+ 325 01c7 A2000000 		.4byte	0xa2
+ 326 01cb 2F       		.byte	0x2f
+ 327 01cc 07       		.uleb128 0x7
+ 328 01cd F5050000 		.4byte	.LASF39
+ 329 01d1 04       		.byte	0x4
+ 330 01d2 4B       		.byte	0x4b
+ 331 01d3 A2000000 		.4byte	0xa2
+ 332 01d7 30       		.byte	0x30
+ 333 01d8 07       		.uleb128 0x7
+ 334 01d9 84060000 		.4byte	.LASF40
+ 335 01dd 04       		.byte	0x4
+ 336 01de 4E       		.byte	0x4e
+ 337 01df A2000000 		.4byte	0xa2
+ 338 01e3 31       		.byte	0x31
+ 339 01e4 07       		.uleb128 0x7
+ 340 01e5 9D000000 		.4byte	.LASF41
+ 341 01e9 04       		.byte	0x4
+ 342 01ea 4F       		.byte	0x4f
+ 343 01eb A2000000 		.4byte	0xa2
+ 344 01ef 32       		.byte	0x32
+ 345 01f0 07       		.uleb128 0x7
+ 346 01f1 8F060000 		.4byte	.LASF42
+ 347 01f5 04       		.byte	0x4
+ 348 01f6 50       		.byte	0x50
+ 349 01f7 A2000000 		.4byte	0xa2
+ 350 01fb 33       		.byte	0x33
+ 351 01fc 07       		.uleb128 0x7
+ 352 01fd C1000000 		.4byte	.LASF43
+ 353 0201 04       		.byte	0x4
+ 354 0202 51       		.byte	0x51
+ 355 0203 A2000000 		.4byte	0xa2
+ 356 0207 34       		.byte	0x34
+ 357 0208 07       		.uleb128 0x7
+ 358 0209 870B0000 		.4byte	.LASF44
+ 359 020d 04       		.byte	0x4
+ 360 020e 52       		.byte	0x52
+ 361 020f AD000000 		.4byte	0xad
+ 362 0213 36       		.byte	0x36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 8
+
+
+ 363 0214 07       		.uleb128 0x7
+ 364 0215 530A0000 		.4byte	.LASF45
+ 365 0219 04       		.byte	0x4
+ 366 021a 53       		.byte	0x53
+ 367 021b AD000000 		.4byte	0xad
+ 368 021f 38       		.byte	0x38
+ 369 0220 07       		.uleb128 0x7
+ 370 0221 040C0000 		.4byte	.LASF46
+ 371 0225 04       		.byte	0x4
+ 372 0226 54       		.byte	0x54
+ 373 0227 AD000000 		.4byte	0xad
+ 374 022b 3A       		.byte	0x3a
+ 375 022c 07       		.uleb128 0x7
+ 376 022d 7A030000 		.4byte	.LASF47
+ 377 0231 04       		.byte	0x4
+ 378 0232 55       		.byte	0x55
+ 379 0233 A2000000 		.4byte	0xa2
+ 380 0237 3C       		.byte	0x3c
+ 381 0238 07       		.uleb128 0x7
+ 382 0239 64040000 		.4byte	.LASF48
+ 383 023d 04       		.byte	0x4
+ 384 023e 56       		.byte	0x56
+ 385 023f A2000000 		.4byte	0xa2
+ 386 0243 3D       		.byte	0x3d
+ 387 0244 07       		.uleb128 0x7
+ 388 0245 E50B0000 		.4byte	.LASF49
+ 389 0249 04       		.byte	0x4
+ 390 024a 57       		.byte	0x57
+ 391 024b A2000000 		.4byte	0xa2
+ 392 024f 3E       		.byte	0x3e
+ 393 0250 07       		.uleb128 0x7
+ 394 0251 5E020000 		.4byte	.LASF50
+ 395 0255 04       		.byte	0x4
+ 396 0256 58       		.byte	0x58
+ 397 0257 A2000000 		.4byte	0xa2
+ 398 025b 3F       		.byte	0x3f
+ 399 025c 07       		.uleb128 0x7
+ 400 025d 6A080000 		.4byte	.LASF51
+ 401 0261 04       		.byte	0x4
+ 402 0262 59       		.byte	0x59
+ 403 0263 A2000000 		.4byte	0xa2
+ 404 0267 40       		.byte	0x40
+ 405 0268 07       		.uleb128 0x7
+ 406 0269 41050000 		.4byte	.LASF52
+ 407 026d 04       		.byte	0x4
+ 408 026e 5A       		.byte	0x5a
+ 409 026f A2000000 		.4byte	0xa2
+ 410 0273 41       		.byte	0x41
+ 411 0274 07       		.uleb128 0x7
+ 412 0275 0E080000 		.4byte	.LASF53
+ 413 0279 04       		.byte	0x4
+ 414 027a 5B       		.byte	0x5b
+ 415 027b A2000000 		.4byte	0xa2
+ 416 027f 42       		.byte	0x42
+ 417 0280 07       		.uleb128 0x7
+ 418 0281 48080000 		.4byte	.LASF54
+ 419 0285 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 9
+
+
+ 420 0286 5C       		.byte	0x5c
+ 421 0287 A2000000 		.4byte	0xa2
+ 422 028b 43       		.byte	0x43
+ 423 028c 07       		.uleb128 0x7
+ 424 028d 16040000 		.4byte	.LASF55
+ 425 0291 04       		.byte	0x4
+ 426 0292 5D       		.byte	0x5d
+ 427 0293 A2000000 		.4byte	0xa2
+ 428 0297 44       		.byte	0x44
+ 429 0298 07       		.uleb128 0x7
+ 430 0299 00000000 		.4byte	.LASF56
+ 431 029d 04       		.byte	0x4
+ 432 029e 5E       		.byte	0x5e
+ 433 029f CE000000 		.4byte	0xce
+ 434 02a3 48       		.byte	0x48
+ 435 02a4 07       		.uleb128 0x7
+ 436 02a5 F3030000 		.4byte	.LASF57
+ 437 02a9 04       		.byte	0x4
+ 438 02aa 5F       		.byte	0x5f
+ 439 02ab CE000000 		.4byte	0xce
+ 440 02af 4C       		.byte	0x4c
+ 441 02b0 07       		.uleb128 0x7
+ 442 02b1 360D0000 		.4byte	.LASF58
+ 443 02b5 04       		.byte	0x4
+ 444 02b6 60       		.byte	0x60
+ 445 02b7 A2000000 		.4byte	0xa2
+ 446 02bb 50       		.byte	0x50
+ 447 02bc 07       		.uleb128 0x7
+ 448 02bd 6A020000 		.4byte	.LASF59
+ 449 02c1 04       		.byte	0x4
+ 450 02c2 61       		.byte	0x61
+ 451 02c3 A2000000 		.4byte	0xa2
+ 452 02c7 51       		.byte	0x51
+ 453 02c8 07       		.uleb128 0x7
+ 454 02c9 2E0C0000 		.4byte	.LASF60
+ 455 02cd 04       		.byte	0x4
+ 456 02ce 62       		.byte	0x62
+ 457 02cf A2000000 		.4byte	0xa2
+ 458 02d3 52       		.byte	0x52
+ 459 02d4 07       		.uleb128 0x7
+ 460 02d5 140B0000 		.4byte	.LASF61
+ 461 02d9 04       		.byte	0x4
+ 462 02da 63       		.byte	0x63
+ 463 02db A2000000 		.4byte	0xa2
+ 464 02df 53       		.byte	0x53
+ 465 02e0 07       		.uleb128 0x7
+ 466 02e1 430A0000 		.4byte	.LASF62
+ 467 02e5 04       		.byte	0x4
+ 468 02e6 64       		.byte	0x64
+ 469 02e7 A2000000 		.4byte	0xa2
+ 470 02eb 54       		.byte	0x54
+ 471 02ec 07       		.uleb128 0x7
+ 472 02ed A5020000 		.4byte	.LASF63
+ 473 02f1 04       		.byte	0x4
+ 474 02f2 65       		.byte	0x65
+ 475 02f3 A2000000 		.4byte	0xa2
+ 476 02f7 55       		.byte	0x55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 10
+
+
+ 477 02f8 07       		.uleb128 0x7
+ 478 02f9 B20A0000 		.4byte	.LASF64
+ 479 02fd 04       		.byte	0x4
+ 480 02fe 66       		.byte	0x66
+ 481 02ff A2000000 		.4byte	0xa2
+ 482 0303 56       		.byte	0x56
+ 483 0304 07       		.uleb128 0x7
+ 484 0305 9B060000 		.4byte	.LASF65
+ 485 0309 04       		.byte	0x4
+ 486 030a 67       		.byte	0x67
+ 487 030b A2000000 		.4byte	0xa2
+ 488 030f 57       		.byte	0x57
+ 489 0310 07       		.uleb128 0x7
+ 490 0311 24000000 		.4byte	.LASF66
+ 491 0315 04       		.byte	0x4
+ 492 0316 68       		.byte	0x68
+ 493 0317 A2000000 		.4byte	0xa2
+ 494 031b 58       		.byte	0x58
+ 495 031c 07       		.uleb128 0x7
+ 496 031d 40090000 		.4byte	.LASF67
+ 497 0321 04       		.byte	0x4
+ 498 0322 69       		.byte	0x69
+ 499 0323 A2000000 		.4byte	0xa2
+ 500 0327 59       		.byte	0x59
+ 501 0328 07       		.uleb128 0x7
+ 502 0329 C3070000 		.4byte	.LASF68
+ 503 032d 04       		.byte	0x4
+ 504 032e 6E       		.byte	0x6e
+ 505 032f B8000000 		.4byte	0xb8
+ 506 0333 5A       		.byte	0x5a
+ 507 0334 07       		.uleb128 0x7
+ 508 0335 5C0B0000 		.4byte	.LASF69
+ 509 0339 04       		.byte	0x4
+ 510 033a 6F       		.byte	0x6f
+ 511 033b B8000000 		.4byte	0xb8
+ 512 033f 5C       		.byte	0x5c
+ 513 0340 07       		.uleb128 0x7
+ 514 0341 77000000 		.4byte	.LASF70
+ 515 0345 04       		.byte	0x4
+ 516 0346 70       		.byte	0x70
+ 517 0347 A2000000 		.4byte	0xa2
+ 518 034b 5E       		.byte	0x5e
+ 519 034c 07       		.uleb128 0x7
+ 520 034d CC080000 		.4byte	.LASF71
+ 521 0351 04       		.byte	0x4
+ 522 0352 71       		.byte	0x71
+ 523 0353 A2000000 		.4byte	0xa2
+ 524 0357 5F       		.byte	0x5f
+ 525 0358 07       		.uleb128 0x7
+ 526 0359 37080000 		.4byte	.LASF72
+ 527 035d 04       		.byte	0x4
+ 528 035e 72       		.byte	0x72
+ 529 035f A2000000 		.4byte	0xa2
+ 530 0363 60       		.byte	0x60
+ 531 0364 07       		.uleb128 0x7
+ 532 0365 A5080000 		.4byte	.LASF73
+ 533 0369 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 11
+
+
+ 534 036a 73       		.byte	0x73
+ 535 036b CE000000 		.4byte	0xce
+ 536 036f 64       		.byte	0x64
+ 537 0370 07       		.uleb128 0x7
+ 538 0371 1B020000 		.4byte	.LASF74
+ 539 0375 04       		.byte	0x4
+ 540 0376 76       		.byte	0x76
+ 541 0377 B8000000 		.4byte	0xb8
+ 542 037b 68       		.byte	0x68
+ 543 037c 07       		.uleb128 0x7
+ 544 037d 11060000 		.4byte	.LASF75
+ 545 0381 04       		.byte	0x4
+ 546 0382 77       		.byte	0x77
+ 547 0383 B8000000 		.4byte	0xb8
+ 548 0387 6A       		.byte	0x6a
+ 549 0388 07       		.uleb128 0x7
+ 550 0389 C6060000 		.4byte	.LASF76
+ 551 038d 04       		.byte	0x4
+ 552 038e 78       		.byte	0x78
+ 553 038f B8000000 		.4byte	0xb8
+ 554 0393 6C       		.byte	0x6c
+ 555 0394 07       		.uleb128 0x7
+ 556 0395 5E0A0000 		.4byte	.LASF77
+ 557 0399 04       		.byte	0x4
+ 558 039a 79       		.byte	0x79
+ 559 039b B8000000 		.4byte	0xb8
+ 560 039f 6E       		.byte	0x6e
+ 561 03a0 07       		.uleb128 0x7
+ 562 03a1 D6090000 		.4byte	.LASF78
+ 563 03a5 04       		.byte	0x4
+ 564 03a6 7B       		.byte	0x7b
+ 565 03a7 A2000000 		.4byte	0xa2
+ 566 03ab 70       		.byte	0x70
+ 567 03ac 07       		.uleb128 0x7
+ 568 03ad 01030000 		.4byte	.LASF79
+ 569 03b1 04       		.byte	0x4
+ 570 03b2 7C       		.byte	0x7c
+ 571 03b3 A2000000 		.4byte	0xa2
+ 572 03b7 71       		.byte	0x71
+ 573 03b8 07       		.uleb128 0x7
+ 574 03b9 EC0C0000 		.4byte	.LASF80
+ 575 03bd 04       		.byte	0x4
+ 576 03be 7D       		.byte	0x7d
+ 577 03bf A2000000 		.4byte	0xa2
+ 578 03c3 72       		.byte	0x72
+ 579 03c4 07       		.uleb128 0x7
+ 580 03c5 F7070000 		.4byte	.LASF81
+ 581 03c9 04       		.byte	0x4
+ 582 03ca 7E       		.byte	0x7e
+ 583 03cb A2000000 		.4byte	0xa2
+ 584 03cf 73       		.byte	0x73
+ 585 03d0 07       		.uleb128 0x7
+ 586 03d1 92040000 		.4byte	.LASF82
+ 587 03d5 04       		.byte	0x4
+ 588 03d6 80       		.byte	0x80
+ 589 03d7 B8000000 		.4byte	0xb8
+ 590 03db 74       		.byte	0x74
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 12
+
+
+ 591 03dc 07       		.uleb128 0x7
+ 592 03dd E00A0000 		.4byte	.LASF83
+ 593 03e1 04       		.byte	0x4
+ 594 03e2 81       		.byte	0x81
+ 595 03e3 B8000000 		.4byte	0xb8
+ 596 03e7 76       		.byte	0x76
+ 597 03e8 07       		.uleb128 0x7
+ 598 03e9 4F040000 		.4byte	.LASF84
+ 599 03ed 04       		.byte	0x4
+ 600 03ee 82       		.byte	0x82
+ 601 03ef B8000000 		.4byte	0xb8
+ 602 03f3 78       		.byte	0x78
+ 603 03f4 07       		.uleb128 0x7
+ 604 03f5 75090000 		.4byte	.LASF85
+ 605 03f9 04       		.byte	0x4
+ 606 03fa 83       		.byte	0x83
+ 607 03fb B8000000 		.4byte	0xb8
+ 608 03ff 7A       		.byte	0x7a
+ 609 0400 07       		.uleb128 0x7
+ 610 0401 660C0000 		.4byte	.LASF86
+ 611 0405 04       		.byte	0x4
+ 612 0406 86       		.byte	0x86
+ 613 0407 A2000000 		.4byte	0xa2
+ 614 040b 7C       		.byte	0x7c
+ 615 040c 07       		.uleb128 0x7
+ 616 040d F7060000 		.4byte	.LASF87
+ 617 0411 04       		.byte	0x4
+ 618 0412 87       		.byte	0x87
+ 619 0413 A2000000 		.4byte	0xa2
+ 620 0417 7D       		.byte	0x7d
+ 621 0418 07       		.uleb128 0x7
+ 622 0419 38000000 		.4byte	.LASF88
+ 623 041d 04       		.byte	0x4
+ 624 041e 88       		.byte	0x88
+ 625 041f A2000000 		.4byte	0xa2
+ 626 0423 7E       		.byte	0x7e
+ 627 0424 07       		.uleb128 0x7
+ 628 0425 B7040000 		.4byte	.LASF89
+ 629 0429 04       		.byte	0x4
+ 630 042a 89       		.byte	0x89
+ 631 042b A2000000 		.4byte	0xa2
+ 632 042f 7F       		.byte	0x7f
+ 633 0430 07       		.uleb128 0x7
+ 634 0431 A2050000 		.4byte	.LASF90
+ 635 0435 04       		.byte	0x4
+ 636 0436 8A       		.byte	0x8a
+ 637 0437 A2000000 		.4byte	0xa2
+ 638 043b 80       		.byte	0x80
+ 639 043c 07       		.uleb128 0x7
+ 640 043d 64070000 		.4byte	.LASF91
+ 641 0441 04       		.byte	0x4
+ 642 0442 8D       		.byte	0x8d
+ 643 0443 CE000000 		.4byte	0xce
+ 644 0447 84       		.byte	0x84
+ 645 0448 07       		.uleb128 0x7
+ 646 0449 85010000 		.4byte	.LASF92
+ 647 044d 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 13
+
+
+ 648 044e 8E       		.byte	0x8e
+ 649 044f CE000000 		.4byte	0xce
+ 650 0453 88       		.byte	0x88
+ 651 0454 07       		.uleb128 0x7
+ 652 0455 510C0000 		.4byte	.LASF93
+ 653 0459 04       		.byte	0x4
+ 654 045a 8F       		.byte	0x8f
+ 655 045b CE000000 		.4byte	0xce
+ 656 045f 8C       		.byte	0x8c
+ 657 0460 07       		.uleb128 0x7
+ 658 0461 B6050000 		.4byte	.LASF94
+ 659 0465 04       		.byte	0x4
+ 660 0466 90       		.byte	0x90
+ 661 0467 CE000000 		.4byte	0xce
+ 662 046b 90       		.byte	0x90
+ 663 046c 07       		.uleb128 0x7
+ 664 046d 75050000 		.4byte	.LASF95
+ 665 0471 04       		.byte	0x4
+ 666 0472 91       		.byte	0x91
+ 667 0473 CE000000 		.4byte	0xce
+ 668 0477 94       		.byte	0x94
+ 669 0478 07       		.uleb128 0x7
+ 670 0479 44030000 		.4byte	.LASF96
+ 671 047d 04       		.byte	0x4
+ 672 047e 92       		.byte	0x92
+ 673 047f CE000000 		.4byte	0xce
+ 674 0483 98       		.byte	0x98
+ 675 0484 07       		.uleb128 0x7
+ 676 0485 AF090000 		.4byte	.LASF97
+ 677 0489 04       		.byte	0x4
+ 678 048a 93       		.byte	0x93
+ 679 048b CE000000 		.4byte	0xce
+ 680 048f 9C       		.byte	0x9c
+ 681 0490 07       		.uleb128 0x7
+ 682 0491 35020000 		.4byte	.LASF98
+ 683 0495 04       		.byte	0x4
+ 684 0496 94       		.byte	0x94
+ 685 0497 CE000000 		.4byte	0xce
+ 686 049b A0       		.byte	0xa0
+ 687 049c 07       		.uleb128 0x7
+ 688 049d 65030000 		.4byte	.LASF99
+ 689 04a1 04       		.byte	0x4
+ 690 04a2 95       		.byte	0x95
+ 691 04a3 B8000000 		.4byte	0xb8
+ 692 04a7 A4       		.byte	0xa4
+ 693 04a8 07       		.uleb128 0x7
+ 694 04a9 190C0000 		.4byte	.LASF100
+ 695 04ad 04       		.byte	0x4
+ 696 04ae 96       		.byte	0x96
+ 697 04af B8000000 		.4byte	0xb8
+ 698 04b3 A6       		.byte	0xa6
+ 699 04b4 07       		.uleb128 0x7
+ 700 04b5 C0080000 		.4byte	.LASF101
+ 701 04b9 04       		.byte	0x4
+ 702 04ba 97       		.byte	0x97
+ 703 04bb B8000000 		.4byte	0xb8
+ 704 04bf A8       		.byte	0xa8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 14
+
+
+ 705 04c0 07       		.uleb128 0x7
+ 706 04c1 85080000 		.4byte	.LASF102
+ 707 04c5 04       		.byte	0x4
+ 708 04c6 98       		.byte	0x98
+ 709 04c7 B8000000 		.4byte	0xb8
+ 710 04cb AA       		.byte	0xaa
+ 711 04cc 07       		.uleb128 0x7
+ 712 04cd D5060000 		.4byte	.LASF103
+ 713 04d1 04       		.byte	0x4
+ 714 04d2 99       		.byte	0x99
+ 715 04d3 B8000000 		.4byte	0xb8
+ 716 04d7 AC       		.byte	0xac
+ 717 04d8 07       		.uleb128 0x7
+ 718 04d9 8F000000 		.4byte	.LASF104
+ 719 04dd 04       		.byte	0x4
+ 720 04de 9A       		.byte	0x9a
+ 721 04df B8000000 		.4byte	0xb8
+ 722 04e3 AE       		.byte	0xae
+ 723 04e4 07       		.uleb128 0x7
+ 724 04e5 6F0B0000 		.4byte	.LASF105
+ 725 04e9 04       		.byte	0x4
+ 726 04ea 9D       		.byte	0x9d
+ 727 04eb B8000000 		.4byte	0xb8
+ 728 04ef B0       		.byte	0xb0
+ 729 04f0 07       		.uleb128 0x7
+ 730 04f1 61090000 		.4byte	.LASF106
+ 731 04f5 04       		.byte	0x4
+ 732 04f6 9E       		.byte	0x9e
+ 733 04f7 CE000000 		.4byte	0xce
+ 734 04fb B4       		.byte	0xb4
+ 735 04fc 00       		.byte	0
+ 736 04fd 03       		.uleb128 0x3
+ 737 04fe 20070000 		.4byte	.LASF107
+ 738 0502 04       		.byte	0x4
+ 739 0503 9F       		.byte	0x9f
+ 740 0504 EC000000 		.4byte	0xec
+ 741 0508 02       		.uleb128 0x2
+ 742 0509 01       		.byte	0x1
+ 743 050a 08       		.byte	0x8
+ 744 050b AD0A0000 		.4byte	.LASF108
+ 745 050f 02       		.uleb128 0x2
+ 746 0510 04       		.byte	0x4
+ 747 0511 04       		.byte	0x4
+ 748 0512 9F080000 		.4byte	.LASF109
+ 749 0516 02       		.uleb128 0x2
+ 750 0517 08       		.byte	0x8
+ 751 0518 04       		.byte	0x4
+ 752 0519 48040000 		.4byte	.LASF110
+ 753 051d 08       		.uleb128 0x8
+ 754 051e 04       		.byte	0x4
+ 755 051f 02       		.uleb128 0x2
+ 756 0520 01       		.byte	0x1
+ 757 0521 02       		.byte	0x2
+ 758 0522 1A0D0000 		.4byte	.LASF111
+ 759 0526 09       		.uleb128 0x9
+ 760 0527 04       		.byte	0x4
+ 761 0528 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 15
+
+
+ 762 052c 0A       		.uleb128 0xa
+ 763 052d 01       		.byte	0x1
+ 764 052e 37000000 		.4byte	0x37
+ 765 0532 05       		.byte	0x5
+ 766 0533 1304     		.2byte	0x413
+ 767 0535 52050000 		.4byte	0x552
+ 768 0539 0B       		.uleb128 0xb
+ 769 053a 93030000 		.4byte	.LASF112
+ 770 053e 00       		.byte	0
+ 771 053f 0B       		.uleb128 0xb
+ 772 0540 02090000 		.4byte	.LASF113
+ 773 0544 01       		.byte	0x1
+ 774 0545 0B       		.uleb128 0xb
+ 775 0546 27040000 		.4byte	.LASF114
+ 776 054a 02       		.byte	0x2
+ 777 054b 0B       		.uleb128 0xb
+ 778 054c 8B0C0000 		.4byte	.LASF115
+ 779 0550 03       		.byte	0x3
+ 780 0551 00       		.byte	0
+ 781 0552 0C       		.uleb128 0xc
+ 782 0553 16030000 		.4byte	.LASF116
+ 783 0557 05       		.byte	0x5
+ 784 0558 1804     		.2byte	0x418
+ 785 055a 2C050000 		.4byte	0x52c
+ 786 055e 0D       		.uleb128 0xd
+ 787 055f 78       		.byte	0x78
+ 788 0560 05       		.byte	0x5
+ 789 0561 0205     		.2byte	0x502
+ 790 0563 2B060000 		.4byte	0x62b
+ 791 0567 0E       		.uleb128 0xe
+ 792 0568 70050000 		.4byte	.LASF117
+ 793 056c 05       		.byte	0x5
+ 794 056d 0405     		.2byte	0x504
+ 795 056f CE000000 		.4byte	0xce
+ 796 0573 00       		.byte	0
+ 797 0574 0E       		.uleb128 0xe
+ 798 0575 3E0C0000 		.4byte	.LASF118
+ 799 0579 05       		.byte	0x5
+ 800 057a 0505     		.2byte	0x505
+ 801 057c CE000000 		.4byte	0xce
+ 802 0580 04       		.byte	0x4
+ 803 0581 0E       		.uleb128 0xe
+ 804 0582 B9060000 		.4byte	.LASF119
+ 805 0586 05       		.byte	0x5
+ 806 0587 0605     		.2byte	0x506
+ 807 0589 CE000000 		.4byte	0xce
+ 808 058d 08       		.byte	0x8
+ 809 058e 0E       		.uleb128 0xe
+ 810 058f EA070000 		.4byte	.LASF120
+ 811 0593 05       		.byte	0x5
+ 812 0594 0705     		.2byte	0x507
+ 813 0596 CE000000 		.4byte	0xce
+ 814 059a 0C       		.byte	0xc
+ 815 059b 0E       		.uleb128 0xe
+ 816 059c E3060000 		.4byte	.LASF121
+ 817 05a0 05       		.byte	0x5
+ 818 05a1 0805     		.2byte	0x508
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 16
+
+
+ 819 05a3 CE000000 		.4byte	0xce
+ 820 05a7 10       		.byte	0x10
+ 821 05a8 0E       		.uleb128 0xe
+ 822 05a9 F30B0000 		.4byte	.LASF122
+ 823 05ad 05       		.byte	0x5
+ 824 05ae 0905     		.2byte	0x509
+ 825 05b0 52050000 		.4byte	0x552
+ 826 05b4 14       		.byte	0x14
+ 827 05b5 0E       		.uleb128 0xe
+ 828 05b6 F3080000 		.4byte	.LASF123
+ 829 05ba 05       		.byte	0x5
+ 830 05bb 0A05     		.2byte	0x50a
+ 831 05bd CE000000 		.4byte	0xce
+ 832 05c1 18       		.byte	0x18
+ 833 05c2 0E       		.uleb128 0xe
+ 834 05c3 30070000 		.4byte	.LASF124
+ 835 05c7 05       		.byte	0x5
+ 836 05c8 0B05     		.2byte	0x50b
+ 837 05ca 2B060000 		.4byte	0x62b
+ 838 05ce 1C       		.byte	0x1c
+ 839 05cf 0E       		.uleb128 0xe
+ 840 05d0 A6090000 		.4byte	.LASF125
+ 841 05d4 05       		.byte	0x5
+ 842 05d5 0C05     		.2byte	0x50c
+ 843 05d7 CE000000 		.4byte	0xce
+ 844 05db 5C       		.byte	0x5c
+ 845 05dc 0E       		.uleb128 0xe
+ 846 05dd CA010000 		.4byte	.LASF126
+ 847 05e1 05       		.byte	0x5
+ 848 05e2 0D05     		.2byte	0x50d
+ 849 05e4 CE000000 		.4byte	0xce
+ 850 05e8 60       		.byte	0x60
+ 851 05e9 0E       		.uleb128 0xe
+ 852 05ea 77080000 		.4byte	.LASF127
+ 853 05ee 05       		.byte	0x5
+ 854 05ef 0E05     		.2byte	0x50e
+ 855 05f1 CE000000 		.4byte	0xce
+ 856 05f5 64       		.byte	0x64
+ 857 05f6 0E       		.uleb128 0xe
+ 858 05f7 9C090000 		.4byte	.LASF128
+ 859 05fb 05       		.byte	0x5
+ 860 05fc 0F05     		.2byte	0x50f
+ 861 05fe CE000000 		.4byte	0xce
+ 862 0602 68       		.byte	0x68
+ 863 0603 0E       		.uleb128 0xe
+ 864 0604 C80C0000 		.4byte	.LASF129
+ 865 0608 05       		.byte	0x5
+ 866 0609 1005     		.2byte	0x510
+ 867 060b CE000000 		.4byte	0xce
+ 868 060f 6C       		.byte	0x6c
+ 869 0610 0E       		.uleb128 0xe
+ 870 0611 1A080000 		.4byte	.LASF130
+ 871 0615 05       		.byte	0x5
+ 872 0616 1105     		.2byte	0x511
+ 873 0618 1F050000 		.4byte	0x51f
+ 874 061c 70       		.byte	0x70
+ 875 061d 0E       		.uleb128 0xe
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 17
+
+
+ 876 061e 840A0000 		.4byte	.LASF131
+ 877 0622 05       		.byte	0x5
+ 878 0623 1205     		.2byte	0x512
+ 879 0625 CE000000 		.4byte	0xce
+ 880 0629 74       		.byte	0x74
+ 881 062a 00       		.byte	0
+ 882 062b 0F       		.uleb128 0xf
+ 883 062c CE000000 		.4byte	0xce
+ 884 0630 3B060000 		.4byte	0x63b
+ 885 0634 10       		.uleb128 0x10
+ 886 0635 D9000000 		.4byte	0xd9
+ 887 0639 0F       		.byte	0xf
+ 888 063a 00       		.byte	0
+ 889 063b 0C       		.uleb128 0xc
+ 890 063c C1020000 		.4byte	.LASF132
+ 891 0640 05       		.byte	0x5
+ 892 0641 1305     		.2byte	0x513
+ 893 0643 5E050000 		.4byte	0x55e
+ 894 0647 0A       		.uleb128 0xa
+ 895 0648 01       		.byte	0x1
+ 896 0649 37000000 		.4byte	0x37
+ 897 064d 06       		.byte	0x6
+ 898 064e 2402     		.2byte	0x224
+ 899 0650 61060000 		.4byte	0x661
+ 900 0654 0B       		.uleb128 0xb
+ 901 0655 28080000 		.4byte	.LASF133
+ 902 0659 00       		.byte	0
+ 903 065a 0B       		.uleb128 0xb
+ 904 065b E4030000 		.4byte	.LASF134
+ 905 065f 01       		.byte	0x1
+ 906 0660 00       		.byte	0
+ 907 0661 0C       		.uleb128 0xc
+ 908 0662 86070000 		.4byte	.LASF135
+ 909 0666 06       		.byte	0x6
+ 910 0667 2702     		.2byte	0x227
+ 911 0669 47060000 		.4byte	0x647
+ 912 066d 0C       		.uleb128 0xc
+ 913 066e B1030000 		.4byte	.LASF136
+ 914 0672 06       		.byte	0x6
+ 915 0673 3902     		.2byte	0x239
+ 916 0675 79060000 		.4byte	0x679
+ 917 0679 09       		.uleb128 0x9
+ 918 067a 04       		.byte	0x4
+ 919 067b 7F060000 		.4byte	0x67f
+ 920 067f 11       		.uleb128 0x11
+ 921 0680 8A060000 		.4byte	0x68a
+ 922 0684 12       		.uleb128 0x12
+ 923 0685 CE000000 		.4byte	0xce
+ 924 0689 00       		.byte	0
+ 925 068a 0C       		.uleb128 0xc
+ 926 068b F6090000 		.4byte	.LASF137
+ 927 068f 06       		.byte	0x6
+ 928 0690 4402     		.2byte	0x244
+ 929 0692 96060000 		.4byte	0x696
+ 930 0696 09       		.uleb128 0x9
+ 931 0697 04       		.byte	0x4
+ 932 0698 9C060000 		.4byte	0x69c
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 18
+
+
+ 933 069c 13       		.uleb128 0x13
+ 934 069d 61060000 		.4byte	0x661
+ 935 06a1 AB060000 		.4byte	0x6ab
+ 936 06a5 12       		.uleb128 0x12
+ 937 06a6 CE000000 		.4byte	0xce
+ 938 06aa 00       		.byte	0
+ 939 06ab 14       		.uleb128 0x14
+ 940 06ac 8E020000 		.4byte	.LASF161
+ 941 06b0 4C       		.byte	0x4c
+ 942 06b1 06       		.byte	0x6
+ 943 06b2 C302     		.2byte	0x2c3
+ 944 06b4 CA070000 		.4byte	0x7ca
+ 945 06b8 0E       		.uleb128 0xe
+ 946 06b9 7D0B0000 		.4byte	.LASF138
+ 947 06bd 06       		.byte	0x6
+ 948 06be C602     		.2byte	0x2c6
+ 949 06c0 1F050000 		.4byte	0x51f
+ 950 06c4 00       		.byte	0
+ 951 06c5 0E       		.uleb128 0xe
+ 952 06c6 AF060000 		.4byte	.LASF139
+ 953 06ca 06       		.byte	0x6
+ 954 06cb C702     		.2byte	0x2c7
+ 955 06cd 1F050000 		.4byte	0x51f
+ 956 06d1 01       		.byte	0x1
+ 957 06d2 0E       		.uleb128 0xe
+ 958 06d3 AB030000 		.4byte	.LASF140
+ 959 06d7 06       		.byte	0x6
+ 960 06d8 C902     		.2byte	0x2c9
+ 961 06da E0000000 		.4byte	0xe0
+ 962 06de 04       		.byte	0x4
+ 963 06df 0E       		.uleb128 0xe
+ 964 06e0 4B020000 		.4byte	.LASF141
+ 965 06e4 06       		.byte	0x6
+ 966 06e5 CB02     		.2byte	0x2cb
+ 967 06e7 E0000000 		.4byte	0xe0
+ 968 06eb 08       		.byte	0x8
+ 969 06ec 0E       		.uleb128 0xe
+ 970 06ed EA090000 		.4byte	.LASF142
+ 971 06f1 06       		.byte	0x6
+ 972 06f2 CC02     		.2byte	0x2cc
+ 973 06f4 1F050000 		.4byte	0x51f
+ 974 06f8 0C       		.byte	0xc
+ 975 06f9 0E       		.uleb128 0xe
+ 976 06fa D8030000 		.4byte	.LASF143
+ 977 06fe 06       		.byte	0x6
+ 978 06ff CD02     		.2byte	0x2cd
+ 979 0701 1F050000 		.4byte	0x51f
+ 980 0705 0D       		.byte	0xd
+ 981 0706 0E       		.uleb128 0xe
+ 982 0707 5C000000 		.4byte	.LASF144
+ 983 070b 06       		.byte	0x6
+ 984 070c CF02     		.2byte	0x2cf
+ 985 070e CA070000 		.4byte	0x7ca
+ 986 0712 10       		.byte	0x10
+ 987 0713 0E       		.uleb128 0xe
+ 988 0714 C5090000 		.4byte	.LASF145
+ 989 0718 06       		.byte	0x6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 19
+
+
+ 990 0719 D002     		.2byte	0x2d0
+ 991 071b CE000000 		.4byte	0xce
+ 992 071f 14       		.byte	0x14
+ 993 0720 0E       		.uleb128 0xe
+ 994 0721 DA070000 		.4byte	.LASF146
+ 995 0725 06       		.byte	0x6
+ 996 0726 D102     		.2byte	0x2d1
+ 997 0728 E0000000 		.4byte	0xe0
+ 998 072c 18       		.byte	0x18
+ 999 072d 0E       		.uleb128 0xe
+ 1000 072e 230A0000 		.4byte	.LASF147
+ 1001 0732 06       		.byte	0x6
+ 1002 0733 D202     		.2byte	0x2d2
+ 1003 0735 E0000000 		.4byte	0xe0
+ 1004 0739 1C       		.byte	0x1c
+ 1005 073a 0E       		.uleb128 0xe
+ 1006 073b B5000000 		.4byte	.LASF148
+ 1007 073f 06       		.byte	0x6
+ 1008 0740 D402     		.2byte	0x2d4
+ 1009 0742 E0000000 		.4byte	0xe0
+ 1010 0746 20       		.byte	0x20
+ 1011 0747 0E       		.uleb128 0xe
+ 1012 0748 01060000 		.4byte	.LASF149
+ 1013 074c 06       		.byte	0x6
+ 1014 074d D502     		.2byte	0x2d5
+ 1015 074f D0070000 		.4byte	0x7d0
+ 1016 0753 24       		.byte	0x24
+ 1017 0754 0E       		.uleb128 0xe
+ 1018 0755 AB0B0000 		.4byte	.LASF150
+ 1019 0759 06       		.byte	0x6
+ 1020 075a D702     		.2byte	0x2d7
+ 1021 075c CA070000 		.4byte	0x7ca
+ 1022 0760 28       		.byte	0x28
+ 1023 0761 0E       		.uleb128 0xe
+ 1024 0762 B90B0000 		.4byte	.LASF151
+ 1025 0766 06       		.byte	0x6
+ 1026 0767 D802     		.2byte	0x2d8
+ 1027 0769 CE000000 		.4byte	0xce
+ 1028 076d 2C       		.byte	0x2c
+ 1029 076e 0E       		.uleb128 0xe
+ 1030 076f E4050000 		.4byte	.LASF152
+ 1031 0773 06       		.byte	0x6
+ 1032 0774 D902     		.2byte	0x2d9
+ 1033 0776 E0000000 		.4byte	0xe0
+ 1034 077a 30       		.byte	0x30
+ 1035 077b 0E       		.uleb128 0xe
+ 1036 077c 320A0000 		.4byte	.LASF153
+ 1037 0780 06       		.byte	0x6
+ 1038 0781 DA02     		.2byte	0x2da
+ 1039 0783 E0000000 		.4byte	0xe0
+ 1040 0787 34       		.byte	0x34
+ 1041 0788 0E       		.uleb128 0xe
+ 1042 0789 94050000 		.4byte	.LASF154
+ 1043 078d 06       		.byte	0x6
+ 1044 078e DC02     		.2byte	0x2dc
+ 1045 0790 CA070000 		.4byte	0x7ca
+ 1046 0794 38       		.byte	0x38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 20
+
+
+ 1047 0795 0E       		.uleb128 0xe
+ 1048 0796 7C020000 		.4byte	.LASF155
+ 1049 079a 06       		.byte	0x6
+ 1050 079b DD02     		.2byte	0x2dd
+ 1051 079d CE000000 		.4byte	0xce
+ 1052 07a1 3C       		.byte	0x3c
+ 1053 07a2 0E       		.uleb128 0xe
+ 1054 07a3 4B000000 		.4byte	.LASF156
+ 1055 07a7 06       		.byte	0x6
+ 1056 07a8 DE02     		.2byte	0x2de
+ 1057 07aa E0000000 		.4byte	0xe0
+ 1058 07ae 40       		.byte	0x40
+ 1059 07af 0E       		.uleb128 0xe
+ 1060 07b0 EE060000 		.4byte	.LASF157
+ 1061 07b4 06       		.byte	0x6
+ 1062 07b5 E402     		.2byte	0x2e4
+ 1063 07b7 6D060000 		.4byte	0x66d
+ 1064 07bb 44       		.byte	0x44
+ 1065 07bc 0E       		.uleb128 0xe
+ 1066 07bd CB040000 		.4byte	.LASF158
+ 1067 07c1 06       		.byte	0x6
+ 1068 07c2 EB02     		.2byte	0x2eb
+ 1069 07c4 8A060000 		.4byte	0x68a
+ 1070 07c8 48       		.byte	0x48
+ 1071 07c9 00       		.byte	0
+ 1072 07ca 09       		.uleb128 0x9
+ 1073 07cb 04       		.byte	0x4
+ 1074 07cc A2000000 		.4byte	0xa2
+ 1075 07d0 05       		.uleb128 0x5
+ 1076 07d1 1F050000 		.4byte	0x51f
+ 1077 07d5 0C       		.uleb128 0xc
+ 1078 07d6 6B0A0000 		.4byte	.LASF159
+ 1079 07da 06       		.byte	0x6
+ 1080 07db EE02     		.2byte	0x2ee
+ 1081 07dd AB060000 		.4byte	0x6ab
+ 1082 07e1 0C       		.uleb128 0xc
+ 1083 07e2 50060000 		.4byte	.LASF160
+ 1084 07e6 07       		.byte	0x7
+ 1085 07e7 D901     		.2byte	0x1d9
+ 1086 07e9 79060000 		.4byte	0x679
+ 1087 07ed 14       		.uleb128 0x14
+ 1088 07ee 020D0000 		.4byte	.LASF162
+ 1089 07f2 38       		.byte	0x38
+ 1090 07f3 07       		.byte	0x7
+ 1091 07f4 7502     		.2byte	0x275
+ 1092 07f6 B1080000 		.4byte	0x8b1
+ 1093 07fa 0E       		.uleb128 0xe
+ 1094 07fb BF0C0000 		.4byte	.LASF163
+ 1095 07ff 07       		.byte	0x7
+ 1096 0800 7802     		.2byte	0x278
+ 1097 0802 E0000000 		.4byte	0xe0
+ 1098 0806 00       		.byte	0
+ 1099 0807 0E       		.uleb128 0xe
+ 1100 0808 53080000 		.4byte	.LASF164
+ 1101 080c 07       		.byte	0x7
+ 1102 080d 7902     		.2byte	0x279
+ 1103 080f E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 21
+
+
+ 1104 0813 04       		.byte	0x4
+ 1105 0814 0E       		.uleb128 0xe
+ 1106 0815 2B020000 		.4byte	.LASF165
+ 1107 0819 07       		.byte	0x7
+ 1108 081a 7B02     		.2byte	0x27b
+ 1109 081c 1D050000 		.4byte	0x51d
+ 1110 0820 08       		.byte	0x8
+ 1111 0821 0E       		.uleb128 0xe
+ 1112 0822 23060000 		.4byte	.LASF166
+ 1113 0826 07       		.byte	0x7
+ 1114 0827 7C02     		.2byte	0x27c
+ 1115 0829 CE000000 		.4byte	0xce
+ 1116 082d 0C       		.byte	0xc
+ 1117 082e 0E       		.uleb128 0xe
+ 1118 082f 260B0000 		.4byte	.LASF167
+ 1119 0833 07       		.byte	0x7
+ 1120 0834 7D02     		.2byte	0x27d
+ 1121 0836 E0000000 		.4byte	0xe0
+ 1122 083a 10       		.byte	0x10
+ 1123 083b 0E       		.uleb128 0xe
+ 1124 083c A50C0000 		.4byte	.LASF168
+ 1125 0840 07       		.byte	0x7
+ 1126 0841 7E02     		.2byte	0x27e
+ 1127 0843 E0000000 		.4byte	0xe0
+ 1128 0847 14       		.byte	0x14
+ 1129 0848 0E       		.uleb128 0xe
+ 1130 0849 A50B0000 		.4byte	.LASF169
+ 1131 084d 07       		.byte	0x7
+ 1132 084e 8002     		.2byte	0x280
+ 1133 0850 1D050000 		.4byte	0x51d
+ 1134 0854 18       		.byte	0x18
+ 1135 0855 0E       		.uleb128 0xe
+ 1136 0856 1A000000 		.4byte	.LASF170
+ 1137 085a 07       		.byte	0x7
+ 1138 085b 8102     		.2byte	0x281
+ 1139 085d CE000000 		.4byte	0xce
+ 1140 0861 1C       		.byte	0x1c
+ 1141 0862 0E       		.uleb128 0xe
+ 1142 0863 67050000 		.4byte	.LASF171
+ 1143 0867 07       		.byte	0x7
+ 1144 0868 8202     		.2byte	0x282
+ 1145 086a E0000000 		.4byte	0xe0
+ 1146 086e 20       		.byte	0x20
+ 1147 086f 0E       		.uleb128 0xe
+ 1148 0870 58020000 		.4byte	.LASF172
+ 1149 0874 07       		.byte	0x7
+ 1150 0875 8402     		.2byte	0x284
+ 1151 0877 1D050000 		.4byte	0x51d
+ 1152 087b 24       		.byte	0x24
+ 1153 087c 0E       		.uleb128 0xe
+ 1154 087d 8A050000 		.4byte	.LASF173
+ 1155 0881 07       		.byte	0x7
+ 1156 0882 8502     		.2byte	0x285
+ 1157 0884 CE000000 		.4byte	0xce
+ 1158 0888 28       		.byte	0x28
+ 1159 0889 0E       		.uleb128 0xe
+ 1160 088a E2080000 		.4byte	.LASF174
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 22
+
+
+ 1161 088e 07       		.byte	0x7
+ 1162 088f 8602     		.2byte	0x286
+ 1163 0891 E0000000 		.4byte	0xe0
+ 1164 0895 2C       		.byte	0x2c
+ 1165 0896 0E       		.uleb128 0xe
+ 1166 0897 EE060000 		.4byte	.LASF157
+ 1167 089b 07       		.byte	0x7
+ 1168 089c 8B02     		.2byte	0x28b
+ 1169 089e E1070000 		.4byte	0x7e1
+ 1170 08a2 30       		.byte	0x30
+ 1171 08a3 0E       		.uleb128 0xe
+ 1172 08a4 9D0B0000 		.4byte	.LASF175
+ 1173 08a8 07       		.byte	0x7
+ 1174 08a9 8E02     		.2byte	0x28e
+ 1175 08ab CE000000 		.4byte	0xce
+ 1176 08af 34       		.byte	0x34
+ 1177 08b0 00       		.byte	0
+ 1178 08b1 0C       		.uleb128 0xc
+ 1179 08b2 CB0B0000 		.4byte	.LASF176
+ 1180 08b6 07       		.byte	0x7
+ 1181 08b7 9102     		.2byte	0x291
+ 1182 08b9 ED070000 		.4byte	0x7ed
+ 1183 08bd 15       		.uleb128 0x15
+ 1184 08be 9E070000 		.4byte	.LASF177
+ 1185 08c2 4C       		.byte	0x4c
+ 1186 08c3 08       		.byte	0x8
+ 1187 08c4 2F       		.byte	0x2f
+ 1188 08c5 AE090000 		.4byte	0x9ae
+ 1189 08c9 07       		.uleb128 0x7
+ 1190 08ca C3010000 		.4byte	.LASF178
+ 1191 08ce 08       		.byte	0x8
+ 1192 08cf 31       		.byte	0x31
+ 1193 08d0 CE000000 		.4byte	0xce
+ 1194 08d4 00       		.byte	0
+ 1195 08d5 07       		.uleb128 0x7
+ 1196 08d6 0C020000 		.4byte	.LASF179
+ 1197 08da 08       		.byte	0x8
+ 1198 08db 33       		.byte	0x33
+ 1199 08dc CE000000 		.4byte	0xce
+ 1200 08e0 04       		.byte	0x4
+ 1201 08e1 07       		.uleb128 0x7
+ 1202 08e2 12000000 		.4byte	.LASF180
+ 1203 08e6 08       		.byte	0x8
+ 1204 08e7 34       		.byte	0x34
+ 1205 08e8 CE000000 		.4byte	0xce
+ 1206 08ec 08       		.byte	0x8
+ 1207 08ed 07       		.uleb128 0x7
+ 1208 08ee 9C010000 		.4byte	.LASF181
+ 1209 08f2 08       		.byte	0x8
+ 1210 08f3 35       		.byte	0x35
+ 1211 08f4 CE000000 		.4byte	0xce
+ 1212 08f8 0C       		.byte	0xc
+ 1213 08f9 07       		.uleb128 0x7
+ 1214 08fa 120A0000 		.4byte	.LASF182
+ 1215 08fe 08       		.byte	0x8
+ 1216 08ff 37       		.byte	0x37
+ 1217 0900 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 23
+
+
+ 1218 0904 10       		.byte	0x10
+ 1219 0905 07       		.uleb128 0x7
+ 1220 0906 900A0000 		.4byte	.LASF183
+ 1221 090a 08       		.byte	0x8
+ 1222 090b 38       		.byte	0x38
+ 1223 090c CE000000 		.4byte	0xce
+ 1224 0910 14       		.byte	0x14
+ 1225 0911 07       		.uleb128 0x7
+ 1226 0912 990A0000 		.4byte	.LASF184
+ 1227 0916 08       		.byte	0x8
+ 1228 0917 39       		.byte	0x39
+ 1229 0918 CE000000 		.4byte	0xce
+ 1230 091c 18       		.byte	0x18
+ 1231 091d 07       		.uleb128 0x7
+ 1232 091e 8A090000 		.4byte	.LASF185
+ 1233 0922 08       		.byte	0x8
+ 1234 0923 3A       		.byte	0x3a
+ 1235 0924 1F050000 		.4byte	0x51f
+ 1236 0928 1C       		.byte	0x1c
+ 1237 0929 07       		.uleb128 0x7
+ 1238 092a 340B0000 		.4byte	.LASF186
+ 1239 092e 08       		.byte	0x8
+ 1240 092f 3C       		.byte	0x3c
+ 1241 0930 CE000000 		.4byte	0xce
+ 1242 0934 20       		.byte	0x20
+ 1243 0935 07       		.uleb128 0x7
+ 1244 0936 81040000 		.4byte	.LASF187
+ 1245 093a 08       		.byte	0x8
+ 1246 093b 3D       		.byte	0x3d
+ 1247 093c CE000000 		.4byte	0xce
+ 1248 0940 24       		.byte	0x24
+ 1249 0941 07       		.uleb128 0x7
+ 1250 0942 D6010000 		.4byte	.LASF188
+ 1251 0946 08       		.byte	0x8
+ 1252 0947 3F       		.byte	0x3f
+ 1253 0948 CE000000 		.4byte	0xce
+ 1254 094c 28       		.byte	0x28
+ 1255 094d 07       		.uleb128 0x7
+ 1256 094e 7B0C0000 		.4byte	.LASF189
+ 1257 0952 08       		.byte	0x8
+ 1258 0953 40       		.byte	0x40
+ 1259 0954 CE000000 		.4byte	0xce
+ 1260 0958 2C       		.byte	0x2c
+ 1261 0959 07       		.uleb128 0x7
+ 1262 095a 450B0000 		.4byte	.LASF190
+ 1263 095e 08       		.byte	0x8
+ 1264 095f 42       		.byte	0x42
+ 1265 0960 CE000000 		.4byte	0xce
+ 1266 0964 30       		.byte	0x30
+ 1267 0965 07       		.uleb128 0x7
+ 1268 0966 1B090000 		.4byte	.LASF191
+ 1269 096a 08       		.byte	0x8
+ 1270 096b 43       		.byte	0x43
+ 1271 096c CE000000 		.4byte	0xce
+ 1272 0970 34       		.byte	0x34
+ 1273 0971 07       		.uleb128 0x7
+ 1274 0972 470D0000 		.4byte	.LASF192
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 24
+
+
+ 1275 0976 08       		.byte	0x8
+ 1276 0977 45       		.byte	0x45
+ 1277 0978 CE000000 		.4byte	0xce
+ 1278 097c 38       		.byte	0x38
+ 1279 097d 07       		.uleb128 0x7
+ 1280 097e AB010000 		.4byte	.LASF193
+ 1281 0982 08       		.byte	0x8
+ 1282 0983 46       		.byte	0x46
+ 1283 0984 CE000000 		.4byte	0xce
+ 1284 0988 3C       		.byte	0x3c
+ 1285 0989 07       		.uleb128 0x7
+ 1286 098a 650B0000 		.4byte	.LASF194
+ 1287 098e 08       		.byte	0x8
+ 1288 098f 48       		.byte	0x48
+ 1289 0990 CE000000 		.4byte	0xce
+ 1290 0994 40       		.byte	0x40
+ 1291 0995 07       		.uleb128 0x7
+ 1292 0996 4E070000 		.4byte	.LASF195
+ 1293 099a 08       		.byte	0x8
+ 1294 099b 49       		.byte	0x49
+ 1295 099c CE000000 		.4byte	0xce
+ 1296 09a0 44       		.byte	0x44
+ 1297 09a1 07       		.uleb128 0x7
+ 1298 09a2 A20A0000 		.4byte	.LASF196
+ 1299 09a6 08       		.byte	0x8
+ 1300 09a7 4B       		.byte	0x4b
+ 1301 09a8 CE000000 		.4byte	0xce
+ 1302 09ac 48       		.byte	0x48
+ 1303 09ad 00       		.byte	0
+ 1304 09ae 03       		.uleb128 0x3
+ 1305 09af E3020000 		.4byte	.LASF197
+ 1306 09b3 08       		.byte	0x8
+ 1307 09b4 4C       		.byte	0x4c
+ 1308 09b5 BD080000 		.4byte	0x8bd
+ 1309 09b9 06       		.uleb128 0x6
+ 1310 09ba 14       		.byte	0x14
+ 1311 09bb 09       		.byte	0x9
+ 1312 09bc 3B       		.byte	0x3b
+ 1313 09bd FE090000 		.4byte	0x9fe
+ 1314 09c1 07       		.uleb128 0x7
+ 1315 09c2 B30C0000 		.4byte	.LASF198
+ 1316 09c6 09       		.byte	0x9
+ 1317 09c7 3D       		.byte	0x3d
+ 1318 09c8 CE000000 		.4byte	0xce
+ 1319 09cc 00       		.byte	0
+ 1320 09cd 07       		.uleb128 0x7
+ 1321 09ce 14070000 		.4byte	.LASF199
+ 1322 09d2 09       		.byte	0x9
+ 1323 09d3 3E       		.byte	0x3e
+ 1324 09d4 CE000000 		.4byte	0xce
+ 1325 09d8 04       		.byte	0x4
+ 1326 09d9 07       		.uleb128 0x7
+ 1327 09da 51050000 		.4byte	.LASF200
+ 1328 09de 09       		.byte	0x9
+ 1329 09df 3F       		.byte	0x3f
+ 1330 09e0 FE090000 		.4byte	0x9fe
+ 1331 09e4 08       		.byte	0x8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 25
+
+
+ 1332 09e5 07       		.uleb128 0x7
+ 1333 09e6 510B0000 		.4byte	.LASF201
+ 1334 09ea 09       		.byte	0x9
+ 1335 09eb 40       		.byte	0x40
+ 1336 09ec CE000000 		.4byte	0xce
+ 1337 09f0 0C       		.byte	0xc
+ 1338 09f1 07       		.uleb128 0x7
+ 1339 09f2 39030000 		.4byte	.LASF202
+ 1340 09f6 09       		.byte	0x9
+ 1341 09f7 45       		.byte	0x45
+ 1342 09f8 CE000000 		.4byte	0xce
+ 1343 09fc 10       		.byte	0x10
+ 1344 09fd 00       		.byte	0
+ 1345 09fe 09       		.uleb128 0x9
+ 1346 09ff 04       		.byte	0x4
+ 1347 0a00 040A0000 		.4byte	0xa04
+ 1348 0a04 16       		.uleb128 0x16
+ 1349 0a05 3B060000 		.4byte	0x63b
+ 1350 0a09 03       		.uleb128 0x3
+ 1351 0a0a 6F040000 		.4byte	.LASF203
+ 1352 0a0e 09       		.byte	0x9
+ 1353 0a0f 48       		.byte	0x48
+ 1354 0a10 B9090000 		.4byte	0x9b9
+ 1355 0a14 17       		.uleb128 0x17
+ 1356 0a15 D8050000 		.4byte	.LASF214
+ 1357 0a19 01       		.byte	0x1
+ 1358 0a1a 18       		.byte	0x18
+ 1359 0a1b 1F050000 		.4byte	0x51f
+ 1360 0a1f 00000000 		.4byte	.LFB736
+ 1361 0a23 44000000 		.4byte	.LFE736-.LFB736
+ 1362 0a27 01       		.uleb128 0x1
+ 1363 0a28 9C       		.byte	0x9c
+ 1364 0a29 4A0A0000 		.4byte	0xa4a
+ 1365 0a2d 18       		.uleb128 0x18
+ 1366 0a2e 6F060000 		.4byte	.LASF215
+ 1367 0a32 01       		.byte	0x1
+ 1368 0a33 18       		.byte	0x18
+ 1369 0a34 26050000 		.4byte	0x526
+ 1370 0a38 02       		.uleb128 0x2
+ 1371 0a39 91       		.byte	0x91
+ 1372 0a3a 6C       		.sleb128 -20
+ 1373 0a3b 19       		.uleb128 0x19
+ 1374 0a3c FD0B0000 		.4byte	.LASF216
+ 1375 0a40 01       		.byte	0x1
+ 1376 0a41 19       		.byte	0x19
+ 1377 0a42 CE000000 		.4byte	0xce
+ 1378 0a46 02       		.uleb128 0x2
+ 1379 0a47 91       		.byte	0x91
+ 1380 0a48 74       		.sleb128 -12
+ 1381 0a49 00       		.byte	0
+ 1382 0a4a 1A       		.uleb128 0x1a
+ 1383 0a4b 54090000 		.4byte	.LASF204
+ 1384 0a4f 0A       		.byte	0xa
+ 1385 0a50 F907     		.2byte	0x7f9
+ 1386 0a52 560A0000 		.4byte	0xa56
+ 1387 0a56 05       		.uleb128 0x5
+ 1388 0a57 C3000000 		.4byte	0xc3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 26
+
+
+ 1389 0a5b 1B       		.uleb128 0x1b
+ 1390 0a5c B6080000 		.4byte	.LASF205
+ 1391 0a60 04       		.byte	0x4
+ 1392 0a61 A7       		.byte	0xa7
+ 1393 0a62 660A0000 		.4byte	0xa66
+ 1394 0a66 09       		.uleb128 0x9
+ 1395 0a67 04       		.byte	0x4
+ 1396 0a68 6C0A0000 		.4byte	0xa6c
+ 1397 0a6c 16       		.uleb128 0x16
+ 1398 0a6d FD040000 		.4byte	0x4fd
+ 1399 0a71 1B       		.uleb128 0x1b
+ 1400 0a72 77060000 		.4byte	.LASF206
+ 1401 0a76 0B       		.byte	0xb
+ 1402 0a77 87       		.byte	0x87
+ 1403 0a78 B1080000 		.4byte	0x8b1
+ 1404 0a7c 1A       		.uleb128 0x1a
+ 1405 0a7d E3010000 		.4byte	.LASF207
+ 1406 0a81 09       		.byte	0x9
+ 1407 0a82 6001     		.2byte	0x160
+ 1408 0a84 CE000000 		.4byte	0xce
+ 1409 0a88 0F       		.uleb128 0xf
+ 1410 0a89 980A0000 		.4byte	0xa98
+ 1411 0a8d 980A0000 		.4byte	0xa98
+ 1412 0a91 10       		.uleb128 0x10
+ 1413 0a92 D9000000 		.4byte	0xd9
+ 1414 0a96 00       		.byte	0
+ 1415 0a97 00       		.byte	0
+ 1416 0a98 16       		.uleb128 0x16
+ 1417 0a99 090A0000 		.4byte	0xa09
+ 1418 0a9d 1A       		.uleb128 0x1a
+ 1419 0a9e C60A0000 		.4byte	.LASF208
+ 1420 0aa2 09       		.byte	0x9
+ 1421 0aa3 6401     		.2byte	0x164
+ 1422 0aa5 A90A0000 		.4byte	0xaa9
+ 1423 0aa9 16       		.uleb128 0x16
+ 1424 0aaa 880A0000 		.4byte	0xa88
+ 1425 0aae 1B       		.uleb128 0x1b
+ 1426 0aaf 43060000 		.4byte	.LASF209
+ 1427 0ab3 0C       		.byte	0xc
+ 1428 0ab4 7F       		.byte	0x7f
+ 1429 0ab5 D5070000 		.4byte	0x7d5
+ 1430 0ab9 1B       		.uleb128 0x1b
+ 1431 0aba 01040000 		.4byte	.LASF210
+ 1432 0abe 0D       		.byte	0xd
+ 1433 0abf 1F       		.byte	0x1f
+ 1434 0ac0 C40A0000 		.4byte	0xac4
+ 1435 0ac4 16       		.uleb128 0x16
+ 1436 0ac5 AE090000 		.4byte	0x9ae
+ 1437 0ac9 00       		.byte	0
+ 1438              		.section	.debug_abbrev,"",%progbits
+ 1439              	.Ldebug_abbrev0:
+ 1440 0000 01       		.uleb128 0x1
+ 1441 0001 11       		.uleb128 0x11
+ 1442 0002 01       		.byte	0x1
+ 1443 0003 25       		.uleb128 0x25
+ 1444 0004 0E       		.uleb128 0xe
+ 1445 0005 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 27
+
+
+ 1446 0006 0B       		.uleb128 0xb
+ 1447 0007 03       		.uleb128 0x3
+ 1448 0008 0E       		.uleb128 0xe
+ 1449 0009 1B       		.uleb128 0x1b
+ 1450 000a 0E       		.uleb128 0xe
+ 1451 000b 55       		.uleb128 0x55
+ 1452 000c 17       		.uleb128 0x17
+ 1453 000d 11       		.uleb128 0x11
+ 1454 000e 01       		.uleb128 0x1
+ 1455 000f 10       		.uleb128 0x10
+ 1456 0010 17       		.uleb128 0x17
+ 1457 0011 00       		.byte	0
+ 1458 0012 00       		.byte	0
+ 1459 0013 02       		.uleb128 0x2
+ 1460 0014 24       		.uleb128 0x24
+ 1461 0015 00       		.byte	0
+ 1462 0016 0B       		.uleb128 0xb
+ 1463 0017 0B       		.uleb128 0xb
+ 1464 0018 3E       		.uleb128 0x3e
+ 1465 0019 0B       		.uleb128 0xb
+ 1466 001a 03       		.uleb128 0x3
+ 1467 001b 0E       		.uleb128 0xe
+ 1468 001c 00       		.byte	0
+ 1469 001d 00       		.byte	0
+ 1470 001e 03       		.uleb128 0x3
+ 1471 001f 16       		.uleb128 0x16
+ 1472 0020 00       		.byte	0
+ 1473 0021 03       		.uleb128 0x3
+ 1474 0022 0E       		.uleb128 0xe
+ 1475 0023 3A       		.uleb128 0x3a
+ 1476 0024 0B       		.uleb128 0xb
+ 1477 0025 3B       		.uleb128 0x3b
+ 1478 0026 0B       		.uleb128 0xb
+ 1479 0027 49       		.uleb128 0x49
+ 1480 0028 13       		.uleb128 0x13
+ 1481 0029 00       		.byte	0
+ 1482 002a 00       		.byte	0
+ 1483 002b 04       		.uleb128 0x4
+ 1484 002c 24       		.uleb128 0x24
+ 1485 002d 00       		.byte	0
+ 1486 002e 0B       		.uleb128 0xb
+ 1487 002f 0B       		.uleb128 0xb
+ 1488 0030 3E       		.uleb128 0x3e
+ 1489 0031 0B       		.uleb128 0xb
+ 1490 0032 03       		.uleb128 0x3
+ 1491 0033 08       		.uleb128 0x8
+ 1492 0034 00       		.byte	0
+ 1493 0035 00       		.byte	0
+ 1494 0036 05       		.uleb128 0x5
+ 1495 0037 35       		.uleb128 0x35
+ 1496 0038 00       		.byte	0
+ 1497 0039 49       		.uleb128 0x49
+ 1498 003a 13       		.uleb128 0x13
+ 1499 003b 00       		.byte	0
+ 1500 003c 00       		.byte	0
+ 1501 003d 06       		.uleb128 0x6
+ 1502 003e 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 28
+
+
+ 1503 003f 01       		.byte	0x1
+ 1504 0040 0B       		.uleb128 0xb
+ 1505 0041 0B       		.uleb128 0xb
+ 1506 0042 3A       		.uleb128 0x3a
+ 1507 0043 0B       		.uleb128 0xb
+ 1508 0044 3B       		.uleb128 0x3b
+ 1509 0045 0B       		.uleb128 0xb
+ 1510 0046 01       		.uleb128 0x1
+ 1511 0047 13       		.uleb128 0x13
+ 1512 0048 00       		.byte	0
+ 1513 0049 00       		.byte	0
+ 1514 004a 07       		.uleb128 0x7
+ 1515 004b 0D       		.uleb128 0xd
+ 1516 004c 00       		.byte	0
+ 1517 004d 03       		.uleb128 0x3
+ 1518 004e 0E       		.uleb128 0xe
+ 1519 004f 3A       		.uleb128 0x3a
+ 1520 0050 0B       		.uleb128 0xb
+ 1521 0051 3B       		.uleb128 0x3b
+ 1522 0052 0B       		.uleb128 0xb
+ 1523 0053 49       		.uleb128 0x49
+ 1524 0054 13       		.uleb128 0x13
+ 1525 0055 38       		.uleb128 0x38
+ 1526 0056 0B       		.uleb128 0xb
+ 1527 0057 00       		.byte	0
+ 1528 0058 00       		.byte	0
+ 1529 0059 08       		.uleb128 0x8
+ 1530 005a 0F       		.uleb128 0xf
+ 1531 005b 00       		.byte	0
+ 1532 005c 0B       		.uleb128 0xb
+ 1533 005d 0B       		.uleb128 0xb
+ 1534 005e 00       		.byte	0
+ 1535 005f 00       		.byte	0
+ 1536 0060 09       		.uleb128 0x9
+ 1537 0061 0F       		.uleb128 0xf
+ 1538 0062 00       		.byte	0
+ 1539 0063 0B       		.uleb128 0xb
+ 1540 0064 0B       		.uleb128 0xb
+ 1541 0065 49       		.uleb128 0x49
+ 1542 0066 13       		.uleb128 0x13
+ 1543 0067 00       		.byte	0
+ 1544 0068 00       		.byte	0
+ 1545 0069 0A       		.uleb128 0xa
+ 1546 006a 04       		.uleb128 0x4
+ 1547 006b 01       		.byte	0x1
+ 1548 006c 0B       		.uleb128 0xb
+ 1549 006d 0B       		.uleb128 0xb
+ 1550 006e 49       		.uleb128 0x49
+ 1551 006f 13       		.uleb128 0x13
+ 1552 0070 3A       		.uleb128 0x3a
+ 1553 0071 0B       		.uleb128 0xb
+ 1554 0072 3B       		.uleb128 0x3b
+ 1555 0073 05       		.uleb128 0x5
+ 1556 0074 01       		.uleb128 0x1
+ 1557 0075 13       		.uleb128 0x13
+ 1558 0076 00       		.byte	0
+ 1559 0077 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 29
+
+
+ 1560 0078 0B       		.uleb128 0xb
+ 1561 0079 28       		.uleb128 0x28
+ 1562 007a 00       		.byte	0
+ 1563 007b 03       		.uleb128 0x3
+ 1564 007c 0E       		.uleb128 0xe
+ 1565 007d 1C       		.uleb128 0x1c
+ 1566 007e 0B       		.uleb128 0xb
+ 1567 007f 00       		.byte	0
+ 1568 0080 00       		.byte	0
+ 1569 0081 0C       		.uleb128 0xc
+ 1570 0082 16       		.uleb128 0x16
+ 1571 0083 00       		.byte	0
+ 1572 0084 03       		.uleb128 0x3
+ 1573 0085 0E       		.uleb128 0xe
+ 1574 0086 3A       		.uleb128 0x3a
+ 1575 0087 0B       		.uleb128 0xb
+ 1576 0088 3B       		.uleb128 0x3b
+ 1577 0089 05       		.uleb128 0x5
+ 1578 008a 49       		.uleb128 0x49
+ 1579 008b 13       		.uleb128 0x13
+ 1580 008c 00       		.byte	0
+ 1581 008d 00       		.byte	0
+ 1582 008e 0D       		.uleb128 0xd
+ 1583 008f 13       		.uleb128 0x13
+ 1584 0090 01       		.byte	0x1
+ 1585 0091 0B       		.uleb128 0xb
+ 1586 0092 0B       		.uleb128 0xb
+ 1587 0093 3A       		.uleb128 0x3a
+ 1588 0094 0B       		.uleb128 0xb
+ 1589 0095 3B       		.uleb128 0x3b
+ 1590 0096 05       		.uleb128 0x5
+ 1591 0097 01       		.uleb128 0x1
+ 1592 0098 13       		.uleb128 0x13
+ 1593 0099 00       		.byte	0
+ 1594 009a 00       		.byte	0
+ 1595 009b 0E       		.uleb128 0xe
+ 1596 009c 0D       		.uleb128 0xd
+ 1597 009d 00       		.byte	0
+ 1598 009e 03       		.uleb128 0x3
+ 1599 009f 0E       		.uleb128 0xe
+ 1600 00a0 3A       		.uleb128 0x3a
+ 1601 00a1 0B       		.uleb128 0xb
+ 1602 00a2 3B       		.uleb128 0x3b
+ 1603 00a3 05       		.uleb128 0x5
+ 1604 00a4 49       		.uleb128 0x49
+ 1605 00a5 13       		.uleb128 0x13
+ 1606 00a6 38       		.uleb128 0x38
+ 1607 00a7 0B       		.uleb128 0xb
+ 1608 00a8 00       		.byte	0
+ 1609 00a9 00       		.byte	0
+ 1610 00aa 0F       		.uleb128 0xf
+ 1611 00ab 01       		.uleb128 0x1
+ 1612 00ac 01       		.byte	0x1
+ 1613 00ad 49       		.uleb128 0x49
+ 1614 00ae 13       		.uleb128 0x13
+ 1615 00af 01       		.uleb128 0x1
+ 1616 00b0 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 30
+
+
+ 1617 00b1 00       		.byte	0
+ 1618 00b2 00       		.byte	0
+ 1619 00b3 10       		.uleb128 0x10
+ 1620 00b4 21       		.uleb128 0x21
+ 1621 00b5 00       		.byte	0
+ 1622 00b6 49       		.uleb128 0x49
+ 1623 00b7 13       		.uleb128 0x13
+ 1624 00b8 2F       		.uleb128 0x2f
+ 1625 00b9 0B       		.uleb128 0xb
+ 1626 00ba 00       		.byte	0
+ 1627 00bb 00       		.byte	0
+ 1628 00bc 11       		.uleb128 0x11
+ 1629 00bd 15       		.uleb128 0x15
+ 1630 00be 01       		.byte	0x1
+ 1631 00bf 27       		.uleb128 0x27
+ 1632 00c0 19       		.uleb128 0x19
+ 1633 00c1 01       		.uleb128 0x1
+ 1634 00c2 13       		.uleb128 0x13
+ 1635 00c3 00       		.byte	0
+ 1636 00c4 00       		.byte	0
+ 1637 00c5 12       		.uleb128 0x12
+ 1638 00c6 05       		.uleb128 0x5
+ 1639 00c7 00       		.byte	0
+ 1640 00c8 49       		.uleb128 0x49
+ 1641 00c9 13       		.uleb128 0x13
+ 1642 00ca 00       		.byte	0
+ 1643 00cb 00       		.byte	0
+ 1644 00cc 13       		.uleb128 0x13
+ 1645 00cd 15       		.uleb128 0x15
+ 1646 00ce 01       		.byte	0x1
+ 1647 00cf 27       		.uleb128 0x27
+ 1648 00d0 19       		.uleb128 0x19
+ 1649 00d1 49       		.uleb128 0x49
+ 1650 00d2 13       		.uleb128 0x13
+ 1651 00d3 01       		.uleb128 0x1
+ 1652 00d4 13       		.uleb128 0x13
+ 1653 00d5 00       		.byte	0
+ 1654 00d6 00       		.byte	0
+ 1655 00d7 14       		.uleb128 0x14
+ 1656 00d8 13       		.uleb128 0x13
+ 1657 00d9 01       		.byte	0x1
+ 1658 00da 03       		.uleb128 0x3
+ 1659 00db 0E       		.uleb128 0xe
+ 1660 00dc 0B       		.uleb128 0xb
+ 1661 00dd 0B       		.uleb128 0xb
+ 1662 00de 3A       		.uleb128 0x3a
+ 1663 00df 0B       		.uleb128 0xb
+ 1664 00e0 3B       		.uleb128 0x3b
+ 1665 00e1 05       		.uleb128 0x5
+ 1666 00e2 01       		.uleb128 0x1
+ 1667 00e3 13       		.uleb128 0x13
+ 1668 00e4 00       		.byte	0
+ 1669 00e5 00       		.byte	0
+ 1670 00e6 15       		.uleb128 0x15
+ 1671 00e7 13       		.uleb128 0x13
+ 1672 00e8 01       		.byte	0x1
+ 1673 00e9 03       		.uleb128 0x3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 31
+
+
+ 1674 00ea 0E       		.uleb128 0xe
+ 1675 00eb 0B       		.uleb128 0xb
+ 1676 00ec 0B       		.uleb128 0xb
+ 1677 00ed 3A       		.uleb128 0x3a
+ 1678 00ee 0B       		.uleb128 0xb
+ 1679 00ef 3B       		.uleb128 0x3b
+ 1680 00f0 0B       		.uleb128 0xb
+ 1681 00f1 01       		.uleb128 0x1
+ 1682 00f2 13       		.uleb128 0x13
+ 1683 00f3 00       		.byte	0
+ 1684 00f4 00       		.byte	0
+ 1685 00f5 16       		.uleb128 0x16
+ 1686 00f6 26       		.uleb128 0x26
+ 1687 00f7 00       		.byte	0
+ 1688 00f8 49       		.uleb128 0x49
+ 1689 00f9 13       		.uleb128 0x13
+ 1690 00fa 00       		.byte	0
+ 1691 00fb 00       		.byte	0
+ 1692 00fc 17       		.uleb128 0x17
+ 1693 00fd 2E       		.uleb128 0x2e
+ 1694 00fe 01       		.byte	0x1
+ 1695 00ff 3F       		.uleb128 0x3f
+ 1696 0100 19       		.uleb128 0x19
+ 1697 0101 03       		.uleb128 0x3
+ 1698 0102 0E       		.uleb128 0xe
+ 1699 0103 3A       		.uleb128 0x3a
+ 1700 0104 0B       		.uleb128 0xb
+ 1701 0105 3B       		.uleb128 0x3b
+ 1702 0106 0B       		.uleb128 0xb
+ 1703 0107 27       		.uleb128 0x27
+ 1704 0108 19       		.uleb128 0x19
+ 1705 0109 49       		.uleb128 0x49
+ 1706 010a 13       		.uleb128 0x13
+ 1707 010b 11       		.uleb128 0x11
+ 1708 010c 01       		.uleb128 0x1
+ 1709 010d 12       		.uleb128 0x12
+ 1710 010e 06       		.uleb128 0x6
+ 1711 010f 40       		.uleb128 0x40
+ 1712 0110 18       		.uleb128 0x18
+ 1713 0111 9642     		.uleb128 0x2116
+ 1714 0113 19       		.uleb128 0x19
+ 1715 0114 01       		.uleb128 0x1
+ 1716 0115 13       		.uleb128 0x13
+ 1717 0116 00       		.byte	0
+ 1718 0117 00       		.byte	0
+ 1719 0118 18       		.uleb128 0x18
+ 1720 0119 05       		.uleb128 0x5
+ 1721 011a 00       		.byte	0
+ 1722 011b 03       		.uleb128 0x3
+ 1723 011c 0E       		.uleb128 0xe
+ 1724 011d 3A       		.uleb128 0x3a
+ 1725 011e 0B       		.uleb128 0xb
+ 1726 011f 3B       		.uleb128 0x3b
+ 1727 0120 0B       		.uleb128 0xb
+ 1728 0121 49       		.uleb128 0x49
+ 1729 0122 13       		.uleb128 0x13
+ 1730 0123 02       		.uleb128 0x2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 32
+
+
+ 1731 0124 18       		.uleb128 0x18
+ 1732 0125 00       		.byte	0
+ 1733 0126 00       		.byte	0
+ 1734 0127 19       		.uleb128 0x19
+ 1735 0128 34       		.uleb128 0x34
+ 1736 0129 00       		.byte	0
+ 1737 012a 03       		.uleb128 0x3
+ 1738 012b 0E       		.uleb128 0xe
+ 1739 012c 3A       		.uleb128 0x3a
+ 1740 012d 0B       		.uleb128 0xb
+ 1741 012e 3B       		.uleb128 0x3b
+ 1742 012f 0B       		.uleb128 0xb
+ 1743 0130 49       		.uleb128 0x49
+ 1744 0131 13       		.uleb128 0x13
+ 1745 0132 02       		.uleb128 0x2
+ 1746 0133 18       		.uleb128 0x18
+ 1747 0134 00       		.byte	0
+ 1748 0135 00       		.byte	0
+ 1749 0136 1A       		.uleb128 0x1a
+ 1750 0137 34       		.uleb128 0x34
+ 1751 0138 00       		.byte	0
+ 1752 0139 03       		.uleb128 0x3
+ 1753 013a 0E       		.uleb128 0xe
+ 1754 013b 3A       		.uleb128 0x3a
+ 1755 013c 0B       		.uleb128 0xb
+ 1756 013d 3B       		.uleb128 0x3b
+ 1757 013e 05       		.uleb128 0x5
+ 1758 013f 49       		.uleb128 0x49
+ 1759 0140 13       		.uleb128 0x13
+ 1760 0141 3F       		.uleb128 0x3f
+ 1761 0142 19       		.uleb128 0x19
+ 1762 0143 3C       		.uleb128 0x3c
+ 1763 0144 19       		.uleb128 0x19
+ 1764 0145 00       		.byte	0
+ 1765 0146 00       		.byte	0
+ 1766 0147 1B       		.uleb128 0x1b
+ 1767 0148 34       		.uleb128 0x34
+ 1768 0149 00       		.byte	0
+ 1769 014a 03       		.uleb128 0x3
+ 1770 014b 0E       		.uleb128 0xe
+ 1771 014c 3A       		.uleb128 0x3a
+ 1772 014d 0B       		.uleb128 0xb
+ 1773 014e 3B       		.uleb128 0x3b
+ 1774 014f 0B       		.uleb128 0xb
+ 1775 0150 49       		.uleb128 0x49
+ 1776 0151 13       		.uleb128 0x13
+ 1777 0152 3F       		.uleb128 0x3f
+ 1778 0153 19       		.uleb128 0x19
+ 1779 0154 3C       		.uleb128 0x3c
+ 1780 0155 19       		.uleb128 0x19
+ 1781 0156 00       		.byte	0
+ 1782 0157 00       		.byte	0
+ 1783 0158 00       		.byte	0
+ 1784              		.section	.debug_aranges,"",%progbits
+ 1785 0000 1C000000 		.4byte	0x1c
+ 1786 0004 0200     		.2byte	0x2
+ 1787 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 33
+
+
+ 1788 000a 04       		.byte	0x4
+ 1789 000b 00       		.byte	0
+ 1790 000c 0000     		.2byte	0
+ 1791 000e 0000     		.2byte	0
+ 1792 0010 00000000 		.4byte	.LFB736
+ 1793 0014 44000000 		.4byte	.LFE736-.LFB736
+ 1794 0018 00000000 		.4byte	0
+ 1795 001c 00000000 		.4byte	0
+ 1796              		.section	.debug_ranges,"",%progbits
+ 1797              	.Ldebug_ranges0:
+ 1798 0000 00000000 		.4byte	.LFB736
+ 1799 0004 44000000 		.4byte	.LFE736
+ 1800 0008 00000000 		.4byte	0
+ 1801 000c 00000000 		.4byte	0
+ 1802              		.section	.debug_line,"",%progbits
+ 1803              	.Ldebug_line0:
+ 1804 0000 D4020000 		.section	.debug_str,"MS",%progbits,1
+ 1804      0200B702 
+ 1804      00000201 
+ 1804      FB0E0D00 
+ 1804      01010101 
+ 1805              	.LASF56:
+ 1806 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1806      4275734D 
+ 1806      61737465 
+ 1806      724D6173 
+ 1806      6B00
+ 1807              	.LASF180:
+ 1808 0012 72756E4D 		.ascii	"runMode\000"
+ 1808      6F646500 
+ 1809              	.LASF170:
+ 1810 001a 72784275 		.ascii	"rxBufSize\000"
+ 1810      6653697A 
+ 1810      6500
+ 1811              	.LASF66:
+ 1812 0024 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1812      6843746C 
+ 1812      4D61696E 
+ 1812      57733346 
+ 1812      72657100 
+ 1813              	.LASF88:
+ 1814 0038 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1814      50727443 
+ 1814      6667496E 
+ 1814      4F666673 
+ 1814      657400
+ 1815              	.LASF156:
+ 1816 004b 736C6176 		.ascii	"slaveRxBufferIdx\000"
+ 1816      65527842 
+ 1816      75666665 
+ 1816      72496478 
+ 1816      00
+ 1817              	.LASF144:
+ 1818 005c 6D617374 		.ascii	"masterBuffer\000"
+ 1818      65724275 
+ 1818      66666572 
+ 1818      00
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 34
+
+
+ 1819              	.LASF32:
+ 1820 0069 63727970 		.ascii	"cryptoVersion\000"
+ 1820      746F5665 
+ 1820      7273696F 
+ 1820      6E00
+ 1821              	.LASF70:
+ 1822 0077 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1822      43746C50 
+ 1822      72696F50 
+ 1822      6F7300
+ 1823              	.LASF28:
+ 1824 0086 70617373 		.ascii	"passBase\000"
+ 1824      42617365 
+ 1824      00
+ 1825              	.LASF104:
+ 1826 008f 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1826      7352616D 
+ 1826      3243746C 
+ 1826      3000
+ 1827              	.LASF41:
+ 1828 009d 63707573 		.ascii	"cpussIpcIrqNr\000"
  1828      73497063 
- 1828      4E7200
- 1829              	.LASF42:
- 1830 05eb 63707573 		.ascii	"cpussDwChNr\000"
- 1830      73447743 
- 1830      684E7200 
- 1831              	.LASF65:
- 1832 05f7 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
- 1832      6843746C 
- 1832      4D61696E 
- 1832      57733246 
- 1832      72657100 
- 1833              	.LASF139:
- 1834 060b 75736554 		.ascii	"useTxFifo\000"
- 1834      78466966 
- 1834      6F00
- 1835              	.LASF119:
- 1836 0615 73616D70 		.ascii	"sampleTime01\000"
- 1836      6C655469 
- 1836      6D653031 
- 1836      00
- 1837              	.LASF76:
- 1838 0622 70657269 		.ascii	"periTrGrOffset\000"
- 1838      54724772 
- 1838      4F666673 
- 1838      657400
- 1839              	.LASF103:
- 1840 0631 63707573 		.ascii	"cpussRam1Ctl0\000"
- 1840      7352616D 
- 1840      3143746C 
- 1840      3000
- 1841              	.LASF121:
- 1842 063f 72616E67 		.ascii	"rangeThres\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 39
+ 1828      4972714E 
+ 1828      7200
+ 1829              	.LASF2:
+ 1830 00ab 5F5F7569 		.ascii	"__uint8_t\000"
+ 1830      6E74385F 
+ 1830      7400
+ 1831              	.LASF148:
+ 1832 00b5 736C6176 		.ascii	"slaveStatus\000"
+ 1832      65537461 
+ 1832      74757300 
+ 1833              	.LASF43:
+ 1834 00c1 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1834      73466C61 
+ 1834      73685061 
+ 1834      53697A65 
+ 1834      00
+ 1835              	.LASF211:
+ 1836 00d2 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1836      43313120 
+ 1836      352E342E 
+ 1836      31203230 
+ 1836      31363036 
+ 1837 0105 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 1837      20726576 
+ 1837      6973696F 
+ 1837      6E203233 
+ 1837      37373135 
+ 1838 0138 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -O0 -ffunction-s"
+ 1838      70202D6D 
+ 1838      6670753D 
+ 1838      66707634 
+ 1838      2D73702D 
+ 1839 016b 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 1839      6F6E7320 
+ 1839      2D666661 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 35
 
 
- 1842      65546872 
- 1842      657300
- 1843              	.LASF157:
- 1844 064a 63624576 		.ascii	"cbEvents\000"
- 1844      656E7473 
- 1844      00
- 1845              	.LASF87:
- 1846 0653 6770696F 		.ascii	"gpioPrtCfgOffset\000"
- 1846      50727443 
- 1846      66674F66 
- 1846      66736574 
- 1846      00
- 1847              	.LASF35:
- 1848 0664 6770696F 		.ascii	"gpioVersion\000"
- 1848      56657273 
- 1848      696F6E00 
- 1849              	.LASF178:
- 1850 0670 6E756D43 		.ascii	"numChannels\000"
- 1850      68616E6E 
- 1850      656C7300 
- 1851              	.LASF107:
- 1852 067c 63795F73 		.ascii	"cy_stc_device_t\000"
- 1852      74635F64 
- 1852      65766963 
- 1852      655F7400 
- 1853              	.LASF124:
- 1854 068c 6368616E 		.ascii	"chanConfig\000"
- 1854      436F6E66 
- 1854      696700
- 1855              	.LASF25:
- 1856 0697 70726F74 		.ascii	"protBase\000"
- 1856      42617365 
- 1856      00
- 1857              	.LASF96:
- 1858 06a0 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
- 1858      73547269 
- 1858      6D52616D 
- 1858      43746C4F 
- 1858      66667365 
- 1859              	.LASF190:
- 1860 06b6 77616974 		.ascii	"wait.c\000"
- 1860      2E6300
- 1861              	.LASF91:
- 1862 06bd 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
- 1862      73436D30 
- 1862      436C6F63 
- 1862      6B43746C 
- 1862      4F666673 
- 1863              	.LASF30:
- 1864 06d4 63727970 		.ascii	"cryptoBase\000"
- 1864      746F4261 
- 1864      736500
- 1865              	.LASF135:
- 1866 06df 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
- 1866      6E5F7363 
- 1866      625F6932 
- 1866      635F636F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 40
+ 1839      742D6C74 
+ 1839      6F2D6F62 
+ 1840              	.LASF92:
+ 1841 0185 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1841      73436D34 
+ 1841      436C6F63 
+ 1841      6B43746C 
+ 1841      4F666673 
+ 1842              	.LASF181:
+ 1843 019c 636F756E 		.ascii	"countDirection\000"
+ 1843      74446972 
+ 1843      65637469 
+ 1843      6F6E00
+ 1844              	.LASF193:
+ 1845 01ab 73746F70 		.ascii	"stopInputMode\000"
+ 1845      496E7075 
+ 1845      744D6F64 
+ 1845      6500
+ 1846              	.LASF21:
+ 1847 01b9 63707573 		.ascii	"cpussBase\000"
+ 1847      73426173 
+ 1847      6500
+ 1848              	.LASF178:
+ 1849 01c3 70657269 		.ascii	"period\000"
+ 1849      6F6400
+ 1850              	.LASF126:
+ 1851 01ca 73617449 		.ascii	"satIntrMask\000"
+ 1851      6E74724D 
+ 1851      61736B00 
+ 1852              	.LASF188:
+ 1853 01d6 63617074 		.ascii	"captureInput\000"
+ 1853      75726549 
+ 1853      6E707574 
+ 1853      00
+ 1854              	.LASF207:
+ 1855 01e3 4144435F 		.ascii	"ADC_currentConfig\000"
+ 1855      63757272 
+ 1855      656E7443 
+ 1855      6F6E6669 
+ 1855      6700
+ 1856              	.LASF12:
+ 1857 01f5 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1857      206C6F6E 
+ 1857      6720756E 
+ 1857      7369676E 
+ 1857      65642069 
+ 1858              	.LASF179:
+ 1859 020c 636C6F63 		.ascii	"clockPrescaler\000"
+ 1859      6B507265 
+ 1859      7363616C 
+ 1859      657200
+ 1860              	.LASF74:
+ 1861 021b 70657269 		.ascii	"periTrCmdOffset\000"
+ 1861      5472436D 
+ 1861      644F6666 
+ 1861      73657400 
+ 1862              	.LASF165:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 36
 
 
- 1866      6D6D616E 
- 1867              	.LASF19:
- 1868 06f7 73697A65 		.ascii	"sizetype\000"
- 1868      74797065 
- 1868      00
- 1869              	.LASF68:
- 1870 0700 64774368 		.ascii	"dwChOffset\000"
- 1870      4F666673 
- 1870      657400
- 1871              	.LASF146:
- 1872 070b 6D617374 		.ascii	"masterBufferIdx\000"
- 1872      65724275 
- 1872      66666572 
- 1872      49647800 
- 1873              	.LASF120:
- 1874 071b 73616D70 		.ascii	"sampleTime23\000"
- 1874      6C655469 
- 1874      6D653233 
- 1874      00
- 1875              	.LASF81:
- 1876 0728 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
- 1876      44697643 
- 1876      6D645061 
- 1876      54797065 
- 1876      53656C50 
- 1877              	.LASF53:
- 1878 073f 65704D6F 		.ascii	"epMonitorNr\000"
- 1878      6E69746F 
- 1878      724E7200 
- 1879              	.LASF130:
- 1880 074b 636F6E66 		.ascii	"configRouting\000"
- 1880      6967526F 
- 1880      7574696E 
- 1880      6700
- 1881              	.LASF133:
- 1882 0759 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
- 1882      43425F49 
- 1882      32435F41 
- 1882      434B00
- 1883              	.LASF72:
- 1884 0768 64775374 		.ascii	"dwStatusChIdxPos\000"
- 1884      61747573 
- 1884      43684964 
- 1884      78506F73 
- 1884      00
- 1885              	.LASF54:
- 1886 0779 75646250 		.ascii	"udbPresent\000"
- 1886      72657365 
- 1886      6E7400
- 1887              	.LASF164:
- 1888 0784 72785374 		.ascii	"rxStatus\000"
- 1888      61747573 
- 1888      00
- 1889              	.LASF34:
- 1890 078d 666C6173 		.ascii	"flashcVersion\000"
- 1890      68635665 
- 1890      7273696F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 41
+ 1863 022b 72785269 		.ascii	"rxRingBuf\000"
+ 1863      6E674275 
+ 1863      6600
+ 1864              	.LASF98:
+ 1865 0235 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1865      73537973 
+ 1865      5469636B 
+ 1865      43746C4F 
+ 1865      66667365 
+ 1866              	.LASF141:
+ 1867 024b 6D617374 		.ascii	"masterStatus\000"
+ 1867      65725374 
+ 1867      61747573 
+ 1867      00
+ 1868              	.LASF172:
+ 1869 0258 74784275 		.ascii	"txBuf\000"
+ 1869      6600
+ 1870              	.LASF50:
+ 1871 025e 70657269 		.ascii	"periClockNr\000"
+ 1871      436C6F63 
+ 1871      6B4E7200 
+ 1872              	.LASF59:
+ 1873 026a 666C6173 		.ascii	"flashPipeRequired\000"
+ 1873      68506970 
+ 1873      65526571 
+ 1873      75697265 
+ 1873      6400
+ 1874              	.LASF155:
+ 1875 027c 736C6176 		.ascii	"slaveRxBufferSize\000"
+ 1875      65527842 
+ 1875      75666665 
+ 1875      7253697A 
+ 1875      6500
+ 1876              	.LASF161:
+ 1877 028e 63795F73 		.ascii	"cy_stc_scb_i2c_context\000"
+ 1877      74635F73 
+ 1877      63625F69 
+ 1877      32635F63 
+ 1877      6F6E7465 
+ 1878              	.LASF63:
+ 1879 02a5 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1879      6843746C 
+ 1879      4D61696E 
+ 1879      57733046 
+ 1879      72657100 
+ 1880              	.LASF15:
+ 1881 02b9 696E7431 		.ascii	"int16_t\000"
+ 1881      365F7400 
+ 1882              	.LASF132:
+ 1883 02c1 63795F73 		.ascii	"cy_stc_sar_config_t\000"
+ 1883      74635F73 
+ 1883      61725F63 
+ 1883      6F6E6669 
+ 1883      675F7400 
+ 1884              	.LASF11:
+ 1885 02d5 6C6F6E67 		.ascii	"long long int\000"
+ 1885      206C6F6E 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 37
 
 
- 1890      6E00
- 1891              	.LASF51:
- 1892 079b 736D6966 		.ascii	"smifDeviceNr\000"
- 1892      44657669 
- 1892      63654E72 
- 1892      00
- 1893              	.LASF127:
- 1894 07a8 72616E67 		.ascii	"rangeIntrMask\000"
- 1894      65496E74 
- 1894      724D6173 
- 1894      6B00
- 1895              	.LASF102:
- 1896 07b6 63707573 		.ascii	"cpussRam0Ctl0\000"
- 1896      7352616D 
- 1896      3043746C 
- 1896      3000
- 1897              	.LASF38:
- 1898 07c4 70657269 		.ascii	"periVersion\000"
- 1898      56657273 
- 1898      696F6E00 
- 1899              	.LASF109:
- 1900 07d0 666C6F61 		.ascii	"float\000"
- 1900      7400
- 1901              	.LASF73:
- 1902 07d6 64775374 		.ascii	"dwStatusChIdxMsk\000"
- 1902      61747573 
- 1902      43684964 
- 1902      784D736B 
- 1902      00
- 1903              	.LASF184:
- 1904 07e7 63795F64 		.ascii	"cy_device\000"
- 1904      65766963 
- 1904      6500
- 1905              	.LASF101:
- 1906 07f1 63707573 		.ascii	"cpussRomCtl\000"
- 1906      73526F6D 
- 1906      43746C00 
- 1907              	.LASF71:
- 1908 07fd 64774368 		.ascii	"dwChCtlPreemptablePos\000"
- 1908      43746C50 
- 1908      7265656D 
- 1908      70746162 
- 1908      6C65506F 
- 1909              	.LASF174:
- 1910 0813 74784C65 		.ascii	"txLeftToTransmit\000"
- 1910      6674546F 
- 1910      5472616E 
- 1910      736D6974 
- 1910      00
- 1911              	.LASF123:
- 1912 0824 6368616E 		.ascii	"chanEn\000"
- 1912      456E00
- 1913              	.LASF24:
- 1914 082b 75646242 		.ascii	"udbBase\000"
- 1914      61736500 
- 1915              	.LASF113:
- 1916 0833 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 42
+ 1885      6720696E 
+ 1885      7400
+ 1886              	.LASF197:
+ 1887 02e3 63795F73 		.ascii	"cy_stc_tcpwm_counter_config_t\000"
+ 1887      74635F74 
+ 1887      6370776D 
+ 1887      5F636F75 
+ 1887      6E746572 
+ 1888              	.LASF79:
+ 1889 0301 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1889      44697643 
+ 1889      6D645479 
+ 1889      70655365 
+ 1889      6C506F73 
+ 1890              	.LASF116:
+ 1891 0316 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
+ 1891      6E5F7361 
+ 1891      725F7261 
+ 1891      6E67655F 
+ 1891      64657465 
+ 1892              	.LASF202:
+ 1893 0339 636C6B44 		.ascii	"clkDivider\000"
+ 1893      69766964 
+ 1893      657200
+ 1894              	.LASF96:
+ 1895 0344 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ 1895      73547269 
+ 1895      6D52616D 
+ 1895      43746C4F 
+ 1895      66667365 
+ 1896              	.LASF37:
+ 1897 035a 69706356 		.ascii	"ipcVersion\000"
+ 1897      65727369 
+ 1897      6F6E00
+ 1898              	.LASF99:
+ 1899 0365 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1899      73436D30 
+ 1899      4E6D6943 
+ 1899      746C4F66 
+ 1899      66736574 
+ 1900              	.LASF47:
+ 1901 037a 73727373 		.ascii	"srssNumClkpath\000"
+ 1901      4E756D43 
+ 1901      6C6B7061 
+ 1901      746800
+ 1902              	.LASF26:
+ 1903 0389 6873696F 		.ascii	"hsiomBase\000"
+ 1903      6D426173 
+ 1903      6500
+ 1904              	.LASF112:
+ 1905 0393 43595F53 		.ascii	"CY_SAR_RANGE_COND_BELOW\000"
+ 1905      41525F52 
+ 1905      414E4745 
+ 1905      5F434F4E 
+ 1905      445F4245 
+ 1906              	.LASF140:
+ 1907 03ab 73746174 		.ascii	"state\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 38
 
 
- 1916      41525F52 
- 1916      414E4745 
- 1916      5F434F4E 
- 1916      445F494E 
- 1917              	.LASF111:
- 1918 084c 5F426F6F 		.ascii	"_Bool\000"
- 1918      6C00
- 1919              	.LASF17:
- 1920 0852 696E7433 		.ascii	"int32_t\000"
- 1920      325F7400 
- 1921              	.LASF1:
- 1922 085a 756E7369 		.ascii	"unsigned char\000"
- 1922      676E6564 
- 1922      20636861 
- 1922      7200
- 1923              	.LASF67:
- 1924 0868 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
- 1924      6843746C 
- 1924      4D61696E 
- 1924      57733446 
- 1924      72657100 
- 1925              	.LASF183:
- 1926 087c 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1926      52784275 
- 1926      66666572 
- 1926      00
- 1927              	.LASF106:
- 1928 0889 6970634C 		.ascii	"ipcLockStatusOffset\000"
- 1928      6F636B53 
- 1928      74617475 
- 1928      734F6666 
- 1928      73657400 
- 1929              	.LASF85:
- 1930 089d 70657269 		.ascii	"periDiv24_5CtlOffset\000"
- 1930      44697632 
- 1930      345F3543 
- 1930      746C4F66 
- 1930      66736574 
- 1931              	.LASF4:
- 1932 08b2 73686F72 		.ascii	"short int\000"
- 1932      7420696E 
- 1932      7400
- 1933              	.LASF128:
- 1934 08bc 6D757853 		.ascii	"muxSwitch\000"
- 1934      77697463 
- 1934      6800
- 1935              	.LASF125:
- 1936 08c6 696E7472 		.ascii	"intrMask\000"
- 1936      4D61736B 
- 1936      00
- 1937              	.LASF97:
- 1938 08cf 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
- 1938      73547269 
- 1938      6D526F6D 
- 1938      43746C4F 
- 1938      66667365 
- 1939              	.LASF145:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 43
+ 1907      6500
+ 1908              	.LASF136:
+ 1909 03b1 63795F63 		.ascii	"cy_cb_scb_i2c_handle_events_t\000"
+ 1909      625F7363 
+ 1909      625F6932 
+ 1909      635F6861 
+ 1909      6E646C65 
+ 1910              	.LASF8:
+ 1911 03cf 6C6F6E67 		.ascii	"long int\000"
+ 1911      20696E74 
+ 1911      00
+ 1912              	.LASF143:
+ 1913 03d8 6D617374 		.ascii	"masterRdDir\000"
+ 1913      65725264 
+ 1913      44697200 
+ 1914              	.LASF134:
+ 1915 03e4 43595F53 		.ascii	"CY_SCB_I2C_NAK\000"
+ 1915      43425F49 
+ 1915      32435F4E 
+ 1915      414B00
+ 1916              	.LASF57:
+ 1917 03f3 63727970 		.ascii	"cryptoMemSize\000"
+ 1917      746F4D65 
+ 1917      6D53697A 
+ 1917      6500
+ 1918              	.LASF210:
+ 1919 0401 41444353 		.ascii	"ADCSOCCounter_config\000"
+ 1919      4F43436F 
+ 1919      756E7465 
+ 1919      725F636F 
+ 1919      6E666967 
+ 1920              	.LASF55:
+ 1921 0416 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1921      6D53696D 
+ 1921      6F507265 
+ 1921      73656E74 
+ 1921      00
+ 1922              	.LASF114:
+ 1923 0427 43595F53 		.ascii	"CY_SAR_RANGE_COND_ABOVE\000"
+ 1923      41525F52 
+ 1923      414E4745 
+ 1923      5F434F4E 
+ 1923      445F4142 
+ 1924              	.LASF16:
+ 1925 043f 75696E74 		.ascii	"uint16_t\000"
+ 1925      31365F74 
+ 1925      00
+ 1926              	.LASF110:
+ 1927 0448 646F7562 		.ascii	"double\000"
+ 1927      6C6500
+ 1928              	.LASF84:
+ 1929 044f 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1929      44697631 
+ 1929      365F3543 
+ 1929      746C4F66 
+ 1929      66736574 
+ 1930              	.LASF48:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 39
 
 
- 1940 08e5 6D617374 		.ascii	"masterBufferSize\000"
- 1940      65724275 
- 1940      66666572 
- 1940      53697A65 
- 1940      00
- 1941              	.LASF78:
- 1942 08f6 70657269 		.ascii	"periDivCmdDivSelMsk\000"
- 1942      44697643 
- 1942      6D644469 
- 1942      7653656C 
- 1942      4D736B00 
- 1943              	.LASF142:
- 1944 090a 6D617374 		.ascii	"masterPause\000"
- 1944      65725061 
- 1944      75736500 
- 1945              	.LASF137:
- 1946 0916 63795F63 		.ascii	"cy_cb_scb_i2c_handle_addr_t\000"
- 1946      625F7363 
- 1946      625F6932 
- 1946      635F6861 
- 1946      6E646C65 
- 1947              	.LASF147:
- 1948 0932 6D617374 		.ascii	"masterNumBytes\000"
- 1948      65724E75 
- 1948      6D427974 
- 1948      657300
- 1949              	.LASF153:
- 1950 0941 736C6176 		.ascii	"slaveTxBufferCnt\000"
- 1950      65547842 
- 1950      75666665 
- 1950      72436E74 
- 1950      00
- 1951              	.LASF62:
- 1952 0952 666C6173 		.ascii	"flashEraseDelay\000"
- 1952      68457261 
- 1952      73654465 
- 1952      6C617900 
- 1953              	.LASF45:
- 1954 0962 63707573 		.ascii	"cpussFmIrq\000"
- 1954      73466D49 
- 1954      727100
- 1955              	.LASF77:
- 1956 096d 70657269 		.ascii	"periTrGrSize\000"
- 1956      54724772 
- 1956      53697A65 
- 1956      00
- 1957              	.LASF159:
- 1958 097a 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
- 1958      74635F73 
- 1958      63625F69 
- 1958      32635F63 
- 1958      6F6E7465 
- 1959              	.LASF131:
- 1960 0993 76726566 		.ascii	"vrefMvValue\000"
- 1960      4D765661 
- 1960      6C756500 
- 1961              	.LASF20:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 44
+ 1931 0464 73727373 		.ascii	"srssNumPll\000"
+ 1931      4E756D50 
+ 1931      6C6C00
+ 1932              	.LASF203:
+ 1933 046f 4144435F 		.ascii	"ADC_CONFIG_STRUCT\000"
+ 1933      434F4E46 
+ 1933      49475F53 
+ 1933      54525543 
+ 1933      5400
+ 1934              	.LASF187:
+ 1935 0481 63617074 		.ascii	"captureInputMode\000"
+ 1935      75726549 
+ 1935      6E707574 
+ 1935      4D6F6465 
+ 1935      00
+ 1936              	.LASF82:
+ 1937 0492 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1937      44697638 
+ 1937      43746C4F 
+ 1937      66667365 
+ 1937      7400
+ 1938              	.LASF6:
+ 1939 04a4 73686F72 		.ascii	"short unsigned int\000"
+ 1939      7420756E 
+ 1939      7369676E 
+ 1939      65642069 
+ 1939      6E7400
+ 1940              	.LASF89:
+ 1941 04b7 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1941      50727443 
+ 1941      66674F75 
+ 1941      744F6666 
+ 1941      73657400 
+ 1942              	.LASF158:
+ 1943 04cb 63624164 		.ascii	"cbAddr\000"
+ 1943      647200
+ 1944              	.LASF22:
+ 1945 04d2 666C6173 		.ascii	"flashcBase\000"
+ 1945      68634261 
+ 1945      736500
+ 1946              	.LASF23:
+ 1947 04dd 70657269 		.ascii	"periBase\000"
+ 1947      42617365 
+ 1947      00
+ 1948              	.LASF9:
+ 1949 04e6 5F5F7569 		.ascii	"__uint32_t\000"
+ 1949      6E743332 
+ 1949      5F7400
+ 1950              	.LASF213:
+ 1951 04f1 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
+ 1951      73657273 
+ 1951      5C737469 
+ 1951      6A6E5C4F 
+ 1951      6E654472 
+ 1952 051f 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
+ 1952      43204B6C 
+ 1952      6F646465 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 40
 
 
- 1962 099f 6C6F6E67 		.ascii	"long double\000"
- 1962      20646F75 
- 1962      626C6500 
- 1963              	.LASF108:
- 1964 09ab 63686172 		.ascii	"char\000"
- 1964      00
- 1965              	.LASF64:
- 1966 09b0 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
- 1966      6843746C 
- 1966      4D61696E 
- 1966      57733146 
- 1966      72657100 
- 1967              	.LASF187:
- 1968 09c4 4144435F 		.ascii	"ADC_allConfigs\000"
- 1968      616C6C43 
- 1968      6F6E6669 
- 1968      677300
- 1969              	.LASF5:
- 1970 09d3 5F5F7569 		.ascii	"__uint16_t\000"
- 1970      6E743136 
- 1970      5F7400
- 1971              	.LASF83:
- 1972 09de 70657269 		.ascii	"periDiv16CtlOffset\000"
- 1972      44697631 
- 1972      3643746C 
- 1972      4F666673 
- 1972      657400
- 1973              	.LASF7:
- 1974 09f1 5F5F696E 		.ascii	"__int32_t\000"
- 1974      7433325F 
- 1974      7400
- 1975              	.LASF36:
- 1976 09fb 6873696F 		.ascii	"hsiomVersion\000"
- 1976      6D566572 
- 1976      73696F6E 
- 1976      00
- 1977              	.LASF61:
- 1978 0a08 666C6173 		.ascii	"flashProgramDelay\000"
- 1978      6850726F 
- 1978      6772616D 
- 1978      44656C61 
- 1978      7900
- 1979              	.LASF167:
- 1980 0a1a 72785269 		.ascii	"rxRingBufHead\000"
- 1980      6E674275 
- 1980      66486561 
- 1980      6400
- 1981              	.LASF166:
- 1982 0a28 72785269 		.ascii	"rxRingBufSize\000"
- 1982      6E674275 
- 1982      6653697A 
- 1982      6500
- 1983              	.LASF180:
- 1984 0a36 6D697363 		.ascii	"miscConfig\000"
- 1984      436F6E66 
- 1984      696700
- 1985              	.LASF69:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 45
+ 1952      6E5C5254 
+ 1952      4F535F49 
+ 1953              	.LASF52:
+ 1954 0541 70617373 		.ascii	"passSarChannels\000"
+ 1954      53617243 
+ 1954      68616E6E 
+ 1954      656C7300 
+ 1955              	.LASF200:
+ 1956 0551 6877436F 		.ascii	"hwConfigStc\000"
+ 1956      6E666967 
+ 1956      53746300 
+ 1957              	.LASF3:
+ 1958 055d 5F5F696E 		.ascii	"__int16_t\000"
+ 1958      7431365F 
+ 1958      7400
+ 1959              	.LASF171:
+ 1960 0567 72784275 		.ascii	"rxBufIdx\000"
+ 1960      66496478 
+ 1960      00
+ 1961              	.LASF117:
+ 1962 0570 6374726C 		.ascii	"ctrl\000"
+ 1962      00
+ 1963              	.LASF95:
+ 1964 0575 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ 1964      73436D34 
+ 1964      50777243 
+ 1964      746C4F66 
+ 1964      66736574 
+ 1965              	.LASF173:
+ 1966 058a 74784275 		.ascii	"txBufSize\000"
+ 1966      6653697A 
+ 1966      6500
+ 1967              	.LASF154:
+ 1968 0594 736C6176 		.ascii	"slaveRxBuffer\000"
+ 1968      65527842 
+ 1968      75666665 
+ 1968      7200
+ 1969              	.LASF90:
+ 1970 05a2 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1970      50727443 
+ 1970      66675369 
+ 1970      6F4F6666 
+ 1970      73657400 
+ 1971              	.LASF94:
+ 1972 05b6 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1972      73436D30 
+ 1972      53746174 
+ 1972      75734F66 
+ 1972      66736574 
+ 1973              	.LASF13:
+ 1974 05cb 756E7369 		.ascii	"unsigned int\000"
+ 1974      676E6564 
+ 1974      20696E74 
+ 1974      00
+ 1975              	.LASF214:
+ 1976 05d8 57616974 		.ascii	"WaitOneUnit\000"
+ 1976      4F6E6555 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 41
 
 
- 1986 0a41 64774368 		.ascii	"dwChSize\000"
- 1986      53697A65 
- 1986      00
- 1987              	.LASF105:
- 1988 0a4a 69706353 		.ascii	"ipcStructSize\000"
- 1988      74727563 
- 1988      7453697A 
- 1988      6500
- 1989              	.LASF138:
- 1990 0a58 75736552 		.ascii	"useRxFifo\000"
- 1990      78466966 
- 1990      6F00
- 1991              	.LASF44:
- 1992 0a62 63707573 		.ascii	"cpussIpc0Irq\000"
- 1992      73497063 
- 1992      30497271 
- 1992      00
- 1993              	.LASF27:
- 1994 0a6f 6770696F 		.ascii	"gpioBase\000"
- 1994      42617365 
- 1994      00
- 1995              	.LASF175:
- 1996 0a78 696E6974 		.ascii	"initKey\000"
- 1996      4B657900 
- 1997              	.LASF169:
- 1998 0a80 72784275 		.ascii	"rxBuf\000"
- 1998      6600
- 1999              	.LASF150:
- 2000 0a86 736C6176 		.ascii	"slaveTxBuffer\000"
- 2000      65547842 
- 2000      75666665 
- 2000      7200
- 2001              	.LASF151:
- 2002 0a94 736C6176 		.ascii	"slaveTxBufferSize\000"
- 2002      65547842 
- 2002      75666665 
- 2002      7253697A 
- 2002      6500
- 2003              	.LASF176:
- 2004 0aa6 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
- 2004      74635F73 
- 2004      63625F75 
- 2004      6172745F 
- 2004      636F6E74 
- 2005              	.LASF49:
- 2006 0ac0 73727373 		.ascii	"srssNumHfroot\000"
- 2006      4E756D48 
- 2006      66726F6F 
- 2006      7400
- 2007              	.LASF122:
- 2008 0ace 72616E67 		.ascii	"rangeCond\000"
- 2008      65436F6E 
- 2008      6400
- 2009              	.LASF194:
- 2010 0ad8 73746174 		.ascii	"status\000"
- 2010      757300
- 2011              	.LASF46:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 46
+ 1976      6E697400 
+ 1977              	.LASF152:
+ 1978 05e4 736C6176 		.ascii	"slaveTxBufferIdx\000"
+ 1978      65547842 
+ 1978      75666665 
+ 1978      72496478 
+ 1978      00
+ 1979              	.LASF39:
+ 1980 05f5 70726F74 		.ascii	"protVersion\000"
+ 1980      56657273 
+ 1980      696F6E00 
+ 1981              	.LASF149:
+ 1982 0601 736C6176 		.ascii	"slaveRdBufEmpty\000"
+ 1982      65526442 
+ 1982      7566456D 
+ 1982      70747900 
+ 1983              	.LASF75:
+ 1984 0611 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1984      5472436D 
+ 1984      64477253 
+ 1984      656C4D73 
+ 1984      6B00
+ 1985              	.LASF166:
+ 1986 0623 72785269 		.ascii	"rxRingBufSize\000"
+ 1986      6E674275 
+ 1986      6653697A 
+ 1986      6500
+ 1987              	.LASF10:
+ 1988 0631 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1988      20756E73 
+ 1988      69676E65 
+ 1988      6420696E 
+ 1988      7400
+ 1989              	.LASF209:
+ 1990 0643 6D493243 		.ascii	"mI2C_context\000"
+ 1990      5F636F6E 
+ 1990      74657874 
+ 1990      00
+ 1991              	.LASF160:
+ 1992 0650 63795F63 		.ascii	"cy_cb_scb_uart_handle_events_t\000"
+ 1992      625F7363 
+ 1992      625F7561 
+ 1992      72745F68 
+ 1992      616E646C 
+ 1993              	.LASF215:
+ 1994 066f 74696D65 		.ascii	"timeout\000"
+ 1994      6F757400 
+ 1995              	.LASF206:
+ 1996 0677 55415254 		.ascii	"UART_context\000"
+ 1996      5F636F6E 
+ 1996      74657874 
+ 1996      00
+ 1997              	.LASF40:
+ 1998 0684 63707573 		.ascii	"cpussIpcNr\000"
+ 1998      73497063 
+ 1998      4E7200
+ 1999              	.LASF42:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 42
 
 
- 2012 0adf 63707573 		.ascii	"cpussNotConnectedIrq\000"
- 2012      734E6F74 
- 2012      436F6E6E 
- 2012      65637465 
- 2012      64497271 
- 2013              	.LASF100:
- 2014 0af4 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
- 2014      73436D34 
- 2014      4E6D6943 
- 2014      746C4F66 
- 2014      66736574 
- 2015              	.LASF60:
- 2016 0b09 666C6173 		.ascii	"flashWriteDelay\000"
- 2016      68577269 
- 2016      74654465 
- 2016      6C617900 
- 2017              	.LASF118:
- 2018 0b19 73616D70 		.ascii	"sampleCtrl\000"
- 2018      6C654374 
- 2018      726C00
- 2019              	.LASF14:
- 2020 0b24 75696E74 		.ascii	"uint8_t\000"
- 2020      385F7400 
- 2021              	.LASF93:
- 2022 0b2c 63707573 		.ascii	"cpussCm4StatusOffset\000"
- 2022      73436D34 
- 2022      53746174 
- 2022      75734F66 
- 2022      66736574 
- 2023              	.LASF86:
- 2024 0b41 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
- 2024      50727449 
- 2024      6E747243 
- 2024      66674F66 
- 2024      66736574 
- 2025              	.LASF115:
- 2026 0b56 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
- 2026      41525F52 
- 2026      414E4745 
- 2026      5F434F4E 
- 2026      445F4F55 
- 2027              	.LASF168:
- 2028 0b70 72785269 		.ascii	"rxRingBufTail\000"
- 2028      6E674275 
- 2028      66546169 
- 2028      6C00
- 2029              	.LASF177:
- 2030 0b7e 6368616E 		.ascii	"channelBase\000"
- 2030      6E656C42 
- 2030      61736500 
- 2031              	.LASF163:
- 2032 0b8a 74785374 		.ascii	"txStatus\000"
- 2032      61747573 
- 2032      00
- 2033              	.LASF129:
- 2034 0b93 6D757853 		.ascii	"muxSwitchSqCtrl\000"
- 2034      77697463 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccUKNWPE.s 			page 47
+ 2000 068f 63707573 		.ascii	"cpussDwChNr\000"
+ 2000      73447743 
+ 2000      684E7200 
+ 2001              	.LASF65:
+ 2002 069b 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 2002      6843746C 
+ 2002      4D61696E 
+ 2002      57733246 
+ 2002      72657100 
+ 2003              	.LASF139:
+ 2004 06af 75736554 		.ascii	"useTxFifo\000"
+ 2004      78466966 
+ 2004      6F00
+ 2005              	.LASF119:
+ 2006 06b9 73616D70 		.ascii	"sampleTime01\000"
+ 2006      6C655469 
+ 2006      6D653031 
+ 2006      00
+ 2007              	.LASF76:
+ 2008 06c6 70657269 		.ascii	"periTrGrOffset\000"
+ 2008      54724772 
+ 2008      4F666673 
+ 2008      657400
+ 2009              	.LASF103:
+ 2010 06d5 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 2010      7352616D 
+ 2010      3143746C 
+ 2010      3000
+ 2011              	.LASF121:
+ 2012 06e3 72616E67 		.ascii	"rangeThres\000"
+ 2012      65546872 
+ 2012      657300
+ 2013              	.LASF157:
+ 2014 06ee 63624576 		.ascii	"cbEvents\000"
+ 2014      656E7473 
+ 2014      00
+ 2015              	.LASF87:
+ 2016 06f7 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 2016      50727443 
+ 2016      66674F66 
+ 2016      66736574 
+ 2016      00
+ 2017              	.LASF35:
+ 2018 0708 6770696F 		.ascii	"gpioVersion\000"
+ 2018      56657273 
+ 2018      696F6E00 
+ 2019              	.LASF199:
+ 2020 0714 6E756D43 		.ascii	"numChannels\000"
+ 2020      68616E6E 
+ 2020      656C7300 
+ 2021              	.LASF107:
+ 2022 0720 63795F73 		.ascii	"cy_stc_device_t\000"
+ 2022      74635F64 
+ 2022      65766963 
+ 2022      655F7400 
+ 2023              	.LASF124:
+ 2024 0730 6368616E 		.ascii	"chanConfig\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 43
 
 
- 2034      68537143 
- 2034      74726C00 
- 2035              	.LASF33:
- 2036 0ba3 64775665 		.ascii	"dwVersion\000"
- 2036      7273696F 
- 2036      6E00
- 2037              	.LASF29:
- 2038 0bad 69706342 		.ascii	"ipcBase\000"
- 2038      61736500 
- 2039              	.LASF80:
- 2040 0bb5 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
- 2040      44697643 
- 2040      6D645061 
- 2040      44697653 
- 2040      656C506F 
- 2041              	.LASF162:
- 2042 0bcb 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
- 2042      74635F73 
- 2042      63625F75 
- 2042      6172745F 
- 2042      636F6E74 
- 2043              	.LASF31:
- 2044 0be3 63707573 		.ascii	"cpussVersion\000"
- 2044      73566572 
- 2044      73696F6E 
- 2044      00
- 2045              	.LASF18:
- 2046 0bf0 75696E74 		.ascii	"uint32_t\000"
- 2046      33325F74 
- 2046      00
- 2047              	.LASF58:
- 2048 0bf9 666C6173 		.ascii	"flashRwwRequired\000"
- 2048      68527777 
- 2048      52657175 
- 2048      69726564 
- 2048      00
- 2049              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2024      436F6E66 
+ 2024      696700
+ 2025              	.LASF4:
+ 2026 073b 73686F72 		.ascii	"short int\000"
+ 2026      7420696E 
+ 2026      7400
+ 2027              	.LASF25:
+ 2028 0745 70726F74 		.ascii	"protBase\000"
+ 2028      42617365 
+ 2028      00
+ 2029              	.LASF195:
+ 2030 074e 636F756E 		.ascii	"countInputMode\000"
+ 2030      74496E70 
+ 2030      75744D6F 
+ 2030      646500
+ 2031              	.LASF212:
+ 2032 075d 77616974 		.ascii	"wait.c\000"
+ 2032      2E6300
+ 2033              	.LASF91:
+ 2034 0764 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 2034      73436D30 
+ 2034      436C6F63 
+ 2034      6B43746C 
+ 2034      4F666673 
+ 2035              	.LASF30:
+ 2036 077b 63727970 		.ascii	"cryptoBase\000"
+ 2036      746F4261 
+ 2036      736500
+ 2037              	.LASF135:
+ 2038 0786 63795F65 		.ascii	"cy_en_scb_i2c_command_t\000"
+ 2038      6E5F7363 
+ 2038      625F6932 
+ 2038      635F636F 
+ 2038      6D6D616E 
+ 2039              	.LASF177:
+ 2040 079e 63795F73 		.ascii	"cy_stc_tcpwm_counter_config\000"
+ 2040      74635F74 
+ 2040      6370776D 
+ 2040      5F636F75 
+ 2040      6E746572 
+ 2041              	.LASF19:
+ 2042 07ba 73697A65 		.ascii	"sizetype\000"
+ 2042      74797065 
+ 2042      00
+ 2043              	.LASF68:
+ 2044 07c3 64774368 		.ascii	"dwChOffset\000"
+ 2044      4F666673 
+ 2044      657400
+ 2045              	.LASF20:
+ 2046 07ce 6C6F6E67 		.ascii	"long double\000"
+ 2046      20646F75 
+ 2046      626C6500 
+ 2047              	.LASF146:
+ 2048 07da 6D617374 		.ascii	"masterBufferIdx\000"
+ 2048      65724275 
+ 2048      66666572 
+ 2048      49647800 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 44
+
+
+ 2049              	.LASF120:
+ 2050 07ea 73616D70 		.ascii	"sampleTime23\000"
+ 2050      6C655469 
+ 2050      6D653233 
+ 2050      00
+ 2051              	.LASF81:
+ 2052 07f7 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 2052      44697643 
+ 2052      6D645061 
+ 2052      54797065 
+ 2052      53656C50 
+ 2053              	.LASF53:
+ 2054 080e 65704D6F 		.ascii	"epMonitorNr\000"
+ 2054      6E69746F 
+ 2054      724E7200 
+ 2055              	.LASF130:
+ 2056 081a 636F6E66 		.ascii	"configRouting\000"
+ 2056      6967526F 
+ 2056      7574696E 
+ 2056      6700
+ 2057              	.LASF133:
+ 2058 0828 43595F53 		.ascii	"CY_SCB_I2C_ACK\000"
+ 2058      43425F49 
+ 2058      32435F41 
+ 2058      434B00
+ 2059              	.LASF72:
+ 2060 0837 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 2060      61747573 
+ 2060      43684964 
+ 2060      78506F73 
+ 2060      00
+ 2061              	.LASF54:
+ 2062 0848 75646250 		.ascii	"udbPresent\000"
+ 2062      72657365 
+ 2062      6E7400
+ 2063              	.LASF164:
+ 2064 0853 72785374 		.ascii	"rxStatus\000"
+ 2064      61747573 
+ 2064      00
+ 2065              	.LASF34:
+ 2066 085c 666C6173 		.ascii	"flashcVersion\000"
+ 2066      68635665 
+ 2066      7273696F 
+ 2066      6E00
+ 2067              	.LASF51:
+ 2068 086a 736D6966 		.ascii	"smifDeviceNr\000"
+ 2068      44657669 
+ 2068      63654E72 
+ 2068      00
+ 2069              	.LASF127:
+ 2070 0877 72616E67 		.ascii	"rangeIntrMask\000"
+ 2070      65496E74 
+ 2070      724D6173 
+ 2070      6B00
+ 2071              	.LASF102:
+ 2072 0885 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 2072      7352616D 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 45
+
+
+ 2072      3043746C 
+ 2072      3000
+ 2073              	.LASF38:
+ 2074 0893 70657269 		.ascii	"periVersion\000"
+ 2074      56657273 
+ 2074      696F6E00 
+ 2075              	.LASF109:
+ 2076 089f 666C6F61 		.ascii	"float\000"
+ 2076      7400
+ 2077              	.LASF73:
+ 2078 08a5 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 2078      61747573 
+ 2078      43684964 
+ 2078      784D736B 
+ 2078      00
+ 2079              	.LASF205:
+ 2080 08b6 63795F64 		.ascii	"cy_device\000"
+ 2080      65766963 
+ 2080      6500
+ 2081              	.LASF101:
+ 2082 08c0 63707573 		.ascii	"cpussRomCtl\000"
+ 2082      73526F6D 
+ 2082      43746C00 
+ 2083              	.LASF71:
+ 2084 08cc 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 2084      43746C50 
+ 2084      7265656D 
+ 2084      70746162 
+ 2084      6C65506F 
+ 2085              	.LASF174:
+ 2086 08e2 74784C65 		.ascii	"txLeftToTransmit\000"
+ 2086      6674546F 
+ 2086      5472616E 
+ 2086      736D6974 
+ 2086      00
+ 2087              	.LASF123:
+ 2088 08f3 6368616E 		.ascii	"chanEn\000"
+ 2088      456E00
+ 2089              	.LASF24:
+ 2090 08fa 75646242 		.ascii	"udbBase\000"
+ 2090      61736500 
+ 2091              	.LASF113:
+ 2092 0902 43595F53 		.ascii	"CY_SAR_RANGE_COND_INSIDE\000"
+ 2092      41525F52 
+ 2092      414E4745 
+ 2092      5F434F4E 
+ 2092      445F494E 
+ 2093              	.LASF191:
+ 2094 091b 73746172 		.ascii	"startInputMode\000"
+ 2094      74496E70 
+ 2094      75744D6F 
+ 2094      646500
+ 2095              	.LASF17:
+ 2096 092a 696E7433 		.ascii	"int32_t\000"
+ 2096      325F7400 
+ 2097              	.LASF1:
+ 2098 0932 756E7369 		.ascii	"unsigned char\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 46
+
+
+ 2098      676E6564 
+ 2098      20636861 
+ 2098      7200
+ 2099              	.LASF67:
+ 2100 0940 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 2100      6843746C 
+ 2100      4D61696E 
+ 2100      57733446 
+ 2100      72657100 
+ 2101              	.LASF204:
+ 2102 0954 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2102      52784275 
+ 2102      66666572 
+ 2102      00
+ 2103              	.LASF106:
+ 2104 0961 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 2104      6F636B53 
+ 2104      74617475 
+ 2104      734F6666 
+ 2104      73657400 
+ 2105              	.LASF85:
+ 2106 0975 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 2106      44697632 
+ 2106      345F3543 
+ 2106      746C4F66 
+ 2106      66736574 
+ 2107              	.LASF185:
+ 2108 098a 656E6162 		.ascii	"enableCompareSwap\000"
+ 2108      6C65436F 
+ 2108      6D706172 
+ 2108      65537761 
+ 2108      7000
+ 2109              	.LASF128:
+ 2110 099c 6D757853 		.ascii	"muxSwitch\000"
+ 2110      77697463 
+ 2110      6800
+ 2111              	.LASF125:
+ 2112 09a6 696E7472 		.ascii	"intrMask\000"
+ 2112      4D61736B 
+ 2112      00
+ 2113              	.LASF97:
+ 2114 09af 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 2114      73547269 
+ 2114      6D526F6D 
+ 2114      43746C4F 
+ 2114      66667365 
+ 2115              	.LASF145:
+ 2116 09c5 6D617374 		.ascii	"masterBufferSize\000"
+ 2116      65724275 
+ 2116      66666572 
+ 2116      53697A65 
+ 2116      00
+ 2117              	.LASF78:
+ 2118 09d6 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 2118      44697643 
+ 2118      6D644469 
+ 2118      7653656C 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 47
+
+
+ 2118      4D736B00 
+ 2119              	.LASF142:
+ 2120 09ea 6D617374 		.ascii	"masterPause\000"
+ 2120      65725061 
+ 2120      75736500 
+ 2121              	.LASF137:
+ 2122 09f6 63795F63 		.ascii	"cy_cb_scb_i2c_handle_addr_t\000"
+ 2122      625F7363 
+ 2122      625F6932 
+ 2122      635F6861 
+ 2122      6E646C65 
+ 2123              	.LASF182:
+ 2124 0a12 636F6D70 		.ascii	"compareOrCapture\000"
+ 2124      6172654F 
+ 2124      72436170 
+ 2124      74757265 
+ 2124      00
+ 2125              	.LASF147:
+ 2126 0a23 6D617374 		.ascii	"masterNumBytes\000"
+ 2126      65724E75 
+ 2126      6D427974 
+ 2126      657300
+ 2127              	.LASF153:
+ 2128 0a32 736C6176 		.ascii	"slaveTxBufferCnt\000"
+ 2128      65547842 
+ 2128      75666665 
+ 2128      72436E74 
+ 2128      00
+ 2129              	.LASF62:
+ 2130 0a43 666C6173 		.ascii	"flashEraseDelay\000"
+ 2130      68457261 
+ 2130      73654465 
+ 2130      6C617900 
+ 2131              	.LASF45:
+ 2132 0a53 63707573 		.ascii	"cpussFmIrq\000"
+ 2132      73466D49 
+ 2132      727100
+ 2133              	.LASF77:
+ 2134 0a5e 70657269 		.ascii	"periTrGrSize\000"
+ 2134      54724772 
+ 2134      53697A65 
+ 2134      00
+ 2135              	.LASF159:
+ 2136 0a6b 63795F73 		.ascii	"cy_stc_scb_i2c_context_t\000"
+ 2136      74635F73 
+ 2136      63625F69 
+ 2136      32635F63 
+ 2136      6F6E7465 
+ 2137              	.LASF131:
+ 2138 0a84 76726566 		.ascii	"vrefMvValue\000"
+ 2138      4D765661 
+ 2138      6C756500 
+ 2139              	.LASF183:
+ 2140 0a90 636F6D70 		.ascii	"compare0\000"
+ 2140      61726530 
+ 2140      00
+ 2141              	.LASF184:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 48
+
+
+ 2142 0a99 636F6D70 		.ascii	"compare1\000"
+ 2142      61726531 
+ 2142      00
+ 2143              	.LASF196:
+ 2144 0aa2 636F756E 		.ascii	"countInput\000"
+ 2144      74496E70 
+ 2144      757400
+ 2145              	.LASF108:
+ 2146 0aad 63686172 		.ascii	"char\000"
+ 2146      00
+ 2147              	.LASF64:
+ 2148 0ab2 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 2148      6843746C 
+ 2148      4D61696E 
+ 2148      57733146 
+ 2148      72657100 
+ 2149              	.LASF208:
+ 2150 0ac6 4144435F 		.ascii	"ADC_allConfigs\000"
+ 2150      616C6C43 
+ 2150      6F6E6669 
+ 2150      677300
+ 2151              	.LASF5:
+ 2152 0ad5 5F5F7569 		.ascii	"__uint16_t\000"
+ 2152      6E743136 
+ 2152      5F7400
+ 2153              	.LASF83:
+ 2154 0ae0 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 2154      44697631 
+ 2154      3643746C 
+ 2154      4F666673 
+ 2154      657400
+ 2155              	.LASF7:
+ 2156 0af3 5F5F696E 		.ascii	"__int32_t\000"
+ 2156      7433325F 
+ 2156      7400
+ 2157              	.LASF33:
+ 2158 0afd 64775665 		.ascii	"dwVersion\000"
+ 2158      7273696F 
+ 2158      6E00
+ 2159              	.LASF36:
+ 2160 0b07 6873696F 		.ascii	"hsiomVersion\000"
+ 2160      6D566572 
+ 2160      73696F6E 
+ 2160      00
+ 2161              	.LASF61:
+ 2162 0b14 666C6173 		.ascii	"flashProgramDelay\000"
+ 2162      6850726F 
+ 2162      6772616D 
+ 2162      44656C61 
+ 2162      7900
+ 2163              	.LASF167:
+ 2164 0b26 72785269 		.ascii	"rxRingBufHead\000"
+ 2164      6E674275 
+ 2164      66486561 
+ 2164      6400
+ 2165              	.LASF186:
+ 2166 0b34 696E7465 		.ascii	"interruptSources\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 49
+
+
+ 2166      72727570 
+ 2166      74536F75 
+ 2166      72636573 
+ 2166      00
+ 2167              	.LASF190:
+ 2168 0b45 72656C6F 		.ascii	"reloadInput\000"
+ 2168      6164496E 
+ 2168      70757400 
+ 2169              	.LASF201:
+ 2170 0b51 6D697363 		.ascii	"miscConfig\000"
+ 2170      436F6E66 
+ 2170      696700
+ 2171              	.LASF69:
+ 2172 0b5c 64774368 		.ascii	"dwChSize\000"
+ 2172      53697A65 
+ 2172      00
+ 2173              	.LASF194:
+ 2174 0b65 73746F70 		.ascii	"stopInput\000"
+ 2174      496E7075 
+ 2174      7400
+ 2175              	.LASF105:
+ 2176 0b6f 69706353 		.ascii	"ipcStructSize\000"
+ 2176      74727563 
+ 2176      7453697A 
+ 2176      6500
+ 2177              	.LASF138:
+ 2178 0b7d 75736552 		.ascii	"useRxFifo\000"
+ 2178      78466966 
+ 2178      6F00
+ 2179              	.LASF44:
+ 2180 0b87 63707573 		.ascii	"cpussIpc0Irq\000"
+ 2180      73497063 
+ 2180      30497271 
+ 2180      00
+ 2181              	.LASF27:
+ 2182 0b94 6770696F 		.ascii	"gpioBase\000"
+ 2182      42617365 
+ 2182      00
+ 2183              	.LASF175:
+ 2184 0b9d 696E6974 		.ascii	"initKey\000"
+ 2184      4B657900 
+ 2185              	.LASF169:
+ 2186 0ba5 72784275 		.ascii	"rxBuf\000"
+ 2186      6600
+ 2187              	.LASF150:
+ 2188 0bab 736C6176 		.ascii	"slaveTxBuffer\000"
+ 2188      65547842 
+ 2188      75666665 
+ 2188      7200
+ 2189              	.LASF151:
+ 2190 0bb9 736C6176 		.ascii	"slaveTxBufferSize\000"
+ 2190      65547842 
+ 2190      75666665 
+ 2190      7253697A 
+ 2190      6500
+ 2191              	.LASF176:
+ 2192 0bcb 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 50
+
+
+ 2192      74635F73 
+ 2192      63625F75 
+ 2192      6172745F 
+ 2192      636F6E74 
+ 2193              	.LASF49:
+ 2194 0be5 73727373 		.ascii	"srssNumHfroot\000"
+ 2194      4E756D48 
+ 2194      66726F6F 
+ 2194      7400
+ 2195              	.LASF122:
+ 2196 0bf3 72616E67 		.ascii	"rangeCond\000"
+ 2196      65436F6E 
+ 2196      6400
+ 2197              	.LASF216:
+ 2198 0bfd 73746174 		.ascii	"status\000"
+ 2198      757300
+ 2199              	.LASF46:
+ 2200 0c04 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 2200      734E6F74 
+ 2200      436F6E6E 
+ 2200      65637465 
+ 2200      64497271 
+ 2201              	.LASF100:
+ 2202 0c19 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 2202      73436D34 
+ 2202      4E6D6943 
+ 2202      746C4F66 
+ 2202      66736574 
+ 2203              	.LASF60:
+ 2204 0c2e 666C6173 		.ascii	"flashWriteDelay\000"
+ 2204      68577269 
+ 2204      74654465 
+ 2204      6C617900 
+ 2205              	.LASF118:
+ 2206 0c3e 73616D70 		.ascii	"sampleCtrl\000"
+ 2206      6C654374 
+ 2206      726C00
+ 2207              	.LASF14:
+ 2208 0c49 75696E74 		.ascii	"uint8_t\000"
+ 2208      385F7400 
+ 2209              	.LASF93:
+ 2210 0c51 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 2210      73436D34 
+ 2210      53746174 
+ 2210      75734F66 
+ 2210      66736574 
+ 2211              	.LASF86:
+ 2212 0c66 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 2212      50727449 
+ 2212      6E747243 
+ 2212      66674F66 
+ 2212      66736574 
+ 2213              	.LASF189:
+ 2214 0c7b 72656C6F 		.ascii	"reloadInputMode\000"
+ 2214      6164496E 
+ 2214      7075744D 
+ 2214      6F646500 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 51
+
+
+ 2215              	.LASF115:
+ 2216 0c8b 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
+ 2216      41525F52 
+ 2216      414E4745 
+ 2216      5F434F4E 
+ 2216      445F4F55 
+ 2217              	.LASF168:
+ 2218 0ca5 72785269 		.ascii	"rxRingBufTail\000"
+ 2218      6E674275 
+ 2218      66546169 
+ 2218      6C00
+ 2219              	.LASF198:
+ 2220 0cb3 6368616E 		.ascii	"channelBase\000"
+ 2220      6E656C42 
+ 2220      61736500 
+ 2221              	.LASF163:
+ 2222 0cbf 74785374 		.ascii	"txStatus\000"
+ 2222      61747573 
+ 2222      00
+ 2223              	.LASF129:
+ 2224 0cc8 6D757853 		.ascii	"muxSwitchSqCtrl\000"
+ 2224      77697463 
+ 2224      68537143 
+ 2224      74726C00 
+ 2225              	.LASF0:
+ 2226 0cd8 7369676E 		.ascii	"signed char\000"
+ 2226      65642063 
+ 2226      68617200 
+ 2227              	.LASF29:
+ 2228 0ce4 69706342 		.ascii	"ipcBase\000"
+ 2228      61736500 
+ 2229              	.LASF80:
+ 2230 0cec 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 2230      44697643 
+ 2230      6D645061 
+ 2230      44697653 
+ 2230      656C506F 
+ 2231              	.LASF162:
+ 2232 0d02 63795F73 		.ascii	"cy_stc_scb_uart_context\000"
+ 2232      74635F73 
+ 2232      63625F75 
+ 2232      6172745F 
+ 2232      636F6E74 
+ 2233              	.LASF111:
+ 2234 0d1a 5F426F6F 		.ascii	"_Bool\000"
+ 2234      6C00
+ 2235              	.LASF31:
+ 2236 0d20 63707573 		.ascii	"cpussVersion\000"
+ 2236      73566572 
+ 2236      73696F6E 
+ 2236      00
+ 2237              	.LASF18:
+ 2238 0d2d 75696E74 		.ascii	"uint32_t\000"
+ 2238      33325F74 
+ 2238      00
+ 2239              	.LASF58:
+ 2240 0d36 666C6173 		.ascii	"flashRwwRequired\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccVHANKj.s 			page 52
+
+
+ 2240      68527777 
+ 2240      52657175 
+ 2240      69726564 
+ 2240      00
+ 2241              	.LASF192:
+ 2242 0d47 73746172 		.ascii	"startInput\000"
+ 2242      74496E70 
+ 2242      757400
+ 2243              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

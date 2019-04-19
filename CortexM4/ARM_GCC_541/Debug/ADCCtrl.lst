@@ -1,0 +1,672 @@
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m4
+   3              		.eabi_attribute 27, 1
+   4              		.fpu fpv4-sp-d16
+   5              		.eabi_attribute 20, 1
+   6              		.eabi_attribute 21, 1
+   7              		.eabi_attribute 23, 3
+   8              		.eabi_attribute 24, 1
+   9              		.eabi_attribute 25, 1
+  10              		.eabi_attribute 26, 1
+  11              		.eabi_attribute 30, 6
+  12              		.eabi_attribute 34, 1
+  13              		.eabi_attribute 18, 4
+  14              		.thumb
+  15              		.syntax unified
+  16              		.file	"ADCCtrl.c"
+  17              		.text
+  18              	.Ltext0:
+  19              		.cfi_sections	.debug_frame
+  20              		.section	.text.ADCCtrl_Write,"ax",%progbits
+  21              		.align	2
+  22              		.global	ADCCtrl_Write
+  23              		.thumb
+  24              		.thumb_func
+  25              		.type	ADCCtrl_Write, %function
+  26              	ADCCtrl_Write:
+  27              	.LFB132:
+  28              		.file 1 "Generated_Source\\PSoC6\\ADCCtrl.c"
+   1:Generated_Source\PSoC6/ADCCtrl.c **** /*******************************************************************************
+   2:Generated_Source\PSoC6/ADCCtrl.c **** * File Name: ADCCtrl.c  
+   3:Generated_Source\PSoC6/ADCCtrl.c **** * Version 1.80
+   4:Generated_Source\PSoC6/ADCCtrl.c **** *
+   5:Generated_Source\PSoC6/ADCCtrl.c **** * Description:
+   6:Generated_Source\PSoC6/ADCCtrl.c **** *  This file contains API to enable firmware control of a Control Register.
+   7:Generated_Source\PSoC6/ADCCtrl.c **** *
+   8:Generated_Source\PSoC6/ADCCtrl.c **** * Note:
+   9:Generated_Source\PSoC6/ADCCtrl.c **** *
+  10:Generated_Source\PSoC6/ADCCtrl.c **** ********************************************************************************
+  11:Generated_Source\PSoC6/ADCCtrl.c **** * Copyright 2008-2015, Cypress Semiconductor Corporation.  All rights reserved.
+  12:Generated_Source\PSoC6/ADCCtrl.c **** * You may use this file only in accordance with the license, terms, conditions, 
+  13:Generated_Source\PSoC6/ADCCtrl.c **** * disclaimers, and limitations in the end user license agreement accompanying 
+  14:Generated_Source\PSoC6/ADCCtrl.c **** * the software package with which this file was provided.
+  15:Generated_Source\PSoC6/ADCCtrl.c **** *******************************************************************************/
+  16:Generated_Source\PSoC6/ADCCtrl.c **** 
+  17:Generated_Source\PSoC6/ADCCtrl.c **** #include "ADCCtrl.h"
+  18:Generated_Source\PSoC6/ADCCtrl.c **** 
+  19:Generated_Source\PSoC6/ADCCtrl.c **** /* Check for removal by optimization */
+  20:Generated_Source\PSoC6/ADCCtrl.c **** #if !defined(ADCCtrl_Sync_ctrl_reg__REMOVED)
+  21:Generated_Source\PSoC6/ADCCtrl.c **** 
+  22:Generated_Source\PSoC6/ADCCtrl.c ****     
+  23:Generated_Source\PSoC6/ADCCtrl.c **** /*******************************************************************************
+  24:Generated_Source\PSoC6/ADCCtrl.c **** * Function Name: ADCCtrl_Write
+  25:Generated_Source\PSoC6/ADCCtrl.c **** ********************************************************************************
+  26:Generated_Source\PSoC6/ADCCtrl.c **** *
+  27:Generated_Source\PSoC6/ADCCtrl.c **** * Summary:
+  28:Generated_Source\PSoC6/ADCCtrl.c **** *  Write a byte to the Control Register.
+  29:Generated_Source\PSoC6/ADCCtrl.c **** *
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 2
+
+
+  30:Generated_Source\PSoC6/ADCCtrl.c **** * Parameters:
+  31:Generated_Source\PSoC6/ADCCtrl.c **** *  control:  The value to be assigned to the Control Register.
+  32:Generated_Source\PSoC6/ADCCtrl.c **** *
+  33:Generated_Source\PSoC6/ADCCtrl.c **** * Return:
+  34:Generated_Source\PSoC6/ADCCtrl.c **** *  None.
+  35:Generated_Source\PSoC6/ADCCtrl.c **** *
+  36:Generated_Source\PSoC6/ADCCtrl.c **** *******************************************************************************/
+  37:Generated_Source\PSoC6/ADCCtrl.c **** void ADCCtrl_Write(uint8 control) 
+  38:Generated_Source\PSoC6/ADCCtrl.c **** {
+  29              		.loc 1 38 0
+  30              		.cfi_startproc
+  31              		@ args = 0, pretend = 0, frame = 8
+  32              		@ frame_needed = 1, uses_anonymous_args = 0
+  33              		@ link register save eliminated.
+  34 0000 80B4     		push	{r7}
+  35              		.cfi_def_cfa_offset 4
+  36              		.cfi_offset 7, -4
+  37 0002 83B0     		sub	sp, sp, #12
+  38              		.cfi_def_cfa_offset 16
+  39 0004 00AF     		add	r7, sp, #0
+  40              		.cfi_def_cfa_register 7
+  41 0006 0346     		mov	r3, r0
+  42 0008 FB71     		strb	r3, [r7, #7]
+  39:Generated_Source\PSoC6/ADCCtrl.c ****     ADCCtrl_Control = control;
+  43              		.loc 1 39 0
+  44 000a 044A     		ldr	r2, .L2
+  45 000c FB79     		ldrb	r3, [r7, #7]
+  46 000e 1370     		strb	r3, [r2]
+  40:Generated_Source\PSoC6/ADCCtrl.c **** }
+  47              		.loc 1 40 0
+  48 0010 00BF     		nop
+  49 0012 0C37     		adds	r7, r7, #12
+  50              		.cfi_def_cfa_offset 4
+  51 0014 BD46     		mov	sp, r7
+  52              		.cfi_def_cfa_register 13
+  53              		@ sp needed
+  54 0016 5DF8047B 		ldr	r7, [sp], #4
+  55              		.cfi_restore 7
+  56              		.cfi_def_cfa_offset 0
+  57 001a 7047     		bx	lr
+  58              	.L3:
+  59              		.align	2
+  60              	.L2:
+  61 001c 18173440 		.word	1077155608
+  62              		.cfi_endproc
+  63              	.LFE132:
+  64              		.size	ADCCtrl_Write, .-ADCCtrl_Write
+  65              		.section	.text.ADCCtrl_Read,"ax",%progbits
+  66              		.align	2
+  67              		.global	ADCCtrl_Read
+  68              		.thumb
+  69              		.thumb_func
+  70              		.type	ADCCtrl_Read, %function
+  71              	ADCCtrl_Read:
+  72              	.LFB133:
+  41:Generated_Source\PSoC6/ADCCtrl.c **** 
+  42:Generated_Source\PSoC6/ADCCtrl.c **** 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 3
+
+
+  43:Generated_Source\PSoC6/ADCCtrl.c **** /*******************************************************************************
+  44:Generated_Source\PSoC6/ADCCtrl.c **** * Function Name: ADCCtrl_Read
+  45:Generated_Source\PSoC6/ADCCtrl.c **** ********************************************************************************
+  46:Generated_Source\PSoC6/ADCCtrl.c **** *
+  47:Generated_Source\PSoC6/ADCCtrl.c **** * Summary:
+  48:Generated_Source\PSoC6/ADCCtrl.c **** *  Reads the current value assigned to the Control Register.
+  49:Generated_Source\PSoC6/ADCCtrl.c **** *
+  50:Generated_Source\PSoC6/ADCCtrl.c **** * Parameters:
+  51:Generated_Source\PSoC6/ADCCtrl.c **** *  None.
+  52:Generated_Source\PSoC6/ADCCtrl.c **** *
+  53:Generated_Source\PSoC6/ADCCtrl.c **** * Return:
+  54:Generated_Source\PSoC6/ADCCtrl.c **** *  Returns the current value in the Control Register.
+  55:Generated_Source\PSoC6/ADCCtrl.c **** *
+  56:Generated_Source\PSoC6/ADCCtrl.c **** *******************************************************************************/
+  57:Generated_Source\PSoC6/ADCCtrl.c **** uint8 ADCCtrl_Read(void) 
+  58:Generated_Source\PSoC6/ADCCtrl.c **** {
+  73              		.loc 1 58 0
+  74              		.cfi_startproc
+  75              		@ args = 0, pretend = 0, frame = 0
+  76              		@ frame_needed = 1, uses_anonymous_args = 0
+  77              		@ link register save eliminated.
+  78 0000 80B4     		push	{r7}
+  79              		.cfi_def_cfa_offset 4
+  80              		.cfi_offset 7, -4
+  81 0002 00AF     		add	r7, sp, #0
+  82              		.cfi_def_cfa_register 7
+  59:Generated_Source\PSoC6/ADCCtrl.c ****     return ADCCtrl_Control;
+  83              		.loc 1 59 0
+  84 0004 034B     		ldr	r3, .L6
+  85 0006 1B78     		ldrb	r3, [r3]
+  86 0008 DBB2     		uxtb	r3, r3
+  60:Generated_Source\PSoC6/ADCCtrl.c **** }
+  87              		.loc 1 60 0
+  88 000a 1846     		mov	r0, r3
+  89 000c BD46     		mov	sp, r7
+  90              		.cfi_def_cfa_register 13
+  91              		@ sp needed
+  92 000e 5DF8047B 		ldr	r7, [sp], #4
+  93              		.cfi_restore 7
+  94              		.cfi_def_cfa_offset 0
+  95 0012 7047     		bx	lr
+  96              	.L7:
+  97              		.align	2
+  98              	.L6:
+  99 0014 18173440 		.word	1077155608
+ 100              		.cfi_endproc
+ 101              	.LFE133:
+ 102              		.size	ADCCtrl_Read, .-ADCCtrl_Read
+ 103              		.text
+ 104              	.Letext0:
+ 105              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 106              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 107              		.file 4 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+ 108              		.file 5 "Generated_Source\\PSoC6\\pdl\\cmsis/include/core_cm4.h"
+ 109              		.section	.debug_info,"",%progbits
+ 110              	.Ldebug_info0:
+ 111 0000 1E010000 		.4byte	0x11e
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 4
+
+
+ 112 0004 0400     		.2byte	0x4
+ 113 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 114 000a 04       		.byte	0x4
+ 115 000b 01       		.uleb128 0x1
+ 116 000c 3C010000 		.4byte	.LASF20
+ 117 0010 0C       		.byte	0xc
+ 118 0011 EF010000 		.4byte	.LASF21
+ 119 0015 28000000 		.4byte	.LASF22
+ 120 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 121 001d 00000000 		.4byte	0
+ 122 0021 00000000 		.4byte	.Ldebug_line0
+ 123 0025 02       		.uleb128 0x2
+ 124 0026 02       		.byte	0x2
+ 125 0027 05       		.byte	0x5
+ 126 0028 90000000 		.4byte	.LASF0
+ 127 002c 02       		.uleb128 0x2
+ 128 002d 01       		.byte	0x1
+ 129 002e 06       		.byte	0x6
+ 130 002f 1A010000 		.4byte	.LASF1
+ 131 0033 03       		.uleb128 0x3
+ 132 0034 B1000000 		.4byte	.LASF4
+ 133 0038 02       		.byte	0x2
+ 134 0039 1D       		.byte	0x1d
+ 135 003a 3E000000 		.4byte	0x3e
+ 136 003e 02       		.uleb128 0x2
+ 137 003f 01       		.byte	0x1
+ 138 0040 08       		.byte	0x8
+ 139 0041 C9000000 		.4byte	.LASF2
+ 140 0045 02       		.uleb128 0x2
+ 141 0046 02       		.byte	0x2
+ 142 0047 07       		.byte	0x7
+ 143 0048 07010000 		.4byte	.LASF3
+ 144 004c 03       		.uleb128 0x3
+ 145 004d 26010000 		.4byte	.LASF5
+ 146 0051 02       		.byte	0x2
+ 147 0052 3F       		.byte	0x3f
+ 148 0053 57000000 		.4byte	0x57
+ 149 0057 02       		.uleb128 0x2
+ 150 0058 04       		.byte	0x4
+ 151 0059 05       		.byte	0x5
+ 152 005a FE000000 		.4byte	.LASF6
+ 153 005e 02       		.uleb128 0x2
+ 154 005f 04       		.byte	0x4
+ 155 0060 07       		.byte	0x7
+ 156 0061 7E000000 		.4byte	.LASF7
+ 157 0065 02       		.uleb128 0x2
+ 158 0066 08       		.byte	0x8
+ 159 0067 05       		.byte	0x5
+ 160 0068 00000000 		.4byte	.LASF8
+ 161 006c 02       		.uleb128 0x2
+ 162 006d 08       		.byte	0x8
+ 163 006e 07       		.byte	0x7
+ 164 006f 9A000000 		.4byte	.LASF9
+ 165 0073 04       		.uleb128 0x4
+ 166 0074 04       		.byte	0x4
+ 167 0075 05       		.byte	0x5
+ 168 0076 696E7400 		.ascii	"int\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 5
+
+
+ 169 007a 02       		.uleb128 0x2
+ 170 007b 04       		.byte	0x4
+ 171 007c 07       		.byte	0x7
+ 172 007d 0E000000 		.4byte	.LASF10
+ 173 0081 03       		.uleb128 0x3
+ 174 0082 C1000000 		.4byte	.LASF11
+ 175 0086 03       		.byte	0x3
+ 176 0087 18       		.byte	0x18
+ 177 0088 33000000 		.4byte	0x33
+ 178 008c 03       		.uleb128 0x3
+ 179 008d EF000000 		.4byte	.LASF12
+ 180 0091 03       		.byte	0x3
+ 181 0092 2C       		.byte	0x2c
+ 182 0093 4C000000 		.4byte	0x4c
+ 183 0097 02       		.uleb128 0x2
+ 184 0098 04       		.byte	0x4
+ 185 0099 07       		.byte	0x7
+ 186 009a 25020000 		.4byte	.LASF13
+ 187 009e 05       		.uleb128 0x5
+ 188 009f 81000000 		.4byte	0x81
+ 189 00a3 02       		.uleb128 0x2
+ 190 00a4 08       		.byte	0x8
+ 191 00a5 04       		.byte	0x4
+ 192 00a6 30010000 		.4byte	.LASF14
+ 193 00aa 02       		.uleb128 0x2
+ 194 00ab 01       		.byte	0x1
+ 195 00ac 08       		.byte	0x8
+ 196 00ad D7000000 		.4byte	.LASF15
+ 197 00b1 02       		.uleb128 0x2
+ 198 00b2 04       		.byte	0x4
+ 199 00b3 04       		.byte	0x4
+ 200 00b4 BB000000 		.4byte	.LASF16
+ 201 00b8 02       		.uleb128 0x2
+ 202 00b9 08       		.byte	0x8
+ 203 00ba 04       		.byte	0x4
+ 204 00bb F7000000 		.4byte	.LASF17
+ 205 00bf 06       		.uleb128 0x6
+ 206 00c0 78000000 		.4byte	.LASF18
+ 207 00c4 04       		.byte	0x4
+ 208 00c5 EA03     		.2byte	0x3ea
+ 209 00c7 81000000 		.4byte	0x81
+ 210 00cb 06       		.uleb128 0x6
+ 211 00cc DC000000 		.4byte	.LASF19
+ 212 00d0 04       		.byte	0x4
+ 213 00d1 F603     		.2byte	0x3f6
+ 214 00d3 9E000000 		.4byte	0x9e
+ 215 00d7 07       		.uleb128 0x7
+ 216 00d8 E1000000 		.4byte	.LASF23
+ 217 00dc 01       		.byte	0x1
+ 218 00dd 25       		.byte	0x25
+ 219 00de 00000000 		.4byte	.LFB132
+ 220 00e2 20000000 		.4byte	.LFE132-.LFB132
+ 221 00e6 01       		.uleb128 0x1
+ 222 00e7 9C       		.byte	0x9c
+ 223 00e8 FB000000 		.4byte	0xfb
+ 224 00ec 08       		.uleb128 0x8
+ 225 00ed 1D020000 		.4byte	.LASF24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 6
+
+
+ 226 00f1 01       		.byte	0x1
+ 227 00f2 25       		.byte	0x25
+ 228 00f3 BF000000 		.4byte	0xbf
+ 229 00f7 02       		.uleb128 0x2
+ 230 00f8 91       		.byte	0x91
+ 231 00f9 77       		.sleb128 -9
+ 232 00fa 00       		.byte	0
+ 233 00fb 09       		.uleb128 0x9
+ 234 00fc 1B000000 		.4byte	.LASF25
+ 235 0100 01       		.byte	0x1
+ 236 0101 39       		.byte	0x39
+ 237 0102 BF000000 		.4byte	0xbf
+ 238 0106 00000000 		.4byte	.LFB133
+ 239 010a 18000000 		.4byte	.LFE133-.LFB133
+ 240 010e 01       		.uleb128 0x1
+ 241 010f 9C       		.byte	0x9c
+ 242 0110 0A       		.uleb128 0xa
+ 243 0111 10020000 		.4byte	.LASF26
+ 244 0115 05       		.byte	0x5
+ 245 0116 F907     		.2byte	0x7f9
+ 246 0118 1C010000 		.4byte	0x11c
+ 247 011c 05       		.uleb128 0x5
+ 248 011d 8C000000 		.4byte	0x8c
+ 249 0121 00       		.byte	0
+ 250              		.section	.debug_abbrev,"",%progbits
+ 251              	.Ldebug_abbrev0:
+ 252 0000 01       		.uleb128 0x1
+ 253 0001 11       		.uleb128 0x11
+ 254 0002 01       		.byte	0x1
+ 255 0003 25       		.uleb128 0x25
+ 256 0004 0E       		.uleb128 0xe
+ 257 0005 13       		.uleb128 0x13
+ 258 0006 0B       		.uleb128 0xb
+ 259 0007 03       		.uleb128 0x3
+ 260 0008 0E       		.uleb128 0xe
+ 261 0009 1B       		.uleb128 0x1b
+ 262 000a 0E       		.uleb128 0xe
+ 263 000b 55       		.uleb128 0x55
+ 264 000c 17       		.uleb128 0x17
+ 265 000d 11       		.uleb128 0x11
+ 266 000e 01       		.uleb128 0x1
+ 267 000f 10       		.uleb128 0x10
+ 268 0010 17       		.uleb128 0x17
+ 269 0011 00       		.byte	0
+ 270 0012 00       		.byte	0
+ 271 0013 02       		.uleb128 0x2
+ 272 0014 24       		.uleb128 0x24
+ 273 0015 00       		.byte	0
+ 274 0016 0B       		.uleb128 0xb
+ 275 0017 0B       		.uleb128 0xb
+ 276 0018 3E       		.uleb128 0x3e
+ 277 0019 0B       		.uleb128 0xb
+ 278 001a 03       		.uleb128 0x3
+ 279 001b 0E       		.uleb128 0xe
+ 280 001c 00       		.byte	0
+ 281 001d 00       		.byte	0
+ 282 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 7
+
+
+ 283 001f 16       		.uleb128 0x16
+ 284 0020 00       		.byte	0
+ 285 0021 03       		.uleb128 0x3
+ 286 0022 0E       		.uleb128 0xe
+ 287 0023 3A       		.uleb128 0x3a
+ 288 0024 0B       		.uleb128 0xb
+ 289 0025 3B       		.uleb128 0x3b
+ 290 0026 0B       		.uleb128 0xb
+ 291 0027 49       		.uleb128 0x49
+ 292 0028 13       		.uleb128 0x13
+ 293 0029 00       		.byte	0
+ 294 002a 00       		.byte	0
+ 295 002b 04       		.uleb128 0x4
+ 296 002c 24       		.uleb128 0x24
+ 297 002d 00       		.byte	0
+ 298 002e 0B       		.uleb128 0xb
+ 299 002f 0B       		.uleb128 0xb
+ 300 0030 3E       		.uleb128 0x3e
+ 301 0031 0B       		.uleb128 0xb
+ 302 0032 03       		.uleb128 0x3
+ 303 0033 08       		.uleb128 0x8
+ 304 0034 00       		.byte	0
+ 305 0035 00       		.byte	0
+ 306 0036 05       		.uleb128 0x5
+ 307 0037 35       		.uleb128 0x35
+ 308 0038 00       		.byte	0
+ 309 0039 49       		.uleb128 0x49
+ 310 003a 13       		.uleb128 0x13
+ 311 003b 00       		.byte	0
+ 312 003c 00       		.byte	0
+ 313 003d 06       		.uleb128 0x6
+ 314 003e 16       		.uleb128 0x16
+ 315 003f 00       		.byte	0
+ 316 0040 03       		.uleb128 0x3
+ 317 0041 0E       		.uleb128 0xe
+ 318 0042 3A       		.uleb128 0x3a
+ 319 0043 0B       		.uleb128 0xb
+ 320 0044 3B       		.uleb128 0x3b
+ 321 0045 05       		.uleb128 0x5
+ 322 0046 49       		.uleb128 0x49
+ 323 0047 13       		.uleb128 0x13
+ 324 0048 00       		.byte	0
+ 325 0049 00       		.byte	0
+ 326 004a 07       		.uleb128 0x7
+ 327 004b 2E       		.uleb128 0x2e
+ 328 004c 01       		.byte	0x1
+ 329 004d 3F       		.uleb128 0x3f
+ 330 004e 19       		.uleb128 0x19
+ 331 004f 03       		.uleb128 0x3
+ 332 0050 0E       		.uleb128 0xe
+ 333 0051 3A       		.uleb128 0x3a
+ 334 0052 0B       		.uleb128 0xb
+ 335 0053 3B       		.uleb128 0x3b
+ 336 0054 0B       		.uleb128 0xb
+ 337 0055 27       		.uleb128 0x27
+ 338 0056 19       		.uleb128 0x19
+ 339 0057 11       		.uleb128 0x11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 8
+
+
+ 340 0058 01       		.uleb128 0x1
+ 341 0059 12       		.uleb128 0x12
+ 342 005a 06       		.uleb128 0x6
+ 343 005b 40       		.uleb128 0x40
+ 344 005c 18       		.uleb128 0x18
+ 345 005d 9742     		.uleb128 0x2117
+ 346 005f 19       		.uleb128 0x19
+ 347 0060 01       		.uleb128 0x1
+ 348 0061 13       		.uleb128 0x13
+ 349 0062 00       		.byte	0
+ 350 0063 00       		.byte	0
+ 351 0064 08       		.uleb128 0x8
+ 352 0065 05       		.uleb128 0x5
+ 353 0066 00       		.byte	0
+ 354 0067 03       		.uleb128 0x3
+ 355 0068 0E       		.uleb128 0xe
+ 356 0069 3A       		.uleb128 0x3a
+ 357 006a 0B       		.uleb128 0xb
+ 358 006b 3B       		.uleb128 0x3b
+ 359 006c 0B       		.uleb128 0xb
+ 360 006d 49       		.uleb128 0x49
+ 361 006e 13       		.uleb128 0x13
+ 362 006f 02       		.uleb128 0x2
+ 363 0070 18       		.uleb128 0x18
+ 364 0071 00       		.byte	0
+ 365 0072 00       		.byte	0
+ 366 0073 09       		.uleb128 0x9
+ 367 0074 2E       		.uleb128 0x2e
+ 368 0075 00       		.byte	0
+ 369 0076 3F       		.uleb128 0x3f
+ 370 0077 19       		.uleb128 0x19
+ 371 0078 03       		.uleb128 0x3
+ 372 0079 0E       		.uleb128 0xe
+ 373 007a 3A       		.uleb128 0x3a
+ 374 007b 0B       		.uleb128 0xb
+ 375 007c 3B       		.uleb128 0x3b
+ 376 007d 0B       		.uleb128 0xb
+ 377 007e 27       		.uleb128 0x27
+ 378 007f 19       		.uleb128 0x19
+ 379 0080 49       		.uleb128 0x49
+ 380 0081 13       		.uleb128 0x13
+ 381 0082 11       		.uleb128 0x11
+ 382 0083 01       		.uleb128 0x1
+ 383 0084 12       		.uleb128 0x12
+ 384 0085 06       		.uleb128 0x6
+ 385 0086 40       		.uleb128 0x40
+ 386 0087 18       		.uleb128 0x18
+ 387 0088 9742     		.uleb128 0x2117
+ 388 008a 19       		.uleb128 0x19
+ 389 008b 00       		.byte	0
+ 390 008c 00       		.byte	0
+ 391 008d 0A       		.uleb128 0xa
+ 392 008e 34       		.uleb128 0x34
+ 393 008f 00       		.byte	0
+ 394 0090 03       		.uleb128 0x3
+ 395 0091 0E       		.uleb128 0xe
+ 396 0092 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 9
+
+
+ 397 0093 0B       		.uleb128 0xb
+ 398 0094 3B       		.uleb128 0x3b
+ 399 0095 05       		.uleb128 0x5
+ 400 0096 49       		.uleb128 0x49
+ 401 0097 13       		.uleb128 0x13
+ 402 0098 3F       		.uleb128 0x3f
+ 403 0099 19       		.uleb128 0x19
+ 404 009a 3C       		.uleb128 0x3c
+ 405 009b 19       		.uleb128 0x19
+ 406 009c 00       		.byte	0
+ 407 009d 00       		.byte	0
+ 408 009e 00       		.byte	0
+ 409              		.section	.debug_aranges,"",%progbits
+ 410 0000 24000000 		.4byte	0x24
+ 411 0004 0200     		.2byte	0x2
+ 412 0006 00000000 		.4byte	.Ldebug_info0
+ 413 000a 04       		.byte	0x4
+ 414 000b 00       		.byte	0
+ 415 000c 0000     		.2byte	0
+ 416 000e 0000     		.2byte	0
+ 417 0010 00000000 		.4byte	.LFB132
+ 418 0014 20000000 		.4byte	.LFE132-.LFB132
+ 419 0018 00000000 		.4byte	.LFB133
+ 420 001c 18000000 		.4byte	.LFE133-.LFB133
+ 421 0020 00000000 		.4byte	0
+ 422 0024 00000000 		.4byte	0
+ 423              		.section	.debug_ranges,"",%progbits
+ 424              	.Ldebug_ranges0:
+ 425 0000 00000000 		.4byte	.LFB132
+ 426 0004 20000000 		.4byte	.LFE132
+ 427 0008 00000000 		.4byte	.LFB133
+ 428 000c 18000000 		.4byte	.LFE133
+ 429 0010 00000000 		.4byte	0
+ 430 0014 00000000 		.4byte	0
+ 431              		.section	.debug_line,"",%progbits
+ 432              	.Ldebug_line0:
+ 433 0000 D7010000 		.section	.debug_str,"MS",%progbits,1
+ 433      0200AF01 
+ 433      00000201 
+ 433      FB0E0D00 
+ 433      01010101 
+ 434              	.LASF8:
+ 435 0000 6C6F6E67 		.ascii	"long long int\000"
+ 435      206C6F6E 
+ 435      6720696E 
+ 435      7400
+ 436              	.LASF10:
+ 437 000e 756E7369 		.ascii	"unsigned int\000"
+ 437      676E6564 
+ 437      20696E74 
+ 437      00
+ 438              	.LASF25:
+ 439 001b 41444343 		.ascii	"ADCCtrl_Read\000"
+ 439      74726C5F 
+ 439      52656164 
+ 439      00
+ 440              	.LASF22:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 10
+
+
+ 441 0028 433A5C55 		.ascii	"C:\\Users\\stijn\\OneDrive\\Documenten\\PSoC Creato"
+ 441      73657273 
+ 441      5C737469 
+ 441      6A6E5C4F 
+ 441      6E654472 
+ 442 0056 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
+ 442      43204B6C 
+ 442      6F646465 
+ 442      6E5C5254 
+ 442      4F535F49 
+ 443              	.LASF18:
+ 444 0078 75696E74 		.ascii	"uint8\000"
+ 444      3800
+ 445              	.LASF7:
+ 446 007e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 446      20756E73 
+ 446      69676E65 
+ 446      6420696E 
+ 446      7400
+ 447              	.LASF0:
+ 448 0090 73686F72 		.ascii	"short int\000"
+ 448      7420696E 
+ 448      7400
+ 449              	.LASF9:
+ 450 009a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 450      206C6F6E 
+ 450      6720756E 
+ 450      7369676E 
+ 450      65642069 
+ 451              	.LASF4:
+ 452 00b1 5F5F7569 		.ascii	"__uint8_t\000"
+ 452      6E74385F 
+ 452      7400
+ 453              	.LASF16:
+ 454 00bb 666C6F61 		.ascii	"float\000"
+ 454      7400
+ 455              	.LASF11:
+ 456 00c1 75696E74 		.ascii	"uint8_t\000"
+ 456      385F7400 
+ 457              	.LASF2:
+ 458 00c9 756E7369 		.ascii	"unsigned char\000"
+ 458      676E6564 
+ 458      20636861 
+ 458      7200
+ 459              	.LASF15:
+ 460 00d7 63686172 		.ascii	"char\000"
+ 460      00
+ 461              	.LASF19:
+ 462 00dc 72656738 		.ascii	"reg8\000"
+ 462      00
+ 463              	.LASF23:
+ 464 00e1 41444343 		.ascii	"ADCCtrl_Write\000"
+ 464      74726C5F 
+ 464      57726974 
+ 464      6500
+ 465              	.LASF12:
+ 466 00ef 696E7433 		.ascii	"int32_t\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 11
+
+
+ 466      325F7400 
+ 467              	.LASF17:
+ 468 00f7 646F7562 		.ascii	"double\000"
+ 468      6C6500
+ 469              	.LASF6:
+ 470 00fe 6C6F6E67 		.ascii	"long int\000"
+ 470      20696E74 
+ 470      00
+ 471              	.LASF3:
+ 472 0107 73686F72 		.ascii	"short unsigned int\000"
+ 472      7420756E 
+ 472      7369676E 
+ 472      65642069 
+ 472      6E7400
+ 473              	.LASF1:
+ 474 011a 7369676E 		.ascii	"signed char\000"
+ 474      65642063 
+ 474      68617200 
+ 475              	.LASF5:
+ 476 0126 5F5F696E 		.ascii	"__int32_t\000"
+ 476      7433325F 
+ 476      7400
+ 477              	.LASF14:
+ 478 0130 6C6F6E67 		.ascii	"long double\000"
+ 478      20646F75 
+ 478      626C6500 
+ 479              	.LASF20:
+ 480 013c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 480      43313120 
+ 480      352E342E 
+ 480      31203230 
+ 480      31363036 
+ 481 016f 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
+ 481      20726576 
+ 481      6973696F 
+ 481      6E203233 
+ 481      37373135 
+ 482 01a2 6F667466 		.ascii	"oftfp -mfpu=fpv4-sp-d16 -mthumb -g -O0 -ffunction-s"
+ 482      70202D6D 
+ 482      6670753D 
+ 482      66707634 
+ 482      2D73702D 
+ 483 01d5 65637469 		.ascii	"ections -ffat-lto-objects\000"
+ 483      6F6E7320 
+ 483      2D666661 
+ 483      742D6C74 
+ 483      6F2D6F62 
+ 484              	.LASF21:
+ 485 01ef 47656E65 		.ascii	"Generated_Source\\PSoC6\\ADCCtrl.c\000"
+ 485      72617465 
+ 485      645F536F 
+ 485      75726365 
+ 485      5C50536F 
+ 486              	.LASF26:
+ 487 0210 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 487      52784275 
+ 487      66666572 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJPkVfz.s 			page 12
+
+
+ 487      00
+ 488              	.LASF24:
+ 489 021d 636F6E74 		.ascii	"control\000"
+ 489      726F6C00 
+ 490              	.LASF13:
+ 491 0225 73697A65 		.ascii	"sizetype\000"
+ 491      74797065 
+ 491      00
+ 492              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

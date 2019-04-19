@@ -50,10 +50,12 @@
 #define mI2C_SCBCLK__DIV_NUM 1
 #define mI2C_SCBCLK__DIV_TYPE CY_SYSCLK_DIV_8_BIT
 
-/* AMuxClk */
-#define AMuxClk__DIV_IDX 0
-#define AMuxClk__DIV_NUM 0
-#define AMuxClk__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+/* DMA_ADC */
+#define DMA_ADC_DW__BLOCK_HW DW0
+#define DMA_ADC_DW__BLOCK_NUMBER 0u
+#define DMA_ADC_DW__CHANNEL_HW DW0_CH_STRUCT0
+#define DMA_ADC_DW__CHANNEL_NUMBER 0u
+#define DMA_ADC_DW__TR_IN TRIG0_OUT_CPUSS_DW0_TR_IN0
 
 /* AMuxCtrl */
 #define AMuxCtrl_Sync_ctrl_reg__0__MASK 0x01u
@@ -69,6 +71,8 @@
 #define AMuxCtrl_Sync_ctrl_reg__16BIT_MASK_PERIOD_REG 0x4034181Cu
 #define AMuxCtrl_Sync_ctrl_reg__16BIT_PERIOD_MASK_REG 0x4034181Cu
 #define AMuxCtrl_Sync_ctrl_reg__16BIT_PERIOD_PERIOD_REG 0x4034181Cu
+#define AMuxCtrl_Sync_ctrl_reg__2__MASK 0x04u
+#define AMuxCtrl_Sync_ctrl_reg__2__POS 2
 #define AMuxCtrl_Sync_ctrl_reg__32BIT_CONTROL_AUX_CTL_REG 0x4034191Cu
 #define AMuxCtrl_Sync_ctrl_reg__32BIT_CONTROL_REG 0x4034171Cu
 #define AMuxCtrl_Sync_ctrl_reg__32BIT_COUNT_REG 0x4034171Cu
@@ -78,7 +82,7 @@
 #define AMuxCtrl_Sync_ctrl_reg__CONTROL_ST_REG 0x4034031Cu
 #define AMuxCtrl_Sync_ctrl_reg__COUNT_REG 0x4034171Cu
 #define AMuxCtrl_Sync_ctrl_reg__COUNT_ST_REG 0x4034031Cu
-#define AMuxCtrl_Sync_ctrl_reg__MASK 0x03u
+#define AMuxCtrl_Sync_ctrl_reg__MASK 0x07u
 #define AMuxCtrl_Sync_ctrl_reg__MASK_CTL_AUX_CTL_REG 0x4034041Cu
 #define AMuxCtrl_Sync_ctrl_reg__PER_CTL_AUX_CTL_REG 0x4034041Cu
 #define AMuxCtrl_Sync_ctrl_reg__PERIOD_REG 0x4034181Cu
@@ -86,6 +90,18 @@
 #define AMuxCtrl_Sync_ctrl_reg__RC_CFG1 0x403426E0u
 #define AMuxCtrl_Sync_ctrl_reg__SC_CFG0 0x403426D4u
 #define AMuxCtrl_Sync_ctrl_reg__SC_CFG1 0x403426D8u
+
+/* ADCCounterClk */
+#define ADCCounterClk__DIV_IDX 0
+#define ADCCounterClk__DIV_NUM 0
+#define ADCCounterClk__DIV_TYPE CY_SYSCLK_DIV_8_BIT
+
+/* ADCSOCCounter */
+#define ADCSOCCounter_TCPWM__CNT_HW TCPWM0_CNT0
+#define ADCSOCCounter_TCPWM__CNT_IDX 0u
+#define ADCSOCCounter_TCPWM__HW TCPWM0
+#define ADCSOCCounter_TCPWM__IDX 0u
+#define ADCSOCCounter_TCPWM__TR_COMPARE_MATCH TRIG11_IN_TCPWM0_TR_COMPARE_MATCH0
 
 /* Miscellaneous */
 #define CPUSS__CTI_TR_IN_0 TRIG5_OUT_CPUSS_CTI_TR_IN0

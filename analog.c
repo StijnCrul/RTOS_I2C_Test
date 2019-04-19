@@ -64,20 +64,30 @@ void ADCSampleTask(void * pvChannel){
     TickType_t xLastWakeTime ;
     const TickType_t xFrequency = pxChannel->timing;
     
-    int16_t newReading = 0;
+    float32_t newReading = 51;
+    int harhar = 0;
 
+    GPIO_PRT_Type* port = pxChannel->port;
+    unsigned int pin = pxChannel->pin;
+    uint8_t channel = pxChannel->channel; 
+    
+    
     xLastWakeTime = xTaskGetTickCount();    
     for(;;){
         // Wait for the next cycle determined by xFrequency
         vTaskDelayUntil(&xLastWakeTime, xFrequency);
         
-        Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 1);
-        AMuxCtrl_Write(pxChannel->channel);
-        ADC_StartConvert();
-        Cy_GPIO_Write(pxChannel->port, pxChannel->pin, 0);
-        newReading = ADC_GetResult16(0);
+        Cy_GPIO_Write(port, pin, 1);
+        AMuxCtrl_Write(channel | 0x4);   //or with 4 to trigger the ADC
+        Cy_GPIO_Write(port, pin, 0);
         
+        //newReading = ADC_CountsTo_mVolts(0, ADC_GetResult16(0));
+        //harhar = 0;
     }
+}
+
+void ADCDMAInit(void){
+    //todo
 }
 
 void ADC_ISR_Callback(void){

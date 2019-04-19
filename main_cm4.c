@@ -36,10 +36,10 @@ static PIN pin1 = {BLUE_PIN_PORT, BLUE_PIN_NUM, 25000};
 static PIN pin2 = {GREEN_PIN_PORT, GREEN_PIN_NUM, 50000};
 
 // Structs for different ADC channels
-static CH channel0 = {O_0_PORT, O_0_NUM, 2, 0};
-static CH channel1 = {O_1_PORT, O_1_NUM, 4, 1};
-static CH channel2 = {O_2_PORT, O_2_NUM, 6, 2};
-static CH channel3 = {O_3_PORT, O_3_NUM, 8, 3};
+static CH channel0 = {O_0_PORT, O_0_NUM, 10, 0};
+static CH channel1 = {O_1_PORT, O_1_NUM, 20, 1};
+static CH channel2 = {O_2_PORT, O_2_NUM, 30, 2};
+static CH channel3 = {O_3_PORT, O_3_NUM, 40, 3};
 
 // Structure for master transfer configuration
 cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg ={
@@ -54,10 +54,11 @@ int main(void){
     __enable_irq(); 
     
     // Configure communication interfaces
-    UART_Start();
+    //UART_Start();
     initI2C();
     initADC();
-    
+    Cy_TCPWM_Counter_Init(ADCSOCCounter_HW, ADCSOCCounter_CNT_NUM, &ADCSOCCounter_config);
+    Cy_TCPWM_Enable_Multiple(ADCSOCCounter_HW, ADCSOCCounter_CNT_MASK);
     
     // Create all the tasks
     xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
@@ -72,8 +73,9 @@ int main(void){
     xTaskCreate(ADCSampleTask, "ADCSampleTask1", 100, (void*) &channel1, 5, NULL);
     xTaskCreate(ADCSampleTask, "ADCSampleTask2", 100, (void*) &channel2, 5, NULL);
     xTaskCreate(ADCSampleTask, "ADCSampleTask3", 100, (void*) &channel3, 5, NULL);
+   
     
-    //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
+    xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
     vTaskStartScheduler(); 
     
     for(;;);
