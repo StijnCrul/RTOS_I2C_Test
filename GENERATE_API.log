@@ -1,23 +1,3 @@
---------------- Build Started: 04/19/2019 09:08:45 Project: RTOS_I2C_Test, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
-cydsfit.exe -.appdatapath "C:\Users\stijn\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p "C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\RTOS_I2C_Test.cyprj" -d CY8C6247BZI-D54 -s "C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\Generated_Source\PSoC6" -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
-Elaborating Design...
-ADD: sdb.M0018: error: Multiple drivers on signal "Net_1021", bit(s) "0".
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Signal: Net_1021)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_251.76)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_260.14)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_260.7)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_303)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_321)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_322)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_325)
-ADD: sdb.M0024: error: Terminal "AMuxHw.selectorBus[1:0]" with width 2 is connected to "Net_1021" with width 1.
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Signal: Net_1021)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_251.76)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_260.14)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_260.7)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_303)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_321)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_322)
- * C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\TopDesign\TopDesign.cysch (Shape_325)
-Error: fit.M0050: The fitter aborted due to errors, please address all errors and rebuild. (App=cydsfit)
---------------- Build Failed: 04/19/2019 09:08:51 ---------------
+--------------- Build Started: 04/23/2019 14:53:30 Project: RTOS_I2C_Test, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+The code generation step is up to date.
+--------------- Build Skipped: 04/23/2019 14:53:30 ---------------

@@ -1,6 +1,6 @@
 // ======================================================================
 // RTOS_I2C_Test.v generated from TopDesign.cysch
-// 04/19/2019 at 15:56
+// 04/23/2019 at 21:28
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1937,7 +1937,7 @@ module TCPWM_Counter_PDL_v1_0_3 (
 
 endmodule
 
-// DMA_PDL_v2_0(BUFFERABLE=false, CHAIN_TO_1=0, CHAIN_TO_2=0, CHAIN_TO_3=0, CHAIN_TO_4=0, CHANNEL_PRIORITY=3, DATA_ELEMENT_SIZE_1=2, DATA_ELEMENT_SIZE_2=2, DATA_ELEMENT_SIZE_3=2, DATA_ELEMENT_SIZE_4=2, DESCR_NAME_1=Descriptor_1, DESCR_NAME_2=Descriptor_2, DESCR_NAME_3=Descriptor_3, DESCR_NAME_4=Descriptor_4, DESCRIPTORS_XML_STR=, DST_WIDTH_1=0, DST_WIDTH_2=0, DST_WIDTH_3=0, DST_WIDTH_4=0, INTR_OUT_1=0, INTR_OUT_2=0, INTR_OUT_3=0, INTR_OUT_4=0, MIGRATION=false, NUM_OF_DESCRIPTORS=4, PREEMPTABLE=false, SRC_WIDTH_1=0, SRC_WIDTH_2=0, SRC_WIDTH_3=0, SRC_WIDTH_4=0, TRIG_DEACT_1=0, TRIG_DEACT_2=0, TRIG_DEACT_3=0, TRIG_DEACT_4=0, TRIG_IN_TYPE_1=0, TRIG_IN_TYPE_2=0, TRIG_IN_TYPE_3=0, TRIG_IN_TYPE_4=0, TRIG_INPUT=true, TRIG_OUT_TYPE_1=0, TRIG_OUT_TYPE_2=0, TRIG_OUT_TYPE_3=0, TRIG_OUT_TYPE_4=0, TRIG_OUTPUT=false, X_DST_INCREMENT_1=1, X_DST_INCREMENT_2=1, X_DST_INCREMENT_3=1, X_DST_INCREMENT_4=1, X_NUM_OF_ELEMENTS_1=1, X_NUM_OF_ELEMENTS_2=1, X_NUM_OF_ELEMENTS_3=1, X_NUM_OF_ELEMENTS_4=1, X_SRC_INCREMENT_1=1, X_SRC_INCREMENT_2=1, X_SRC_INCREMENT_3=1, X_SRC_INCREMENT_4=1, Y_DST_INCREMENT_1=1, Y_DST_INCREMENT_2=1, Y_DST_INCREMENT_3=1, Y_DST_INCREMENT_4=1, Y_NUM_OF_ELEMENTS_1=1, Y_NUM_OF_ELEMENTS_2=1, Y_NUM_OF_ELEMENTS_3=1, Y_NUM_OF_ELEMENTS_4=1, Y_SRC_INCREMENT_1=1, Y_SRC_INCREMENT_2=1, Y_SRC_INCREMENT_3=1, Y_SRC_INCREMENT_4=1, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=DMA_PDL_v2_0, CY_CONFIG_TITLE=DMA_ADC, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=DMA_ADC, CY_INSTANCE_SHORT_NAME=DMA_ADC, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=dma, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=DMA_ADC, )
+// DMA_PDL_v2_0(BUFFERABLE=false, CHAIN_TO_1=0, CHAIN_TO_2=0, CHAIN_TO_3=0, CHAIN_TO_4=0, CHANNEL_PRIORITY=3, DATA_ELEMENT_SIZE_1=2, DATA_ELEMENT_SIZE_2=2, DATA_ELEMENT_SIZE_3=2, DATA_ELEMENT_SIZE_4=2, DESCR_NAME_1=Descriptor_1, DESCR_NAME_2=Descriptor_2, DESCR_NAME_3=Descriptor_3, DESCR_NAME_4=Descriptor_4, DESCRIPTORS_XML_STR=<?xml version="1.0" encoding="utf-16"?> <ArrayOfCyDmaDescriptionProperties xmlns:Version="ystem.Collections.Generic">   <CyDmaDescriptionProperties>     <DescriptorName>Descriptor_1</DescriptorName>     <ChainToDescriptor>Descriptor_1</ChainToDescriptor>     <NumberOfDataElementsToTransfer>4</NumberOfDataElementsToTransfer>     <SourceIncrementEveryCycleByX>0</SourceIncrementEveryCycleByX>     <SourceIncrementEveryCycleByY>0</SourceIncrementEveryCycleByY>     <DestinationIncrementEveryCycleByY>0</DestinationIncrementEveryCycleByY>   </CyDmaDescriptionProperties> </ArrayOfCyDmaDescriptionProperties>, DST_WIDTH_1=0, DST_WIDTH_2=0, DST_WIDTH_3=0, DST_WIDTH_4=0, INTR_OUT_1=0, INTR_OUT_2=0, INTR_OUT_3=0, INTR_OUT_4=0, MIGRATION=false, NUM_OF_DESCRIPTORS=1, PREEMPTABLE=false, SRC_WIDTH_1=0, SRC_WIDTH_2=0, SRC_WIDTH_3=0, SRC_WIDTH_4=0, TRIG_DEACT_1=0, TRIG_DEACT_2=0, TRIG_DEACT_3=0, TRIG_DEACT_4=0, TRIG_IN_TYPE_1=0, TRIG_IN_TYPE_2=0, TRIG_IN_TYPE_3=0, TRIG_IN_TYPE_4=0, TRIG_INPUT=true, TRIG_OUT_TYPE_1=0, TRIG_OUT_TYPE_2=0, TRIG_OUT_TYPE_3=0, TRIG_OUT_TYPE_4=0, TRIG_OUTPUT=false, X_DST_INCREMENT_1=1, X_DST_INCREMENT_2=1, X_DST_INCREMENT_3=1, X_DST_INCREMENT_4=1, X_NUM_OF_ELEMENTS_1=1, X_NUM_OF_ELEMENTS_2=1, X_NUM_OF_ELEMENTS_3=1, X_NUM_OF_ELEMENTS_4=1, X_SRC_INCREMENT_1=1, X_SRC_INCREMENT_2=1, X_SRC_INCREMENT_3=1, X_SRC_INCREMENT_4=1, Y_DST_INCREMENT_1=1, Y_DST_INCREMENT_2=1, Y_DST_INCREMENT_3=1, Y_DST_INCREMENT_4=1, Y_NUM_OF_ELEMENTS_1=1, Y_NUM_OF_ELEMENTS_2=1, Y_NUM_OF_ELEMENTS_3=1, Y_NUM_OF_ELEMENTS_4=1, Y_SRC_INCREMENT_1=1, Y_SRC_INCREMENT_2=1, Y_SRC_INCREMENT_3=1, Y_SRC_INCREMENT_4=1, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=DMA_PDL_v2_0, CY_CONFIG_TITLE=ADCDMA, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=ADCDMA, CY_INSTANCE_SHORT_NAME=ADCDMA, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_PDL_DRIVER_NAME=dma, CY_PDL_DRIVER_REQ_VERSION=2.0.0, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=ADCDMA, )
 module DMA_PDL_v2_0_4 (
     tr_in,
     tr_out,
@@ -1995,8 +1995,7 @@ module top ;
           wire  Net_1036;
           wire  Net_1035;
           wire  Net_1034;
-          wire  Net_1079;
-          wire  Net_1078;
+          wire  Net_1086;
           wire  Net_1049;
           wire  Net_1060;
           wire  Net_880;
@@ -2012,8 +2011,8 @@ module top ;
     electrical [1:0] Net_579;
           wire  Net_578;
     electrical  Net_577;
-          wire [1:0] mywire_1;
           wire [11:0] Net_576;
+          wire [1:0] mywire_1;
           wire  Net_575;
           wire [3:0] Net_574;
           wire  Net_573;
@@ -2027,6 +2026,9 @@ module top ;
           wire  Net_127;
           wire  Net_126;
           wire  Net_125;
+          wire  Net_1092;
+          wire  Net_1084;
+          wire  Net_741;
           wire  Net_1062;
           wire  Net_1063;
           wire  Net_1054;
@@ -2035,8 +2037,6 @@ module top ;
     electrical  Net_873;
     electrical  Net_872;
     electrical  Net_1016;
-          wire  Net_741;
-          wire  Net_1015;
     electrical  Net_639;
     electrical  Net_599;
     electrical  Net_597;
@@ -2133,7 +2133,7 @@ module top ;
 
 
     Scan_ADC_v3_0_1 ADC (
-        .sdone(Net_1015),
+        .sdone(Net_1084),
         .eos(Net_741),
         .t_chidv(Net_573),
         .t_chid(Net_574[3:0]),
@@ -2562,10 +2562,10 @@ module top ;
         .compare(Net_1061),
         .clock(Net_1062));
 
-    DMA_PDL_v2_0_4 DMA_ADC (
-        .tr_in(Net_1015),
-        .tr_out(Net_1078),
-        .interrupt(Net_1079));
+    DMA_PDL_v2_0_4 ADCDMA (
+        .tr_in(Net_1084),
+        .tr_out(Net_1086),
+        .interrupt(Net_1092));
 
 	wire [0:0] tmpFB_0__O_7_net;
 	wire [0:0] tmpIO_0__O_7_net;
@@ -2722,7 +2722,7 @@ module top ;
 		  .hotswap_needed("0"))
 		O_4
 		 (.oe({1'b1}),
-		  .y({Net_1015}),
+		  .y({Net_1084}),
 		  .fb({tmpFB_0__O_4_net[0:0]}),
 		  .io({tmpIO_0__O_4_net[0:0]}),
 		  .siovref(tmpSIOVREF__O_4_net));
@@ -2846,6 +2846,50 @@ module top ;
 		  .is_digital(0))
 		ADCCounterClk
 		 (.clock_out(Net_1062));
+
+
+	wire [0:0] tmpFB_0__O_9_net;
+	wire [0:0] tmpIO_0__O_9_net;
+	electrical [0:0] tmpSIOVREF__O_9_net;
+
+	cy_mxs40_gpio_v1_0
+		#(.id("b3d7502a-9b42-4b39-aafd-67613e9aaa7c"),
+		  .width(1),
+		  .sio_grp_cnt(0),
+		  .drive_mode("6"),
+		  .ibuf_enabled("0"),
+		  .init_dr_st("0"),
+		  .input_sync("0"),
+		  .intr_mode("0"),
+		  .io_voltage(""),
+		  .output_conn("0"),
+		  .oe_conn("0"),
+		  .output_sync("0"),
+		  .oe_sync("0"),
+		  .drive_strength("0"),
+		  .max_frequency("100"),
+		  .i2c_mode("0"),
+		  .output_current_cap("8"),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .slew_rate("0"),
+		  .vtrip("0"),
+		  .use_annotation("0"),
+		  .hotswap_needed("0"))
+		O_9
+		 (.oe({1'b1}),
+		  .y({1'b0}),
+		  .fb({tmpFB_0__O_9_net[0:0]}),
+		  .io({tmpIO_0__O_9_net[0:0]}),
+		  .siovref(tmpSIOVREF__O_9_net));
+
+
+
+	cy_mxs40_isr_v1_0
+		#(.deepsleep_required(0),
+		  .int_type(2'b10))
+		ADC_DMA_INT
+		 (.int_signal(Net_1092));
 
 
 

@@ -2,7 +2,7 @@
 --	Conversion of RTOS_I2C_Test.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Apr 19 15:56:20 2019
+--	Tue Apr 23 21:28:42 2019
 --
 
 USE cypress.cypress.all;
@@ -81,7 +81,7 @@ TERMINAL Net_639 : bit;
 SIGNAL \ADC:Net_34\ : bit;
 SIGNAL \ADC:Net_33\ : bit;
 TERMINAL \ADC:vref\ : bit;
-SIGNAL Net_1015 : bit;
+SIGNAL Net_1084 : bit;
 SIGNAL Net_573 : bit;
 SIGNAL Net_575 : bit;
 SIGNAL Net_741 : bit;
@@ -458,8 +458,8 @@ SIGNAL Net_1060 : bit;
 SIGNAL \ADCSOCCounter:Net_1\ : bit;
 SIGNAL \ADCSOCCounter:Net_2\ : bit;
 SIGNAL Net_880 : bit;
-SIGNAL Net_1078 : bit;
-SIGNAL Net_1079 : bit;
+SIGNAL Net_1086 : bit;
+SIGNAL Net_1092 : bit;
 SIGNAL tmpFB_0__O_7_net_0 : bit;
 SIGNAL tmpIO_0__O_7_net_0 : bit;
 TERMINAL tmpSIOVREF__O_7_net_0 : bit;
@@ -512,6 +512,9 @@ TERMINAL tmpSIOVREF__O_6_net_0 : bit;
 SIGNAL tmpFB_0__O_8_net_0 : bit;
 SIGNAL tmpIO_0__O_8_net_0 : bit;
 TERMINAL tmpSIOVREF__O_8_net_0 : bit;
+SIGNAL tmpFB_0__O_9_net_0 : bit;
+SIGNAL tmpIO_0__O_9_net_0 : bit;
+TERMINAL tmpSIOVREF__O_9_net_0 : bit;
 SIGNAL \MODULE_1:g1:a0:newa_1\ : bit;
 SIGNAL MODIN1_1 : bit;
 SIGNAL \MODULE_1:g1:a0:newa_0\ : bit;
@@ -806,7 +809,7 @@ RED_PIN:cy_mxs40_gpio_v1_0
 		vminus=>\ADC:muxoutMinus\,
 		vref=>\ADC:vref\,
 		ext_vref=>\ADC:Net_408\,
-		dsi_sar_sample_done=>Net_1015,
+		dsi_sar_sample_done=>Net_1084,
 		dsi_sar_chan_id_valid=>Net_573,
 		dsi_sar_data_valid=>Net_575,
 		tr_sar_out=>Net_741,
@@ -2260,12 +2263,12 @@ O_3:cy_mxs40_gpio_v1_0
 		line_compl=>\ADCSOCCounter:Net_1\,
 		line=>\ADCSOCCounter:Net_2\,
 		interrupt=>Net_880);
-\DMA_ADC:DW\:cy_mxs40_dw_v1_0
+\ADCDMA:DW\:cy_mxs40_dw_v1_0
 	GENERIC MAP(cy_registers=>"",
 		priority=>"11")
-	PORT MAP(tr_in=>Net_1015,
-		tr_out=>Net_1078,
-		interrupt=>Net_1079);
+	PORT MAP(tr_in=>Net_1084,
+		tr_out=>Net_1086,
+		interrupt=>Net_1092);
 O_7:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>1,
@@ -2355,7 +2358,7 @@ O_4:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_1015,
+		y=>Net_1084,
 		fb=>(tmpFB_0__O_4_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__O_4_net_0),
@@ -2467,6 +2470,43 @@ ADCCounterClk:cy_clock_v1_0
 		is_digital=>'0')
 	PORT MAP(clock_out=>Net_1062,
 		dig_domain_out=>open);
+O_9:cy_mxs40_gpio_v1_0
+	GENERIC MAP(cy_registers=>"",
+		width=>1,
+		sio_grp_cnt=>0,
+		id=>"b3d7502a-9b42-4b39-aafd-67613e9aaa7c",
+		drive_mode=>"6",
+		ibuf_enabled=>"0",
+		init_dr_st=>"0",
+		input_sync=>"0",
+		intr_mode=>"0",
+		io_voltage=>"",
+		output_conn=>"0",
+		oe_conn=>"0",
+		output_sync=>"0",
+		oe_sync=>"0",
+		drive_strength=>"0",
+		max_frequency=>"100",
+		output_current_cap=>"8",
+		i2c_mode=>"0",
+		pin_aliases=>"",
+		pin_mode=>"O",
+		slew_rate=>"0",
+		vtrip=>"0",
+		use_annotation=>"0",
+		hotswap_needed=>"0")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__O_9_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__O_9_net_0),
+		annotation=>(open),
+		siovref=>(tmpSIOVREF__O_9_net_0));
+ADC_DMA_INT:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>Net_1092);
 AMuxHw_Decoder_old_id_1:cy_dff
 	PORT MAP(d=>mywire_1_1,
 		clk=>Net_1063,

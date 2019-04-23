@@ -1,5 +1,5 @@
 # RTOS_I2C_Test
-# 2019-04-19 13:56:32Z
+# 2019-04-23 19:28:51Z
 
 dont_use_location BLE -1 -1 0
 dont_use_location p4blecell -1 -1 0
@@ -27,4 +27,5 @@ set_io "O_5(0)" iocell 6 2
 set_io "O_6(0)" iocell 10 5
 set_io "O_6(1)" iocell 10 6
 set_io "O_8(0)" iocell 9 5
+set_io "O_9(0)" iocell 9 4
 set_location "\ADC:SAR\" SARADC -1 -1 0

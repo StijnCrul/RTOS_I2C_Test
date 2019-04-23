@@ -21,6 +21,8 @@
     /*Define your Cortex-M4 macro callbacks here */
     #define ADC_ISR_CALLBACK
     void ADC_ISR_Callback( void );
+    #define configureDMA
+    void configureDma();
 #endif
 
     /*For more information, refer to the Writing Code topic in the PSoC Creator Help.*/

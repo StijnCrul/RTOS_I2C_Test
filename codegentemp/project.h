@@ -111,7 +111,7 @@
 #include "ADC.h"
 #include "mI2C.h"
 #include "ADCSOCCounter.h"
-#include "DMA_ADC.h"
+#include "ADCDMA.h"
 #include "AMuxCtrl.h"
 #include "ADCCounterClk.h"
 #include "UART_SCBCLK.h"

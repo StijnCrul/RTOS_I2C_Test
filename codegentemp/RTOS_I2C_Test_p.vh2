@@ -1,5 +1,5 @@
 -- Project:   RTOS_I2C_Test
--- Generated: 04/19/2019 15:56:32
+-- Generated: 04/23/2019 21:28:51
 -- PSoC Creator  4.2
 
 ENTITY RTOS_I2C_Test IS
@@ -20,7 +20,8 @@ ENTITY RTOS_I2C_Test IS
         O_5(0)_PAD : OUT std_ulogic;
         O_6(0)_PAD : OUT std_ulogic;
         O_6(1)_PAD : OUT std_ulogic;
-        O_8(0)_PAD : OUT std_ulogic);
+        O_8(0)_PAD : OUT std_ulogic;
+        O_9(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VBACKUP OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDD_NS OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDA_CSD OF __DEFAULT__ : ENTITY IS 3.3e0;
@@ -69,15 +70,15 @@ ARCHITECTURE __DEFAULT__ OF RTOS_I2C_Test IS
     SIGNAL ClockBlock_SlowClk : bit;
     SIGNAL ClockBlock_WCO : bit;
     SIGNAL GREEN_PIN(0)__PA : bit;
-    SIGNAL Net_1015 : bit;
     SIGNAL Net_1049 : bit;
     SIGNAL Net_1054 : bit;
     SIGNAL Net_1060 : bit;
     SIGNAL Net_1061 : bit;
     SIGNAL Net_1062_ff11 : bit;
     ATTRIBUTE global_signal OF Net_1062_ff11 : SIGNAL IS true;
-    SIGNAL Net_1078 : bit;
-    SIGNAL Net_1079 : bit;
+    SIGNAL Net_1084 : bit;
+    SIGNAL Net_1086 : bit;
+    SIGNAL Net_1092 : bit;
     SIGNAL Net_130 : bit;
     SIGNAL Net_131 : bit;
     SIGNAL Net_139 : bit;
@@ -113,6 +114,7 @@ ARCHITECTURE __DEFAULT__ OF RTOS_I2C_Test IS
     SIGNAL O_6(1)__PA : bit;
     SIGNAL O_7(0)__PA : bit;
     SIGNAL O_8(0)__PA : bit;
+    SIGNAL O_9(0)__PA : bit;
     SIGNAL RED_PIN(0)__PA : bit;
     SIGNAL \ADC:Net_423\ : bit;
     SIGNAL \ADC:Net_428_ff49\ : bit;
@@ -200,6 +202,8 @@ ARCHITECTURE __DEFAULT__ OF RTOS_I2C_Test IS
     ATTRIBUTE Location OF O_6(1) : LABEL IS "P10[6]";
     ATTRIBUTE lib_model OF O_8(0) : LABEL IS "iocell23";
     ATTRIBUTE Location OF O_8(0) : LABEL IS "P9[5]";
+    ATTRIBUTE lib_model OF O_9(0) : LABEL IS "iocell24";
+    ATTRIBUTE Location OF O_9(0) : LABEL IS "P9[4]";
     ATTRIBUTE Location OF \ADC:SAR\ : LABEL IS "F(SARADC,0)";
     ATTRIBUTE lib_model OF \AMuxCtrl:Sync:ctrl_reg\ : LABEL IS "controlcell1";
     ATTRIBUTE lib_model OF AMuxHw_Decoder_old_id_1 : LABEL IS "macrocell1";
@@ -1743,7 +1747,7 @@ BEGIN
         PORT MAP(
             pa_out => O_4(0)__PA,
             oe => open,
-            pin_input => Net_1015,
+            pin_input => Net_1084,
             pad_out => O_4(0)_PAD,
             pad_in => O_4(0)_PAD,
             in_clock => open,
@@ -1942,6 +1946,60 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
+    O_9:logicalport
+        GENERIC MAP(
+            cy_registers => "",
+            drive_mode => "110",
+            drive_strength => "0",
+            hotswap_needed => "0",
+            i2c_mode => "0",
+            ibuf_enabled => "0",
+            id => "b3d7502a-9b42-4b39-aafd-67613e9aaa7c",
+            init_dr_st => "0",
+            input_sync => "0",
+            intr_mode => "00",
+            io_voltage => "",
+            max_frequency => "100",
+            oe_conn => "0",
+            oe_sync => "0",
+            output_conn => "0",
+            output_current_cap => "8",
+            output_sync => "0",
+            pin_aliases => "",
+            pin_mode => "B",
+            sio_grp_cnt => 0,
+            slew_rate => "0",
+            use_annotation => "0",
+            vtrip => "00",
+            width => 1,
+            in_clk_inv => 0,
+            in_clken_inv => 0,
+            in_clken_mode => 1,
+            in_rst_inv => 0,
+            out_clk_inv => 0,
+            out_clken_inv => 0,
+            out_clken_mode => 1,
+            out_rst_inv => 0);
+
+    O_9(0):iocell
+        GENERIC MAP(
+            in_sync_mode => 0,
+            out_sync_mode => 0,
+            oe_sync_mode => 0,
+            logicalport => "O_9",
+            logicalport_pin_id => 0,
+            io_capabilities => "0000000000000000000000000000000000000000000000000000000000000001")
+        PORT MAP(
+            pa_out => O_9(0)__PA,
+            oe => open,
+            pad_in => O_9(0)_PAD,
+            in_clock => open,
+            in_clock_en => open,
+            in_reset => open,
+            out_clock => open,
+            out_clock_en => open,
+            out_reset => open);
+
     \UART:SCB_IRQ\:interrupt
         GENERIC MAP(
             cy_registers => "",
@@ -1989,7 +2047,7 @@ BEGIN
             cy_registers => "",
             edge_trigger => 1)
         PORT MAP(
-            dsi_sar_sample_done => Net_1015,
+            dsi_sar_sample_done => Net_1084,
             dsi_sar_chan_id_valid => Net_573,
             dsi_sar_data_valid => Net_575,
             tr_sar_out => Net_741,
@@ -2073,14 +2131,14 @@ BEGIN
             line => \ADCSOCCounter:Net_2\,
             interrupt => Net_880);
 
-    \DMA_ADC:DW\:drqcell
+    \ADCDMA:DW\:drqcell
         GENERIC MAP(
             cy_registers => "",
             priority => "11")
         PORT MAP(
-            dmareq => Net_1015,
-            termout => Net_1078,
-            interrupt => Net_1079,
+            dmareq => Net_1084,
+            termout => Net_1086,
+            interrupt => Net_1092,
             clock => ClockBlock_PeriClk);
 
     \AMuxCtrl:Sync:ctrl_reg\:controlcell
@@ -2103,6 +2161,15 @@ BEGIN
             control_1 => mywire_1_1,
             control_0 => mywire_1_0,
             busclk => periclk_App);
+
+    ADC_DMA_INT:interrupt
+        GENERIC MAP(
+            cy_registers => "",
+            deepsleep_required => 0,
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_1092,
+            clock => ClockBlock_PeriClk);
 
     AMuxHw_Decoder_old_id_1:macrocell
         GENERIC MAP(
