@@ -20,7 +20,13 @@
 
 #include "blink.h"
 
-
+/* 
+* Name: BlinkTask
+* Description: create a task where to toggle a GPIO pin periodically
+*
+* Arguments:    PIN pvPin (with pvPin->port pvPin->pin, pvPin->timing)
+* Output:       none
+*/
 void BlinkTask(void * pvPin){
     
     PIN *pxPin = (PIN*) pvPin;

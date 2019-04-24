@@ -23,7 +23,11 @@
 #include "task.h"
 
 /*
-* Initialize ADC things
+* Name: initADC
+* Description: Initialize ADC things
+*
+* Arguments:    none
+* Output:       none
 */
 void initADC(){
     ADC_Start();
@@ -31,7 +35,11 @@ void initADC(){
 }
 
 /* 
-* create a task where the data from the ADC (in free running mode) is processed 
+* Name: ADCTask
+* Description: create a task where the data from the ADC (in free running mode) is processed 
+*
+* Arguments:    none
+* Output:       none
 */
 void ADCTask(){
     // Variables for creating a periodic function using delayUntil
@@ -55,7 +63,11 @@ void ADCTask(){
 }
 
 /* 
-* create a task where the data from the ADC is sampled by the RTOS, set timing and a pin for measurements
+* Name: ADCSampleTask
+* Description: create a task where the data from the ADC is sampled by the RTOS, set timing and a pin for measurements
+*
+* Arguments:    CH pvChannel (with pvChannel->port pvChannel->pin, pvChannel->timing, pvChannel->channel)
+* Output:       none
 */
 void ADCSampleTask(void * pvChannel){
     CH *pxChannel = (CH*) pvChannel;
@@ -86,6 +98,13 @@ void ADCSampleTask(void * pvChannel){
     }
 }
 
+/* 
+* Name: configureDMA0
+* Description: Initialize DMA0
+*
+* Arguments:    none
+* Output:       none
+*/
 void configureDMA0(){
     cy_en_dma_status_t dma_init_status;
 	cy_stc_dma_channel_config_t channelConfig;	
@@ -120,11 +139,25 @@ void configureDMA0(){
 
 }
 
+/* 
+* Name: ADCDMA0Complete
+* Description: ISR for DMA0
+*
+* Arguments:    none
+* Output:       none
+*/
 void ADCDMA0Complete(){
     Cy_DMA_Channel_ClearInterrupt(ADCDMA_0_HW, ADCDMA_0_DW_CHANNEL);
     //Do something one DMA is full
 }
 
+/* 
+* Name: configureDMA1
+* Description: Initialize DMA1
+*
+* Arguments:    none
+* Output:       none
+*/
 void configureDMA1(){
     cy_en_dma_status_t dma_init_status;
 	cy_stc_dma_channel_config_t channelConfig;	
@@ -159,11 +192,25 @@ void configureDMA1(){
 
 }
 
+/* 
+* Name: ADCDMA1Complete
+* Description: ISR for DMA1
+*
+* Arguments:    none
+* Output:       none
+*/
 void ADCDMA1Complete(){
     Cy_DMA_Channel_ClearInterrupt(ADCDMA_1_HW, ADCDMA_1_DW_CHANNEL);
     //Do something one DMA is full
 }
 
+/* 
+* Name: configureDMA2
+* Description: Initialize DMA2
+*
+* Arguments:    none
+* Output:       none
+*/
 void configureDMA2(){
     cy_en_dma_status_t dma_init_status;
 	cy_stc_dma_channel_config_t channelConfig;	
@@ -198,11 +245,25 @@ void configureDMA2(){
 
 }
 
+/* 
+* Name: ADCDMA2Complete
+* Description: ISR for DMA2
+*
+* Arguments:    none
+* Output:       none
+*/
 void ADCDMA2Complete(){
     Cy_DMA_Channel_ClearInterrupt(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL);
     //Do something one DMA is full
 }
 
+/* 
+* Name: configureDMA3
+* Description: Initialize DMA3
+*
+* Arguments:    none
+* Output:       none
+*/
 void configureDMA3(){
     cy_en_dma_status_t dma_init_status;
 	cy_stc_dma_channel_config_t channelConfig;	
@@ -237,11 +298,25 @@ void configureDMA3(){
 
 }
 
+/* 
+* Name: ADCDMA3Complete
+* Description: ISR for DMA3
+*
+* Arguments:    none
+* Output:       none
+*/
 void ADCDMA3Complete(){
     Cy_DMA_Channel_ClearInterrupt(ADCDMA_3_HW, ADCDMA_3_DW_CHANNEL);
     //Do something one DMA is full
 }
 
+/* 
+* Name: handle_error
+* Description: Disables interrupts and halts the CPU when an error occurs. Todo: do something better
+*
+* Arguments:    none
+* Output:       none
+*/
 void handle_error(void){    
      // Disable all interrupts
     __disable_irq();
@@ -250,6 +325,13 @@ void handle_error(void){
     while(1u) {}
 }
 
+/* 
+* Name: ADC_ISR_Callback
+* Description: ISR for when the ADC is running in free running mode
+*
+* Arguments:    none
+* Output:       none
+*/
 void ADC_ISR_Callback(void){
     dataReady = 1;
     result = ADC_GetResult16(0);

@@ -81,7 +81,6 @@ int main(void){
     xTaskCreate(ADCSampleTask, "ADCSampleTask2", 100, (void*) &channel2, 3, NULL);
     xTaskCreate(ADCSampleTask, "ADCSampleTask3", 100, (void*) &channel3, 2, NULL);
    
-    
     //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
     vTaskStartScheduler(); 
     

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   28:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The TCPWM driver is a multifunction driver that implements Timer Counter, 
   29:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * PWM, and Quadrature Decoder functionality using the TCPWM block.
   30:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * The functions and other declarations used in this driver are in cy_tcpwm_counter.h, 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   85:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * underflow
   86:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Left Aligned, Right Aligned, Center Aligned, and Asymmetric Aligned modes
   87:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Continuous or One Shot run modes
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 3
 
 
   88:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * Pseudo Random mode
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  142:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \ref Cy_TCPWM_TriggerReloadOrIndex must be called to start the counting.
  143:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * * If count input terminal is not used, the \ref CY_TCPWM_INPUT_LEVEL macro 
  144:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * should be set for the countInputMode parameter and the \ref CY_TCPWM_INPUT_1 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 4
 
 
  145:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * macro should be set for the countInput parameter in the configuration 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  199:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *         of direct register access using dereferenced pointers.</td>
  200:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *     <td>Makes register access device-independent, so that the PDL does 
  201:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *         not need to be recompiled for each supported part number.</td>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 5
 
 
  202:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** *   </tr>
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  256:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
  257:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
  258:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \addtogroup group_tcpwm_macros_common
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 6
 
 
  259:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** * \{
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  313:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** #define CY_TCPWM_INPUT_LEVEL            (3U)
  314:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /** \} group_tcpwm_input_modes */
  315:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 7
 
 
  316:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** /**
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  370:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** typedef enum 
  371:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h **** {
  372:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     CY_TCPWM_SUCCESS = 0x00U,                                           /**< Successful */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 8
 
 
  373:Generated_Source\PSoC6\pdl\drivers/peripheral/tcpwm/cy_tcpwm.h ****     CY_TCPWM_BAD_PARAM = CY_TCPWM_ID | CY_PDL_STATUS_ERROR | 0x01U,     /**< One or more invalid pa
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   36 0002 83B0     		sub	sp, sp, #12
   37              		.cfi_def_cfa_offset 16
   38 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 9
 
 
   39              		.cfi_def_cfa_register 7
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   91              		.size	pin2, 12
   92              	pin2:
   93 0018 80003240 		.word	1077018752
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 10
 
 
   94 001c 01000000 		.word	1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  146      6B3100
  147 000b 00       		.align	2
  148              	.LC1:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 11
 
 
  149 000c 426C696E 		.ascii	"BlinkTask2\000"
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   14:main_cm4.c    ****  *      Created: 2019-04-11
   15:main_cm4.c    ****  *       Author: Stijn Crul
   16:main_cm4.c    ****  *      Version: 0.1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 12
 
 
   17:main_cm4.c    ****  *
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
    3:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
    4:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @version  V5.0.3
    5:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @date     16. January 2018
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 13
 
 
    6:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  ******************************************************************************/
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   60:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
   61:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED
   62:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 14
 
 
   63:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  117:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
  118:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
  119:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 15
 
 
  120:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
   68:main_cm4.c    ****     configureDMA3();
  217              		.loc 2 68 0
  218 002e FFF7FEFF 		bl	configureDMA3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 16
 
 
   69:main_cm4.c    ****     
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  261 0084 0193     		str	r3, [sp, #4]
  262 0086 0423     		movs	r3, #4
  263 0088 0093     		str	r3, [sp]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 17
 
 
  264 008a 1A4B     		ldr	r3, .L4+48
@@ -989,15 +989,14 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  287 00b8 0D48     		ldr	r0, .L4+44
  288 00ba FFF7FEFF 		bl	xTaskCreate
   83:main_cm4.c    ****    
-  84:main_cm4.c    ****     
-  85:main_cm4.c    ****     //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
-  86:main_cm4.c    ****     vTaskStartScheduler(); 
- 289              		.loc 2 86 0
+  84:main_cm4.c    ****     //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
+  85:main_cm4.c    ****     vTaskStartScheduler(); 
+ 289              		.loc 2 85 0
  290 00be FFF7FEFF 		bl	vTaskStartScheduler
  291              	.L3:
-  87:main_cm4.c    ****     
-  88:main_cm4.c    ****     for(;;);
- 292              		.loc 2 88 0 discriminator 1
+  86:main_cm4.c    ****     
+  87:main_cm4.c    ****     for(;;);
+ 292              		.loc 2 87 0 discriminator 1
  293 00c2 FEE7     		b	.L3
  294              	.L5:
  295              		.align	2
@@ -1018,10 +1017,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  310 00f8 34000000 		.word	.LC4
  311 00fc 44000000 		.word	channel2
  312 0100 44000000 		.word	.LC5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 18
-
-
  313 0104 54000000 		.word	channel3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 18
+
+
  314 0108 54000000 		.word	.LC6
  315              		.cfi_endproc
  316              	.LFE893:
@@ -1078,10 +1077,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  367 003e 02       		.uleb128 0x2
  368 003f 01       		.byte	0x1
  369 0040 08       		.byte	0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 19
-
-
  370 0041 7D0D0000 		.4byte	.LASF2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 19
+
+
  371 0045 03       		.uleb128 0x3
  372 0046 E4080000 		.4byte	.LASF4
  373 004a 04       		.byte	0x4
@@ -1138,10 +1137,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  424 00ad 03       		.uleb128 0x3
  425 00ae B2040000 		.4byte	.LASF15
  426 00b2 05       		.byte	0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 20
-
-
  427 00b3 20       		.byte	0x20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 20
+
+
  428 00b4 45000000 		.4byte	0x45
  429 00b8 03       		.uleb128 0x3
  430 00b9 3B0A0000 		.4byte	.LASF16
@@ -1198,10 +1197,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  481 0125 E0000000 		.4byte	0xe0
  482 0129 04       		.byte	0x4
  483 012a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 21
-
-
  484 012b 39040000 		.4byte	.LASF21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 21
+
+
  485 012f 06       		.byte	0x6
  486 0130 25       		.byte	0x25
  487 0131 E0000000 		.4byte	0xe0
@@ -1258,10 +1257,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  538 0196 BA030000 		.4byte	.LASF28
  539 019a 06       		.byte	0x6
  540 019b 2E       		.byte	0x2e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 22
-
-
  541 019c E0000000 		.4byte	0xe0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 22
+
+
  542 01a0 2C       		.byte	0x2c
  543 01a1 0B       		.uleb128 0xb
  544 01a2 DB050000 		.4byte	.LASF29
@@ -1318,10 +1317,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  595 0209 A50E0000 		.4byte	.LASF35
  596 020d 06       		.byte	0x6
  597 020e 3B       		.byte	0x3b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 23
-
-
  598 020f E5000000 		.4byte	0xe5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 23
+
+
  599 0213 0040     		.2byte	0x4000
  600 0215 0D       		.uleb128 0xd
  601 0216 14080000 		.4byte	.LASF36
@@ -1378,10 +1377,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  652 0287 08       		.uleb128 0x8
  653 0288 D9000000 		.4byte	0xd9
  654 028c 7F       		.byte	0x7f
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 24
-
-
  655 028d 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 24
+
+
  656 028e 03       		.uleb128 0x3
  657 028f 13040000 		.4byte	.LASF44
  658 0293 06       		.byte	0x6
@@ -1438,10 +1437,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  709 02f5 14000000 		.4byte	.LASF31
  710 02f9 07       		.byte	0x7
  711 02fa 2A       		.byte	0x2a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 25
-
-
  712 02fb E5000000 		.4byte	0xe5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 25
+
+
  713 02ff 1C       		.byte	0x1c
  714 0300 0B       		.uleb128 0xb
  715 0301 2F010000 		.4byte	.LASF51
@@ -1498,10 +1497,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  766 0367 33       		.byte	0x33
  767 0368 99020000 		.4byte	0x299
  768 036c 0C       		.uleb128 0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 26
-
-
  769 036d 0009     		.2byte	0x900
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 26
+
+
  770 036f 07       		.byte	0x7
  771 0370 38       		.byte	0x38
  772 0371 EF030000 		.4byte	0x3ef
@@ -1558,10 +1557,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  823 03da 07       		.byte	0x7
  824 03db 41       		.byte	0x41
  825 03dc 04040000 		.4byte	0x404
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 27
-
-
  826 03e0 20       		.byte	0x20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 27
+
+
  827 03e1 0E       		.uleb128 0xe
  828 03e2 434E5400 		.ascii	"CNT\000"
  829 03e6 07       		.byte	0x7
@@ -1618,10 +1617,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  880 0453 60080000 		.4byte	0x860
  881 0457 0B       		.uleb128 0xb
  882 0458 1B020000 		.4byte	.LASF67
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 28
-
-
  883 045c 09       		.byte	0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 28
+
+
  884 045d 37       		.byte	0x37
  885 045e CE000000 		.4byte	0xce
  886 0462 00       		.byte	0
@@ -1678,10 +1677,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  937 04c8 09       		.byte	0x9
  938 04c9 40       		.byte	0x40
  939 04ca CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 29
-
-
  940 04ce 24       		.byte	0x24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 29
+
+
  941 04cf 0B       		.uleb128 0xb
  942 04d0 8D0B0000 		.4byte	.LASF77
  943 04d4 09       		.byte	0x9
@@ -1738,10 +1737,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  994 053a 30       		.byte	0x30
  995 053b 0B       		.uleb128 0xb
  996 053c 6F090000 		.4byte	.LASF86
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 30
-
-
  997 0540 09       		.byte	0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 30
+
+
  998 0541 4E       		.byte	0x4e
  999 0542 A2000000 		.4byte	0xa2
  1000 0546 31       		.byte	0x31
@@ -1798,10 +1797,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1051 05ac 09       		.byte	0x9
  1052 05ad 57       		.byte	0x57
  1053 05ae A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 31
-
-
  1054 05b2 3E       		.byte	0x3e
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 31
+
+
  1055 05b3 0B       		.uleb128 0xb
  1056 05b4 7F000000 		.4byte	.LASF96
  1057 05b8 09       		.byte	0x9
@@ -1858,10 +1857,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1108 061e 50       		.byte	0x50
  1109 061f 0B       		.uleb128 0xb
  1110 0620 11060000 		.4byte	.LASF105
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 32
-
-
  1111 0624 09       		.byte	0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 32
+
+
  1112 0625 61       		.byte	0x61
  1113 0626 A2000000 		.4byte	0xa2
  1114 062a 51       		.byte	0x51
@@ -1918,10 +1917,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1165 0690 09       		.byte	0x9
  1166 0691 6E       		.byte	0x6e
  1167 0692 B8000000 		.4byte	0xb8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 33
-
-
  1168 0696 5A       		.byte	0x5a
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 33
+
+
  1169 0697 0B       		.uleb128 0xb
  1170 0698 26010000 		.4byte	.LASF115
  1171 069c 09       		.byte	0x9
@@ -1978,10 +1977,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1222 0702 6E       		.byte	0x6e
  1223 0703 0B       		.uleb128 0xb
  1224 0704 20080000 		.4byte	.LASF124
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 34
-
-
  1225 0708 09       		.byte	0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 34
+
+
  1226 0709 7B       		.byte	0x7b
  1227 070a A2000000 		.4byte	0xa2
  1228 070e 70       		.byte	0x70
@@ -2038,10 +2037,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1279 0774 09       		.byte	0x9
  1280 0775 87       		.byte	0x87
  1281 0776 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 35
-
-
  1282 077a 7D       		.byte	0x7d
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 35
+
+
  1283 077b 0B       		.uleb128 0xb
  1284 077c BA040000 		.4byte	.LASF134
  1285 0780 09       		.byte	0x9
@@ -2098,10 +2097,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1336 07e6 98       		.byte	0x98
  1337 07e7 0B       		.uleb128 0xb
  1338 07e8 B80C0000 		.4byte	.LASF143
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 36
-
-
  1339 07ec 09       		.byte	0x9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 36
+
+
  1340 07ed 93       		.byte	0x93
  1341 07ee CE000000 		.4byte	0xce
  1342 07f2 9C       		.byte	0x9c
@@ -2158,10 +2157,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1393 0858 09       		.byte	0x9
  1394 0859 9E       		.byte	0x9e
  1395 085a CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 37
-
-
  1396 085e B4       		.byte	0xb4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 37
+
+
  1397 085f 00       		.byte	0
  1398 0860 03       		.uleb128 0x3
  1399 0861 B10E0000 		.4byte	.LASF153
@@ -2218,10 +2217,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1450 08c4 14       		.uleb128 0x14
  1451 08c5 9A050000 		.4byte	.LASF163
  1452 08c9 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 38
-
-
  1453 08ca 0405     		.2byte	0x504
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 38
+
+
  1454 08cc CE000000 		.4byte	0xce
  1455 08d0 00       		.byte	0
  1456 08d1 14       		.uleb128 0x14
@@ -2278,10 +2277,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1507 093f 0D05     		.2byte	0x50d
  1508 0941 CE000000 		.4byte	0xce
  1509 0945 60       		.byte	0x60
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 39
-
-
  1510 0946 14       		.uleb128 0x14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 39
+
+
  1511 0947 880F0000 		.4byte	.LASF173
  1512 094b 0A       		.byte	0xa
  1513 094c 0E05     		.2byte	0x50e
@@ -2338,10 +2337,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1564 09bc 01       		.byte	0x1
  1565 09bd 00       		.byte	0
  1566 09be 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 40
-
-
  1567 09bf 8D020000 		.4byte	.LASF181
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 40
+
+
  1568 09c3 0B       		.byte	0xb
  1569 09c4 2702     		.2byte	0x227
  1570 09c6 A4090000 		.4byte	0x9a4
@@ -2398,10 +2397,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1621 0a3b 04       		.byte	0x4
  1622 0a3c 14       		.uleb128 0x14
  1623 0a3d 8B000000 		.4byte	.LASF187
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 41
-
-
  1624 0a41 0B       		.byte	0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 41
+
+
  1625 0a42 CB02     		.2byte	0x2cb
  1626 0a44 E0000000 		.4byte	0xe0
  1627 0a48 08       		.byte	0x8
@@ -2458,10 +2457,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1678 0ab6 0B       		.byte	0xb
  1679 0ab7 D702     		.2byte	0x2d7
  1680 0ab9 270B0000 		.4byte	0xb27
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 42
-
-
  1681 0abd 28       		.byte	0x28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 42
+
+
  1682 0abe 14       		.uleb128 0x14
  1683 0abf 46050000 		.4byte	.LASF197
  1684 0ac3 0B       		.byte	0xb
@@ -2518,10 +2517,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1735 0b2e 82080000 		.4byte	0x882
  1736 0b32 0F       		.uleb128 0xf
  1737 0b33 530F0000 		.4byte	.LASF205
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 43
-
-
  1738 0b37 0B       		.byte	0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 43
+
+
  1739 0b38 EE02     		.2byte	0x2ee
  1740 0b3a 080A0000 		.4byte	0xa08
  1741 0b3e 19       		.uleb128 0x19
@@ -2578,10 +2577,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1792 0bad E0000000 		.4byte	0xe0
  1793 0bb1 00       		.byte	0
  1794 0bb2 14       		.uleb128 0x14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 44
-
-
  1795 0bb3 E3050000 		.4byte	.LASF216
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 44
+
+
  1796 0bb7 0C       		.byte	0xc
  1797 0bb8 7902     		.2byte	0x279
  1798 0bba E0000000 		.4byte	0xe0
@@ -2638,10 +2637,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1849 0c28 39060000 		.4byte	.LASF225
  1850 0c2c 0C       		.byte	0xc
  1851 0c2d 8502     		.2byte	0x285
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 45
-
-
  1852 0c2f CE000000 		.4byte	0xce
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 45
+
+
  1853 0c33 28       		.byte	0x28
  1854 0c34 14       		.uleb128 0x14
  1855 0c35 100C0000 		.4byte	.LASF226
@@ -2698,10 +2697,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1906 0c9f CE000000 		.4byte	0xce
  1907 0ca3 0C       		.byte	0xc
  1908 0ca4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 46
-
-
  1909 0ca5 250B0000 		.4byte	.LASF234
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 46
+
+
  1910 0ca9 0D       		.byte	0xd
  1911 0caa 37       		.byte	0x37
  1912 0cab CE000000 		.4byte	0xce
@@ -2758,10 +2757,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  1963 0d11 9F050000 		.4byte	.LASF243
  1964 0d15 0D       		.byte	0xd
  1965 0d16 43       		.byte	0x43
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 47
-
-
  1966 0d17 CE000000 		.4byte	0xce
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 47
+
+
  1967 0d1b 34       		.byte	0x34
  1968 0d1c 0B       		.uleb128 0xb
  1969 0d1d F2010000 		.4byte	.LASF244
@@ -2818,10 +2817,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2020 0d83 04       		.byte	0x4
  2021 0d84 0B       		.uleb128 0xb
  2022 0d85 53020000 		.4byte	.LASF252
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 48
-
-
  2023 0d89 0E       		.byte	0xe
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 48
+
+
  2024 0d8a 3F       		.byte	0x3f
  2025 0d8b A90D0000 		.4byte	0xda9
  2026 0d8f 08       		.byte	0x8
@@ -2878,10 +2877,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2077 0def AD000000 		.4byte	0xad
  2078 0df3 04       		.byte	0x4
  2079 0df4 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 49
-
-
  2080 0df5 03       		.uleb128 0x3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 49
+
+
  2081 0df6 CD050000 		.4byte	.LASF258
  2082 0dfa 10       		.byte	0x10
  2083 0dfb 89       		.byte	0x89
@@ -2938,10 +2937,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2134 0e5b 11       		.byte	0x11
  2135 0e5c 1E       		.byte	0x1e
  2136 0e5d 9B000000 		.4byte	0x9b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 50
-
-
  2137 0e61 04       		.byte	0x4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 50
+
+
  2138 0e62 0B       		.uleb128 0xb
  2139 0e63 41000000 		.4byte	.LASF263
  2140 0e67 11       		.byte	0x11
@@ -2998,10 +2997,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2191 0ec9 81       		.byte	0x81
  2192 0eca 03       		.byte	0x3
  2193 0ecb 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 51
-
-
  2194 0ecc EB0E0000 		.4byte	.LASF296
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 51
+
+
  2195 0ed0 01       		.byte	0x1
  2196 0ed1 A101     		.2byte	0x1a1
  2197 0ed3 00000000 		.4byte	.LFB507
@@ -3058,10 +3057,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2248 0f41 C1030000 		.4byte	.LASF268
  2249 0f45 12       		.byte	0x12
  2250 0f46 28       		.byte	0x28
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 52
-
-
  2251 0f47 A2000000 		.4byte	0xa2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 52
+
+
  2252 0f4b 05       		.uleb128 0x5
  2253 0f4c 03       		.byte	0x3
  2254 0f4d 02000000 		.4byte	dataReady
@@ -3118,10 +3117,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2305 0fbc 02       		.byte	0x2
  2306 0fbd 2A       		.byte	0x2a
  2307 0fbe B90E0000 		.4byte	0xeb9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 53
-
-
  2308 0fc2 05       		.uleb128 0x5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 53
+
+
  2309 0fc3 03       		.byte	0x3
  2310 0fc4 54000000 		.4byte	channel3
  2311 0fc8 22       		.uleb128 0x22
@@ -3178,10 +3177,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2362 103d 1F       		.byte	0x1f
  2363 103e 42100000 		.4byte	0x1042
  2364 1042 06       		.uleb128 0x6
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 54
-
-
  2365 1043 590D0000 		.4byte	0xd59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 54
+
+
  2366 1047 24       		.uleb128 0x24
  2367 1048 0A010000 		.4byte	.LASF283
  2368 104c 10       		.byte	0x10
@@ -3238,10 +3237,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2419 10b9 00000000 		.4byte	buffer0
  2420 10bd 24       		.uleb128 0x24
  2421 10be 650D0000 		.4byte	.LASF288
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 55
-
-
  2422 10c2 12       		.byte	0x12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 55
+
+
  2423 10c3 2B       		.byte	0x2b
  2424 10c4 9B100000 		.4byte	0x109b
  2425 10c8 05       		.uleb128 0x5
@@ -3298,10 +3297,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2476 0015 00       		.byte	0
  2477 0016 0B       		.uleb128 0xb
  2478 0017 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 56
-
-
  2479 0018 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 56
+
+
  2480 0019 0B       		.uleb128 0xb
  2481 001a 03       		.uleb128 0x3
  2482 001b 0E       		.uleb128 0xe
@@ -3358,10 +3357,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2533 004e 21       		.uleb128 0x21
  2534 004f 00       		.byte	0
  2535 0050 49       		.uleb128 0x49
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 57
-
-
  2536 0051 13       		.uleb128 0x13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 57
+
+
  2537 0052 2F       		.uleb128 0x2f
  2538 0053 0B       		.uleb128 0xb
  2539 0054 00       		.byte	0
@@ -3418,10 +3417,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2590 0087 0B       		.uleb128 0xb
  2591 0088 3B       		.uleb128 0x3b
  2592 0089 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 58
-
-
  2593 008a 01       		.uleb128 0x1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 58
+
+
  2594 008b 13       		.uleb128 0x13
  2595 008c 00       		.byte	0
  2596 008d 00       		.byte	0
@@ -3478,10 +3477,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2647 00c0 11       		.uleb128 0x11
  2648 00c1 04       		.uleb128 0x4
  2649 00c2 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 59
-
-
  2650 00c3 0B       		.uleb128 0xb
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 59
+
+
  2651 00c4 0B       		.uleb128 0xb
  2652 00c5 49       		.uleb128 0x49
  2653 00c6 13       		.uleb128 0x13
@@ -3538,10 +3537,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2704 00f9 49       		.uleb128 0x49
  2705 00fa 13       		.uleb128 0x13
  2706 00fb 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 60
-
-
  2707 00fc 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 60
+
+
  2708 00fd 16       		.uleb128 0x16
  2709 00fe 15       		.uleb128 0x15
  2710 00ff 01       		.byte	0x1
@@ -3598,10 +3597,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2761 0132 01       		.uleb128 0x1
  2762 0133 13       		.uleb128 0x13
  2763 0134 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 61
-
-
  2764 0135 00       		.byte	0
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 61
+
+
  2765 0136 1B       		.uleb128 0x1b
  2766 0137 16       		.uleb128 0x16
  2767 0138 00       		.byte	0
@@ -3658,10 +3657,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2818 016c 00       		.byte	0
  2819 016d 03       		.uleb128 0x3
  2820 016e 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 62
-
-
  2821 016f 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 62
+
+
  2822 0170 0B       		.uleb128 0xb
  2823 0171 3B       		.uleb128 0x3b
  2824 0172 05       		.uleb128 0x5
@@ -3718,10 +3717,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2875 01a6 00       		.byte	0
  2876 01a7 03       		.uleb128 0x3
  2877 01a8 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 63
-
-
  2878 01a9 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 63
+
+
  2879 01aa 0B       		.uleb128 0xb
  2880 01ab 3B       		.uleb128 0x3b
  2881 01ac 0B       		.uleb128 0xb
@@ -3778,10 +3777,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2932 01df 13       		.uleb128 0x13
  2933 01e0 3F       		.uleb128 0x3f
  2934 01e1 19       		.uleb128 0x19
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 64
-
-
  2935 01e2 02       		.uleb128 0x2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 64
+
+
  2936 01e3 18       		.uleb128 0x18
  2937 01e4 00       		.byte	0
  2938 01e5 00       		.byte	0
@@ -3838,10 +3837,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  2979 001d 494E5452 		.ascii	"INTR_CAUSE2\000"
  2979      5F434155 
  2979      53453200 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 65
-
-
  2980              	.LASF38:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 65
+
+
  2981 0029 494E5452 		.ascii	"INTR_CAUSE3\000"
  2981      5F434155 
  2981      53453300 
@@ -3898,10 +3897,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3004 00f1 70657269 		.ascii	"periBase\000"
  3004      42617365 
  3004      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 66
-
-
  3005              	.LASF257:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 66
+
+
  3006 00fa 6C736D33 		.ascii	"lsm303MagData_s\000"
  3006      30334D61 
  3006      67446174 
@@ -3958,10 +3957,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3030 019a 494E5452 		.ascii	"INTR_CAUSE\000"
  3030      5F434155 
  3030      534500
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 67
-
-
  3031              	.LASF97:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 67
+
+
  3032 01a5 736D6966 		.ascii	"smifDeviceNr\000"
  3032      44657669 
  3032      63654E72 
@@ -4018,10 +4017,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3056 023f 434D445F 		.ascii	"CMD_STOP\000"
  3056      53544F50 
  3056      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 68
-
-
  3057              	.LASF91:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 68
+
+
  3058 0248 63707573 		.ascii	"cpussFmIrq\000"
  3058      73466D49 
  3058      727100
@@ -4078,10 +4077,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3080      6D53697A 
  3080      6500
  3081              	.LASF172:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 69
-
-
  3082 02ef 73617449 		.ascii	"satIntrMask\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 69
+
+
  3082      6E74724D 
  3082      61736B00 
  3083              	.LASF149:
@@ -4138,10 +4137,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3103              	.LASF142:
  3104 03a4 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
  3104      73547269 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 70
-
-
  3104      6D52616D 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 70
+
+
  3104      43746C4F 
  3104      66667365 
  3105              	.LASF28:
@@ -4198,10 +4197,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3128 0441 63727970 		.ascii	"cryptoVersion\000"
  3128      746F5665 
  3128      7273696F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 71
-
-
  3128      6E00
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 71
+
+
  3129              	.LASF228:
  3130 044f 63795F73 		.ascii	"cy_stc_scb_uart_context_t\000"
  3130      74635F73 
@@ -4258,10 +4257,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3152      66736574 
  3153              	.LASF136:
  3154 0500 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 72
-
-
  3154      50727443 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 72
+
+
  3154      66675369 
  3154      6F4F6666 
  3154      73657400 
@@ -4318,10 +4317,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3175              	.LASF239:
  3176 05ae 63617074 		.ascii	"captureInputMode\000"
  3176      75726549 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 73
-
-
  3176      6E707574 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 73
+
+
  3176      4D6F6465 
  3176      00
  3177              	.LASF245:
@@ -4378,10 +4377,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3202 0643 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
  3202      6843746C 
  3202      4D61696E 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 74
-
-
  3202      57733046 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 74
+
+
  3202      72657100 
  3203              	.LASF184:
  3204 0657 75736552 		.ascii	"useRxFifo\000"
@@ -4438,10 +4437,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3226      4B00
  3227              	.LASF177:
  3228 06e4 76726566 		.ascii	"vrefMvValue\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 75
-
-
  3228      4D765661 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 75
+
+
  3228      6C756500 
  3229              	.LASF285:
  3230 06f0 77726974 		.ascii	"writebuffer\000"
@@ -4498,10 +4497,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3252      7400
  3253              	.LASF101:
  3254 0782 73797350 		.ascii	"sysPmSimoPresent\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 76
-
-
  3254      6D53696D 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 76
+
+
  3254      6F507265 
  3254      73656E74 
  3254      00
@@ -4558,10 +4557,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3278 0814 494E5452 		.ascii	"INTR_CAUSE1\000"
  3278      5F434155 
  3278      53453100 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 77
-
-
  3279              	.LASF124:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 77
+
+
  3280 0820 70657269 		.ascii	"periDivCmdDivSelMsk\000"
  3280      44697643 
  3280      6D644469 
@@ -4618,10 +4617,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3302      68577269 
  3302      74654465 
  3302      6C617900 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 78
-
-
  3303              	.LASF284:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 78
+
+
  3304 08d2 6D616744 		.ascii	"magData\000"
  3304      61746100 
  3305              	.LASF185:
@@ -4678,10 +4677,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3327              	.LASF86:
  3328 096f 63707573 		.ascii	"cpussIpcNr\000"
  3328      73497063 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 79
-
-
  3328      4E7200
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 79
+
+
  3329              	.LASF139:
  3330 097a 63707573 		.ascii	"cpussCm4StatusOffset\000"
  3330      73436D34 
@@ -4738,10 +4737,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3350      7420756E 
  3350      7369676E 
  3350      65642069 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 80
-
-
  3350      6E7400
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 80
+
+
  3351              	.LASF217:
  3352 0a25 72785269 		.ascii	"rxRingBuf\000"
  3352      6E674275 
@@ -4798,10 +4797,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3374      6E746572 
  3375              	.LASF211:
  3376 0ac2 78666572 		.ascii	"xferPending\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 81
-
-
  3376      50656E64 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 81
+
+
  3376      696E6700 
  3377              	.LASF83:
  3378 0ace 69706356 		.ascii	"ipcVersion\000"
@@ -4858,10 +4857,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3398      72727570 
  3398      74536F75 
  3398      72636573 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 82
-
-
  3398      00
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 82
+
+
  3399              	.LASF237:
  3400 0b72 656E6162 		.ascii	"enableCompareSwap\000"
  3400      6C65436F 
@@ -4918,10 +4917,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3420      494E5F47 
  3420      50494F35 
  3420      5600
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 83
-
-
  3421              	.LASF226:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 83
+
+
  3422 0c10 74784C65 		.ascii	"txLeftToTransmit\000"
  3422      6674546F 
  3422      5472616E 
@@ -4978,10 +4977,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3444 0cb8 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
  3444      73547269 
  3444      6D526F6D 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 84
-
-
  3444      43746C4F 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 84
+
+
  3444      66667365 
  3445              	.LASF166:
  3446 0cce 73616D70 		.ascii	"sampleTime23\000"
@@ -5038,10 +5037,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3470 0d6d 62756666 		.ascii	"buffer2\000"
  3470      65723200 
  3471              	.LASF290:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 85
-
-
  3472 0d75 62756666 		.ascii	"buffer3\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 85
+
+
  3472      65723300 
  3473              	.LASF2:
  3474 0d7d 756E7369 		.ascii	"unsigned char\000"
@@ -5098,10 +5097,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3496      52657175 
  3496      69726564 
  3496      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 86
-
-
  3497              	.LASF133:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 86
+
+
  3498 0e16 6770696F 		.ascii	"gpioPrtCfgOffset\000"
  3498      50727443 
  3498      66674F66 
@@ -5158,10 +5157,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3520      65766963 
  3520      655F7400 
  3521              	.LASF39:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 87
-
-
  3522 0ec1 5644445F 		.ascii	"VDD_ACTIVE\000"
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 87
+
+
  3522      41435449 
  3522      564500
  3523              	.LASF52:
@@ -5218,10 +5217,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3546      63625F69 
  3546      32635F63 
  3546      6F6E7465 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 88
-
-
  3547              	.LASF30:
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 88
+
+
  3548 0f6c 4346475F 		.ascii	"CFG_SIO\000"
  3548      53494F00 
  3549              	.LASF113:
@@ -5278,10 +5277,10 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 1
  3565      00
  3566              	.LASF171:
  3567 10a3 696E7472 		.ascii	"intrMask\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccrwb2xH.s 			page 89
-
-
  3567      4D61736B 
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccuXa1Xb.s 			page 89
+
+
  3567      00
  3568              	.LASF50:
  3569 10ac 50455249 		.ascii	"PERIOD_BUFF\000"

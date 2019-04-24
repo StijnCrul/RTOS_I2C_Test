@@ -3865,125 +3865,125 @@ OUTPUT(C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
 
-.debug_line     0x00000000     0xb675
+.debug_line     0x00000000     0xb676
  .debug_line    0x00000000       0x8e .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_line    0x0000008e      0x446 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_line    0x000004d4      0x411 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .debug_line    0x000008e5      0x4c3 .\CortexM4\ARM_GCC_541\Debug\i2c.o
  .debug_line    0x00000da8      0x480 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_line    0x00001228      0x7c1 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_line    0x000019e9      0x24f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_line    0x00001c38      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x00001d79      0x772 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_line    0x000024eb      0x38f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_line    0x0000287a      0x3f5 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_line    0x00002c6f      0x653 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_line    0x000032c2      0x2e1 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_line    0x000035a3      0x481 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_line    0x00003a24       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_line    0x00003aad      0xa8b .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_line    0x00004538      0x17f .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_line    0x000046b7      0x736 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_line    0x00004ded      0x4c4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_line    0x000052b1     0x1168 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
- .debug_line    0x00006419      0x5c5 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_line    0x000069de      0x2b7 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_line    0x00006c95      0x2b7 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_line    0x00006f4c      0xb15 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_line    0x00007a61      0xe19 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_line    0x0000887a      0x5a9 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_line    0x00008e23      0x480 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_line    0x000092a3      0x2ef .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_line    0x00009592      0x660 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_line    0x00009bf2      0x312 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_line    0x00009f04      0x245 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_line    0x0000a149      0x353 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
- .debug_line    0x0000a49c      0x1dc .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_line    0x0000a678      0x299 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_line    0x0000a911      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_line    0x0000ac6a      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_line    0x0000afc3      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_line    0x0000b31c      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_line    0x00001228      0x7c2 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_line    0x000019ea      0x24f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_line    0x00001c39      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00001d7a      0x772 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_line    0x000024ec      0x38f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_line    0x0000287b      0x3f5 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_line    0x00002c70      0x653 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_line    0x000032c3      0x2e1 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_line    0x000035a4      0x481 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_line    0x00003a25       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_line    0x00003aae      0xa8b .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_line    0x00004539      0x17f .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_line    0x000046b8      0x736 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_line    0x00004dee      0x4c4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_line    0x000052b2     0x1168 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_line    0x0000641a      0x5c5 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_line    0x000069df      0x2b7 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_line    0x00006c96      0x2b7 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_line    0x00006f4d      0xb15 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_line    0x00007a62      0xe19 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_line    0x0000887b      0x5a9 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_line    0x00008e24      0x480 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_line    0x000092a4      0x2ef .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_line    0x00009593      0x660 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_line    0x00009bf3      0x312 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_line    0x00009f05      0x245 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_line    0x0000a14a      0x353 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
+ .debug_line    0x0000a49d      0x1dc .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_line    0x0000a679      0x299 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_line    0x0000a912      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_line    0x0000ac6b      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_line    0x0000afc4      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_line    0x0000b31d      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
 
-.debug_info     0x00000000    0x245eb
+.debug_info     0x00000000    0x245f2
  .debug_info    0x00000000       0x93 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_info    0x00000093     0x1102 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_info    0x00001195     0x1a8c .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .debug_info    0x00002c21     0x18f9 .\CortexM4\ARM_GCC_541\Debug\i2c.o
  .debug_info    0x0000451a      0xcb9 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_info    0x000051d3     0x1f53 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_info    0x00007126      0x9b0 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_info    0x00007ad6       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00007b82     0x21ff .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_info    0x00009d81      0x816 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_info    0x0000a597      0x9cc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_info    0x0000af63     0x14c0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_info    0x0000c423      0xd9f .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_info    0x0000d1c2     0x2467 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_info    0x0000f629       0xc1 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_info    0x0000f6ea     0x35a9 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_info    0x00012c93      0x552 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_info    0x000131e5     0x14d1 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_info    0x000146b6      0xf83 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_info    0x00015639     0x2417 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
- .debug_info    0x00017a50      0xff6 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_info    0x00018a46      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_info    0x00018e82      0x2e2 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_info    0x00019164     0x1387 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_info    0x0001a4eb     0x19ef .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_info    0x0001beda      0xb92 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_info    0x0001ca6c      0x586 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_info    0x0001cff2      0x1f2 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_info    0x0001d1e4     0x191d .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_info    0x0001eb01      0xb66 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_info    0x0001f667      0x71e .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_info    0x0001fd85     0x12c6 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
- .debug_info    0x0002104b      0x122 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_info    0x0002116d      0x42e .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_info    0x0002159b      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_info    0x000221af      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_info    0x00022dc3      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_info    0x000239d7      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_info    0x000051d3     0x1f5a .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_info    0x0000712d      0x9b0 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_info    0x00007add       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00007b89     0x21ff .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_info    0x00009d88      0x816 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_info    0x0000a59e      0x9cc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_info    0x0000af6a     0x14c0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_info    0x0000c42a      0xd9f .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_info    0x0000d1c9     0x2467 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_info    0x0000f630       0xc1 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_info    0x0000f6f1     0x35a9 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_info    0x00012c9a      0x552 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_info    0x000131ec     0x14d1 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_info    0x000146bd      0xf83 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_info    0x00015640     0x2417 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_info    0x00017a57      0xff6 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_info    0x00018a4d      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_info    0x00018e89      0x2e2 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_info    0x0001916b     0x1387 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_info    0x0001a4f2     0x19ef .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_info    0x0001bee1      0xb92 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_info    0x0001ca73      0x586 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_info    0x0001cff9      0x1f2 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_info    0x0001d1eb     0x191d .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_info    0x0001eb08      0xb66 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_info    0x0001f66e      0x71e .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_info    0x0001fd8c     0x12c6 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
+ .debug_info    0x00021052      0x122 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_info    0x00021174      0x42e .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_info    0x000215a2      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_info    0x000221b6      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_info    0x00022dca      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_info    0x000239de      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
 
-.debug_abbrev   0x00000000     0x4287
+.debug_abbrev   0x00000000     0x42c4
  .debug_abbrev  0x00000000       0x14 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_abbrev  0x00000014      0x1f0 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_abbrev  0x00000204      0x212 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .debug_abbrev  0x00000416      0x280 .\CortexM4\ARM_GCC_541\Debug\i2c.o
  .debug_abbrev  0x00000696      0x1a7 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_abbrev  0x0000083d      0x2ef .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_abbrev  0x00000b2c       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_abbrev  0x00000c0f       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x00000c6c      0x2c1 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_abbrev  0x00000f2d      0x15f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_abbrev  0x0000108c      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_abbrev  0x00001214      0x2b2 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_abbrev  0x000014c6      0x1f7 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_abbrev  0x000016bd      0x2e2 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_abbrev  0x0000199f       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_abbrev  0x000019b3      0x29f .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_abbrev  0x00001c52       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_abbrev  0x00001cef      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_abbrev  0x00001f08      0x1e3 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_abbrev  0x000020eb      0x290 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
- .debug_abbrev  0x0000237b      0x267 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_abbrev  0x000025e2      0x149 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_abbrev  0x0000272b       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_abbrev  0x00002803      0x26d .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_abbrev  0x00002a70      0x293 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_abbrev  0x00002d03      0x20a .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_abbrev  0x00002f0d      0x225 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_abbrev  0x00003132      0x145 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_abbrev  0x00003277      0x2f9 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_abbrev  0x00003570      0x16e .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_abbrev  0x000036de       0xfb .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_abbrev  0x000037d9      0x1d7 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
- .debug_abbrev  0x000039b0       0x9f .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_abbrev  0x00003a4f      0x124 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_abbrev  0x00003b73      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_abbrev  0x00003d38      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_abbrev  0x00003efd      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_abbrev  0x000040c2      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_abbrev  0x0000083d      0x32c .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_abbrev  0x00000b69       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_abbrev  0x00000c4c       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000ca9      0x2c1 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_abbrev  0x00000f6a      0x15f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_abbrev  0x000010c9      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_abbrev  0x00001251      0x2b2 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_abbrev  0x00001503      0x1f7 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_abbrev  0x000016fa      0x2e2 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_abbrev  0x000019dc       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_abbrev  0x000019f0      0x29f .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_abbrev  0x00001c8f       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_abbrev  0x00001d2c      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_abbrev  0x00001f45      0x1e3 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_abbrev  0x00002128      0x290 .\CortexM4\ARM_GCC_541\Debug\cy_scb_i2c.o
+ .debug_abbrev  0x000023b8      0x267 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_abbrev  0x0000261f      0x149 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_abbrev  0x00002768       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_abbrev  0x00002840      0x26d .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_abbrev  0x00002aad      0x293 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_abbrev  0x00002d40      0x20a .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_abbrev  0x00002f4a      0x225 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_abbrev  0x0000316f      0x145 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_abbrev  0x000032b4      0x2f9 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_abbrev  0x000035ad      0x16e .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_abbrev  0x0000371b       0xfb .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_abbrev  0x00003816      0x1d7 .\CortexM4\ARM_GCC_541\Debug\mI2C.o
+ .debug_abbrev  0x000039ed       0x9f .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_abbrev  0x00003a8c      0x124 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_abbrev  0x00003bb0      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_abbrev  0x00003d75      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_abbrev  0x00003f3a      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_abbrev  0x000040ff      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
 
 .debug_aranges  0x00000000     0x1298
  .debug_aranges

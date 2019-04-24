@@ -32,7 +32,13 @@ static void HandleError(void){
     while(1u);
 }
 
-
+/* 
+* Name: initI2C 
+* Description: Initialize the I2C master on the psoc
+*
+* Arguments:    none
+* Output:       none
+*/
 void initI2C(void){
     // Configure I2C
     cy_en_scb_i2c_status_t initStatus;
@@ -60,16 +66,14 @@ void initI2C(void){
 
 
 /* 
-*   Function: WriteCommandPacketToI2C 
-*  
-*   Description: Write message to a slave device
+* Name: WriteCommandPacketToI2C 
+* Description: Write message to a slave device
 *
-*   Arguments: 
-*   address = slave device address
-*   packet_size = number of bytes to be read
-*   masterTransferCfg = psoc I2C settings
-*   *msg = pointer to array message we want to send
-*
+* Arguments:    cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg = psoc I2C settings
+*               uint8_taddress = slave device address
+*               uint8_t *msg = pointer to array message we want to send
+*               uint32_t packet_size = number of bytes to be read
+* Output:       uint8_t status
 */
 uint8_t WriteCommandPacketToI2C(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg, uint8_t address, uint8_t *msg, uint32_t packet_size){
     uint8_t status = TRANSFER_ERROR;
@@ -122,15 +126,13 @@ uint8_t WriteCommandPacketToI2C(cy_stc_scb_i2c_master_xfer_config_t masterTransf
 
 
 /* 
-*   Function: ReadStatusPacketFromI2C 
-*  
-*   Description: Read request to a slave device
+* Name: ReadStatusPacketFromI2C 
+* Description: Read request to a slave device
 *
-*   Arguments: 
-*   address: slave device address
-*   packet_size: number of bytes to be read
-*   masterTransferCfg: psoc I2C settings
-*
+* Arguments:    cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg = psoc I2C settings
+*               uint8_t address: slave device address
+*               uint32_t packet_size= number of bytes to be read
+* Output:       uint8_t status
 */
 uint8_t ReadStatusPacketFromI2C(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg, uint8_t address, uint32_t packet_size){
     uint8_t status = TRANSFER_ERROR;

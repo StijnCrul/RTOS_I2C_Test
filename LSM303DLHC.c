@@ -25,13 +25,12 @@
 #include "task.h"
 
 /* 
-*   Function: setupAccel 
-*  
-*   Description: Setup up the accelerometer by writing to CTRL_REG1_A
+* Name: initAccel 
+* Description: Setup up the accelerometer by writing to CTRL_REG1_A
 *
-*   Arguments:
-*   masterTransferCfg = psoc I2C settings
-*   mask = bits for the control register of the lsm303dlhc. Page 24 of datasheet
+* Arguments:    cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg = psoc I2C settings
+*               uint8_t mask = bits for the control register of the lsm303dlhc. Page 24 of datasheet
+* Output:       uint8_t status
 */
 uint8_t initAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg, uint8_t mask){
     uint8_t status = TRANSFER_ERROR; 
@@ -43,12 +42,11 @@ uint8_t initAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg, uint8_t
 }
 
 /* 
-*   Function: readAccel 
-*  
-*   Description: Read values from accelerometer after it has been setup
+* Function: readAccel  
+* Description: Read values from accelerometer after it has been setup
 *
-*   Arguments:
-*   masterTransferCfg = psoc I2C settings
+* Arguments:  cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg = psoc I2C settings
+* Output:     uint8_t status
 */
 uint8_t readAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg){
     uint8_t status = TRANSFER_ERROR;
@@ -63,6 +61,13 @@ uint8_t readAccel(cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg){
     return status;
 }
 
+/* 
+* Function: acceleroTask  
+* Description: start up a task to read out the accelerometer at a set interval
+*
+* Arguments:  void *masterTransfer
+* Output:     none
+*/
 void acceleroTask(void *masterTransfer){
     
     cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg;

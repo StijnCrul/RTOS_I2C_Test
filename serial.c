@@ -22,6 +22,13 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+/* 
+* Name: UARTTask
+* Description: UART RTOS tasks that prints something at a set interval of time
+*
+* Arguments:    none
+* Output:       none
+*/
 void UARTTask(){
     TickType_t xLastWakeTime ;
     const TickType_t xFrequency = 10000;

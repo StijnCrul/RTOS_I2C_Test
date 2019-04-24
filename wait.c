@@ -21,6 +21,14 @@
 #include "wait.h"
 #include "project.h"
 
+
+/* 
+* Name: WaitOneUnit
+* Description: Makes the the CPU wait for a numer of time units
+*
+* Arguments:    uint32_t *timeout
+* Output:       bool status
+*/
 bool WaitOneUnit(uint32_t *timeout){
     uint32_t status = false;
 
