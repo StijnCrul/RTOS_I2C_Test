@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 1
 
 
    1              		.syntax unified
@@ -31,7 +31,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   28              		.thumb_func
   29              		.type	initAccel, %function
   30              	initAccel:
-  31              	.LFB740:
+  31              	.LFB893:
   32              		.file 1 "LSM303DLHC.c"
    1:LSM303DLHC.c  **** /*  ____  ____      _    __  __  ____ ___
    2:LSM303DLHC.c  ****  * |  _ \|  _ \    / \  |  \/  |/ ___/ _ \
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   23:LSM303DLHC.c  **** #include "i2c.h"
   24:LSM303DLHC.c  **** #include "FreeRTOS.h"
   25:LSM303DLHC.c  **** #include "task.h"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 2
 
 
   26:LSM303DLHC.c  **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   43:LSM303DLHC.c  **** }
   70              		.loc 1 43 0
   71 0036 1846     		mov	r0, r3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 3
 
 
   72 0038 1C37     		adds	r7, r7, #28
@@ -128,7 +128,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   76              		@ sp needed
   77 003c 90BD     		pop	{r4, r7, pc}
   78              		.cfi_endproc
-  79              	.LFE740:
+  79              	.LFE893:
   80              		.size	initAccel, .-initAccel
   81 003e 00BF     		.section	.text.readAccel,"ax",%progbits
   82              		.align	2
@@ -137,7 +137,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   85              		.thumb_func
   86              		.type	readAccel, %function
   87              	readAccel:
-  88              	.LFB741:
+  88              	.LFB894:
   44:LSM303DLHC.c  **** 
   45:LSM303DLHC.c  **** /* 
   46:LSM303DLHC.c  **** *   Function: readAccel 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  111 0014 0123     		movs	r3, #1
  112 0016 0293     		str	r3, [sp, #8]
  113 0018 07F11403 		add	r3, r7, #20
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 4
 
 
  114 001c 0193     		str	r3, [sp, #4]
@@ -218,7 +218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  142              		@ sp needed
  143 004c 90BD     		pop	{r4, r7, pc}
  144              		.cfi_endproc
- 145              	.LFE741:
+ 145              	.LFE894:
  146              		.size	readAccel, .-readAccel
  147 004e 00BF     		.section	.text.acceleroTask,"ax",%progbits
  148              		.align	2
@@ -227,7 +227,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  151              		.thumb_func
  152              		.type	acceleroTask, %function
  153              	acceleroTask:
- 154              	.LFB742:
+ 154              	.LFB895:
   65:LSM303DLHC.c  **** 
   66:LSM303DLHC.c  **** void acceleroTask(void *masterTransfer){
  155              		.loc 1 66 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  160              		.cfi_def_cfa_offset 12
  161              		.cfi_offset 4, -12
  162              		.cfi_offset 7, -8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 5
 
 
  163              		.cfi_offset 14, -4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
   84:LSM303DLHC.c  ****                 //accelData.z = (float)((int16_t)((masterTransferCfg.buffer[5] << 8) | masterTransf
   85:LSM303DLHC.c  ****             }
   86:LSM303DLHC.c  ****         }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 6
 
 
  200              		.loc 1 86 0
@@ -315,7 +315,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  209              		@ sp needed
  210 0054 90BD     		pop	{r4, r7, pc}
  211              		.cfi_endproc
- 212              	.LFE742:
+ 212              	.LFE895:
  213              		.size	acceleroTask, .-acceleroTask
  214 0056 00BF     		.text
  215              	.Letext0:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  252 002f 03100000 		.4byte	.LASF1
  253 0033 03       		.uleb128 0x3
  254 0034 2E0E0000 		.4byte	.LASF3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 7
 
 
  255 0038 02       		.byte	0x2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  309 009e 20010000 		.4byte	.LASF13
  310 00a2 03       		.uleb128 0x3
  311 00a3 04090000 		.4byte	.LASF14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 8
 
 
  312 00a7 03       		.byte	0x3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  366 0116 38       		.byte	0x38
  367 0117 CE000000 		.4byte	0xce
  368 011b 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 9
 
 
  369 011c 09       		.uleb128 0x9
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  423 0188 09       		.uleb128 0x9
  424 0189 3F040000 		.4byte	.LASF32
  425 018d 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 10
 
 
  426 018e 44       		.byte	0x44
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  480 01fa 4F       		.byte	0x4f
  481 01fb A2000000 		.4byte	0xa2
  482 01ff 32       		.byte	0x32
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 11
 
 
  483 0200 09       		.uleb128 0x9
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  537 026c 09       		.uleb128 0x9
  538 026d 5B010000 		.4byte	.LASF51
  539 0271 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 12
 
 
  540 0272 59       		.byte	0x59
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  594 02de 62       		.byte	0x62
  595 02df A2000000 		.4byte	0xa2
  596 02e3 52       		.byte	0x52
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 13
 
 
  597 02e4 09       		.uleb128 0x9
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  651 0350 09       		.uleb128 0x9
  652 0351 BC090000 		.4byte	.LASF70
  653 0355 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 14
 
 
  654 0356 70       		.byte	0x70
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  708 03c2 7C       		.byte	0x7c
  709 03c3 A2000000 		.4byte	0xa2
  710 03c7 71       		.byte	0x71
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 15
 
 
  711 03c8 09       		.uleb128 0x9
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  765 0434 09       		.uleb128 0x9
  766 0435 25040000 		.4byte	.LASF89
  767 0439 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 16
 
 
  768 043a 89       		.byte	0x89
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  822 04a6 94       		.byte	0x94
  823 04a7 CE000000 		.4byte	0xce
  824 04ab A0       		.byte	0xa0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 17
 
 
  825 04ac 09       		.uleb128 0x9
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  879 0518 02       		.uleb128 0x2
  880 0519 01       		.byte	0x1
  881 051a 08       		.byte	0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 18
 
 
  882 051b 6A080000 		.4byte	.LASF108
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  936 0586 CE000000 		.4byte	0xce
  937 058a 04       		.byte	0x4
  938 058b 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 19
 
 
  939 058c 0B0C0000 		.4byte	.LASF119
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  993 0601 700C0000 		.4byte	.LASF128
  994 0605 05       		.byte	0x5
  995 0606 0F05     		.2byte	0x50f
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 20
 
 
  996 0608 CE000000 		.4byte	0xce
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1050 067d 3902     		.2byte	0x239
  1051 067f 83060000 		.4byte	0x683
  1052 0683 10       		.uleb128 0x10
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 21
 
 
  1053 0684 04       		.byte	0x4
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1107 06fc CC02     		.2byte	0x2cc
  1108 06fe 2F050000 		.4byte	0x52f
  1109 0702 0C       		.byte	0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 22
 
 
  1110 0703 0F       		.uleb128 0xf
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1164 0778 0F       		.uleb128 0xf
  1165 0779 D3030000 		.4byte	.LASF152
  1166 077d 06       		.byte	0x6
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 23
 
 
  1167 077e D902     		.2byte	0x2d9
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1221 07f2 F102     		.2byte	0x2f1
  1222 07f4 2D080000 		.4byte	0x82d
  1223 07f8 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 24
 
 
  1224 07f9 43120000 		.4byte	.LASF162
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1278 0871 07       		.byte	0x7
  1279 0872 7B02     		.2byte	0x27b
  1280 0874 2D050000 		.4byte	0x52d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 25
 
 
  1281 0878 08       		.byte	0x8
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1335 08ed 2C       		.byte	0x2c
  1336 08ee 0F       		.uleb128 0xf
  1337 08ef 1B070000 		.4byte	.LASF157
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 26
 
 
  1338 08f3 07       		.byte	0x7
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1392 0962 08       		.byte	0x8
  1393 0963 38       		.byte	0x38
  1394 0964 CE000000 		.4byte	0xce
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 27
 
 
  1395 0968 14       		.byte	0x14
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1449 09d4 38       		.byte	0x38
  1450 09d5 09       		.uleb128 0x9
  1451 09d6 14000000 		.4byte	.LASF199
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 28
 
 
  1452 09da 08       		.byte	0x8
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1506 0a43 40       		.byte	0x40
  1507 0a44 CE000000 		.4byte	0xce
  1508 0a48 0C       		.byte	0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 29
 
 
  1509 0a49 09       		.uleb128 0x9
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1563 0ab5 9F060000 		.4byte	.LASF220
  1564 0ab9 2A       		.byte	0x2a
  1565 0aba 0C       		.uleb128 0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 30
 
 
  1566 0abb E80D0000 		.4byte	.LASF221
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1620 0b27 B10A0000 		.4byte	.LASF239
  1621 0b2b 3D       		.byte	0x3d
  1622 0b2c 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 31
 
 
  1623 0b2d 15       		.uleb128 0x15
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1677 0b8d 09       		.uleb128 0x9
  1678 0b8e 8B100000 		.4byte	.LASF243
  1679 0b92 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 32
 
 
  1680 0b93 91       		.byte	0x91
@@ -1880,8 +1880,8 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1696 0bb5 01       		.byte	0x1
  1697 0bb6 24       		.byte	0x24
  1698 0bb7 A2000000 		.4byte	0xa2
- 1699 0bbb 00000000 		.4byte	.LFB740
- 1700 0bbf 3E000000 		.4byte	.LFE740-.LFB740
+ 1699 0bbb 00000000 		.4byte	.LFB893
+ 1700 0bbf 3E000000 		.4byte	.LFE893-.LFB893
  1701 0bc3 01       		.uleb128 0x1
  1702 0bc4 9C       		.byte	0x9c
  1703 0bc5 020C0000 		.4byte	0xc02
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1734 0bff 91       		.byte	0x91
  1735 0c00 6C       		.sleb128 -20
  1736 0c01 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 33
 
 
  1737 0c02 19       		.uleb128 0x19
@@ -1926,8 +1926,8 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1739 0c07 01       		.byte	0x1
  1740 0c08 35       		.byte	0x35
  1741 0c09 A2000000 		.4byte	0xa2
- 1742 0c0d 00000000 		.4byte	.LFB741
- 1743 0c11 4E000000 		.4byte	.LFE741-.LFB741
+ 1742 0c0d 00000000 		.4byte	.LFB894
+ 1743 0c11 4E000000 		.4byte	.LFE894-.LFB894
  1744 0c15 01       		.uleb128 0x1
  1745 0c16 9C       		.byte	0x9c
  1746 0c17 460C0000 		.4byte	0xc46
@@ -1960,8 +1960,8 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1773 0c47 7E100000 		.4byte	.LASF268
  1774 0c4b 01       		.byte	0x1
  1775 0c4c 42       		.byte	0x42
- 1776 0c4d 00000000 		.4byte	.LFB742
- 1777 0c51 56000000 		.4byte	.LFE742-.LFB742
+ 1776 0c4d 00000000 		.4byte	.LFB895
+ 1777 0c51 56000000 		.4byte	.LFE895-.LFB895
  1778 0c55 01       		.uleb128 0x1
  1779 0c56 9C       		.byte	0x9c
  1780 0c57 940C0000 		.4byte	0xc94
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1791 0c6e 01       		.byte	0x1
  1792 0c6f 44       		.byte	0x44
  1793 0c70 2D080000 		.4byte	0x82d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 34
 
 
  1794 0c74 02       		.uleb128 0x2
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1848 0ce5 00       		.byte	0
  1849 0ce6 00       		.byte	0
  1850 0ce7 16       		.uleb128 0x16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 35
 
 
  1851 0ce8 610A0000 		.4byte	0xa61
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1905 0d61 2E       		.byte	0x2e
  1906 0d62 4B0D0000 		.4byte	0xd4b
  1907 0d66 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 36
 
 
  1908 0d67 03       		.byte	0x3
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  1962 0031 0B       		.uleb128 0xb
  1963 0032 03       		.uleb128 0x3
  1964 0033 08       		.uleb128 0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 37
 
 
  1965 0034 00       		.byte	0
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2019 006a 00       		.byte	0
  2020 006b 0A       		.uleb128 0xa
  2021 006c 0F       		.uleb128 0xf
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 38
 
 
  2022 006d 00       		.byte	0
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2076 00a3 00       		.byte	0
  2077 00a4 0F       		.uleb128 0xf
  2078 00a5 0D       		.uleb128 0xd
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 39
 
 
  2079 00a6 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2133 00dc 0B       		.uleb128 0xb
  2134 00dd 0B       		.uleb128 0xb
  2135 00de 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 40
 
 
  2136 00df 0B       		.uleb128 0xb
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2190 0115 13       		.uleb128 0x13
  2191 0116 38       		.uleb128 0x38
  2192 0117 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 41
 
 
  2193 0118 00       		.byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2247 014f 13       		.uleb128 0x13
  2248 0150 02       		.uleb128 0x2
  2249 0151 18       		.uleb128 0x18
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 42
 
 
  2250 0152 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2304 0189 19       		.uleb128 0x19
  2305 018a 3C       		.uleb128 0x3c
  2306 018b 19       		.uleb128 0x19
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 43
 
 
  2307 018c 00       		.byte	0
@@ -2566,25 +2566,25 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2349 000b 00       		.byte	0
  2350 000c 0000     		.2byte	0
  2351 000e 0000     		.2byte	0
- 2352 0010 00000000 		.4byte	.LFB740
- 2353 0014 3E000000 		.4byte	.LFE740-.LFB740
- 2354 0018 00000000 		.4byte	.LFB741
- 2355 001c 4E000000 		.4byte	.LFE741-.LFB741
- 2356 0020 00000000 		.4byte	.LFB742
- 2357 0024 56000000 		.4byte	.LFE742-.LFB742
+ 2352 0010 00000000 		.4byte	.LFB893
+ 2353 0014 3E000000 		.4byte	.LFE893-.LFB893
+ 2354 0018 00000000 		.4byte	.LFB894
+ 2355 001c 4E000000 		.4byte	.LFE894-.LFB894
+ 2356 0020 00000000 		.4byte	.LFB895
+ 2357 0024 56000000 		.4byte	.LFE895-.LFB895
  2358 0028 00000000 		.4byte	0
  2359 002c 00000000 		.4byte	0
  2360              		.section	.debug_ranges,"",%progbits
  2361              	.Ldebug_ranges0:
- 2362 0000 00000000 		.4byte	.LFB740
- 2363 0004 3E000000 		.4byte	.LFE740
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 44
+ 2362 0000 00000000 		.4byte	.LFB893
+ 2363 0004 3E000000 		.4byte	.LFE893
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 44
 
 
- 2364 0008 00000000 		.4byte	.LFB741
- 2365 000c 4E000000 		.4byte	.LFE741
- 2366 0010 00000000 		.4byte	.LFB742
- 2367 0014 56000000 		.4byte	.LFE742
+ 2364 0008 00000000 		.4byte	.LFB894
+ 2365 000c 4E000000 		.4byte	.LFE894
+ 2366 0010 00000000 		.4byte	.LFB895
+ 2367 0014 56000000 		.4byte	.LFE895
  2368 0018 00000000 		.4byte	0
  2369 001c 00000000 		.4byte	0
  2370              		.section	.debug_line,"",%progbits
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2389      43204B6C 
  2389      6F646465 
  2389      6E5C5254 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 45
 
 
  2389      4F535F49 
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2413      63654E72 
  2413      00
  2414              	.LASF115:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 46
 
 
  2415 0168 43595F53 		.ascii	"CY_SAR_RANGE_COND_OUTSIDE\000"
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2437 022e 6877436F 		.ascii	"hwConfigStc\000"
  2437      6E666967 
  2437      53746300 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 47
 
 
  2438              	.LASF158:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2460              	.LASF103:
  2461 02f0 63707573 		.ascii	"cpussRam1Ctl0\000"
  2461      7352616D 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 48
 
 
  2461      3143746C 
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2481      43746C4F 
  2481      66667365 
  2482              	.LASF150:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 49
 
 
  2483 03c5 736C6176 		.ascii	"slaveTxBuffer\000"
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2503      724E7200 
  2504              	.LASF236:
  2505 0480 4C534D33 		.ascii	"LSM303_REGISTER_ACCEL_CLICK_THS_A\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 50
 
 
  2505      30335F52 
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2525      6F4F6666 
  2525      73657400 
  2526              	.LASF44:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 51
 
 
  2527 055f 63707573 		.ascii	"cpussIpc0Irq\000"
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2547      00
  2548              	.LASF197:
  2549 061e 73746172 		.ascii	"startInputMode\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 52
 
 
  2549      74496E70 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2569      41434345 
  2570              	.LASF59:
  2571 0709 666C6173 		.ascii	"flashPipeRequired\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 53
 
 
  2571      68506970 
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2593      43746C4F 
  2593      66667365 
  2594              	.LASF54:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 54
 
 
  2595 07dc 75646250 		.ascii	"udbPresent\000"
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2619 0876 6D493243 		.ascii	"mI2C_context\000"
  2619      5F636F6E 
  2619      74657874 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 55
 
 
  2619      00
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2643      65547842 
  2643      75666665 
  2643      72436E74 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 56
 
 
  2643      00
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2665      746F4261 
  2665      736500
  2666              	.LASF250:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 57
 
 
  2667 09d6 72656164 		.ascii	"readAccel\000"
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2691 0a82 6368616E 		.ascii	"chanConfig\000"
  2691      436F6E66 
  2691      696700
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 58
 
 
  2692              	.LASF231:
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2715      54797065 
  2715      5F7400
  2716              	.LASF61:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 59
 
 
  2717 0b50 666C6173 		.ascii	"flashProgramDelay\000"
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2738              	.LASF144:
  2739 0bfe 6D617374 		.ascii	"masterBuffer\000"
  2739      65724275 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 60
 
 
  2739      66666572 
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2760              	.LASF19:
  2761 0ccf 73697A65 		.ascii	"sizetype\000"
  2761      74797065 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 61
 
 
  2761      00
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2781      00
  2782              	.LASF254:
  2783 0d83 49544D5F 		.ascii	"ITM_RxBuffer\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 62
 
 
  2783      52784275 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2803      7400
  2804              	.LASF207:
  2805 0e38 6D697363 		.ascii	"miscConfig\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 63
 
 
  2805      436F6E66 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2825      73526F6D 
  2825      43746C00 
  2826              	.LASF17:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 64
 
 
  2827 0f0f 696E7433 		.ascii	"int32_t\000"
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2851 0fc2 4144435F 		.ascii	"ADC_currentConfig\000"
  2851      63757272 
  2851      656E7443 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 65
 
 
  2851      6F6E6669 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2873      6C65726F 
  2873      5461736B 
  2873      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 66
 
 
  2874              	.LASF243:
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 1
  2896              	.LASF116:
  2897 114b 63795F65 		.ascii	"cy_en_sar_range_detect_condition_t\000"
  2897      6E5F7361 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccdBUSs.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccfezx14.s 			page 67
 
 
  2897      725F7261 

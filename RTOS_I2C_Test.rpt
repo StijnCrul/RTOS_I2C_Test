@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.195ms
+Loading plugins phase: Elapsed time ==> 0s.181ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\RTOS_I2C_Test.cyprj -d CY8C6247BZI-D54 -s C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\Generated_Source\PSoC6 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.311ms
+Elaboration phase: Elapsed time ==> 3s.661ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.171ms
+HDL generation phase: Elapsed time ==> 0s.206ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\stijn
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Apr 23 21:28:36 2019
+Wed Apr 24 14:44:59 2019
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 RTOS_I2C_Test.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Apr 23 21:28:36 2019
+Wed Apr 24 14:44:59 2019
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -62,10 +62,12 @@ Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\and_v1_0\and_v1_0.v'
 
 vpp:  No errors.
 
@@ -82,7 +84,7 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_mthv.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mod_genv.vif'.
 Using control file 'RTOS_I2C_Test.ctl'.
-RTOS_I2C_Test.v (line 2619, col 79):  Note: Substituting module 'cmp_vv_vv' for '='.
+RTOS_I2C_Test.v (line 2720, col 80):  Note: Substituting module 'cmp_vv_vv' for '='.
 
 vlogfe:  No errors.
 
@@ -94,7 +96,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\stijn
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Apr 23 21:28:39 2019
+Wed Apr 24 14:45:01 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -116,8 +118,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\and_v1_0\and_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
 
 tovif:  No errors.
@@ -130,7 +134,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\stijn
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Apr 23 21:28:40 2019
+Wed Apr 24 14:45:02 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -152,8 +156,10 @@ Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\c
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cy_psoc3_inc.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\not_v1_0\not_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\CyControlReg_v1_80\CyControlReg_v1_80.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\and_v1_0\and_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\mcompare.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\cpsoc3.vif'.
 
@@ -226,6 +232,8 @@ Aliasing \ADCSOCCounter:stop\ to zero
 Aliasing \ADCSOCCounter:start\ to zero
 Aliasing AMuxHw_Decoder_enable to one
 Aliasing \AMuxCtrl:rst\ to zero
+Aliasing Net_1278 to Net_1340
+Aliasing Net_1277 to Net_1285
 Aliasing \MODULE_1:g1:a0:gx:u0:aeqb_0\ to one
 Aliasing AMuxHw_Decoder_old_id_1D to MODIN1_1
 Aliasing AMuxHw_Decoder_old_id_0D to MODIN1_0
@@ -249,43 +257,45 @@ Removing Lhs of wire \mI2C:Net_279\[695] = zero[2]
 Removing Lhs of wire \mI2C:Net_278\[696] = zero[2]
 Removing Lhs of wire \ADCSOCCounter:capture\[757] = zero[2]
 Removing Lhs of wire \ADCSOCCounter:count\[758] = one[1]
-Removing Rhs of wire Net_1054[759] = \AMuxCtrl:control_out_2\[791]
-Removing Rhs of wire Net_1054[759] = \AMuxCtrl:control_2\[808]
+Removing Rhs of wire Net_1261[759] = \AMuxCtrl:control_out_2\[789]
+Removing Rhs of wire Net_1261[759] = \AMuxCtrl:control_2\[806]
 Removing Lhs of wire \ADCSOCCounter:stop\[760] = zero[2]
 Removing Lhs of wire \ADCSOCCounter:start\[761] = zero[2]
-Removing Lhs of wire AMuxHw_Decoder_enable[774] = one[1]
-Removing Lhs of wire cmp_vv_vv_MODGEN_1[776] = \MODULE_1:g1:a0:xeq\[869]
-Removing Rhs of wire mywire_1_1[779] = \AMuxCtrl:control_out_1\[790]
-Removing Rhs of wire mywire_1_1[779] = \AMuxCtrl:control_1\[809]
-Removing Rhs of wire mywire_1_0[781] = \AMuxCtrl:control_out_0\[789]
-Removing Rhs of wire mywire_1_0[781] = \AMuxCtrl:control_0\[810]
-Removing Lhs of wire \AMuxCtrl:clk\[787] = Net_1063[777]
-Removing Lhs of wire \AMuxCtrl:rst\[788] = zero[2]
-Removing Lhs of wire \MODULE_1:g1:a0:newa_1\[836] = MODIN1_1[837]
-Removing Lhs of wire MODIN1_1[837] = mywire_1_1[779]
-Removing Lhs of wire \MODULE_1:g1:a0:newa_0\[838] = MODIN1_0[839]
-Removing Lhs of wire MODIN1_0[839] = mywire_1_0[781]
-Removing Lhs of wire \MODULE_1:g1:a0:newb_1\[840] = MODIN2_1[841]
-Removing Lhs of wire MODIN2_1[841] = AMuxHw_Decoder_old_id_1[778]
-Removing Lhs of wire \MODULE_1:g1:a0:newb_0\[842] = MODIN2_0[843]
-Removing Lhs of wire MODIN2_0[843] = AMuxHw_Decoder_old_id_0[780]
-Removing Lhs of wire \MODULE_1:g1:a0:dataa_1\[844] = mywire_1_1[779]
-Removing Lhs of wire \MODULE_1:g1:a0:dataa_0\[845] = mywire_1_0[781]
-Removing Lhs of wire \MODULE_1:g1:a0:datab_1\[846] = AMuxHw_Decoder_old_id_1[778]
-Removing Lhs of wire \MODULE_1:g1:a0:datab_0\[847] = AMuxHw_Decoder_old_id_0[780]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:a_1\[848] = mywire_1_1[779]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:a_0\[849] = mywire_1_0[781]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:b_1\[850] = AMuxHw_Decoder_old_id_1[778]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:b_0\[851] = AMuxHw_Decoder_old_id_0[780]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:aeqb_0\[854] = one[1]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:eq_0\[855] = \MODULE_1:g1:a0:gx:u0:xnor_array_0\[853]
-Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:eqi_0\[857] = \MODULE_1:g1:a0:gx:u0:eq_1\[856]
-Removing Rhs of wire \MODULE_1:g1:a0:xeq\[869] = \MODULE_1:g1:a0:gx:u0:aeqb_1\[858]
-Removing Lhs of wire AMuxHw_Decoder_old_id_1D[880] = mywire_1_1[779]
-Removing Lhs of wire AMuxHw_Decoder_old_id_0D[881] = mywire_1_0[781]
+Removing Rhs of wire AMuxCtrlW_0[768] = \AMuxCtrl:control_out_0\[787]
+Removing Rhs of wire AMuxCtrlW_0[768] = \AMuxCtrl:control_0\[808]
+Removing Lhs of wire AMuxHw_Decoder_enable[773] = one[1]
+Removing Lhs of wire cmp_vv_vv_MODGEN_1[775] = \MODULE_1:g1:a0:xeq\[889]
+Removing Rhs of wire AMuxCtrlW_1[778] = \AMuxCtrl:control_out_1\[788]
+Removing Rhs of wire AMuxCtrlW_1[778] = \AMuxCtrl:control_1\[807]
+Removing Lhs of wire \AMuxCtrl:clk\[785] = Net_1063[776]
+Removing Lhs of wire \AMuxCtrl:rst\[786] = zero[2]
+Removing Lhs of wire Net_1278[834] = Net_1340[833]
+Removing Lhs of wire Net_1277[835] = Net_1285[767]
+Removing Lhs of wire \MODULE_1:g1:a0:newa_1\[856] = MODIN1_1[857]
+Removing Lhs of wire MODIN1_1[857] = AMuxCtrlW_1[778]
+Removing Lhs of wire \MODULE_1:g1:a0:newa_0\[858] = MODIN1_0[859]
+Removing Lhs of wire MODIN1_0[859] = AMuxCtrlW_0[768]
+Removing Lhs of wire \MODULE_1:g1:a0:newb_1\[860] = MODIN2_1[861]
+Removing Lhs of wire MODIN2_1[861] = AMuxHw_Decoder_old_id_1[777]
+Removing Lhs of wire \MODULE_1:g1:a0:newb_0\[862] = MODIN2_0[863]
+Removing Lhs of wire MODIN2_0[863] = AMuxHw_Decoder_old_id_0[779]
+Removing Lhs of wire \MODULE_1:g1:a0:dataa_1\[864] = AMuxCtrlW_1[778]
+Removing Lhs of wire \MODULE_1:g1:a0:dataa_0\[865] = AMuxCtrlW_0[768]
+Removing Lhs of wire \MODULE_1:g1:a0:datab_1\[866] = AMuxHw_Decoder_old_id_1[777]
+Removing Lhs of wire \MODULE_1:g1:a0:datab_0\[867] = AMuxHw_Decoder_old_id_0[779]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:a_1\[868] = AMuxCtrlW_1[778]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:a_0\[869] = AMuxCtrlW_0[768]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:b_1\[870] = AMuxHw_Decoder_old_id_1[777]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:b_0\[871] = AMuxHw_Decoder_old_id_0[779]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:aeqb_0\[874] = one[1]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:eq_0\[875] = \MODULE_1:g1:a0:gx:u0:xnor_array_0\[873]
+Removing Lhs of wire \MODULE_1:g1:a0:gx:u0:eqi_0\[877] = \MODULE_1:g1:a0:gx:u0:eq_1\[876]
+Removing Rhs of wire \MODULE_1:g1:a0:xeq\[889] = \MODULE_1:g1:a0:gx:u0:aeqb_1\[878]
+Removing Lhs of wire AMuxHw_Decoder_old_id_1D[900] = AMuxCtrlW_1[778]
+Removing Lhs of wire AMuxHw_Decoder_old_id_0D[901] = AMuxCtrlW_0[768]
 
 ------------------------------------------------------
-Aliased 0 equations, 54 wires.
+Aliased 0 equations, 56 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -297,37 +307,43 @@ Substituting virtuals - pass 1:
 Note:  Expanding virtual equation for 'one' (cost = 0):
 one <=  ('1') ;
 
+Note:  Expanding virtual equation for 'Net_1285' (cost = 0):
+Net_1285 <= (not AMuxCtrlW_0);
+
+Note:  Expanding virtual equation for 'Net_1340' (cost = 0):
+Net_1340 <= (not AMuxCtrlW_1);
+
 Note:  Expanding virtual equation for '\MODULE_1:g1:a0:gx:u0:xnor_array_1\' (cost = 2):
-\MODULE_1:g1:a0:gx:u0:xnor_array_1\ <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1)
-	OR (AMuxHw_Decoder_old_id_1 and mywire_1_1));
+\MODULE_1:g1:a0:gx:u0:xnor_array_1\ <= ((not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1)
+	OR (AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1));
 
 Note:  Expanding virtual equation for '\MODULE_1:g1:a0:gx:u0:xnor_array_0\' (cost = 4):
-\MODULE_1:g1:a0:gx:u0:xnor_array_0\ <= ((not AMuxHw_Decoder_old_id_0 and not mywire_1_0)
-	OR (AMuxHw_Decoder_old_id_0 and mywire_1_0));
+\MODULE_1:g1:a0:gx:u0:xnor_array_0\ <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_0)
+	OR (AMuxCtrlW_0 and AMuxHw_Decoder_old_id_0));
 
 Note:  Expanding virtual equation for '\MODULE_1:g1:a0:gx:u0:eq_1\' (cost = 4):
-\MODULE_1:g1:a0:gx:u0:eq_1\ <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and not AMuxHw_Decoder_old_id_0 and not mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_0 and not mywire_1_0 and AMuxHw_Decoder_old_id_1 and mywire_1_1)
-	OR (AMuxHw_Decoder_old_id_1 and mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0));
+\MODULE_1:g1:a0:gx:u0:eq_1\ <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and not AMuxHw_Decoder_old_id_0)
+	OR (not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and AMuxCtrlW_0 and AMuxHw_Decoder_old_id_0)
+	OR (not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1)
+	OR (AMuxCtrlW_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1 and AMuxHw_Decoder_old_id_0));
 
 
 Substituting virtuals - pass 2:
 
 Note:  Expanding virtual equation for '\MODULE_1:g1:a0:xeq\' (cost = 4):
-\MODULE_1:g1:a0:xeq\ <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and not AMuxHw_Decoder_old_id_0 and not mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_0 and not mywire_1_0 and AMuxHw_Decoder_old_id_1 and mywire_1_1)
-	OR (AMuxHw_Decoder_old_id_1 and mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0));
+\MODULE_1:g1:a0:xeq\ <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and not AMuxHw_Decoder_old_id_0)
+	OR (not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and AMuxCtrlW_0 and AMuxHw_Decoder_old_id_0)
+	OR (not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1)
+	OR (AMuxCtrlW_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1 and AMuxHw_Decoder_old_id_0));
 
 
 Substituting virtuals - pass 3:
 
 Note:  Expanding virtual equation for 'AMuxHw_Decoder_is_active' (cost = 64):
-AMuxHw_Decoder_is_active <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and not AMuxHw_Decoder_old_id_0 and not mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0)
-	OR (not AMuxHw_Decoder_old_id_0 and not mywire_1_0 and AMuxHw_Decoder_old_id_1 and mywire_1_1)
-	OR (AMuxHw_Decoder_old_id_1 and mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0));
+AMuxHw_Decoder_is_active <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and not AMuxHw_Decoder_old_id_0)
+	OR (not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and AMuxCtrlW_0 and AMuxHw_Decoder_old_id_0)
+	OR (not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1)
+	OR (AMuxCtrlW_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1 and AMuxHw_Decoder_old_id_0));
 
 
 Substituting virtuals - pass 4:
@@ -336,7 +352,7 @@ Substituting virtuals - pass 4:
 ----------------------------------------------------------
 Circuit simplification results:
 
-	Expanded 6 signals.
+	Expanded 8 signals.
 	Turned 0 signals into soft nodes.
 	Maximum default expansion cost was set at 3.
 ----------------------------------------------------------
@@ -361,14 +377,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya "-.fftprj=C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\RTOS_I2C_Test.cyprj" -dcpsoc3 RTOS_I2C_Test.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 5s.822ms
+Warp synthesis phase: Elapsed time ==> 6s.052ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Tuesday, 23 April 2019 21:28:42
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Wednesday, 24 April 2019 14:45:05
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\RTOS_I2C_Test.cyprj -d CY8C6247BZI-D54 RTOS_I2C_Test.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 1s.267ms
+Design parsing phase: Elapsed time ==> 1s.284ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -377,7 +393,7 @@ Assigning clock Clock_2 to clock Clk_Peri because it is a pass-through
 Removing unused cells resulting from optimization
 Done removing unused cells.
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
-    Fixed Function Clock 11: Automatic-assigning  clock 'ADCCounterClk'. Signal=Net_1062_ff11
+    Fixed Function Clock 11: Automatic-assigning  clock 'ADCCounterClk'. Signal=Net_1273_ff11
     Fixed Function Clock 0: Automatic-assigning  clock 'mI2C_SCBCLK'. Signal=\mI2C:clock_wire_ff0\
     Fixed Function Clock 1: Automatic-assigning  clock 'UART_SCBCLK'. Signal=\UART:Net_847_ff1\
     Fixed Function Clock 49: Automatic-assigning  clock 'ADC_intSarClock'. Signal=\ADC:Net_428_ff49\
@@ -1155,7 +1171,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => O_4(0)__PA ,
-            pin_input => Net_1084 ,
+            pin_input => sdone ,
             pad => O_4(0)_PAD );
         Properties:
         {
@@ -1195,7 +1211,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => O_5(0)__PA ,
-            pin_input => Net_741 ,
+            pin_input => eos ,
             pad => O_5(0)_PAD );
         Properties:
         {
@@ -1235,7 +1251,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => O_6(0)__PA ,
-            pin_input => mywire_1_0 ,
+            pin_input => AMuxCtrlW_0 ,
             pad => O_6(0)_PAD );
         Properties:
         {
@@ -1275,7 +1291,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => O_6(1)__PA ,
-            pin_input => mywire_1_1 ,
+            pin_input => AMuxCtrlW_1 ,
             pad => O_6(1)_PAD );
         Properties:
         {
@@ -1315,7 +1331,7 @@ Design Equations
             IO Voltage: 0
         PORT MAP (
             pa_out => O_8(0)__PA ,
-            pin_input => Net_1054 ,
+            pin_input => Net_1261 ,
             pad => O_8(0)_PAD );
         Properties:
         {
@@ -1366,6 +1382,46 @@ Design Equations
     Macrocell listing
     ------------------------------------------------------------
 
+    MacroCell: Name=Net_1328, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * AMuxCtrlW_0 * AMuxCtrlW_1
+        );
+        Output = Net_1328 (fanout=1)
+
+    MacroCell: Name=Net_1324, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * !AMuxCtrlW_0 * AMuxCtrlW_1
+        );
+        Output = Net_1324 (fanout=1)
+
+    MacroCell: Name=Net_1320, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * AMuxCtrlW_0 * !AMuxCtrlW_1
+        );
+        Output = Net_1320 (fanout=1)
+
+    MacroCell: Name=Net_1308, Mode=(Combinatorial)
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * !AMuxCtrlW_0 * !AMuxCtrlW_1
+        );
+        Output = Net_1308 (fanout=1)
+
     MacroCell: Name=AMuxHw_Decoder_old_id_1, Mode=(D-Register)
         Total # of inputs        : 1
         Total # of product terms : 1
@@ -1374,7 +1430,7 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              mywire_1_1
+              AMuxCtrlW_1
         );
         Output = AMuxHw_Decoder_old_id_1 (fanout=4)
 
@@ -1386,7 +1442,7 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              mywire_1_0
+              AMuxCtrlW_0
         );
         Output = AMuxHw_Decoder_old_id_0 (fanout=4)
 
@@ -1398,8 +1454,8 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !AMuxHw_Decoder_old_id_1 * !mywire_1_1 * 
-              !AMuxHw_Decoder_old_id_0 * !mywire_1_0
+              !AMuxCtrlW_0 * !AMuxHw_Decoder_old_id_1 * !AMuxCtrlW_1 * 
+              !AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_0 (fanout=1)
 
@@ -1411,8 +1467,8 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !AMuxHw_Decoder_old_id_1 * !mywire_1_1 * 
-              AMuxHw_Decoder_old_id_0 * mywire_1_0
+              AMuxCtrlW_0 * !AMuxHw_Decoder_old_id_1 * !AMuxCtrlW_1 * 
+              AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_1 (fanout=1)
 
@@ -1424,8 +1480,8 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              AMuxHw_Decoder_old_id_1 * mywire_1_1 * !AMuxHw_Decoder_old_id_0 * 
-              !mywire_1_0
+              !AMuxCtrlW_0 * AMuxHw_Decoder_old_id_1 * AMuxCtrlW_1 * 
+              !AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_2 (fanout=1)
 
@@ -1437,8 +1493,8 @@ Design Equations
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              AMuxHw_Decoder_old_id_1 * mywire_1_1 * AMuxHw_Decoder_old_id_0 * 
-              mywire_1_0
+              AMuxCtrlW_0 * AMuxHw_Decoder_old_id_1 * AMuxCtrlW_1 * 
+              AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_3 (fanout=1)
     </CYPRESSTAG>
@@ -1464,9 +1520,9 @@ Design Equations
             control_5 => \AMuxCtrl:control_5\ ,
             control_4 => \AMuxCtrl:control_4\ ,
             control_3 => \AMuxCtrl:control_3\ ,
-            control_2 => Net_1054 ,
-            control_1 => mywire_1_1 ,
-            control_0 => mywire_1_0 );
+            control_2 => Net_1261 ,
+            control_1 => AMuxCtrlW_1 ,
+            control_0 => AMuxCtrlW_0 );
         Properties:
         {
             cy_ctrl_mode_0 = "00000111"
@@ -1486,11 +1542,44 @@ Design Equations
     DRQ listing
     ------------------------------------------------------------
 
-    drqcell: Name =\ADCDMA:DW\
+    drqcell: Name =\ADCDMA_0:DW\
         PORT MAP (
-            dmareq => Net_1084 ,
-            termout => Net_1086 ,
-            interrupt => Net_1092 );
+            dmareq => Net_1308 ,
+            termout => Net_1309 ,
+            interrupt => Net_1311 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+
+    drqcell: Name =\ADCDMA_1:DW\
+        PORT MAP (
+            dmareq => Net_1320 ,
+            termout => Net_1321 ,
+            interrupt => Net_1334 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+
+    drqcell: Name =\ADCDMA_2:DW\
+        PORT MAP (
+            dmareq => Net_1324 ,
+            termout => Net_1325 ,
+            interrupt => Net_1327 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+
+    drqcell: Name =\ADCDMA_3:DW\
+        PORT MAP (
+            dmareq => Net_1328 ,
+            termout => Net_1329 ,
+            interrupt => Net_1331 );
         Properties:
         {
             cy_registers = ""
@@ -1533,9 +1622,39 @@ Design Equations
             int_type = "10"
         }
 
-    interrupt: Name =ADC_DMA_INT
+    interrupt: Name =ADC_DMA_INT_0
         PORT MAP (
-            interrupt => Net_1092 );
+            interrupt => Net_1311 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+
+    interrupt: Name =ADC_DMA_INT_1
+        PORT MAP (
+            interrupt => Net_1334 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+
+    interrupt: Name =ADC_DMA_INT_2
+        PORT MAP (
+            interrupt => Net_1327 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+
+    interrupt: Name =ADC_DMA_INT_3
+        PORT MAP (
+            interrupt => Net_1331 );
         Properties:
         {
             cy_registers = ""
@@ -1555,7 +1674,7 @@ Resource Type                 : Used : Free :  Max :  % Used
 Digital Clocks                :    0 :    8 :    8 :  0.00 %
 Crypto Accelerator            :    0 :    1 :    1 :  0.00 %
 Interrupts [CM0+]             :    5 :   27 :   32 : 15.63 %
-Interrupts [CM4]              :    4 :  143 :  147 :  2.72 %
+Interrupts [CM4]              :    7 :  140 :  147 :  4.76 %
 IO                            :   24 :   78 :  102 : 23.53 %
 Interprocessor Communication  :    0 :   16 :   16 :  0.00 %
 MCWDT                         :    0 :    2 :    2 :  0.00 %
@@ -1567,14 +1686,14 @@ PDM/PCM                       :    0 :    1 :    1 :  0.00 %
 SCB                           :    2 :    7 :    9 : 22.22 %
 Serial Memory Interface       :    0 :    1 :    1 :  0.00 %
 USB                           :    0 :    1 :    1 :  0.00 %
-DMA Channels                  :    1 :   31 :   32 :  3.13 %
+DMA Channels                  :    4 :   28 :   32 : 12.50 %
 LCD                           :    0 :    1 :    1 :  0.00 %
 SmartIO                       :    0 :    2 :    2 :  0.00 %
 TCPWM                         :    1 :   31 :   32 :  3.13 %
 UDB                           :      :      :      :        
-  Macrocells                  :    6 :   90 :   96 :  6.25 %
-  Unique P-terms              :    6 :  186 :  192 :  3.13 %
-  Total P-terms               :    6 :      :      :        
+  Macrocells                  :   10 :   86 :   96 : 10.42 %
+  Unique P-terms              :   10 :  182 :  192 :  5.21 %
+  Total P-terms               :   10 :      :      :        
   Datapath Cells              :    0 :   12 :   12 :  0.00 %
   Status Cells                :    0 :   12 :   12 :  0.00 %
   Control Cells               :    1 :   11 :   12 :  8.33 %
@@ -1587,8 +1706,8 @@ Sample and Hold               :    0 :    1 :    1 :  0.00 %
 SAR ADC                       :    1 :    0 :    1 : 100.00 %
 DieTemp Sensor                :    0 :    1 :    1 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.288ms
-Tech Mapping phase: Elapsed time ==> 0s.371ms
+Technology Mapping: Elapsed time ==> 0s.250ms
+Tech Mapping phase: Elapsed time ==> 0s.334ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -1632,15 +1751,15 @@ CPUSS                               : CPUSS_[FFB(CPUSS,0)]
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.3630564s
+Elapsed time ==> 0.3766059s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 2s.066ms
+Analog Placement phase: Elapsed time ==> 2s.138ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0229257 secs
+Route success=True, Iterations=1 Elapsed=0.0183704 secs
 </CYPRESSTAG>
-Analog Routing phase: Elapsed time ==> 0s.023ms
+Analog Routing phase: Elapsed time ==> 0s.019ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -1736,11 +1855,11 @@ Mux Info {
     }
   }
 }
-Analog Code Generation phase: Elapsed time ==> 0s.034ms
+Analog Code Generation phase: Elapsed time ==> 0s.029ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 0.5 sec.
+I2076: Total run-time: 0.6 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -1751,15 +1870,15 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :    2 :   22 :   24 :   8.33%
+                     PLDs :    3 :   21 :   24 :  12.50%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
                    Inputs :            4.00
-                   Pterms :            3.00
-               Macrocells :            3.00
+                   Pterms :            3.33
+               Macrocells :            3.33
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
@@ -1771,7 +1890,7 @@ PLD Packing: Elapsed time ==> 0s.001ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.041ms
+Partitioning: Elapsed time ==> 0s.052ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -1781,7 +1900,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :          1 :       4.00 :       6.00
+                 UDB :          2 :       4.00 :       5.00
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -1789,7 +1908,39 @@ Final Placement Summary
 Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] is empty.
-UDB [UDB=(0,1)] is empty.
+UDB [UDB=(0,1)] contents:
+LAB@[UDB=(0,1)][LB=0] #macrocells=2, #inputs=3, #pterms=2
+{
+    [McSlotId=0]:     MacroCell: Name=Net_1328, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=0]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * AMuxCtrlW_0 * AMuxCtrlW_1
+        );
+        Output = Net_1328 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=Net_1324, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=1]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * !AMuxCtrlW_0 * AMuxCtrlW_1
+        );
+        Output = Net_1324 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]: (empty)
+    [McSlotId=3]: (empty)
+}
+
 UDB [UDB=(0,2)] contents:
 LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
 {
@@ -1801,8 +1952,8 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !AMuxHw_Decoder_old_id_1 * !mywire_1_1 * 
-              !AMuxHw_Decoder_old_id_0 * !mywire_1_0
+              !AMuxCtrlW_0 * !AMuxHw_Decoder_old_id_1 * !AMuxCtrlW_1 * 
+              !AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_0 (fanout=1)
         Properties               : 
@@ -1817,7 +1968,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              mywire_1_0
+              AMuxCtrlW_0
         );
         Output = AMuxHw_Decoder_old_id_0 (fanout=4)
         Properties               : 
@@ -1832,7 +1983,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              mywire_1_1
+              AMuxCtrlW_1
         );
         Output = AMuxHw_Decoder_old_id_1 (fanout=4)
         Properties               : 
@@ -1847,8 +1998,8 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !AMuxHw_Decoder_old_id_1 * !mywire_1_1 * 
-              AMuxHw_Decoder_old_id_0 * mywire_1_0
+              AMuxCtrlW_0 * !AMuxHw_Decoder_old_id_1 * !AMuxCtrlW_1 * 
+              AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_1 (fanout=1)
         Properties               : 
@@ -1856,7 +2007,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=4, #pterms=4
         }
 }
 
-LAB@[UDB=(0,2)][LB=1] #macrocells=2, #inputs=4, #pterms=2
+LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=5, #pterms=4
 {
     [McSlotId=0]:     MacroCell: Name=AMuxHw_Decoder_one_hot_2, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=0]
         Total # of inputs        : 4
@@ -1866,8 +2017,8 @@ LAB@[UDB=(0,2)][LB=1] #macrocells=2, #inputs=4, #pterms=2
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              AMuxHw_Decoder_old_id_1 * mywire_1_1 * !AMuxHw_Decoder_old_id_0 * 
-              !mywire_1_0
+              !AMuxCtrlW_0 * AMuxHw_Decoder_old_id_1 * AMuxCtrlW_1 * 
+              !AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_2 (fanout=1)
         Properties               : 
@@ -1882,16 +2033,39 @@ LAB@[UDB=(0,2)][LB=1] #macrocells=2, #inputs=4, #pterms=2
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              AMuxHw_Decoder_old_id_1 * mywire_1_1 * AMuxHw_Decoder_old_id_0 * 
-              mywire_1_0
+              AMuxCtrlW_0 * AMuxHw_Decoder_old_id_1 * AMuxCtrlW_1 * 
+              AMuxHw_Decoder_old_id_0
         );
         Output = AMuxHw_Decoder_one_hot_3 (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=2]: (empty)
-    [McSlotId=3]: (empty)
+    [McSlotId=2]:     MacroCell: Name=Net_1308, Mode=(Combinatorial) @ [UDB=(0,2)][LB=1][MC=2]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * !AMuxCtrlW_0 * !AMuxCtrlW_1
+        );
+        Output = Net_1308 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=Net_1320, Mode=(Combinatorial) @ [UDB=(0,2)][LB=1][MC=3]
+        Total # of inputs        : 3
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              eos * AMuxCtrlW_0 * !AMuxCtrlW_1
+        );
+        Output = Net_1320 (fanout=1)
+        Properties               : 
+        {
+        }
 }
 
 controlcell: Name =\AMuxCtrl:Sync:ctrl_reg\
@@ -1902,9 +2076,9 @@ controlcell: Name =\AMuxCtrl:Sync:ctrl_reg\
         control_5 => \AMuxCtrl:control_5\ ,
         control_4 => \AMuxCtrl:control_4\ ,
         control_3 => \AMuxCtrl:control_3\ ,
-        control_2 => Net_1054 ,
-        control_1 => mywire_1_1 ,
-        control_0 => mywire_1_0 );
+        control_2 => Net_1261 ,
+        control_1 => AMuxCtrlW_1 ,
+        control_0 => AMuxCtrlW_0 );
     Properties:
     {
         cy_ctrl_mode_0 = "00000111"
@@ -1947,9 +2121,39 @@ Intr container @ [IntrContainer=(0)]:
             int_type = "10"
         }
   Intr@ [IntrContainer=(0)][IntrId=(50)] 
-    interrupt: Name =ADC_DMA_INT
+    interrupt: Name =ADC_DMA_INT_3
         PORT MAP (
-            interrupt => Net_1092 );
+            interrupt => Net_1331 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(51)] 
+    interrupt: Name =ADC_DMA_INT_2
+        PORT MAP (
+            interrupt => Net_1327 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(52)] 
+    interrupt: Name =ADC_DMA_INT_1
+        PORT MAP (
+            interrupt => Net_1334 );
+        Properties:
+        {
+            cy_registers = ""
+            deepsleep_required = 0
+            int_type = "10"
+        }
+  Intr@ [IntrContainer=(0)][IntrId=(53)] 
+    interrupt: Name =ADC_DMA_INT_0
+        PORT MAP (
+            interrupt => Net_1311 );
         Properties:
         {
             cy_registers = ""
@@ -1968,11 +2172,44 @@ Intr container @ [IntrContainer=(0)]:
         }
 Drq container @ [DrqContainer=(0)]: 
   Dma@ [DrqContainer=(0)][DrqId=(0)] 
-    drqcell: Name =\ADCDMA:DW\
+    drqcell: Name =\ADCDMA_3:DW\
         PORT MAP (
-            dmareq => Net_1084 ,
-            termout => Net_1086 ,
-            interrupt => Net_1092 );
+            dmareq => Net_1328 ,
+            termout => Net_1329 ,
+            interrupt => Net_1331 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+  Dma@ [DrqContainer=(0)][DrqId=(1)] 
+    drqcell: Name =\ADCDMA_2:DW\
+        PORT MAP (
+            dmareq => Net_1324 ,
+            termout => Net_1325 ,
+            interrupt => Net_1327 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+  Dma@ [DrqContainer=(0)][DrqId=(2)] 
+    drqcell: Name =\ADCDMA_1:DW\
+        PORT MAP (
+            dmareq => Net_1320 ,
+            termout => Net_1321 ,
+            interrupt => Net_1334 );
+        Properties:
+        {
+            cy_registers = ""
+            priority = "11"
+        }
+  Dma@ [DrqContainer=(0)][DrqId=(3)] 
+    drqcell: Name =\ADCDMA_0:DW\
+        PORT MAP (
+            dmareq => Net_1308 ,
+            termout => Net_1309 ,
+            interrupt => Net_1311 );
         Properties:
         {
             cy_registers = ""
@@ -2266,7 +2503,7 @@ Pin : Name = O_5(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => O_5(0)__PA ,
-        pin_input => Net_741 ,
+        pin_input => eos ,
         pad => O_5(0)_PAD );
     Properties:
     {
@@ -2470,7 +2707,7 @@ Pin : Name = O_8(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => O_8(0)__PA ,
-        pin_input => Net_1054 ,
+        pin_input => Net_1261 ,
         pad => O_8(0)_PAD );
     Properties:
     {
@@ -2511,7 +2748,7 @@ Pin : Name = O_4(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => O_4(0)__PA ,
-        pin_input => Net_1084 ,
+        pin_input => sdone ,
         pad => O_4(0)_PAD );
     Properties:
     {
@@ -2802,7 +3039,7 @@ Pin : Name = O_6(0)
         IO Voltage: 0
     PORT MAP (
         pa_out => O_6(0)__PA ,
-        pin_input => mywire_1_0 ,
+        pin_input => AMuxCtrlW_0 ,
         pad => O_6(0)_PAD );
     Properties:
     {
@@ -2843,7 +3080,7 @@ Pin : Name = O_6(1)
         IO Voltage: 0
     PORT MAP (
         pa_out => O_6(1)__PA ,
-        pin_input => mywire_1_1 ,
+        pin_input => AMuxCtrlW_1 ,
         pad => O_6(1)_PAD );
     Properties:
     {
@@ -2994,7 +3231,7 @@ Clock group 0:
             ilo => ClockBlock_ILO ,
             wco => ClockBlock_WCO ,
             lfclk => ClockBlock_LFClk ,
-            ff_div_11 => Net_1062_ff11 ,
+            ff_div_11 => Net_1273_ff11 ,
             ff_div_0 => \mI2C:clock_wire_ff0\ ,
             ff_div_1 => \UART:Net_847_ff1\ ,
             ff_div_49 => \ADC:Net_428_ff49\ );
@@ -3071,18 +3308,18 @@ TCPWM group 0:
     TCPWM @ F(TCPWM,0): 
     TCPWM: Name =\ADCSOCCounter:TCPWM\
         PORT MAP (
-            clock => Net_1062_ff11 ,
+            clock => Net_1273_ff11 ,
             capture => zero ,
             count => one ,
-            reload => Net_1054 ,
+            reload => Net_1261 ,
             stop => zero ,
             start => zero ,
-            tr_underflow => Net_1049 ,
+            tr_underflow => Net_1123 ,
             tr_compare_match => Net_1061 ,
-            tr_overflow => Net_1060 ,
+            tr_overflow => Net_1122 ,
             line_compl => \ADCSOCCounter:Net_1\ ,
             line => \ADCSOCCounter:Net_2\ ,
-            interrupt => Net_880 );
+            interrupt => Net_1121 );
         Properties:
         {
             cy_registers = ""
@@ -3099,10 +3336,10 @@ SARADC group 0:
             vminus => \ADC:muxoutMinus\ ,
             vref => \ADC:Net_1448\ ,
             ext_vref => \ADC:Net_102\ ,
-            dsi_sar_sample_done => Net_1084 ,
+            dsi_sar_sample_done => sdone ,
             dsi_sar_chan_id_valid => Net_573 ,
             dsi_sar_data_valid => Net_575 ,
-            tr_sar_out => Net_741 ,
+            tr_sar_out => eos ,
             dsi_sar_data_11 => Net_576_11 ,
             dsi_sar_data_10 => Net_576_10 ,
             dsi_sar_data_9 => Net_576_9 ,
@@ -3198,14 +3435,14 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------------------------
    6 |   0 |     * |      NONE |    OPEN_DRAIN_LO |              \mI2C:scl(0)\ | FB(Net_139)
      |   1 |     * |      NONE |    OPEN_DRAIN_LO |              \mI2C:sda(0)\ | FB(Net_147)
-     |   2 |     * |      NONE |         CMOS_OUT |                     O_5(0) | In(Net_741)
+     |   2 |     * |      NONE |         CMOS_OUT |                     O_5(0) | In(eos)
      |   3 |     * |      NONE |         CMOS_OUT |                     O_1(0) | 
      |   6 |     * |      NONE |      RES_PULL_UP |  CY_CPUSS_SWJ_SWDIO_TMS(0) | FB(CPUSS_swj_swdio_tms)
      |   7 |     * |      NONE |    RES_PULL_DOWN | CY_CPUSS_SWJ_SWCLK_TCLK(0) | FB(CPUSS_swj_swclk_tclk)
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------------------------
    9 |   4 |     * |      NONE |         CMOS_OUT |                     O_9(0) | 
-     |   5 |     * |      NONE |         CMOS_OUT |                     O_8(0) | In(Net_1054)
-     |   6 |     * |      NONE |         CMOS_OUT |                     O_4(0) | In(Net_1084)
+     |   5 |     * |      NONE |         CMOS_OUT |                     O_8(0) | In(Net_1261)
+     |   6 |     * |      NONE |         CMOS_OUT |                     O_4(0) | In(sdone)
      |   7 |     * |      NONE |         CMOS_OUT |                     O_2(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------------------------
   10 |   0 |     * |      NONE |      HI_Z_ANALOG |                      A0(0) | In(AMuxHw_Decoder_one_hot_0), Analog(Net_1016)
@@ -3213,8 +3450,8 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
      |   2 |     * |      NONE |      HI_Z_ANALOG |                      A2(0) | In(AMuxHw_Decoder_one_hot_2), Analog(Net_873)
      |   3 |     * |      NONE |      HI_Z_ANALOG |                      A3(0) | In(AMuxHw_Decoder_one_hot_3), Analog(Net_1017)
      |   4 |     * |      NONE |         CMOS_OUT |                     O_7(0) | In(Net_1061)
-     |   5 |     * |      NONE |         CMOS_OUT |                     O_6(0) | In(mywire_1_0)
-     |   6 |     * |      NONE |         CMOS_OUT |                     O_6(1) | In(mywire_1_1)
+     |   5 |     * |      NONE |         CMOS_OUT |                     O_6(0) | In(AMuxCtrlW_0)
+     |   6 |     * |      NONE |         CMOS_OUT |                     O_6(1) | In(AMuxCtrlW_1)
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------------------------
   11 |   1 |     * |      NONE |         CMOS_OUT |                BLUE_PIN(0) | 
 -----+-----+-------+-----------+------------------+----------------------------+-----------------------------------------------
@@ -3224,33 +3461,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                       Name |
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.071ms
-Digital Placement phase: Elapsed time ==> 6s.388ms
+Digital component placer commit/Report: Elapsed time ==> 0s.096ms
+Digital Placement phase: Elapsed time ==> 7s.138ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Users\stijn\OneDrive\Documenten\PSoC Creator\4.2\Devices\psoc6/0/route_arch-rrg.cydata" --vh2-path "RTOS_I2C_Test_r.vh2" --pcf-path "RTOS_I2C_Test.pco" --des-name "RTOS_I2C_Test" --dsf-path "RTOS_I2C_Test.dsf" --sdc-path "RTOS_I2C_Test.sdc" --lib-path "RTOS_I2C_Test_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.719ms
+Digital Routing phase: Elapsed time ==> 1s.754ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.653ms
+Bitstream Generation phase: Elapsed time ==> 0s.634ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.000ms
+Bitstream Verification phase: Elapsed time ==> 0s.001ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in RTOS_I2C_Test_timing.html.
-Static timing analysis phase: Elapsed time ==> 10s.273ms
+Static timing analysis phase: Elapsed time ==> 10s.948ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.204ms
+Design database save phase: Elapsed time ==> 0s.214ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 23s.050ms
+cydsfit: Elapsed time ==> 24s.542ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 23s.050ms
-API generation phase: Elapsed time ==> 1s.622ms
-Dependency generation phase: Elapsed time ==> 0s.029ms
+Fitter phase: Elapsed time ==> 24s.543ms
+API generation phase: Elapsed time ==> 1s.765ms
+Dependency generation phase: Elapsed time ==> 0s.032ms
 Cleanup phase: Elapsed time ==> 0s.000ms

@@ -24,6 +24,9 @@
 #include "FreeRTOS.h"
 #include "task.h"
     
+    // CONSTANTS
+    #define BUFFER_SIZE 1024
+    
     // Struct for passing measurment variables to the RTOS task.
     typedef struct {
         GPIO_PRT_Type* port;
@@ -36,12 +39,31 @@
     static int16_t result;
     static uint8_t dataReady;
     
+    int32_t buffer0[BUFFER_SIZE];
+    int32_t buffer1[BUFFER_SIZE];
+    int32_t buffer2[BUFFER_SIZE];
+    int32_t buffer3[BUFFER_SIZE];
+    
     // PROTOTYPING
     void initADC();
     void ADCTask();
     void ADCSampleTask(void * pvPin);
     void ADCDMAInit(void);
     void ADC_ISR_Callback(void);
+    
+    // DMA prototypes
+    void configureDMA0();
+    void ADCDMA0Complete();
+    void configureDMA1();
+    void ADCDMA1Complete();
+    void configureDMA2();
+    void ADCDMA2Complete();
+    void configureDMA3();
+    void ADCDMA3Complete();
+    
+    
+    // Error function: do something better
+    void handle_error(void);
     
     
 #endif

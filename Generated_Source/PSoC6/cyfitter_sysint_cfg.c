@@ -32,10 +32,28 @@
         .intrPriority = UART_SCB_IRQ__INTC_CORTEXM4_PRIORITY
     };
 
-    /* ADC_DMA_INT */
-    const cy_stc_sysint_t ADC_DMA_INT_cfg = {
-        .intrSrc = (IRQn_Type)ADC_DMA_INT__INTC_NUMBER,
-        .intrPriority = ADC_DMA_INT__INTC_CORTEXM4_PRIORITY
+    /* ADC_DMA_INT_3 */
+    const cy_stc_sysint_t ADC_DMA_INT_3_cfg = {
+        .intrSrc = (IRQn_Type)ADC_DMA_INT_3__INTC_NUMBER,
+        .intrPriority = ADC_DMA_INT_3__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* ADC_DMA_INT_2 */
+    const cy_stc_sysint_t ADC_DMA_INT_2_cfg = {
+        .intrSrc = (IRQn_Type)ADC_DMA_INT_2__INTC_NUMBER,
+        .intrPriority = ADC_DMA_INT_2__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* ADC_DMA_INT_1 */
+    const cy_stc_sysint_t ADC_DMA_INT_1_cfg = {
+        .intrSrc = (IRQn_Type)ADC_DMA_INT_1__INTC_NUMBER,
+        .intrPriority = ADC_DMA_INT_1__INTC_CORTEXM4_PRIORITY
+    };
+
+    /* ADC_DMA_INT_0 */
+    const cy_stc_sysint_t ADC_DMA_INT_0_cfg = {
+        .intrSrc = (IRQn_Type)ADC_DMA_INT_0__INTC_NUMBER,
+        .intrPriority = ADC_DMA_INT_0__INTC_CORTEXM4_PRIORITY
     };
 
     /* ADC_IRQ */

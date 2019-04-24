@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Apr 23 2019 21:28:52
+#File Generated:     Apr 24 2019 14:45:15
 
 #Purpose:            
 
@@ -44,7 +44,7 @@ Phase 2
 Phase 3
 
 Design Statistics after Packing
-    Number of Combinational MCs 	:	0
+    Number of Combinational MCs 	:	4
     Number of Sequential MCs    	:	6
     Number of DPs               	:	0
     Number of Controls          	:	1
@@ -53,8 +53,8 @@ Design Statistics after Packing
     Number of count7cells       	:	0
 
 Device Utilization Summary after Packing
-    Macrocells                  :	6/96
-    UDBS                        :	1/12
+    Macrocells                  :	10/96
+    UDBS                        :	2/12
     IOs                         :	24/104
 
 
@@ -122,7 +122,7 @@ Clock: mI2C_SCBCLK          | Frequency: N/A       | Target:   8.3 MHz
 D2088: Phase 7, elapsed time : 0.0 (sec)
 
 Final Design Statistics
-    Number of Combinational MCs 	:	0
+    Number of Combinational MCs 	:	4
     Number of Sequential MCs    	:	6
     Number of DPs               	:	0
     Number of Controls          	:	1
@@ -132,7 +132,7 @@ Final Design Statistics
     Number of IOs       	:	24
 
 Device Utilization Summary
-    Macrocells                  :	6/96
+    Macrocells                  :	10/96
     IOs                         :	24/104
 
 
@@ -173,5 +173,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.5 sec.
+I2076: Total run-time: 0.6 sec.
 

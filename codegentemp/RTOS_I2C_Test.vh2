@@ -2,7 +2,7 @@
 --	Conversion of RTOS_I2C_Test.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Apr 23 21:28:42 2019
+--	Wed Apr 24 14:45:05 2019
 --
 
 USE cypress.cypress.all;
@@ -81,10 +81,10 @@ TERMINAL Net_639 : bit;
 SIGNAL \ADC:Net_34\ : bit;
 SIGNAL \ADC:Net_33\ : bit;
 TERMINAL \ADC:vref\ : bit;
-SIGNAL Net_1084 : bit;
+SIGNAL sdone : bit;
 SIGNAL Net_573 : bit;
 SIGNAL Net_575 : bit;
-SIGNAL Net_741 : bit;
+SIGNAL eos : bit;
 SIGNAL Net_576_11 : bit;
 SIGNAL Net_576_10 : bit;
 SIGNAL Net_576_9 : bit;
@@ -431,7 +431,7 @@ SIGNAL tmpFB_0__A3_net_0 : bit;
 TERMINAL Net_1017 : bit;
 SIGNAL tmpIO_0__A3_net_0 : bit;
 TERMINAL tmpSIOVREF__A3_net_0 : bit;
-TERMINAL Net_590 : bit;
+TERMINAL Net_1204 : bit;
 TERMINAL Net_585 : bit;
 TERMINAL Net_587 : bit;
 TERMINAL Net_589 : bit;
@@ -447,19 +447,19 @@ TERMINAL tmpSIOVREF__O_2_net_0 : bit;
 SIGNAL tmpFB_0__O_3_net_0 : bit;
 SIGNAL tmpIO_0__O_3_net_0 : bit;
 TERMINAL tmpSIOVREF__O_3_net_0 : bit;
-SIGNAL Net_1062 : bit;
+SIGNAL Net_1273 : bit;
 SIGNAL \ADCSOCCounter:capture\ : bit;
 SIGNAL \ADCSOCCounter:count\ : bit;
-SIGNAL Net_1054 : bit;
+SIGNAL Net_1261 : bit;
 SIGNAL \ADCSOCCounter:stop\ : bit;
 SIGNAL \ADCSOCCounter:start\ : bit;
-SIGNAL Net_1049 : bit;
-SIGNAL Net_1060 : bit;
+SIGNAL Net_1123 : bit;
+SIGNAL Net_1122 : bit;
 SIGNAL \ADCSOCCounter:Net_1\ : bit;
 SIGNAL \ADCSOCCounter:Net_2\ : bit;
-SIGNAL Net_880 : bit;
-SIGNAL Net_1086 : bit;
-SIGNAL Net_1092 : bit;
+SIGNAL Net_1121 : bit;
+SIGNAL Net_1285 : bit;
+SIGNAL AMuxCtrlW_0 : bit;
 SIGNAL tmpFB_0__O_7_net_0 : bit;
 SIGNAL tmpIO_0__O_7_net_0 : bit;
 TERMINAL tmpSIOVREF__O_7_net_0 : bit;
@@ -468,9 +468,8 @@ SIGNAL AMuxHw_Decoder_is_active : bit;
 SIGNAL cmp_vv_vv_MODGEN_1 : bit;
 SIGNAL Net_1063 : bit;
 SIGNAL AMuxHw_Decoder_old_id_1 : bit;
-SIGNAL mywire_1_1 : bit;
+SIGNAL AMuxCtrlW_1 : bit;
 SIGNAL AMuxHw_Decoder_old_id_0 : bit;
-SIGNAL mywire_1_0 : bit;
 SIGNAL AMuxHw_Decoder_one_hot_0 : bit;
 SIGNAL AMuxHw_Decoder_one_hot_1 : bit;
 SIGNAL AMuxHw_Decoder_one_hot_2 : bit;
@@ -515,6 +514,21 @@ TERMINAL tmpSIOVREF__O_8_net_0 : bit;
 SIGNAL tmpFB_0__O_9_net_0 : bit;
 SIGNAL tmpIO_0__O_9_net_0 : bit;
 TERMINAL tmpSIOVREF__O_9_net_0 : bit;
+SIGNAL Net_1340 : bit;
+SIGNAL Net_1278 : bit;
+SIGNAL Net_1277 : bit;
+SIGNAL Net_1328 : bit;
+SIGNAL Net_1324 : bit;
+SIGNAL Net_1320 : bit;
+SIGNAL Net_1308 : bit;
+SIGNAL Net_1311 : bit;
+SIGNAL Net_1309 : bit;
+SIGNAL Net_1321 : bit;
+SIGNAL Net_1334 : bit;
+SIGNAL Net_1325 : bit;
+SIGNAL Net_1327 : bit;
+SIGNAL Net_1329 : bit;
+SIGNAL Net_1331 : bit;
 SIGNAL \MODULE_1:g1:a0:newa_1\ : bit;
 SIGNAL MODIN1_1 : bit;
 SIGNAL \MODULE_1:g1:a0:newa_0\ : bit;
@@ -576,13 +590,21 @@ one <=  ('1') ;
 
 zero <=  ('0') ;
 
-AMuxHw_Decoder_one_hot_0D <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and not AMuxHw_Decoder_old_id_0 and not mywire_1_0));
+AMuxHw_Decoder_one_hot_0D <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and not AMuxHw_Decoder_old_id_0));
 
-AMuxHw_Decoder_one_hot_1D <= ((not AMuxHw_Decoder_old_id_1 and not mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0));
+AMuxHw_Decoder_one_hot_1D <= ((not AMuxHw_Decoder_old_id_1 and not AMuxCtrlW_1 and AMuxCtrlW_0 and AMuxHw_Decoder_old_id_0));
 
-AMuxHw_Decoder_one_hot_2D <= ((not AMuxHw_Decoder_old_id_0 and not mywire_1_0 and AMuxHw_Decoder_old_id_1 and mywire_1_1));
+AMuxHw_Decoder_one_hot_2D <= ((not AMuxCtrlW_0 and not AMuxHw_Decoder_old_id_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1));
 
-AMuxHw_Decoder_one_hot_3D <= ((AMuxHw_Decoder_old_id_1 and mywire_1_1 and AMuxHw_Decoder_old_id_0 and mywire_1_0));
+AMuxHw_Decoder_one_hot_3D <= ((AMuxCtrlW_0 and AMuxHw_Decoder_old_id_1 and AMuxCtrlW_1 and AMuxHw_Decoder_old_id_0));
+
+Net_1328 <= ((eos and AMuxCtrlW_0 and AMuxCtrlW_1));
+
+Net_1324 <= ((not AMuxCtrlW_0 and eos and AMuxCtrlW_1));
+
+Net_1320 <= ((not AMuxCtrlW_1 and eos and AMuxCtrlW_0));
+
+Net_1308 <= ((not AMuxCtrlW_0 and not AMuxCtrlW_1 and eos));
 
 GREEN_PIN:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -809,10 +831,10 @@ RED_PIN:cy_mxs40_gpio_v1_0
 		vminus=>\ADC:muxoutMinus\,
 		vref=>\ADC:vref\,
 		ext_vref=>\ADC:Net_408\,
-		dsi_sar_sample_done=>Net_1084,
+		dsi_sar_sample_done=>sdone,
 		dsi_sar_chan_id_valid=>Net_573,
 		dsi_sar_data_valid=>Net_575,
-		tr_sar_out=>Net_741,
+		tr_sar_out=>eos,
 		dsi_sar_data=>(Net_576_11, Net_576_10, Net_576_9, Net_576_8,
 			Net_576_7, Net_576_6, Net_576_5, Net_576_4,
 			Net_576_3, Net_576_2, Net_576_1, Net_576_0),
@@ -2088,22 +2110,22 @@ D_1:cy_annotation_universal_v1_0
 	GENERIC MAP(comp_name=>"LED_v1_0",
 		port_names=>"A, K",
 		width=>2)
-	PORT MAP(connect=>(Net_590, Net_585));
+	PORT MAP(connect=>(Net_1204, Net_585));
 D_2:cy_annotation_universal_v1_0
 	GENERIC MAP(comp_name=>"LED_v1_0",
 		port_names=>"A, K",
 		width=>2)
-	PORT MAP(connect=>(Net_590, Net_587));
+	PORT MAP(connect=>(Net_1204, Net_587));
 D_3:cy_annotation_universal_v1_0
 	GENERIC MAP(comp_name=>"LED_v1_0",
 		port_names=>"A, K",
 		width=>2)
-	PORT MAP(connect=>(Net_590, Net_589));
+	PORT MAP(connect=>(Net_1204, Net_589));
 PWR_1:cy_annotation_universal_v1_0
 	GENERIC MAP(comp_name=>"Power_v1_0",
 		port_names=>"T1",
 		width=>1)
-	PORT MAP(connect=>Net_590);
+	PORT MAP(connect=>Net_1204);
 R_1:cy_annotation_universal_v1_0
 	GENERIC MAP(comp_name=>"Resistor_v1_0",
 		port_names=>"T1, T2",
@@ -2251,24 +2273,18 @@ O_3:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>16,
 		exact_width=>'0')
-	PORT MAP(clock=>Net_1062,
+	PORT MAP(clock=>Net_1273,
 		capture=>zero,
 		count=>one,
-		reload=>Net_1054,
+		reload=>Net_1261,
 		stop=>zero,
 		start=>zero,
-		tr_underflow=>Net_1049,
+		tr_underflow=>Net_1123,
 		tr_compare_match=>Net_1061,
-		tr_overflow=>Net_1060,
+		tr_overflow=>Net_1122,
 		line_compl=>\ADCSOCCounter:Net_1\,
 		line=>\ADCSOCCounter:Net_2\,
-		interrupt=>Net_880);
-\ADCDMA:DW\:cy_mxs40_dw_v1_0
-	GENERIC MAP(cy_registers=>"",
-		priority=>"11")
-	PORT MAP(tr_in=>Net_1084,
-		tr_out=>Net_1086,
-		interrupt=>Net_1092);
+		interrupt=>Net_1121);
 O_7:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
 		width=>1,
@@ -2321,7 +2337,7 @@ AMuxHw:cy_psoc3_amux_v1_0
 	PORT MAP(reset=>zero,
 		clock=>Net_1063,
 		control=>(\AMuxCtrl:control_7\, \AMuxCtrl:control_6\, \AMuxCtrl:control_5\, \AMuxCtrl:control_4\,
-			\AMuxCtrl:control_3\, Net_1054, mywire_1_1, mywire_1_0));
+			\AMuxCtrl:control_3\, Net_1261, AMuxCtrlW_1, AMuxCtrlW_0));
 Clock_2:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"874dd4a2-b109-4abc-8392-f05c47619f09",
@@ -2358,7 +2374,7 @@ O_4:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_1084,
+		y=>sdone,
 		fb=>(tmpFB_0__O_4_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__O_4_net_0),
@@ -2390,7 +2406,7 @@ O_5:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_741,
+		y=>eos,
 		fb=>(tmpFB_0__O_5_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__O_5_net_0),
@@ -2422,7 +2438,7 @@ O_6:cy_mxs40_gpio_v1_0
 		use_annotation=>"0,0",
 		hotswap_needed=>"0,0")
 	PORT MAP(oe=>(one, one),
-		y=>(mywire_1_1, mywire_1_0),
+		y=>(AMuxCtrlW_1, AMuxCtrlW_0),
 		fb=>(tmpFB_1__O_6_net_1, tmpFB_1__O_6_net_0),
 		analog=>(open, open),
 		io=>(tmpIO_1__O_6_net_1, tmpIO_1__O_6_net_0),
@@ -2454,7 +2470,7 @@ O_8:cy_mxs40_gpio_v1_0
 		use_annotation=>"0",
 		hotswap_needed=>"0")
 	PORT MAP(oe=>(one),
-		y=>Net_1054,
+		y=>Net_1261,
 		fb=>(tmpFB_0__O_8_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__O_8_net_0),
@@ -2468,7 +2484,7 @@ ADCCounterClk:cy_clock_v1_0
 		period=>"20000000",
 		is_direct=>'0',
 		is_digital=>'0')
-	PORT MAP(clock_out=>Net_1062,
+	PORT MAP(clock_out=>Net_1273,
 		dig_domain_out=>open);
 O_9:cy_mxs40_gpio_v1_0
 	GENERIC MAP(cy_registers=>"",
@@ -2502,17 +2518,56 @@ O_9:cy_mxs40_gpio_v1_0
 		io=>(tmpIO_0__O_9_net_0),
 		annotation=>(open),
 		siovref=>(tmpSIOVREF__O_9_net_0));
-ADC_DMA_INT:cy_mxs40_isr_v1_0
+ADC_DMA_INT_0:cy_mxs40_isr_v1_0
 	GENERIC MAP(cy_registers=>"",
 		deepsleep_required=>'0',
 		int_type=>"10")
-	PORT MAP(int_signal=>Net_1092);
+	PORT MAP(int_signal=>Net_1311);
+\ADCDMA_0:DW\:cy_mxs40_dw_v1_0
+	GENERIC MAP(cy_registers=>"",
+		priority=>"11")
+	PORT MAP(tr_in=>Net_1308,
+		tr_out=>Net_1309,
+		interrupt=>Net_1311);
+\ADCDMA_1:DW\:cy_mxs40_dw_v1_0
+	GENERIC MAP(cy_registers=>"",
+		priority=>"11")
+	PORT MAP(tr_in=>Net_1320,
+		tr_out=>Net_1321,
+		interrupt=>Net_1334);
+ADC_DMA_INT_1:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>Net_1334);
+\ADCDMA_2:DW\:cy_mxs40_dw_v1_0
+	GENERIC MAP(cy_registers=>"",
+		priority=>"11")
+	PORT MAP(tr_in=>Net_1324,
+		tr_out=>Net_1325,
+		interrupt=>Net_1327);
+ADC_DMA_INT_2:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>Net_1327);
+\ADCDMA_3:DW\:cy_mxs40_dw_v1_0
+	GENERIC MAP(cy_registers=>"",
+		priority=>"11")
+	PORT MAP(tr_in=>Net_1328,
+		tr_out=>Net_1329,
+		interrupt=>Net_1331);
+ADC_DMA_INT_3:cy_mxs40_isr_v1_0
+	GENERIC MAP(cy_registers=>"",
+		deepsleep_required=>'0',
+		int_type=>"10")
+	PORT MAP(int_signal=>Net_1331);
 AMuxHw_Decoder_old_id_1:cy_dff
-	PORT MAP(d=>mywire_1_1,
+	PORT MAP(d=>AMuxCtrlW_1,
 		clk=>Net_1063,
 		q=>AMuxHw_Decoder_old_id_1);
 AMuxHw_Decoder_old_id_0:cy_dff
-	PORT MAP(d=>mywire_1_0,
+	PORT MAP(d=>AMuxCtrlW_0,
 		clk=>Net_1063,
 		q=>AMuxHw_Decoder_old_id_0);
 AMuxHw_Decoder_one_hot_0:cy_dff

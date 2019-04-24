@@ -26,12 +26,18 @@
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\mI2C.h" value="HEADER;;;;;mI2C" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCSOCCounter.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCSOCCounter" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCSOCCounter.h" value="HEADER;;;;;ADCSOCCounter" />
-  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCDMA" />
-  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA.h" value="HEADER;;;;;ADCDMA" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\AMuxCtrl.h" value="HEADER;;;;;AMuxCtrl" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\AMuxCtrl.c" value="SOURCE_C;CortexM0p,CortexM4;;;;AMuxCtrl" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\AMuxCtrl_PM.c" value="SOURCE_C;CortexM0p,CortexM4;;;;AMuxCtrl" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCCounterClk.h" value="HEADER;;;;;ADCCounterClk" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_0.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCDMA_0" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_0.h" value="HEADER;;;;;ADCDMA_0" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_1.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCDMA_1" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_1.h" value="HEADER;;;;;ADCDMA_1" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_2.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCDMA_2" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_2.h" value="HEADER;;;;;ADCDMA_2" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_3.c" value="SOURCE_C;CortexM0p,CortexM4;;;;ADCDMA_3" />
+  <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADCDMA_3.h" value="HEADER;;;;;ADCDMA_3" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\UART_SCBCLK.h" value="HEADER;;;;;UART_SCBCLK" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\ADC_intSarClock.h" value="HEADER;;;;;ADC_intSarClock" />
   <file name="C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\codegentemp\mI2C_SCBCLK.h" value="HEADER;;;;;mI2C_SCBCLK" />

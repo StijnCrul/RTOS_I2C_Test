@@ -86,8 +86,168 @@ void ADCSampleTask(void * pvChannel){
     }
 }
 
-void ADCDMAInit(void){
-    //todo
+void configureDMA0(){
+    cy_en_dma_status_t dma_init_status;
+	cy_stc_dma_channel_config_t channelConfig;	
+    
+    // Initialize descriptor 1
+    dma_init_status = Cy_DMA_Descriptor_Init(&ADCDMA_0_Descriptor_1, &ADCDMA_0_Descriptor_1_config);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Initialize the DMA channel 
+    channelConfig.descriptor  = &ADCDMA_0_Descriptor_1;
+    channelConfig.preemptable = ADCDMA_0_PREEMPTABLE;
+    channelConfig.priority    = ADCDMA_0_PRIORITY;
+    channelConfig.enable      = false;
+    dma_init_status = Cy_DMA_Channel_Init(ADCDMA_0_HW, ADCDMA_0_DW_CHANNEL, &channelConfig);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Set source and destination address for DMA transfer
+    Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_0_Descriptor_1, (void *) 0x411D0180); // hardcoded sar adc result register: do something better
+    Cy_DMA_Descriptor_SetDstAddress(&ADCDMA_0_Descriptor_1, &buffer0);
+    
+    // Enable DMA interrupt
+    Cy_SysInt_Init(&ADC_DMA_INT_0_cfg, &ADCDMA0Complete);
+    NVIC_EnableIRQ(ADC_DMA_INT_0_cfg.intrSrc);
+    Cy_DMA_Channel_SetInterruptMask(ADCDMA_0_HW, ADCDMA_0_DW_CHANNEL, CY_DMA_INTR_MASK);
+    
+    Cy_DMA_Channel_Enable(ADCDMA_0_HW, ADCDMA_0_DW_CHANNEL);
+    Cy_DMA_Enable(ADCDMA_0_HW);
+
+}
+
+void ADCDMA0Complete(){
+    Cy_DMA_Channel_ClearInterrupt(ADCDMA_0_HW, ADCDMA_0_DW_CHANNEL);
+    //Do something one DMA is full
+}
+
+void configureDMA1(){
+    cy_en_dma_status_t dma_init_status;
+	cy_stc_dma_channel_config_t channelConfig;	
+    
+    // Initialize descriptor 1
+    dma_init_status = Cy_DMA_Descriptor_Init(&ADCDMA_1_Descriptor_1, &ADCDMA_1_Descriptor_1_config);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Initialize the DMA channel 
+    channelConfig.descriptor  = &ADCDMA_1_Descriptor_1;
+    channelConfig.preemptable = ADCDMA_1_PREEMPTABLE;
+    channelConfig.priority    = ADCDMA_1_PRIORITY;
+    channelConfig.enable      = false;
+    dma_init_status = Cy_DMA_Channel_Init(ADCDMA_1_HW, ADCDMA_1_DW_CHANNEL, &channelConfig);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Set source and destination address for DMA transfer
+    Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_1_Descriptor_1, (void *) 0x411D0180); // hardcoded sar adc result register: do something better
+    Cy_DMA_Descriptor_SetDstAddress(&ADCDMA_1_Descriptor_1, &buffer1);
+    
+    // Enable DMA interrupt
+    Cy_SysInt_Init(&ADC_DMA_INT_1_cfg, &ADCDMA1Complete);
+    NVIC_EnableIRQ(ADC_DMA_INT_1_cfg.intrSrc);
+    Cy_DMA_Channel_SetInterruptMask(ADCDMA_1_HW, ADCDMA_1_DW_CHANNEL, CY_DMA_INTR_MASK);
+    
+    Cy_DMA_Channel_Enable(ADCDMA_1_HW, ADCDMA_1_DW_CHANNEL);
+    Cy_DMA_Enable(ADCDMA_1_HW);
+
+}
+
+void ADCDMA1Complete(){
+    Cy_DMA_Channel_ClearInterrupt(ADCDMA_1_HW, ADCDMA_1_DW_CHANNEL);
+    //Do something one DMA is full
+}
+
+void configureDMA2(){
+    cy_en_dma_status_t dma_init_status;
+	cy_stc_dma_channel_config_t channelConfig;	
+    
+    // Initialize descriptor 1
+    dma_init_status = Cy_DMA_Descriptor_Init(&ADCDMA_2_Descriptor_1, &ADCDMA_2_Descriptor_1_config);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Initialize the DMA channel 
+    channelConfig.descriptor  = &ADCDMA_2_Descriptor_1;
+    channelConfig.preemptable = ADCDMA_2_PREEMPTABLE;
+    channelConfig.priority    = ADCDMA_2_PRIORITY;
+    channelConfig.enable      = false;
+    dma_init_status = Cy_DMA_Channel_Init(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL, &channelConfig);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Set source and destination address for DMA transfer
+    Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_2_Descriptor_1, (void *) 0x411D0180); // hardcoded sar adc result register: do something better
+    Cy_DMA_Descriptor_SetDstAddress(&ADCDMA_2_Descriptor_1, &buffer2);
+    
+    // Enable DMA interrupt
+    Cy_SysInt_Init(&ADC_DMA_INT_2_cfg, &ADCDMA2Complete);
+    NVIC_EnableIRQ(ADC_DMA_INT_2_cfg.intrSrc);
+    Cy_DMA_Channel_SetInterruptMask(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL, CY_DMA_INTR_MASK);
+    
+    Cy_DMA_Channel_Enable(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL);
+    Cy_DMA_Enable(ADCDMA_2_HW);
+
+}
+
+void ADCDMA2Complete(){
+    Cy_DMA_Channel_ClearInterrupt(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL);
+    //Do something one DMA is full
+}
+
+void configureDMA3(){
+    cy_en_dma_status_t dma_init_status;
+	cy_stc_dma_channel_config_t channelConfig;	
+    
+    // Initialize descriptor 1
+    dma_init_status = Cy_DMA_Descriptor_Init(&ADCDMA_3_Descriptor_1, &ADCDMA_3_Descriptor_1_config);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Initialize the DMA channel 
+    channelConfig.descriptor  = &ADCDMA_3_Descriptor_1;
+    channelConfig.preemptable = ADCDMA_3_PREEMPTABLE;
+    channelConfig.priority    = ADCDMA_3_PRIORITY;
+    channelConfig.enable      = false;
+    dma_init_status = Cy_DMA_Channel_Init(ADCDMA_3_HW, ADCDMA_3_DW_CHANNEL, &channelConfig);
+	if(dma_init_status!=CY_DMA_SUCCESS){
+        handle_error();
+    }
+    
+    // Set source and destination address for DMA transfer
+    Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_3_Descriptor_1, (void *) 0x411D0180); // hardcoded sar adc result register: do something better
+    Cy_DMA_Descriptor_SetDstAddress(&ADCDMA_3_Descriptor_1, &buffer3);
+    
+    // Enable DMA interrupt
+    Cy_SysInt_Init(&ADC_DMA_INT_3_cfg, &ADCDMA3Complete);
+    NVIC_EnableIRQ(ADC_DMA_INT_3_cfg.intrSrc);
+    Cy_DMA_Channel_SetInterruptMask(ADCDMA_3_HW, ADCDMA_3_DW_CHANNEL, CY_DMA_INTR_MASK);
+    
+    Cy_DMA_Channel_Enable(ADCDMA_3_HW, ADCDMA_3_DW_CHANNEL);
+    Cy_DMA_Enable(ADCDMA_3_HW);
+
+}
+
+void ADCDMA3Complete(){
+    Cy_DMA_Channel_ClearInterrupt(ADCDMA_3_HW, ADCDMA_3_DW_CHANNEL);
+    //Do something one DMA is full
+}
+
+void handle_error(void){    
+     // Disable all interrupts
+    __disable_irq();
+	
+    // Do something better
+    while(1u) {}
 }
 
 void ADC_ISR_Callback(void){
