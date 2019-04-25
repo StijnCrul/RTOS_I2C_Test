@@ -29,17 +29,26 @@
 #include "analog.h"
 #include "serial.h"
 
+// Some constants for fast testing
+#define RED_PERIOD      10000
+#define BLUE_PERIOD     25000
+#define GREEN_PERIOD    50000
+#define CHANNEL0_PERIOD 8
+#define CHANNEL1_PERIOD 8
+#define CHANNEL2_PERIOD 8
+#define CHANNEL3_PERIOD 8
+
 // Initialization of all RTOS tasks and variables
 // Structs for is alive blink
-static PIN pin0 = {RED_PIN_PORT, RED_PIN_NUM, 10000};
-static PIN pin1 = {BLUE_PIN_PORT, BLUE_PIN_NUM, 25000};
-static PIN pin2 = {GREEN_PIN_PORT, GREEN_PIN_NUM, 50000};
+static PIN pin0 = {RED_PIN_PORT, RED_PIN_NUM, RED_PERIOD};
+static PIN pin1 = {BLUE_PIN_PORT, BLUE_PIN_NUM, BLUE_PERIOD};
+static PIN pin2 = {GREEN_PIN_PORT, GREEN_PIN_NUM, GREEN_PERIOD};
 
 // Structs for different ADC channels
-static CH channel0 = {O_0_PORT, O_0_NUM, 10, 0};
-static CH channel1 = {O_1_PORT, O_1_NUM, 10, 1};
-static CH channel2 = {O_2_PORT, O_2_NUM, 10, 2};
-static CH channel3 = {O_3_PORT, O_3_NUM, 10, 3};
+static CH channel0 = {O_0_PORT, O_0_NUM, CHANNEL0_PERIOD, 0};
+static CH channel1 = {O_1_PORT, O_1_NUM, CHANNEL1_PERIOD, 1};
+static CH channel2 = {O_2_PORT, O_2_NUM, CHANNEL2_PERIOD, 2};
+static CH channel3 = {O_3_PORT, O_3_NUM, CHANNEL3_PERIOD, 3};
 
 // Structure for master transfer configuration
 cy_stc_scb_i2c_master_xfer_config_t masterTransferCfg ={
