@@ -77,9 +77,9 @@ int main(void){
     configureDMA3();
     
     // Create all the tasks
-    xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
+    /*xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
     xTaskCreate(BlinkTask, "BlinkTask2", 100, (void*) &pin1, 0, NULL);
-    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);
+    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);*/
     
     //xTaskCreate(ADCTask, "ADCTask", 100, NULL, 2, NULL);  
     //xTaskCreate(UARTTask, "UARTTask", 100, NULL, 5, NULL);
@@ -90,7 +90,7 @@ int main(void){
     xTaskCreate(ADCSampleTask, "ADCSampleTask2", 100, (void*) &channel2, 3, NULL);
     xTaskCreate(ADCSampleTask, "ADCSampleTask3", 100, (void*) &channel3, 2, NULL);
    
-    //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
+    xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
     vTaskStartScheduler(); 
     
     for(;;);

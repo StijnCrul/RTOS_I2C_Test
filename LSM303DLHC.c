@@ -82,12 +82,13 @@ void acceleroTask(void *masterTransfer){
     if (TRANSFER_CMPLT == initAccel(masterTransferCfg, 0x97)){
         for(;;){
             vTaskDelayUntil(&xLastWakeTime, xFrequency);
-            if(TRANSFER_CMPLT == readAccel(masterTransferCfg)){
+            readAccel(masterTransferCfg);
+            //if(TRANSFER_CMPLT == readAccel(masterTransferCfg)){
                 //Todo do something with accelerometer data
                 //accelData.x = (float)((int16_t)((masterTransferCfg.buffer[1] << 8) | masterTransferCfg.buffer[0]) >> 4)*LSM303ACCEL_MG_LSB*GRAVITY_STANDARD;
                 //accelData.y = (float)((int16_t)((masterTransferCfg.buffer[3] << 8) | masterTransferCfg.buffer[2]) >> 4)*LSM303ACCEL_MG_LSB*GRAVITY_STANDARD;
                 //accelData.z = (float)((int16_t)((masterTransferCfg.buffer[5] << 8) | masterTransferCfg.buffer[4]) >> 4)*LSM303ACCEL_MG_LSB*GRAVITY_STANDARD;
-            }
+            //}
         }
     }
 }
