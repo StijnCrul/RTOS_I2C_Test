@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
   27:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
   28:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** /* Standard includes. */
   29:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** #include <stdlib.h>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 2
 
 
   30:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
   84:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c ****  * wait condition is met if any of the bits set in uxBitsToWait for are also set
   85:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c ****  * in uxCurrentEventBits.
   86:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c ****  */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 3
 
 
   87:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** static BaseType_t prvTestWaitCondition( const EventBits_t uxCurrentEventBits, const EventBits_t uxB
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  141:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  142:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	EventGroupHandle_t xEventGroupCreate( void )
  143:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	{
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 4
 
 
   29              		.loc 1 143 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  168:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		}
  169:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  170:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		return ( EventGroupHandle_t ) pxEventBits;
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 5
 
 
   59              		.loc 1 170 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  182:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  183:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
  102              		.loc 1 183 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 6
 
 
  103 0016 7B68     		ldr	r3, [r7, #4]
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
   48:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portFLOAT		float
   49:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portDOUBLE		double
   50:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portLONG		long
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 7
 
 
   51:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portSHORT		short
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  105:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** 
  106:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** /*-----------------------------------------------------------*/
  107:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 8
 
 
  108:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** /* Task function macros as described on the FreeRTOS.org WEB site.  These are
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  115 0028 BFF36F8F 		isb														
  116 002c BFF34F8F 		dsb														
  117              	
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 9
 
 
  118              	@ 0 "" 2
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  168              	.L11:
  169              		.loc 1 187 0 discriminator 6
  170 0064 002B     		cmp	r3, #0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 10
 
 
  171 0066 09D1     		bne	.L12
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  212 009e 3A6A     		ldr	r2, [r7, #32]
  213 00a0 BB68     		ldr	r3, [r7, #8]
  214 00a2 1343     		orrs	r3, r3, r2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 11
 
 
  215 00a4 FB62     		str	r3, [r7, #44]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  224:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			}
  225:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			else
  226:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			{
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 12
 
 
  227:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 				/* The rendezvous bits were not set, but no block time was
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  248:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		point either the required bits were set or the block time expired.  If
  249:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		the required bits were set they will have been stored in the task's
  250:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		event list item, and they should now be retrieved then cleared. */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 13
 
 
  251:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		uxReturn = uxTaskResetEventItemValue();
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  310 0138 FFF7FEFF 		bl	vPortExitCritical
  274:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  275:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			xTimeoutOccurred = pdTRUE;
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 14
 
 
  311              		.loc 1 275 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  296:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** EventBits_t xEventGroupWaitBits( EventGroupHandle_t xEventGroup, const EventBits_t uxBitsToWaitFor,
  297:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** {
  345              		.loc 1 297 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 15
 
 
  346              		.cfi_startproc
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  392 0032 FEE7     		b	.L26
  393              	.L25:
  306:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 16
 
 
  394              		.loc 1 306 0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  444 006c FFF7FEFF 		bl	xTaskGetSchedulerState
  445 0070 0346     		mov	r3, r0
  446 0072 002B     		cmp	r3, #0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 17
 
 
  447 0074 02D1     		bne	.L31
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  492 00a6 B968     		ldr	r1, [r7, #8]
  493 00a8 F86A     		ldr	r0, [r7, #44]
  494 00aa FFF7FEFF 		bl	prvTestWaitCondition
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 18
 
 
  495 00ae B862     		str	r0, [r7, #40]
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  526 00dc FB63     		str	r3, [r7, #60]
  343:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			xTimeoutOccurred = pdTRUE;
  527              		.loc 1 343 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 19
 
 
  528 00de 0123     		movs	r3, #1
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  553 0104 BA68     		ldr	r2, [r7, #8]
  554 0106 BB6B     		ldr	r3, [r7, #56]
  555 0108 1343     		orrs	r3, r3, r2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 20
 
 
  556 010a BA6C     		ldr	r2, [r7, #72]
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  394:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  395:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		/* The task blocked to wait for its required bits to be set - at this
  396:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		point either the required bits were set or the block time expired.  If
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 21
 
 
  397:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		the required bits were set they will have been stored in the task's
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  416:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 					else
  417:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 					{
  418:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 						mtCOVERAGE_TEST_MARKER();
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 22
 
 
  419:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 					}
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  653              		.align	2
  654              		.global	xEventGroupClearBits
  655              		.thumb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 23
 
 
  656              		.thumb_func
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  700              	.L49:
  454:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	configASSERT( ( uxBitsToClear & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
  701              		.loc 1 454 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 24
 
 
  702 0028 3B68     		ldr	r3, [r7]
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  469:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	return uxReturn;
  742              		.loc 1 469 0
  743 0062 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 25
 
 
  470:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** }
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  776              		.loc 1 491 0
  777 0008 7B68     		ldr	r3, [r7, #4]
  778 000a FB61     		str	r3, [r7, #28]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 26
 
 
  779              	.LBB50:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  496:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		uxReturn = pxEventBits->uxEventBits;
  801              		.loc 1 496 0
  802 0028 FB69     		ldr	r3, [r7, #28]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 27
 
 
  803 002a 1B68     		ldr	r3, [r3]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  505:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** {
  843              		.loc 1 505 0
  844              		.cfi_startproc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 28
 
 
  845              		@ args = 0, pretend = 0, frame = 56
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  888 002e FEE7     		b	.L59
  889              	.L58:
  516:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 	configASSERT( ( uxBitsToSet & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 29
 
 
  890              		.loc 1 516 0
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  932 0068 3B68     		ldr	r3, [r7]
  933 006a 1A43     		orrs	r2, r2, r3
  934 006c BB6A     		ldr	r3, [r7, #40]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 30
 
 
  935 006e 1A60     		str	r2, [r3]
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  971 00a8 0123     		movs	r3, #1
  972 00aa FB62     		str	r3, [r7, #44]
  973 00ac 08E0     		b	.L64
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 31
 
 
  974              	.L63:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  572:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 				}
  573:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 
  574:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 				/* Store the actual event flag value in the task's event list
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 32
 
 
  575:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 				item before removing the task from the event list.  The
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1034 010c 3837     		adds	r7, r7, #56
  1035              		.cfi_def_cfa_offset 8
  1036 010e BD46     		mov	sp, r7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 33
 
 
  1037              		.cfi_def_cfa_register 13
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  611:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			configASSERT( pxTasksWaitingForBits->xListEnd.pxNext != ( const ListItem_t * ) &( pxTasksWaiting
  1076              		.loc 1 611 0
  1077 0018 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 34
 
 
  1078 001a DA68     		ldr	r2, [r3, #12]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  624:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			dynamically, so check before attempting to free the memory. */
  625:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			if( pxEventBits->ucStaticallyAllocated == ( uint8_t ) pdFALSE )
  626:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			{
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 35
 
 
  627:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 				vPortFree( pxEventBits );
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1154 000a 3968     		ldr	r1, [r7]
  1155 000c 7868     		ldr	r0, [r7, #4]
  1156 000e FFF7FEFF 		bl	xEventGroupSetBits
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 36
 
 
  645:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** }
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1202              		.cfi_endproc
  1203              	.LFE144:
  1204              		.size	vEventGroupClearBitsCallback, .-vEventGroupClearBitsCallback
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 37
 
 
  1205 001a 00BF     		.section	.text.prvTestWaitCondition,"ax",%progbits
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  668:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		else
  669:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		{
  670:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 			mtCOVERAGE_TEST_MARKER();
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 38
 
 
  671:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source/event_groups.c **** 		}
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1281 0000 AD080000 		.4byte	0x8ad
  1282 0004 0400     		.2byte	0x4
  1283 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 39
 
 
  1284 000a 04       		.byte	0x4
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1338 0076 7A000000 		.4byte	0x7a
  1339 007a 02       		.uleb128 0x2
  1340 007b 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 40
 
 
  1341 007c 07       		.byte	0x7
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1395 00e5 26010000 		.4byte	0x126
  1396 00e9 07       		.uleb128 0x7
  1397 00ea CF020000 		.4byte	.LASF21
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 41
 
 
  1398 00ee 05       		.byte	0x5
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1452 015a 04       		.byte	0x4
  1453 015b 07       		.uleb128 0x7
  1454 015c 9A000000 		.4byte	.LASF23
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 42
 
 
  1455 0160 05       		.byte	0x5
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1509 01cc D2000000 		.4byte	0xd2
  1510 01d0 06       		.uleb128 0x6
  1511 01d1 AE020000 		.4byte	.LASF37
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 43
 
 
  1512 01d5 18       		.byte	0x18
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1566 0241 38030000 		.4byte	.LASF44
  1567 0245 02       		.byte	0x2
  1568 0246 AA       		.byte	0xaa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 44
 
 
  1569 0247 A3000000 		.4byte	0xa3
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1623 02b9 50       		.sleb128 -48
  1624 02ba 10       		.uleb128 0x10
  1625 02bb 3D010000 		.4byte	.LASF49
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 45
 
 
  1626 02bf 01       		.byte	0x1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1680 031c 11       		.uleb128 0x11
  1681 031d 00020000 		.4byte	0x200
  1682 0321 20000000 		.4byte	.LBB31
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 46
 
 
  1683 0325 12000000 		.4byte	.LBE31-.LBB31
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1737 0398 C5010000 		.4byte	0x1c5
  1738 039c 00000000 		.4byte	.LFB138
  1739 03a0 94010000 		.4byte	.LFE138-.LFB138
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 47
 
 
  1740 03a4 01       		.uleb128 0x1
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1794 040c 2B01     		.2byte	0x12b
  1795 040e C5010000 		.4byte	0x1c5
  1796 0412 02       		.uleb128 0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 48
 
 
  1797 0413 91       		.byte	0x91
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1851 0481 12000000 		.4byte	.LBE39-.LBB39
  1852 0485 01       		.byte	0x1
  1853 0486 3201     		.2byte	0x132
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 49
 
 
  1854 0488 9F040000 		.4byte	0x49f
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1908 0503 91       		.byte	0x91
  1909 0504 64       		.sleb128 -28
  1910 0505 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 50
 
 
  1911 0506 00       		.byte	0
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  1965 057b 12000000 		.4byte	.LBE47-.LBB47
  1966 057f 13       		.uleb128 0x13
  1967 0580 0C020000 		.4byte	0x20c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 51
 
 
  1968 0584 02       		.uleb128 0x2
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2022 05f2 91       		.byte	0x91
  2023 05f3 74       		.sleb128 -12
  2024 05f4 18       		.uleb128 0x18
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 52
 
 
  2025 05f5 A7040000 		.4byte	.LASF53
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2079 066b 01       		.byte	0x1
  2080 066c F801     		.2byte	0x1f8
  2081 066e BA010000 		.4byte	0x1ba
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 53
 
 
  2082 0672 02       		.uleb128 0x2
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2136 06d5 FD01     		.2byte	0x1fd
  2137 06d7 C5010000 		.4byte	0x1c5
  2138 06db 02       		.uleb128 0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 54
 
 
  2139 06dc 91       		.byte	0x91
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2193 0750 02       		.uleb128 0x2
  2194 0751 91       		.byte	0x91
  2195 0752 50       		.sleb128 -48
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 55
 
 
  2196 0753 00       		.byte	0
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2250 07c4 0C020000 		.4byte	0x20c
  2251 07c8 02       		.uleb128 0x2
  2252 07c9 91       		.byte	0x91
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 56
 
 
  2253 07ca 6C       		.sleb128 -20
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2307 0838 17       		.uleb128 0x17
  2308 0839 98030000 		.4byte	.LASF78
  2309 083d 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 57
 
 
  2310 083e 8A02     		.2byte	0x28a
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2364 08ab 09       		.uleb128 0x9
  2365 08ac 98000000 		.4byte	0x98
  2366 08b0 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 58
 
 
  2367              		.section	.debug_abbrev,"",%progbits
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2421 0034 00       		.byte	0
  2422 0035 00       		.byte	0
  2423 0036 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 59
 
 
  2424 0037 0F       		.uleb128 0xf
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2478 006d 01       		.byte	0x1
  2479 006e 03       		.uleb128 0x3
  2480 006f 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 60
 
 
  2481 0070 3A       		.uleb128 0x3a
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2535 00a6 13       		.uleb128 0x13
  2536 00a7 00       		.byte	0
  2537 00a8 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 61
 
 
  2538 00a9 0E       		.uleb128 0xe
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2592 00e0 18       		.uleb128 0x18
  2593 00e1 00       		.byte	0
  2594 00e2 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 62
 
 
  2595 00e3 11       		.uleb128 0x11
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2649 0119 13       		.uleb128 0x13
  2650 011a 00       		.byte	0
  2651 011b 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 63
 
 
  2652 011c 16       		.uleb128 0x16
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2706 0153 18       		.uleb128 0x18
  2707 0154 00       		.byte	0
  2708 0155 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 64
 
 
  2709 0156 19       		.uleb128 0x19
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2763 018d 19       		.uleb128 0x19
  2764 018e 01       		.uleb128 0x1
  2765 018f 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 65
 
 
  2766 0190 00       		.byte	0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2820 01c7 18       		.uleb128 0x18
  2821 01c8 9742     		.uleb128 0x2117
  2822 01ca 19       		.uleb128 0x19
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 66
 
 
  2823 01cb 01       		.uleb128 0x1
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2877 0000 00000000 		.4byte	.LFB136
  2878 0004 2E000000 		.4byte	.LFE136
  2879 0008 00000000 		.4byte	.LFB137
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 67
 
 
  2880 000c 58010000 		.4byte	.LFE137
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2912      416C6C42 
  2912      69747300 
  2913              	.LASF68:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 68
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 68
 
 
  2914 007d 70784C69 		.ascii	"pxListEnd\000"
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2938      69746564 
  2938      466F7200 
  2939              	.LASF73:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 69
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 69
 
 
  2940 011f 76457665 		.ascii	"vEventGroupDelete\000"
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2960      20726576 
  2960      6973696F 
  2960      6E203233 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 70
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 70
 
 
  2960      37373135 
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  2982      5F7400
  2983              	.LASF62:
  2984 0315 78457665 		.ascii	"xEventGroupClearBits\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 71
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 71
 
 
  2984      6E744772 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  3006      5F7400
  3007              	.LASF25:
  3008 03bc 7076436F 		.ascii	"pvContainer\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 72
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 72
 
 
  3008      6E746169 
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  3030      6B56616C 
  3030      756500
  3031              	.LASF59:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 73
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 73
 
 
  3032 046c 7578436F 		.ascii	"uxControlBits\000"
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  3054 0513 784D6174 		.ascii	"xMatchFound\000"
  3054      6368466F 
  3054      756E6400 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 74
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 74
 
 
  3055              	.LASF47:
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 1
  3076      77424153 
  3076      45505249 
  3076      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\cccvhGnz.s 			page 75
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccLvvXS2.s 			page 75
 
 
  3077              	.LASF40:
