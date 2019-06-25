@@ -25,7 +25,7 @@
 #include "task.h"
     
     // CONSTANTS
-    #define BUFFER_SIZE 1024
+    #define BUFFER_SIZE 4
     
     // Struct for passing measurment variables to the RTOS task.
     typedef struct {
@@ -39,10 +39,10 @@
     static int16_t result;
     static uint8_t dataReady;
     
-    int32_t buffer0[BUFFER_SIZE];
-    int32_t buffer1[BUFFER_SIZE];
-    int32_t buffer2[BUFFER_SIZE];
-    int32_t buffer3[BUFFER_SIZE];
+    uint32_t buffer0[BUFFER_SIZE];
+    uint32_t buffer1[BUFFER_SIZE];
+    uint32_t buffer2[BUFFER_SIZE];
+    uint32_t buffer3[BUFFER_SIZE];
     
     // PROTOTYPING
     void initADC();

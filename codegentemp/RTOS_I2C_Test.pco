@@ -1,5 +1,5 @@
 # RTOS_I2C_Test
-# 2019-06-24 07:47:40Z
+# 2019-06-25 14:54:34Z
 
 dont_use_location BLE -1 -1 0
 dont_use_location p4blecell -1 -1 0
@@ -42,14 +42,16 @@ set_location "\mI2C:SCB\" SCB -1 -1 3
 set_location "\mI2C:SCB_IRQ\" interrupt -1 -1 44
 set_location "\ADCSOCCounter:TCPWM\" TCPWM -1 -1 0
 set_location "\AMuxCtrl:Sync:ctrl_reg\" 0 2 6
-set_location "ADC_DMA_INT_0" interrupt -1 -1 53
-set_location "\ADCDMA_0:DW\" drqcell -1 -1 3
-set_location "\ADCDMA_1:DW\" drqcell -1 -1 2
-set_location "ADC_DMA_INT_1" interrupt -1 -1 52
-set_location "\ADCDMA_2:DW\" drqcell -1 -1 1
-set_location "ADC_DMA_INT_2" interrupt -1 -1 51
-set_location "\ADCDMA_3:DW\" drqcell -1 -1 0
-set_location "ADC_DMA_INT_3" interrupt -1 -1 50
+set_location "ADC_DMA_INT_0" interrupt -1 -1 51
+set_location "\ADCDMA_0:DW\" drqcell -1 -1 1
+set_location "\ADCDMA_1:DW\" drqcell -1 -1 4
+set_location "ADC_DMA_INT_1" interrupt -1 -1 54
+set_location "\ADCDMA_2:DW\" drqcell -1 -1 3
+set_location "ADC_DMA_INT_2" interrupt -1 -1 53
+set_location "\ADCDMA_3:DW\" drqcell -1 -1 2
+set_location "ADC_DMA_INT_3" interrupt -1 -1 52
+set_location "\UARTDMA:DW\" drqcell -1 -1 0
+set_location "UART_DMA_INT" interrupt -1 -1 50
 set_location "AMuxHw_Decoder_old_id_1" 0 2 0 2
 set_location "AMuxHw_Decoder_old_id_0" 0 2 0 1
 set_location "AMuxHw_Decoder_one_hot_0" 0 2 0 0

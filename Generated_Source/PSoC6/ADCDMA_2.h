@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 #define ADCDMA_2_DW_BLOCK       (0u)
-#define ADCDMA_2_DW_CHANNEL     (1u)
+#define ADCDMA_2_DW_CHANNEL     (3u)
 #define ADCDMA_2_HW             (DW0)
 #define ADCDMA_2_INTR_MASK      (CY_DMA_INTR_MASK)
 

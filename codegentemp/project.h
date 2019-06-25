@@ -117,6 +117,7 @@
 #include "ADCDMA_1.h"
 #include "ADCDMA_2.h"
 #include "ADCDMA_3.h"
+#include "UARTDMA.h"
 #include "UART_SCBCLK.h"
 #include "ADC_intSarClock.h"
 #include "mI2C_SCBCLK.h"

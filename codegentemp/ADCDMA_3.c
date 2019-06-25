@@ -23,8 +23,8 @@ extern "C" {
 const cy_stc_dma_descriptor_config_t ADCDMA_3_Descriptor_1_config =
 {
     .retrigger       = CY_DMA_RETRIG_IM,
-    .interruptType   = CY_DMA_1ELEMENT,
-    .triggerOutType  = CY_DMA_1ELEMENT,
+    .interruptType   = CY_DMA_X_LOOP,
+    .triggerOutType  = CY_DMA_X_LOOP,
     .channelState    = CY_DMA_CHANNEL_ENABLED,
     .triggerInType   = CY_DMA_1ELEMENT,
     .dataSize        = CY_DMA_WORD,

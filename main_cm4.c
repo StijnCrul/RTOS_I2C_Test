@@ -20,6 +20,7 @@
  */
 
 #include "project.h"
+#include <stdio.h>
 #include "FreeRTOS.h"
 #include "task.h"
 #include "LSM303DLHC.h"
@@ -28,12 +29,13 @@
 #include "blink.h"
 #include "analog.h"
 #include "serial.h"
+#include "stdio.h"
 
 // Some constants for fast testing
 #define RED_PERIOD      10000
 #define BLUE_PERIOD     25000
 #define GREEN_PERIOD    50000
-#define CHANNEL0_PERIOD 8
+#define CHANNEL0_PERIOD 256
 #define CHANNEL1_PERIOD 8
 #define CHANNEL2_PERIOD 8
 #define CHANNEL3_PERIOD 8
@@ -64,8 +66,10 @@ int main(void){
     __enable_irq(); 
     
     // Configure communication interfaces
-    //UART_Start();
-    initI2C();
+    UART_Start();
+
+    printf("I am alive\r\n");
+    //initI2C();
     initADC();
     Cy_TCPWM_Counter_Init(ADCSOCCounter_HW, ADCSOCCounter_CNT_NUM, &ADCSOCCounter_config);
     Cy_TCPWM_Enable_Multiple(ADCSOCCounter_HW, ADCSOCCounter_CNT_MASK);
@@ -75,6 +79,7 @@ int main(void){
     configureDMA1();
     configureDMA2();
     configureDMA3();
+    configureUARTDMA();
     
     // Create all the tasks
     xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
@@ -82,16 +87,16 @@ int main(void){
     xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);
     
     //xTaskCreate(ADCTask, "ADCTask", 100, NULL, 2, NULL);  
-    //xTaskCreate(UARTTask, "UARTTask", 100, NULL, 5, NULL);
+    //xTaskCreate(UARTTask, "UARTTask", 100, NULL, 6, NULL);
     
     // Reduce priority for lower speeds
-    /*xTaskCreate(ADCSampleTask, "ADCSampleTask0", 100, (void*) &channel0, 5, NULL);
-    xTaskCreate(ADCSampleTask, "ADCSampleTask1", 100, (void*) &channel1, 4, NULL);
-    xTaskCreate(ADCSampleTask, "ADCSampleTask2", 100, (void*) &channel2, 3, NULL);
-    xTaskCreate(ADCSampleTask, "ADCSampleTask3", 100, (void*) &channel3, 2, NULL);*/
+    xTaskCreate(ADCSampleTask, "ADCSampleTask0", 100, (void*) &channel0, 5, NULL);
+    //xTaskCreate(ADCSampleTask, "ADCSampleTask1", 100, (void*) &channel1, 4, NULL);
+    //xTaskCreate(ADCSampleTask, "ADCSampleTask2", 100, (void*) &channel2, 3, NULL);
+    //xTaskCreate(ADCSampleTask, "ADCSampleTask3", 100, (void*) &channel3, 2, NULL);
    
-    xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
-    vTaskStartScheduler(); 
+    //xTaskCreate(acceleroTask, "acceleroTask", 100, (void*) &masterTransferCfg, 6, NULL);
+    vTaskStartScheduler();
     
     for(;;);
 }

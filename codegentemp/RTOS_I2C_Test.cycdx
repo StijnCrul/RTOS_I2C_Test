@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
+  <block name="not_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="O_9" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCCounterClk" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="O_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="not_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="not_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="not_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="O_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="Clock_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="AMuxCtrl" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <register name="AMuxCtrl_CONTROL_REG" address="0x4034171C" bitWidth="8" desc="" hidden="false" />
   </block>
-  <block name="AMuxHw" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="O_8" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="O_6" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="O_5" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="O_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADCDMA_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  </block>
-  <block name="ADC_DMA_INT_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="ADCDMA_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
-    <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  </block>
-  <block name="ADC_DMA_INT_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCDMA_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
   <block name="ADC_DMA_INT_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCDMA_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
+  <block name="UART_DMA_INT" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="UARTDMA" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
+  <block name="ADC_DMA_INT_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADC_DMA_INT_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="and_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADC_DMA_INT_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="ADCDMA_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
+    <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  </block>
   <block name="ADCDMA_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="DW" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="ADC_DMA_INT_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="and_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="A2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="A1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="mI2C" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
@@ -376,18 +379,19 @@
     <block name="vinPlusMux_40" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
     <block name="cy_analog_noconnect_173" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
-  <block name="O_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="O_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="O_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="O_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="not_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="D_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="ADCSOCCounter" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false">
     <block name="TCPWM" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   </block>
+  <block name="O_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="O_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="AMuxHw" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="O_7" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="not_4" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="R_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="PWR_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="D_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
+  <block name="O_1" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="O_0" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
   <block name="R_3" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
-  <block name="R_2" BASE="0x0" SIZE="0x0" desc="" visible="true" hidden="false" />
 </blockRegMap>

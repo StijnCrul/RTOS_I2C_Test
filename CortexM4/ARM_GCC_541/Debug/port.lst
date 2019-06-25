@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
    9:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  * the Software, and to permit persons to whom the Software is furnished to do so,
   10:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  * subject to the following conditions:
   11:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 2
 
 
   12:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  * The above copyright notice and this permission notice shall be included in all
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
   66:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** #define portFIRST_USER_INTERRUPT_NUMBER		( 16 )
   67:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** #define portNVIC_IP_REGISTERS_OFFSET_16 	( 0xE000E3F0 )
   68:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** #define portAIRCR_REG						( * ( ( volatile uint32_t * ) 0xE000ED0C ) )
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 3
 
 
   69:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** #define portMAX_8_BIT_VALUE					( ( uint8_t ) 0xff )
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  123:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  */
  124:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** static void prvPortStartFirstTask( void ) __attribute__ (( naked ));
  125:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 4
 
 
  126:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** /*
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  180:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c ****  */
  181:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParam
  182:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 5
 
 
   47              		.loc 1 182 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  197:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	pxTopOfStack -= 5;	/* R12, R3, R2 and R1. */
   87              		.loc 1 197 0
   88 0036 FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 6
 
 
   89 0038 143B     		subs	r3, r3, #20
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  132              	prvTaskExitError:
  133              	.LFB137:
  209:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 7
 
 
  210:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
   20:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h ****  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   21:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h ****  *
   22:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h ****  * http://www.FreeRTOS.org
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 8
 
 
   23:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h ****  * http://aws.amazon.com/freertos
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
   77:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 
   78:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** /* Scheduler utilities. */
   79:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** #define portYIELD() 															\
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 9
 
 
   80:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** {																				\
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  134:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 
  135:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 	/* Obtain the number of the currently executing interrupt. */
  136:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 	__asm volatile( "mrs %0, ipsr" : "=r"( ulCurrentInterrupt ) :: "memory" );
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 10
 
 
  137:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  222:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	portDISABLE_INTERRUPTS();
  223:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	while( ulDummy == 0 )
  191              		.loc 1 223 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 11
 
 
  192 003a 00BF     		nop
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  231              	@ 238 "Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F\port.c" 1
  232 0000 074B     			ldr	r3, pxCurrentTCBConst2		
  233 0002 1968     		ldr r1, [r3]					
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 12
 
 
  234 0004 0868     		ldr r0, [r1]					
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  265              		.loc 1 261 0
  266              		.syntax unified
  267              	@ 261 "Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F\port.c" 1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 13
 
 
  268 0000 0848     		 ldr r0, =0xE000ED08 	
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  301 0000 80B5     		push	{r7, lr}
  302              		.cfi_def_cfa_offset 8
  303              		.cfi_offset 7, -8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 14
 
 
  304              		.cfi_offset 14, -4
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  331 0028 DAB2     		uxtb	r2, r3
  332 002a 2D4B     		ldr	r3, .L19+4
  333 002c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 15
 
 
  310:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  371 0060 4FF03F03 			mov r3, #63												
  372 0064 83F31188 		msr basepri, r3											
  373 0068 BFF36F8F 		isb														
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 16
 
 
  374 006c BFF34F8F 		dsb														
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  350:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	portNVIC_SYSPRI2_REG |= portNVIC_PENDSV_PRI;
  404              		.loc 1 350 0
  405 0092 154A     		ldr	r2, .L19+12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 17
 
 
  406 0094 144B     		ldr	r3, .L19+12
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  434              		.loc 1 376 0
  435 00cc FFF7FEFF 		bl	prvTaskExitError
  377:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 18
 
 
  378:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	/* Should not get here! */
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  480 0008 1B68     		ldr	r3, [r3]
  481 000a B3F57A7F 		cmp	r3, #1000
  482 000e 09D0     		beq	.L24
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 19
 
 
  483              	.LBB36:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  532              		@ frame_needed = 1, uses_anonymous_args = 0
  533              		@ link register save eliminated.
  534 0000 80B4     		push	{r7}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 20
 
 
  535              		.cfi_def_cfa_offset 4
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  578              	@ 156 "Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h" 1
  579 0034 4FF03F03 			mov r3, #63												
  580 0038 83F31188 		msr basepri, r3											
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 21
 
 
  581 003c BFF36F8F 		isb														
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  629 0002 83B0     		sub	sp, sp, #12
  630              		.cfi_def_cfa_offset 16
  631 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 22
 
 
  632              		.cfi_def_cfa_register 7
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  167:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** 
  168:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** portFORCE_INLINE static uint32_t ulPortRaiseBASEPRI( void )
  169:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 23
 
 
  170:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/portmacro.h **** uint32_t ulOriginalBASEPRI, ulNewBASEPRI;
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  702              		.section	.text.PendSV_Handler,"ax",%progbits
  703              		.align	2
  704              		.global	PendSV_Handler
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 24
 
 
  705              		.thumb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  752 0058 7047     		bx r14								
  753              											
  754 005a 00BFAFF3 		.align 4							
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 25
 
 
  754      0080
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  766              		.align	2
  767              		.global	SysTick_Handler
  768              		.thumb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 26
 
 
  769              		.thumb_func
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  806              		.loc 1 481 0
  807 0022 064B     		ldr	r3, .L43
  808 0024 4FF08052 		mov	r2, #268435456
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 27
 
 
  809 0028 1A60     		str	r2, [r3]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  497:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 		{
  498:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			xExpectedIdleTime = xMaximumPossibleSuppressedTicks;
  499:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 		}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 28
 
 
  500:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  554:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			set its parameter to 0 to indicate that its implementation contains
  555:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			its own wait for interrupt or wait for event instruction, and so wfi
  556:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			should not be executed again.  However, the original expected idle
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 29
 
 
  557:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			time variable must remain unmodified, so a copy is taken. */
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  611:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 				{
  612:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 					ulCalculatedLoadValue = ( ulTimerCountsForOneTick - 1UL );
  613:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 				}
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 30
 
 
  614:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  855              		.cfi_offset 7, -4
  856 0002 00AF     		add	r7, sp, #0
  857              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 31
 
 
  661:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	/* Calculate the constants required to configure the tick interrupt. */
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  895 0044 3BC637BE 		.word	-1103641029
  896              		.cfi_endproc
  897              	.LFE146:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 32
 
 
  898              		.size	vPortSetupTimerInterrupt, .-vPortSetupTimerInterrupt
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  694:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
  695:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** #if( configASSERT_DEFINED == 1 )
  696:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 33
 
 
  697:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 	void vPortValidateInterruptPriority( void )
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  721:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			configMAX_SYSCALL_INTERRUPT_PRIORITY.
  722:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 
  723:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			Interrupts that	use the FreeRTOS API must not be left at their
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 34
 
 
  724:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\GCC\CM4F/port.c **** 			default priority of	zero as that is the highest possible priority,
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  992              		.loc 1 750 0
  993 003a 0E4B     		ldr	r3, .L55+8
  994 003c 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 35
 
 
  995 003e 03F4E062 		and	r2, r3, #1792
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1044      75726365 
  1044      5C50536F 
  1045 0032 315C536F 		.ascii	"1\\Source\\portable\\GCC\\CM4F\\port.c\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 36
 
 
  1045      75726365 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1078              	@ 0 "" 2
  1079              		.thumb
  1080              		.syntax unified
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 37
 
 
  1081 001a FB60     		str	r3, [r7, #12]
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1128 002f FF020000 		.4byte	.LASF0
  1129 0033 03       		.uleb128 0x3
  1130 0034 08       		.byte	0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 38
 
 
  1131 0035 05       		.byte	0x5
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1185 009e 04       		.uleb128 0x4
  1186 009f 8B030000 		.4byte	.LASF14
  1187 00a3 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 39
 
 
  1188 00a4 2C       		.byte	0x2c
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1242 0114 04       		.uleb128 0x4
  1243 0115 0C030000 		.4byte	.LASF23
  1244 0119 02       		.byte	0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 40
 
 
  1245 011a 38       		.byte	0x38
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1299 018f 02       		.uleb128 0x2
  1300 0190 91       		.byte	0x91
  1301 0191 74       		.sleb128 -12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 41
 
 
  1302 0192 10       		.uleb128 0x10
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1356 0201 12000000 		.4byte	.LBE31-.LBB31
  1357 0205 01       		.byte	0x1
  1358 0206 DE       		.byte	0xde
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 42
 
 
  1359 0207 14       		.uleb128 0x14
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1413 027c 91       		.byte	0x91
  1414 027d 74       		.sleb128 -12
  1415 027e 1A       		.uleb128 0x1a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 43
 
 
  1416 027f 79040000 		.4byte	.LASF36
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1470 02f5 00       		.byte	0
  1471 02f6 00       		.byte	0
  1472 02f7 1C       		.uleb128 0x1c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 44
 
 
  1473 02f8 63030000 		.4byte	.LASF38
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1527 0377 12000000 		.4byte	.LBE42-.LBB42
  1528 037b 01       		.byte	0x1
  1529 037c 9A01     		.2byte	0x19a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 45
 
 
  1530 037e 95030000 		.4byte	0x395
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1584 03fa 91       		.byte	0x91
  1585 03fb 70       		.sleb128 -16
  1586 03fc 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 46
 
 
  1587 03fd 00       		.byte	0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1641 046f 73       		.sleb128 -13
  1642 0470 1D       		.uleb128 0x1d
  1643 0471 3B010000 		.4byte	0x13b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 47
 
 
  1644 0475 26000000 		.4byte	.LBB50
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1698 04ec 02       		.uleb128 0x2
  1699 04ed 91       		.byte	0x91
  1700 04ee 68       		.sleb128 -24
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 48
 
 
  1701 04ef 1B       		.uleb128 0x1b
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1755 055f C5000000 		.4byte	0xc5
  1756 0563 06       		.uleb128 0x6
  1757 0564 5D050000 		.4byte	0x55d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 49
 
 
  1758 0568 23       		.uleb128 0x23
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1812 0027 00       		.byte	0
  1813 0028 00       		.byte	0
  1814 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 50
 
 
  1815 002a 16       		.uleb128 0x16
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1869 0060 13       		.uleb128 0x13
  1870 0061 00       		.byte	0
  1871 0062 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 51
 
 
  1872 0063 0A       		.uleb128 0xa
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1926 0099 13       		.uleb128 0x13
  1927 009a 00       		.byte	0
  1928 009b 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 52
 
 
  1929 009c 0F       		.uleb128 0xf
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  1983 00d3 01       		.uleb128 0x1
  1984 00d4 12       		.uleb128 0x12
  1985 00d5 06       		.uleb128 0x6
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 53
 
 
  1986 00d6 40       		.uleb128 0x40
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2040 010d 02       		.uleb128 0x2
  2041 010e 18       		.uleb128 0x18
  2042 010f 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 54
 
 
  2043 0110 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2097 0147 40       		.uleb128 0x40
  2098 0148 18       		.uleb128 0x18
  2099 0149 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 55
 
 
  2100 014b 19       		.uleb128 0x19
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2154 0182 58       		.uleb128 0x58
  2155 0183 0B       		.uleb128 0xb
  2156 0184 59       		.uleb128 0x59
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 56
 
 
  2157 0185 05       		.uleb128 0x5
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2211 01bc 1F       		.uleb128 0x1f
  2212 01bd 2E       		.uleb128 0x2e
  2213 01be 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 57
 
 
  2214 01bf 3F       		.uleb128 0x3f
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2268 01f7 27       		.uleb128 0x27
  2269 01f8 19       		.uleb128 0x19
  2270 01f9 11       		.uleb128 0x11
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 58
 
 
  2271 01fa 01       		.uleb128 0x1
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2325 0020 00000000 		.4byte	.LFB138
  2326 0024 26000000 		.4byte	.LFE138-.LFB138
  2327 0028 00000000 		.4byte	.LFB139
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 59
 
 
  2328 002c 24000000 		.4byte	.LFE139-.LFB139
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2382 0074 00000000 		.4byte	0
  2383              		.section	.debug_line,"",%progbits
  2384              	.Ldebug_line0:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 60
 
 
  2385 0000 7C040000 		.section	.debug_str,"MS",%progbits,1
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2407      6967696E 
  2407      616C5072 
  2407      696F7269 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 61
 
 
  2407      747900
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2428      31203230 
  2428      31363036 
  2429 01a0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m4 -mfloat-abi=s"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 62
 
 
  2429      20726576 
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2449      74657272 
  2449      75707450 
  2449      72696F72 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 63
 
 
  2449      69747952 
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2471      7369676E 
  2471      65642069 
  2471      6E7400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 64
 
 
  2472              	.LASF38:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2494      75726365 
  2494      5C706F72 
  2494      7461626C 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 65
 
 
  2494      655C4743 
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 1
  2516      00
  2517              	.LASF51:
  2518 04dd 70635461 		.ascii	"pcTaskName\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccp73h43.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cc96MmKx.s 			page 66
 
 
  2518      736B4E61 

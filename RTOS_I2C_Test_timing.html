@@ -539,7 +539,7 @@ function getElementsByClass(rootNode, elemName, className)
 <tr> <td class="prop"> Project :</td>
 <td class="proptext"> RTOS_I2C_Test</td></tr>
 <tr> <td class="prop"> Build Time :</td>
-<td class="proptext"> 06/24/19 09:47:53</td></tr>
+<td class="proptext"> 06/25/19 16:54:50</td></tr>
 <tr> <td class="prop"> Device :</td>
 <td class="proptext"> CY8C6247BZI-D54</td></tr>
 <tr> <td class="prop"> Temperature :</td>
@@ -751,6 +751,69 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tbody>
 <tr> 
  <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/main_0</td>
+ <td class = "number">240.038&nbsp;MHz</td>
+ <td class = "number">4.166</td>
+ <td class = "number">15.834</td>
+ <td class = "text_info"></td>
+</tr>
+<tr class="sta_path">
+<td class="sta_path"  colspan="6">
+<table class="sta_path">
+ <thead> 
+<tr> 
+<th>Type</th>
+<th>Location</th>
+<th>Fanout</th>
+<th>Instance/Net</th>
+<th>Source</th>
+<th>Dest</th>
+<th>Delay (ns)</th>
+</tr>
+</thead> 
+<tbody>
+<tr> 
+ <td class = "text_info">controlcell1</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\</td>
+ <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/clock</td>
+ <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
+ <td class = "number">0.570</td>
+</tr>
+<tr> 
+ <td class = "text_info">Route</td>
+ <td class = "text_info"> </td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxCtrlW_1</td>
+ <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/main_0</td>
+ <td class = "number">1.386</td>
+</tr>
+<tr> 
+ <td class = "text_info">macrocell5</td>
+ <td class = "text_info">U(0,2)</td>
+ <td class = "number">1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info"></td>
+ <td class = "text_info">SETUP</td>
+ <td class = "number">2.210</td>
+</tr>
+<tr> 
+ <td class = "text_info">Clock</td>
+ <td class = "text_info"> </td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info"></td>
+ <td class = "text_info">Skew</td>
+ <td class = "number">0.000</td>
+</tr>
+</tbody>
+ </table> 
+</td>
+</tr>
+<tr> 
+ <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_2</td>
  <td class = "number">240.038&nbsp;MHz</td>
  <td class = "number">4.166</td>
@@ -876,74 +939,11 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 </td>
 </tr>
 <tr> 
- <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/main_0</td>
- <td class = "number">255.363&nbsp;MHz</td>
- <td class = "number">3.916</td>
- <td class = "number">16.084</td>
- <td class = "text_info"></td>
-</tr>
-<tr class="sta_path">
-<td class="sta_path"  colspan="6">
-<table class="sta_path">
- <thead> 
-<tr> 
-<th>Type</th>
-<th>Location</th>
-<th>Fanout</th>
-<th>Instance/Net</th>
-<th>Source</th>
-<th>Dest</th>
-<th>Delay (ns)</th>
-</tr>
-</thead> 
-<tbody>
-<tr> 
- <td class = "text_info">controlcell1</td>
- <td class = "text_info">U(0,2)</td>
- <td class = "number">1</td>
- <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\</td>
- <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/clock</td>
- <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
- <td class = "number">0.570</td>
-</tr>
-<tr> 
- <td class = "text_info">Route</td>
- <td class = "text_info"> </td>
- <td class = "number">1</td>
- <td class = "text_info">AMuxCtrlW_1</td>
- <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/main_0</td>
- <td class = "number">1.386</td>
-</tr>
-<tr> 
- <td class = "text_info">macrocell5</td>
- <td class = "text_info">U(0,2)</td>
- <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
- <td class = "text_info"></td>
- <td class = "text_info">SETUP</td>
- <td class = "number">1.960</td>
-</tr>
-<tr> 
- <td class = "text_info">Clock</td>
- <td class = "text_info"> </td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info"></td>
- <td class = "text_info">Skew</td>
- <td class = "number">0.000</td>
-</tr>
-</tbody>
- </table> 
-</td>
-</tr>
-<tr> 
  <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_0</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_0/main_0</td>
- <td class = "number">260.417&nbsp;MHz</td>
- <td class = "number">3.840</td>
- <td class = "number">16.160</td>
+ <td class = "number">253.165&nbsp;MHz</td>
+ <td class = "number">3.950</td>
+ <td class = "number">16.050</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -986,7 +986,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">1.950</td>
+ <td class = "number">2.060</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1004,9 +1004,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_0</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_0</td>
- <td class = "number">260.417&nbsp;MHz</td>
- <td class = "number">3.840</td>
- <td class = "number">16.160</td>
+ <td class = "number">253.165&nbsp;MHz</td>
+ <td class = "number">3.950</td>
+ <td class = "number">16.050</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1049,7 +1049,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">1.950</td>
+ <td class = "number">2.060</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1067,9 +1067,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">\AMuxCtrl:Sync:ctrl_reg\/control_0</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_0</td>
- <td class = "number">260.417&nbsp;MHz</td>
- <td class = "number">3.840</td>
- <td class = "number">16.160</td>
+ <td class = "number">253.165&nbsp;MHz</td>
+ <td class = "number">3.950</td>
+ <td class = "number">16.050</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1112,7 +1112,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">1.950</td>
+ <td class = "number">2.060</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1130,9 +1130,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
- <td class = "number">274.650&nbsp;MHz</td>
- <td class = "number">3.641</td>
- <td class = "number">16.359</td>
+ <td class = "number">261.780&nbsp;MHz</td>
+ <td class = "number">3.820</td>
+ <td class = "number">16.180</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1157,7 +1157,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.380</td>
+ <td class = "number">0.400</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
@@ -1166,7 +1166,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
- <td class = "number">1.221</td>
+ <td class = "number">1.290</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell7</td>
@@ -1175,7 +1175,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">2.040</td>
+ <td class = "number">2.130</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1193,9 +1193,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
- <td class = "number">274.650&nbsp;MHz</td>
- <td class = "number">3.641</td>
- <td class = "number">16.359</td>
+ <td class = "number">261.780&nbsp;MHz</td>
+ <td class = "number">3.820</td>
+ <td class = "number">16.180</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1220,7 +1220,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.380</td>
+ <td class = "number">0.400</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
@@ -1229,7 +1229,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
- <td class = "number">1.221</td>
+ <td class = "number">1.290</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell8</td>
@@ -1238,7 +1238,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">2.040</td>
+ <td class = "number">2.130</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1256,9 +1256,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_3</td>
- <td class = "number">280.426&nbsp;MHz</td>
- <td class = "number">3.566</td>
- <td class = "number">16.434</td>
+ <td class = "number">275.028&nbsp;MHz</td>
+ <td class = "number">3.636</td>
+ <td class = "number">16.364</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1301,7 +1301,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_0</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">1.970</td>
+ <td class = "number">2.040</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1319,9 +1319,9 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_3</td>
- <td class = "number">280.426&nbsp;MHz</td>
- <td class = "number">3.566</td>
- <td class = "number">16.434</td>
+ <td class = "number">275.028&nbsp;MHz</td>
+ <td class = "number">3.636</td>
+ <td class = "number">16.364</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1364,7 +1364,7 @@ Destination Clock : CyClk_Peri : Positive edge(Required Frequency 50&nbsp;MHz)</
  <td class = "text_info">AMuxHw_Decoder_one_hot_1</td>
  <td class = "text_info"></td>
  <td class = "text_info">SETUP</td>
- <td class = "number">1.970</td>
+ <td class = "number">2.040</td>
 </tr>
 <tr> 
  <td class = "text_info">Clock</td>
@@ -1540,7 +1540,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_1</td>
- <td class = "number">1.420</td>
+ <td class = "number">1.455</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1565,7 +1565,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.290</td>
+ <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
@@ -1574,7 +1574,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_2/main_1</td>
- <td class = "number">1.130</td>
+ <td class = "number">1.115</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell9</td>
@@ -1601,7 +1601,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 <tr> 
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_1</td>
- <td class = "number">1.420</td>
+ <td class = "number">1.455</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1626,7 +1626,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.290</td>
+ <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
@@ -1635,7 +1635,7 @@ Destination Clock : CyClk_Peri : Positive edge</span>
  <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
  <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "text_info">AMuxHw_Decoder_one_hot_3/main_1</td>
- <td class = "number">1.130</td>
+ <td class = "number">1.115</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell10</td>
@@ -1660,9 +1660,9 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </td>
 </tr>
 <tr> 
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
- <td class = "number">1.511</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_3</td>
+ <td class = "number">1.536</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1681,22 +1681,22 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell6</td>
  <td class = "text_info">U(0,2)</td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.290</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
- <td class = "number">1.221</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_3</td>
+ <td class = "number">1.196</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell7</td>
@@ -1721,9 +1721,9 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </td>
 </tr>
 <tr> 
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
- <td class = "number">1.511</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_3</td>
+ <td class = "number">1.536</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1742,22 +1742,22 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell5</td>
+ <td class = "text_info">macrocell6</td>
  <td class = "text_info">U(0,2)</td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "number">0.290</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
- <td class = "number">1.221</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_3</td>
+ <td class = "number">1.196</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell8</td>
@@ -1782,9 +1782,9 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </td>
 </tr>
 <tr> 
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_3</td>
- <td class = "number">1.536</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
+ <td class = "number">1.630</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1803,22 +1803,22 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell5</td>
  <td class = "text_info">U(0,2)</td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_3</td>
- <td class = "number">1.196</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_0/main_1</td>
+ <td class = "number">1.290</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell7</td>
@@ -1843,9 +1843,9 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </td>
 </tr>
 <tr> 
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_3</td>
- <td class = "number">1.536</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
+ <td class = "number">1.630</td>
  <td class = "text_info"></td>
 </tr>
 <tr class="sta_path">
@@ -1864,22 +1864,22 @@ Destination Clock : CyClk_Peri : Positive edge</span>
 </thead> 
 <tbody>
 <tr> 
- <td class = "text_info">macrocell6</td>
+ <td class = "text_info">macrocell5</td>
  <td class = "text_info">U(0,2)</td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/clock_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/clock_0</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
  <td class = "number">0.340</td>
 </tr>
 <tr> 
  <td class = "text_info">Route</td>
  <td class = "text_info"></td>
  <td class = "number">1</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0</td>
- <td class = "text_info">AMuxHw_Decoder_old_id_0/q</td>
- <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_3</td>
- <td class = "number">1.196</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1</td>
+ <td class = "text_info">AMuxHw_Decoder_old_id_1/q</td>
+ <td class = "text_info">AMuxHw_Decoder_one_hot_1/main_1</td>
+ <td class = "number">1.290</td>
 </tr>
 <tr> 
  <td class = "text_info">macrocell8</td>

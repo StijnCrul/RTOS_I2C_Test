@@ -21,9 +21,15 @@
 #define __SERIAL__
     
 #include "project.h"
+#include "analog.h"
+   
 
+    //int32_t buffer0[BUFFER_SIZE];
     // PROTOTYPING
     void UARTTask();
+    void configureUARTDMA();
+    void UARTDMAComplete();
+    void handle_serial_error(void);
     
 #endif
     

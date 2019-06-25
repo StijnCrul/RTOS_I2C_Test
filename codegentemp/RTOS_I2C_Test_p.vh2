@@ -1,5 +1,5 @@
 -- Project:   RTOS_I2C_Test
--- Generated: 06/24/2019 09:47:39
+-- Generated: 06/25/2019 16:54:33
 -- PSoC Creator  4.2
 
 ENTITY RTOS_I2C_Test IS
@@ -79,11 +79,7 @@ ARCHITECTURE __DEFAULT__ OF RTOS_I2C_Test IS
     SIGNAL Net_1261 : bit;
     SIGNAL Net_1273_ff11 : bit;
     ATTRIBUTE global_signal OF Net_1273_ff11 : SIGNAL IS true;
-    SIGNAL Net_130 : bit;
     SIGNAL Net_1308 : bit;
-    SIGNAL Net_1309 : bit;
-    SIGNAL Net_131 : bit;
-    SIGNAL Net_1311 : bit;
     SIGNAL Net_1320 : bit;
     SIGNAL Net_1321 : bit;
     SIGNAL Net_1324 : bit;
@@ -93,8 +89,14 @@ ARCHITECTURE __DEFAULT__ OF RTOS_I2C_Test IS
     SIGNAL Net_1329 : bit;
     SIGNAL Net_1331 : bit;
     SIGNAL Net_1334 : bit;
+    SIGNAL Net_1367 : bit;
+    SIGNAL Net_1383 : bit;
     SIGNAL Net_139 : bit;
     SIGNAL Net_141 : bit;
+    SIGNAL Net_1410 : bit;
+    SIGNAL Net_1417 : bit;
+    SIGNAL Net_1418 : bit;
+    SIGNAL Net_1429 : bit;
     SIGNAL Net_147 : bit;
     SIGNAL Net_573 : bit;
     SIGNAL Net_574_0 : bit;
@@ -1969,14 +1971,14 @@ BEGIN
             i2c_mode => "0",
             ibuf_enabled => "0",
             id => "b3d7502a-9b42-4b39-aafd-67613e9aaa7c",
-            init_dr_st => "0",
+            init_dr_st => "1",
             input_sync => "0",
             intr_mode => "00",
             io_voltage => "",
             max_frequency => "100",
             oe_conn => "0",
             oe_sync => "0",
-            output_conn => "0",
+            output_conn => "1",
             output_current_cap => "8",
             output_sync => "0",
             pin_aliases => "",
@@ -2006,6 +2008,8 @@ BEGIN
         PORT MAP(
             pa_out => O_9(0)__PA,
             oe => open,
+            pin_input => Net_1410,
+            pad_out => O_9(0)_PAD,
             pad_in => O_9(0)_PAD,
             in_clock => open,
             in_clock_en => open,
@@ -2087,8 +2091,8 @@ BEGIN
             spi_mosi => open,
             spi_miso => open,
             interrupt => \UART:intr_wire\,
-            tr_tx_req => Net_131,
-            tr_rx_req => Net_130,
+            tr_tx_req => Net_1418,
+            tr_rx_req => Net_1417,
             tr_i2c_scl_filtered => \UART:Net_161\);
 
     \ADC:IRQ\:interrupt
@@ -2216,7 +2220,7 @@ BEGIN
             deepsleep_required => 0,
             int_type => "10")
         PORT MAP(
-            interrupt => Net_1311,
+            interrupt => Net_1383,
             clock => ClockBlock_PeriClk);
 
     \ADCDMA_0:DW\:drqcell
@@ -2225,8 +2229,8 @@ BEGIN
             priority => "11")
         PORT MAP(
             dmareq => Net_1308,
-            termout => Net_1309,
-            interrupt => Net_1311,
+            termout => Net_1410,
+            interrupt => Net_1383,
             clock => ClockBlock_PeriClk);
 
     \ADCDMA_1:DW\:drqcell
@@ -2284,6 +2288,25 @@ BEGIN
             int_type => "10")
         PORT MAP(
             interrupt => Net_1331,
+            clock => ClockBlock_PeriClk);
+
+    \UARTDMA:DW\:drqcell
+        GENERIC MAP(
+            cy_registers => "",
+            priority => "11")
+        PORT MAP(
+            dmareq => Net_1410,
+            termout => Net_1429,
+            interrupt => Net_1367,
+            clock => ClockBlock_PeriClk);
+
+    UART_DMA_INT:interrupt
+        GENERIC MAP(
+            cy_registers => "",
+            deepsleep_required => 0,
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_1367,
             clock => ClockBlock_PeriClk);
 
     AMuxHw_Decoder_old_id_1:macrocell
