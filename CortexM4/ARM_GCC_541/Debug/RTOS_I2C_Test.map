@@ -257,6 +257,22 @@ Discarded input sections
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\blink.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\blink.o
  .bss           0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .rodata        0x00000000       0x3d .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .text.Cy_GPIO_Write
+                0x00000000       0x54 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .text.BlinkTask
+                0x00000000       0x48 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_info    0x00000000      0xcb9 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_abbrev  0x00000000      0x1a7 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_aranges
+                0x00000000       0x28 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_line    0x00000000      0x480 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_str     0x00000000      0xe5e .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .comment       0x00000000       0x6f .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .debug_frame   0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\blink.o
+ .ARM.attributes
+                0x00000000       0x37 .\CortexM4\ARM_GCC_541\Debug\blink.o
  .text          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .data          0x00000000        0x0 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.ADCTask  0x00000000       0x44 .\CortexM4\ARM_GCC_541\Debug\analog.o
@@ -2489,7 +2505,7 @@ LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm
 LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a
 END GROUP
 
-.text           0x10080000     0x7b34
+.text           0x10080000     0x79d0
                 0x10080000                . = ALIGN (0x4)
                 0x10080000                __Vectors = .
  *(.vectors)
@@ -2660,698 +2676,692 @@ END GROUP
                 0x10080350                BusFault_Handler
  .text.Cy_TCPWM_Enable_Multiple
                 0x1008036c       0x1c .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .text.main     0x10080388       0xc8 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .text.main     0x10080388       0x70 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
                 0x10080388                main
  .text.SystemInit
-                0x10080450       0x4c .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x10080450                SystemInit
+                0x100803f8       0x4c .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x100803f8                SystemInit
  .text.Cy_SystemInit
-                0x1008049c       0x10 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x1008049c                Cy_SystemInit
+                0x10080444       0x10 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080444                Cy_SystemInit
  .text.SystemCoreClockUpdate
-                0x100804ac      0x2f4 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x100804ac                SystemCoreClockUpdate
+                0x10080454      0x2f4 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080454                SystemCoreClockUpdate
  .text.Cy_SystemInitFpuEnable
-                0x100807a0       0x38 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x100807a0                Cy_SystemInitFpuEnable
+                0x10080748       0x38 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080748                Cy_SystemInitFpuEnable
  .text.Cy_SysIpcPipeIsrCm4
-                0x100807d8       0x10 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
-                0x100807d8                Cy_SysIpcPipeIsrCm4
- .text.Cy_GPIO_Write
-                0x100807e8       0x54 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .text.BlinkTask
-                0x1008083c       0x48 .\CortexM4\ARM_GCC_541\Debug\blink.o
-                0x1008083c                BlinkTask
+                0x10080780       0x10 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+                0x10080780                Cy_SysIpcPipeIsrCm4
  .text.__NVIC_EnableIRQ
-                0x10080884       0x3c .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080790       0x3c .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Enable
-                0x100808c0       0x20 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x100807cc       0x20 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Descriptor_SetSrcAddress
-                0x100808e0       0x1c .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x100807ec       0x1c .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Descriptor_SetDstAddress
-                0x100808fc       0x1c .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080808       0x1c .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Channel_Enable
-                0x10080918       0x80 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080824       0x80 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Channel_ClearInterrupt
-                0x10080998       0x7c .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x100808a4       0x7c .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_DMA_Channel_SetInterruptMask
-                0x10080a14       0x70 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080920       0x70 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.Cy_GPIO_Write
-                0x10080a84       0x54 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080990       0x54 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .text.ADC_GetResult16
-                0x10080ad8       0x50 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .text.initADC  0x10080b28       0x10 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080b28                initADC
+                0x100809e4       0x50 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .text.initADC  0x10080a34       0x10 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080a34                initADC
  .text.ADCSampleTask
-                0x10080b38       0x68 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080b38                ADCSampleTask
+                0x10080a44       0x68 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080a44                ADCSampleTask
  .text.configureDMA0
-                0x10080ba0       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080ba0                configureDMA0
+                0x10080aac       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080aac                configureDMA0
  .text.ADCDMA0Complete
-                0x10080c44       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080c44                ADCDMA0Complete
+                0x10080b50       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080b50                ADCDMA0Complete
  .text.configureDMA1
-                0x10080c58       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080c58                configureDMA1
+                0x10080b64       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080b64                configureDMA1
  .text.ADCDMA1Complete
-                0x10080cfc       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080cfc                ADCDMA1Complete
+                0x10080c08       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080c08                ADCDMA1Complete
  .text.configureDMA2
-                0x10080d10       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080d10                configureDMA2
+                0x10080c1c       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080c1c                configureDMA2
  .text.ADCDMA2Complete
-                0x10080db4       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080db4                ADCDMA2Complete
+                0x10080cc0       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080cc0                ADCDMA2Complete
  .text.configureDMA3
-                0x10080dc8       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080dc8                configureDMA3
+                0x10080cd4       0xa4 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080cd4                configureDMA3
  .text.ADCDMA3Complete
-                0x10080e6c       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080e6c                ADCDMA3Complete
+                0x10080d78       0x14 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080d78                ADCDMA3Complete
  .text.handle_error
-                0x10080e80        0x8 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080e80                handle_error
+                0x10080d8c        0x8 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080d8c                handle_error
  .text.ADC_ISR_Callback
-                0x10080e88       0x24 .\CortexM4\ARM_GCC_541\Debug\analog.o
-                0x10080e88                ADC_ISR_Callback
+                0x10080d94       0x24 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x10080d94                ADC_ISR_Callback
  .text.__NVIC_EnableIRQ
-                0x10080eac       0x3c .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080db8       0x3c .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Enable
-                0x10080ee8       0x20 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080df4       0x20 .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Descriptor_SetSrcAddress
-                0x10080f08       0x1c .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080e14       0x1c .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Descriptor_SetDstAddress
-                0x10080f24       0x1c .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080e30       0x1c .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Channel_Enable
-                0x10080f40       0x80 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080e4c       0x80 .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Channel_ClearInterrupt
-                0x10080fc0       0x7c .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080ecc       0x7c .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.Cy_DMA_Channel_SetInterruptMask
-                0x1008103c       0x70 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080f48       0x70 .\CortexM4\ARM_GCC_541\Debug\serial.o
  .text.configureUARTDMA
-                0x100810ac       0xa4 .\CortexM4\ARM_GCC_541\Debug\serial.o
-                0x100810ac                configureUARTDMA
+                0x10080fb8       0xa4 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x10080fb8                configureUARTDMA
  .text.UARTDMAComplete
-                0x10081150       0x14 .\CortexM4\ARM_GCC_541\Debug\serial.o
-                0x10081150                UARTDMAComplete
+                0x1008105c       0x14 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x1008105c                UARTDMAComplete
  .text.Cy_SCB_ReadRxFifo
-                0x10081164       0x1c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x10081070       0x1c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .text.Cy_SCB_GetNumInRxFifo
-                0x10081180       0x20 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x1008108c       0x20 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .text.Cy_SCB_UART_Get
-                0x100811a0       0x18 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x100810ac       0x18 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .text.Cy_SCB_UART_GetNumInRxFifo
-                0x100811b8       0x18 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x100810c4       0x18 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .text.Cy_SCB_UART_Put
-                0x100811d0       0x1c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x100810dc       0x1c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .text.STDIO_PutChar
-                0x100811ec       0x24 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
-                0x100811ec                STDIO_PutChar
+                0x100810f8       0x24 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x100810f8                STDIO_PutChar
  .text.STDIO_GetChar
-                0x10081210       0x24 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
-                0x10081210                STDIO_GetChar
+                0x1008111c       0x24 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x1008111c                STDIO_GetChar
  .text.__NVIC_EnableIRQ
-                0x10081234       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081140       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_SysClk_ClkPeriGetDivider
-                0x10081270       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x1008117c       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_SysClk_ClkSlowGetDivider
-                0x1008129c       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x100811a8       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_IPC_Drv_GetIpcBaseAddress
-                0x100812c8       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x100811d4       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_IPC_Drv_ReadDataValue
-                0x10081314       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081220       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_IPC_Drv_IsLockAcquired
-                0x1008132c       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081238       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_IPC_Drv_SendMsgPtr
-                0x1008135c       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081268       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_Flash_InitExt
-                0x10081394       0x8c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
-                0x10081394                Cy_Flash_InitExt
+                0x100812a0       0x8c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x100812a0                Cy_Flash_InitExt
  .text.Cy_Flash_Init
-                0x10081420       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
-                0x10081420                Cy_Flash_Init
+                0x1008132c       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x1008132c                Cy_Flash_Init
  .text.Cy_Flash_ProcessOpcode
-                0x10081434       0xf8 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081340       0xf8 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_Flash_OperationStatus
-                0x1008152c       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x10081438       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .text.Cy_IPC_Drv_AcquireNotify
-                0x1008158c       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081498       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_ReleaseNotify
-                0x100815c0       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x100814cc       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_WriteDataValue
-                0x100815f4       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081500       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_ReadDataValue
-                0x10081610       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x1008151c       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_IsLockAcquired
-                0x10081628       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081534       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_LockAcquire
-                0x10081658       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081564       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .text.Cy_IPC_Drv_LockRelease
-                0x10081684       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
-                0x10081684                Cy_IPC_Drv_LockRelease
+                0x10081590       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081590                Cy_IPC_Drv_LockRelease
  .text.Cy_IPC_Drv_SendMsgWord
-                0x100816bc       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
-                0x100816bc                Cy_IPC_Drv_SendMsgWord
+                0x100815c8       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x100815c8                Cy_IPC_Drv_SendMsgWord
  .text.Cy_IPC_Drv_ReadMsgWord
-                0x100816fc       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
-                0x100816fc                Cy_IPC_Drv_ReadMsgWord
+                0x10081608       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x10081608                Cy_IPC_Drv_ReadMsgWord
  .text.Cy_IPC_Drv_GetIpcBaseAddress
-                0x10081748       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x10081654       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .text.Cy_IPC_Drv_ReadDataValue
-                0x10081794       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x100816a0       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .text.Cy_IPC_Drv_SendMsgPtr
-                0x100817ac       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x100816b8       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .text.Cy_IPC_Drv_LockAcquire
-                0x100817e4       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x100816f0       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .text.Cy_IPC_Sema_Init
-                0x10081810       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
-                0x10081810                Cy_IPC_Sema_Init
+                0x1008171c       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x1008171c                Cy_IPC_Sema_Init
  .text.Cy_IPC_Sema_InitExt
-                0x1008187c       0xbc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
-                0x1008187c                Cy_IPC_Sema_InitExt
+                0x10081788       0xbc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x10081788                Cy_IPC_Sema_InitExt
  .text.Cy_IPC_Sema_Clear
-                0x10081938       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
-                0x10081938                Cy_IPC_Sema_Clear
+                0x10081844       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x10081844                Cy_IPC_Sema_Clear
  .text.Cy_IPC_Sema_Status
-                0x10081a18       0x74 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
-                0x10081a18                Cy_IPC_Sema_Status
+                0x10081924       0x74 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x10081924                Cy_IPC_Sema_Status
  .text.__NVIC_EnableIRQ
-                0x10081a8c       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081998       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_GetIpcBaseAddress
-                0x10081ac8       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x100819d4       0x4c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_GetIntrBaseAddr
-                0x10081b14       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081a20       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_SetInterruptMask
-                0x10081b58       0x50 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081a64       0x50 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_GetInterruptStatusMasked
-                0x10081ba8       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081ab4       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_GetInterruptStatus
-                0x10081bc0       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081acc       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_ClearInterrupt
-                0x10081bd8       0x54 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081ae4       0x54 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_AcquireNotify
-                0x10081c2c       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081b38       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_WriteDataValue
-                0x10081c60       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081b6c       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_IsLockAcquired
-                0x10081c7c       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081b88       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_ExtractAcquireMask
-                0x10081cac       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081bb8       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_ExtractReleaseMask
-                0x10081cc4       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081bd0       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_ReadMsgPtr
-                0x10081cdc       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081be8       0x30 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Drv_LockAcquire
-                0x10081d0c       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081c18       0x2c .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .text.Cy_IPC_Pipe_Config
-                0x10081d38       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10081d38                Cy_IPC_Pipe_Config
+                0x10081c44       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081c44                Cy_IPC_Pipe_Config
  .text.Cy_IPC_Pipe_Init
-                0x10081d60       0xd8 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10081d60                Cy_IPC_Pipe_Init
+                0x10081c6c       0xd8 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081c6c                Cy_IPC_Pipe_Init
  .text.Cy_IPC_Pipe_EndpointInit
-                0x10081e38       0xac .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10081e38                Cy_IPC_Pipe_EndpointInit
+                0x10081d44       0xac .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081d44                Cy_IPC_Pipe_EndpointInit
  .text.Cy_IPC_Pipe_SendMessage
-                0x10081ee4       0xf8 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10081ee4                Cy_IPC_Pipe_SendMessage
+                0x10081df0       0xf8 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081df0                Cy_IPC_Pipe_SendMessage
  .text.Cy_IPC_Pipe_RegisterCallback
-                0x10081fdc       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10081fdc                Cy_IPC_Pipe_RegisterCallback
+                0x10081ee8       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081ee8                Cy_IPC_Pipe_RegisterCallback
  .text.Cy_IPC_Pipe_ExecuteCallback
-                0x10082054       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10082054                Cy_IPC_Pipe_ExecuteCallback
+                0x10081f60       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081f60                Cy_IPC_Pipe_ExecuteCallback
  .text.Cy_IPC_Pipe_ExecCallback
-                0x10082094      0x150 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
-                0x10082094                Cy_IPC_Pipe_ExecCallback
+                0x10081fa0      0x150 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x10081fa0                Cy_IPC_Pipe_ExecCallback
  .text.__NVIC_SetPriority
-                0x100821e4       0x54 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+                0x100820f0       0x54 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
  .text.Cy_SysInt_Init
-                0x10082238       0x70 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
-                0x10082238                Cy_SysInt_Init
+                0x10082144       0x70 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+                0x10082144                Cy_SysInt_Init
  .text.Cy_SysInt_SetVector
-                0x100822a8       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
-                0x100822a8                Cy_SysInt_SetVector
+                0x100821b4       0x6c .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+                0x100821b4                Cy_SysInt_SetVector
  .text.Cy_SysLib_DelayUs
-                0x10082314       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
-                0x10082314                Cy_SysLib_DelayUs
+                0x10082220       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x10082220                Cy_SysLib_DelayUs
  .text.Cy_SysLib_Halt
-                0x1008233c        0xc .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
-                0x1008233c                Cy_SysLib_Halt
+                0x10082248        0xc .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x10082248                Cy_SysLib_Halt
  .text.Cy_SysLib_AssertFailed
-                0x10082348       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
-                0x10082348                Cy_SysLib_AssertFailed
+                0x10082254       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x10082254                Cy_SysLib_AssertFailed
  .text.Cy_SysLib_FaultHandler
-                0x10082370      0x11c .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
-                0x10082370                Cy_SysLib_FaultHandler
+                0x1008227c      0x11c .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x1008227c                Cy_SysLib_FaultHandler
  .text.Cy_SysLib_ProcessingFault
-                0x1008248c        0x8 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
-                0x1008248c                Cy_SysLib_ProcessingFault
- *fill*         0x10082494        0x4 
- .text          0x10082498       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
-                0x10082498                Cy_SysLib_DelayCycles
-                0x100824aa                Cy_SysLib_EnterCriticalSection
-                0x100824b2                Cy_SysLib_ExitCriticalSection
+                0x10082398        0x8 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x10082398                Cy_SysLib_ProcessingFault
+ .text          0x100823a0       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+                0x100823a0                Cy_SysLib_DelayCycles
+                0x100823b2                Cy_SysLib_EnterCriticalSection
+                0x100823ba                Cy_SysLib_ExitCriticalSection
  .text.Cy_SysLib_GetDeviceRevision
-                0x100824b8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+                0x100823c0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
  .text.Cy_PDL_Init
-                0x100824e0       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
-                0x100824e0                Cy_PDL_Init
+                0x100823e8       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+                0x100823e8                Cy_PDL_Init
  .text.Cy_SAR_Init
-                0x10082500      0x2e0 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
-                0x10082500                Cy_SAR_Init
+                0x10082408      0x2e0 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x10082408                Cy_SAR_Init
  .text.Cy_SAR_DeInit
-                0x100827e0       0xc0 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
-                0x100827e0                Cy_SAR_DeInit
+                0x100826e8       0xc0 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x100826e8                Cy_SAR_DeInit
  .text.Cy_SAR_Enable
-                0x100828a0       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
-                0x100828a0                Cy_SAR_Enable
+                0x100827a8       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x100827a8                Cy_SAR_Enable
  .text.Cy_SAR_GetResult16
-                0x100828d8       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
-                0x100828d8                Cy_SAR_GetResult16
+                0x100827e0       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x100827e0                Cy_SAR_GetResult16
  .text.Cy_SCB_ReadRxFifo
-                0x1008291c       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082824       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_GetNumInRxFifo
-                0x10082938       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082840       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_WriteTxFifo
-                0x10082958       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082860       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_GetNumInTxFifo
-                0x10082978       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082880       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_GetFifoSize
-                0x10082998       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x100828a0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_IsRxDataWidthByte
-                0x100829c0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x100828c8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_IsTxDataWidthByte
-                0x100829e8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x100828f0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .text.Cy_SCB_ReadArrayNoCheck
-                0x10082a10       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
-                0x10082a10                Cy_SCB_ReadArrayNoCheck
+                0x10082918       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082918                Cy_SCB_ReadArrayNoCheck
  .text.Cy_SCB_ReadArray
-                0x10082a88       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
-                0x10082a88                Cy_SCB_ReadArray
+                0x10082990       0x34 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082990                Cy_SCB_ReadArray
  .text.Cy_SCB_Write
-                0x10082abc       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
-                0x10082abc                Cy_SCB_Write
+                0x100829c4       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x100829c4                Cy_SCB_Write
  .text.Cy_SCB_WriteArrayNoCheck
-                0x10082af4       0x74 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
-                0x10082af4                Cy_SCB_WriteArrayNoCheck
+                0x100829fc       0x74 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x100829fc                Cy_SCB_WriteArrayNoCheck
  .text.Cy_SCB_WriteArray
-                0x10082b68       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
-                0x10082b68                Cy_SCB_WriteArray
+                0x10082a70       0x40 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x10082a70                Cy_SCB_WriteArray
  .text.Cy_SCB_ReadRxFifo
-                0x10082ba8       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082ab0       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_SetRxFifoLevel
-                0x10082bc4       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082acc       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetNumInRxFifo
-                0x10082c08       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082b10       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_WriteTxFifo
-                0x10082c28       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082b30       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetNumInTxFifo
-                0x10082c48       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082b50       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetInterruptCause
-                0x10082c68       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082b70       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_SetRxInterruptMask
-                0x10082c84       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082b8c       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetRxInterruptStatusMasked
-                0x10082cbc       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082bc4       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_ClearRxInterrupt
-                0x10082cd8       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082be0       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_SetTxInterruptMask
-                0x10082d14       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082c1c       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetTxInterruptMask
-                0x10082d4c       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082c54       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetTxInterruptStatusMasked
-                0x10082d68       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082c70       0x1c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_ClearTxInterrupt
-                0x10082d84       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082c8c       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_GetFifoSize
-                0x10082dc0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082cc8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_IsRxDataWidthByte
-                0x10082de8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082cf0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_IsTxDataWidthByte
-                0x10082e10       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082d18       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_UART_GetArray
-                0x10082e38       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082d40       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_UART_PutArray
-                0x10082e74       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082d7c       0x3c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_SCB_UART_Init
-                0x10082eb0      0x4e0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
-                0x10082eb0                Cy_SCB_UART_Init
+                0x10082db8      0x4e0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10082db8                Cy_SCB_UART_Init
  .text.Cy_SCB_UART_GetNumInRingBuffer
-                0x10083390       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
-                0x10083390                Cy_SCB_UART_GetNumInRingBuffer
+                0x10083298       0x44 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10083298                Cy_SCB_UART_GetNumInRingBuffer
  .text.Cy_SCB_UART_Interrupt
-                0x100833d4      0x15c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
-                0x100833d4                Cy_SCB_UART_Interrupt
+                0x100832dc      0x15c .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x100832dc                Cy_SCB_UART_Interrupt
  .text.HandleDataReceive
-                0x10083530       0xe4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10083438       0xe4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.HandleRingBuffer
-                0x10083614       0xfc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x1008351c       0xfc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.HandleDataTransmit
-                0x10083710       0xfc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x10083618       0xfc .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .text.Cy_DMA_Channel_SetDescriptor
-                0x1008380c       0xa8 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+                0x10083714       0xa8 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
  .text.Cy_DMA_Descriptor_Init
-                0x100838b4      0x404 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
-                0x100838b4                Cy_DMA_Descriptor_Init
+                0x100837bc      0x404 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+                0x100837bc                Cy_DMA_Descriptor_Init
  .text.Cy_DMA_Channel_Init
-                0x10083cb8       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
-                0x10083cb8                Cy_DMA_Channel_Init
+                0x10083bc0       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+                0x10083bc0                Cy_DMA_Channel_Init
  .text.Cy_TCPWM_Counter_Init
-                0x10083da8      0x1a4 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
-                0x10083da8                Cy_TCPWM_Counter_Init
+                0x10083cb0      0x1a4 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+                0x10083cb0                Cy_TCPWM_Counter_Init
  .text.vListInitialise
-                0x10083f4c       0x40 .\CortexM4\ARM_GCC_541\Debug\list.o
-                0x10083f4c                vListInitialise
+                0x10083e54       0x40 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x10083e54                vListInitialise
  .text.vListInitialiseItem
-                0x10083f8c       0x1c .\CortexM4\ARM_GCC_541\Debug\list.o
-                0x10083f8c                vListInitialiseItem
+                0x10083e94       0x1c .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x10083e94                vListInitialiseItem
  .text.vListInsertEnd
-                0x10083fa8       0x48 .\CortexM4\ARM_GCC_541\Debug\list.o
-                0x10083fa8                vListInsertEnd
+                0x10083eb0       0x48 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x10083eb0                vListInsertEnd
  .text.vListInsert
-                0x10083ff0       0x74 .\CortexM4\ARM_GCC_541\Debug\list.o
-                0x10083ff0                vListInsert
+                0x10083ef8       0x74 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x10083ef8                vListInsert
  .text.uxListRemove
-                0x10084064       0x54 .\CortexM4\ARM_GCC_541\Debug\list.o
-                0x10084064                uxListRemove
+                0x10083f6c       0x54 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x10083f6c                uxListRemove
  .text.xQueueGenericReset
-                0x100840b8       0xd0 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x100840b8                xQueueGenericReset
+                0x10083fc0       0xd0 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10083fc0                xQueueGenericReset
  .text.xQueueGenericCreate
-                0x10084188       0x74 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x10084188                xQueueGenericCreate
+                0x10084090       0x74 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084090                xQueueGenericCreate
  .text.prvInitialiseNewQueue
-                0x100841fc       0x40 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084104       0x40 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.xQueueGenericSend
-                0x1008423c      0x1f4 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x1008423c                xQueueGenericSend
+                0x10084144      0x1f4 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084144                xQueueGenericSend
  .text.xQueueGenericSendFromISR
-                0x10084430      0x128 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x10084430                xQueueGenericSendFromISR
+                0x10084338      0x128 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084338                xQueueGenericSendFromISR
  .text.xQueueReceive
-                0x10084558      0x1b8 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x10084558                xQueueReceive
+                0x10084460      0x1b8 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084460                xQueueReceive
  .text.prvCopyDataToQueue
-                0x10084710       0xb8 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x10084618       0xb8 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.prvCopyDataFromQueue
-                0x100847c8       0x4c .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x100846d0       0x4c .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.prvUnlockQueue
-                0x10084814       0xa4 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x1008471c       0xa4 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.prvIsQueueEmpty
-                0x100848b8       0x2c .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x100847c0       0x2c .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.prvIsQueueFull
-                0x100848e4       0x30 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x100847ec       0x30 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .text.vQueueAddToRegistry
-                0x10084914       0x50 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x10084914                vQueueAddToRegistry
+                0x1008481c       0x50 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x1008481c                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x10084964       0x68 .\CortexM4\ARM_GCC_541\Debug\queue.o
-                0x10084964                vQueueWaitForMessageRestricted
+                0x1008486c       0x68 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x1008486c                vQueueWaitForMessageRestricted
  .text.xTaskCreate
-                0x100849cc       0x84 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x100849cc                xTaskCreate
+                0x100848d4       0x84 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100848d4                xTaskCreate
  .text.prvInitialiseNewTask
-                0x10084a50      0x120 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084958      0x120 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.prvAddNewTaskToReadyList
-                0x10084b70       0xd8 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084a78       0xd8 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.vTaskDelayUntil
-                0x10084c48       0xf4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084c48                vTaskDelayUntil
+                0x10084b50       0xf4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084b50                vTaskDelayUntil
  .text.vTaskStartScheduler
-                0x10084d3c       0x98 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084d3c                vTaskStartScheduler
+                0x10084c44       0x98 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084c44                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x10084dd4       0x1c .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084dd4                vTaskSuspendAll
+                0x10084cdc       0x1c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084cdc                vTaskSuspendAll
  .text.xTaskResumeAll
-                0x10084df0      0x138 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084df0                xTaskResumeAll
+                0x10084cf8      0x138 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084cf8                xTaskResumeAll
  .text.xTaskGetTickCount
-                0x10084f28       0x20 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084f28                xTaskGetTickCount
+                0x10084e30       0x20 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084e30                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x10084f48      0x15c .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10084f48                xTaskIncrementTick
+                0x10084e50      0x15c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084e50                xTaskIncrementTick
  .text.vTaskSwitchContext
-                0x100850a4      0x104 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x100850a4                vTaskSwitchContext
+                0x10084fac      0x104 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10084fac                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x100851a8       0x48 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x100851a8                vTaskPlaceOnEventList
+                0x100850b0       0x48 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100850b0                vTaskPlaceOnEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x100851f0       0x54 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x100851f0                vTaskPlaceOnEventListRestricted
+                0x100850f8       0x54 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100850f8                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x10085244       0xc4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10085244                xTaskRemoveFromEventList
+                0x1008514c       0xc4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x1008514c                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x10085308       0x2c .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10085308                vTaskInternalSetTimeOutState
+                0x10085210       0x2c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10085210                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x10085334       0xc0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10085334                xTaskCheckForTimeOut
+                0x1008523c       0xc0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x1008523c                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x100853f4       0x18 .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x100853f4                vTaskMissedYield
+                0x100852fc       0x18 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100852fc                vTaskMissedYield
  .text.prvIdleTask
-                0x1008540c       0x30 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10085314       0x30 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.prvInitialiseTaskLists
-                0x1008543c       0x80 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10085344       0x80 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.prvCheckTasksWaitingTermination
-                0x100854bc       0x58 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100853c4       0x58 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.prvDeleteTCB
-                0x10085514       0x20 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x1008541c       0x20 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.prvResetNextTaskUnblockTime
-                0x10085534       0x4c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x1008543c       0x4c .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.xTaskGetSchedulerState
-                0x10085580       0x3c .\CortexM4\ARM_GCC_541\Debug\tasks.o
-                0x10085580                xTaskGetSchedulerState
+                0x10085488       0x3c .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x10085488                xTaskGetSchedulerState
  .text.prvAddCurrentTaskToDelayedList
-                0x100855bc       0xa8 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x100854c4       0xa8 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .text.xTimerCreateTimerTask
-                0x10085664       0x60 .\CortexM4\ARM_GCC_541\Debug\timers.o
-                0x10085664                xTimerCreateTimerTask
+                0x1008556c       0x60 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x1008556c                xTimerCreateTimerTask
  .text.xTimerGenericCommand
-                0x100856c4       0x98 .\CortexM4\ARM_GCC_541\Debug\timers.o
-                0x100856c4                xTimerGenericCommand
+                0x100855cc       0x98 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100855cc                xTimerGenericCommand
  .text.prvProcessExpiredTimer
-                0x1008575c       0x80 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x10085664       0x80 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvTimerTask
-                0x100857dc       0x24 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100856e4       0x24 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvProcessTimerOrBlockTask
-                0x10085800       0x9c .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x10085708       0x9c .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvGetNextExpireTime
-                0x1008589c       0x48 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100857a4       0x48 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvSampleTimeNow
-                0x100858e4       0x40 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100857ec       0x40 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvInsertTimerInActiveList
-                0x10085924       0x84 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x1008582c       0x84 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvProcessReceivedCommands
-                0x100859a8      0x124 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100858b0      0x124 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvSwitchTimerLists
-                0x10085acc       0xc0 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x100859d4       0xc0 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.prvCheckForValidListAndQueue
-                0x10085b8c       0x6c .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x10085a94       0x6c .\CortexM4\ARM_GCC_541\Debug\timers.o
  .text.pxPortInitialiseStack
-                0x10085bf8       0x68 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085bf8                pxPortInitialiseStack
+                0x10085b00       0x68 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085b00                pxPortInitialiseStack
  .text.prvTaskExitError
-                0x10085c60       0x54 .\CortexM4\ARM_GCC_541\Debug\port.o
- *fill*         0x10085cb4        0xc 
+                0x10085b68       0x54 .\CortexM4\ARM_GCC_541\Debug\port.o
+ *fill*         0x10085bbc        0x4 
  .text.SVC_Handler
-                0x10085cc0       0x28 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085cc0                SVC_Handler
+                0x10085bc0       0x28 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085bc0                SVC_Handler
  .text.prvPortStartFirstTask
-                0x10085ce8       0x28 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085be8       0x28 .\CortexM4\ARM_GCC_541\Debug\port.o
  .text.xPortStartScheduler
-                0x10085d10       0xf4 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085d10                xPortStartScheduler
+                0x10085c10       0xf4 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085c10                xPortStartScheduler
  .text.vPortEnterCritical
-                0x10085e04       0x5c .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085e04                vPortEnterCritical
+                0x10085d04       0x5c .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085d04                vPortEnterCritical
  .text.vPortExitCritical
-                0x10085e60       0x50 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085e60                vPortExitCritical
+                0x10085d60       0x50 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085d60                vPortExitCritical
  .text.PendSV_Handler
-                0x10085eb0       0x68 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085eb0                PendSV_Handler
+                0x10085db0       0x68 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085db0                PendSV_Handler
  .text.SysTick_Handler
-                0x10085f18       0x40 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085f18                SysTick_Handler
+                0x10085e18       0x40 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085e18                SysTick_Handler
  .text.vPortSetupTimerInterrupt
-                0x10085f58       0x48 .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085f58                vPortSetupTimerInterrupt
+                0x10085e58       0x48 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085e58                vPortSetupTimerInterrupt
  .text.vPortEnableVFP
-                0x10085fa0       0x14 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085ea0       0x14 .\CortexM4\ARM_GCC_541\Debug\port.o
  .text.vPortValidateInterruptPriority
-                0x10085fb4       0x7c .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10085fb4                vPortValidateInterruptPriority
+                0x10085eb4       0x7c .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085eb4                vPortValidateInterruptPriority
  .text.vApplicationStackOverflowHook
-                0x10086030       0x2c .\CortexM4\ARM_GCC_541\Debug\port.o
-                0x10086030                vApplicationStackOverflowHook
+                0x10085f30       0x2c .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x10085f30                vApplicationStackOverflowHook
  .text.pvPortMalloc
-                0x1008605c       0x8c .\CortexM4\ARM_GCC_541\Debug\heap_1.o
-                0x1008605c                pvPortMalloc
+                0x10085f5c       0x8c .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+                0x10085f5c                pvPortMalloc
  .text.vPortFree
-                0x100860e8       0x30 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
-                0x100860e8                vPortFree
- .text._write   0x10086118       0x40 .\CortexM4\ARM_GCC_541\Debug\retarget.o
-                0x10086118                _write
- .text._read    0x10086158       0x54 .\CortexM4\ARM_GCC_541\Debug\retarget.o
-                0x10086158                _read
+                0x10085fe8       0x30 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+                0x10085fe8                vPortFree
+ .text._write   0x10086018       0x40 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+                0x10086018                _write
+ .text._read    0x10086058       0x54 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+                0x10086058                _read
  .text.__NVIC_EnableIRQ
-                0x100861ac       0x3c .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x100860ac       0x3c .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.Cy_SysClk_PeriphSetDivider
-                0x100861e8       0xe0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x100860e8       0xe0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.Cy_SysClk_PeriphEnableDivider
-                0x100862c8       0xd0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x100861c8       0xd0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.Cy_SysClk_PeriphDisableDivider
-                0x10086398       0xa0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086298       0xa0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.ADC_intSarClock_Enable
-                0x10086438       0x10 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086338       0x10 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.ADC_intSarClock_Disable
-                0x10086448       0x10 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086348       0x10 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.ADC_intSarClock_SetDivider
-                0x10086458       0x1c .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086358       0x1c .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.ADC_Enable
-                0x10086474       0x14 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086374       0x14 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .text.ADC_Start
-                0x10086488       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC.o
-                0x10086488                ADC_Start
+                0x10086388       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086388                ADC_Start
  .text.ADC_InitConfig
-                0x100864b8       0x40 .\CortexM4\ARM_GCC_541\Debug\ADC.o
-                0x100864b8                ADC_InitConfig
+                0x100863b8       0x40 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x100863b8                ADC_InitConfig
  .text.ADC_IRQ_Enable
-                0x100864f8       0x18 .\CortexM4\ARM_GCC_541\Debug\ADC.o
-                0x100864f8                ADC_IRQ_Enable
+                0x100863f8       0x18 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x100863f8                ADC_IRQ_Enable
  .text.ADC_Init
-                0x10086510       0x5c .\CortexM4\ARM_GCC_541\Debug\ADC.o
-                0x10086510                ADC_Init
+                0x10086410       0x5c .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x10086410                ADC_Init
  .text.Cy_SAR_GetInterruptStatus
-                0x1008656c       0x1c .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+                0x1008646c       0x1c .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
  .text.Cy_SAR_ClearInterrupt
-                0x10086588       0x34 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .text.ADC_ISR  0x100865bc       0x2c .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
-                0x100865bc                ADC_ISR
+                0x10086488       0x34 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .text.ADC_ISR  0x100864bc       0x2c .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+                0x100864bc                ADC_ISR
  .text.__NVIC_EnableIRQ
-                0x100865e8       0x3c .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x100864e8       0x3c .\CortexM4\ARM_GCC_541\Debug\UART.o
  .text.Cy_SCB_UART_Enable
-                0x10086624       0x20 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x10086524       0x20 .\CortexM4\ARM_GCC_541\Debug\UART.o
  .text.UART_Interrupt
-                0x10086644       0x18 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x10086544       0x18 .\CortexM4\ARM_GCC_541\Debug\UART.o
  .text.UART_Start
-                0x1008665c       0x54 .\CortexM4\ARM_GCC_541\Debug\UART.o
-                0x1008665c                UART_Start
+                0x1008655c       0x54 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x1008655c                UART_Start
  .text.AMuxCtrl_Write
-                0x100866b0       0x20 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
-                0x100866b0                AMuxCtrl_Write
- .text.memcpy   0x100866d0       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
-                0x100866d0                memcpy
- .text.memset   0x100866e6       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
-                0x100866e6                memset
- *fill*         0x100866f6        0x2 
- .text._puts_r  0x100866f8       0xb4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
-                0x100866f8                _puts_r
- .text.puts     0x100867ac       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
-                0x100867ac                puts
- .text.strncpy  0x100867bc       0x26 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
-                0x100867bc                strncpy
- *fill*         0x100867e2        0x2 
+                0x100865b0       0x20 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+                0x100865b0                AMuxCtrl_Write
+ .text.memcpy   0x100865d0       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
+                0x100865d0                memcpy
+ .text.memset   0x100865e6       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
+                0x100865e6                memset
+ *fill*         0x100865f6        0x2 
+ .text._puts_r  0x100865f8       0xb4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
+                0x100865f8                _puts_r
+ .text.puts     0x100866ac       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
+                0x100866ac                puts
+ .text.strncpy  0x100866bc       0x26 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
+                0x100866bc                strncpy
+ *fill*         0x100866e2        0x2 
  .text.__swbuf_r
-                0x100867e4       0xa8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
-                0x100867e4                __swbuf_r
+                0x100866e4       0xa8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
+                0x100866e4                __swbuf_r
  .text.__swsetup_r
-                0x1008688c       0xdc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
-                0x1008688c                __swsetup_r
+                0x1008678c       0xdc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
+                0x1008678c                __swsetup_r
  .text.__sflush_r
-                0x10086968      0x110 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
-                0x10086968                __sflush_r
+                0x10086868      0x110 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+                0x10086868                __sflush_r
  .text._fflush_r
-                0x10086a78       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
-                0x10086a78                _fflush_r
+                0x10086978       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+                0x10086978                _fflush_r
  .text._cleanup_r
-                0x10086acc        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10086acc                _cleanup_r
+                0x100869cc        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x100869cc                _cleanup_r
  .text.std.isra.0
-                0x10086ad8       0x48 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x100869d8       0x48 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x10086b20       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10086b20                __sfmoreglue
- .text.__sinit  0x10086b4c       0x60 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10086b4c                __sinit
- .text.__sfp    0x10086bac       0x78 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10086bac                __sfp
+                0x10086a20       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x10086a20                __sfmoreglue
+ .text.__sinit  0x10086a4c       0x60 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x10086a4c                __sinit
+ .text.__sfp    0x10086aac       0x78 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x10086aac                __sfp
  .text._fwalk_reent
-                0x10086c24       0x3c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
-                0x10086c24                _fwalk_reent
+                0x10086b24       0x3c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
+                0x10086b24                _fwalk_reent
  .text.__swhatbuf_r
-                0x10086c60       0x46 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
-                0x10086c60                __swhatbuf_r
- *fill*         0x10086ca6        0x2 
+                0x10086b60       0x46 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+                0x10086b60                __swhatbuf_r
+ *fill*         0x10086ba6        0x2 
  .text.__smakebuf_r
-                0x10086ca8       0x78 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
-                0x10086ca8                __smakebuf_r
- .text._free_r  0x10086d20       0x9c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
-                0x10086d20                _free_r
+                0x10086ba8       0x78 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+                0x10086ba8                __smakebuf_r
+ .text._free_r  0x10086c20       0x9c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
+                0x10086c20                _free_r
  .text._malloc_r
-                0x10086dbc       0xbc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x10086dbc                _malloc_r
- .text._sbrk_r  0x10086e78       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
-                0x10086e78                _sbrk_r
- .text.__sread  0x10086e98       0x22 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
-                0x10086e98                __sread
+                0x10086cbc       0xbc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x10086cbc                _malloc_r
+ .text._sbrk_r  0x10086d78       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
+                0x10086d78                _sbrk_r
+ .text.__sread  0x10086d98       0x22 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+                0x10086d98                __sread
  .text.__swrite
-                0x10086eba       0x38 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
-                0x10086eba                __swrite
- .text.__sseek  0x10086ef2       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
-                0x10086ef2                __sseek
+                0x10086dba       0x38 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+                0x10086dba                __swrite
+ .text.__sseek  0x10086df2       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+                0x10086df2                __sseek
  .text.__sclose
-                0x10086f16        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
-                0x10086f16                __sclose
- *fill*         0x10086f1e        0x2 
+                0x10086e16        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+                0x10086e16                __sclose
+ *fill*         0x10086e1e        0x2 
  .text._write_r
-                0x10086f20       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
-                0x10086f20                _write_r
+                0x10086e20       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
+                0x10086e20                _write_r
  .text._close_r
-                0x10086f44       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
-                0x10086f44                _close_r
+                0x10086e44       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
+                0x10086e44                _close_r
  .text._fstat_r
-                0x10086f64       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
-                0x10086f64                _fstat_r
+                0x10086e64       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
+                0x10086e64                _fstat_r
  .text._isatty_r
-                0x10086f88       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
-                0x10086f88                _isatty_r
+                0x10086e88       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
+                0x10086e88                _isatty_r
  .text._lseek_r
-                0x10086fa8       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
-                0x10086fa8                _lseek_r
+                0x10086ea8       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
+                0x10086ea8                _lseek_r
  .text.__malloc_lock
-                0x10086fcc        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
-                0x10086fcc                __malloc_lock
+                0x10086ecc        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
+                0x10086ecc                __malloc_lock
  .text.__malloc_unlock
-                0x10086fce        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
-                0x10086fce                __malloc_unlock
- .text._read_r  0x10086fd0       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
-                0x10086fd0                _read_r
- .text._close   0x10086ff4       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
-                0x10086ff4                _close
- .text._fstat   0x10087004       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
-                0x10087004                _fstat
- .text._isatty  0x10087014       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
-                0x10087014                _isatty
- .text._lseek   0x10087024       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
-                0x10087024                _lseek
- .text._sbrk    0x10087034       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
-                0x10087034                _sbrk
+                0x10086ece        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
+                0x10086ece                __malloc_unlock
+ .text._read_r  0x10086ed0       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
+                0x10086ed0                _read_r
+ .text._close   0x10086ef4       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
+                0x10086ef4                _close
+ .text._fstat   0x10086f04       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
+                0x10086f04                _fstat
+ .text._isatty  0x10086f14       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
+                0x10086f14                _isatty
+ .text._lseek   0x10086f24       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
+                0x10086f24                _lseek
+ .text._sbrk    0x10086f34       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+                0x10086f34                _sbrk
  *(.init)
- .init          0x10087050        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
-                0x10087050                _init
- .init          0x10087054        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
+ .init          0x10086f50        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
+                0x10086f50                _init
+ .init          0x10086f54        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
  *(.fini)
- .fini          0x1008705c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
-                0x1008705c                _fini
- .fini          0x10087060        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
+ .fini          0x10086f5c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
+                0x10086f5c                _fini
+ .fini          0x10086f60        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -3363,123 +3373,121 @@ END GROUP
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata .rodata.* .constdata .constdata.* .conststring .conststring.*)
- .rodata        0x10087068       0x3f .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- *fill*         0x100870a7        0x1 
- .rodata        0x100870a8       0x34 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .rodata        0x100870dc       0x3d .\CortexM4\ARM_GCC_541\Debug\blink.o
- *fill*         0x10087119        0x3 
- .rodata        0x1008711c       0x99 .\CortexM4\ARM_GCC_541\Debug\analog.o
- *fill*         0x100871b5        0x3 
- .rodata        0x100871b8       0x48 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .rodata        0x10087200       0x40 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
-                0x10087200                mI2C_SCB_IRQ_cfg
-                0x10087208                UART_SCB_IRQ_cfg
-                0x10087210                UART_DMA_INT_cfg
-                0x10087218                ADC_DMA_INT_0_cfg
-                0x10087220                ADC_DMA_INT_3_cfg
-                0x10087228                ADC_DMA_INT_2_cfg
-                0x10087230                ADC_DMA_INT_1_cfg
-                0x10087238                ADC_IRQ_cfg
- .rodata        0x10087240       0x3f .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- *fill*         0x1008727f        0x1 
- .rodata        0x10087280       0x7f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- *fill*         0x100872ff        0x1 
- .rodata        0x10087300       0x3f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- *fill*         0x1008733f        0x1 
- .rodata        0x10087340       0x80 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .rodata        0x100873c0       0x41 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- *fill*         0x10087401        0x3 
- .rodata        0x10087404      0x170 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
-                0x10087404                cy_deviceIpBlockCfgPSoC6_01
-                0x100874bc                cy_deviceIpBlockCfgPSoC6_02
- .rodata        0x10087574       0x3b .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- *fill*         0x100875af        0x1 
- .rodata        0x100875b0       0xc4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .rodata        0x10087674       0x77 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- *fill*         0x100876eb        0x1 
- .rodata        0x100876ec        0x5 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- *fill*         0x100876f1        0x3 
- .rodata        0x100876f4        0xd .\CortexM4\ARM_GCC_541\Debug\timers.o
- *fill*         0x10087701        0x3 
- .rodata        0x10087704       0x54 .\CortexM4\ARM_GCC_541\Debug\port.o
- .rodata        0x10087758       0x3b .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- *fill*         0x10087793        0x1 
- .rodata        0x10087794       0x8c .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
-                0x1008780c                ADC_allConfigs
- .rodata        0x10087820       0x40 .\CortexM4\ARM_GCC_541\Debug\UART.o
-                0x10087820                UART_config
- .rodata        0x10087860       0x4c .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
-                0x10087860                ADCSOCCounter_config
- .rodata        0x100878ac       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
-                0x100878e8                ADCDMA_0_Descriptor_1_config
- .rodata        0x10087918       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
-                0x10087954                ADCDMA_1_Descriptor_1_config
- .rodata        0x10087984       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
-                0x100879c0                ADCDMA_2_Descriptor_1_config
- .rodata        0x100879f0       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
-                0x10087a2c                ADCDMA_3_Descriptor_1_config
- .rodata        0x10087a5c       0x6c .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
-                0x10087a98                UARTDMA_Descriptor_1_config
+ .rodata        0x10086f68       0x1b .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ *fill*         0x10086f83        0x1 
+ .rodata        0x10086f84       0x34 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .rodata        0x10086fb8       0x99 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ *fill*         0x10087051        0x3 
+ .rodata        0x10087054       0x48 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .rodata        0x1008709c       0x40 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+                0x1008709c                mI2C_SCB_IRQ_cfg
+                0x100870a4                UART_SCB_IRQ_cfg
+                0x100870ac                UART_DMA_INT_cfg
+                0x100870b4                ADC_DMA_INT_0_cfg
+                0x100870bc                ADC_DMA_INT_3_cfg
+                0x100870c4                ADC_DMA_INT_2_cfg
+                0x100870cc                ADC_DMA_INT_1_cfg
+                0x100870d4                ADC_IRQ_cfg
+ .rodata        0x100870dc       0x3f .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ *fill*         0x1008711b        0x1 
+ .rodata        0x1008711c       0x7f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ *fill*         0x1008719b        0x1 
+ .rodata        0x1008719c       0x3f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ *fill*         0x100871db        0x1 
+ .rodata        0x100871dc       0x80 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .rodata        0x1008725c       0x41 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ *fill*         0x1008729d        0x3 
+ .rodata        0x100872a0      0x170 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+                0x100872a0                cy_deviceIpBlockCfgPSoC6_01
+                0x10087358                cy_deviceIpBlockCfgPSoC6_02
+ .rodata        0x10087410       0x3b .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ *fill*         0x1008744b        0x1 
+ .rodata        0x1008744c       0xc4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .rodata        0x10087510       0x77 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ *fill*         0x10087587        0x1 
+ .rodata        0x10087588        0x5 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ *fill*         0x1008758d        0x3 
+ .rodata        0x10087590        0xd .\CortexM4\ARM_GCC_541\Debug\timers.o
+ *fill*         0x1008759d        0x3 
+ .rodata        0x100875a0       0x54 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .rodata        0x100875f4       0x3b .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ *fill*         0x1008762f        0x1 
+ .rodata        0x10087630       0x8c .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+                0x100876a8                ADC_allConfigs
+ .rodata        0x100876bc       0x40 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x100876bc                UART_config
+ .rodata        0x100876fc       0x4c .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+                0x100876fc                ADCSOCCounter_config
+ .rodata        0x10087748       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+                0x10087784                ADCDMA_0_Descriptor_1_config
+ .rodata        0x100877b4       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+                0x100877f0                ADCDMA_1_Descriptor_1_config
+ .rodata        0x10087820       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+                0x1008785c                ADCDMA_2_Descriptor_1_config
+ .rodata        0x1008788c       0x6c .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+                0x100878c8                ADCDMA_3_Descriptor_1_config
+ .rodata        0x100878f8       0x6c .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+                0x10087934                UARTDMA_Descriptor_1_config
  .rodata.str1.1
-                0x10087ac8        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
- *fill*         0x10087aca        0x2 
+                0x10087964        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+ *fill*         0x10087966        0x2 
  .rodata._global_impure_ptr
-                0x10087acc        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
-                0x10087acc                _global_impure_ptr
+                0x10087968        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+                0x10087968                _global_impure_ptr
  .rodata.__sf_fake_stdin
-                0x10087ad0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10087ad0                __sf_fake_stdin
+                0x1008796c       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x1008796c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x10087af0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10087af0                __sf_fake_stdout
+                0x1008798c       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x1008798c                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x10087b10       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x10087b10                __sf_fake_stderr
+                0x100879ac       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x100879ac                __sf_fake_stderr
  *(.eh_frame*)
- .eh_frame      0x10087b30        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
- .eh_frame      0x10087b30        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
+ .eh_frame      0x100879cc        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+ .eh_frame      0x100879cc        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
 
-.glue_7         0x10087b34        0x0
- .glue_7        0x10087b34        0x0 linker stubs
+.glue_7         0x100879d0        0x0
+ .glue_7        0x100879d0        0x0 linker stubs
 
-.glue_7t        0x10087b34        0x0
- .glue_7t       0x10087b34        0x0 linker stubs
+.glue_7t        0x100879d0        0x0
+ .glue_7t       0x100879d0        0x0 linker stubs
 
-.vfp11_veneer   0x10087b34        0x0
- .vfp11_veneer  0x10087b34        0x0 linker stubs
+.vfp11_veneer   0x100879d0        0x0
+ .vfp11_veneer  0x100879d0        0x0 linker stubs
 
-.v4_bx          0x10087b34        0x0
- .v4_bx         0x10087b34        0x0 linker stubs
+.v4_bx          0x100879d0        0x0
+ .v4_bx         0x100879d0        0x0 linker stubs
 
-.iplt           0x10087b34        0x0
- .iplt          0x10087b34        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+.iplt           0x100879d0        0x0
+ .iplt          0x100879d0        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10087b34                __exidx_start = .
+                0x100879d0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10087b34                __exidx_end = .
+                0x100879d0                __exidx_end = .
 
-.copy.table     0x10087b34       0x18
-                0x10087b34                . = ALIGN (0x4)
-                0x10087b34                __copy_table_start__ = .
-                0x10087b34        0x4 LONG 0x10080000 __Vectors
-                0x10087b38        0x4 LONG 0x8024000 __ram_vectors_start__
-                0x10087b3c        0x4 LONG 0x28c (__Vectors_End - __Vectors)
-                0x10087b40        0x4 LONG 0x10087b54 __etext
-                0x10087b44        0x4 LONG 0x802428c __data_start__
-                0x10087b48        0x4 LONG 0x98c (__data_end__ - __data_start__)
-                0x10087b4c                __copy_table_end__ = .
+.copy.table     0x100879d0       0x18
+                0x100879d0                . = ALIGN (0x4)
+                0x100879d0                __copy_table_start__ = .
+                0x100879d0        0x4 LONG 0x10080000 __Vectors
+                0x100879d4        0x4 LONG 0x8024000 __ram_vectors_start__
+                0x100879d8        0x4 LONG 0x28c (__Vectors_End - __Vectors)
+                0x100879dc        0x4 LONG 0x100879f0 __etext
+                0x100879e0        0x4 LONG 0x802428c __data_start__
+                0x100879e4        0x4 LONG 0x98c (__data_end__ - __data_start__)
+                0x100879e8                __copy_table_end__ = .
 
-.zero.table     0x10087b4c        0x8
-                0x10087b4c                . = ALIGN (0x4)
-                0x10087b4c                __zero_table_start__ = .
-                0x10087b4c        0x4 LONG 0x8024cac __bss_start__
-                0x10087b50        0x4 LONG 0x2d84 (__bss_end__ - __bss_start__)
-                0x10087b54                __zero_table_end__ = .
-                0x10087b54                __etext = .
+.zero.table     0x100879e8        0x8
+                0x100879e8                . = ALIGN (0x4)
+                0x100879e8                __zero_table_start__ = .
+                0x100879e8        0x4 LONG 0x8024cac __bss_start__
+                0x100879ec        0x4 LONG 0x2d84 (__bss_end__ - __bss_start__)
+                0x100879f0                __zero_table_end__ = .
+                0x100879f0                __etext = .
 
 .ramVectors     0x08024000      0x28c
                 0x08024000                __ram_vectors_start__ = .
@@ -3488,7 +3496,7 @@ END GROUP
                 0x08024000                __ramVectors
                 0x0802428c                __ram_vectors_end__ = .
 
-.data           0x0802428c      0x98c load address 0x10087b54
+.data           0x0802428c      0x98c load address 0x100879f0
                 0x0802428c                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -3538,17 +3546,17 @@ END GROUP
                 0x08024c18                . = ALIGN (0x4)
                 0x08024c18                __data_end__ = .
 
-.igot.plt       0x08024c18        0x0 load address 0x100884e0
+.igot.plt       0x08024c18        0x0 load address 0x1008837c
  .igot.plt      0x08024c18        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
-.noinit         0x08024c18       0x94 load address 0x100884e0
+.noinit         0x08024c18       0x94 load address 0x10088380
  *(.noinit)
  .noinit        0x08024c18       0x94 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
                 0x08024c18                cy_assertFileName
                 0x08024c30                cy_assertLine
                 0x08024c34                cy_faultFrame
 
-.bss            0x08024cac     0x2d84 load address 0x10088574
+.bss            0x08024cac     0x2d84 load address 0x10088414
                 0x08024cac                . = ALIGN (0x4)
                 0x08024cac                __bss_start__ = .
  *(.bss*)
@@ -3688,7 +3696,7 @@ END GROUP
                 0x00000001                __cy_memory_4_row_size = 0x1
 OUTPUT(C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test.cydsn\CortexM4\ARM_GCC_541\Debug\RTOS_I2C_Test_link.elf elf32-littlearm)
 
-.rel.dyn        0x08027a30        0x0 load address 0x985638d4
+.rel.dyn        0x08027a30        0x0 load address 0x98563774
  .rel.iplt      0x08027a30        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
 .ARM.attributes
@@ -3704,147 +3712,144 @@ OUTPUT(C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test
  .ARM.attributes
                 0x000000aa       0x37 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .ARM.attributes
-                0x000000e1       0x37 .\CortexM4\ARM_GCC_541\Debug\blink.o
+                0x000000e1       0x37 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .ARM.attributes
-                0x00000118       0x37 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x00000118       0x37 .\CortexM4\ARM_GCC_541\Debug\serial.o
  .ARM.attributes
-                0x0000014f       0x37 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x0000014f       0x37 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .ARM.attributes
-                0x00000186       0x37 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x00000186       0x37 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .ARM.attributes
-                0x000001bd       0x37 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+                0x000001bd       0x37 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
  .ARM.attributes
-                0x000001f4       0x37 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+                0x000001f4       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .ARM.attributes
-                0x0000022b       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x0000022b       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .ARM.attributes
-                0x00000262       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x00000262       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .ARM.attributes
-                0x00000299       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x00000299       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .ARM.attributes
-                0x000002d0       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x000002d0       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
  .ARM.attributes
-                0x00000307       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+                0x00000307       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
  .ARM.attributes
-                0x0000033e       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x0000033e       0x25 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
  .ARM.attributes
-                0x00000375       0x25 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+                0x00000363       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
  .ARM.attributes
-                0x0000039a       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+                0x0000039a       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
  .ARM.attributes
-                0x000003d1       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+                0x000003d1       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
  .ARM.attributes
-                0x00000408       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x00000408       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .ARM.attributes
-                0x0000043f       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x0000043f       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .ARM.attributes
-                0x00000476       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x00000476       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
  .ARM.attributes
-                0x000004ad       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+                0x000004ad       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .ARM.attributes
-                0x000004e4       0x37 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+                0x000004e4       0x37 .\CortexM4\ARM_GCC_541\Debug\list.o
  .ARM.attributes
-                0x0000051b       0x37 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x0000051b       0x37 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .ARM.attributes
-                0x00000552       0x37 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x00000552       0x37 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .ARM.attributes
-                0x00000589       0x37 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x00000589       0x37 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .ARM.attributes
-                0x000005c0       0x37 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x000005c0       0x37 .\CortexM4\ARM_GCC_541\Debug\port.o
  .ARM.attributes
-                0x000005f7       0x37 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x000005f7       0x37 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
  .ARM.attributes
-                0x0000062e       0x37 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+                0x0000062e       0x37 .\CortexM4\ARM_GCC_541\Debug\retarget.o
  .ARM.attributes
-                0x00000665       0x37 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+                0x00000665       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .ARM.attributes
-                0x0000069c       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x0000069c       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
  .ARM.attributes
-                0x000006d3       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+                0x000006d3       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
  .ARM.attributes
-                0x0000070a       0x37 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+                0x0000070a       0x37 .\CortexM4\ARM_GCC_541\Debug\UART.o
  .ARM.attributes
-                0x00000741       0x37 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x00000741       0x37 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
  .ARM.attributes
-                0x00000778       0x37 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+                0x00000778       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
  .ARM.attributes
-                0x000007af       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+                0x000007af       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
  .ARM.attributes
-                0x000007e6       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+                0x000007e6       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
  .ARM.attributes
-                0x0000081d       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+                0x0000081d       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
  .ARM.attributes
-                0x00000854       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+                0x00000854       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
  .ARM.attributes
-                0x0000088b       0x37 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+                0x0000088b       0x37 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
  .ARM.attributes
-                0x000008c2       0x37 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+                0x000008c2       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x000008f9       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+                0x000008f4       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000092b       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00000926       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x0000095d       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
+                0x00000958       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
  .ARM.attributes
-                0x0000098f       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
+                0x0000098a       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
  .ARM.attributes
-                0x000009c1       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
+                0x000009bc       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x000009f3       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
+                0x000009ee       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x00000a25       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
+                0x00000a20       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x00000a57       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+                0x00000a52       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x00000a89       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x00000a84       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x00000abb       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
+                0x00000ab6       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x00000aed       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+                0x00000ae8       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x00000b1f       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
+                0x00000b1a       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x00000b51       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x00000b4c       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x00000b83       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
+                0x00000b7e       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x00000bb5       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+                0x00000bb0       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x00000be7       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
+                0x00000be2       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x00000c19       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
+                0x00000c14       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x00000c4b       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
+                0x00000c46       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x00000c7d       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
+                0x00000c78       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x00000caf       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
+                0x00000caa       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x00000ce1       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
+                0x00000cdc       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x00000d13       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
+                0x00000d0e       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x00000d45       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
+                0x00000d40       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
  .ARM.attributes
-                0x00000d77       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
+                0x00000d72       0x22 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
  .ARM.attributes
-                0x00000da9       0x22 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
+                0x00000d94       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
  .ARM.attributes
-                0x00000dcb       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
+                0x00000dc6       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
  .ARM.attributes
-                0x00000dfd       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
+                0x00000df8       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
  .ARM.attributes
-                0x00000e2f       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
+                0x00000e2a       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
  .ARM.attributes
-                0x00000e61       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
- .ARM.attributes
-                0x00000e93       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+                0x00000e5c       0x32 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
                                  0x6f (size before relaxing)
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\blink.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\analog.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\serial.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
@@ -3882,136 +3887,133 @@ OUTPUT(C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
  .comment       0x0000006e       0x6f .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_line     0x00000000     0xbcd6
+.debug_line     0x00000000     0xb855
  .debug_line    0x00000000       0x8e .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
- .debug_line    0x0000008e      0x444 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
- .debug_line    0x000004d2      0x411 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_line    0x000008e3      0x480 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_line    0x00000d63      0x7c2 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_line    0x00001525      0x614 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .debug_line    0x00001b39      0x3f7 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_line    0x00001f30      0x24f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_line    0x0000217f      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000022c0      0x772 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_line    0x00002a32      0x38f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_line    0x00002dc1      0x3f5 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_line    0x000031b6      0x653 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_line    0x00003809      0x2e1 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_line    0x00003aea      0x481 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_line    0x00003f6b       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_line    0x00003ff4      0xa8b .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_line    0x00004a7f      0x17f .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_line    0x00004bfe      0x736 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_line    0x00005334      0x4c4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_line    0x000057f8      0xbde .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_line    0x000063d6      0x5c5 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_line    0x0000699b      0x2b7 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_line    0x00006c52      0x2b7 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_line    0x00006f09      0xb15 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_line    0x00007a1e      0xe19 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_line    0x00008837      0x5a9 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_line    0x00008de0      0x480 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_line    0x00009260      0x2ef .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_line    0x0000954f      0x34e .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_line    0x0000989d      0x660 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_line    0x00009efd      0x312 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_line    0x0000a20f      0x245 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_line    0x0000a454      0x351 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_line    0x0000a7a5      0x1dc .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_line    0x0000a981      0x299 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_line    0x0000ac1a      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_line    0x0000af73      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_line    0x0000b2cc      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_line    0x0000b625      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_line    0x0000b97e      0x358 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_line    0x0000008e      0x443 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
+ .debug_line    0x000004d1      0x411 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
+ .debug_line    0x000008e2      0x7c2 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_line    0x000010a4      0x614 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_line    0x000016b8      0x3f7 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_line    0x00001aaf      0x24f .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_line    0x00001cfe      0x141 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00001e3f      0x772 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_line    0x000025b1      0x38f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_line    0x00002940      0x3f5 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_line    0x00002d35      0x653 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_line    0x00003388      0x2e1 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_line    0x00003669      0x481 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_line    0x00003aea       0x89 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_line    0x00003b73      0xa8b .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_line    0x000045fe      0x17f .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_line    0x0000477d      0x736 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_line    0x00004eb3      0x4c4 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_line    0x00005377      0xbde .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_line    0x00005f55      0x5c5 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_line    0x0000651a      0x2b7 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_line    0x000067d1      0x2b7 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_line    0x00006a88      0xb15 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_line    0x0000759d      0xe19 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_line    0x000083b6      0x5a9 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_line    0x0000895f      0x480 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_line    0x00008ddf      0x2ef .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_line    0x000090ce      0x34e .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_line    0x0000941c      0x660 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_line    0x00009a7c      0x312 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_line    0x00009d8e      0x245 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_line    0x00009fd3      0x351 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_line    0x0000a324      0x1dc .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_line    0x0000a500      0x299 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_line    0x0000a799      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_line    0x0000aaf2      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_line    0x0000ae4b      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_line    0x0000b1a4      0x359 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_line    0x0000b4fd      0x358 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_info     0x00000000    0x26a27
+.debug_info     0x00000000    0x25d6e
  .debug_info    0x00000000       0x93 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_info    0x00000093     0x1101 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_info    0x00001194     0x1a8c .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_info    0x00002c20      0xcb9 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_info    0x000038d9     0x1f59 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_info    0x00005832     0x1d45 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .debug_info    0x00007577     0x10ce .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_info    0x00008645      0x9c1 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_info    0x00009006       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x000090b2     0x21ff .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_info    0x0000b2b1      0x816 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_info    0x0000bac7      0x9cc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_info    0x0000c493     0x14c0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_info    0x0000d953      0xd9f .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_info    0x0000e6f2     0x2467 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_info    0x00010b59       0xc1 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_info    0x00010c1a     0x35a9 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_info    0x000141c3      0x552 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_info    0x00014715     0x14d1 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_info    0x00015be6      0xf83 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_info    0x00016b69     0x1b2d .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_info    0x00018696      0xff6 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_info    0x0001968c      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_info    0x00019ac8      0x2e2 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_info    0x00019daa     0x1387 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_info    0x0001b131     0x19ef .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_info    0x0001cb20      0xb92 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_info    0x0001d6b2      0x586 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_info    0x0001dc38      0x1f2 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_info    0x0001de2a      0xb41 .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_info    0x0001e96b     0x191d .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_info    0x00020288      0xb66 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_info    0x00020dee      0x71e .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_info    0x0002150c     0x1367 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_info    0x00022873      0x122 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_info    0x00022995      0x42e .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_info    0x00022dc3      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_info    0x000239d7      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_info    0x000245eb      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_info    0x000251ff      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_info    0x00025e13      0xc14 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_info    0x00002c20     0x1f59 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_info    0x00004b79     0x1d45 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_info    0x000068be     0x10ce .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_info    0x0000798c      0x9c1 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_info    0x0000834d       0xac .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x000083f9     0x21ff .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_info    0x0000a5f8      0x816 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_info    0x0000ae0e      0x9cc .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_info    0x0000b7da     0x14c0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_info    0x0000cc9a      0xd9f .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_info    0x0000da39     0x2467 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_info    0x0000fea0       0xc1 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_info    0x0000ff61     0x35a9 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_info    0x0001350a      0x552 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_info    0x00013a5c     0x14d1 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_info    0x00014f2d      0xf83 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_info    0x00015eb0     0x1b2d .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_info    0x000179dd      0xff6 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_info    0x000189d3      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_info    0x00018e0f      0x2e2 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_info    0x000190f1     0x1387 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_info    0x0001a478     0x19ef .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_info    0x0001be67      0xb92 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_info    0x0001c9f9      0x586 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_info    0x0001cf7f      0x1f2 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_info    0x0001d171      0xb41 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_info    0x0001dcb2     0x191d .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_info    0x0001f5cf      0xb66 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_info    0x00020135      0x71e .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_info    0x00020853     0x1367 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_info    0x00021bba      0x122 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_info    0x00021cdc      0x42e .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_info    0x0002210a      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_info    0x00022d1e      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_info    0x00023932      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_info    0x00024546      0xc14 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_info    0x0002515a      0xc14 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_abbrev   0x00000000     0x47c0
+.debug_abbrev   0x00000000     0x4619
  .debug_abbrev  0x00000000       0x14 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_abbrev  0x00000014      0x1e7 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_abbrev  0x000001fb      0x212 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_abbrev  0x0000040d      0x1a7 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_abbrev  0x000005b4      0x32c .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_abbrev  0x000008e0      0x299 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .debug_abbrev  0x00000b79      0x1ca .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_abbrev  0x00000d43       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
- .debug_abbrev  0x00000e26       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x00000e83      0x2c1 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_abbrev  0x00001144      0x15f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_abbrev  0x000012a3      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_abbrev  0x0000142b      0x2b2 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_abbrev  0x000016dd      0x1f7 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_abbrev  0x000018d4      0x2e2 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_abbrev  0x00001bb6       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
- .debug_abbrev  0x00001bca      0x29f .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_abbrev  0x00001e69       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_abbrev  0x00001f06      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_abbrev  0x0000211f      0x1e3 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_abbrev  0x00002302      0x298 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_abbrev  0x0000259a      0x267 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_abbrev  0x00002801      0x149 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_abbrev  0x0000294a       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_abbrev  0x00002a22      0x26d .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_abbrev  0x00002c8f      0x293 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_abbrev  0x00002f22      0x20a .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_abbrev  0x0000312c      0x225 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_abbrev  0x00003351      0x145 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_abbrev  0x00003496      0x159 .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_abbrev  0x000035ef      0x2f9 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_abbrev  0x000038e8      0x16e .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_abbrev  0x00003a56       0xfb .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
- .debug_abbrev  0x00003b51      0x1d3 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_abbrev  0x00003d24       0x9f .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_abbrev  0x00003dc3      0x124 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_abbrev  0x00003ee7      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_abbrev  0x000040ac      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_abbrev  0x00004271      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_abbrev  0x00004436      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_abbrev  0x000045fb      0x1c5 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_abbrev  0x0000040d      0x32c .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_abbrev  0x00000739      0x299 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_abbrev  0x000009d2      0x1ca .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_abbrev  0x00000b9c       0xe3 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_abbrev  0x00000c7f       0x5d .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000cdc      0x2c1 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_abbrev  0x00000f9d      0x15f .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_abbrev  0x000010fc      0x188 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_abbrev  0x00001284      0x2b2 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_abbrev  0x00001536      0x1f7 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_abbrev  0x0000172d      0x2e2 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_abbrev  0x00001a0f       0x14 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+ .debug_abbrev  0x00001a23      0x29f .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_abbrev  0x00001cc2       0x9d .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_abbrev  0x00001d5f      0x219 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_abbrev  0x00001f78      0x1e3 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_abbrev  0x0000215b      0x298 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_abbrev  0x000023f3      0x267 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_abbrev  0x0000265a      0x149 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_abbrev  0x000027a3       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_abbrev  0x0000287b      0x26d .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_abbrev  0x00002ae8      0x293 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_abbrev  0x00002d7b      0x20a .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_abbrev  0x00002f85      0x225 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_abbrev  0x000031aa      0x145 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_abbrev  0x000032ef      0x159 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_abbrev  0x00003448      0x2f9 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_abbrev  0x00003741      0x16e .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_abbrev  0x000038af       0xfb .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_abbrev  0x000039aa      0x1d3 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_abbrev  0x00003b7d       0x9f .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_abbrev  0x00003c1c      0x124 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_abbrev  0x00003d40      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_abbrev  0x00003f05      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_abbrev  0x000040ca      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_abbrev  0x0000428f      0x1c5 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_abbrev  0x00004454      0x1c5 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_aranges  0x00000000     0x12a0
+.debug_aranges  0x00000000     0x1278
  .debug_aranges
                 0x00000000       0x20 .\CortexM4\ARM_GCC_541\Debug\startup_psoc6_01_cm4.o
  .debug_aranges
@@ -4019,264 +4021,258 @@ OUTPUT(C:\Users\stijn\OneDrive\Documenten\PSoC Creator\ADC Klodden\RTOS_I2C_Test
  .debug_aranges
                 0x00000048       0x40 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
  .debug_aranges
-                0x00000088       0x28 .\CortexM4\ARM_GCC_541\Debug\blink.o
+                0x00000088       0xc8 .\CortexM4\ARM_GCC_541\Debug\analog.o
  .debug_aranges
-                0x000000b0       0xc8 .\CortexM4\ARM_GCC_541\Debug\analog.o
+                0x00000150       0x70 .\CortexM4\ARM_GCC_541\Debug\serial.o
  .debug_aranges
-                0x00000178       0x70 .\CortexM4\ARM_GCC_541\Debug\serial.o
+                0x000001c0       0x50 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
  .debug_aranges
-                0x000001e8       0x50 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+                0x00000210       0x18 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
  .debug_aranges
-                0x00000238       0x18 .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+                0x00000228       0x18 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
  .debug_aranges
-                0x00000250       0x18 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+                0x00000240       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
  .debug_aranges
-                0x00000268       0xf0 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+                0x00000330       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
  .debug_aranges
-                0x00000358       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+                0x00000390       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
  .debug_aranges
-                0x000003b8       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+                0x000003f8       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
  .debug_aranges
-                0x00000420       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+                0x000004d8       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
  .debug_aranges
-                0x00000500       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+                0x00000510       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
  .debug_aranges
-                0x00000538       0x78 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+                0x00000588       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
  .debug_aranges
-                0x000005b0       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_syslib_gcc.o
+                0x000005a8      0x170 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
  .debug_aranges
-                0x000005d0      0x170 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+                0x00000718       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
  .debug_aranges
-                0x00000740       0x20 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+                0x00000738       0xe8 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
  .debug_aranges
-                0x00000760       0xe8 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+                0x00000820       0xa0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
  .debug_aranges
-                0x00000848       0xa0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+                0x000008c0      0x1a0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
  .debug_aranges
-                0x000008e8      0x1a0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+                0x00000a60       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
  .debug_aranges
-                0x00000a88       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+                0x00000ac8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
  .debug_aranges
-                0x00000af0       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+                0x00000af0       0x40 .\CortexM4\ARM_GCC_541\Debug\list.o
  .debug_aranges
-                0x00000b18       0x40 .\CortexM4\ARM_GCC_541\Debug\list.o
+                0x00000b30       0xe8 .\CortexM4\ARM_GCC_541\Debug\queue.o
  .debug_aranges
-                0x00000b58       0xe8 .\CortexM4\ARM_GCC_541\Debug\queue.o
+                0x00000c18      0x1a0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
  .debug_aranges
-                0x00000c40      0x1a0 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+                0x00000db8       0xb8 .\CortexM4\ARM_GCC_541\Debug\timers.o
  .debug_aranges
-                0x00000de0       0xb8 .\CortexM4\ARM_GCC_541\Debug\timers.o
+                0x00000e70       0x88 .\CortexM4\ARM_GCC_541\Debug\port.o
  .debug_aranges
-                0x00000e98       0x88 .\CortexM4\ARM_GCC_541\Debug\port.o
+                0x00000ef8       0x38 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
  .debug_aranges
-                0x00000f20       0x38 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+                0x00000f30       0x28 .\CortexM4\ARM_GCC_541\Debug\retarget.o
  .debug_aranges
-                0x00000f58       0x28 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+                0x00000f58       0xe0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
  .debug_aranges
-                0x00000f80       0xe0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+                0x00001038       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
  .debug_aranges
-                0x00001060       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+                0x00001068       0x18 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
  .debug_aranges
-                0x00001090       0x18 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+                0x00001080       0x38 .\CortexM4\ARM_GCC_541\Debug\UART.o
  .debug_aranges
-                0x000010a8       0x38 .\CortexM4\ARM_GCC_541\Debug\UART.o
+                0x000010b8       0x28 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
  .debug_aranges
-                0x000010e0       0x28 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+                0x000010e0       0x30 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
  .debug_aranges
-                0x00001108       0x30 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+                0x00001110       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
  .debug_aranges
-                0x00001138       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+                0x00001158       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
  .debug_aranges
-                0x00001180       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+                0x000011a0       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
  .debug_aranges
-                0x000011c8       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+                0x000011e8       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
  .debug_aranges
-                0x00001210       0x48 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_aranges
-                0x00001258       0x48 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+                0x00001230       0x48 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_ranges   0x00000000      0xfd8
+.debug_ranges   0x00000000      0xfc0
  .debug_ranges  0x00000000       0x18 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_ranges  0x00000018       0x30 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_ranges  0x00000048       0x18 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_ranges  0x00000060       0xb8 .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_ranges  0x00000118       0x60 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .debug_ranges  0x00000178       0x40 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_ranges  0x000001b8       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_ranges  0x00000298       0x50 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_ranges  0x000002e8       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_ranges  0x00000340       0xd0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_ranges  0x00000410       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_ranges  0x00000438       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_ranges  0x000004a0      0x160 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_ranges  0x00000600       0x10 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_ranges  0x00000610       0xd8 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_ranges  0x000006e8       0x90 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_ranges  0x00000778      0x190 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_ranges  0x00000908       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_ranges  0x00000960       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_ranges  0x00000978       0x30 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_ranges  0x000009a8       0xd8 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_ranges  0x00000a80      0x190 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_ranges  0x00000c10       0xa8 .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_ranges  0x00000cb8       0x78 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_ranges  0x00000d30       0x28 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_ranges  0x00000d58       0x18 .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_ranges  0x00000d70       0xd0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_ranges  0x00000e40       0x20 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_ranges  0x00000e60       0x28 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_ranges  0x00000e88       0x18 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_ranges  0x00000ea0       0x20 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_ranges  0x00000ec0       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_ranges  0x00000ef8       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_ranges  0x00000f30       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_ranges  0x00000f68       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_ranges  0x00000fa0       0x38 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_ranges  0x00000048       0xb8 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_ranges  0x00000100       0x60 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_ranges  0x00000160       0x40 .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_ranges  0x000001a0       0xe0 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_ranges  0x00000280       0x50 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_ranges  0x000002d0       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_ranges  0x00000328       0xd0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_ranges  0x000003f8       0x28 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_ranges  0x00000420       0x68 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_ranges  0x00000488      0x160 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_ranges  0x000005e8       0x10 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_ranges  0x000005f8       0xd8 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_ranges  0x000006d0       0x90 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_ranges  0x00000760      0x190 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_ranges  0x000008f0       0x58 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_ranges  0x00000948       0x18 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_ranges  0x00000960       0x30 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_ranges  0x00000990       0xd8 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_ranges  0x00000a68      0x190 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_ranges  0x00000bf8       0xa8 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_ranges  0x00000ca0       0x78 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_ranges  0x00000d18       0x28 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_ranges  0x00000d40       0x18 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_ranges  0x00000d58       0xd0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_ranges  0x00000e28       0x20 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_ranges  0x00000e48       0x28 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_ranges  0x00000e70       0x18 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_ranges  0x00000e88       0x20 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_ranges  0x00000ea8       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_ranges  0x00000ee0       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_ranges  0x00000f18       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_ranges  0x00000f50       0x38 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_ranges  0x00000f88       0x38 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
 
-.debug_str      0x00000000     0xa0af
+.debug_str      0x00000000     0xa074
  .debug_str     0x00000000     0x1018 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
                                0x10c7 (size before relaxing)
  .debug_str     0x00001018     0x1b0e .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
                                0x231a (size before relaxing)
- .debug_str     0x00002b26       0x76 .\CortexM4\ARM_GCC_541\Debug\blink.o
-                                0xe5e (size before relaxing)
- .debug_str     0x00002b9c      0x9d6 .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_str     0x00002b26      0xa11 .\CortexM4\ARM_GCC_541\Debug\analog.o
                                0x28b7 (size before relaxing)
- .debug_str     0x00003572      0x2e0 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_str     0x00003537      0x2e0 .\CortexM4\ARM_GCC_541\Debug\serial.o
                                0x2774 (size before relaxing)
- .debug_str     0x00003852       0x8c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_str     0x00003817       0x8c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
                                0x1103 (size before relaxing)
- .debug_str     0x000038de       0x5b .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
+ .debug_str     0x000038a3       0x5b .\CortexM4\ARM_GCC_541\Debug\cyfitter_sysint_cfg.o
                                0x1832 (size before relaxing)
- .debug_str     0x00003939       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
+ .debug_str     0x000038fe       0x30 .\CortexM4\ARM_GCC_541\Debug\cymetadata.o
                                 0x1d2 (size before relaxing)
- .debug_str     0x00003969     0x1004 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_str     0x0000392e     0x1004 .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
                                0x2ce7 (size before relaxing)
- .debug_str     0x0000496d      0x114 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_str     0x00004932      0x114 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
                                 0x97c (size before relaxing)
- .debug_str     0x00004a81      0x110 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_str     0x00004a46      0x110 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
                                 0xaf7 (size before relaxing)
- .debug_str     0x00004b91      0x38d .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_str     0x00004b56      0x38d .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
                                0x204e (size before relaxing)
- .debug_str     0x00004f1e       0xf6 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_str     0x00004ee3       0xf6 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
                                0x195c (size before relaxing)
- .debug_str     0x00005014      0xa90 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_str     0x00004fd9      0xa90 .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
                                0x1c57 (size before relaxing)
- .debug_str     0x00005aa4     0x1294 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_str     0x00005a69     0x1294 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
                                0x2aab (size before relaxing)
- .debug_str     0x00006d38       0x69 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_str     0x00006cfd       0x69 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
                                 0x7e0 (size before relaxing)
- .debug_str     0x00006da1      0x77d .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_str     0x00006d66      0x77d .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
                                0x1450 (size before relaxing)
- .debug_str     0x0000751e      0x1c9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_str     0x000074e3      0x1c9 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
                                 0xcd1 (size before relaxing)
- .debug_str     0x000076e7      0x89e .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_str     0x000076ac      0x89e .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
                                0x168a (size before relaxing)
- .debug_str     0x00007f85      0x229 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_str     0x00007f4a      0x229 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
                                 0xf45 (size before relaxing)
- .debug_str     0x000081ae       0xb5 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_str     0x00008173       0xb5 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
                                 0x4d5 (size before relaxing)
- .debug_str     0x00008263      0x167 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_str     0x00008228      0x167 .\CortexM4\ARM_GCC_541\Debug\list.o
                                 0x35e (size before relaxing)
- .debug_str     0x000083ca      0x522 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_str     0x0000838f      0x522 .\CortexM4\ARM_GCC_541\Debug\queue.o
                                 0x808 (size before relaxing)
- .debug_str     0x000088ec      0xa14 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_str     0x000088b1      0xa14 .\CortexM4\ARM_GCC_541\Debug\tasks.o
                                 0xdff (size before relaxing)
- .debug_str     0x00009300      0x440 .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_str     0x000092c5      0x440 .\CortexM4\ARM_GCC_541\Debug\timers.o
                                 0x79c (size before relaxing)
- .debug_str     0x00009740      0x236 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_str     0x00009705      0x236 .\CortexM4\ARM_GCC_541\Debug\port.o
                                 0x4e8 (size before relaxing)
- .debug_str     0x00009976       0xc3 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_str     0x0000993b       0xc3 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
                                 0x2e5 (size before relaxing)
- .debug_str     0x00009a39       0x50 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_str     0x000099fe       0x50 .\CortexM4\ARM_GCC_541\Debug\retarget.o
                                 0xd80 (size before relaxing)
- .debug_str     0x00009a89      0x30a .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_str     0x00009a4e      0x30a .\CortexM4\ARM_GCC_541\Debug\ADC.o
                                0x2266 (size before relaxing)
- .debug_str     0x00009d93       0x65 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_str     0x00009d58       0x65 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
                                 0xca0 (size before relaxing)
- .debug_str     0x00009df8       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
+ .debug_str     0x00009dbd       0x30 .\CortexM4\ARM_GCC_541\Debug\ADC_INIT.o
                                 0x971 (size before relaxing)
- .debug_str     0x00009e28       0x42 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_str     0x00009ded       0x42 .\CortexM4\ARM_GCC_541\Debug\UART.o
                                0x1ff2 (size before relaxing)
- .debug_str     0x00009e6a       0x52 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_str     0x00009e2f       0x52 .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
                                 0x231 (size before relaxing)
- .debug_str     0x00009ebc       0x67 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_str     0x00009e81       0x67 .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
                                 0x4c2 (size before relaxing)
- .debug_str     0x00009f23       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_str     0x00009ee8       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
                                 0xd8b (size before relaxing)
- .debug_str     0x00009f73       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_str     0x00009f38       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
                                 0xd8b (size before relaxing)
- .debug_str     0x00009fc3       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_str     0x00009f88       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
                                 0xd8b (size before relaxing)
- .debug_str     0x0000a013       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_str     0x00009fd8       0x50 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
                                 0xd8b (size before relaxing)
- .debug_str     0x0000a063       0x4c .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_str     0x0000a028       0x4c .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
                                 0xd85 (size before relaxing)
 
-.debug_frame    0x00000000     0x5038
+.debug_frame    0x00000000     0x4fe0
  .debug_frame   0x00000000       0x58 .\CortexM4\ARM_GCC_541\Debug\main_cm4.o
  .debug_frame   0x00000058       0xc0 .\CortexM4\ARM_GCC_541\Debug\system_psoc6_cm4.o
- .debug_frame   0x00000118       0x58 .\CortexM4\ARM_GCC_541\Debug\blink.o
- .debug_frame   0x00000170      0x31c .\CortexM4\ARM_GCC_541\Debug\analog.o
- .debug_frame   0x0000048c      0x1a8 .\CortexM4\ARM_GCC_541\Debug\serial.o
- .debug_frame   0x00000634      0x11c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
- .debug_frame   0x00000750      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
- .debug_frame   0x00000b8c      0x178 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
- .debug_frame   0x00000d04      0x1a0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
- .debug_frame   0x00000ea4      0x404 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
- .debug_frame   0x000012a8       0xb0 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
- .debug_frame   0x00001358      0x1cc .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
- .debug_frame   0x00001524      0x680 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
- .debug_frame   0x00001ba4       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
- .debug_frame   0x00001bdc      0x424 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
- .debug_frame   0x00002000      0x2b8 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
- .debug_frame   0x000022b8      0x7c0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
- .debug_frame   0x00002a78      0x1a4 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
- .debug_frame   0x00002c1c       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
- .debug_frame   0x00002c7c       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
- .debug_frame   0x00002d54      0x420 .\CortexM4\ARM_GCC_541\Debug\queue.o
- .debug_frame   0x00003174      0x7a4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
- .debug_frame   0x00003918      0x31c .\CortexM4\ARM_GCC_541\Debug\timers.o
- .debug_frame   0x00003c34      0x1d4 .\CortexM4\ARM_GCC_541\Debug\port.o
- .debug_frame   0x00003e08       0xa8 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
- .debug_frame   0x00003eb0       0x60 .\CortexM4\ARM_GCC_541\Debug\retarget.o
- .debug_frame   0x00003f10      0x3a0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
- .debug_frame   0x000042b0       0x88 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
- .debug_frame   0x00004338       0x98 .\CortexM4\ARM_GCC_541\Debug\UART.o
- .debug_frame   0x000043d0       0x5c .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
- .debug_frame   0x0000442c       0x7c .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
- .debug_frame   0x000044a8      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
- .debug_frame   0x000045a8      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
- .debug_frame   0x000046a8      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
- .debug_frame   0x000047a8      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
- .debug_frame   0x000048a8      0x100 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
- .debug_frame   0x000049a8       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x000049d0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
- .debug_frame   0x000049f0       0x3c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
- .debug_frame   0x00004a2c       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
- .debug_frame   0x00004a54       0x40 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00004a94       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00004ac0       0x68 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x00004b28      0x11c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00004c44       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00004c98       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00004cec       0x38 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00004d24       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00004d50       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00004d7c       0x88 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x00004e04       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
- .debug_frame   0x00004e30       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
- .debug_frame   0x00004e5c       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00004e88       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00004eb4       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
- .debug_frame   0x00004ee0       0x30 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x00004f10       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
- .debug_frame   0x00004f3c       0x5c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00004f98       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
- .debug_frame   0x00004fb8       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
- .debug_frame   0x00004fd8       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
- .debug_frame   0x00004ff8       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
- .debug_frame   0x00005018       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
+ .debug_frame   0x00000118      0x31c .\CortexM4\ARM_GCC_541\Debug\analog.o
+ .debug_frame   0x00000434      0x1a8 .\CortexM4\ARM_GCC_541\Debug\serial.o
+ .debug_frame   0x000005dc      0x11c .\CortexM4\ARM_GCC_541\Debug\stdio_user.o
+ .debug_frame   0x000006f8      0x43c .\CortexM4\ARM_GCC_541\Debug\cy_flash.o
+ .debug_frame   0x00000b34      0x178 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_drv.o
+ .debug_frame   0x00000cac      0x1a0 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_sema.o
+ .debug_frame   0x00000e4c      0x404 .\CortexM4\ARM_GCC_541\Debug\cy_ipc_pipe.o
+ .debug_frame   0x00001250       0xb0 .\CortexM4\ARM_GCC_541\Debug\cy_sysint.o
+ .debug_frame   0x00001300      0x1cc .\CortexM4\ARM_GCC_541\Debug\cy_syslib.o
+ .debug_frame   0x000014cc      0x680 .\CortexM4\ARM_GCC_541\Debug\cy_syspm.o
+ .debug_frame   0x00001b4c       0x38 .\CortexM4\ARM_GCC_541\Debug\cy_device.o
+ .debug_frame   0x00001b84      0x424 .\CortexM4\ARM_GCC_541\Debug\cy_sar.o
+ .debug_frame   0x00001fa8      0x2b8 .\CortexM4\ARM_GCC_541\Debug\cy_scb_common.o
+ .debug_frame   0x00002260      0x7c0 .\CortexM4\ARM_GCC_541\Debug\cy_scb_uart.o
+ .debug_frame   0x00002a20      0x1a4 .\CortexM4\ARM_GCC_541\Debug\cy_dma.o
+ .debug_frame   0x00002bc4       0x60 .\CortexM4\ARM_GCC_541\Debug\cy_tcpwm_counter.o
+ .debug_frame   0x00002c24       0xd8 .\CortexM4\ARM_GCC_541\Debug\list.o
+ .debug_frame   0x00002cfc      0x420 .\CortexM4\ARM_GCC_541\Debug\queue.o
+ .debug_frame   0x0000311c      0x7a4 .\CortexM4\ARM_GCC_541\Debug\tasks.o
+ .debug_frame   0x000038c0      0x31c .\CortexM4\ARM_GCC_541\Debug\timers.o
+ .debug_frame   0x00003bdc      0x1d4 .\CortexM4\ARM_GCC_541\Debug\port.o
+ .debug_frame   0x00003db0       0xa8 .\CortexM4\ARM_GCC_541\Debug\heap_1.o
+ .debug_frame   0x00003e58       0x60 .\CortexM4\ARM_GCC_541\Debug\retarget.o
+ .debug_frame   0x00003eb8      0x3a0 .\CortexM4\ARM_GCC_541\Debug\ADC.o
+ .debug_frame   0x00004258       0x88 .\CortexM4\ARM_GCC_541\Debug\ADC_INT.o
+ .debug_frame   0x000042e0       0x98 .\CortexM4\ARM_GCC_541\Debug\UART.o
+ .debug_frame   0x00004378       0x5c .\CortexM4\ARM_GCC_541\Debug\AMuxCtrl.o
+ .debug_frame   0x000043d4       0x7c .\CortexM4\ARM_GCC_541\Debug\ADCSOCCounter.o
+ .debug_frame   0x00004450      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_0.o
+ .debug_frame   0x00004550      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_1.o
+ .debug_frame   0x00004650      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_2.o
+ .debug_frame   0x00004750      0x100 .\CortexM4\ARM_GCC_541\Debug\ADCDMA_3.o
+ .debug_frame   0x00004850      0x100 .\CortexM4\ARM_GCC_541\Debug\UARTDMA.o
+ .debug_frame   0x00004950       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00004978       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00004998       0x3c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-puts.o)
+ .debug_frame   0x000049d4       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strncpy.o)
+ .debug_frame   0x000049fc       0x40 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00004a3c       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00004a68       0x68 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00004ad0      0x11c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00004bec       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00004c40       0x54 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00004c94       0x38 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00004ccc       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00004cf8       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00004d24       0x88 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00004dac       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-writer.o)
+ .debug_frame   0x00004dd8       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-closer.o)
+ .debug_frame   0x00004e04       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00004e30       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00004e5c       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x00004e88       0x30 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00004eb8       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-readr.o)
+ .debug_frame   0x00004ee4       0x5c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x00004f40       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)
+ .debug_frame   0x00004f60       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(fstat.o)
+ .debug_frame   0x00004f80       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(isatty.o)
+ .debug_frame   0x00004fa0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(lseek.o)
+ .debug_frame   0x00004fc0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(sbrk.o)
 
 .stab           0x00000000       0x6c
  .stab          0x00000000       0x24 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(close.o)

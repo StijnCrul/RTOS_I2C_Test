@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   28:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #pragma clang system_header   /* treat file as system include file */
   29:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #endif
   30:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 2
 
 
   31:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #ifndef __CORE_CM4_H_GENERIC
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   85:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****     #define __FPU_USED         0U
   86:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #endif
   87:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 3
 
 
   88:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #elif defined (__ARMCC_VERSION) && (__ARMCC_VERSION >= 6010050)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  142:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****       #define __FPU_USED       0U
  143:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****     #endif
  144:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #else
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 4
 
 
  145:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****     #define __FPU_USED         0U
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  199:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****     #warning "__NVIC_PRIO_BITS not defined in device header file; using default!"
  200:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #endif
  201:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 5
 
 
  202:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #ifndef __Vendor_SysTickConfig
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  256:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /**
  257:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   \brief  Union type to access the Application Program Status Register (APSR).
  258:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****  */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 6
 
 
  259:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** typedef union
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  313:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /**
  314:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   \brief  Union type to access the Special-Purpose Program Status Registers (xPSR).
  315:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****  */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 7
 
 
  316:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** typedef union
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  370:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****  */
  371:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** typedef union
  372:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 8
 
 
  373:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   struct
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  427:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /*@} end of group CMSIS_NVIC */
  428:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
  429:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 9
 
 
  430:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /**
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  484:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
  485:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_ICSR_PENDSVSET_Pos             28U                                            /*!< SCB 
  486:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_ICSR_PENDSVSET_Msk             (1UL << SCB_ICSR_PENDSVSET_Pos)                /*!< SCB 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 10
 
 
  487:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  541:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
  542:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_SCR_SLEEPDEEP_Pos               2U                                            /*!< SCB 
  543:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_SCR_SLEEPDEEP_Msk              (1UL << SCB_SCR_SLEEPDEEP_Pos)                 /*!< SCB 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 11
 
 
  544:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  598:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_SHCSR_SVCALLACT_Pos             7U                                            /*!< SCB 
  599:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_SHCSR_SVCALLACT_Msk            (1UL << SCB_SHCSR_SVCALLACT_Pos)               /*!< SCB 
  600:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 12
 
 
  601:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_SHCSR_USGFAULTACT_Pos           3U                                            /*!< SCB 
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  655:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_CFSR_PRECISERR_Pos            (SCB_CFSR_BUSFAULTSR_Pos + 1U)                  /*!< SCB 
  656:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_CFSR_PRECISERR_Msk            (1UL << SCB_CFSR_PRECISERR_Pos)                 /*!< SCB 
  657:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 13
 
 
  658:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SCB_CFSR_IBUSERR_Pos              (SCB_CFSR_BUSFAULTSR_Pos + 0U)                  /*!< SCB 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  712:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   \brief    Type definitions for the System Control and ID Register not in the SCB
  713:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   @{
  714:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****  */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 14
 
 
  715:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  769:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SysTick_CTRL_COUNTFLAG_Msk         (1UL << SysTick_CTRL_COUNTFLAG_Pos)            /*!< SysT
  770:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
  771:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SysTick_CTRL_CLKSOURCE_Pos          2U                                            /*!< SysT
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 15
 
 
  772:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define SysTick_CTRL_CLKSOURCE_Msk         (1UL << SysTick_CTRL_CLKSOURCE_Pos)            /*!< SysT
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  826:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __OM  uint32_t IWR;                    /*!< Offset: 0xEF8 ( /W)  ITM Integration Write Register *
  827:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IM  uint32_t IRR;                    /*!< Offset: 0xEFC (R/ )  ITM Integration Read Register */
  828:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IOM uint32_t IMCR;                   /*!< Offset: 0xF00 (R/W)  ITM Integration Mode Control Reg
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 16
 
 
  829:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****         uint32_t RESERVED4[43U];
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  883:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /* ITM Integration Read Register Definitions */
  884:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define ITM_IRR_ATREADYM_Pos                0U                                            /*!< ITM 
  885:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define ITM_IRR_ATREADYM_Msk               (1UL /*<< ITM_IRR_ATREADYM_Pos*/)              /*!< ITM 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 17
 
 
  886:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  940:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
  941:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /* DWT Control Register Definitions */
  942:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define DWT_CTRL_NUMCOMP_Pos               28U                                         /*!< DWT CTR
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 18
 
 
  943:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define DWT_CTRL_NUMCOMP_Msk               (0xFUL << DWT_CTRL_NUMCOMP_Pos)             /*!< DWT CTR
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  997:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define DWT_CPICNT_CPICNT_Pos               0U                                         /*!< DWT CPI
  998:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define DWT_CPICNT_CPICNT_Msk              (0xFFUL /*<< DWT_CPICNT_CPICNT_Pos*/)       /*!< DWT CPI
  999:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 19
 
 
 1000:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /* DWT Exception Overhead Count Register Definitions */
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1054:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   \brief    Type definitions for the Trace Port Interface (TPI)
 1055:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   @{
 1056:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****  */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 20
 
 
 1057:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1111:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define TPI_FFSR_FlInProg_Msk              (0x1UL /*<< TPI_FFSR_FlInProg_Pos*/)        /*!< TPI FFS
 1112:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1113:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /* TPI Formatter and Flush Control Register Definitions */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 21
 
 
 1114:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define TPI_FFCR_TrigIn_Pos                 8U                                         /*!< TPI FFC
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1168:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1169:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define TPI_FIFO1_ITM0_Pos                  0U                                         /*!< TPI FIF
 1170:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define TPI_FIFO1_ITM0_Msk                 (0xFFUL /*<< TPI_FIFO1_ITM0_Pos*/)          /*!< TPI FIF
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 22
 
 
 1171:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1225:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IOM uint32_t RBAR;                   /*!< Offset: 0x00C (R/W)  MPU Region Base Address Register
 1226:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IOM uint32_t RASR;                   /*!< Offset: 0x010 (R/W)  MPU Region Attribute and Size Re
 1227:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IOM uint32_t RBAR_A1;                /*!< Offset: 0x014 (R/W)  MPU Alias 1 Region Base Address 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 23
 
 
 1228:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   __IOM uint32_t RASR_A1;                /*!< Offset: 0x018 (R/W)  MPU Alias 1 Region Attribute and
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1282:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define MPU_RASR_TEX_Msk                   (0x7UL << MPU_RASR_TEX_Pos)                    /*!< MPU 
 1283:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1284:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define MPU_RASR_S_Pos                     18U                                            /*!< MPU 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 24
 
 
 1285:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define MPU_RASR_S_Msk                     (1UL << MPU_RASR_S_Pos)                        /*!< MPU 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1339:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define FPU_FPCCR_MMRDY_Pos                 5U                                            /*!< FPCC
 1340:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define FPU_FPCCR_MMRDY_Msk                (1UL << FPU_FPCCR_MMRDY_Pos)                   /*!< FPCC
 1341:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 25
 
 
 1342:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define FPU_FPCCR_HFRDY_Pos                 4U                                            /*!< FPCC
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1396:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** /* Media and FP Feature Register 1 Definitions */
 1397:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define FPU_MVFR1_FP_fused_MAC_Pos         28U                                            /*!< MVFR
 1398:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define FPU_MVFR1_FP_fused_MAC_Msk         (0xFUL << FPU_MVFR1_FP_fused_MAC_Pos)          /*!< MVFR
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 26
 
 
 1399:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1453:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug_DHCSR_C_SNAPSTALL_Msk    (1UL << CoreDebug_DHCSR_C_SNAPSTALL_Pos)       /*!< Core
 1454:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1455:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug_DHCSR_C_MASKINTS_Pos      3U                                            /*!< Core
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 27
 
 
 1456:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug_DHCSR_C_MASKINTS_Msk     (1UL << CoreDebug_DHCSR_C_MASKINTS_Pos)        /*!< Core
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1510:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1511:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug_DEMCR_VC_CORERESET_Pos    0U                                            /*!< Core
 1512:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug_DEMCR_VC_CORERESET_Msk   (1UL /*<< CoreDebug_DEMCR_VC_CORERESET_Pos*/)  /*!< Core
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 28
 
 
 1513:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1567:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #define CoreDebug           ((CoreDebug_Type *)     CoreDebug_BASE)   /*!< Core Debug configuration
 1568:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** 
 1569:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h **** #if defined (__MPU_PRESENT) && (__MPU_PRESENT == 1U)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 29
 
 
 1570:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #define MPU_BASE          (SCS_BASE +  0x0D90UL)                    /*!< Memory Protection Unit *
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1624:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #ifndef CMSIS_VECTAB_VIRTUAL_HEADER_FILE
 1625:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****    #define CMSIS_VECTAB_VIRTUAL_HEADER_FILE "cmsis_vectab_virtual.h"
 1626:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #endif
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 30
 
 
 1627:Generated_Source\PSoC6\pdl\cmsis/include/core_cm4.h ****   #include CMSIS_VECTAB_VIRTUAL_HEADER_FILE
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   30              		@ args = 0, pretend = 0, frame = 8
   31              		@ frame_needed = 1, uses_anonymous_args = 0
   32              		@ link register save eliminated.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 31
 
 
   33 0000 80B4     		push	{r7}
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
    1:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /***************************************************************************//**
    2:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \file cy_dma.h
    3:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \version 2.10
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 32
 
 
    4:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   58:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * When configured, another peripheral typically triggers the DMA. The trigger is
   59:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * connected to the DMA using the trigger multiplexer. The trigger multiplexer
   60:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * driver has a software trigger you can use in firmware to trigger the DMA. See the
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 33
 
 
   61:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * <a href="group__group__trigmux.html">Trigger Multiplexer</a> documentation.
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  115:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *     <td>Flattened the organization of the driver source code into the single source directory and
  116:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *     <td>Driver library directory-structure simplification.</td>
  117:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *   </tr>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 34
 
 
  118:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *   <tr>
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  172:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #include "cy_syslib.h"
  173:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #include <stdint.h>
  174:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #include <stdbool.h>
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 35
 
 
  175:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #include <stddef.h>
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  229:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** typedef enum
  230:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
  231:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_INTR_CAUSE_NO_INTR            = 0U, /**< No interrupt.                       */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 36
 
 
  232:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_INTR_CAUSE_COMPLETION         = 1U, /**< Completion.                         */
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  286:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
  287:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_CHANNEL_ENABLED  = 0UL,         /**< Channel stays enabled. */
  288:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_CHANNEL_DISABLED = 1UL          /**< Channel is disabled.   */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 37
 
 
  289:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** } cy_en_dma_channel_state_t;
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  343:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #define CY_DMA_CTL_TR_OUT_TYPE_Msk ((uint32_t)0x3UL << CY_DMA_CTL_TR_OUT_TYPE_Pos)
  344:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #define CY_DMA_CTL_TR_IN_TYPE_Pos  (6UL)
  345:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #define CY_DMA_CTL_TR_IN_TYPE_Msk  ((uint32_t)0x3UL << CY_DMA_CTL_TR_IN_TYPE_Pos)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 38
 
 
  346:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #define CY_DMA_CTL_CH_DISABLE_Pos  (24UL)
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  400:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** typedef struct
  401:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
  402:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     cy_en_dma_retrigger_t       retrigger;       /**< Specifies whether the DW controller should wa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 39
 
 
  403:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     cy_en_dma_trigger_type_t    interruptType;   /**< Sets the event that triggers an interrupt. Se
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  457:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                * - CRC16: POLYNOMIAL is 0x80050000 (x^16 + x^15 + x^2 + 1, shifted 
  458:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                * - CRC16 CCITT: POLYNOMIAL is 0x10210000 (x^16 + x^12 + x^5 + 1, sh
  459:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 40
 
 
  460:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     uint32_t lfsrInitVal;     /**< The initial value of the Linear Feedback Shift Register */
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  514:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /**
  515:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \addtogroup group_dma_descriptor_functions
  516:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \{
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 41
 
 
  517:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  571:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \{
  572:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** */
  573:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 42
 
 
  574:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  118              		.thumb_func
  119              		.type	Cy_DMA_Descriptor_SetSrcAddress, %function
  120              	Cy_DMA_Descriptor_SetSrcAddress:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 43
 
 
  121              	.LFB137:
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  645:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  646:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \return
  647:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Returns the pointer to the source of transfer.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 44
 
 
  648:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  702:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  703:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
  704:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Descriptor_SetSrcAddress(cy_stc_dma_descriptor_t * descriptor, void con
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 45
 
 
  705:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  720:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The source address value of the descriptor.
  721:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  722:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \funcusage 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 46
 
 
  723:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \snippet dma\2.10\snippet\main.c snippet_Cy_DMA_Descriptor_GetterFunctions
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  186 0016 5DF8047B 		ldr	r7, [sp], #4
  187              		.cfi_restore 7
  188              		.cfi_def_cfa_offset 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 47
 
 
  189 001a 7047     		bx	lr
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  784:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  785:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param interruptType
  786:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The interrupt type set for the descriptor. \ref cy_en_dma_trigger_type_t
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 48
 
 
  787:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  841:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     
  842:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_REG32_CLR_SET(descriptor->ctl, CY_DMA_CTL_TR_IN_TYPE, triggerInType);
  843:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 49
 
 
  844:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  898:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
  899:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The descriptor structure instance declared by the user/component.
  900:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 50
 
 
  901:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \return
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  955:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
  956:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     return((cy_en_dma_data_size_t) _FLD2VAL(CY_DMA_CTL_DATA_SIZE, descriptor->ctl));
  957:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 51
 
 
  958:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1012:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
 1013:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The descriptor structure instance declared by the user/component.
 1014:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 52
 
 
 1015:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param dstTransferSize
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1069:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
 1070:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Descriptor_SetRetrigger(cy_stc_dma_descriptor_t * descriptor, cy_en_dma
 1071:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 53
 
 
 1072:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L3(CY_DMA_IS_RETRIG_VALID(retrigger));
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1126:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1127:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Sets the channel state on completion of the specified descriptor.
 1128:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 54
 
 
 1129:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1183:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \snippet dma\2.10\snippet\main.c snippet_Cy_DMA_Descriptor_SetterFunctions
 1184:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *  
 1185:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 55
 
 
 1186:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Descriptor_SetXloopDataCount(cy_stc_dma_descriptor_t * descriptor, uint
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1240:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L2(CY_DMA_IS_LOOP_INCR_VALID(srcXincrement));
 1241:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     
 1242:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_REG32_CLR_SET(descriptor->xCtl, CY_DMA_CTL_SRC_INCR, srcXincrement);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 56
 
 
 1243:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1297:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /*******************************************************************************
 1298:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Function Name: Cy_DMA_Descriptor_GetXloopDstIncrement
 1299:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** ****************************************************************************//**
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 57
 
 
 1300:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1354:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1355:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
 1356:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The descriptor structure instance declared by the user/component.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 58
 
 
 1357:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1411:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1412:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \funcusage 
 1413:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \snippet dma\2.10\snippet\main.c snippet_Cy_DMA_Descriptor_GetterFunctions
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 59
 
 
 1414:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *  
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1468:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
 1469:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L1(CY_DMA_2D_TRANSFER == Cy_DMA_Descriptor_GetDescriptorType(descriptor));
 1470:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 60
 
 
 1471:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     return ((int32_t) _FLD2VAL(CY_DMA_CTL_DST_INCR, descriptor->yCtl));
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1525:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \snippet dma\2.10\snippet\main.c snippet_Cy_DMA_Enable
 1526:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1527:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 61
 
 
 1528:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Channel_Enable(DW_Type * base, uint32_t channel)
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  254 0056 1B68     		ldr	r3, [r3]
  255 0058 B3F85C30 		ldrh	r3, [r3, #92]
  256 005c 1846     		mov	r0, r3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 62
 
 
  257 005e 3B68     		ldr	r3, [r7]
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1558:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
 1559:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
 1560:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 63
 
 
 1561:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Function Name: Cy_DMA_Channel_SetPriority
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1615:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /*******************************************************************************
 1616:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Function Name: Cy_DMA_Channel_GetCurrentDescriptor
 1617:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** ****************************************************************************//**
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 64
 
 
 1618:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1672:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** ****************************************************************************//**
 1673:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1674:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Returns the interrupt reason of the specified channel.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 65
 
 
 1675:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1715:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L1(CY_DMA_IS_CH_NR_VALID(channel));
  300              		.loc 2 1715 0
  301 000a 1A4B     		ldr	r3, .L15
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 66
 
 
  302 000c 1B68     		ldr	r3, [r3]
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  352 0072 80BD     		pop	{r7, pc}
  353              	.L16:
  354              		.align	2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 67
 
 
  355              	.L15:
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
 1761:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \funcusage 
 1762:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \snippet dma\2.10\snippet\main.c snippet_Cy_DMA_SetInterruptMask
 1763:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 68
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 68
 
 
 1764:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  390 001a 04D8     		bhi	.L18
  391              		.loc 2 1795 0 is_stmt 0 discriminator 1
  392 001c 40F20371 		movw	r1, #1795
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 69
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 69
 
 
  393 0020 1248     		ldr	r0, .L20+4
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  442      645F536F 
  442      75726365 
  442      5C50536F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 70
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 70
 
 
  443 006c 696F2F63 		.ascii	"io/cy_gpio.h\000"
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   43:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * specifying the port (GPIO_PRT_Type) and the pin (0-7) in the provided API 
   44:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * functions.
   45:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 71
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 71
 
 
   46:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \section group_gpio_configuration Configuration Considerations
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  100:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         to const if the pointer is not used to modify the addressed object.</td>
  101:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *     <td>The objects pointed to by the base addresses of the GPIO port are not always modified.
  102:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         While a const qualifier can be used in select scenarios, it brings little benefit
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 72
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 72
 
 
  103:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *         in adding this to the affected functions. </td>
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  157:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_data_structures Data Structures
  158:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_enums Enumerated Types
  159:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 73
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 73
 
 
  160:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  214:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     CY_GPIO_AMUX_GLR,       /**< Close ground switch. Close right switch. Close left switch */
  215:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** }cy_en_gpio_amuxconnect_t;
  216:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 74
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 74
 
 
  217:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /**
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  271:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  272:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /***************************************
  273:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *        Constants
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 75
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 75
 
 
  274:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ***************************************/
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  328:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE4_SEL_Msk | \
  329:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE5_SEL_Msk | \
  330:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE6_SEL_Msk | \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 76
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 76
 
 
  331:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                 GPIO_PRT_INTR_CFG_EDGE7_SEL_Msk)
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  385:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_GR      == (amuxConnect)) || \
  386:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****                                                        (CY_GPIO_AMUX_GLR     == (amuxConnect)))
  387:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 77
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 77
 
 
  388:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_GPIO_IS_AMUX_SELECT_VALID(amuxBus)       ((CY_GPIO_AMUXBUSA       == (amuxBus)) || \
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  442:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \defgroup group_gpio_driveStrength Pin drive strength
  443:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
  444:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Constants to be used for setting the drive strength of the pin.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 78
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 78
 
 
  445:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  499:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_AMUX_A                     (0x02UL) /**< Vref from AMUXBUS_A */
  500:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** #define CY_SIO_VREF_AMUX_B                     (0x03UL) /**< Vref from AMUXBUS_B */
  501:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /** \} */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 79
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 79
 
 
  502:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  556:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Clr(GPIO_PRT_Type* base, uint32_t pinNum);
  557:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_Inv(GPIO_PRT_Type* base, uint32_t pinNum);
  558:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE void Cy_GPIO_SetDrivemode(GPIO_PRT_Type* base, uint32_t pinNum, uint32_t value);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 80
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 80
 
 
  559:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** __STATIC_INLINE uint32_t Cy_GPIO_GetDrivemode(GPIO_PRT_Type* base, uint32_t pinNum);
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  613:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \{
  614:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** */
  615:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 81
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 81
 
 
  616:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** /*******************************************************************************
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  670:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
  671:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
  672:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Returns the current HSIOM multiplexer connection to the pin.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 82
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 82
 
 
  673:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  727:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \funcusage
  728:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * \snippet gpio/gpio_v1_10_sut_01.cydsn/main_cm4.c snippet_Cy_GPIO_PortToAddr
  729:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 83
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 83
 
 
  730:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *******************************************************************************/
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  784:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Function Name: Cy_GPIO_Write
  785:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** ****************************************************************************//**
  786:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 84
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 84
 
 
  787:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** * Write a logic 0 or logic 1 state to the output driver.
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  484              	.L24:
  809:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h **** 
  810:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     /* Thread-safe: Directly access the pin registers instead of base->OUT */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 85
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 85
 
 
  811:Generated_Source\PSoC6\pdl\drivers/peripheral/gpio/cy_gpio.h ****     if(0UL == value)
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  525              		.align	2
  526              		.thumb
  527              		.thumb_func
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 86
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 86
 
 
  528              		.type	ADC_GetResult16, %function
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   51:Generated_Source\PSoC6/ADC.h **** #if (ADC_CLOCK_INTERNAL)
   52:Generated_Source\PSoC6/ADC.h **** #include "ADC_intSarClock.h"
   53:Generated_Source\PSoC6/ADC.h **** #endif /* ADC_CLOCK_INTERNAL */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 87
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 87
 
 
   54:Generated_Source\PSoC6/ADC.h **** 
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  108:Generated_Source\PSoC6/ADC.h **** 
  109:Generated_Source\PSoC6/ADC.h **** void ADC_SetChanMask(uint32_t enableMask);
  110:Generated_Source\PSoC6/ADC.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 88
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 88
 
 
  111:Generated_Source\PSoC6/ADC.h **** /**
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  165:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_HIGH_LIMIT              (3584u)
  166:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_RANGE_COND              (3uL)
  167:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_USE_SOC                 (1uL)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 89
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 89
 
 
  168:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_VREF_PWR                (3uL)
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  222:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
  223:Generated_Source\PSoC6/ADC.h **** /* End configuration 1 customizer defines                                     */
  224:Generated_Source\PSoC6/ADC.h **** /* ************************************************************************** */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 90
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 90
 
 
  225:Generated_Source\PSoC6/ADC.h **** 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  279:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG3_VREF_SEL_MASK           (u)
  280:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG3_NOMINAL_CLOCK_FREQ      (u)
  281:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG3_CHANNEL_EN              (u)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 91
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 91
 
 
  282:Generated_Source\PSoC6/ADC.h **** 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  336:Generated_Source\PSoC6/ADC.h **** * @{
  337:Generated_Source\PSoC6/ADC.h **** */
  338:Generated_Source\PSoC6/ADC.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 92
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 92
 
 
  339:Generated_Source\PSoC6/ADC.h **** /** ADC_initVar
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  393:Generated_Source\PSoC6/ADC.h ****         << SAR_SAMPLE_TIME23_SAMPLE_TIME3_Pos))
  394:Generated_Source\PSoC6/ADC.h **** 
  395:Generated_Source\PSoC6/ADC.h **** /* Enable soc pin if used */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 93
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 93
 
 
  396:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_DSI_TRIGGER_EN_INIT \
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  450:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_DIFF_RESULT_FORMAT_INIT \
  451:Generated_Source\PSoC6/ADC.h ****         (ADC_CFG0_DIFFERENTIAL_FORMAT \
  452:Generated_Source\PSoC6/ADC.h ****         << SAR_SAMPLE_CTRL_DIFFERENTIAL_SIGNED_Pos)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 94
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 94
 
 
  453:Generated_Source\PSoC6/ADC.h **** 
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  507:Generated_Source\PSoC6/ADC.h **** #define ADC_CFG0_RANGE_COND_INIT   (cy_en_sar_range_detect_condition_t)ADC_CFG0_RANGE_COND
  508:Generated_Source\PSoC6/ADC.h **** 
  509:Generated_Source\PSoC6/ADC.h **** /* Misc Config
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 95
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 95
 
 
  510:Generated_Source\PSoC6/ADC.h ****     [0] - Freerunning: Set if the sample mode is freerunning
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  564:Generated_Source\PSoC6/ADC.h ****     /* If the SAR is configured for multiple channels, always set SAR_HW_CTRL_NEGVREF to 1 */
  565:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_HW_CTRL_NEGVREF_INIT      SAR_CTRL_SAR_HW_CTRL_NEGVREF_Msk
  566:Generated_Source\PSoC6/ADC.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 96
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 96
 
 
  567:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG1_POWER_INIT  (ADC_PWR_CTRL_VREF_NORMAL_PWR)
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  621:Generated_Source\PSoC6/ADC.h ****             | SAR_SAMPLE_CTRL_VALID_IGNORE_Msk \
  622:Generated_Source\PSoC6/ADC.h ****             | ADC_CFG1_TRIGGER_OUT_INIT \
  623:Generated_Source\PSoC6/ADC.h ****             | SAR_SAMPLE_CTRL_EOS_DSI_OUT_EN_Msk \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 97
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 97
 
 
  624:Generated_Source\PSoC6/ADC.h ****     )
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  678:Generated_Source\PSoC6/ADC.h ****         #define ADC_CFG2_SE_NEG_INPUT_INIT     (ADC_NEG_SEL_VREF \
  679:Generated_Source\PSoC6/ADC.h ****                                                                 << SAR_CTRL_NEG_SEL_Pos )
  680:Generated_Source\PSoC6/ADC.h ****     #elif (ADC_CFG2_SINGLE_PRESENT != 0u)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 98
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 98
 
 
  681:Generated_Source\PSoC6/ADC.h ****         #define ADC_CFG2_SE_NEG_INPUT_INIT         ADC_CFG2_NEG_OTHER
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  735:Generated_Source\PSoC6/ADC.h ****             | SAR_CTRL_REFBUF_EN_Msk \
  736:Generated_Source\PSoC6/ADC.h ****             | ADC_CFG2_COMP_PWR_INIT \
  737:Generated_Source\PSoC6/ADC.h ****             | SAR_CTRL_DSI_SYNC_CONFIG_Msk  \
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 99
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 99
 
 
  738:Generated_Source\PSoC6/ADC.h ****             | ADC_CFG2_SWITCH_CONF_INIT )
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  792:Generated_Source\PSoC6/ADC.h **** 
  793:Generated_Source\PSoC6/ADC.h ****     /* Set soc operation to edge or level based on sample mode */
  794:Generated_Source\PSoC6/ADC.h ****     #if(ADC_CFG3_FREERUNNING == ADC_FREERUNNING)
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 100
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 100
 
 
  795:Generated_Source\PSoC6/ADC.h ****         #define ADC_CFG3_DSI_TRIGGER_LEVEL_INIT    (SAR_SAMPLE_CTRL_DSI_TRIGGER_LEVEL_Msk)
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  849:Generated_Source\PSoC6/ADC.h ****             (ADC_CFG3_COMP_PWR \
  850:Generated_Source\PSoC6/ADC.h ****             << SAR_CTRL_COMP_PWR_Pos)
  851:Generated_Source\PSoC6/ADC.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 101
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 101
 
 
  852:Generated_Source\PSoC6/ADC.h ****     #define ADC_CFG3_COMP_DLY_INIT  \
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  906:Generated_Source\PSoC6/ADC.h **** * \param None
  907:Generated_Source\PSoC6/ADC.h **** *
  908:Generated_Source\PSoC6/ADC.h **** * \return None
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 102
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 102
 
 
  909:Generated_Source\PSoC6/ADC.h **** *
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  963:Generated_Source\PSoC6/ADC.h **** {
  964:Generated_Source\PSoC6/ADC.h ****     Cy_SAR_StopConvert(ADC_SAR__HW);
  965:Generated_Source\PSoC6/ADC.h **** }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 103
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 103
 
 
  966:Generated_Source\PSoC6/ADC.h **** 
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  565 002c 7968     		ldr	r1, [r7, #4]
  566 002e 0748     		ldr	r0, .L33+12
  567 0030 FFF7FEFF 		bl	Cy_SAR_GetResult16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 104
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 104
 
 
  568 0034 0346     		mov	r3, r0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   16:analog.c      ****  *      Version: 0.1
   17:analog.c      ****  *
   18:analog.c      ****  *  Description: ADC library for reading the ADC on a PSOC 6 development kit using an RTOS task
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 105
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 105
 
 
   19:analog.c      ****  */
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  634              		.loc 5 44 0
  635              		.cfi_startproc
  636              		@ args = 0, pretend = 0, frame = 16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 106
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 106
 
 
  637              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  676 0038 7B81     		strh	r3, [r7, #10]	@ movhi
   60:analog.c      ****             // todo: Process newReading
   61:analog.c      ****         }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 107
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 107
 
 
   62:analog.c      ****     }
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   78:analog.c      ****     
   79:analog.c      ****     float32_t newReading = 51;
  715              		.loc 5 79 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 108
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 108
 
 
  716 0012 144B     		ldr	r3, .L43
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  755 0058 0022     		movs	r2, #0
  756 005a 3969     		ldr	r1, [r7, #16]
  757 005c 7869     		ldr	r0, [r7, #20]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 109
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 109
 
 
  758 005e FFF7FEFF 		bl	Cy_GPIO_Write
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  114:analog.c      **** 	if(dma_init_status!=CY_DMA_SUCCESS){
  793              		.loc 5 114 0
  794 0010 7B69     		ldr	r3, [r7, #20]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 110
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 110
 
 
  795 0012 002B     		cmp	r3, #0
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  833 004e FFF7FEFF 		bl	Cy_DMA_Descriptor_SetDstAddress
  131:analog.c      ****     
  132:analog.c      ****     // Enable DMA interrupt
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 111
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 111
 
 
  133:analog.c      ****     Cy_SysInt_Init(&ADC_DMA_INT_0_cfg, &ADCDMA0Complete);
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  880              		.thumb_func
  881              		.type	ADCDMA0Complete, %function
  882              	ADCDMA0Complete:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 112
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 112
 
 
  883              	.LFB948:
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  916              		.loc 5 161 0
  917              		.cfi_startproc
  918              		@ args = 0, pretend = 0, frame = 24
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 113
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 113
 
 
  919              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  958 0036 7861     		str	r0, [r7, #20]
  177:analog.c      **** 	if(dma_init_status!=CY_DMA_SUCCESS){
  959              		.loc 5 177 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 114
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 114
 
 
  960 0038 7B69     		ldr	r3, [r7, #20]
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  998              		.cfi_def_cfa_offset 8
  999 0082 BD46     		mov	sp, r7
  1000              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 115
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 115
 
 
  1001              		@ sp needed
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1043              	.L59:
  1044 0010 00002840 		.word	1076363264
  1045              		.cfi_endproc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 116
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 116
 
 
  1046              	.LFE950:
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1080              		.loc 5 225 0
  1081 001a 1C4B     		ldr	r3, .L64+4
  1082 001c 7B60     		str	r3, [r7, #4]
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 117
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 117
 
 
  226:analog.c      ****     channelConfig.preemptable = ADCDMA_2_PREEMPTABLE;
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1122 0062 FFF7FEFF 		bl	__NVIC_EnableIRQ
  241:analog.c      ****     Cy_DMA_Channel_SetInterruptMask(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL, CY_DMA_INTR_MASK);
  1123              		.loc 5 241 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 118
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 118
 
 
  1124 0066 0122     		movs	r2, #1
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1164              		.loc 5 255 0
  1165              		.cfi_startproc
  1166              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 119
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 119
 
 
  1167              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  269:analog.c      **** 	cy_stc_dma_channel_config_t channelConfig;	
  270:analog.c      ****     
  271:analog.c      ****     // Initialize descriptor 1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 120
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 120
 
 
  272:analog.c      ****     dma_init_status = Cy_DMA_Descriptor_Init(&ADCDMA_3_Descriptor_1, &ADCDMA_3_Descriptor_1_config)
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  288:analog.c      ****     Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_3_Descriptor_1, (void *) 0x411D0180); // hardcoded sar 
  1246              		.loc 5 288 0
  1247 0042 1449     		ldr	r1, .L72+12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 121
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 121
 
 
  1248 0044 1148     		ldr	r0, .L72+4
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1291 009c 00000000 		.word	ADCDMA3Complete
  1292 00a0 00000000 		.word	ADC_DMA_INT_3_cfg
  1293              		.cfi_endproc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 122
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 122
 
 
  1294              	.LFE953:
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  312:analog.c      **** 
  313:analog.c      **** /* 
  314:analog.c      **** * Name: handle_error
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 123
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 123
 
 
  315:analog.c      **** * Description: Disables interrupts and halts the CPU when an error occurs. Todo: do something bette
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   36:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __has_builtin(x) (0)
   37:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
   38:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 124
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 124
 
 
   39:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* CMSIS compiler specific defines */
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
   93:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
   94:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_WRITE
   95:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic push
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 125
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 125
 
 
   96:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1356              	.L78:
  1357              	.LBE5:
  1358              	.LBE4:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 126
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 126
 
 
  321:analog.c      ****      // Disable all interrupts
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1395 001a 80BD     		pop	{r7, pc}
  1396              	.L81:
  1397              		.align	2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 127
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 127
 
 
  1398              	.L80:
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1452 0032 E11B0000 		.4byte	.LASF0
  1453 0036 71       		.sleb128 -15
  1454 0037 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 128
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 128
 
 
  1455 0038 4B0F0000 		.4byte	.LASF1
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1509 00a4 B2210000 		.4byte	.LASF19
  1510 00a8 09       		.byte	0x9
  1511 00a9 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 129
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 129
 
 
  1512 00aa 63220000 		.4byte	.LASF20
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1566 0116 7E040000 		.4byte	.LASF38
  1567 011a 1C       		.byte	0x1c
  1568 011b 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 130
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 130
 
 
  1569 011c B1010000 		.4byte	.LASF39
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1623 0188 2D200000 		.4byte	.LASF57
  1624 018c 2F       		.byte	0x2f
  1625 018d 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 131
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 131
 
 
  1626 018e 85080000 		.4byte	.LASF58
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1680 01fa B4260000 		.4byte	.LASF76
  1681 01fe 42       		.byte	0x42
  1682 01ff 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 132
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 132
 
 
  1683 0200 42160000 		.4byte	.LASF77
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1737 026c C4180000 		.4byte	.LASF95
  1738 0270 55       		.byte	0x55
  1739 0271 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 133
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 133
 
 
  1740 0272 D5200000 		.4byte	.LASF96
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1794 02de 7C020000 		.4byte	.LASF114
  1795 02e2 68       		.byte	0x68
  1796 02e3 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 134
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 134
 
 
  1797 02e4 E61A0000 		.4byte	.LASF115
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1851 0350 5A0E0000 		.4byte	.LASF133
  1852 0354 7B       		.byte	0x7b
  1853 0355 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 135
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 135
 
 
  1854 0356 E90E0000 		.4byte	.LASF134
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1908 03c2 C6030000 		.4byte	.LASF152
  1909 03c6 8E       		.byte	0x8e
  1910 03c7 04       		.uleb128 0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 136
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 136
 
 
  1911 03c8 7A1B0000 		.4byte	.LASF153
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  1965 0434 3F       		.byte	0x3f
  1966 0435 39040000 		.4byte	0x439
  1967 0439 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 137
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 137
 
 
  1968 043a 04       		.byte	0x4
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2022 04a6 040E     		.2byte	0xe04
  2023 04a8 01       		.byte	0x1
  2024 04a9 9601     		.2byte	0x196
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 138
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 138
 
 
  2025 04ab 61050000 		.4byte	0x561
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2079 0527 0002     		.2byte	0x200
  2080 0529 0A       		.uleb128 0xa
  2081 052a DF080000 		.4byte	.LASF187
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 139
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 139
 
 
  2082 052e 01       		.byte	0x1
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2136 05a7 9A040000 		.4byte	0x49a
  2137 05ab B6050000 		.4byte	0x5b6
  2138 05af 0D       		.uleb128 0xd
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 140
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 140
 
 
  2139 05b0 71050000 		.4byte	0x571
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2193 0630 0F       		.byte	0xf
  2194 0631 00       		.byte	0
  2195 0632 0C       		.uleb128 0xc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 141
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 141
 
 
  2196 0633 ED050000 		.4byte	0x5ed
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2250 06a2 13       		.uleb128 0x13
  2251 06a3 C41E0000 		.4byte	.LASF198
  2252 06a7 0A       		.byte	0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 142
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 142
 
 
  2253 06a8 29       		.byte	0x29
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2307 0712 ED050000 		.4byte	0x5ed
  2308 0716 14       		.byte	0x14
  2309 0717 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 143
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 143
 
 
  2310 0718 BD080000 		.4byte	.LASF206
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2364 0784 501F0000 		.4byte	.LASF213
  2365 0788 0A       		.byte	0xa
  2366 0789 40       		.byte	0x40
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 144
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 144
 
 
  2367 078a ED050000 		.4byte	0x5ed
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2421 07fe 4F555400 		.ascii	"OUT\000"
  2422 0802 0B       		.byte	0xb
  2423 0803 23       		.byte	0x23
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 145
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 145
 
 
  2424 0804 78050000 		.4byte	0x578
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2478 086f 78050000 		.4byte	0x578
  2479 0873 24       		.byte	0x24
  2480 0874 15       		.uleb128 0x15
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 146
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 146
 
 
  2481 0875 43464700 		.ascii	"CFG\000"
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2535 08e2 21       		.byte	0x21
  2536 08e3 660B0000 		.4byte	0xb66
  2537 08e7 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 147
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 147
 
 
  2538 08e8 20160000 		.4byte	.LASF226
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2592 0954 BD080000 		.4byte	.LASF206
  2593 0958 0C       		.byte	0xc
  2594 0959 2B       		.byte	0x2b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 148
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 148
 
 
  2595 095a 850B0000 		.4byte	0xb85
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2649 09cc ED050000 		.4byte	0x5ed
  2650 09d0 0802     		.2byte	0x208
  2651 09d2 16       		.uleb128 0x16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 149
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 149
 
 
  2652 09d3 A9220000 		.4byte	.LASF240
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2706 0a48 CA090000 		.4byte	.LASF245
  2707 0a4c 0C       		.byte	0xc
  2708 0a4d 3E       		.byte	0x3e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 150
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 150
 
 
  2709 0a4e 78050000 		.4byte	0x578
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2763 0ac3 DA0B0000 		.4byte	0xbda
  2764 0ac7 9402     		.2byte	0x294
  2765 0ac9 16       		.uleb128 0x16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 151
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 151
 
 
  2766 0aca CE1E0000 		.4byte	.LASF201
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2820 0b3f D61B0000 		.4byte	.LASF262
  2821 0b43 0C       		.byte	0xc
  2822 0b44 51       		.byte	0x51
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 152
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 152
 
 
  2823 0b45 190C0000 		.4byte	0xc19
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2877 0bc6 11       		.uleb128 0x11
  2878 0bc7 C10B0000 		.4byte	0xbc1
  2879 0bcb 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 153
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 153
 
 
  2880 0bcc 32060000 		.4byte	0x632
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2934 0c4e 08       		.byte	0x8
  2935 0c4f 04       		.byte	0x4
  2936 0c50 F9180000 		.4byte	.LASF269
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 154
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 154
 
 
  2937 0c54 12       		.uleb128 0x12
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  2991 0cbd A9140000 		.4byte	.LASF270
  2992 0cc1 0E       		.byte	0xe
  2993 0cc2 2B       		.byte	0x2b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 155
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 155
 
 
  2994 0cc3 78050000 		.4byte	0x578
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3048 0d2f 4E0C0000 		.4byte	.LASF277
  3049 0d33 0F       		.byte	0xf
  3050 0d34 3A       		.byte	0x3a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 156
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 156
 
 
  3051 0d35 9A040000 		.4byte	0x49a
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3105 0da1 6E040000 		.4byte	0x46e
  3106 0da5 2A       		.byte	0x2a
  3107 0da6 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 157
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 157
 
 
  3108 0da7 17050000 		.4byte	.LASF287
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3162 0e13 7A0F0000 		.4byte	.LASF296
  3163 0e17 0F       		.byte	0xf
  3164 0e18 51       		.byte	0x51
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 158
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 158
 
 
  3165 0e19 6E040000 		.4byte	0x46e
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3219 0e85 6E040000 		.4byte	0x46e
  3220 0e89 41       		.byte	0x41
  3221 0e8a 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 159
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 159
 
 
  3222 0e8b 0C100000 		.4byte	.LASF306
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3276 0ef7 45180000 		.4byte	.LASF315
  3277 0efb 0F       		.byte	0xf
  3278 0efc 64       		.byte	0x64
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 160
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 160
 
 
  3279 0efd 6E040000 		.4byte	0x46e
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3333 0f69 6E040000 		.4byte	0x46e
  3334 0f6d 5F       		.byte	0x5f
  3335 0f6e 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 161
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 161
 
 
  3336 0f6f 3B040000 		.4byte	.LASF325
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3390 0fdb 0A260000 		.4byte	.LASF334
  3391 0fdf 0F       		.byte	0xf
  3392 0fe0 7E       		.byte	0x7e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 162
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 162
 
 
  3393 0fe1 6E040000 		.4byte	0x46e
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3447 104d 6E040000 		.4byte	0x46e
  3448 1051 80       		.byte	0x80
  3449 1052 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 163
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 163
 
 
  3450 1053 C70C0000 		.4byte	.LASF344
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3504 10bf 3E1A0000 		.4byte	.LASF353
  3505 10c3 0F       		.byte	0xf
  3506 10c4 96       		.byte	0x96
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 164
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 164
 
 
  3507 10c5 84040000 		.4byte	0x484
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3561 1132 C80F0000 		.4byte	.LASF363
  3562 1136 10       		.byte	0x10
  3563 1137 F701     		.2byte	0x1f7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 165
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 165
 
 
  3564 1139 3D110000 		.4byte	0x113d
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3618 11a5 02       		.byte	0x2
  3619 11a6 0201     		.2byte	0x102
  3620 11a8 7B110000 		.4byte	0x117b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 166
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 166
 
 
  3621 11ac 17       		.uleb128 0x17
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3675 121d 04       		.uleb128 0x4
  3676 121e 31110000 		.4byte	.LASF386
  3677 1222 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 167
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 167
 
 
  3678 1223 00       		.byte	0
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3732 1296 73726300 		.ascii	"src\000"
  3733 129a 02       		.byte	0x2
  3734 129b 8101     		.2byte	0x181
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 168
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 168
 
 
  3735 129d 9A040000 		.4byte	0x49a
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3789 1312 02       		.byte	0x2
  3790 1313 09       		.uleb128 0x9
  3791 1314 28060000 		.4byte	.LASF401
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 169
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 169
 
 
  3792 1318 02       		.byte	0x2
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3846 138d 02       		.byte	0x2
  3847 138e A101     		.2byte	0x1a1
  3848 1390 8F040000 		.4byte	0x48f
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 170
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 170
 
 
  3849 1394 18       		.byte	0x18
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3903 1402 B1000000 		.4byte	.LASF418
  3904 1406 02       		.byte	0x2
  3905 1407 AD01     		.2byte	0x1ad
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 171
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 171
 
 
  3906 1409 36140000 		.4byte	0x1436
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  3960 147a 01       		.byte	0x1
  3961 147b 0A040000 		.4byte	0x40a
  3962 147f 12       		.byte	0x12
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 172
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 172
 
 
  3963 1480 1304     		.2byte	0x413
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4017 14f4 10       		.byte	0x10
  4018 14f5 09       		.uleb128 0x9
  4019 14f6 C1240000 		.4byte	.LASF437
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 173
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 173
 
 
  4020 14fa 12       		.byte	0x12
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4074 156f 12       		.byte	0x12
  4075 1570 1205     		.2byte	0x512
  4076 1572 9A040000 		.4byte	0x49a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 174
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 174
 
 
  4077 1576 74       		.byte	0x74
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4131 15ea AE150000 		.4byte	0x15ae
  4132 15ee F8150000 		.4byte	0x15f8
  4133 15f2 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 175
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 175
 
 
  4134 15f3 9A040000 		.4byte	0x49a
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4188 1668 9A040000 		.4byte	0x49a
  4189 166c 14       		.byte	0x14
  4190 166d 09       		.uleb128 0x9
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 176
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 176
 
 
  4191 166e 3F220000 		.4byte	.LASF461
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4245 16e3 60170000 		.4byte	.LASF470
  4246 16e7 13       		.byte	0x13
  4247 16e8 DD02     		.2byte	0x2dd
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 177
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 177
 
 
  4248 16ea 9A040000 		.4byte	0x49a
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4302 1761 09       		.uleb128 0x9
  4303 1762 93270000 		.4byte	.LASF480
  4304 1766 14       		.byte	0x14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 178
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 178
 
 
  4305 1767 7B02     		.2byte	0x27b
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4359 17dc 8602     		.2byte	0x286
  4360 17de 78050000 		.4byte	0x578
  4361 17e2 2C       		.byte	0x2c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 179
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 179
 
 
  4362 17e3 09       		.uleb128 0x9
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4416 1852 13       		.uleb128 0x13
  4417 1853 27030000 		.4byte	.LASF498
  4418 1857 15       		.byte	0x15
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 180
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 180
 
 
  4419 1858 38       		.byte	0x38
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4473 18c4 45       		.byte	0x45
  4474 18c5 9A040000 		.4byte	0x49a
  4475 18c9 38       		.byte	0x38
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 181
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 181
 
 
  4476 18ca 13       		.uleb128 0x13
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4530 1933 6A190000 		.4byte	.LASF516
  4531 1937 04       		.byte	0x4
  4532 1938 40       		.byte	0x40
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 182
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 182
 
 
  4533 1939 9A040000 		.4byte	0x49a
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4587 19a5 1C       		.uleb128 0x1c
  4588 19a6 04       		.byte	0x4
  4589 19a7 350C0000 		.4byte	0xc35
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 183
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 183
 
 
  4590 19ab 22       		.uleb128 0x22
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4644 1a1b 1C000000 		.4byte	.LFE137-.LFB137
  4645 1a1f 01       		.uleb128 0x1
  4646 1a20 9C       		.byte	0x9c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 184
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 184
 
 
  4647 1a21 441A0000 		.4byte	0x1a44
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4701 1a90 01       		.uleb128 0x1
  4702 1a91 9C       		.byte	0x9c
  4703 1a92 B51A0000 		.4byte	0x1ab5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 185
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 185
 
 
  4704 1a96 25       		.uleb128 0x25
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4758 1b05 02       		.byte	0x2
  4759 1b06 0107     		.2byte	0x701
  4760 1b08 091A0000 		.4byte	0x1a09
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 186
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 186
 
 
  4761 1b0c 02       		.uleb128 0x2
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4815 1b72 28       		.uleb128 0x28
  4816 1b73 BB050000 		.4byte	.LASF586
  4817 1b77 04       		.byte	0x4
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 187
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 187
 
 
  4818 1b78 D503     		.2byte	0x3d5
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4872 1be9 02       		.uleb128 0x2
  4873 1bea 91       		.byte	0x91
  4874 1beb 72       		.sleb128 -14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 188
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 188
 
 
  4875 1bec 00       		.byte	0
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4929 1c52 05       		.byte	0x5
  4930 1c53 50       		.byte	0x50
  4931 1c54 60040000 		.4byte	0x460
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 189
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 189
 
 
  4932 1c58 02       		.uleb128 0x2
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  4986 1cbb 91       		.byte	0x91
  4987 1cbc 64       		.sleb128 -28
  4988 1cbd 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 190
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 190
 
 
  4989 1cbe 29       		.uleb128 0x29
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5043 1d2d D7       		.byte	0xd7
  5044 1d2e 73120000 		.4byte	0x1273
  5045 1d32 02       		.uleb128 0x2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 191
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 191
 
 
  5046 1d33 91       		.byte	0x91
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5100 1d9d 08140000 		.4byte	.LASF556
  5101 1da1 05       		.byte	0x5
  5102 1da2 4001     		.2byte	0x140
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 192
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 192
 
 
  5103 1da4 00000000 		.4byte	.LFB955
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5157 1e1f 58270000 		.4byte	.LASF561
  5158 1e23 18       		.byte	0x18
  5159 1e24 22       		.byte	0x22
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 193
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 193
 
 
  5160 1e25 291E0000 		.4byte	0x1e29
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5214 1ea2 11       		.uleb128 0x11
  5215 1ea3 FB180000 		.4byte	0x18fb
  5216 1ea7 36       		.uleb128 0x36
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 194
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 194
 
 
  5217 1ea8 72170000 		.4byte	.LASF570
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5271 1f20 03       		.byte	0x3
  5272 1f21 00000000 		.4byte	buffer0
  5273 1f25 37       		.uleb128 0x37
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 195
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 195
 
 
  5274 1f26 19110000 		.4byte	.LASF579
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5328 001c 3B       		.uleb128 0x3b
  5329 001d 0B       		.uleb128 0xb
  5330 001e 01       		.uleb128 0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 196
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 196
 
 
  5331 001f 13       		.uleb128 0x13
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5385 0055 00       		.byte	0
  5386 0056 00       		.byte	0
  5387 0057 08       		.uleb128 0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 197
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 197
 
 
  5388 0058 13       		.uleb128 0x13
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5442 008e 05       		.uleb128 0x5
  5443 008f 00       		.byte	0
  5444 0090 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 198
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 198
 
 
  5445 0091 0C       		.uleb128 0xc
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5499 00c7 12       		.uleb128 0x12
  5500 00c8 13       		.uleb128 0x13
  5501 00c9 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 199
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 199
 
 
  5502 00ca 0B       		.uleb128 0xb
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5556 0100 0D       		.uleb128 0xd
  5557 0101 00       		.byte	0
  5558 0102 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 200
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 200
 
 
  5559 0103 0E       		.uleb128 0xe
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5613 0139 0B       		.uleb128 0xb
  5614 013a 3B       		.uleb128 0x3b
  5615 013b 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 201
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 201
 
 
  5616 013c 49       		.uleb128 0x49
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5670 0172 0B       		.uleb128 0xb
  5671 0173 0B       		.uleb128 0xb
  5672 0174 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 202
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 202
 
 
  5673 0175 0B       		.uleb128 0xb
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5727 01ab 0E       		.uleb128 0xe
  5728 01ac 3A       		.uleb128 0x3a
  5729 01ad 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 203
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 203
 
 
  5730 01ae 3B       		.uleb128 0x3b
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5784 01e6 19       		.uleb128 0x19
  5785 01e7 01       		.uleb128 0x1
  5786 01e8 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 204
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 204
 
 
  5787 01e9 00       		.byte	0
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5841 0221 0E       		.uleb128 0xe
  5842 0222 3A       		.uleb128 0x3a
  5843 0223 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 205
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 205
 
 
  5844 0224 3B       		.uleb128 0x3b
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5898 025c 2D       		.uleb128 0x2d
  5899 025d 05       		.uleb128 0x5
  5900 025e 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 206
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 206
 
 
  5901 025f 03       		.uleb128 0x3
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  5955 0296 0E       		.uleb128 0xe
  5956 0297 3A       		.uleb128 0x3a
  5957 0298 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 207
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 207
 
 
  5958 0299 3B       		.uleb128 0x3b
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6012 02d1 33       		.uleb128 0x33
  6013 02d2 1D       		.uleb128 0x1d
  6014 02d3 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 208
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 208
 
 
  6015 02d4 31       		.uleb128 0x31
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6069 030b 00       		.byte	0
  6070 030c 03       		.uleb128 0x3
  6071 030d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 209
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 209
 
 
  6072 030e 3A       		.uleb128 0x3a
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6126 0050 00000000 		.4byte	.LFB608
  6127 0054 50000000 		.4byte	.LFE608-.LFB608
  6128 0058 00000000 		.4byte	.LFB944
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 210
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 210
 
 
  6129 005c 10000000 		.4byte	.LFE944-.LFB944
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6183 0064 A4000000 		.4byte	.LFE947
  6184 0068 00000000 		.4byte	.LFB948
  6185 006c 14000000 		.4byte	.LFE948
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 211
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 211
 
 
  6186 0070 00000000 		.4byte	.LFB949
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6218      75734F66 
  6218      66736574 
  6219              	.LASF439:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 212
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 212
 
 
  6220 0062 6368616E 		.ascii	"chanConfig\000"
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6241              	.LASF574:
  6242 0125 41444344 		.ascii	"ADCDMA_2_Descriptor_1_config\000"
  6242      4D415F32 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 213
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 213
 
 
  6242      5F446573 
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6262      6770696F 
  6263              	.LASF56:
  6264 0203 7363625F 		.ascii	"scb_5_interrupt_IRQn\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 214
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 214
 
 
  6264      355F696E 
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6284      52656164 
  6284      7900
  6285              	.LASF552:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 215
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 215
 
 
  6286 02bf 41444344 		.ascii	"ADCDMA2Complete\000"
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6310      5F696E74 
  6310      65727275 
  6310      7074735F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 216
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 216
 
 
  6310      6770696F 
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6330      78506F73 
  6330      00
  6331              	.LASF571:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 217
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 217
 
 
  6332 044c 41444344 		.ascii	"ADCDMA_0_Descriptor_1\000"
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6350      6E74385F 
  6350      7400
  6351              	.LASF79:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 218
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 218
 
 
  6352 052f 63707573 		.ascii	"cpuss_interrupts_dw1_3_IRQn\000"
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6378      616E6E65 
  6378      6C00
  6379              	.LASF167:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 219
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 219
 
 
  6380 05d5 6C6F6E67 		.ascii	"long int\000"
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6400      6164496E 
  6400      7075744D 
  6400      6F646500 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 220
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 220
 
 
  6401              	.LASF335:
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6422 0763 4346475F 		.ascii	"CFG_IN_GPIO5V\000"
  6422      494E5F47 
  6422      50494F35 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 221
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 221
 
 
  6422      5600
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6446 0825 52414E47 		.ascii	"RANGE_COND\000"
  6446      455F434F 
  6446      4E4400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 222
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 222
 
 
  6447              	.LASF354:
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6469              	.LASF187:
  6470 08df 52455345 		.ascii	"RESERVED4\000"
  6470      52564544 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 223
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 223
 
 
  6470      3400
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6494      00
  6495              	.LASF576:
  6496 098b 41444344 		.ascii	"ADCDMA_3_Descriptor_1_config\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 224
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 224
 
 
  6496      4D415F33 
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6518      735F696E 
  6518      74657272 
  6518      75707473 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 225
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 225
 
 
  6518      5F647730 
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6541              	.LASF41:
  6542 0b14 63707573 		.ascii	"cpuss_interrupts_ipc_6_IRQn\000"
  6542      735F696E 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 226
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 226
 
 
  6542      74657272 
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6564 0bd6 74637077 		.ascii	"tcpwm_1_interrupts_10_IRQn\000"
  6564      6D5F315F 
  6564      696E7465 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 227
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 227
 
 
  6564      72727570 
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6585              	.LASF182:
  6586 0cac 49535052 		.ascii	"ISPR\000"
  6586      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 228
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 228
 
 
  6587              	.LASF575:
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6608 0d56 7564625F 		.ascii	"udb_interrupts_9_IRQn\000"
  6608      696E7465 
  6608      72727570 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 229
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 229
 
 
  6608      74735F39 
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6630      52564544 
  6630      00
  6631              	.LASF348:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 230
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 230
 
 
  6632 0e22 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6652      734E6F74 
  6652      436F6E6E 
  6652      65637465 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 231
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 231
 
 
  6652      64497271 
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6674      5F574F52 
  6674      4B00
  6675              	.LASF472:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 232
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 232
 
 
  6676 0f95 63624576 		.ascii	"cbEvents\000"
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6696      414E4745 
  6696      5F434F4E 
  6696      445F4F55 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 233
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 233
 
 
  6697              	.LASF160:
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6719              	.LASF322:
  6720 1108 64774368 		.ascii	"dwChSize\000"
  6720      53697A65 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 234
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 234
 
 
  6720      00
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6742      52454143 
  6743              	.LASF373:
  6744 11dd 43595F44 		.ascii	"CY_DMA_DESCR\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 235
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 235
 
 
  6744      4D415F44 
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6764      74536F75 
  6764      72636573 
  6764      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 236
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 236
 
 
  6765              	.LASF538:
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6786      5F7400
  6787              	.LASF37:
  6788 1357 63707573 		.ascii	"cpuss_interrupts_ipc_2_IRQn\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 237
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 237
 
 
  6788      735F696E 
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6810 141c 4144435F 		.ascii	"ADC_DMA_INT_3_cfg\000"
  6810      444D415F 
  6810      494E545F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 238
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 238
 
 
  6810      335F6366 
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6834      496E7075 
  6834      744D6F64 
  6834      6500
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 239
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 239
 
 
  6835              	.LASF313:
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6854      72727570 
  6854      74735F31 
  6855              	.LASF364:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 240
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 240
 
 
  6856 15a5 666C6F61 		.ascii	"float\000"
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6878      6C65436F 
  6878      6D706172 
  6878      65537761 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 241
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 241
 
 
  6878      7000
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6900      65637469 
  6900      6F6E00
  6901              	.LASF406:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 242
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 242
 
 
  6902 1727 64657363 		.ascii	"descriptorType\000"
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6921              	.LASF436:
  6922 17f3 72616E67 		.ascii	"rangeThres\000"
  6922      65546872 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 243
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 243
 
 
  6922      657300
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6944 18aa 43595F44 		.ascii	"CY_DMA_TRANSFER_SIZE_DATA\000"
  6944      4D415F54 
  6944      52414E53 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 244
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 244
 
 
  6944      4645525F 
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6966      74657272 
  6966      75707473 
  6966      5F647730 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 245
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 245
 
 
  6967              	.LASF563:
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  6986      4B5F4E45 
  6986      5756414C 
  6986      554500
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 246
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 246
 
 
  6987              	.LASF34:
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7008      5F7400
  7009              	.LASF171:
  7010 1b1f 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 247
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 247
 
 
  7010      206C6F6E 
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7030      745F4952 
  7030      516E00
  7031              	.LASF535:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 248
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 248
 
 
  7032 1bec 76616C75 		.ascii	"value\000"
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7052      6F6E6669 
  7052      677300
  7053              	.LASF519:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 249
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 249
 
 
  7054 1cc7 5469636B 		.ascii	"TickType_t\000"
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7073      6F2D6F62 
  7074              	.LASF541:
  7075 1dea 70784368 		.ascii	"pxChannel\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 250
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 250
 
 
  7075      616E6E65 
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7097 1ea7 696F7373 		.ascii	"ioss_interrupts_gpio_11_IRQn\000"
  7097      5F696E74 
  7097      65727275 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 251
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 251
 
 
  7097      7074735F 
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7122              	.LASF308:
  7123 1f64 73797350 		.ascii	"sysPmSimoPresent\000"
  7123      6D53696D 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 252
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 252
 
 
  7123      6F507265 
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7147      44455343 
  7147      525F4453 
  7147      5400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 253
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 253
 
 
  7148              	.LASF47:
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7171      315F6366 
  7171      6700
  7172              	.LASF369:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 254
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 254
 
 
  7173 20c1 43595F44 		.ascii	"CY_DMA_CRC_TRANSFER\000"
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7193      74657272 
  7193      75707473 
  7193      5F697063 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 255
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 255
 
 
  7194              	.LASF317:
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7214              	.LASF20:
  7215 2263 696F7373 		.ascii	"ioss_interrupts_gpio_10_IRQn\000"
  7215      5F696E74 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 256
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 256
 
 
  7215      65727275 
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7237      6F4F6666 
  7237      73657400 
  7238              	.LASF444:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 257
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 257
 
 
  7239 2333 6D757853 		.ascii	"muxSwitchSqCtrl\000"
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7257      4952516E 
  7258              	.LASF151:
  7259 2412 70726F66 		.ascii	"profile_interrupt_IRQn\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 258
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 258
 
 
  7259      696C655F 
@@ -15478,7 +15478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7279      6400
  7280              	.LASF457:
  7281 24cb 6D617374 		.ascii	"masterPause\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 259
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 259
 
 
  7281      65725061 
@@ -15538,7 +15538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7303      496E7075 
  7303      7400
  7304              	.LASF165:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 260
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 260
 
 
  7305 2599 73686F72 		.ascii	"short unsigned int\000"
@@ -15598,7 +15598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7324              	.LASF587:
  7325 2661 4144435F 		.ascii	"ADC_ISR_Callback\000"
  7325      4953525F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 261
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 261
 
 
  7325      43616C6C 
@@ -15658,7 +15658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7347      66546169 
  7347      6C00
  7348              	.LASF31:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 262
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 262
 
 
  7349 272e 73727373 		.ascii	"srss_interrupt_backup_IRQn\000"
@@ -15718,7 +15718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 1
  7367              	.LASF374:
  7368 2815 43595F44 		.ascii	"CY_DMA_DESCR_CHAIN\000"
  7368      4D415F44 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccvaRVM2.s 			page 263
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\cckATycx.s 			page 263
 
 
  7368      45534352 

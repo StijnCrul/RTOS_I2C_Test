@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
   28:Generated_Source\PSoC6/ADCDMA_2.c ****     .channelState    = CY_DMA_CHANNEL_ENABLED,
   29:Generated_Source\PSoC6/ADCDMA_2.c ****     .triggerInType   = CY_DMA_1ELEMENT,
   30:Generated_Source\PSoC6/ADCDMA_2.c ****     .dataSize        = CY_DMA_WORD,
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 2
 
 
   31:Generated_Source\PSoC6/ADCDMA_2.c ****     .srcTransferSize = CY_DMA_TRANSFER_SIZE_DATA,
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
   85:Generated_Source\PSoC6/ADCDMA_2.c ****     
   86:Generated_Source\PSoC6/ADCDMA_2.c ****     Cy_DMA_Descriptor_SetSrcAddress(&ADCDMA_2_Descriptor_1, srcAddress);
   87:Generated_Source\PSoC6/ADCDMA_2.c ****     Cy_DMA_Descriptor_SetDstAddress(&ADCDMA_2_Descriptor_1, dstAddress);
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 3
 
 
   88:Generated_Source\PSoC6/ADCDMA_2.c ****     Cy_DMA_Channel_Enable(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL);
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
   56              		.loc 1 113 0
   57 001e 5373     		strb	r3, [r2, #13]
  114:Generated_Source\PSoC6/ADCDMA_2.c **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 4
 
 
  115:Generated_Source\PSoC6/ADCDMA_2.c ****     (void)Cy_DMA_Channel_Init(ADCDMA_2_HW, ADCDMA_2_DW_CHANNEL, &channelConfig);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
   45:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * 
   46:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * To set up a descriptor, provide the configuration parameters for the 
   47:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * descriptor in the \ref cy_stc_dma_descriptor_config_t structure. Then call the 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 5
 
 
   48:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \ref Cy_DMA_Descriptor_Init function to initialize the descriptor in SRAM. You can 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  102:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *     <td>A cast should not be performed between a pointer to object type and
  103:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *         a different pointer to object type.</td>
  104:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *     <td>This piece of code is written for DW_V2_Type only and it will be never
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 6
 
 
  105:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *         executed for DW_V1_Type (which is a default build option for DW_Type).</td>
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  159:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \defgroup group_dma_block_functions Block Functions
  160:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \defgroup group_dma_channel_functions Channel Functions
  161:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \defgroup group_dma_descriptor_functions Descriptor Functions
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 7
 
 
  162:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \}
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  216:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #ifndef CY_DMA_BWC
  217:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     #define CY_DMA_BWC                 (0U) /* Disabled by default */
  218:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** #endif
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 8
 
 
  219:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  273:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_RETRIG_16CYC   = 2UL,           /**< Retrigger after 16 Clk_Slow cycles. */
  274:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_DMA_WAIT_FOR_REACT = 3UL            /**< Wait for trigger reactivation.      */
  275:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** } cy_en_dma_retrigger_t;
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 9
 
 
  276:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  330:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                                 (CY_DMA_1D_TRANSFER     == (descrType)) || \
  331:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                                 (CY_DMA_2D_TRANSFER     == (descrType)) || \
  332:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                                 (CY_DMA_CRC_TRANSFER    == (descrType)))
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 10
 
 
  333:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  387:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     uint32_t xCtl;                   /*!< 0x0000000C Descriptor X loop control */
  388:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     uint32_t yCtl;                   /*!< 0x00000010 Descriptor Y loop control */
  389:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     uint32_t nextPtr;                /*!< 0x00000014 Descriptor next pointer */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 11
 
 
  390:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** } cy_stc_dma_descriptor_t;
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  444:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     uint32_t dataXor;         /**< Specifies a byte mask with which each data byte is XORed. The XO
  445:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     bool     reminderReverse; /**< Specifies whether the remainder is bit reversed (reversal is per
  446:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                *   Note: this parameter doesn't affect the CRC value stored into th
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 12
 
 
  447:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****                                *   The reversed value remains in the CRC_REM_RESULT register.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  501:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE
  502:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** cy_stc_dma_descriptor_t * Cy_DMA_Channel_GetCurrentDescriptor   (DW_Type const * base, uint32_t cha
  503:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 13
 
 
  504:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE uint32_t Cy_DMA_Channel_GetInterruptStatus      (DW_Type const * base, uint32_t cha
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  558:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE cy_en_dma_channel_state_t   Cy_DMA_Descriptor_GetChannelState     (cy_stc_dma_descr
  559:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
  560:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /** \} group_dma_descriptor_functions */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 14
 
 
  561:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
   88              		.size	ADCDMA_2_Init, .-ADCDMA_2_Init
   89              		.section	.text.ADCDMA_2_Start,"ax",%progbits
   90              		.align	2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 15
 
 
   91              		.global	ADCDMA_2_Start
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  606:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
  607:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Disable(DW_Type * base)
  608:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 16
 
 
  609:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     DW_CTL(base) &= (uint32_t) ~DW_CTL_ENABLED_Msk;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  663:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Returns the destination address being used for the current transfer.
  664:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  665:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param base
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 17
 
 
  666:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The pointer to the hardware DMA block.
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  712:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** ****************************************************************************//**
  713:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  714:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Returns the source address parameter of the specified descriptor.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 18
 
 
  715:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  762:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  763:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \return
  764:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The destination address value of the descriptor.
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 19
 
 
  765:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  819:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
  820:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
  821:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 20
 
 
  822:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /*******************************************************************************
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  876:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
  877:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param triggerOutType
  878:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The Trigger-Out-Type set for the descriptor. \ref cy_en_dma_trigger_type_t
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 21
 
 
  879:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  933:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     
  934:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_REG32_CLR_SET(descriptor->ctl, CY_DMA_CTL_DATA_SIZE, dataSize);
  935:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 22
 
 
  936:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  990:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
  991:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The descriptor structure instance declared by the user/component.
  992:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 23
 
 
  993:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \return
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1047:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
 1048:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     return((cy_en_dma_transfer_size_t) _FLD2VAL(CY_DMA_CTL_DST_SIZE, descriptor->ctl));
 1049:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 24
 
 
 1050:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1104:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
 1105:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Returns the descriptor's type of the specified descriptor.
 1106:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 25
 
 
 1107:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1161:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *  
 1162:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
 1163:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE cy_en_dma_channel_state_t Cy_DMA_Descriptor_GetChannelState(cy_stc_dma_descriptor_t
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 26
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 26
 
 
 1164:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1218:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
 1219:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
 1220:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** /*******************************************************************************
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 27
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 27
 
 
 1221:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Function Name: Cy_DMA_Descriptor_SetXloopSrcIncrement
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1275:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * Sets the destination increment parameter for the X loop for the specified
 1276:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * descriptor (for 1D or 2D descriptors only).
 1277:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 28
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 28
 
 
 1278:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param descriptor
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1332:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \param yCount
 1333:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * The number of X loops to execute in the Y loop. The valid range is 1 ... 256.
 1334:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 29
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 29
 
 
 1335:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** * \funcusage 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1389:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** *******************************************************************************/
 1390:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Descriptor_SetYloopSrcIncrement(cy_stc_dma_descriptor_t * descriptor, i
 1391:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 30
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 30
 
 
 1392:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L1(CY_DMA_2D_TRANSFER == Cy_DMA_Descriptor_GetDescriptorType(descriptor));
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1446:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_REG32_CLR_SET(descriptor->yCtl, CY_DMA_CTL_DST_INCR, dstYincrement);
 1447:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** }
 1448:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 31
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 31
 
 
 1449:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** 
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
 1503:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** __STATIC_INLINE void Cy_DMA_Channel_SetDescriptor(DW_Type * base, uint32_t channel, cy_stc_dma_desc
 1504:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h **** {
 1505:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     CY_ASSERT_L1(CY_DMA_IS_CH_NR_VALID(channel));
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 32
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 32
 
 
 1506:Generated_Source\PSoC6\pdl\drivers/peripheral/dma/cy_dma.h ****     
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  168 004e 0A43     		orrs	r2, r1
  169 0050 1A60     		str	r2, [r3]
  170              	.LVL9:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 33
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 33
 
 
  171              	.LBE21:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  220      5C50536F 
  221 0030 612F6379 		.ascii	"a/cy_dma.h\000"
  221      5F646D61 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 34
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 34
 
 
  221      2E6800
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  271 0040 1D       		.byte	0x1d
  272 0041 2C000000 		.4byte	0x2c
  273 0045 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 35
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 35
 
 
  274 0046 53040000 		.4byte	.LASF4
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  328 00b2 04       		.byte	0x4
  329 00b3 20       		.byte	0x20
  330 00b4 45000000 		.4byte	0x45
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 36
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 36
 
 
  331 00b8 03       		.uleb128 0x3
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  385 012a 0A       		.uleb128 0xa
  386 012b 76090000 		.4byte	.LASF22
  387 012f 05       		.byte	0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 37
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 37
 
 
  388 0130 25       		.byte	0x25
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  442 019a E5000000 		.4byte	0xe5
  443 019e 04       		.byte	0x4
  444 019f 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 38
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 38
 
 
  445 01a0 970D0000 		.4byte	.LASF30
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  499 020c 93090000 		.4byte	.LASF39
  500 0210 05       		.byte	0x5
  501 0211 3C       		.byte	0x3c
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 39
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 39
 
 
  502 0212 E5000000 		.4byte	0xe5
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  556 0285 ED01     		.2byte	0x1ed
  557 0287 00       		.byte	0
  558 0288 05       		.uleb128 0x5
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 40
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 40
 
 
  559 0289 77020000 		.4byte	0x277
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  613 02f9 FD070000 		.4byte	.LASF24
  614 02fd 07       		.byte	0x7
  615 02fe 27       		.byte	0x27
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 41
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 41
 
 
  616 02ff E0000000 		.4byte	0xe0
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  670 036e 09       		.uleb128 0x9
  671 036f B8       		.byte	0xb8
  672 0370 08       		.byte	0x8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 42
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 42
 
 
  673 0371 34       		.byte	0x34
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  727 03dd CE000000 		.4byte	0xce
  728 03e1 20       		.byte	0x20
  729 03e2 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 43
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 43
 
 
  730 03e3 38080000 		.4byte	.LASF63
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  784 044f 0B0B0000 		.4byte	.LASF72
  785 0453 08       		.byte	0x8
  786 0454 4B       		.byte	0x4b
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 44
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 44
 
 
  787 0455 A2000000 		.4byte	0xa2
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  841 04c1 A2000000 		.4byte	0xa2
  842 04c5 3D       		.byte	0x3d
  843 04c6 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 45
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 45
 
 
  844 04c7 0F0A0000 		.4byte	.LASF82
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  898 0533 860D0000 		.4byte	.LASF91
  899 0537 08       		.byte	0x8
  900 0538 60       		.byte	0x60
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 46
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 46
 
 
  901 0539 A2000000 		.4byte	0xa2
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  955 05a5 A2000000 		.4byte	0xa2
  956 05a9 59       		.byte	0x59
  957 05aa 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 47
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 47
 
 
  958 05ab 4B070000 		.4byte	.LASF101
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1012 0617 AF000000 		.4byte	.LASF110
  1013 061b 08       		.byte	0x8
  1014 061c 79       		.byte	0x79
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 48
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 48
 
 
  1015 061d B8000000 		.4byte	0xb8
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1069 0689 A2000000 		.4byte	0xa2
  1070 068d 7C       		.byte	0x7c
  1071 068e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 49
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 49
 
 
  1072 068f F00B0000 		.4byte	.LASF120
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1126 06fb 73060000 		.4byte	.LASF129
  1127 06ff 08       		.byte	0x8
  1128 0700 92       		.byte	0x92
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 50
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 50
 
 
  1129 0701 CE000000 		.4byte	0xce
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1183 076d B8000000 		.4byte	0xb8
  1184 0771 B0       		.byte	0xb0
  1185 0772 0A       		.uleb128 0xa
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 51
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 51
 
 
  1186 0773 53000000 		.4byte	.LASF139
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1240 07e1 02       		.byte	0x2
  1241 07e2 F9       		.byte	0xf9
  1242 07e3 B7070000 		.4byte	0x7b7
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 52
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 52
 
 
  1243 07e7 10       		.uleb128 0x10
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1297 0857 11       		.uleb128 0x11
  1298 0858 68030000 		.4byte	.LASF161
  1299 085c 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 53
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 53
 
 
  1300 085d 11       		.uleb128 0x11
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1354 08cc 63746C00 		.ascii	"ctl\000"
  1355 08d0 02       		.byte	0x2
  1356 08d1 8001     		.2byte	0x180
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 54
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 54
 
 
  1357 08d3 CE000000 		.4byte	0xce
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1411 0948 01       		.byte	0x1
  1412 0949 15       		.uleb128 0x15
  1413 094a 7A010000 		.4byte	.LASF177
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 55
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 55
 
 
  1414 094e 02       		.byte	0x2
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1468 09c3 02       		.byte	0x2
  1469 09c4 A001     		.2byte	0x1a0
  1470 09c6 C3000000 		.4byte	0xc3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 56
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 56
 
 
  1471 09ca 14       		.byte	0x14
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1525 0a38 5D0A0000 		.4byte	.LASF194
  1526 0a3c 02       		.byte	0x2
  1527 0a3d AC01     		.2byte	0x1ac
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 57
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 57
 
 
  1528 0a3f 1C0A0000 		.4byte	0xa1c
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1582 0ab2 EC02     		.2byte	0x2ec
  1583 0ab4 03       		.byte	0x3
  1584 0ab5 D20A0000 		.4byte	0xad2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 58
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 58
 
 
  1585 0ab9 19       		.uleb128 0x19
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1639 0b30 75       		.byte	0x75
  1640 0b31 3F0B0000 		.4byte	0xb3f
  1641 0b35 1E       		.uleb128 0x1e
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 59
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 59
 
 
  1642 0b36 990A0000 		.4byte	0xa99
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1696 0b92 FD090000 		.4byte	.LASF206
  1697 0b96 02       		.byte	0x2
  1698 0b97 F805     		.2byte	0x5f8
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 60
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 60
 
 
  1699 0b99 CE000000 		.4byte	0xce
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1753 0c26 34000000 		.4byte	.LBE20-.LBB20
  1754 0c2a 01       		.byte	0x1
  1755 0c2b 58       		.byte	0x58
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 61
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 61
 
 
  1756 0c2c 5D0C0000 		.4byte	0xc5d
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1810 0c9f 06       		.uleb128 0x6
  1811 0ca0 220A0000 		.4byte	0xa22
  1812 0ca4 25       		.uleb128 0x25
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 62
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 62
 
 
  1813 0ca5 40090000 		.4byte	.LASF212
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1867 001d 00       		.byte	0
  1868 001e 03       		.uleb128 0x3
  1869 001f 16       		.uleb128 0x16
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 63
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 63
 
 
  1870 0020 00       		.byte	0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1924 0056 09       		.uleb128 0x9
  1925 0057 13       		.uleb128 0x13
  1926 0058 01       		.byte	0x1
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 64
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 64
 
 
  1927 0059 0B       		.uleb128 0xb
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  1981 008f 0D       		.uleb128 0xd
  1982 0090 00       		.byte	0
  1983 0091 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 65
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 65
 
 
  1984 0092 0E       		.uleb128 0xe
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2038 00c8 0B       		.uleb128 0xb
  2039 00c9 00       		.byte	0
  2040 00ca 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 66
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 66
 
 
  2041 00cb 12       		.uleb128 0x12
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2095 0101 38       		.uleb128 0x38
  2096 0102 0B       		.uleb128 0xb
  2097 0103 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 67
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 67
 
 
  2098 0104 00       		.byte	0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2152 013a 01       		.byte	0x1
  2153 013b 3F       		.uleb128 0x3f
  2154 013c 19       		.uleb128 0x19
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 68
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 68
 
 
  2155 013d 03       		.uleb128 0x3
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2209 0174 00       		.byte	0
  2210 0175 31       		.uleb128 0x31
  2211 0176 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 69
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 69
 
 
  2212 0177 02       		.uleb128 0x2
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2266 01b6 13       		.uleb128 0x13
  2267 01b7 00       		.byte	0
  2268 01b8 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 70
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 70
 
 
  2269 01b9 24       		.uleb128 0x24
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2323              	.LLST0:
  2324 0000 2A000000 		.4byte	.LVL1
  2325 0004 34000000 		.4byte	.LVL2
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 71
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 71
 
 
  2326 0008 0600     		.2byte	0x6
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2380 008e 00000000 		.4byte	ADCDMA_2_Descriptor_1
  2381 0092 9F       		.byte	0x9f
  2382 0093 00000000 		.4byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 72
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 72
 
 
  2383 0097 00000000 		.4byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2437 0010 00000000 		.4byte	0
  2438 0014 00000000 		.4byte	0
  2439              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 73
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 73
 
 
  2440              	.Ldebug_line0:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2459      00
  2460              	.LASF189:
  2461 00a1 73726359 		.ascii	"srcYincrement\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 74
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 74
 
 
  2461      696E6372 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2481      7369676E 
  2481      65642069 
  2482              	.LASF107:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 75
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 75
 
 
  2483 015c 70657269 		.ascii	"periTrCmdOffset\000"
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2504              	.LASF11:
  2505 0208 6C6F6E67 		.ascii	"long long int\000"
  2505      206C6F6E 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 76
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 76
 
 
  2505      6720696E 
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2527      00
  2528              	.LASF50:
  2529 02b2 5352414D 		.ascii	"SRAM_DATA0\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 77
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 77
 
 
  2529      5F444154 
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2553      5F446573 
  2553      63726970 
  2553      746F725F 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 78
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 78
 
 
  2554              	.LASF161:
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2574      6F646465 
  2574      6E5C5254 
  2574      4F535F49 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 79
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 79
 
 
  2575              	.LASF85:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2598      676E6564 
  2598      20696E74 
  2598      00
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 80
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 80
 
 
  2599              	.LASF152:
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2622 0589 75696E74 		.ascii	"uint8\000"
  2622      3800
  2623              	.LASF23:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 81
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 81
 
 
  2624 058f 43485F43 		.ascii	"CH_CURR_PTR\000"
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2646 0641 73686F72 		.ascii	"short int\000"
  2646      7420696E 
  2646      7400
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 82
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 82
 
 
  2647              	.LASF52:
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2670 06fb 63707573 		.ascii	"cpussCm0StatusOffset\000"
  2670      73436D30 
  2670      53746174 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 83
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 83
 
 
  2670      75734F66 
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2692 07b7 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
  2692      44697643 
  2692      6D645061 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 84
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 84
 
 
  2692      54797065 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2715              	.LASF179:
  2716 086c 74726967 		.ascii	"triggerInType\000"
  2716      67657249 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 85
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 85
 
 
  2716      6E547970 
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2740      6B00
  2741              	.LASF1:
  2742 0913 756E7369 		.ascii	"unsigned char\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 86
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 86
 
 
  2742      676E6564 
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2763              	.LASF25:
  2764 09d1 494E5452 		.ascii	"INTR_SET\000"
  2764      5F534554 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 87
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 87
 
 
  2764      00
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2788      352E342E 
  2788      31203230 
  2788      31363036 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 88
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 88
 
 
  2789 0a9b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2812      7400
  2813              	.LASF20:
  2814 0b75 43485F43 		.ascii	"CH_CTL\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 89
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 89
 
 
  2814      544C00
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2836      74635F64 
  2836      6D615F64 
  2836      65736372 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 90
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 90
 
 
  2836      6970746F 
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2858      66736574 
  2859              	.LASF217:
  2860 0cd8 47656E65 		.ascii	"Generated_Source\\PSoC6\\ADCDMA_2.c\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 91
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 91
 
 
  2860      72617465 
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 1
  2882      69726564 
  2882      00
  2883              	.LASF30:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccJM7NsH.s 			page 92
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccDvROtI.s 			page 92
 
 
  2884 0d97 50454E44 		.ascii	"PENDING\000"

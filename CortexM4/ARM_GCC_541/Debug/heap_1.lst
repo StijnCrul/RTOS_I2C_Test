@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
   16:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
   17:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
   18:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 2
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 2
 
 
   19:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
   37              		.cfi_startproc
   38              		@ args = 0, pretend = 0, frame = 16
   39              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 3
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 3
 
 
   40 0000 80B5     		push	{r7, lr}
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
   74 0034 124B     		ldr	r3, .L6
   75 0036 1A60     		str	r2, [r3]
   76              	.L3:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 4
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 4
 
 
   92:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 		}
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  110:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 		if( pvReturn == NULL )
  111:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 		{
  112:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 			extern void vApplicationMallocFailedHook( void );
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 5
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 5
 
 
  113:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 			vApplicationMallocFailedHook();
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  127:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 	( void ) pv;
  128:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 
  129:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 	/* Force an assert as it is invalid to call this function. */
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 6
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 6
 
 
  130:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** 	configASSERT( pv == NULL );
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
   47:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portCHAR		char
   48:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portFLOAT		float
   49:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portDOUBLE		double
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 7
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 7
 
 
   50:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portLONG		long
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  104:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** #define portEXIT_CRITICAL()						vPortExitCritical()
  105:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** 
  106:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** /*-----------------------------------------------------------*/
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 8
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 8
 
 
  107:Generated_Source\PSoC6\pdl\rtos/FreeRTOS/10.0.1/Source/portable/GCC/CM4F/portmacro.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  163 0012 83F31188 		msr basepri, r3											
  164 0016 BFF36F8F 		isb														
  165 001a BFF34F8F 		dsb														
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 9
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 9
 
 
  166              	
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  138:Generated_Source\PSoC6\pdl\rtos\FreeRTOS\10.0.1\Source\portable\MemMang/heap_1.c **** }
  213              		.loc 1 138 0
  214 000a 00BF     		nop
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 10
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 10
 
 
  215 000c BD46     		mov	sp, r7
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  263              	.L17:
  264 0018 00280000 		.word	xNextFreeByte
  265              		.cfi_endproc
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 11
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 11
 
 
  266              	.LFE139:
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  320 0059 1D       		.byte	0x1d
  321 005a 5E000000 		.4byte	0x5e
  322 005e 03       		.uleb128 0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 12
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 12
 
 
  323 005f 01       		.byte	0x1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  377 00c5 AD020000 		.4byte	.LASF18
  378 00c9 05       		.byte	0x5
  379 00ca 30       		.byte	0x30
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 13
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 13
 
 
  380 00cb 85000000 		.4byte	0x85
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  434 0137 DD000000 		.4byte	0xdd
  435 013b 05       		.uleb128 0x5
  436 013c 03       		.byte	0x3
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 14
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 14
 
 
  437 013d 04280000 		.4byte	pucAlignedHeap.12126
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  491 01ae AE000000 		.4byte	0xae
  492 01b2 BE010000 		.4byte	0x1be
  493 01b6 14       		.uleb128 0x14
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 15
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 15
 
 
  494 01b7 9E000000 		.4byte	0x9e
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  548 0019 0B       		.uleb128 0xb
  549 001a 3B       		.uleb128 0x3b
  550 001b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 16
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 16
 
 
  551 001c 49       		.uleb128 0x49
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  605 0052 0B       		.uleb128 0xb
  606 0053 01       		.uleb128 0x1
  607 0054 13       		.uleb128 0x13
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 17
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 17
 
 
  608 0055 00       		.byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  662 008c 18       		.uleb128 0x18
  663 008d 00       		.byte	0
  664 008e 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 18
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 18
 
 
  665 008f 0B       		.uleb128 0xb
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  719 00c6 00       		.byte	0
  720 00c7 0E       		.uleb128 0xe
  721 00c8 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 19
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 19
 
 
  722 00c9 01       		.byte	0x1
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  776 0100 12       		.uleb128 0x12
  777 0101 2E       		.uleb128 0x2e
  778 0102 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 20
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 20
 
 
  779 0103 3F       		.uleb128 0x3f
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  833 013a 19       		.uleb128 0x19
  834 013b 00       		.byte	0
  835 013c 00       		.byte	0
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 21
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 21
 
 
  836 013d 16       		.uleb128 0x16
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  882      7433325F 
  882      7400
  883              	.LASF34:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 22
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 22
 
 
  884 001b 78506F72 		.ascii	"xPortGetFreeHeapSize\000"
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  903 012f 646F7562 		.ascii	"double\000"
  903      6C6500
  904              	.LASF30:
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 23
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 23
 
 
  905 0136 756C4E65 		.ascii	"ulNewBASEPRI\000"
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  924      6A6E5C4F 
  924      6E654472 
  925 022b 725C4144 		.ascii	"r\\ADC Klodden\\RTOS_I2C_Test.cydsn\000"
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 24
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 24
 
 
  925      43204B6C 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 1
  951 02cb 7369676E 		.ascii	"signed char\000"
  951      65642063 
  951      68617200 
-ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccFZirgT.s 			page 25
+ARM GAS  C:\Users\stijn\AppData\Local\Temp\ccjyAny7.s 			page 25
 
 
  952              	.LASF25:

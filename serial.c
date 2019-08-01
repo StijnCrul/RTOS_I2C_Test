@@ -69,7 +69,7 @@ void configureUARTDMA(){
     Cy_DMA_Channel_SetInterruptMask(UARTDMA_HW, UARTDMA_DW_CHANNEL, CY_DMA_INTR_MASK);
     
     Cy_DMA_Channel_Enable(UARTDMA_HW, UARTDMA_DW_CHANNEL);
-    Cy_DMA_Enable(ADCDMA_0_HW);
+    Cy_DMA_Enable(UARTDMA_HW);
 
 }
 

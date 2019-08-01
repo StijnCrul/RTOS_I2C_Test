@@ -35,7 +35,7 @@
 #define RED_PERIOD      10000
 #define BLUE_PERIOD     25000
 #define GREEN_PERIOD    50000
-#define CHANNEL0_PERIOD 256
+#define CHANNEL0_PERIOD 16
 #define CHANNEL1_PERIOD 8
 #define CHANNEL2_PERIOD 8
 #define CHANNEL3_PERIOD 8
@@ -82,9 +82,9 @@ int main(void){
     configureUARTDMA();
     
     // Create all the tasks
-    xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
+    /*xTaskCreate(BlinkTask, "BlinkTask1", 100, (void*) &pin0, 0, NULL);
     xTaskCreate(BlinkTask, "BlinkTask2", 100, (void*) &pin1, 0, NULL);
-    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);
+    xTaskCreate(BlinkTask, "BlinkTask3", 100, (void*) &pin2, 0, NULL);*/
     
     //xTaskCreate(ADCTask, "ADCTask", 100, NULL, 2, NULL);  
     //xTaskCreate(UARTTask, "UARTTask", 100, NULL, 6, NULL);

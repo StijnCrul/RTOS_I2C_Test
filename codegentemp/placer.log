@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Jun 25 2019 16:54:33
+#File Generated:     Jun 26 2019 15:58:51
 
 #Purpose:            
 
@@ -88,7 +88,7 @@ Clock: CyFLL                | Frequency: N/A       | Target: 100.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   8.0 MHz
 Clock: CyPeriClk_App        | Frequency: N/A       | Target:  50.0 MHz
-Clock: UART_SCBCLK          | Frequency: N/A       | Target:   1.4 MHz
+Clock: UART_SCBCLK          | Frequency: N/A       | Target:   5.6 MHz
 Clock: mI2C_SCBCLK          | Frequency: N/A       | Target:   8.3 MHz
 
 ======================================================================
@@ -113,7 +113,7 @@ Clock: CyFLL                | Frequency: N/A       | Target: 100.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   8.0 MHz
 Clock: CyPeriClk_App        | Frequency: N/A       | Target:  50.0 MHz
-Clock: UART_SCBCLK          | Frequency: N/A       | Target:   1.4 MHz
+Clock: UART_SCBCLK          | Frequency: N/A       | Target:   5.6 MHz
 Clock: mI2C_SCBCLK          | Frequency: N/A       | Target:   8.3 MHz
 
 ======================================================================
@@ -161,7 +161,7 @@ Clock: CyFLL                | Frequency: N/A       | Target: 100.0 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.0 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:   8.0 MHz
 Clock: CyPeriClk_App        | Frequency: N/A       | Target:  50.0 MHz
-Clock: UART_SCBCLK          | Frequency: N/A       | Target:   1.4 MHz
+Clock: UART_SCBCLK          | Frequency: N/A       | Target:   5.6 MHz
 Clock: mI2C_SCBCLK          | Frequency: N/A       | Target:   8.3 MHz
 
 ======================================================================
